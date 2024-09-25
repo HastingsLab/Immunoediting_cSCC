@@ -1,0 +1,52 @@
+import os
+
+configfile: "somatic_mutation_calling_config.json"
+
+rule all:
+    input:
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/", "{subject}.somatic.vcf.gz"), subject=config["patients"]),
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/", "{subject}.somatic.filtered.vcf.gz"), subject=config["patients"]),
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/", "{subject}.somatic.filtered.pass.vcf.gz"), subject=config["patients"])
+
+rule tumor_with_matched_normal:
+    input:
+        ref = os.path.join(config["ref_dir"], config["ref_basename"] + ".fa"),
+        normal_bam = lambda wildcards: os.path.join(
+			"/xdisk/khasting/knodele/Mayo_human_data/processed_bams/", config[wildcards.subject]["normal"] + "." + config["ref_basename"] + ".sorted.bam"),
+        tumor_bam = lambda wildcards: os.path.join(
+			"/xdisk/khasting/knodele/Mayo_human_data/processed_bams/", config[wildcards.subject]["tumor"] + "." + config["ref_basename"] + ".sorted.bam")
+    output:
+        os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/", "{subject}.somatic.vcf.gz")
+    params:
+        gatk = "~/programs/gatk-4.5.0.0/gatk",
+        sm = lambda wildcards: config[wildcards.subject]["normal"]
+    shell:
+        """
+        {params.gatk} Mutect2 --genotype-germline-sites true -R {input.ref} -I {input.tumor_bam} -I {input.normal_bam} -normal {params.sm} -O {output}
+        """
+
+rule filter:
+    input:
+        ref = os.path.join(config["ref_dir"], config["ref_basename"] + ".fa"),
+        unfiltered = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/", "{subject}.somatic.vcf.gz")
+    output:
+        filtered = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/", "{subject}.somatic.filtered.vcf.gz")
+    params:
+        gatk = "~/programs/gatk-4.5.0.0/gatk"
+    shell:
+        """
+        {params.gatk} FilterMutectCalls -R {input.ref} -V {input.unfiltered} -O {output.filtered}
+        """
+
+rule select_pass_variants:
+    input:
+        ref = os.path.join(config["ref_dir"], config["ref_basename"] + ".fa"),
+        vcf = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/", "{subject}.somatic.filtered.vcf.gz")
+    output:
+        os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/", "{subject}.somatic.filtered.pass.vcf.gz")
+    params:
+        gatk = "~/programs/gatk-4.5.0.0/gatk"
+    shell:
+        """
+        {params.gatk} SelectVariants -R {input.ref} -V {input.vcf} --exclude-filtered -O {output}
+        """

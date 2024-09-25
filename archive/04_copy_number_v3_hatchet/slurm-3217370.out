@@ -1,0 +1,72 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 5
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Wed May 22 09:42:28 2024]
+rule cluster_bins:
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bb
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.seg, /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bbc
+    jobid: 0
+    reason: Forced execution
+    wildcards: subject=P15
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+[1m[95m[2024-May-22 09:42:40]# Parsing and checking input arguments
+[0m[92m
+	bbfile: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bb
+	diploidbaf: 0.1
+	decoding: map
+	minK: 2
+	maxK: 30
+	exactK: 0
+	covar: diag
+	transmat: diag
+	tau: 1e-06
+	outsegments: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.seg
+	outbins: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bbc
+	restarts: 10
+	subset: None
+[0m[1m[95m[2024-May-22 09:42:40]# Reading the combined BB file
+[0m[1m[95m[2024-May-22 09:42:40]# Clustering bins by RD and BAF across tumor samples using locality
+[0mModel is not converging.  Current: 385.8957233396777 is not greater than 386.00239417991395. Delta is -0.10667084023623374
+Model is not converging.  Current: 385.8957233396777 is not greater than 386.00239417991395. Delta is -0.10667084023623374
+Traceback (most recent call last):
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hatchet/__main__.py", line 65, in <module>
+    sys.exit(main())
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hatchet/__main__.py", line 61, in main
+    globals()[command](args)
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hatchet/utils/cluster_bins.py", line 47, in main
+    (best_score, best_model, best_labels, best_K, results,) = hmm_model_select(
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hatchet/utils/cluster_bins.py", line 268, in hmm_model_select
+    score = silhouette_score(C, my_best_labels, metric='precomputed')
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 214, in wrapper
+    return func(*args, **kwargs)
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 130, in silhouette_score
+    return np.mean(silhouette_samples(X, labels, metric=metric, **kwds))
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 187, in wrapper
+    return func(*args, **kwargs)
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 276, in silhouette_samples
+    check_number_of_labels(len(le.classes_), n_samples)
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/sklearn/metrics/cluster/_unsupervised.py", line 37, in check_number_of_labels
+    raise ValueError(
+ValueError: Number of labels is 1. Valid values are 2 to n_samples - 1 (inclusive)
+[Wed May 22 09:42:42 2024]
+Error in rule cluster_bins:
+    jobid: 0
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bb
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.seg, /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bbc
+    shell:
+        
+        python3 -m hatchet cluster-bins /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bb -o /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.seg -O /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bbc
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message

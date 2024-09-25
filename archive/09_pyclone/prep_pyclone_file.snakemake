@@ -1,0 +1,18 @@
+import os
+
+configfile: "somatic_mutation_calling_config_abbr.json"
+
+rule all:
+    input:
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/fastclone_files/{subject}.pyclone"), subject=config["patients"])
+
+rule vcf_to_ssm:
+    input:
+        vcf = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/variant_calls/{subject}.somaticvariants_filtered.vcf"),
+        cns = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/CNVKit_results/{subject}.GRCh38_combined_PAVE_hpv.sorted.mkdup.call_final.cns")
+    output:
+        ssm = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/fastclone_files/{subject}.pyclone")
+    shell:
+        """
+        python vcf_to_pyclone.py {input.vcf} {input.cns} {output.ssm}
+	"""

@@ -1,0 +1,10 @@
+import sys
+from puree import *
+import pandas as pd
+
+p = PUREE()
+purities_and_logs = p.get_output(sys.argv[1], 'ENSEMBL')
+
+purities = purities_and_logs["output"]
+
+purities.to_csv(sys.argv[2])

@@ -1,0 +1,24 @@
+import os
+
+configfile: "somatic_mutation_calling_config_abbr_2.json"
+
+rule all:
+    input:
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_purecn/{subject}/{subject}.csv"), subject=config["patients"])
+
+
+rule estimate_purity:
+    input:
+        vcf = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/{subject}.somatic.filtered.vcf"),
+        hdf5 = lambda wildcards: os.path.join("/xdisk/khasting/knodele/Mayo_human_data/processed_bams/" + config[wildcards.subject]["tumor"] + "." + config["ref_basename"] + ".hdf5"),
+        lr = lambda wildcards: os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/" + config[wildcards.subject]["tumor"] + ".GRCh38_combined_PAVE_hpv.denoisedCR.tsv"),
+        seg = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{subject}.modelFinal.seg")
+    output:
+        os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_purecn/{subject}/{subject}.csv")
+    params:
+        id = "{subject}",
+        outdir = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_purecn/{subject}")
+    shell:
+        """
+	Rscript /home/u1/knodele/mambaforge/envs/pureCN_env/lib/R/library/PureCN/extdata/PureCN.R --out {params.outdir} --sampleid {params.id} --tumor {input.hdf5} --log-ratio-file {input.lr} --seg-file {input.seg} --vcf {input.vcf} --genome hg38 --fun-segmentation Hclust --force --post-optimize --seed 123
+        """

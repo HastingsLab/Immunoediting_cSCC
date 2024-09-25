@@ -1,0 +1,78 @@
+import os
+
+configfile: "somatic_mutation_calling_config_abbr.json"
+
+rule all:
+    input:
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.plottree.html"), subject=config["patients"]),
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.summposteriors.html"), subject=config["patients"])
+
+rule make_config:
+    input:
+    output:
+        config = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.params.json")
+    shell:
+        """
+	 echo '{{"clusters": [], "garbage": [], "samples": ["Sample 1"]}}' > {output.config}
+        """
+
+rule fix_bad_var_probs:
+     input: 
+          config = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.params.json"),
+          ssm = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.ssm")
+     output:
+          ssm_fixed = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}_fixed.ssm")
+     shell:
+          """
+          python ~/programs/pairtree/util/fix_bad_var_read_prob.py {input.ssm} {input.config} {output.ssm_fixed} {input.config} --action modify_var_read_prob
+          """
+
+rule cluster_variants:
+     input:
+          config = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.params.json"),
+          ssm = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}_fixed.ssm")
+     output:
+          cluster = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.params_clustered.json")
+     shell:
+          """
+          python ~/programs/pairtree/bin/clustervars {input.ssm} {input.config} {output.cluster}
+          """
+
+rule run_pairtree:
+     input: 
+          config = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.params_clustered.json"),
+          ssm = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}_fixed.ssm")
+     output:
+          npz = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.npz")
+     shell:
+          """
+          python ~/programs/pairtree/bin/pairtree --params {input.config} {input.ssm} {output.npz} --seed 5555
+          """
+
+rule summposterior:
+     input:
+          config = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.params_clustered.json"),
+          ssm = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}_fixed.ssm"),
+          npz = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.npz")
+     output:
+          html = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.summposteriors.html")
+     params: 
+          runid = "{subject}"
+     shell:
+          """
+          python ~/programs/pairtree/bin/summposterior --runid {params.runid} {input.ssm} {input.config} {input.npz} {output.html}
+          """
+
+rule plottree:
+     input:
+          config = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.params_clustered.json"),
+          ssm = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}_fixed.ssm"),
+          npz = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.npz")
+     output:
+          html = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pairtree_files/{subject}.plottree.html")
+     params:
+          runid = "{subject}"
+     shell:
+          """
+          python ~/programs/pairtree/bin/plottree --runid {params.runid} {input.ssm} {input.config} {input.npz} {output.html}
+          """

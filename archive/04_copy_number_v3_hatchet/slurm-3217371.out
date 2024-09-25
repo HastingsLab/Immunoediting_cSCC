@@ -1,0 +1,163 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 5
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Wed May 22 09:42:29 2024]
+rule compute_cn:
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/bulk.bbc
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/best.seg.ucn
+    jobid: 0
+    reason: Forced execution
+    wildcards: subject=P56
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+# Checking and parsing input arguments
+# Checking and parsing input arguments
+
+	solver: None
+	input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/bulk
+	seg: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/bulk.seg
+	bbc: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/bulk.bbc
+	ln: 2
+	un: 6
+	clonal: None
+	ampdel: True
+	d: None
+	eD: 6
+	eT: 12
+	ts: 0.008
+	tc: 1
+	td: 0.01
+	tR: 0.08
+	tB: 0.04
+	mR: 0
+	mB: 0
+	limit: None
+	g: 0.3
+	p: 400
+	j: 1
+	r: 100
+	s: None
+	m: None
+	u: 0.03
+	f: None
+	M: 2
+	x: ./
+	diploid: False
+	tetraploid: False
+	v: 2
+	binwise: False
+
+	solver: None
+	input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/bulk
+	seg: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/bulk.seg
+	bbc: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/bulk.bbc
+	ln: 2
+	un: 6
+	clonal: None
+	ampdel: True
+	d: None
+	eD: 6
+	eT: 12
+	ts: 0.008
+	tc: 1
+	td: 0.01
+	tR: 0.08
+	tB: 0.04
+	mR: 0
+	mB: 0
+	limit: None
+	g: 0.3
+	p: 400
+	j: 1
+	r: 100
+	s: None
+	m: None
+	u: 0.03
+	f: None
+	M: 2
+	x: ./
+	diploid: False
+	tetraploid: False
+	v: 2
+	binwise: False
+# Reading and parsing clustered bins in BBC file
+# Reading and parsing clustered bins in BBC file
+# Reading and parsing bin clusters in SEG file
+# Reading and parsing bin clusters in SEG file
+# Computing the cluster sizes
+# Computing the cluster sizes
+# Filtering clusters based on covered genome size and covered chromosomes
+# Filtering clusters based on covered genome size and covered chromosomes
+[96m# Selected clusters: 2, 1
+[0m[96m## Features of selected clusters:
+[0m[96m## 2: SIZE= 800903588.0	#CHRS= 16	(RDR, BAF)= (0.8800205089872207, 0.1521405475107941)
+## 1: SIZE= 1901695099.0	#CHRS= 15	(RDR, BAF)= (1.135444174714091, 0.160625266539454)
+[0m## Neither "diploid" nor "tetraploid" was fixed. Model selection will be performed and the "clonal" argumentwill not be used for scaling.
+## Neither "diploid" nor "tetraploid" was fixed. Model selection will be performed and the "clonal" argumentwill not be used for scaling.
+# Finding the neutral diploid/tetraploid cluster
+# Finding the neutral diploid/tetraploid cluster
+[91mNone potential neutral cluster found with given parameters![0mTraceback (most recent call last):
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hatchet/__main__.py", line 65, in <module>
+    sys.exit(main())
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hatchet/__main__.py", line 61, in main
+    globals()[command](args)
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hatchet/bin/HATCHet.py", line 465, in main
+    neutral = findNeutralCluster(seg=fseg, size=size, td=args['td'], samples=samples, v=args['v'])
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hatchet/bin/HATCHet.py", line 893, in findNeutralCluster
+    raise ValueError(error('None potential neutral cluster found with given parameters!'))
+ValueError: [91mNone potential neutral cluster found with given parameters![0m
+[96m## solver:	None
+## input:	/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/bulk
+## seg:	/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/bulk.seg
+## bbc:	/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/bulk.bbc
+## ln:	2
+## un:	6
+## clonal:	None
+## ampdel:	True
+## d:	None
+## eD:	6
+## eT:	12
+## ts:	0.008
+## tc:	1
+## td:	0.01
+## tR:	0.08
+## tB:	0.04
+## mR:	0
+## mB:	0
+## limit:	None
+## g:	0.3
+## p:	400
+## j:	1
+## r:	100
+## s:	None
+## m:	None
+## u:	0.03
+## f:	None
+## M:	2
+## x:	./
+## diploid:	False
+## tetraploid:	False
+## v:	2
+## binwise:	False
+[0m[Wed May 22 09:42:41 2024]
+Error in rule compute_cn:
+    jobid: 0
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/bulk.bbc
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/best.seg.ucn
+    shell:
+        
+	cd /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/;
+        python3 -m hatchet compute-cn -i /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/"bulk" -n2,6 -p 400 -u 0.03 -r 100
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message

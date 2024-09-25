@@ -1,0 +1,32 @@
+import os
+
+configfile: "somatic_mutation_calling_config_abbr_3.json"
+
+rule all:
+    input:
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/decifer/{subject}/decifer.input.tsv"), subject=config["patients"])
+
+rule gunzip:
+    input:
+        vcf = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/{subject}.somatic.vcf.gz")
+    output:
+        vcf = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/{subject}.somatic.vcf")
+    shell:
+        """
+        gunzip -c {input.vcf} > {output.vcf}
+        """
+
+rule genotype_snps:
+    input:
+        vcf = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/{subject}.somatic.vcf"),
+        seg = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_BB/best.seg.ucn"),
+        tumor = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_tumor.1bed")
+    output:
+        os.path.join("/xdisk/khasting/knodele/Mayo_human_data/decifer/{subject}/decifer.input.tsv")
+    params:
+        out_dir = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/decifer/{subject}")
+    shell:
+        """
+	python vcf_2_decifer.py -V {input.vcf} -C {input.seg} -O {params.out_dir} -S {input.tumor} -M 8 -A 3 -F 0.01 -p 0
+        """
+

@@ -1,0 +1,53 @@
+---
+title: "2024_8_9_Create_WT_reference_file_in_silico_mutations"
+output: html_document
+date: '2024-08-09'
+---
+
+##Run on cluster
+
+**Purpose:** Create file with all 9mers for each patient for reference - using in silico null mutations
+
+## Define function
+
+```{r}
+library(stringr)
+```
+
+```{r}
+# Define a function that splits the wildtype peptides into every possible 9mer for comparison
+combinated_letters <- function(string, n) {
+  length_ <- str_length(string)
+  str_sub(string, seq(1, length_ + 1 - n), seq(n, length_))
+}
+```
+
+## Read in data
+
+```{r}
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work/Simple_metadata.csv"))
+clinical_data <- clinical_data[-which(is.na(clinical_data$Tumor_Sample_Barcode)),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$RNA_ID)),]
+clinical_data <- clinical_data[-which(clinical_data$Tumor_Sample_Barcode=="s_CSCC-302_-_T2a_B4_DNA"),]
+```
+
+## Apply function
+
+```{r}
+a=1
+for (k in clinical_data$ID){
+  print(a)
+  wt_all <- as.data.frame(read.table(paste("~/3.0 Hasting Research/Immunoediting_human_work/In_silico_mutations/WT_peptides/", k, "_fake_mutations_vep_WT_17.peptides", sep=""), header=FALSE))
+  wt <- wt_all$V8
+  wt_expanded <- matrix(NA, nrow=1)
+  colnames(wt_expanded) <- "peptides"
+  for (i in 1:length(wt)){
+    temp = combinated_letters(wt[i], 9)
+    temp <- as.data.frame(temp)
+    colnames(temp) <- "peptides"
+    wt_expanded <- rbind(wt_expanded, temp)
+  }
+  a=a+1
+  write.csv(wt_expanded$peptides, paste("~/3.0 Hasting Research/Immunoediting_human_work/In_silico_mutations/WT_peptides/", k, ".WT_n_mers_in_silico.peptides", sep=""))
+}
+```

@@ -1,0 +1,22 @@
+import os
+
+configfile: "somatic_mutation_calling_config_abbr_3.json"
+
+rule all:
+    input:
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/decifer/{subject}/decifer_output.tsv"), subject=config["patients"])
+
+rule genotype_snps:
+    input:
+        input = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/decifer/{subject}/decifer.input.tsv"),
+        purity = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/decifer/{subject}/decifer.purity.tsv")
+    output:
+        os.path.join("/xdisk/khasting/knodele/Mayo_human_data/decifer/{subject}/decifer_output.tsv")
+    params:
+        outdir = "/xdisk/khasting/knodele/Mayo_human_data/decifer/{subject}"
+    shell:
+        """
+        cd {params.outdir};
+        decifer {input.input} -p {input.purity} -k 5 -K 8 -r 20 --seed 17 
+	"""
+

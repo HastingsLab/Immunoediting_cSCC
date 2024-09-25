@@ -1,0 +1,70 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 5
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Wed May 22 09:42:28 2024]
+rule cluster_bins:
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bb
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.seg, /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bbc
+    jobid: 0
+    reason: Forced execution
+    wildcards: subject=P55
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+[1m[95m[2024-May-22 09:42:40]# Parsing and checking input arguments
+[0m[92m
+	bbfile: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bb
+	diploidbaf: 0.1
+	decoding: map
+	minK: 2
+	maxK: 30
+	exactK: 0
+	covar: diag
+	transmat: diag
+	tau: 1e-06
+	outsegments: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.seg
+	outbins: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bbc
+	restarts: 10
+	subset: None
+[0m[1m[95m[2024-May-22 09:42:40]# Reading the combined BB file
+[0m[1m[95m[2024-May-22 09:42:40]# Clustering bins by RD and BAF across tumor samples using locality
+[0m/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hatchet/utils/cluster_bins.py:309: RuntimeWarning: invalid value encountered in scalar divide
+  stats['diag'] = num / denom
+Traceback (most recent call last):
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hatchet/__main__.py", line 65, in <module>
+    sys.exit(main())
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hatchet/__main__.py", line 61, in main
+    globals()[command](args)
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hatchet/utils/cluster_bins.py", line 47, in main
+    (best_score, best_model, best_labels, best_K, results,) = hmm_model_select(
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hatchet/utils/cluster_bins.py", line 262, in hmm_model_select
+    prob, labels = model.decode(X, lengths, algorithm=decode_alg)
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hmmlearn/base.py", line 324, in decode
+    self._check()
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hmmlearn/hmm.py", line 313, in _check
+    super()._check()
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hmmlearn/base.py", line 955, in _check
+    self._check_sum_1("transmat_")
+  File "/home/u1/knodele/mambaforge/envs/hatchet/lib/python3.10/site-packages/hmmlearn/base.py", line 931, in _check_sum_1
+    raise ValueError(
+ValueError: transmat_ rows must sum to 1 (got [nan nan])
+[Wed May 22 09:42:41 2024]
+Error in rule cluster_bins:
+    jobid: 0
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bb
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.seg, /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bbc
+    shell:
+        
+        python3 -m hatchet cluster-bins /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bb -o /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.seg -O /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bbc
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message

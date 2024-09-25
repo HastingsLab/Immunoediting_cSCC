@@ -1,0 +1,21 @@
+import os
+
+configfile: "somatic_mutation_calling_config_abbr.json"
+
+rule all:
+    input:
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pyclone_files/{subject}_pyclone/phylogeny.png"), subject=config["patients"])
+
+rule run_pyclone:
+    input:
+        pyclone = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pyclone_files/{subject}.pyclone")
+    output:
+        os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pyclone_files/{subject}_pyclone/phylogeny.png")
+    params: 
+        purity = lambda wildcards: config[wildcards.subject]["purity"],
+        dir = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/pyclone_files/{subject}_pyclone/")
+    shell:
+        """
+        fastclone load_pyclone prop {input.pyclone} {params.purity} solve {params.dir}
+        """
+

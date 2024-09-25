@@ -1,0 +1,99 @@
+---
+title: "2024_8_7_Ratio_binding_mutations_in_silico_mutations"
+output: html_document
+date: "2024-08-7"
+---
+
+
+**Purpose:** Perform same analysis of ratio of bidning neoantigens in 100 sets of in-silico mutations as a control
+
+**Methods:**
+
+* Restrict to variants with a cancer cell fraction at or near 1 - testing 0.75 since this was used in the Westcott paper
+
+## Libraries
+
+```{r}
+library(stringr)
+library(ggplot2)
+library(ggpubr)
+library(biomaRt)
+library(DGEobj.utils)
+library(stringi)
+```
+
+
+## Read in clinical data
+```{r}
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work/Simple_metadata.csv"))
+clinical_data <- clinical_data[-which(is.na(clinical_data$Tumor_Sample_Barcode)),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$RNA_ID)),]
+clinical_data <- clinical_data[-which(clinical_data$Tumor_Sample_Barcode=="s_CSCC-302_-_T2a_B4_DNA"),]
+```
+
+## Define functions for below
+```{r}
+# Define a function for reading in and processing netMHC files
+process_netMHC <- function(file){
+    netMHC_matrix <- as.data.frame(read.table(file, skip=1, header=TRUE))
+    netMHC_matrix <- netMHC_matrix[,which(colnames(netMHC_matrix) %in% c("Peptide", "ID", "nM", "nM.1", "nM.2", "nM.3", 
+                                              "nM.4", "nM.5"))]
+    netMHC_matrix <- netMHC_matrix[-which(netMHC_matrix$Peptide %in% wt_all$V2),]
+    netMHC_matrix <- netMHC_matrix[which(str_length(netMHC_matrix$Peptide) %in% c(9)),]
+    netMHC_matrix <- netMHC_matrix[-1,]
+    netMHC_matrix <- unique(netMHC_matrix)
+    ID <- str_split_fixed(netMHC_matrix$ID, "_", 4)
+    netMHC_matrix$ID <- paste(ID[,1], ID[,2], sep=":")
+    return(netMHC_matrix)
+  }
+```
+
+## Match binding and calculate TCR recognition potential
+```{r}
+for (k in 1:length(clinical_data$ID)){
+  sample=clinical_data$ID[k]
+  print(k)
+  peptides <- as.data.frame(read.table(paste("~/3.0 Hasting Research/Immunoediting_human_work/In_silico_mutations/Peptides/", sample, "_fake_mutations_vep_17.peptides", sep=""), header=FALSE))
+  length(unique(peptides$V5))
+  ID <- str_split_fixed(peptides$V5, ":", 4)
+  peptides$ID_lim <- paste(ID[,1], ID[,2], sep=":")
+  
+  ## Read in wt results
+  wt_all <- as.data.frame(read.csv(paste("~/3.0 Hasting Research/Immunoediting_human_work/WT_peptides/", sample, ".WT_n_mers.peptides", sep=""), header=FALSE)) ## Need to fix this one still.
+  
+  ## Read in and process all netMHC files
+  netMHC <- process_netMHC(paste("~/3.0 Hasting Research/Immunoediting_human_work/In_silico_mutations/NetMHCpan_binding/", sample, "_netmhc_fake_mutations.xsl", sep=""))
+  
+  # Find min binding
+  for (i in 1:length(peptides$V1)){ 
+    netMHC_subset <- netMHC[which(netMHC$ID==peptides$ID_lim[i]),]
+    peptides$min_binding[i] <- min(netMHC_subset$nM, netMHC_subset$nM.1, netMHC_subset$nM.2, netMHC_subset$nM.3, netMHC_subset$nM.4, netMHC_subset$nM.5)
+  }
+
+  iterations <- as.data.frame(read.table(paste("~/3.0 Hasting Research/Immunoediting_human_work/In_silico_mutations/Peptides/", sample, "_fake_mutations.txt", sep=""), header=FALSE))
+  iterations$ID <- paste("chr", iterations$V1, sep="")
+  iterations$ID <- paste(iterations$ID, iterations$V2-1, iterations$V3, iterations$V4, sep=":")
+  
+  iteration_results <- matrix(nrow=100, ncol=4)
+  colnames(iteration_results) <- c("clonal_count", "subclonal_count", "binding_clonal", "binding_subclonal")
+  for (j in 1:100){
+    iteration <- iterations[which(iterations[,(j+6)]==1),]
+    peptides_subset <- peptides[which(peptides$V5 %in% iteration$ID),]
+    peptides_subset <- peptides_subset[!duplicated(peptides_subset$V6),]
+  
+    CCF <- as.data.frame(read.csv(paste("~/3.0 Hasting Research/Immunoediting_human_work/MAF_files/", clinical_data$ID[k], "_variants_CN.csv", sep="")))
+    CCF_scrambled <- sample_n(CCF, length(peptides_subset$V1))
+    peptides_subset$CCF <- CCF_scrambled$VAF
+  
+    peptides_clonal <- peptides_subset[which(peptides_subset$CCF>.75),]
+    peptides_subclonal <- peptides_subset[which(peptides_subset$CCF<0.75),]
+  
+    iteration_results[j,1] <- length(peptides_clonal$V1)
+    iteration_results[j,2] <- length(peptides_subclonal$V1)
+    iteration_results[j,3] <- length(peptides_clonal[which(peptides_clonal$min_binding<500),1])
+    iteration_results[j,4] <- length(peptides_subclonal[which(peptides_subclonal$min_binding<500),1])
+  }
+  
+}
+```
+

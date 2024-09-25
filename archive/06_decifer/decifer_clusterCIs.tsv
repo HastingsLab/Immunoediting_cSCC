@@ -1,0 +1,8 @@
+1 #anatomical sites 
+1 #samples 
+4 #mutation clusters 
+#sample_index	sample_label	anatomical_site_index	anatomical_site_label	cluster_index	cluster_label	f_lb	f_ub	
+0	s_CSCC_1_DNA	0	s_CSCC_1_DNA	0	1	0.9998	0.9999	
+0	s_CSCC_1_DNA	0	s_CSCC_1_DNA	1	2	0.7761	0.8354	
+0	s_CSCC_1_DNA	0	s_CSCC_1_DNA	2	3	0.6233	0.6402	
+0	s_CSCC_1_DNA	0	s_CSCC_1_DNA	3	4	0.3612	0.4127	

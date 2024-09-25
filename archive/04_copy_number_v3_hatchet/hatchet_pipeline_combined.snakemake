@@ -1,0 +1,98 @@
+import os
+
+configfile: "somatic_mutation_calling_config_abbr.json"
+
+rule all:
+    input:
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}/chr1.vcf.gz"), subject=config["patients"]),
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_tumor.1bed"), subject=config["patients"]),
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_read_counts/total.tsv"), subject=config["patients"]),
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_BB/bulk.bbc"), subject=config["patients"]),
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_BB/best.seg.ucn"), subject=config["patients"])
+
+rule genotype_snps:
+    input:
+        ref = os.path.join(config["ref_dir"], config["ref_basename"] + ".fa"),
+        normal_bam = lambda wildcards: os.path.join(
+			"/xdisk/khasting/knodele/Mayo_human_data/processed_bams/", config[wildcards.subject]["normal"] + "." + config["ref_basename"] + ".sorted.bam"),
+    output:
+        snps = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}/chr1.vcf.gz")
+    params:
+        out_dir = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}")
+    shell:
+        """
+        python3 -m hatchet genotype-snps -N {input.normal_bam} -r {input.ref} -c 100 -C 3000 -o {params.out_dir}
+	"""
+
+rule count_alleles:
+    input:
+        ref = os.path.join(config["ref_dir"], config["ref_basename"] + ".fa"),
+        normal_bam = lambda wildcards: os.path.join(
+                        "/xdisk/khasting/knodele/Mayo_human_data/processed_bams/", config[wildcards.subject]["normal"] + "." + config["ref_basename"] + ".sorted.bam"),
+        tumor_bam = lambda wildcards: os.path.join(
+                        "/xdisk/khasting/knodele/Mayo_human_data/processed_bams/", config[wildcards.subject]["tumor"] + "." + config["ref_basename"] + ".sorted.bam"),
+        snps = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}/chr1.vcf.gz")
+    output:
+        normal = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_normal.1bed"),
+        tumor = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_tumor.1bed")
+    params:
+        snps = lambda wildcards: expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}/{chr}.vcf.gz"), chr=["chr1", "chr2", "chr3", "chr4", "chr5", "chr6", "chr7", "chr8", "chr9", "chr10", "chr11", "chr12", "chr13", "chr14", "chr15", "chr16", "chr17", "chr18", "chr19", "chr20", "chr21", "chr22", "chrX", "chrY"], subject=wildcards.subject)
+    shell:
+        """
+        python3 -m hatchet count-alleles -N {input.normal_bam} -T {input.tumor_bam} -r {input.ref} -c 100 -C 3000 -L {params.snps} -O {output.normal} -o {output.tumor}
+        """
+
+rule count_reads:
+    input:
+        normal_bam = lambda wildcards: os.path.join(
+                        "/xdisk/khasting/knodele/Mayo_human_data/processed_bams/", config[wildcards.subject]["normal"] + "." + config["ref_basename"] + ".sorted.bam"),
+        tumor_bam = lambda wildcards: os.path.join(
+                        "/xdisk/khasting/knodele/Mayo_human_data/processed_bams/", config[wildcards.subject]["tumor"] + "." + config["ref_basename"] + ".sorted.bam"),
+        tumor_bed = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_tumor.1bed"),
+        normal_bed = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_normal.1bed")
+    output:
+        os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_read_counts/total.tsv")
+    params:
+        outdir = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_read_counts/")
+    shell:
+        """
+        python3 -m hatchet count-reads -N {input.normal_bam} -T {input.tumor_bam} -b {input.tumor_bed} -O {params.outdir} -V hg38
+        """
+
+rule combine_counts:
+    input:
+        read_counts=os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_read_counts/total.tsv"),
+        tumor_bed = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_tumor.1bed")
+    output:
+        baf=os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_BB/bulk.bb")
+    params:
+        dir = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_read_counts/")
+    shell:
+        """
+        python3 -m hatchet combine-counts -A {params.dir} -t {input.read_counts} -b {input.tumor_bed} -o {output.baf} -V hg38
+        """
+
+rule cluster_bins:
+    input:
+        baf=os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_BB/bulk.bb")
+    output:
+        seg=os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_BB/bulk.seg"),
+        bbc=os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_BB/bulk.bbc")
+    params:
+    shell:
+        """
+        python3 -m hatchet cluster-bins {input.baf} -o {output.seg} -O {output.bbc}
+        """
+
+rule compute_cn:
+    input:
+        bbc=os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_BB/bulk.bbc")
+    output:
+        seg=os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_BB/best.seg.ucn")
+    params:
+        in_dir=os.path.join("/xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/{subject}_BB/")
+    shell:
+        """
+	cd {params.in_dir};
+        python3 -m hatchet compute-cn -i {params.in_dir}"bulk" -n2,6 -p 400 -u 0.03 -r 100
+        """

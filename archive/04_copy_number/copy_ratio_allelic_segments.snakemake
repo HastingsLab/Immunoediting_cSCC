@@ -1,0 +1,100 @@
+import os
+
+configfile: "somatic_mutation_calling_config_abbr_2.json"
+
+rule all:
+	input:
+		expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}_normal.allelicCounts.tsv"), sample=config["patients"]),
+		expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}_tumor.allelicCounts.tsv"), sample=config["patients"]),
+		expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}.hets.tsv"), sample=config["patients"]),
+		expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}.called.seg"), sample=config["patients"]),
+		expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/segment_plots/{sample}.modeled.png"), sample=config["patients"])
+
+rule collect_counts_tumor:
+	input:
+		bam = lambda wildcards: os.path.join("/xdisk/khasting/knodele/Mayo_human_data/processed_bams/" + config[wildcards.sample]["tumor"] + ".GRCh38_combined_PAVE_hpv.sorted.mkdup.bam"),
+		variants = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/{sample}.somatic.filtered.vcf"),
+		ref = os.path.join(config["ref_dir"], config["ref_basename"] + ".fa")
+	output:
+		os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}_tumor.allelicCounts.tsv"),
+	shell:
+		"""
+		~/programs/gatk-4.1.8.1/gatk --java-options "-Xmx3g" CollectAllelicCounts \
+		-L {input.variants} \
+		-I {input.bam} \
+		-R {input.ref} \
+		-O {output}
+		"""
+
+rule collect_counts_normal:
+        input:
+                bam = lambda wildcards: os.path.join("/xdisk/khasting/knodele/Mayo_human_data/processed_bams/" + config[wildcards.sample]["normal"] + ".GRCh38_combined_PAVE_hpv.sorted.mkdup.bam"),
+                variants = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/{sample}.somatic.filtered.vcf"),
+                ref = os.path.join(config["ref_dir"], config["ref_basename"] + ".fa")
+        output:
+                os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}_normal.allelicCounts.tsv"),
+        shell:
+                """
+                ~/programs/gatk-4.1.8.1/gatk --java-options "-Xmx3g" CollectAllelicCounts \
+                -L {input.variants} \
+                -I {input.bam} \
+                -R {input.ref} \
+                -O {output}
+                """
+
+rule model_segments:
+	input:
+		cr = lambda wildcards: os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/" + config[wildcards.sample]["tumor"] + ".GRCh38_combined_PAVE_hpv.denoisedCR.tsv"), 
+		tumor = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}_tumor.allelicCounts.tsv"),
+		normal = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}_normal.allelicCounts.tsv")
+	output:
+		cr_seg = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}.cr.seg"),
+		allelic_counts = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}.hets.tsv"),
+		segments = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}.modelFinal.seg")
+	params:
+		prefix = "{sample}"
+	shell:
+		"""
+		~/programs/gatk-4.1.8.1/gatk --java-options "-Xmx4g" ModelSegments \
+		--denoised-copy-ratios {input.cr} \
+		--minimum-total-allele-count-normal 20 \
+		--number-of-changepoints-penalty-factor 5.0 \
+		--genotyping-homozygous-log-ratio-threshold 0 \
+		--allelic-counts {input.tumor} \
+		--output "/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/" \
+		--output-prefix {params.prefix}
+		"""
+
+rule copy_ratio_segments:
+	input: 
+		os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}.cr.seg")
+	output:
+		os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}.called.seg")
+	shell:
+		"""
+		~/programs/gatk-4.1.8.1/gatk CallCopyRatioSegments \
+		--input {input} \
+		--output {output} \
+		"""
+
+rule plot_segments:
+	input: 
+		cr = lambda wildcards: os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/" + config[wildcards.sample]["tumor"] + ".GRCh38_combined_PAVE_hpv.denoisedCR.tsv"),
+		allelic_counts = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}.hets.tsv"),
+		segments = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/copy_ratios/{sample}.modelFinal.seg"),
+		ref = os.path.join(config["ref_dir"], config["ref_basename"] + ".dict")
+	output: 
+		os.path.join("/xdisk/khasting/knodele/Mayo_human_data/segment_plots/{sample}.modeled.png")
+	params: 
+		prefix = "{sample}"
+	shell:
+		"""
+		~/programs/gatk-4.1.8.1/gatk PlotModeledSegments \
+		--denoised-copy-ratios {input.cr} \
+		--allelic-counts {input.allelic_counts} \
+		--segments {input.segments} \
+		--sequence-dictionary {input.ref} \
+		--minimum-contig-length 46709983 \
+		--output /xdisk/khasting/knodele/Mayo_human_data/segment_plots/ \
+		--output-prefix {params.prefix}
+		"""

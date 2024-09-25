@@ -1,0 +1,24 @@
+[1] 41
+Loading required package: edgeR
+Loading required package: limma
+[1] "P2B"
+[1] 41
+Warning messages:
+1: In min(binding_subset$nM, binding_subset$nM.1, binding_subset$nM.2,  :
+  no non-missing arguments to min; returning Inf
+2: In min(binding_subset$nM, binding_subset$nM.1, binding_subset$nM.2,  :
+  no non-missing arguments to min; returning Inf
+3: In min(binding_subset$nM, binding_subset$nM.1, binding_subset$nM.2,  :
+  no non-missing arguments to min; returning Inf
+4: In min(binding_subset$nM, binding_subset$nM.1, binding_subset$nM.2,  :
+  no non-missing arguments to min; returning Inf
+5: In min(binding_subset$nM, binding_subset$nM.1, binding_subset$nM.2,  :
+  no non-missing arguments to min; returning Inf
+6: In min(binding_subset$nM, binding_subset$nM.1, binding_subset$nM.2,  :
+  no non-missing arguments to min; returning Inf
+7: In min(binding_subset$nM, binding_subset$nM.1, binding_subset$nM.2,  :
+  no non-missing arguments to min; returning Inf
+8: In min(binding_subset$nM, binding_subset$nM.1, binding_subset$nM.2,  :
+  no non-missing arguments to min; returning Inf
+9: In min(binding_subset$nM, binding_subset$nM.1, binding_subset$nM.2,  :
+  no non-missing arguments to min; returning Inf

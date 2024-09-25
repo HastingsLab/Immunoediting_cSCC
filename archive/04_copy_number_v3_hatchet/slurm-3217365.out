@@ -1,0 +1,162 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 300
+Job stats:
+job             count
+------------  -------
+all                 1
+cluster_bins        3
+compute_cn          6
+total              10
+
+Select jobs to execute...
+
+[Wed May 22 09:42:18 2024]
+rule compute_cn:
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P39A_BB/bulk.bbc
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P39A_BB/best.seg.ucn
+    jobid: 333
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P39A_BB/best.seg.ucn
+    wildcards: subject=P39A
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>
+
+Submitted job 333 with external jobid 'Submitted batch job 3217366'.
+
+[Wed May 22 09:42:18 2024]
+rule cluster_bins:
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P25_BB/bulk.bb
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P25_BB/bulk.seg, /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P25_BB/bulk.bbc
+    jobid: 226
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P25_BB/bulk.bbc
+    wildcards: subject=P25
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>
+
+Submitted job 226 with external jobid 'Submitted batch job 3217367'.
+
+[Wed May 22 09:42:18 2024]
+rule cluster_bins:
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bb
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.seg, /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bbc
+    jobid: 286
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bbc
+    wildcards: subject=P55
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>
+
+Submitted job 286 with external jobid 'Submitted batch job 3217368'.
+
+[Wed May 22 09:42:18 2024]
+rule compute_cn:
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P32_BB/bulk.bbc
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P32_BB/best.seg.ucn
+    jobid: 326
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P32_BB/best.seg.ucn
+    wildcards: subject=P32
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>
+
+Submitted job 326 with external jobid 'Submitted batch job 3217369'.
+
+[Wed May 22 09:42:18 2024]
+rule cluster_bins:
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bb
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.seg, /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bbc
+    jobid: 208
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bbc
+    wildcards: subject=P15
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>
+
+Submitted job 208 with external jobid 'Submitted batch job 3217370'.
+
+[Wed May 22 09:42:18 2024]
+rule compute_cn:
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/bulk.bbc
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/best.seg.ucn
+    jobid: 351
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/best.seg.ucn
+    wildcards: subject=P56
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=<TBD>
+
+Submitted job 351 with external jobid 'Submitted batch job 3217371'.
+[Wed May 22 09:42:57 2024]
+Error in rule compute_cn:
+    jobid: 333
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P39A_BB/bulk.bbc
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P39A_BB/best.seg.ucn
+    shell:
+        
+	cd /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P39A_BB/;
+        python3 -m hatchet compute-cn -i /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P39A_BB/"bulk" -n2,6 -p 400 -u 0.03 -r 100
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3217366
+
+Error executing rule compute_cn on cluster (jobid: 333, external: Submitted batch job 3217366, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/04_copy_number_v3_hatchet/.snakemake/tmp.gk_cd9kn/snakejob.compute_cn.333.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed May 22 09:42:57 2024]
+Error in rule cluster_bins:
+    jobid: 226
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P25_BB/bulk.bb
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P25_BB/bulk.seg, /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P25_BB/bulk.bbc
+    shell:
+        
+        python3 -m hatchet cluster-bins /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P25_BB/bulk.bb -o /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P25_BB/bulk.seg -O /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P25_BB/bulk.bbc
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3217367
+
+Error executing rule cluster_bins on cluster (jobid: 226, external: Submitted batch job 3217367, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/04_copy_number_v3_hatchet/.snakemake/tmp.gk_cd9kn/snakejob.cluster_bins.226.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed May 22 09:42:57 2024]
+Error in rule cluster_bins:
+    jobid: 286
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bb
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.seg, /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bbc
+    shell:
+        
+        python3 -m hatchet cluster-bins /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bb -o /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.seg -O /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P55_BB/bulk.bbc
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3217368
+
+Error executing rule cluster_bins on cluster (jobid: 286, external: Submitted batch job 3217368, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/04_copy_number_v3_hatchet/.snakemake/tmp.gk_cd9kn/snakejob.cluster_bins.286.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed May 22 09:42:57 2024]
+Error in rule compute_cn:
+    jobid: 326
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P32_BB/bulk.bbc
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P32_BB/best.seg.ucn
+    shell:
+        
+	cd /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P32_BB/;
+        python3 -m hatchet compute-cn -i /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P32_BB/"bulk" -n2,6 -p 400 -u 0.03 -r 100
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3217369
+
+Error executing rule compute_cn on cluster (jobid: 326, external: Submitted batch job 3217369, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/04_copy_number_v3_hatchet/.snakemake/tmp.gk_cd9kn/snakejob.compute_cn.326.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed May 22 09:42:57 2024]
+Error in rule cluster_bins:
+    jobid: 208
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bb
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.seg, /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bbc
+    shell:
+        
+        python3 -m hatchet cluster-bins /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bb -o /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.seg -O /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P15_BB/bulk.bbc
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3217370
+
+Error executing rule cluster_bins on cluster (jobid: 208, external: Submitted batch job 3217370, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/04_copy_number_v3_hatchet/.snakemake/tmp.gk_cd9kn/snakejob.cluster_bins.208.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed May 22 09:42:57 2024]
+Error in rule compute_cn:
+    jobid: 351
+    input: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/bulk.bbc
+    output: /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/best.seg.ucn
+    shell:
+        
+	cd /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/;
+        python3 -m hatchet compute-cn -i /xdisk/khasting/knodele/Mayo_human_data/hatchet_cnv/P56_BB/"bulk" -n2,6 -p 400 -u 0.03 -r 100
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3217371
+
+Error executing rule compute_cn on cluster (jobid: 351, external: Submitted batch job 3217371, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/04_copy_number_v3_hatchet/.snakemake/tmp.gk_cd9kn/snakejob.compute_cn.351.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-05-22T094209.042150.snakemake.log

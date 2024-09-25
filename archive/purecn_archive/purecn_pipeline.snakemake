@@ -1,0 +1,45 @@
+import os
+
+configfile: "somatic_mutation_calling_config_abbr_2.json"
+
+rule all:
+    input:
+        #expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/CNVKit_results/{subject}.GRCh38_combined_PAVE_hpv.sorted.mkdup.seg"), subject=config["patients"]),
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_human_data/purecn/{subject}/{subject}.csv"), subject=config["patients"])
+
+# commented out because I changed to the purecn conda environment and do not want these to rerun - in the future, should make these steps separate files
+
+#rule gunzip:
+#    input:
+#        vcf = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/{subject}.somatic.filtered.vcf.gz")
+#    output:
+#        vcf = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/{subject}.somatic.filtered.vcf")
+#    shell:
+#        """
+#        gunzip -c {input.vcf} > {output.vcf}
+#        """
+
+#rule export_seg:
+#    input:
+#        cns = lambda wildcards: os.path.join("/xdisk/khasting/knodele/Mayo_human_data/CNVKit_results/", config[wildcards.subject]["tumor"] + ".GRCh38_combined_PAVE_hpv.sorted.mkdup.cns")
+#    output:
+#        seg = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/CNVKit_results/{subject}.GRCh38_combined_PAVE_hpv.sorted.mkdup.seg")
+#    shell:
+#        """
+#        cnvkit.py export seg {input.cns} --enumerate-chroms -o {output.seg}
+#        """
+
+rule genotype_snps:
+    input:
+        vcf = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/gatk_mutect2/{subject}.somatic.filtered.vcf"),
+        seg = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/CNVKit_results/{subject}.GRCh38_combined_PAVE_hpv.sorted.mkdup.seg"),
+        cnr = lambda wildcards: os.path.join("/xdisk/khasting/knodele/Mayo_human_data/CNVKit_results/", config[wildcards.subject]["tumor"] + ".GRCh38_combined_PAVE_hpv.sorted.mkdup.cnr")
+    output:
+        os.path.join("/xdisk/khasting/knodele/Mayo_human_data/purecn/{subject}/{subject}.csv")
+    params:
+        id = "{subject}",
+        outdir = os.path.join("/xdisk/khasting/knodele/Mayo_human_data/purecn/{subject}")
+    shell:
+        """
+	Rscript /home/u1/knodele/mambaforge/envs/pureCN_env/lib/R/library/PureCN/extdata/PureCN.R --out {params.outdir} --sampleid {params.id} --tumor {input.cnr} --seg-file {input.seg} --vcf {input.vcf} --genome hg38 --fun-segmentation Hclust --force --post-optimize --seed 123
+        """
