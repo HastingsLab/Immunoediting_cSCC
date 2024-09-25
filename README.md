@@ -1,6 +1,6 @@
 # Immunoediting in Human Cutaneous Squamous Cell Carcinoma
 
-**Last updated:** 8/15/2024
+**Last updated:** 9/25/2024
 
 **Created by:** Elizabeth Borden
 
