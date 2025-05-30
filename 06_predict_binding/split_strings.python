@@ -1,0 +1,28 @@
+import csv
+import argparse
+
+parser = argparse.ArgumentParser(description='Process input and output file paths.')
+parser.add_argument('-i', '--input', required=True, help='Path to the input file')
+parser.add_argument('-o', '--output', required=True, help='Path to the output file')
+args = parser.parse_args()
+
+input_file = args.input
+output_file = args.output
+
+
+def extract_substrings(text, length=9):
+    substrings = []
+    for i in range(len(text) - length + 1):
+        substring = text[i:i + length]
+        substrings.append(substring)
+    return substrings
+
+with open(output_file, 'w', newline='') as output_file:
+    # Open the TSV file
+    with open(input_file, 'r', newline='') as input_file:
+        reader = csv.reader(input_file, delimiter=' ')
+        for row in reader:
+             text = row[7]  # Get the 5th column (index 4)
+             substrings = extract_substrings(text)
+             for substring in substrings:
+                  output_file.write(substring + '\n')

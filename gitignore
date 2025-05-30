@@ -11,7 +11,12 @@
 04_annotate_variants/archive
 04_annotate_variants/`1
 05_predict_hla/.snakemake
+06_predict_binding/.snakemake
+06_predict_binding/PRIME/.snakemake
+07_mhcII_predictions/.snakemake
 07_growth_rate_simulations/Mayo_data_combined_variants.maf
+08_copy_number/.snakemake
+08_copy_number/bigfiles
 03_copy_number/Mayo_combined_reference.cnn.1
 07_growth_rate_simulations/Mayo_data_combined_variants_CN.csv
 07_growth_rate_simulations/all_maf/Mayo_data_combined_variants_CN.csv

@@ -1,0 +1,2829 @@
+Assuming unrestricted shared filesystem usage.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 42
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+PRIME            42
+all               1
+make_input       42
+total            85
+
+Select jobs to execute...
+Execute 42 jobs...
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P54_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P54_prime_input.txt
+    jobid: 6
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P54_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P54
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P39B_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39B_prime_input.txt
+    jobid: 36
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39B_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P39B
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P33_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P33_prime_input.txt
+    jobid: 66
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P33_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P33
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P47_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P47_prime_input.txt
+    jobid: 4
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P47_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P47
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P39A_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39A_prime_input.txt
+    jobid: 34
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39A_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P39A
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P55_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P55_prime_input.txt
+    jobid: 64
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P55_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P55
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P48_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P48_prime_input.txt
+    jobid: 2
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P48_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P48
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P38_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P38_prime_input.txt
+    jobid: 32
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P38_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P38
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P57_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P57_prime_input.txt
+    jobid: 62
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P57_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P57
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P20_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P20_prime_input.txt
+    jobid: 60
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P20_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P20
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P37_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P37_prime_input.txt
+    jobid: 30
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P37_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P37
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P22_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P22_prime_input.txt
+    jobid: 58
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P22_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P22
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P36_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P36_prime_input.txt
+    jobid: 28
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P36_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P36
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P35_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P35_prime_input.txt
+    jobid: 26
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P35_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P35
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P59_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P59_prime_input.txt
+    jobid: 56
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P59_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P59
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P34_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P34_prime_input.txt
+    jobid: 24
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P34_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P34
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P18_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P18_prime_input.txt
+    jobid: 54
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P18_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P18
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P9_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P9_prime_input.txt
+    jobid: 84
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P9_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P9
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P30_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P30_prime_input.txt
+    jobid: 22
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P30_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P30
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P24_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P24_prime_input.txt
+    jobid: 52
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P24_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P24
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:45 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P13_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P13_prime_input.txt
+    jobid: 82
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P13_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P13
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P28_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P28_prime_input.txt
+    jobid: 20
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P28_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P28
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P26_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P26_prime_input.txt
+    jobid: 50
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P26_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P26
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P6_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P6_prime_input.txt
+    jobid: 80
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P6_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P6
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P2B_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2B_prime_input.txt
+    jobid: 78
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2B_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P2B
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P27_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P27_prime_input.txt
+    jobid: 18
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P27_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P27
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P8_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P8_prime_input.txt
+    jobid: 48
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P8_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P8
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P3_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P3_prime_input.txt
+    jobid: 76
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P3_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P3
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P25_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P25_prime_input.txt
+    jobid: 16
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P25_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P25
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P7_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P7_prime_input.txt
+    jobid: 46
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P7_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P7
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P5_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P5_prime_input.txt
+    jobid: 44
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P5_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P5
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P14_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P14_prime_input.txt
+    jobid: 74
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P14_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P14
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P23_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P23_prime_input.txt
+    jobid: 14
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P23_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P23
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P4_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P4_prime_input.txt
+    jobid: 42
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P4_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P4
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P2A_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2A_prime_input.txt
+    jobid: 72
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2A_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P2A
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P19_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P19_prime_input.txt
+    jobid: 12
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P19_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P19
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P17_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P17_prime_input.txt
+    jobid: 10
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P17_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P17
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P41_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P41_prime_input.txt
+    jobid: 40
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P41_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P41
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P11_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P11_prime_input.txt
+    jobid: 70
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P11_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P11
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P58_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P58_prime_input.txt
+    jobid: 8
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P58_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P58
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P40_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P40_prime_input.txt
+    jobid: 38
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P40_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P40
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:46 2024]
+localrule make_input:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P49_netmhc.xsl
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P49_prime_input.txt
+    jobid: 68
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P49_prime_input.txt; Set of input files has changed since last execution
+    wildcards: sample=P49
+    resources: tmpdir=/tmp
+
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P47_netmhc.xsl"
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P9_netmhc.xsl"
+[1][1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P22_netmhc.xsl"
+ "/xdisk/khasting/knodele/Mayo_human_data/peptides/P34_netmhc.xsl"
+[1][1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P20_netmhc.xsl"
+ "/xdisk/khasting/knodele/Mayo_human_data/peptides/P35_netmhc.xsl"
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P13_netmhc.xsl"
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P37_netmhc.xsl"
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P18_netmhc.xsl"
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P3_netmhc.xsl"
+[1][1][1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P59_netmhc.xsl"[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P48_netmhc.xsl"
+ "/xdisk/khasting/knodele/Mayo_human_data/peptides/P27_netmhc.xsl"
+
+ "/xdisk/khasting/knodele/Mayo_human_data/peptides/P33_netmhc.xsl"
+[1][1][1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P39B_netmhc.xsl"
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P39A_netmhc.xsl"
+ "/xdisk/khasting/knodele/Mayo_human_data/peptides/P30_netmhc.xsl"
+ "/xdisk/khasting/knodele/Mayo_human_data/peptides/P57_netmhc.xsl"
+[1][1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P26_netmhc.xsl"
+ "/xdisk/khasting/knodele/Mayo_human_data/peptides/P55_netmhc.xsl"
+[1][1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P54_netmhc.xsl"
+ "/xdisk/khasting/knodele/Mayo_human_data/peptides/P28_netmhc.xsl"
+[1][1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P36_netmhc.xsl"
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P38_netmhc.xsl"
+ "/xdisk/khasting/knodele/Mayo_human_data/peptides/P8_netmhc.xsl"
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P24_netmhc.xsl"
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P6_netmhc.xsl"
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P25_netmhc.xsl"
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P14_netmhc.xsl"
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P7_netmhc.xsl"
+[1][1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P5_netmhc.xsl"
+ "/xdisk/khasting/knodele/Mayo_human_data/peptides/P2B_netmhc.xsl"
+  Pos   Peptide              ID      core     icore X1.log50k        nM    Rank
+1   0 XLRVRSLPG chr1_2406868_C_ XLRVRSLPG XLRVRSLPG    0.0463 30294.283 41.8746
+2   1 LRVRSLPGD chr1_2406868_C_ LRVRSLPGD LRVRSLPGD    0.0099 44935.176 90.8039
+3   2 RVRSLPGDD chr1_2406868_C_ RVRSLPGDD RVRSLPGDD    0.0084 45659.047 93.3356
+4   3 VRSLPGDDL chr1_2406868_C_ VRSLPGDDL VRSLPGDDL    0.0249 38209.605 64.2706
+5   4 RSLPGDDLR chr1_2406868_C_ RSLPGDDLR RSLPGDDLR    0.0273 37218.871 60.8383
+6   5 SLPGDDLRA chr1_2406868_C_ SLPGDDLRA SLPGDDLRA    0.2421  3642.197  7.9331
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XLRVRSLPG XLRVRSLPG      0.0647 24828.82 23.0934 XLRVRSLPG XLRVRSLPG
+2 LRVRSLPGD LRVRSLPGD      0.0109 44426.59 93.8966 LRVRSLPGD LRVRSLPGD
+3 RVRSLPGDD RVRSLPGDD      0.0330 34987.53 50.8989 RVRSLPGDD RVRSLPGDD
+4 VRSLPGDDL VRSLPGDDL      0.0204 40084.77 74.5929 VRSLPGDDL VRSLPGDDL
+5 RSLPGDDLR RSLPGDDLR      0.1188 13820.71 10.3908 RSLPGDDLR RSLPGDDLR
+6 SLPGDDLRA SLPGDDLRA      0.0242 38496.35 66.6119 SLPGDDLRA SLPGDDLRA
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0276 37094.65 43.3308 XLRVRSLPG XLRVRSLPG      0.0300 36139.11 33.4887
+2      0.0153 42393.70 76.6026 LRVRSLPGD LRVRSLPGD      0.0098 44960.95 87.5938
+3      0.0093 45209.75 93.6853 RVRSLPGDD RVRSLPGDD      0.0097 45020.83 87.9916
+4      0.0227 39120.71 54.4112 VRSLPGDDL VRSLPGDDL      0.0524 28369.53 12.7006
+5      0.0173 41487.07 70.1142 RSLPGDDLR RSLPGDDLR      0.0359 33905.29 25.6358
+6      0.0138 43050.53 81.1424 SLPGDDLRA SLPGDDLRA      0.0343 34496.99 27.5499
+     core.4   icore.4 X1.log50k.4     nM.4  Rank.4    Ave NB
+1 XLRVRSLPG XLRVRSLPG      0.0771 21712.38 28.4237 0.0491  0
+2 LRVRSLPGD LRVRSLPGD      0.0122 43837.85 85.4217 0.0116  0
+3 RVRSLPGDD RVRSLPGDD      0.0223 39297.61 68.7639 0.0165  0
+4 VRSLPGDDL VRSLPGDDL      0.1059 15905.12 20.3187 0.0452  0
+5 RSLPGDDLR RSLPGDDLR      0.1112 15016.75 19.1754 0.0621  0
+6 SLPGDDLRA SLPGDDLRA      0.0652 24692.18 33.1891 0.0759  0
+[1] 1558
+[1] 1558
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P19_netmhc.xsl"
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XEEQLFKMI chr1_15728272_C XEEQLFKMI XEEQLFKMI    0.0221 39387.02 61.1533
+2   1 EEQLFKMIW chr1_15728272_C EEQLFKMIW EEQLFKMIW    0.0389 32839.48 31.8262
+3   2 EQLFKMIWM chr1_15728272_C EQLFKMIWM EQLFKMIWM    0.0381 33094.52 32.7236
+4   3 QLFKMIWMS chr1_15728272_C QLFKMIWMS QLFKMIWMS    0.0388 32872.19 31.9350
+5   4 LFKMIWMST chr1_15728272_C LFKMIWMST LFKMIWMST    0.0235 38784.39 57.9105
+6   5 FKMIWMSTG chr1_15728272_C FKMIWMSTG FKMIWMSTG    0.0206 40030.60 64.7081
+     core.1   icore.1 X1.log50k.1      nM.1  Rank.1    core.2   icore.2
+1 XEEQLFKMI XEEQLFKMI      0.0134 43263.469 89.7400 XEEQLFKMI XEEQLFKMI
+2 EEQLFKMIW EEQLFKMIW      0.0297 36246.789 64.5089 EEQLFKMIW EEQLFKMIW
+3 EQLFKMIWM EQLFKMIWM      0.0769 21767.190 27.3204 EQLFKMIWM EQLFKMIWM
+4 QLFKMIWMS QLFKMIWMS      0.1776  7315.198  9.4547 QLFKMIWMS QLFKMIWMS
+5 LFKMIWMST LFKMIWMST      0.1675  8167.340 10.2829 LFKMIWMST LFKMIWMST
+6 FKMIWMSTG FKMIWMSTG      0.0333 34861.332 59.7693 FKMIWMSTG FKMIWMSTG
+  X1.log50k.2      nM.2  Rank.2    core.3   icore.3 X1.log50k.3      nM.3
+1      0.2410  3686.085  1.2325 XEEQLFKMI XEEQLFKMI      0.2448  3535.728
+2      0.1900  6397.368  2.3306 EEQLFKMIW EEQLFKMIW      0.1391 11098.355
+3      0.1781  7276.048  2.6893 EQLFKMIWM EQLFKMIWM      0.1417 10787.694
+4      0.0488 29487.744 25.8023 QLFKMIWMS QLFKMIWMS      0.0369 33532.445
+5      0.0326 35143.859 40.3539 LFKMIWMST LFKMIWMST      0.0195 40480.086
+6      0.0629 25323.961 18.1729 FKMIWMSTG FKMIWMSTG      0.0602 26061.416
+   Rank.3    core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1  1.9790 XEEQLFKMI XEEQLFKMI      0.0137 43096.20 59.8217 XEEQLFKMI XEEQLFKMI
+2  4.3223 EEQLFKMIW EEQLFKMIW      0.0145 42735.43 58.1720 EEQLFKMIW EEQLFKMIW
+3  4.2075 EQLFKMIWM EQLFKMIWM      0.0925 18369.58 12.8860 EQLFKMIWM EQLFKMIWM
+4 26.0417 QLFKMIWMS QLFKMIWMS      0.0215 39623.80 45.9728 QLFKMIWMS QLFKMIWMS
+5 51.6361 LFKMIWMST LFKMIWMST      0.0187 40859.84 50.2826 LFKMIWMST LFKMIWMST
+6 13.6109 FKMIWMSTG FKMIWMSTG      0.0955 17794.81 12.4423 FKMIWMSTG FKMIWMSTG
+  X1.log50k.5     nM.5  Rank.5    Ave NB
+1      0.0260 37724.85 46.3168 0.0935  2
+2      0.0330 34990.57 37.4204 0.0742  0
+3      0.0966 17584.86  8.9271 0.1040  0
+4      0.0187 40833.77 59.1476 0.0571  0
+5      0.0535 28030.84 21.6620 0.0525  0
+6      0.0883 19226.09 10.3927 0.0601  0
+[1] 2107
+[Thu Aug 15 15:17:48 2024]
+Finished job 74.
+1 of 85 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Aug 15 15:17:48 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P14_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P14_prime_output.txt
+    jobid: 73
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P14_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P14_prime_input.txt
+    wildcards: sample=P14
+    resources: tmpdir=/tmp
+
+[1] 2107
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XEQQPHLPL chr1_1287720_T_ XEQQPHLPL XEQQPHLPL    0.0430 31385.98 23.9215
+2   1 EQQPHLPLP chr1_1287720_T_ EQQPHLPLP EQQPHLPLP    0.0286 36709.36 35.3582
+3   2 QQPHLPLPS chr1_1287720_T_ QQPHLPLPS QQPHLPLPS    0.0216 39581.82 44.8978
+4   3 QPHLPLPST chr1_1287720_T_ QPHLPLPST QPHLPLPST    0.0088 45436.30 78.6935
+5   4 PHLPLPSTL chr1_1287720_T_ PHLPLPSTL PHLPLPSTL    0.0907 18746.05 10.4006
+6   5 HLPLPSTLA chr1_1287720_T_ HLPLPSTLA HLPLPSTLA    0.0413 31976.58 24.9008
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XEQQPHLPL XEQQPHLPL      0.0308 35825.31 64.4086 XEQQPHLPL XEQQPHLPL
+2 EQQPHLPLP EQQPHLPLP      0.0342 34546.66 60.2871 EQQPHLPLP EQQPHLPLP
+3 QQPHLPLPS QQPHLPLPS      0.0268 37397.30 69.7262 QQPHLPLPS QQPHLPLPS
+4 QPHLPLPST QPHLPLPST      0.0128 43545.71 91.1769 QPHLPLPST QPHLPLPST
+5 PHLPLPSTL PHLPLPSTL      0.0374 33374.26 56.6857 PHLPLPSTL PHLPLPSTL
+6 HLPLPSTLA HLPLPSTLA      0.0305 35928.57 64.7350 HLPLPSTLA HLPLPSTLA
+  X1.log50k.2     nM.2  Rank.2    Ave NB
+1      0.1040 16220.38 19.6587 0.0593  0
+2      0.0326 35133.96 54.4156 0.0318  0
+3      0.0472 30001.36 41.9381 0.0319  0
+4      0.0596 26250.75 34.7572 0.0271  0
+5      0.0868 19553.37 24.1534 0.0716  0
+6      0.1234 13155.66 15.9182 0.0651  0
+[1] 9208
+[1] 9208
+[Thu Aug 15 15:17:48 2024]
+Finished job 28.
+2 of 85 steps (2%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Aug 15 15:17:48 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P36_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P36_prime_output.txt
+    jobid: 27
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P36_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P36_prime_input.txt
+    wildcards: sample=P36
+    resources: tmpdir=/tmp
+
+[Thu Aug 15 15:17:48 2024]
+Finished job 16.
+3 of 85 steps (4%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+  Pos   Peptide              ID      core     icore X1.log50k        nM    Rank
+1   0 XVGCSSQHT chr1_973008_C_T XVGCSSQHT XVGCSSQHT    0.0176 41333.379 75.9702
+2   1 VGCSSQHTL chr1_973008_C_T VGCSSQHTL VGCSSQHTL    0.0343 34512.676 45.8792
+3   2 GCSSQHTLL chr1_973008_C_T GCSSQHTLL GCSSQHTLL    0.0224 39221.574 65.3591
+4   3 CSSQHTLLH chr1_973008_C_T CSSQHTLLH CSSQHTLLH    0.2792  2436.801  3.9946
+5   4 SSQHTLLHR chr1_973008_C_T SSQHTLLHR SSQHTLLHR    0.5795    94.621  0.5563
+6   5 SQHTLLHRL chr1_973008_C_T SQHTLLHRL SQHTLLHRL    0.0659 24498.986 22.6882
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XVGCSSQHT XVGCSSQHT      0.0175 41393.37 70.7830 XVGCSSQHT XVGCSSQHT
+2 VGCSSQHTL VGCSSQHTL      0.0380 33159.04 36.2805 VGCSSQHTL VGCSSQHTL
+3 GCSSQHTLL GCSSQHTLL      0.0277 37062.56 50.4062 GCSSQHTLL GCSSQHTLL
+4 CSSQHTLLH CSSQHTLLH      0.0572 26929.10[Thu Aug 15 15:17:48 2024]
+ 21.2475 CSSQHTLLH CSSQHTLLH
+5 SSQHTLLHR SSQHTLLHR      0.0286 36674.83 48.7864 SSQHTLLHR SSQHTLLHR
+6 SQHTLLHRL SQHTLLHRL      0.0652 24685.24 17.4992 SQHTLLHRL SQHTLLHRL
+  X1.log50k.2      nM.2  Rank.2    Ave NB
+1      0.0149 42543.957 57.2909 0.0167  0
+2      0.1732  7674.698  5.7457 0.0818  0
+3      0.0819 20608.185 14.8129 0.0440  0
+4      0.0755 22098.951 16.1654 0.1373  0
+5      0.0207 39979.957 47.1629 0.2096  1
+6      0.1833  6880.063  5.2686 0.1048  0
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P25_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P25_prime_output.txt
+    jobid: 15
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P25_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P25_prime_input.txt
+    wildcards: sample=P25
+    resources: tmpdir=/tmp
+
+[1] 6823
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P4_netmhc.xsl"
+[1] 6823
+  Pos   Peptide              ID      core     icore X1.log50k        nM    Rank
+1   0 XVGRSCILV chr1_1321053_G_ XVGRSCILV XVGRSCILV    0.2615  2951.316  7.1180
+2   1 VGRSCILVY chr1_1321053_G_ VGRSCILVY VGRSCILVY    0.0336 34763.402 53.2702
+3   2 GRSCILVYI chr1_1321053_G_ GRSCILVYI GRSCILVYI    0.1511  9745.527 14.2086
+4   3 RSCILVYIA chr1_1321053_G_ RSCILVYIA RSCILVYIA    0.1401 10982.726 15.3870
+5   4 SCILVYIAG chr1_1321053_G_ SCILVYIAG SCILVYIAG    0.0284 36776.555 59.3741
+6   5 CILVYIAGK chr1_1321053_G_ CILVYIAGK CILVYIAGK    0.0913 18618.299 23.5044
+     core.1   icore.1 X1.log50k.1       nM.1  Rank.1    core.2   icore.2
+1 XVGRSCILV XVGRSCILV      0.0491 29395.0488 35.0299 XVGRSCILV XVGRSCILV
+2 VGRSCILVY VGRSCILVY      0.0826 20458.2207 21.4277 VGRSCILVY VGRSCILVY
+3 GRSCILVYI GRSCILVYI      0.0458 30469.4883 37.3217 GRSCILVYI GRSCILVYI
+4 RSCILVYIA RSCILVYIA      0.0704 23337.0078 25.0468 RSCILVYIA RSCILVYIA
+5 SCILVYIAG SCILVYIAG      0.0238 38632.3633 61.0630 SCILVYIAG SCILVYIAG
+6 CILVYIAGK CILVYIAGK      0.4697   310.4492  1.7600 CILVYIAGK CILVYIAGK
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3      nM.3
+1      0.0140 42974.21 38.2027 XVGRSCILV XVGRSCILV      0.0315 35575.395
+2      0.0286 36693.47 17.2890 VGRSCILVY VGRSCILVY      0.0477 29842.723
+3      0.0161 41995.60 33.2241 GRSCILVYI GRSCILVYI      0.1905  6363.609
+4      0.0166 41798.41 32.3340 RSCILVYIA RSCILVYIA      0.0945 17983.533
+5      0.0140 42957.48 38.1041 SCILVYIAG SCILVYIAG      0.0170 41581.891
+6      0.0083 45714.91 59.6211 CILVYIAGK CILVYIAGK      0.0198 40349.348
+   Rank.3    core.4   icore.4 X1.log50k.4       nM.4  Rank.4    Ave NB
+1 39.6326 XVGRSCILV XVGRSCILV      0.0437 31151.1953 29.7546 0.0800  0
+2 23.3863 VGRSCILVY VGRSCILVY      0.1437 10565.2168  4.6182 0.0672  0
+3  2.1402 GRSCILVYI GRSCILVYI [1]      0.3750   864.3639  0.2933 0.1557 Pos  1   Peptide
+4              ID  7.7525      core "/xdisk/khasting/knodele/Mayo_human_data/peptides/P23_netmhc.xsl" RSCILVYIA     icore
+ RSCILVYIA X1.log50k      0.0399         nM 32478.6855
+1 32.9063   0 0.0723 XLLEDYRKI  0 chr1_1319393_C_
+5 XLLEDYRKI 66.4722 XLLEDYRKI SCILVYIAG    0.4215 SCILVYIAG   523.0657      0.0072
+2 46262.7578   1 90.8851 LLEDYRKIT 0.0181 chr1_1319393_C_  0 LLEDYRKIT
+6 LLEDYRKIT 59.9793    0.0725 CILVYIAGK 22820.6230 CILVYIAGK
+3      0.0335   2 34789.3516 LEDYRKITV 39.2470 chr1_1319393_C_ 0.1245 LEDYRKITV  1 LEDYRKITV
+    0.0609 25860.8574
+4   3 EDYRKITVD chr1_1319393_C_ EDYRKITVD EDYRKITVD    0.0073 46196.2148
+5   4 DYRKITVDK chr1_1319393_C_ DYRKITVDK DYRKITVDK    0.0119 43939.0117
+6   5 YRKITVDKK chr1_1319393_C_ YRKITVDKK YRKITVDKK    0.0153[1] 42351.0742
+ 22186 
+    Rank    core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1  2.8855 XLLEDYRKI XLLEDYRKI      0.0251 38127.83 31.5913 XLLEDYRKI XLLEDYRKI
+2 28.9221 LLEDYRKIT LLEDYRKIT      0.0048 47455.16 94.4705 LLEDYRKIT LLEDYRKIT
+3 33.5824 LEDYRKITV LEDYRKITV      0.0205 40034.50 39.2945 LEDYRKITV LEDYRKITV
+4 95.0741 EDYRKITVD EDYRKITVD      0.0059 46883.55 90.2345 EDYRKITVD EDYRKITVD
+5 86.9197 DYRKITVDK DYRKITVDK      0.0141 42916.14 56.0628 DYRKITVDK DYRKITVDK
+6 80.4071 YRKITVDKK YRKITVDKK      0.1030 16410.50  4.5289 YRKITVDKK YRKITVDKK
+  X1.log50k.2       nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3
+1      0.0332 34919.8359 29.6347 XLLEDYRKI XLLEDYRKI      0.1226 13268.44
+2      0.0170 41621.0625 58.2049 LLEDYRKIT LLEDYRKIT      0.0504 28995.14
+3      0.3969   682.3173  0.8163 LEDYRKITV LEDYRKITV      0.0795 21150.56
+4      0.0170 41599.8906 58.0765 EDYRKITVD EDYRKITVD      0.0115 44154.41
+5      0.0095 45096.3867 83.3110 DYRKITVDK DYRKITVDK      0.0226 39149.93
+6      0.0181 41112.6172 55.1011 YRKITVDKK YRKITVDKK      0.0502 29044.44
+   Rank.3    core.4   icore.4 X1.log50k.4     nM.4  Rank.4    Ave NB
+1 12.6759 XLLEDYRKI XLLEDYRKI      0.0847 19999.28 14.2606 0.1374  0
+2 39.5624 LLEDYRKIT LLEDYRKIT      0.0257 37852.43 40.7652 0.0341  0
+3 24.0338 LEDYRKITV LEDYRKITV      0.0634 25183.52 19.3056 0.1243  1
+4 89.2549 EDYRKITVD EDYRKITVD      0.0054 47142.48 86.1924 0.0094  0
+5 69.7504 DYRKITVDK DYRKITVDK      0.0072 46267.26 79.4497 0.0131  0
+6 39.6763 YRKITVDKK YRKITVDKK      0.0129 43472.28 61.8056 0.0399  0
+[1] 15337
+[1] 22186
+[1] 15337
+[Thu Aug 15 15:17:48 2024]
+Finished job 12.
+4 of 85 steps (5%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Aug 15 15:17:48 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P19_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P19_prime_output.txt
+    jobid: 11
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P19_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P19_prime_input.txt
+    wildcards: sample=P19
+    resources: tmpdir=/tmp
+
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P2A_netmhc.xsl"
+[Thu Aug 15 15:17:48 2024]
+Finished job 4.
+5 of 85 steps (6%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Aug 15 15:17:48 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P47_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P47_prime_output.txt
+    jobid: 3
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P47_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P47_prime_input.txt
+    wildcards: sample=P47
+    resources: tmpdir=/tmp
+
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P17_netmhc.xsl"
+  Pos   Peptide              ID      core     icore X1.log50k         nM
+1   0 XRRLRASFS chr1_966589_G_A XRRLRASFS XRRLRASFS    0.0226 39163.0625
+2   1 RRLRASFSK chr1_966589_G_A RRLRASFSK RRLRASFSK    0.1724  7745.6079
+3   2 RLRASFSKK chr1_966589_G_A RLRASFSKK RLRASFSKK    0.8017     8.5493
+4   3 LRASFSKKP chr1_966589_G_A LRASFSKKP LRASFSKKP    0.0143 42809.4648
+5   4 RASFSKKPS chr1_966589_G_A RASFSKKPS RASFSKKPS    0.0497 29192.8301
+6   5 ASFSKKPSL chr1_966589_G_A ASFSKKPSL ASFSKKPSL    0.0987 17180.8770
+     Rank    core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 69.8706 XRRLRASFS XRRLRASFS      0.0125 43686.33 69.8920 XRRLRASFS XRRLRASFS
+2  6.3192 RRLRASFSK RRLRASFSK      0.0175 41380.83 54.4094 RRLRASFSK RRLRASFSK
+3  0.0096 RLRASFSKK RLRASFSKK      0.0331 34945.54 28.0874 RLRASFSKK RLRASFSKK
+4 87.6235 LRASFSKKP LRASFSKKP      0.0077 45992.73 87.6701 LRASFSKKP LRASFSKKP
+5 32.1109 RASFSKKPS RASFSKKPS      0.0105 44624.61 77.0588 RASFSKKPS RASFSKKPS
+6 13.2722 ASFSKKPSL ASFSKKPSL      0.0491 29381.37 16.7807 ASFSKKPSL ASFSKKPSL
+  X1.log50k.2      nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3
+1      0.0369 33552.043 37.1647 XRRLRASFS XRRLRASFS      0.0078 45958.40
+2      0.0569 27014.318 22.1699 RRLRASFSK RRLRASFSK      0.0491 29395.05
+3      0.1324 11932.141  7.0511 RLRASFSKK RLRASFSKK      0.0072 46265.23
+4      0.0173 41458.344 72.6450 LRASFSKKP LRASFSKKP      0.0321 35317.29
+5      0.1506  9801.043  5.8611 RASFSKKPS RASFSKKPS      0.0122 43824.57
+6      0.2666  2795.349  2.3005 ASFSKKPSL ASFSKKPSL      0.0646 24865.12
+   Rank.3    core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1 81.8904 XRRLRASFS XRRLRASFS      0.0877 19359.06 15.7186 XRRLRASFS XRRLRASFS
+2 18.6552 RRLRASFSK RRLRASFSK      0.1380 11237.31  7.5731 RRLRASFSK RRLRASFSK
+3 84.5030 RLRASFSKK RLRASFSKK      0.0889 19103.34 15.4237 RLRASFSKK RLRASFSKK
+4 30.2798 LRASFSKKP LRASFSKKP      0.0457 30478.39 34.5490 LRASFSKKP LRASFSKKP
+5 65.1018 RASFSKKPS RASFSKKPS      0.0282 36869.38 52.3726 RASFSKKPS RASFSKKPS
+6 12.7734 ASFSKKPSL ASFSKKPSL      0.3140  1672.99  1.0020 ASFSKKPSL ASFSKKPSL
+  X1.log50k.5       nM.5  Rank.5    Ave NB
+1      0.0407 32180.3281 51.3442 0.0347  0
+2      0.0650 24760.6719 36.1992 0.0831  0
+3      0.0858 19770.3633 27.9942 0.1915  1
+4      0.0337 34719.4219 57.7411 0.0252  0
+5      0.0852 19890.7324 28.1939 0.0561  0
+6      0.5844    89.7468  0.4068 0.2296  2
+[1] 10873
+[Thu Aug 15 15:17:49 2024]
+Finished job 66.
+6 of 85 steps (7%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Aug 15 15:17:49 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P33_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P33_prime_output.txt
+    jobid: 65
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P33_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P33_prime_input.txt
+    wildcards: sample=P33
+    resources: tmpdir=/tmp
+
+[1][1][1] 10873
+ "/xdisk/khasting/knodele/Mayo_human_data/peptides/P11_netmhc.xsl" "/xdisk/khasting/knodele/Mayo_human_data/peptides/P40_netmhc.xsl"
+
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P58_netmhc.xsl"
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P41_netmhc.xsl"
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XQEGRLEAF chr1_1974148_G_ XQEGRLEAF XQEGRLEAF    0.1039 16244.27  8.7465
+2   1 QEGRLEAFW chr1_1974148_G_ QEGRLEAFW QEGRLEAFW    0.0591 26381.73 17.0239
+3   2 EGRLEAFWT chr1_1974148_G_ EGRLEAFWT EGRLEAFWT    0.0100 44860.36 74.3018
+4   3 GRLEAFWTA chr1_1974148_G_ GRLEAFWTA GRLEAFWTA    0.0883 19222.77 10.7422
+5   4 RLEAFWTAD chr1_1974148_G_ RLEAFWTAD RLEAFWTAD    0.0285 36721.29 35.3912
+6   5 LEAFWTADR chr1_1974148_G_ LEAFWTADR LEAFWTADR    0.0220 39423.26 44.2764
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XQEGRLEAF XQEGRLEAF      0.0792 21217.26  8.3746 XQEGRLEAF XQEGRLEAF
+2 QEGRLEAFW QEGRLEAFW      0.0215 39619.51 45.0357 QEGRLEAFW QEGRLEAFW
+3 EGRLEAFWT EGRLEAFWT      0.0133 43302.32 67.1371 EGRLEAFWT EGRLEAFWT
+4 GRLEAFWTA GRLEAFWTA      0.0314 35581.96 29.8594 GRLEAFWTA GRLEAFWTA
+5 RLEAFWTAD RLEAFWTAD      0.0096 45073.97 80.6005 RLEAFWTAD RLEAFWTAD
+6 LEAFWTADR LEAFWTADR      0.0503 28998.90 16.2398 LEAFWTADR LEAFWTADR
+  X1.log50k.2      nM.2  Rank.2    core.3   icore.3 X1.log50k.3      nM.3
+1      0.3015  1914.941  4.0821 XQEGRLEAF XQEGRLEAF      0.1157 14291.668
+2      0.0675 24097.027 36.4716 QEGRLEAFW QEGRLEAFW      0.1036 16295.137
+3      0.0153 42368.938 89.9601 EGRLEAFWT EGRLEAFWT      0.0143 42845.148
+4      0.0533 28081.543 45.7545 GRLEAFWTA GRLEAFWTA      0.1714  7827.752
+5      0.0769 21759.190 31.7869 RLEAFWTAD RLEAFWTAD      0.0136 43158.273
+6      0.0614 25724.959 40.0557 LEAFWTADR LEAFWTADR      0.0276 37107.496
+   Rank.3    core.4   icore.4 X1.log50k.4     nM.4  Rank.4    Ave NB
+1  4.5238 XQEGRLEAF XQEGRLEAF      0.0857 19779.78 14.0574 0.1372  0
+2  5.6387 QEGRLEAFW QEGRLEAFW      0.0085 45615.11 74.7076 0.0520  0
+3 58.9016 EGRLEAFWT EGRLEAFWT      0.0088 45483.04 73.8464 0.0123  0
+4  1.9192 GRLEAFWTA GRLEAFWTA      0.0442 30980.44 26.8409 0.0777  1
+5 60.7898 RLEAFWTAD RLEAFWTAD      0.0172 41519.86 52.9150 0.0292  0
+6 35.1160 LEAFWTADR LEAFWTADR      0.0187 40837.29 50.1920 0.0360  0
+[1] 14608
+[1] 14608
+  Pos   Peptide              ID      core     icore X1.log50k         nM
+1   0 XDDSTSGLT chr1_35736523_C XDDSTSGLT XDDSTSGLT    0.0036 48094.0391
+2   1 DDSTSGLTQ chr1_35736523_C DDSTSGLTQ DDSTSGLTQ    0.0042 47787.4922
+3   2 DSTSGLTQS chr1_35736523_C DSTSGLTQS DSTSGLTQS    0.0078 45943.9961
+4   3 STSGLTQSI chr1_35736523_C STSGLTQSI STSGLTQSI    0.4899   249.4547
+5   4 TSGLTQSIF chr1_35736523_C TSGLTQSIF TSGLTQSIF    0.1455 10361.5566
+6   5 SGLTQSIFK chr1_35736523_C SGLTQSIFK SGLTQSIFK    0.0470 30054.6562
+     Rank    core.1   icore.1 X1.log50k.1      nM.1  Rank.1    core.2   icore.2
+1 95.7187 XDDSTSGLT XDDSTSGLT      0.0104 44683.070 87.3935 XDDSTSGLT XDDSTSGLT
+2 95.0143 DDSTSGLTQ DDSTSGLTQ      0.0253 38015.773 58.7845 DDSTSGLTQ DDSTSGLTQ
+3 84.7209 DSTSGLTQS DSTSGLTQS      0.0825 20477.268 21.4500 DSTSGLTQS DSTSGLTQS
+4  0.4256 STSGLTQSI STSGLTQSI      0.1609  8766.494 10.4632 STSGLTQSI STSGLTQSI
+5  8.0747 TSGLTQSIF TSGLTQSIF      0.0554 27445.037 31.3579 TSGLTQSIF TSGLTQSIF
+6 29.5259 SGLTQSIFK SGLTQSIFK      0.2771  2493.477  5.1179 SGLTQSIFK SGLTQSIFK
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3      nM.3
+1      0.0161 41989.23 73.7410 XDDSTSGLT XDDSTSGLT      0.0082 45747.559
+2      0.0237 38693.03 51.8976 DDSTSGLTQ DDSTSGLTQ      0.0076 46073.422
+3      0.0120 43900.04 86.6897 DSTSGLTQS DSTSGLTQS      0.0275 37122.766
+4      0.0639 25031.93 14.0378 STSGLTQSI STSGLTQSI      0.2909  2149.142
+5      0.0450 30716.09 22.6549 TSGLTQSIF TSGLTQSIF      0.3211  1549.451
+6      0.0277 37058.16 43.1558 SGLTQSIFK SGLTQSIFK      0.0578 26755.994
+   Rank.3    core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1 95.6804 XDDSTSGLT XDDSTSGLT      0.0181 41091.70 59.7358 XDDSTSGLT XDDSTSGLT
+2 96.0253 DDSTSGLTQ DDSTSGLTQ      0.0078 45929.09 93.2807 DDSTSGLTQ DDSTSGLTQ
+3 64.5681 DSTSGLTQS DSTSGLTQS      0.0122 43802.78 79.4014 DSTSGLTQS DSTSGLTQS
+4  2.2302 STSGLTQSI STSGLTQSI      0.0572 26935.51 10.4951 STSGLTQSI STSGLTQSI
+5  1.7087 TSGLTQSIF TSGLTQSIF      0.0575 26830.21 10.3414 TSGLTQSIF TSGLTQSIF
+6 33.8418 SGLTQSIFK SGLTQSIFK      0.0449 30745.70 17.1721 SGLTQSIFK SGLTQSIFK
+  X1.log50k.5      nM.5  Rank.5    Ave NB
+1      0.0081 45811.445 88.3555 0.0108  0
+2      0.0069 46390.570 91.5569 0.0126  0
+3      0.0145 42738.652 70.5425 0.0261  0
+4      0.1880  6539.647  2.4580 0.2085  1
+5      0.0781 21481.293 13.6864 0.1171  1
+6      0.0671 24192.369 17.1555 0.0869  0
+[1] 7102
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XVVLPVVPA chr1_1405716_T_ XVVLPVVPA XVVLPVVPA    0.0140 42986.30 61.6226
+2   1 VVLPVVPAT chr1_1405716_T_ VVLPVVPAT VVLPVVPAT    0.0267 37441.03 37.4726
+3   2 VLPVVPATQ chr1_1405716_T_ VLPVVPATQ VLPVVPATQ    0.0274 37179.43 36.6948
+4   3 LPVVPATQE chr1_1405716_T_ LPVVPATQE LPVVPATQE    0.0047 47506.03 93.9221
+5   4 PVVPATQEA chr1_1405716_T_ PVVPATQEA PVVPATQEA    0.0133 43314.98 63.6479
+6   5 VVPATQEAE chr1_1405716_T_ VVPATQEAE VVPATQEAE    0.0115 44165.89 69.2839
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XVVLPVVPA XVVLPVVPA      0.1026 16475.26  5.5267 XVVLPVVPA XVVLPVVPA
+2 VVLPVVPAT VVLPVVPAT      0.0465 30218.34 18.0660 VVLPVVPAT VVLPVVPAT
+3 VLPVVPATQ VLPVVPATQ      0.0367 33630.55 24.7544 VLPVVPATQ VLPVVPATQ
+4 LPVVPATQE LPVVPATQE      0.0164 41853.16 57.3420 LPVVPATQE LPVVPATQE
+5 PVVPATQEA PVVPATQEA      0.0404 32283.89 21.7957 PVVPATQEA PVVPATQEA
+6 VVPATQEAE VVPATQEAE      0.0266 37501.44 36.1304 VVPATQEAE VVPATQEAE
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0779 21521.30 14.7327 XVVLPVVPA XVVLPVVPA      0.0306 35914.58 45.5436
+2      0.0755 22099.19 15.3792 VVLPVVPAT VVLPVVPAT      0.0218 39506.94 65.9195
+3      0.0210 39854.71 63.5515 VLPVVPATQ VLPVVPATQ      0.0136 43173.22 88.5711
+4      0.1331 11847.11  6.9978 LPVVPATQE LPVVPATQE      0.0128 43511.32 90.3169
+5      0.0344 34468.64 40.1048 PVVPATQEA PVVPATQEA      0.0161 42007.41 81.9423
+6      0.0248 38243.08 55.2952 VVPATQEAE VVPATQEAE      0.0084 45633.85 96.0056
+     core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1 XVVLPVVPA XVVLPVVPA      0.0368 33570.20 42.2010 XVVLPVVPA XVVLPVVPA
+2 VVLPVVPAT VVLPVVPAT      0.0689 23712.93 21.7504 VVLPVVPAT VVLPVVPAT
+3 VLPVVPATQ VLPVVPATQ      0.0524 28360.93 30.0233 VLPVVPATQ VLPVVPATQ
+4 LPVVPATQE LPVVPATQE      0.0150 42500.71 75.4903 LPVVPATQE LPVVPATQE
+5 PVVPATQEA PVVPATQEA      0.0260 37755.49 55.3969 PVVPATQEA PVVPATQEA
+6 VVPATQEAE VVPATQEAE      0.0236 38730.30 59.0349 VVPATQEAE VVPATQEAE
+  X1.log50k.5      nM.5  Rank.5    Ave NB
+1      0.1982  5856.194  9.2577 0.0767  0
+2      0.2537  3211.305  5.9449 0.0822  0
+3      0.1044 16160.113 22.5237 0.0426  0
+4      0.0414 31944.422 50.7594 0.0373  0
+5      0.1023 16525.070 23.0499 0.0387  0
+6      0.0513 28705.455 43.7238 0.0244  0
+[1] 14239
+[1] 14239
+[1] 7102
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XHVEGFKER chr1_1338381_C_ XHVEGFKER XHVEGFKER    0.0115 44134.83 88.1287
+2   1 HVEGFKERQ chr1_1338381_C_ HVEGFKERQ HVEGFKERQ    0.0387 32903.14 32.0408
+3   2 VEGFKERQE chr1_1338381_C_ VEGFKERQE VEGFKERQE    0.0061 46808.02 96.3622
+4   3 EGFKERQEA chr1_1338381_C_ EGFKERQEA EGFKERQEA    0.0190 40693.52 68.5209
+5   4 GFKERQEAR chr1_1338381_C_ GFKERQEAR GFKERQEAR    0.0135 43193.77 83.0680
+6   5 FKERQEARK chr1_1338381_C_ FKERQEARK FKERQEARK    0.0240 38572.64 56.7846
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XHVEGFKER XHVEGFKER      0.0206 40013.28 86.2918 XHVEGFKER XHVEGFKER
+2 HVEGFKERQ HVEGFKERQ      0.0174 41415.75 90.8721 HVEGFKERQ HVEGFKERQ
+3 VEGFKERQE VEGFKERQE      0.0217 39531.74 84.5987 VEGFKERQE VEGFKERQE
+4 EGFKERQEA EGFKERQEA      0.1348 11629.30 13.0922 EGFKERQEA EGFKERQEA
+5 GFKERQEAR GFKERQEAR      0.0759 22006.37 30.1831 GFKERQEAR GFKERQEAR
+6 FKERQEARK FKERQEARK      0.0256 37903.24 78.4459 FKERQEARK FKERQEARK
+  X1.log50k.2     nM.2  Rank.2    Ave NB
+1      0.0448 30808.62 28.9733 0.0256  0
+2      0.0137 43109.73 72.5777 0.0233  0
+3      0.0049 47428.98 95.6577 0.0109  0
+4      0.0402 32368.53 32.6363 0.0647  0
+5      0.0676 24048.84 16.9439 0.0523  0
+6      0.0309 35795.87 42.2089 0.0268  0
+[1] 21790
+  Pos   Peptide              ID      core     icore X1.log50k        nM    Rank
+1   0 XQKKTMKLS chr1_2496640_C_ XQKKTMKLS XQKKTMKLS    0.0104 44688.863 73.0536
+2   1 QKKTMKLSW chr1_2496640_C_ QKKTMKLSW QKKTMKLSW    0.0367 33597.449 27.9684
+3   2 KKTMKLSWA chr1_2496640_C_ KKTMKLSWA KKTMKLSWA    0.0126 43611.250 65.5161
+4   3 KTMKLSWAL chr1_2496640_C_ KTMKLSWAL KTMKLSWAL    0.4637   331.315  0.5133
+5   4 TMKLSWALS chr1_2496640_C_ TMKLSWALS TMKLSWALS    0.0426 31551.113 24.1950
+6   5 MKLSWALSD chr1_2496640_C_ MKLSWALSD MKLSWALSD    0.0163 41909.344 55.4911
+     core.1   icore.1 X1.log50k.1      nM.1  Rank.1    core.2   icore.2
+1 XQKKTMKLS XQKKTMKLS      0.0165 41834.598 73.5871 XQKKTMKLS XQKKTMKLS
+2 QKKTMKLSW QKKTMKLSW      0.0333 34868.504 44.4591 QKKTMKLSW QKKTMKLSW
+3 KKTMKLSWA KKTMKLSWA      0.0114 44211.773 86.0407 KKTMKLSWA KKTMKLSWA
+4 KTMKLSWAL KTMKLSWAL      0.3030  1883.543  2.1418 KTMKLSWAL KTMKLSWAL
+5 TMKLSWALS TMKLSWALS      0.0965 17591.516 12.9832 TMKLSWALS TMKLSWALS
+6 MKLSWALSD MKLSWALSD      0.0268 37432.914 53.5677 MKLSWALSD MKLSWALSD
+  X1.log50k.2      nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3
+1      0.0099 44936.625 87.9633 XQKKTMKLS XQKKTMKLS      0.0468 30129.86
+2      0.0329 35032.617 40.1032 QKKTMKLSW QKKTMKLSW      0.0256 37915.14
+3      0.0094 45157.910 89.2458 KKTMKLSWA KKTMKLSWA      0.0458 30446.43
+4      0.2678  2759.349  2.5871 KTMKLSWAL KTMKLSWAL      0.1106 15117.99
+5      0.0348 34312.719 37.9863 TMKLSWALS TMKLSWALS      0.0795 21147.82
+6      0.0574 26875.252 22.6615 MKLSWALSD MKLSWALSD      0.0489 29461.91
+   Rank.3    core.4   icore.4 X1.log50k.4      nM.4  Rank.4    core.5   icore.5
+1 21.5743 XQKKTMKLS XQKKTMKLS      0.0137 43134.453 74.3368 XQKKTMKLS XQKKTMKLS
+2 47.9336 QKKTMKLSW QKKTMKLSW      0.0197 40420.137 55.3619 QKKTMKLSW QKKTMKLSW
+3 22.2237 KKTMKLSWA KKTMKLSWA      0.0255 37932.359 41.6025 KKTMKLSWA KKTMKLSWA
+4  6.5883 KTMKLSWAL KTMKLSWAL      0.1508  9783.985  0.7392 KTMKLSWAL KTMKLSWAL
+5 10.3141 TMKLSWALS TMKLSWALS      0.0319 35398.395 30.6870 TMKLSWALS TMKLSWALS
+6 20.2965 MKLSWALSD MKLSWALSD      0.0179 41216.391 60.5871 MKLSWALSD MKLSWALSD
+  X1.log50k.5      nM.5  Rank.5    Ave NB
+1      0.0258 37807.391 46.6201 0.0205  0
+2      0.0790 21262.998 12.3974 0.0379  0
+3      0.0621 25536.934 17.6799 0.0278  0
+4      0.1829  6909.004  2.4512 0.2465  2
+5      0.0365 33689.551 33.8370 0.0536  0
+6      0.0218 39509.926 53.2908 0.0315  0
+[1] 25345
+[1] 21790
+[Thu Aug 15 15:17:49 2024]
+Finished job 64.
+7 of 85 steps (8%) done
+Select jobs to execute...
+[1] 25345
+Execute 1 jobs...
+
+[Thu Aug 15 15:17:49 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P55_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P55_prime_output.txt
+    jobid: 63
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P55_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P55_prime_input.txt
+    wildcards: sample=P55
+    resources: tmpdir=/tmp
+
+  Pos   Peptide              ID      core     icore X1.log50k        nM    Rank
+1   0 XEPAKTSLQ chr1_6253778_G_ XEPAKTSLQ XEPAKTSLQ    0.0083 45713.438 93.5242
+2   1 EPAKTSLQI chr1_6253778_G_ EPAKTSLQI EPAKTSLQI    0.0312 35657.484 55.8826
+3   2 PAKTSLQIT chr1_6253778_G_ PAKTSLQIT PAKTSLQIT    0.0134 43238.199 84.0692
+4   3 AKTSLQITG chr1_6253778_G_ AKTSLQITG AKTSLQITG    0.0109 44449.207 88.9700
+5   4 KTSLQITGL chr1_6253778_G_ KTSLQITGL KTSLQITGL    0.2019  5626.443 10.1286
+6   5 TSLQITGLV chr1_6253778_G_ TSLQITGLV TSLQITGLV    0.1848  6770.770 11.2817
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XEPAKTSLQ XEPAKTSLQ      0.0063 46706.86 88.4756 XEPAKTSLQ XEPAKTSLQ
+2 EPAKTSLQI EPAKTSLQI      0.0293 36429.23 34.5953 EPAKTSLQI EPAKTSLQI
+3 PAKTSLQIT PAKTSLQIT      0.0062 46749.83 88.7995 PAKTSLQIT PAKTSLQIT
+4 AKTSLQITG AKTSLQITG      0.0099 44939.06 74.8731 AKTSLQITG AKTSLQITG
+5 KTSLQITGL KTSLQITGL      0.0687 23770.73 14.4321 KTSLQITGL KTSLQITGL
+6 TSLQITGLV TSLQITGLV      0.0911 18657.01 10.3358 TSLQITGLV TSLQITGLV
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3      nM.3
+1      0.0233 38875.99 82.1463 XEPAKTSLQ XEPAKTSLQ      0.0130 43443.582
+2      0.1388 11133.12 12.4724 EPAKTSLQI EPAKTSLQI      0.0613 25762.828
+3      0.0348 34314.95 64.8677 PAKTSLQIT PAKTSLQIT      0.0129 43505.684
+4      0.0254 38005.09 78.8356 AKTSLQITG AKTSLQITG      0.0158 42140.336
+5      0.0964 17614.94 22.0539 KTSLQITGL KTSLQITGL      0.1610  8759.763
+6      0.0699 23482.13 33.3636 TSLQITGLV TSLQITGLV      0.1476 10130.206
+   Rank.3    Ave NB
+1 74.3938 0.0127  0
+2 19.5245 0.0652  0
+3 74.7300 0.0168  0
+4 67.4401 0.0155  0
+5  3.5703 0.1320  0
+6  4.3644 0.1233  0
+[1] 32857
+[Thu Aug 15 15:17:49 2024]
+Finished job 6.
+8 of 85 steps (9%) done
+[Thu Aug 15 15:17:49 2024]
+Finished job 52.
+9 of 85 steps (11%) done
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XGVGECGDH chr1_1049705_C_ XGVGECGDH XGVGECGDH    0.0140 42951.91 88.2449
+2   1 GVGECGDHL chr1_1049705_C_ GVGECGDHL GVGECGDHL    0.0214 39648.68 72.3680
+3   2 VGECGDHLC chr1_1049705_C_ VGECGDHLC VGECGDHLC    0.0111 44357.91 93.6493
+4   3 GECGDHLCL chr1_1049705_C_ GECGDHLCL GECGDHLCL    0.0236 38731.97 67.7700Select jobs to execute...
+
+5   4 ECGDHLCLP chr1_1049705_C_ ECGDHLCLP ECGDHLCLP    0.0098 44986.73 95.2528
+6   5 CGDHLCLPN chr1_1049705_C_ CGDHLCLPN CGDHLCLPN    0.0357 33980.95 46.8621
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XGVGECGDH XGVGECGDH      0.0079 45914.17 95.4277 XGVGECGDH XGVGECGDH
+2 GVGECGDHL GVGECGDHL      0.0452 30667.95 29.3511 GVGECGDHL GVGECGDHL
+3 VGECGDHLC VGECGDHLC      0.0126 43609.37 85.3723 VGECGDHLC VGECGDHLC
+4 GECGDHLCL GECGDHLCL      0.0252 38082.05 54.5481 GECGDHLCL GECGDHLCL
+5 ECGDHLCLP ECGDHLCLP      0.0078 45942.99 95.4613 ECGDHLCLP ECGDHLCLP
+6 CGDHLCLPN CGDHLCLPN      0.0211 39799.54 63.2586 CGDHLCLPN CGDHLCLPN
+  X1.log50k.2     nM.2  Rank.2    Ave NB
+1      0.0105 44608.67 86.1685 0.0108  0
+2      0.0556 27387.49 28.0492 0.0407  0
+3      0.0166 41792.53 72.1371 0.0134  0
+4      0.0428 31477.46 36.8911 0.0305  0
+5      0.0062 46764.00 95.3385 0.0079  0
+6      0.0153 42355.20 74.7758 0.0240  0
+[1] 36982
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XTARRKVRL chr1_1295771_C_ XTARRKVRL XTARRKVRL    0.0469 30088.50 33.0544
+2   1 TARRKVRLQ chr1_1295771_C_ TARRKVRLQ TARRKVRLQ    0.0376 33280.51 41.8011
+3   2 ARRKVRLQP chr1_1295771_C_ ARRKVRLQP ARRKVRLQP    0.0124 43709.52 87.6797
+4   3 RRKVRLQPV chr1_1295771_C_ RRKVRLQPV RRKVRLQPV    0.0315 35546.15 49.5590
+5   4 RKVRLQPVL chr1_1295771_C_ RKVRLQPVL RKVRLQPVL    0.0219 39471.49 66.6065
+6   5 KVRLQPVLP chr1_1295771_C_ KVRLQPVLP KVRLQPVLP    0.0554 27450.97 27.5759
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XTARRKVRL XTARRKVRL      0.0702 23388.82 30.2158 XTARRKVRL XTARRKVRL
+2 TARRKVRLQ TARRKVRLQ      0.0704 23331.70 30.1064 TARRKVRLQ TARRKVRLQ
+3 ARRKVRLQP ARRKVRLQP      0.0290 36515.64 65.4509 ARRKVRLQP ARRKVRLQP
+4 RRKVRLQPV RRKVRLQPV      0.1284 12459.35 14.5700 RRKVRLQPV RRKVRLQPV
+5 RKVRLQPVL RKVRLQPVL      0.0448 30780.63 47.4796 RKVRLQPVL RKVRLQPVL
+6 KVRLQPVLP KVRLQPVLP      0.0938 18123.59 21.6574 KVRLQPVLP KVRLQPVLP
+  X1.log50k.2       nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3
+1      0.0475 29893.7871 38.9500 XTARRKVRL XTARRKVRL      0.0206 40030.60
+2      0.0417 31851.9336 45.4816 TARRKVRLQ TARRKVRLQ      0.0157 42166.35
+3      0.2284  4222.8257  4.8087 ARRKVRLQP ARRKVRLQP      0.0213 39700.21
+4      0.5266   167.6516  0.5379 RRKVRLQPV RRKVRLQPV      0.0313 35647.83
+5      0.3781   836.4402  1.7495 RKVRLQPVL RKVRLQPVL      0.0387 32907.40
+6      0.0400 32438.6602 47.6581 KVRLQPVLP KVRLQPVLP      0.0199 40321.41
+   Rank.3    core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1 69.2501 XTARRKVRL XTARRKVRL      0.1249 12941.49 12.2859 XTARRKVRL XTARRKVRL
+2 82.9011 TARRKVRLQ TARRKVRLQ      0.0433 31296.80 45.1151 TARRKVRLQ TARRKVRLQ
+3 67.1538 ARRKVRLQP ARRKVRLQP      0.0236 38730.30 68.2436 ARRKVRLQP ARRKVRLQP
+4 44.2796 RRKVRLQPV RRKVRLQPV      0.0900 18883.05 20.3695 RRKVRLQPV RRKVRLQPV
+5 33.3019 RKVRLQPVL RKVRLQPVL      0.1145 14492.71 14.2008 RKVRLQPVL RKVRLQPVL
+6 71.1463 KVRLQPVLP KVRLQPVLP      0.0592 26344.63 33.7556 KVRLQPVLP KVRLQPVLP
+  X1.log50k.5     nM.5  Rank.5    Ave NB
+1      0.0555 27416.26 15.1721 0.0610  0
+2      0.0092 45263.57 73.3149 0.0363  0
+3      0.0074 46160.74 80.9474 0.0537  0
+4      0.0225 39208.43 40.0138 0.1384  1
+5      0.0455 30560.96 19.6249 0.1072  1
+6      0.0173 41470.03 49.2511 0.0476  0
+[1] 5590
+[1] 5590
+[1] 32857
+[1] "/xdisk/khasting/knodele/Mayo_human_data/peptides/P49_netmhc.xsl"
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XDCFSEKRA chr1_939111_G_A XDCFSEKRA XDCFSEKRA    0.0121 43887.70 86.8390
+2   1 DCFSEKRAQ chr1_939111_G_A DCFSEKRAQ DCFSEKRAQ    0.0071 46310.82 95.7733
+3   2 CFSEKRAQS chr1_939111_G_A CFSEKRAQS CFSEKRAQS    0.0235 38789.42 57.9373
+4   3 FSEKRAQSE chr1_939111_G_A FSEKRAQSE FSEKRAQSE    0.0693 23626.88 12.4125
+5   4 SEKRAQSES chr1_939111_G_A SEKRAQSES SEKRAQSES    0.0116 44099.04 87.9423
+6   5 EKRAQSESP chr1_939111_G_A EKRAQSESP EKRAQSESP    0.0039 47923.66 97.6611
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XDCFSEKRA XDCFSEKRA      0.0082 45752.52 93.6596 XDCFSEKRA XDCFSEKRA
+2 DCFSEKRAQ DCFSEKRAQ      0.0061 46786.26 95.8642 DCFSEKRAQ DCFSEKRAQ
+3 CFSEKRAQS CFSEKRAQS      0.0249 38181.50 64.1744 CFSEKRAQS CFSEKRAQS
+4 FSEKRAQSE FSEKRAQSE      0.0207 39966.55 70.8204 FSEKRAQSE FSEKRAQSE
+5 SEKRAQSES SEKRAQSES      0.0088 45450.55 92.6106 SEKRAQSES SEKRAQSES
+6 EKRAQSESP EKRAQSESP      0.0043 47708.45 97.0793 EKRAQSESP EKRAQSESP
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0107 44524.29 96.1999 XDCFSEKRA XDCFSEKRA      0.0108 44474.70 95.7514
+2      0.0272 37263.21 75.9727 DCFSEKRAQ DCFSEKRAQ      0.0101 44847.25 96.0540
+3      0.1209 13521.78 15.6695 CFSEKRAQS CFSEKRAQS      0.0354 34086.65 54.2491
+4      0.1147 14456.06 17.0161 FSEKRAQSE FSEKRAQSE      0.0237 38700.14 75.3318
+5      0.0521 28443.91 45.7572 SEKRAQSES SEKRAQSES      0.0291 36502.62 64.8788
+6      0.0563 27175.85 42.2522 EKRAQSESP EKRAQSESP      0.0205 40060.92 81.7495
+     core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1 XDCFSEKRA XDCFSEKRA      0.0062 46764.00 96.1336 XDCFSEKRA XDCFSEKRA
+2 DCFSEKRAQ DCFSEKRAQ      0.0084 45678.81 94.4210 DCFSEKRAQ DCFSEKRAQ
+3 CFSEKRAQS CFSEKRAQS      0.0345 34407.54 53.7513 CFSEKRAQS CFSEKRAQS
+4 FSEKRAQSE FSEKRAQSE      0.0644 24913.85 30.9215 FSEKRAQSE FSEKRAQSE
+5 SEKRAQSES SEKRAQSES      0.0158 42123.03 81.2728 SEKRAQSES SEKRAQSES
+6 EKRAQSESP EKRAQSESP      0.0079 45902.27 95.0588 EKRAQSESP EKRAQSESP
+  X1.log50k.5     nM.5  Rank.5    Ave NB
+1      0.0041 47811.79 96.3190 0.0087  0
+2      0.0087 45487.46 86.4628 0.0113  0
+3      0.0469 30115.85 27.4250 0.0477  0
+4      0.0425 31578.43 30.7516 0.0559  0
+5      0.0122 43826.01 76.5995 0.0216  0
+6      0.0120 43910.00 77.0945 0.0175  0
+[1] 17110
+Execute 2 jobs...
+
+[Thu Aug 15 15:17:49 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P54_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P54_prime_output.txt
+    jobid: 5
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P54_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P54_prime_input.txt
+    wildcards: sample=P54
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:49 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P24_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P24_prime_output.txt
+    jobid: 51
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P24_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P24_prime_input.txt
+    wildcards: sample=P24
+    resources: tmpdir=/tmp
+
+[1] 36982
+[1] 17110
+[Thu Aug 15 15:17:49 2024]
+Finished job 32.
+10 of 85 steps (12%) done
+[Thu Aug 15 15:17:49 2024]
+Finished job 46.
+11 of 85 steps (13%) done
+[Thu Aug 15 15:17:49 2024]
+Finished job 30.
+12 of 85 steps (14%) done
+[Thu Aug 15 15:17:49 2024]
+Finished job 70.
+13 of 85 steps (15%) done
+Select jobs to execute...
+  Pos   Peptide              ID      core     icore X1.log50k        nM    Rank
+1   0 XSCDRVTCD chr1_1042044_G_ XSCDRVTCD XSCDRVTCD    0.0138 43074.770 84.7049
+2   1 SCDRVTCDR chr1_1042044_G_ SCDRVTCDR SCDRVTCDR    0.0709 23223.908 20.9146
+3   2 CDRVTCDRA chr1_1042044_G_ CDRVTCDRA CDRVTCDRA    0.0219 39435.184 66.4258
+4   3 DRVTCDRAY chr1_1042044_G_ DRVTCDRAY DRVTCDRAY    0.0215 39631.090 67.3991
+5   4 RVTCDRAYR chr1_1042044_G_ RVTCDRAYR RVTCDRAYR    0.4662   322.236  1.3645
+6   5 VTCDRAYRP chr1_1042044_G_ VTCDRAYRP VTCDRAYRP    0.0448 30802.953 34.8314
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XSCDRVTCD XSCDRVTCD      0.0054 47140.44 93.7927 XSCDRVTCD XSCDRVTCD
+2 SCDRVTCDR SCDRVTCDR      0.0068 46462.91 89.9084 SCDRVTCDR SCDRVTCDR
+3 CDRVTCDRA CDRVTCDRA      0.0151 42451.54 64.7713 CDRVTCDRA CDRVTCDRA
+4 DRVTCDRAY DRVTCDRAY      0.0139 43025.85 68.0307 DRVTCDRAY DRVTCDRAY
+5 RVTCDRAYR RVTCDRAYR      0.0267 37473.86 44.0282 RVTCDRAYR RVTCDRAYR
+6 VTCDRAYRP VTCDRAYRP      0.0250 38162.07 46.3096 VTCDRAYRP VTCDRAYRP
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0125 43675.00 91.0309 XSCDRVTCD XSCDRVTCD      0.0053 47197.60 89.8538
+2      0.0155 42276.44 83.5632 SCDRVTCDR SCDRVTCDR      0.0170 41612.50 49.9198
+3      0.0538 27932.44 20.5604 CDRVTCDRA CDRVTCDRA      0.0132 43351.09 59.5659
+4      0.0687 23788.23 14.2811 DRVTCDRAY DRVTCDRAY      0.0103 44742.59 69.1854
+5      0.0235 38756.71 61.2230 RVTCDRAYR RVTCDRAYR      0.0264 37592.44 34.8372
+6      0.0193 40594.12 72.9541 VTCDRAYRP VTCDRAYRP      0.0117 44077.57 64.3885
+     core.4   icore.4 X1.log50k.4     nM.4  Rank.4    Ave NB
+1 XSCDRVTCD XSCDRVTCD      0.0103 44709.68 81.1441 0.0095  0
+2 SCDRVTCDR SCDRVTCDR      0.0130 43441.71 73.2266 0.0246  0
+3 CDRVTCDRA CDRVTCDRA      0.0176 41332.95 61.6002 0.0243  0
+4 DRVTCDRAY DRVTCDRAY      0.1403 10954.13  4.4285 0.0509  0
+5 RVTCDRAYR RVTCDRAYR      0.0420 31740.81 28.9636 0.1170  1
+6 VTCDRAYRP VTCDRAYRP      0.0156 42233.00 66.2979 0.0233  0
+[1] 26254
+[1] 26254
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XTNAAGPSA chr1_1180240_C_ XTNAAGPSA XTNAAGPSA    0.0931 18257.43  7.3082
+2   1 TNAAGPSAV chr1_1180240_C_ TNAAGPSAV TNAAGPSAV    0.0508 28857.73 21.0244
+3   2 NAAGPSAVL chr1_1180240_C_ NAAGPSAVL NAAGPSAVL    0.0432 31346.27 27.2451
+4   3 AAGPSAVLL chr1_1180240_C_ AAGPSAVLL AAGPSAVLL    0.0478 29794.67 23.1665
+5   4 AGPSAVLLE chr1_1180240_C_ AGPSAVLLE AGPSAVLLE    0.0237 38692.60 57.4232
+6   5 GPSAVLLEG chr1_1180240_C_ GPSAVLLEG GPSAVLLEG    0.0208 39932.39 64.1694
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XTNAAGPSA XTNAAGPSA      0.0164 41873.55 55.2911 XTNAAGPSA XTNAAGPSA
+2 TNAAGPSAV TNAAGPSAV      0.0287 36637.55 35.1593 TNAAGPSAV TNAAGPSAV
+3 NAAGPSAVL NAAGPSAVL      0.0428 31450.57 24.0268 NAAGPSAVL NAAGPSAVL
+4 AAGPSAVLL AAGPSAVLL      0.0766 21829.69 12.7519 AAGPSAVLL AAGPSAVLL
+5 AGPSAVLLE AGPSAVLLE      0.0245 38347.11 40.3517 AGPSAVLLE AGPSAVLLE
+6 GPSAVLLEG GPSAVLLEG      0.0124 43727.48 66.3097 GPSAVLLEG GPSAVLLEG
+  X1.log50k.2      nM.2  Rank.2    core.3   icore.3 X1.log50k.3      nM.3
+1      0.0535 28033.881 44.6169 XTNAAGPSA XTNAAGPSA      0.0542 27816.027
+2      0.1128 14748.487 17.4672 TNAAGPSAV TNAAGPSAV      0.1077 15590.093
+3      0.1505  9811.225 10.8173 NAAGPSAVL NAAGPSAVL      0.1499  9880.792
+4      0.0648 24801.426 36.3200 AAGPSAVLL AAGPSAVLL      0.1515  9703.859
+5      0.0162 41966.980 92.3988 AGPSAVLLE AGPSAVLLE      0.0210 39834.879
+6      0.0607 25937.072 39.0760 GPSAVLLEG GPSAVLLEG      0.0193 40574.359
+   Rank.3    core.4   icore.4 X1.log50k.4      nM.4  Rank.4    Ave NB
+1 22.9065 XTNAAGPSA XTNAAGPSA      0.1304 12190.649  4.4712 0.0695  0
+2  8.0188 TNAAGPSAV TNAAGPSAV      0.0921 18467.229  8.2305 0.0784  0
+3  4.2216 NAAGPSAVL NAAGPSAVL      0.2768  2501.721  0.7639 0.1326  1
+4  4.1181 AAGPSAVLL AAGPSAVLL      0.3022  1901.664  0.5793 0.1286  1
+5 56.7675 AGPSAVLLE AGPSAVLLE      0.0203 40121.652 44.9500 0.0212  0
+6 59.9239 GPSAVLLEG GPSAVLLEG      0.0153 42368.473 54.6936 0.0257  0
+[1] 34426
+Execute 4 jobs...
+
+[Thu Aug 15 15:17:49 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P7_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P7_prime_output.txt
+    jobid: 45
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P7_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P7_prime_input.txt
+    wildcards: sample=P7
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:49 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P38_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P38_prime_output.txt
+    jobid: 31
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P38_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P38_prime_input.txt
+    wildcards: sample=P38
+    resources: tmpdir=/tmp
+
+[1] 34426
+
+[Thu Aug 15 15:17:49 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P37_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P37_prime_output.txt
+    jobid: 29
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P37_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P37_prime_input.txt
+    wildcards: sample=P37
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:49 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P11_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P11_prime_output.txt
+    jobid: 69
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P11_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P11_prime_input.txt
+    wildcards: sample=P11
+    resources: tmpdir=/tmp
+
+  Pos   Peptide              ID      core     icore X1.log50k        nM    Rank
+1   0 XKREVQLRL chr1_1233203_C_ XKREVQLRL XKREVQLRL    0.0227 39130.016 67.6629
+2   1 KREVQLRLF chr1_1233203_C_ KREVQLRLF KREVQLRLF    0.0218 39477.883 68.9564
+3   2 REVQLRLFY chr1_1233203_C_ REVQLRLFY REVQLRLFY    0.0442 30983.457 43.4421
+4   3 EVQLRLFYV chr1_1233203_C_ EVQLRLFYV EVQLRLFYV    0.3245  1494.068  4.9939
+5   4 VQLRLFYVY chr1_1233203_C_ VQLRLFYVY VQLRLFYVY    0.1200 13652.021 18.0325
+6   5 QLRLFYVYD chr1_1233203_C_ QLRLFYVYD QLRLFYVYD    0.0548 27642.920 36.6197
+     core.1   icore.1 X1.log50k.1      nM.1  Rank.1    core.2   icore.2
+1 XKREVQLRL XKREVQLRL      0.0190 40730.953 50.7168 XKREVQLRL XKREVQLRL
+2 KREVQLRLF KREVQLRLF      0.0304 35981.488 31.0426 KREVQLRLF KREVQLRLF
+3 REVQLRLFY REVQLRLFY      0.0791 21254.252  8.4003 REVQLRLFY REVQLRLFY
+4 EVQLRLFYV EVQLRLFYV      0.2431  3604.054  1.0399 EVQLRLFYV EVQLRLFYV
+5 VQLRLFYVY VQLRLFYVY      0.0739 22467.332  9.3045 VQLRLFYVY VQLRLFYVY
+6 QLRLFYVYD QLRLFYVYD      0.0094 45173.055 81.3818 QLRLFYVYD QLRLFYVYD
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0965 17607.13  8.8633 XKREVQLRL XKREVQLRL      0.0224 39222.44 40.0643
+2      0.1018 16617.22  7.9294 KREVQLRLF KREVQLRLF      0.0613 25749.17 13.2088
+3      0.0531 28137.50 24.4316 REVQLRLFY REVQLRLFY      0.0432 31340.17 20.9077
+4      0.1194 13732.31  5.5286 EVQLRLFYV EVQLRLFYV      0.0581 26665.54 14.2489
+5      0.0765 21855.70 13.8155 VQLRLFYVY VQLRLFYVY      0.0340 34612.89 27.3374
+6      0.0154 42347.39 78.9343 QLRLFYVYD QLRLFYVYD      0.0050 47354.09 91.0683
+     core.4   icore.4 X1.log50k.4      nM.4  Rank.4    Ave NB
+1 XKREVQLRL XKREVQLRL      0.1604  8814.999  5.7687 0.0642  0
+2 KREVQLRLF KREVQLRLF      0.3669   944.393  0.5992 0.1164  1
+3 REVQLRLFY REVQLRLFY      0.1521  9643.046  6.3837 0.0743  0
+4 EVQLRLFYV EVQLRLFYV      0.1126 14794.366 10.7458 0.1715  1
+5 VQLRLFYVY VQLRLFYVY      0.1321 11975.983  8.1807 0.0873  0
+6 QLRLFYVYD QLRLFYVYD      0.0153 42357.930 74.7886 0.0200  0
+[1] 28783
+  Pos   Peptide              ID      core     icore X1.log50k        nM    Rank
+1   0 XSCQNLTDF chr1_4772367_C_ XSCQNLTDF XSCQNLTDF    0.0307 35859.453 54.4929
+2   1 SCQNLTDFS chr1_4772367_C_ SCQNLTDFS SCQNLTDFS    0.0202 40172.039 75.0350
+3   2 CQNLTDFSS chr1_4772367_C_ CQNLTDFSS CQNLTDFSS    0.0383 33020.840 43.3921
+4   3 QNLTDFSSA chr1_4772367_C_ QNLTDFSSA QNLTDFSSA    0.0273 37199.555 60.5124
+5   4 NLTDFSSAR chr1_4772367_C_ NLTDFSSAR NLTDFSSAR    0.1882  6525.369  5.5772
+6   5 LTDFSSARV chr1_4772367_C_ LTDFSSARV LTDFSSARV    0.0620 25560.430 24.3972
+     core.1   icore.1 X1.log50k.1       nM.1  Rank.1    core.2   icore.2
+1 XSCQNLTDF XSCQNLTDF      0.0190 40690.8633 61.5890 XSCQNLTDF XSCQNLTDF
+2 SCQNLTDFS SCQNLTDFS      0.0144 42808.9961 73.6751 SCQNLTDFS SCQNLTDFS
+3 CQNLTDFSS CQNLTDFSS      0.0263 37614.8242 47.2983 CQNLTDFSS CQNLTDFSS
+4 QNLTDFSSA QNLTDFSSA      0.0323 35240.1797 38.7741 QNLTDFSSA QNLTDFSSA
+5 NLTDFSSAR NLTDFSSAR      0.5807    93.3398  0.2566 NLTDFSSAR NLTDFSSAR
+6 LTDFSSARV LTDFSSARV      0.0437 31153.5449 27.8749 LTDFSSARV LTDFSSARV
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0320 35376.94 38.8071 XSCQNLTDF XSCQNLTDF      0.1372 11326.18  7.7225
+2      0.0087 45530.79 89.6973 SCQNLTDFS SCQNLTDFS      0.0142 42870.66 75.4428
+3      0.0420 31753.86 28.2792 CQNLTDFSS CQNLTDFSS      0.0585 26553.26 22.1699
+4      0.0585 26550.96 17.6865 QNLTDFSSA QNLTDFSSA      0.0394 32649.57 33.5787
+5      0.0629 25311.10 15.7899 NLTDFSSAR NLTDFSSAR      0.0888 19124.85 13.6419
+6      0.0692 23647.36 13.5761 LTDFSSARV LTDFSSARV      0.0922 18430.10 13.0228
+     core.4   icore.4 X1.log50k.4      nM.4  Rank.4    core.5   icore.5
+1 XSCQNLTDF XSCQNLTDF      0.0291 36502.625 35.0068 XSCQNLTDF XSCQNLTDF
+2 SCQNLTDFS SCQNLTDFS      0.0142 42885.484 72.4983 SCQNLTDFS SCQNLTDFS
+3 CQNLTDFSS CQNLTDFSS      0.0281 36887.723 36.6587 CQNLTDFSS CQNLTDFSS
+4 QNLTDFSSA QNLTDFSSA      0.0262 37653.484 40.2580 QNLTDFSSA QNLTDFSSA
+5 NLTDFSSAR NLTDFSSAR      0.0553 27493.188 11.3183 NLTDFSSAR NLTDFSSAR
+6 LTDFSSARV LTDFSSARV      0.1517  9681.206  0.7264 LTDFSSARV LTDFSSARV
+  X1.log50k.5       nM.5  Rank.5    Ave NB
+1      0.0367 33626.5391 16.5264 0.0475  0
+2      0.0089 45433.8398 62.5619 0.0134  0
+3      0.0275 37131.1953 23.3552 0.0368  0
+4      0.0164 41861.7773 39.1179 0.0334  0
+5      0.0230 38995.1914 28.4475 0.1665  1
+6      0.3659   953.6444  0.1070 0.1308  2
+[1] 16120
+[1] 16120
+[Thu Aug 15 15:17:49 2024]
+Finished job 58.
+14 of 85 steps (16%) done
+[1] 28783
+[Thu Aug 15 15:17:49 2024]
+Finished job 56.
+15 of 85 steps (18%) done
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XLPAPPGAL chr1_1046497_C_ XLPAPPGAL XLPAPPGAL    0.0374 33361.63 44.5961
+2   1 LPAPPGALS chr1_1046497_C_ LPAPPGALS LPAPPGALS    0.0464 30262.82 34.9783
+3   2 PAPPGALSL chr1_1046497_C_ PAPPGALSL PAPPGALSL    0.0213 39690.74 72.5836
+4   3 APPGALSLA chr1_1046497_C_ APPGALSLA APPGALSLA    0.0294 36374.48 56.7816
+5   4 PPGALSLAP chr1_1046497_C_ PPGALSLAP PPGALSLAP    0.0104 44697.08 94.8668
+6   5 PGALSLAPS chr1_1046497_C_ PGALSLAPS PGALSLAPS    0.0192 40634.12 77.3448
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XLPAPPGAL XLPAPPGAL      0.0324 35213.12 60.9690 XLPAPPGAL XLPAPPGAL
+2 LPAPPGALS LPAPPGALS      0.0273 37199.55 67.9292 LPAPPGALS LPAPPGALS
+3 PAPPGALSL PAPPGALSL      0.0170 41599.43 83.9895 PAPPGALSL PAPPGALSL
+4 APPGALSLA APPGALSLA      0.0253 38010.84 70.8423 APPGALSLA APPGALSLA
+5 PPGALSLAP PPGALSLAP      0.0063 46691.71 96.7241 PPGALSLAP PPGALSLAP
+6 PGALSLAPS PGALSLAPS      0.0299 36182.93 64.2931 PGALSLAPS PGALSLAPS
+  X1.log50k.2      nM.2  Rank.2    core.3   icore.3 X1.log50k.3      nM.3
+1      0.1357 11512.620  6.8155 XLPAPPGAL XLPAPPGAL      0.0503 29009.565
+2      0.3945   700.563  0.9931 LPAPPGALS LPAPPGALS      0.3707   905.636
+3      0.0757 22035.435 15.3062 PAPPGALSL PAPPGALSL      0.0719 22973.484
+4      0.3385  1283.128  1.4149 APPGALSLA APPGALSLA      0.1027 16452.994
+5      0.0462 30340.209 28.6053 PPGALSLAP PPGALSLAP      0.0339 34632.363
+6      0.0220 39408.312 61.1693 PGALSLAPS PGALSLAPS      0.0197 40416.621
+   Rank.3    core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1 26.0645 XLPAPPGAL XLPAPPGAL      0.1066 15778.11  2.1531 XLPAPPGAL XLPAPPGAL
+2  1.2637 LPAPPGALS LPAPPGALS      0.0541 27840.72 11.8424 LPAPPGALS LPAPPGALS
+3 17.5861 PAPPGALSL PAPPGALSL      0.0609 25879.33  9.1009 PAPPGALSL PAPPGALSL
+4 11.3892 APPGALSLA APPGALSLA      0.0568 27050.58 10.6624 APPGALSLA APPGALSLA
+5 38.9234 PPGALSLAP PPGALSLAP      0.0069 46392.07 95.1977 PPGALSLAP PPGALSLAP
+6 61.8299 PGALSLAPS PGALSLAPS      0.0131 43379.70 76.1864 PGALSLAPS PGALSLAPS
+  X1.log50k.5      nM.5  Rank.5    Ave NB
+1      0.1726  7724.935  4.9770 0.0892  0
+2      0.0483 29646.734 32.6613 0.1569  2
+3      0.1394 11061.556  7.4372 0.0644  0
+4      0.0537 27956.644 29.1673 0.1011  1
+5      0.0051 47330.035 96.1767 0.0181  0
+6      0.0100 44889.500 87.5488 0.0190  0
+[1] 11737
+[Thu Aug 15 15:17:49 2024]
+Finished job 44.
+16 of 85 steps (19%) done
+Select jobs to execute...
+[1] 11737
+Execute 3 jobs...
+
+[Thu Aug 15 15:17:49 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P5_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P5_prime_output.txt
+    jobid: 43
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P5_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P5_prime_input.txt
+    wildcards: sample=P5
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:49 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P22_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P22_prime_output.txt
+    jobid: 57
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P22_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P22_prime_input.txt
+    wildcards: sample=P22
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:49 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P59_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P59_prime_output.txt
+    jobid: 55
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P59_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P59_prime_input.txt
+    wildcards: sample=P59
+    resources: tmpdir=/tmp
+
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XPAADGGGV chr1_1218841_G_ XPAADGGGV XPAADGGGV    0.0139 43029.57 84.4831
+2   1 PAADGGGVS chr1_1218841_G_ PAADGGGVS PAADGGGVS    0.0102 44759.04 92.1236
+3   2 AADGGGVSV chr1_1218841_G_ AADGGGVSV AADGGGVSV    0.0472 29995.52 32.8396
+4   3 ADGGGVSVV chr1_1218841_G_ ADGGGVSVV ADGGGVSVV    0.0210 39831.44 68.3893
+5   4 DGGGVSVVP chr1_1218841_G_ DGGGVSVVP DGGGVSVVP    0.0086 45550.99 95.0489
+6   5 GGGVSVVPP chr1_1218841_G_ GGGVSVVPP GGGVSVVPP    0.0156 42226.60 80.5009
+     core.1   icore.1 X1.log50k.1      nM.1  Rank.1    core.2   icore.2
+1 XPAADGGGV XPAADGGGV      0.2038  5510.226  1.9830 XPAADGGGV XPAADGGGV
+2 PAADGGGVS PAADGGGVS      0.0321 35335.648 43.5346 PAADGGGVS PAADGGGVS
+3 AADGGGVSV AADGGGVSV      0.1492  9952.355  3.9690 AADGGGVSV AADGGGVSV
+4 ADGGGVSVV ADGGGVSVV      0.0265 37528.637 52.3860 ADGGGVSVV ADGGGVSVV
+5 DGGGVSVVP DGGGVSVVP      0.0174 41426.969 70.9599 DGGGVSVVP DGGGVSVVP
+6 GGGVSVVPP GGGVSVVPP      0.0119 43974.191 84.4579 GGGVSVVPP GGGVSVVPP
+  X1.log50k.2       nM.2  Rank.2    Ave NB
+1      0.0901 18869.1562 13.2978 0.1026  1
+2      0.0254 37982.0547 41.1152 0.0226  0
+3      0.5176   184.8705  0.5352 0.2380  1
+4      0.0207 39983.4102 47.1750 0.0227  0
+5      0.0080 45833.2852 76.2755 0.0113  0
+6      0.0095 45131.0664 71.5392 0.0123  0
+[1] 36334
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XIFTQNVLV chr1_5986246_G_ XIFTQNVLV XIFTQNVLV    0.0588 26476.94 16.4788
+2   1 IFTQNVLVS chr1_5986246_G_ IFTQNVLVS IFTQNVLVS    0.0247 38277.04 55.2025
+3   2 FTQNVLVSP chr1_5986246_G_ FTQNVLVSP FTQNVLVSP    0.0688 23757.88 12.5787
+4   3 TQNVLVSPH chr1_5986246_G_ TQNVLVSPH TQNVLVSPH    0.0416 31866.75 28.7651
+5   4 QNVLVSPHP chr1_5986246_G_ QNVLVSPHP QNVLVSPHP    0.0118 43997.05 87.4105
+6   5 NVLVSPHPQ chr1_5986246_G_ NVLVSPHPQ NVLVSPHPQ    0.0216 39596.80 62.3185
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XIFTQNVLV XIFTQNVLV      0.0744 22362.57  9.2232 XIFTQNVLV XIFTQNVLV
+2 IFTQNVLVS IFTQNVLVS      0.0145 42762.25 63.3407 IFTQNVLVS IFTQNVLVS
+3 FTQNVLVSP FTQNVLVSP      0.0464 30249.73 18.1176 FTQNVLVSP FTQNVLVSP
+4 TQNVLVSPH TQNVLVSPH      0.0548 27638.43 14.4384 TQNVLVSPH TQNVLVSPH
+5 QNVLVSPHP QNVLVSPHP      0.0090 45346.90 82.7483 QNVLVSPHP QNVLVSPHP
+6 NVLVSPHPQ NVLVSPHPQ      0.0299 36195.07 31.7281 NVLVSPHPQ NVLVSPHPQ
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0750 22206.57 30.6172 XIFTQNVLV XIFTQNVLV      0.0472 29989.68 23.7129
+2      0.0477 29840.14 49.9029 IFTQNVLVS IFTQNVLVS      0.0239 38627.36 51.9194
+3      0.0682 23904.08 34.2864 FTQNVLVSP FTQNVLVSP      0.0472 30003.96 23.7446
+4      0.0692 23644.54 33.7211 TQNVLVSPH TQNVLVSPH      0.0372 33433.55 32.5567
+5      0.0196 40433.25 87.7312 QNVLVSPHP QNVLVSPHP      0.0470 30065.71 23.8813
+6      0.0597 26200.80 39.7401 NVLVSPHPQ NVLVSPHPQ      0.0060 46843.99 95.1946
+     core.4   icore.4 X1.log50k.4     nM.4  Rank.4    Ave NB
+1 XIFTQNVLV XIFTQNVLV      0.1211 13481.31  6.4690 0.0753  0
+2 IFTQNVLVS IFTQNVLVS      0.0524 28377.82 23.9575 0.0326  0
+3 FTQNVLVSP FTQNVLVSP      0.0427 31499.96 30.5673 0.0547  0
+4 TQNVLVSPH TQNVLVSPH      0.0418 31794.43 31.2593 0.0489  0
+5 QNVLVSPHP QNVLVSPHP      0.0096 45084.70 84.0822 0.0194  0
+6 NVLVSPHPQ NVLVSPHPQ      0.0182 41080.15 62.2810 0.0271  0
+[1] 19887
+[1] 36334
+[Thu Aug 15 15:17:50 2024]
+Finished job 20.
+17 of 85 steps (20%) done
+[1] 19887
+[Thu Aug 15 15:17:50 2024]
+Finished job 62.
+18 of 85 steps (21%) done
+[Thu Aug 15 15:17:50 2024]
+Finished job 22.
+19 of 85 steps (22%) done
+[Thu Aug 15 15:17:50 2024]
+Finished job 14.
+20 of 85 steps (24%) done
+[Thu Aug 15 15:17:50 2024]
+Finished job 40.
+21 of 85 steps (25%) done
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XLPLTDGRS chr1_974453_C_T XLPLTDGRS XLPLTDGRS    0.0087 45512.55 79.2771
+2   1 LPLTDGRSL chr1_974453_C_T LPLTDGRSL LPLTDGRSL    0.0200 40276.06 47.7430
+3   2 PLTDGRSLR chr1_974453_C_T PLTDGRSLR PLTDGRSLR    0.0118 43996.57 68.1387
+4   3 LTDGRSLRR chr1_974453_C_T LTDGRSLRR LTDGRSLRR    0.0190 40704.96 49.6560
+5   4 TDGRSLRRS chr1_974453_C_T TDGRSLRRS TDGRSLRRS    0.0059 46928.23 90.1242
+6   5 DGRSLRRSR chr1_974453_C_T DGRSLRRSR DGRSLRRSR    0.0072 46229.71 84.8566
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XLPLTDGRS XLPLTDGRS      0.0354 34078.52 52.2836 XLPLTDGRS XLPLTDGRS
+2 LPLTDGRSL LPLTDGRSL      0.0386 32918.46 49.2446 LPLTDGRSL LPLTDGRSL
+3 PLTDGRSLR PLTDGRSLR      0.0256 37922.11 63.5131 PLTDGRSLR PLTDGRSLRSelect jobs to execute...
+
+4 LTDGRSLRR LTDGRSLRR      0.0442 30996.87 44.6909 LTDGRSLRR LTDGRSLRR
+5 TDGRSLRRS TDGRSLRRS      0.0101 44842.89 88.8391 TDGRSLRRS TDGRSLRRS
+6 DGRSLRRSR DGRSLRRSR      0.0388 32869.33 49.1200 DGRSLRRSR DGRSLRRSR
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3       nM.3
+1      0.0035 48129.97 96.1438 XLPLTDGRS XLPLTDGRS      0.0049 47424.8750
+2      0.0940 18092.04  6.8016 LPLTDGRSL LPLTDGRSL      0.3847   778.2791
+3      0.0030 48418.29 96.7480 PLTDGRSLR PLTDGRSLR      0.0071 46308.8164
+4      0.0105 44631.38 70.9286 LTDGRSLRR LTDGRSLRR      0.0330 34973.1602
+5      0.0037 48023.84 95.9205 TDGRSLRRS TDGRSLRRS      0.0051 47292.1406
+6      0.0056 47067.53 91.1901 DGRSLRRSR DGRSLRRSR      0.0140 42973.7461
+   Rank.3    core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1 96.3843 XLPLTDGRS XLPLTDGRS      0.0145 42748.82 71.4845 XLPLTDGRS XLPLTDGRS
+2  0.6454 LPLTDGRSL LPLTDGRSL      0.0671 24179.81  7.2803 LPLTDGRSL LPLTDGRSL
+3 94.1590 PLTDGRSLR PLTDGRSLR      0.0184 40986.47 59.0551 PLTDGRSLR PLTDGRSLR
+4 37.5485 LTDGRSLRR LTDGRSLRR      0.0800 21038.28  4.6906 LTDGRSLRR LTDGRSLRR
+5 96.1927 TDGRSLRRS TDGRSLRRS      0.0076 46067.93 94.0279 TDGRSLRRS TDGRSLRRS
+6 73.8643 DGRSLRRSR DGRSLRRSR      0.0131 43399.42 76.3369 DGRSLRRSR DGRSLRRSR
+  X1.log50k.5      nM.5  Rank.5    Ave NB
+1      0.0174 41438.164 78.6007 0.0141  0
+2      0.2470  3452.187  6.2624 0.1419  1
+3      0.0231 38945.027 70.1422 0.0148  0
+4      0.1092 15339.447 21.3641 0.0493  0
+5      0.0057 46989.191 95.9577 0.0064  0
+6      0.0385 32976.914 53.2878 0.0195  0
+[1] 45078
+ [1] Pos   Peptide 45078              ID
+      core     icore X1.log50k        nM    Rank
+1   0 XGPCDQAPS chr1_1043252_C_ XGPCDQAPS XGPCDQAPS    0.0184 40959.863 74.7231
+2   1 GPCDQAPSS chr1_1043252_C_ GPCDQAPSS GPCDQAPSS    0.0130 43431.367 84.8567
+3   2 PCDQAPSSC chr1_1043252_C_ PCDQAPSSC PCDQAPSSC    0.0071 46299.289 95.2129
+4   3 CDQAPSSCL chr1_1043252_C_ CDQAPSSCL CDQAPSSCL    0.0334 34832.297 53.4650
+5   4 DQAPSSCLG chr1_1043252_C_ DQAPSSCLG DQAPSSCLG    0.0247 38259.242 64.4402
+6   5 QAPSSCLGV chr1_1043252_C_ QAPSSCLGV QAPSSCLGV    0.1646  8426.304 12.9313
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XGPCDQAPS XGPCDQAPS      0.0115 44143.43 91.5757 XGPCDQAPS XGPCDQAPS
+2 GPCDQAPSS GPCDQAPSS      0.0219 39462.94 65.0650 GPCDQAPSS GPCDQAPSS
+3 PCDQAPSSC PCDQAPSSC      0.0031 48344.46 98.4135 PCDQAPSSC PCDQAPSSC
+4 CDQAPSSCL CDQAPSSCL      0.0516 28613.37 22.9147 CDQAPSSCL CDQAPSSCL
+5 DQAPSSCLG DQAPSSCLG      0.0798 21084.31 11.9738 DQAPSSCLG DQAPSSCLG
+6 QAPSSCLGV QAPSSCLGV      0.0236 38731.97 60.9336 QAPSSCLGV QAPSSCLGV
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0073 46178.73 95.8007 XGPCDQAPS XGPCDQAPS      0.0074 46128.78 90.1791
+2      0.0121 43843.54 86.3472 GPCDQAPSS GPCDQAPSS      0.0098 44984.32 83.4819
+3      0.0041 47837.66 97.6649 PCDQAPSSC PCDQAPSSC      0.0046 47582.16 95.9229
+4      0.1015 16676.84  7.2723 CDQAPSSCL CDQAPSSCL      0.0401 32416.56 32.7541
+5      0.0620 25553.51 14.6326 DQAPSSCLG DQAPSSCLG      0.0270 37353.21 47.2406
+6      0.0317 35491.98 36.3611 QAPSSCLGV QAPSSCLGV      0.0898 18921.49 11.0039
+     core.4   icore.4 X1.log50k.4      nM.4  Rank.4    Ave NB
+1 XGPCDQAPS XGPCDQAPS      0.0158 42150.367 79.0615 0.0121  0
+2 GPCDQAPSS GPCDQAPSS      0.0197 40419.695 72.6954 0.0153  0
+3 PCDQAPSSC PCDQAPSSC      0.0057 47004.438 95.7267 0.0049  0
+4 CDQAPSSCL CDQAPSSCL      0.0475 29893.150 42.9833 0.0548  0
+5 DQAPSSCLG DQAPSSCLG      0.0269 37355.648 62.4189 0.0441  0
+6 QAPSSCLGV QAPSSCLGV      0.1831  6896.833  9.5627 0.0985  0
+[1] 49193
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XATEPVTFN chr1_5905358_G_ XATEPVTFN XATEPVTFN    0.0231 38927.32 63.9962
+2   1 ATEPVTFNS chr1_5905358_G_ ATEPVTFNS ATEPVTFNS    0.1400 10991.41  9.6502
+3   2 TEPVTFNSQ chr1_5905358_G_ TEPVTFNSQ TEPVTFNSQ    0.0225 39178.32 65.1424
+4   3 EPVTFNSQK chr1_5905358_G_ EPVTFNSQK EPVTFNSQK    0.0785 21375.56 18.6218
+5   4 PVTFNSQKE chr1_5905358_G_ PVTFNSQKE PVTFNSQKE    0.0160 42044.70 79.5872
+6   5 VTFNSQKEE chr1_5905358_G_ VTFNSQKEE VTFNSQKEE    0.0886 19161.52 16.2450
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XATEPVTFN XATEPVTFN      0.0099 44904.55 86.1750 XATEPVTFN XATEPVTFN
+2 ATEPVTFNS ATEPVTFNS      0.0173 41465.54 65.9791 ATEPVTFNS ATEPVTFNS
+3 TEPVTFNSQ TEPVTFNSQ      0.0241 38529.68 51.2715 TEPVTFNSQ TEPVTFNSQ
+4 EPVTFNSQK EPVTFNSQK      0.0258 37812.73 48.0612 EPVTFNSQK EPVTFNSQK
+5 PVTFNSQKE PVTFNSQKE      0.0040 47886.86 96.8811 PVTFNSQKE PVTFNSQKE
+6 VTFNSQKEE VTFNSQKEE      0.0145 42722.01 73.2295 VTFNSQKEE VTFNSQKEE
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0190 40719.06 67.3444 XATEPVTFN XATEPVTFN      0.0347 34344.66 32.7003
+2      0.0401 32399.02 33.9837 ATEPVTFNS ATEPVTFNS      0.0314 35611.98 35.3465
+3      0.0146 42677.64 77.5991 TEPVTFNSQ TEPVTFNSQ      0.0109 44419.89 67.1082
+4      0.1023 16532.94  8.1856 EPVTFNSQK EPVTFNSQK      0.0172 41526.58 52.9417
+5      0.0048 47467.99 96.6835 PVTFNSQKE PVTFNSQKE      0.0036 48079.99 93.3588
+6      0.0283 36810.39 49.3466 VTFNSQKEE VTFNSQKEE      0.0433 31305.26 27.3508
+     core.4   icore.4 X1.log50k.4     nM.4  Rank.4    Ave NB
+1 XATEPVTFN XATEPVTFN      0.0114 44177.34 52.4279 0.0196  0
+2 ATEPVTFNS ATEPVTFNS      0.0443 30958.33 12.8050 0.0546  0
+3 TEPVTFNSQ TEPVTFNSQ      0.0091 45329.74 61.5903 0.0163  0
+4 EPVTFNSQK EPVTFNSQK      0.0088 45448.58 62.6994 0.0465  0
+5 PVTFNSQKE PVTFNSQKE      0.0030 48416.72 95.0317 0.0063  0
+6 VTFNSQKEE VTFNSQKEE      0.0135 43182.55 45.8868 0.0377  0
+[1] 41315
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XAGQPPHVL chr1_2321456_C_ XAGQPPHVL XAGQPPHVL    0.0831 20345.65 38.7699
+2   1 AGQPPHVLK chr1_2321456_C_ AGQPPHVLK AGQPPHVLK    0.0439 31091.24 61.2221
+3   2 GQPPHVLKE chr1_2321456_C_ GQPPHVLKE GQPPHVLKE    0.1178 13972.57 27.7823
+4   3 QPPHVLKEG chr1_2321456_C_ QPPHVLKEG QPPHVLKEG    0.0189 40770.64 86.3772
+5   4 PPHVLKEGP chr1_2321456_C_ PPHVLKEGP PPHVLKEGP    0.0047 47502.41 97.8257
+6   5 PHVLKEGPE chr1_2321456_C_ PHVLKEGPE PHVLKEGPE    0.0067 46490.54 96.9121
+     core.1   icore.1 X1.log50k.1       nM.1  Rank.1    core.2   icore.2
+1 XAGQPPHVL XAGQPPHVL      0.0220 39388.2891 71.0277 XAGQPPHVL XAGQPPHVL
+2 AGQPPHVLK AGQPPHVLK      0.3820   801.2636  1.5987 AGQPPHVLK AGQPPHVLK
+3 GQPPHVLKE GQPPHVLKE      0.0362 33813.7109 46.2331 GQPPHVLKE GQPPHVLKE
+4 QPPHVLKEG QPPHVLKEG      0.0102 44777.4570 95.0433 QPPHVLKEG QPPHVLKEG
+5 PPHVLKEGP PPHVLKEGP      0.0059 46902.3320 97.1264 PPHVLKEGP PPHVLKEGP
+6 PHVLKEGPE PHVLKEGPE      0.0062 46763.4883 96.9932 PHVLKEGPE PHVLKEGPE
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0505 28938.73 17.2939 XAGQPPHVL XAGQPPHVL      0.0433 31303.24 37.9039
+2      0.0230 38993.93 44.1842 AGQPPHVLK AGQPPHVLK      0.0239 38593.91 63.6780
+3      0.0402 32358.74 23.4017 GQPPHVLKE GQPPHVLKE      0.0511 28775.74 31.6182
+4      0.0093 45237.63 84.3885 QPPHVLKEG QPPHVLKEG      0.0135 43219.02 85.4803
+5      0.0031 48355.97 97.4138 PPHVLKEGP PPHVLKEGP      0.0058 46978.50 96.6933
+6      0.0056 47047.68 95.2921 PHVLKEGPE PHVLKEGPE      0.0087 45507.15 95.0052
+     core.4   icore.4 X1.log50k.4       nM.4  Rank.4    Ave NB
+1 XAGQPPHVL XAGQPPHVL      0.4023   643.6495  1.1641 0.1203  1
+2 AGQPPHVLK AGQPPHVLK      0.0289 36580.5078 37.5817 0.1003  1
+3 GQPPHVLKE GQPPHVLKE      0.0175 41395.5859 52.4227 0.0525  0
+4 QPPHVLKEG QPPHVLKEG      0.0142 42883.6289 58.8514 0.0132  0
+5 PPHVLKEGP PPHVLKEGP      0.0017 49108.9023 97.3950 0.0042  0
+6 PHVLKEGPE PHVLKEGPE      0.0029 48480.1484 95.5282 0.0060  0
+[1] 35535
+[1] 35535
+Execute 5 jobs...
+
+[Thu Aug 15 15:17:50 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P30_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P30_prime_output.txt
+    jobid: 21
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P30_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P30_prime_input.txt
+    wildcards: sample=P30
+    resources: tmpdir=/tmp
+
+
+ [Thu Aug 15 15:17:50 2024]
+  Pos   Peptide              ID      core     icore X1.log50k         nM Pos
+1   Peptide   0              ID XRFLVWDHD      core chr1_2499172_C_     icore XRFLVWDHD X1.log50k XRFLVWDHD       nM    0.0202    Rank 40162.9180
+2
+1   1   0 RFLVWDHDS XLGTSRTRP chr1_2499172_C_ chr1_962878_G_A RFLVWDHDS XLGTSRTRP RFLVWDHDS XLGTSRTRP    0.0530    0.0109 28185.9414 44459.30
+3 89.8111   2
+2 FLVWDHDSI   1 chr1_2499172_C_ LGTSRTRPQ FLVWDHDSI chr1_962878_G_A FLVWDHDSI LGTSRTRPQ    0.7192 LGTSRTRPQ    20.8598    0.0134
+4 43269.08   3 83.4924 LVWDHDSIG
+3 chr1_2499172_C_   2 LVWDHDSIG GTSRTRPQR LVWDHDSIG chr1_962878_G_A    0.1065 GTSRTRPQR 15803.9102 GTSRTRPQR
+5    0.0413   4 31991.47 29.1410
+4   3 TSRTRPQRC chr1_962878_G_A TSRTRPQRC TSRTRPQRC    0.0213 39708.79 62.9378
+5   4 SRTRPQRCE chr1_962878_G_A SRTRPQRCE SRTRPQRCE    0.0063 46724.03 96.2631
+6   5 RTRPQRCEG chr1_962878_G_A RTRPQRCEG RTRPQRCEG    0.0242 38475.92 56.2684
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XLGTSRTRP XLGTSRTRP      0.0183 41022.41 79.2657 XLGTSRTRP XLGTSRTRP
+2 LGTSRTRPQ LGTSRTRPQ      0.0390 32786.57 42.5894 LGTSRTRPQ LGTSRTRPQ
+3 GTSRTRPQR GTSRTRPQR      0.2713  2654.97  3.2129 GTSRTRPQR GTSRTRPQR
+4 TSRTRPQRC TSRTRPQRC      0.0321 35340.62 52.3649 TSRTRPQRC TSRTRPQRC
+5 SRTRPQRCE SRTRPQRCE      0.0163localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P23_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P23_prime_output.txt
+    jobid: 13
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P23_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P23_prime_input.txt
+    wildcards: sample=P23
+    resources: tmpdir=/tmp 41916.16 83.5860
+ SRTRPQRCE SRTRPQRCE
+6 RTRPQRCEG RTRPQRCEG      0.0835 20257.13 16.5115 RTRPQRCEG RTRPQRCEG
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3      nM.3
+1      0.0160
+ 42049.72 84.0999 XLGTSRTRP XLGTSRTRP      0.0148 42602.465
+2      0.0123 43746.41 90.2377 LGTSRTRPQ LGTSRTRPQ      0.0343 34515.660
+3      0.0124 43744.52 90.2316 GTSRTRPQR GTSRTRPQR      0.0577 26770.769
+4      0.0225 39195.71 73.3717 TSRTRPQRC TSRTRPQRC      0.0851 19919.371
+5      0.0111 44343.53 92.1720 SRTRPQRCE SRTRPQRCE      0.0102 44766.777
+6      0.0456 30540.13 45.4106 RTRPQRCEG RTRPQRCEG      0.1867  6631.634
+   Rank.3    core.4   icore.4 X1.log50k.4     nM.4  Rank.4    Ave NB
+1 86.3345 XLGTSRTRP XLGTSRTRP      0.0063 46724.03 93.3424 0.0132  0
+2 55.2649 LGTSRTRPQ LGTSRTRPQ      0.0303 36014.20 40.5842 0.0259  0
+3 33.8737 GTSRTRPQR GTSRTRPQR      0.0234 38807.91 50.3950 0.0812  0
+4 21.1415 TSRTRPQRC TSRTRPQRC      0.0631 25256.65 17.2762 0.0448  0
+5 93.9059 SRTRPQRCE SRTRPQRCE      0.0395 32614.28 31.0393 0.0167  0
+6  5.9393 RTRPQRCEG RTRPQRCEG      0.0588 26455.76 19.0952 0.0798  0
+ VWDHDSIGR chr1_2499172_C_ VWDHDSIGR VWDHDSIGR    0.0150 42503.4766[1]
+6   5 30070 WDHDSIGRD
+ chr1_2499172_C_ WDHDSIGRD WDHDSIGRD    0.0135 43226.0430
+     Rank    core.1   icore.1 X1.log50k.1      nM.1  Rank.1    core.2   icore.2
+1 84.8035 XRFLVWDHD XRFLVWDHD      0.0092 45283.660 80.7482 XRFLVWDHD XRFLVWDHD
+2 54.5218 RFLVWDHDS RFLVWDHDS      0.0479 29787.557 29.0758 RFLVWDHDS RFLVWDHDS
+3  0.1185 FLVWDHDSI FLVWDHDSI      0.1508  9785.676  7.6627 FLVWDHDSI FLVWDHDSI
+4 30.7904 LVWDHDSIG LVWDHDSIG      0.0486 29563.775 28.7065 LVWDHDSIG LVWDHDSIG
+5 90.6747 VWDHDSIGR VWDHDSIGR      0.0098 44961.438 78.8877 VWDHDSIGR VWDHDSIGR
+6 92.3095 WDHDSIGRD WDHDSIGRD      0.0029 48454.457 96.5411 WDHDSIGRD WDHDSIGRD
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0186 40895.67 62.8547 XRFLVWDHD XRFLVWDHD      0.0366 33644.02 45.0516
+2      0.0219 39439.02 55.4409 RFLVWDHDS RFLVWDHDS      0.0402 32375.19 40.3629
+3      0.1066 15783.06  5.9971 FLVWDHDSI FLVWDHDSI      0.0804 20960.80 14.8399
+4      0.0300 36132.08 41.4964 LVWDHDSIG LVWDHDSIG      0.0503 29019.00 30.1599
+5      0.0085 45583.52 89.9917 VWDHDSIGR VWDHDSIGR      0.0063 46689.18 96.8715
+6      0.0063 46702.82 95.0727 WDHDSIGRD WDHDSIGRD      0.0252 38074.24 64.5195
+     core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1 XRFLVWDHD XRFLVWDHD      0.0196 40461.68 57.4509 XRFLVWDHD XRFLVWDHD
+2 RFLVWDHDS RFLVWDHDS      0.0184 40988.69 59.8496 RFLVWDHDS RFLVWDHDS
+3 FLVWDHDSI FLVWDHDSI      0.1159 14264.79  6.4308 FLVWDHDSI FLVWDHDSI
+4 LVWDHDSIG LVWDHDSIG      0.0292 36461.57 41.9727 LVWDHDSIG LVWDHDSIG
+5 VWDHDSIGR VWDHDSIGR      0.0160 42070.20 65.3858 VWDHDSIGR VWDHDSIGR
+6 WDHDSIGRD WDHDSIGRD      0.0071 46297.29 91.0268 WDHDSIGRD WDHDSIGRD
+  X1.log50k.5      nM.5  Rank.5    Ave NB
+1      0.0027 48553.117 95.4661 0.0178  0
+2      0.0079 45910.703 67.2114 0.0315  0
+3      0.2166  4799.974  0.5860 0.2316  2
+4      0.0296 36304.105 21.5043 0.0490  0
+5      0.0099 44917.184 58.0332 0.0109  0
+6      0.0041 47810.242 88.7605 0.0098  0
+[1] 47350
+[1] 49193
+[1] 30070
+[1] 41315
+
+[1] 47350
+[Thu Aug 15 15:17:50 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P28_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P28_prime_output.txt
+    jobid: 19
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P28_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P28_prime_input.txt
+    wildcards: sample=P28
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:50 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P41_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P41_prime_output.txt
+    jobid: 39
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P41_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P41_prime_input.txt
+    wildcards: sample=P41
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:50 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P57_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P57_prime_output.txt
+    jobid: 61
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P57_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P57_prime_input.txt
+    wildcards: sample=P57
+    resources: tmpdir=/tmp
+
+[Thu Aug 15 15:17:50 2024]
+Finished job 72.
+22 of 85 steps (26%) done
+[Thu Aug 15 15:17:50 2024]
+Finished job 36.
+23 of 85 steps (27%) done
+[Thu Aug 15 15:17:50 2024]
+Finished job 54.
+24 of 85 steps (28%) done
+[Thu Aug 15 15:17:50 2024]
+Finished job 8.
+25 of 85 steps (29%) done
+Select jobs to execute...
+  Pos   Peptide              ID      core     icore X1.log50k        nM    Rank
+1   0 XSSLEEKLL chr1_3463130_G_ XSSLEEKLL XSSLEEKLL    0.0182 41053.480 79.4187
+2   1 SSLEEKLLE chr1_3463130_G_ SSLEEKLLE SSLEEKLLE    0.0484 29630.066 33.2410
+3   2 SLEEKLLEH chr1_3463130_G_ SLEEKLLEH SLEEKLLEH    0.1534  9508.981  7.4154
+4   3 LEEKLLEHR chr1_3463130_G_ LEEKLLEHR LEEKLLEHR    0.0155 42284.672 85.3158
+5   4 EEKLLEHRF chr1_3463130_G_ EEKLLEHRF EEKLLEHRF    0.0135 43194.246 89.2976
+6   5 EKLLEHRFH chr1_3463130_G_ EKLLEHRFH EKLLEHRFH    0.0133 43282.672 89.6802
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XSSLEEKLL XSSLEEKLL      0.0173 41444.90 83.4261 XSSLEEKLL XSSLEEKLL
+2 SSLEEKLLE SSLEEKLLE      0.0475 29895.73 45.1013 SSLEEKLLE SSLEEKLLE
+3 SLEEKLLEH SLEEKLLEH      0.0803 20975.54 26.0145 SLEEKLLEH SLEEKLLEH
+4 LEEKLLEHR LEEKLLEHR      0.0925 18374.15 22.0052 LEEKLLEHR LEEKLLEHR
+5 EEKLLEHRF EEKLLEHRF      0.0170 41583.69 83.9322 EEKLLEHRF EEKLLEHRF
+6 EKLLEHRFH EKLLEHRFH      0.0246 38301.90 71.9009 EKLLEHRFH EKLLEHRFH
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0223 39264.47 60.3959 XSSLEEKLL XSSLEEKLL      0.0240 38572.21 34.8891
+2      0.0190 40695.72 68.2120 SSLEEKLLE SSLEEKLLE      0.0119 43977.54 62.5957
+3      0.0287 36668.47 48.2698 SLEEKLLEH SLEEKLLEH      0.0060 46835.38 87.8332
+4      0.0095 45134.96 93.1079 LEEKLLEHR LEEKLLEHR      0.0061 46817.65 87.6654
+5      0.0240 38580.15 56.9813 EEKLLEHRF EEKLLEHRF      0.0206 39998.99 40.3893
+6      0.0086 45566.27 95.0197 EKLLEHRFH EKLLEHRFH      0.0073 46206.73 81.8243
+     core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1 XSSLEEKLL XSSLEEKLL      0.0422 31667.39 37.3546 XSSLEEKLL XSSLEEKLL
+2 SSLEEKLLE SSLEEKLLE      0.0202 40188.57 64.8171 SSLEEKLLE SSLEEKLLE
+3 SLEEKLLEH SLEEKLLEH      0.0649 24786.14 23.4628 SLEEKLLEH SLEEKLLEH
+4 LEEKLLEHR LEEKLLEHR      0.0176 41313.71 69.8725 LEEKLLEHR LEEKLLEHR
+5 EEKLLEHRF EEKLLEHRF      0.0381 33119.58 40.9719 EEKLLEHRF EEKLLEHRF
+6 EKLLEHRFH EKLLEHRFH      0.0288 36620.89 51.5252 EKLLEHRFH EKLLEHRFH
+  X1.log50k.5     nM.5  Rank.5    Ave NB
+1      0.1165 14174.48 12.1606 0.0401  0
+2      0.0508 28873.35 32.5529 0.0330  0
+3      0.0259 37780.41 54.6528 0.0599  0
+4      0.0073 46182.72 90.3701 0.0248  0
+5      0.0097 45022.29 84.6518 0.0205  0
+6      0.0040 47892.57 96.2460 0.0144  0
+[1] 40501
+[1] 40501
+Execute 4 jobs...
+
+[Thu Aug 15 15:17:50 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39B_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39B_prime_output.txt
+    jobid: 35
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39B_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39B_prime_input.txt
+    wildcards: sample=P39B
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:50 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2A_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2A_prime_output.txt
+    jobid: 71
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2A_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2A_prime_input.txt
+    wildcards: sample=P2A
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:50 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P18_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P18_prime_output.txt
+    jobid: 53
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P18_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P18_prime_input.txt
+    wildcards: sample=P18
+    resources: tmpdir=/tmp
+
+  Pos   Peptide              ID      core     icore X1.log50k        nM    Rank
+1   0 XRETQSWPP chr1_1203624_G_ XRETQSWPP XRETQSWPP    0.0116 44089.027 87.5250
+2   1 RETQSWPPF chr1_1203624_G_ RETQSWPPF RETQSWPPF    0.0621 25543.557 33.0657
+3   2 ETQSWPPFS chr1_1203624_G_ ETQSWPPFS ETQSWPPFS    0.0389 32814.621 47.8643
+4   3 TQSWPPFSL chr1_1203624_G_ TQSWPPFSL TQSWPPFSL    0.3564  1057.581  4.1720
+5   4 QSWPPFSLA chr1_1203624_G_ QSWPPFSLA QSWPPFSLA    0.2054  5414.956  9.9069
+6   5 SWPPFSLAG chr1_1203624_G_ SWPPFSLAG SWPPFSLAG    0.0363 33767.641 50.4109
+     core.1   icore.1 X1.log50k.1      nM.1  Rank.1    core.2   icore.2
+1 XRETQSWPP XRETQSWPP      0.0124 43705.262 85.8971 XRETQSWPP XRETQSWPP
+2 RETQSWPPF RETQSWPPF      0.1489  9980.069  5.9553 RETQSWPPF RETQSWPPF
+3 ETQSWPPFS ETQSWPPFS      0.0231 38928.605 58.7089 ETQSWPPFS ETQSWPPFS
+4 TQSWPPFSL TQSWPPFSL      0.1524  9608.680  5.7580 TQSWPPFSL TQSWPPFSL
+5 QSWPPFSLA QSWPPFSLA      0.1031 16385.479 10.0473 QSWPPFSLA QSWPPFSLA
+6 SWPPFSLAG SWPPFSLAG      0.0274 37164.566 50.4410 SWPPFSLAG SWPPFSLAG
+  X1.log50k.2      nM.2  Rank.2    core.3   icore.3 X1.log50k.3      nM.3
+1      0.0322 35272.605 51.6247 XRETQSWPP XRETQSWPP      0.0151 42446.008
+2      0.3503  1129.395  0.7219 RETQSWPPF RETQSWPPF      0.0407 32180.328
+3      0.0314 35612.375 53.1118 ETQSWPPFS ETQSWPPFS      0.0327 35112.305
+4      0.1682  8100.015  4.0610 TQSWPPFSL TQSWPPFSL      0.1683  8093.707
+5      0.1629  8578.825  4.3301 QSWPPFSLA QSWPPFSLA      0.0941 18066.613
+6      0.0339 34649.609 48.9798 SWPPFSLAG SWPPFSLAG      0.0751 22188.791
+   Rank.3    core.4   icore.4 X1.log50k.4      nM.4  Rank.4    Ave NB
+1 67.4859 XRETQSWPP XRETQSWPP      0.0206 40021.074 64.1508 0.0184  0
+2 29.9706 RETQSWPPF RETQSWPPF      0.1062 15854.779 11.8377 0.1416  1
+3 37.7754 ETQSWPPFS ETQSWPPFS      0.0263 37607.086 54.8549 0.0305  0
+4  2.9499 TQSWPPFSL TQSWPPFSL      0.2840  2313.853  1.3807 0.2259  1
+5  9.3446 QSWPPFSLA QSWPPFSLA      0.0959 17719.691 13.8586 0.1323  0
+6 13.3966 SWPPFSLAG SWPPFSLAG      0.1567  9172.769  6.0393 0.0659  0
+[1] 60143
+
+[Thu Aug 15 15:17:50 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P58_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P58_prime_output.txt
+    jobid: 7
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P58_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P58_prime_input.txt
+    wildcards: sample=P58
+    resources: tmpdir=/tmp
+
+[1] 60143
+[Thu Aug 15 15:17:50 2024]
+Finished job 38.
+26 of 85 steps (31%) done
+[Thu Aug 15 15:17:50 2024]
+Finished job 2.
+27 of 85 steps (32%) done
+[Thu Aug 15 15:17:50 2024]
+Finished job 50.
+28 of 85 steps (33%) done
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XARAGPCEQ chr1_1044022_G_ XARAGPCEQ XARAGPCEQ    0.0117 44048.95 87.3636
+2   1 ARAGPCEQT chr1_1044022_G_ ARAGPCEQT ARAGPCEQT    0.0194 40543.65 73.0994
+3   2 RAGPCEQTE chr1_1044022_G_ RAGPCEQTE RAGPCEQTE    0.0192 40634.12 73.4537
+4   3 AGPCEQTEC chr1_1044022_G_ AGPCEQTEC AGPCEQTEC    0.0210 39818.08 70.2288
+5   4 GPCEQTECG chr1_1044022_G_ GPCEQTECG GPCEQTECG    0.0083 45710.96 93.5156
+6   5 PCEQTECGS chr1_1044022_G_ PCEQTECGS[Thu Aug 15 15:17:50 2024]
+Finished job 34.
+29 of 85 steps (34%) done
+ PCEQTECGS    0.0039 47912.78 97.3454
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XARAGPCEQ XARAGPCEQ      0.0087 45484.50 81.9626 XARAGPCEQ XARAGPCEQ
+2 ARAGPCEQT ARAGPCEQT      0.0095 45097.38 79.6483 ARAGPCEQT ARAGPCEQT
+3 RAGPCEQTE RAGPCEQTE      0.0243 38429.75 49.5646 RAGPCEQTE RAGPCEQTE
+4 AGPCEQTEC AGPCEQTEC      0.0071 46313.32 86.8878 AGPCEQTEC AGPCEQTEC
+5 GPCEQTECG GPCEQTECG      0.0057 47009.02 90.8604 GPCEQTECG GPCEQTECG
+6 PCEQTECGS PCEQTECGS      0.0015 49215.30 98.2574 PCEQTECGS PCEQTECGS
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0365 33699.03 38.8268 XARAGPCEQ XARAGPCEQ      0.0064 46652.30 88.2568
+2      0.0363 33755.58 39.0048 ARAGPCEQT ARAGPCEQT      0.0514 28680.01 12.5425
+3      0.0181 41104.16 70.3245 RAGPCEQTE RAGPCEQTE      0.0096 45052.98 73.6106
+4      0.0086 45579.08 93.2653 AGPCEQTEC AGPCEQTEC      0.0044 47699.68 95.3573
+5      0.0097 45034.95 91.0000 GPCEQTECG GPCEQTECG      0.0072 46248.23 84.6989
+6      0.0022 48806.43 98.5511 PCEQTECGS PCEQTECGS      0.0010 49435.18 98.8801
+     core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1 XARAGPCEQ XARAGPCEQ      0.0394 32651.70 48.6904 XARAGPCEQ XARAGPCEQ
+2 ARAGPCEQT ARAGPCEQT      0.0358 33953.39 52.4385 ARAGPCEQT ARAGPCEQT
+3 RAGPCEQTE RAGPCEQTE      0.0363 33754.86 51.8591 RAGPCEQTE RAGPCEQTE
+4 AGPCEQTEC AGPCEQTEC      0.0208 39938.44 72.7717 AGPCEQTEC AGPCEQTEC
+5 GPCEQTECG GPCEQTECG      0.0088 45466.29 93.7220 GPCEQTECG GPCEQTECG
+6 PCEQTECGS PCEQTECGS      0.0027 48583.59 98.3394 PCEQTECGS PCEQTECGS
+  X1.log50k.5     nM.5  Rank.5    Ave NB
+1      0.0106 44564.30 71.9225 0.0189  0
+2      0.0316 35508.10 27.9884 0.0307  0
+3      0.0077 46018.13 83.4336 0.0192  0
+4      0.0131 43407.88 63.5148 0.0125  0
+5      0.0049 47441.30 93.7066 0.0074  0
+6      0.0011 49392.41 98.7355 0.0021  0
+[1] 49871
+[Thu Aug 15 15:17:50 2024]
+Finished job 60.
+30 of 85 steps (35%) done
+Select jobs to execute...
+[1] 49871
+  Pos   Peptide              ID      core     icore X1.log50k        nM    Rank
+1   0 XPGLKQEDG chr1_930310_C_T XPGLKQEDG XPGLKQEDG    0.0049 47402.801 97.1660
+2   1 PGLKQEDGS chr1_930310_C_T PGLKQEDGS PGLKQEDGS    0.0050 47358.707 97.1166
+3   2 GLKQEDGSH chr1_930310_C_T GLKQEDGSH GLKQEDGSH    0.0241 38524.660 62.1657
+4   3 LKQEDGSHI chr1_930310_C_T LKQEDGSHI LKQEDGSHI    0.0080 45833.285 95.3771
+5   4 KQEDGSHIR chr1_930310_C_T KQEDGSHIR KQEDGSHIR    0.1639  8484.394  8.0364
+6   5 QEDGSHIRI chr1_930310_C_T QEDGSHIRI QEDGSHIRI    0.0303 36009.137 51.4309
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XPGLKQEDG XPGLKQEDG      0.0028 48533.68 96.8795 XPGLKQEDG XPGLKQEDG
+2 PGLKQEDGS PGLKQEDGS      0.0024 48703.05 97.2448 PGLKQEDGS PGLKQEDGS
+3 GLKQEDGSH GLKQEDGSH      0.0035 48148.72 96.0447 GLKQEDGSH GLKQEDGSH
+4 LKQEDGSHI LKQEDGSHI      0.0201 40210.74 47.4615 LKQEDGSHI LKQEDGSHI
+5 KQEDGSHIR KQEDGSHIR      0.0183 41016.64 51.1443 KQEDGSHIR KQEDGSHIR
+6 QEDGSHIRI QEDGSHIRI      0.0336 34764.90 30.4521 QEDGSHIRI QEDGSHIRI
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0039 47936.64 95.8458 XPGLKQEDG XPGLKQEDG      0.0140 42988.16 76.1519
+2      0.0020 48916.95 97.8413 PGLKQEDGS PGLKQEDGS      0.0039 47925.73 97.2057
+3      0.0073 46207.21 84.3248 GLKQEDGSH GLKQEDGSH      0.0285 36740.36 45.8127
+4      0.0316 35521.18 23.9540 LKQEDGSHI LKQEDGSHI      0.0324 35222.64 40.6963
+5      0.0251 38121.64 31.5702 KQEDGSHIR KQEDGSHIR      0.0226 39142.74 55.6088
+6      0.0255 37951.25 30.9884 QEDGSHIRI QEDGSHIRI      0.0479 29784.02 27.4517
+     core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1 XPGLKQEDG XPGLKQEDG      0.0037 48034.77 97.6829 XPGLKQEDG XPGLKQEDG
+2 PGLKQEDGS PGLKQEDGS      0.0024 48699.88 98.4776 PGLKQEDGS PGLKQEDGS
+3 GLKQEDGSH GLKQEDGSH      0.0284 36757.07 61.2297 GLKQEDGSH GLKQEDGSH
+4 LKQEDGSHI LKQEDGSHI      0.0979 17332.31 18.0723 LKQEDGSHI LKQEDGSHI
+5 KQEDGSHIR KQEDGSHIR      0.0585 26548.09 34.1772 KQEDGSHIR KQEDGSHIR
+6 QEDGSHIRI QEDGSHIRI      0.0614 25720.21 32.5150 QEDGSHIRI QEDGSHIRI
+  X1.log50k.5     nM.5  Rank.5    Ave NB
+1      0.0045 47647.07 96.9093 0.0056  0
+2      0.0032 48309.96 97.7952 0.0032  0
+3      0.0099 44943.43 87.4774 0.0169  0
+4      0.0431 31379.52 18.6596 0.0389  0
+5      0.0421 31711.29 19.4651 0.0551  0
+6      0.0858 19758.16  3.8685 0.0474  0
+[1] 64416
+Execute 5 jobs...
+
+[Thu Aug 15 15:17:51 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P40_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P40_prime_output.txt
+    jobid: 37
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P40_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P40_prime_input.txt
+    wildcards: sample=P40
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:51 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P20_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P20_prime_output.txt
+    jobid: 59
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P20_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P20_prime_input.txt
+    wildcards: sample=P20
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:51 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P26_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P26_prime_output.txt
+    jobid: 49
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P26_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P26_prime_input.txt
+    wildcards: sample=P26
+    resources: tmpdir=/tmp
+
+[1] 64416
+
+[Thu Aug 15 15:17:51 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39A_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39A_prime_output.txt
+    jobid: 33
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39A_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39A_prime_input.txt
+    wildcards: sample=P39A
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:51 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P48_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P48_prime_output.txt
+    jobid: 1
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P48_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P48_prime_input.txt
+    wildcards: sample=P48
+    resources: tmpdir=/tmp
+
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XCRQRGGIW chr1_1044191_G_ XCRQRGGIW XCRQRGGIW    0.0201 40209.00 65.7269
+2   1 CRQRGGIWN chr1_1044191_G_ CRQRGGIWN CRQRGGIWN    0.0155 42302.51 77.9815
+3   2 RQRGGIWNE chr1_1044191_G_ RQRGGIWNE RQRGGIWNE    0.0130 43426.66 84.3780
+4   3 QRGGIWNED chr1_1044191_G_ QRGGIWNED QRGGIWNED    0.0061 46786.78 96.3371
+5   4 RGGIWNEDS chr1_1044191_G_ RGGIWNEDS RGGIWNEDS    0.0119 43970.88 87.2739
+6   5 GGIWNEDSE chr1_1044191_G_ GGIWNEDSE GGIWNEDSE    0.0093 45200.45 93.0263
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XCRQRGGIW XCRQRGGIW      0.0223 39272.12 70.4269 XCRQRGGIW XCRQRGGIW
+2 CRQRGGIWN CRQRGGIWN      0.0216 39584.40 72.0379 CRQRGGIWN CRQRGGIWN
+3 RQRGGIWNE RQRGGIWNE      0.1225 13279.78  9.9707 RQRGGIWNE RQRGGIWNE
+4 QRGGIWNED QRGGIWNED      0.0086 45539.65 95.8017 QRGGIWNED QRGGIWNED
+5 RGGIWNEDS RGGIWNEDS      0.0156 42251.75 85.1700 RGGIWNEDS RGGIWNEDS
+6 GGIWNEDSE GGIWNEDSE      0.0133 43281.25 89.6741 GGIWNEDSE GGIWNEDSE
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3      nM.3
+1      0.0214 39663.69 56.5485 XCRQRGGIW XCRQRGGIW      0.1539  9455.224
+2      0.0327 35113.07 37.9056 CRQRGGIWN CRQRGGIWN      0.0144 42784.930
+3      0.0350 34230.79 35.1415 RQRGGIWNE RQRGGIWNE      0.0482 29686.854
+4      0.0191 40658.31 61.5652 QRGGIWNED QRGGIWNED      0.0119 43967.527
+5      0.0068 46443.79 94.0191 RGGIWNEDS RGGIWNEDS      0.0254 37984.945
+6      0.0076 46046.01 92.1668 GGIWNEDSE GGIWNEDSE      0.0299 36164.133
+   Rank.3    core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1  8.4837 XCRQRGGIW XCRQRGGIW      0.0551 27541.42 20.8291 XCRQRGGIW XCRQRGGIW
+2 87.0411 CRQRGGIWN CRQRGGIWN      0.0468 30150.07 25.5713 CRQRGGIWN CRQRGGIWN
+3 40.9483 RQRGGIWNE RQRGGIWNE      0.0307 35873.79 40.1649 RQRGGIWNE RQRGGIWNE
+4 91.3364 QRGGIWNED QRGGIWNED      0.0152 42408.39 67.2764 QRGGIWNED QRGGIWNED
+5 67.8594 RGGIWNEDS RGGIWNEDS      0.0066 46537.37 92.3321 RGGIWNEDS RGGIWNEDS
+6 61.0870 GGIWNEDSE GGIWNEDSE      0.0077 45996.71 89.2946 GGIWNEDSE GGIWNEDSE
+  X1.log50k.5     nM.5  Rank.5    Ave NB
+1      0.0097 45025.71 58.9139 0.0471  0
+2      0.0070 46376.51 72.1693 0.0230  0
+3      0.0134 43234.46 46.2054 0.0438  0
+4      0.0029 48449.21 95.1353 0.0107  0
+5      0.0037 48036.85 91.2287 0.0117  0
+6      0.0092 45257.21 60.9120 0.0129  0
+[1] 56993
+[Thu Aug 15 15:17:51 2024]
+Finished job 24.
+31 of 85 steps (36%) done
+[1] 56993
+[Thu Aug 15 15:17:51 2024]
+Finished job 10.
+32 of 85 steps (38%) done
+[Thu Aug 15 15:17:51 2024]
+Finished job 18.
+33 of 85 steps (39%) done
+Select jobs to execute...
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XNLKEPLYV chr1_1051294_G_ XNLKEPLYV XNLKEPLYV    0.0470 30053.67 23.8101
+2   1 NLKEPLYVR chr1_1051294_G_ NLKEPLYVR NLKEPLYVR    0.0247 38272.89 55.1802
+3   2 LKEPLYVRG chr1_1051294_G_ LKEPLYVRG LKEPLYVRG    0.0119 43978.96 87.3161
+4   3 KEPLYVRGA chr1_1051294_G_ KEPLYVRGA KEPLYVRGA    0.0146 42716.00 80.3585
+5   4 EPLYVRGAP chr1_1051294_G_ EPLYVRGAP EPLYVRGAP    0.0106 44573.93 90.3376
+6   5 PLYVRGAPD chr1_1051294_G_ PLYVRGAPD PLYVRGAPD    0.0093 45202.40 93.0346
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XNLKEPLYV XNLKEPLYV      0.0459 30442.15 51.8288 XNLKEPLYV XNLKEPLYV
+2 NLKEPLYVR NLKEPLYVR      0.0975 17417.08 21.7255 NLKEPLYVR NLKEPLYVR
+3 LKEPLYVRG LKEPLYVRG      0.0242 38480.09 80.6456 LKEPLYVRG LKEPLYVRG
+4 KEPLYVRGA KEPLYVRGA      0.0468 30142.57 50.8726 KEPLYVRGA KEPLYVRGA
+5 EPLYVRGAP EPLYVRGAP      0.1317 12024.93 13.6141 EPLYVRGAP EPLYVRGAP
+6 PLYVRGAPD PLYVRGAPD      0.0547 27651.30 43.5499 PLYVRGAPD PLYVRGAPD
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0982 17270.34  7.3258 XNLKEPLYV XNLKEPLYV      0.0845 20035.44 12.0914
+2      0.0094 45140.82 84.6083 NLKEPLYVR NLKEPLYVR      0.0625 25432.14 19.0235
+3      0.0253 38018.25 48.1780 LKEPLYVRG LKEPLYVRG      0.0183 41007.33 61.9421
+4      0.0602 26058.59 18.3672 KEPLYVRGA KEPLYVRGA      0.0314 35601.97 41.6243
+5      0.0131 43415.41 73.8311 EPLYVRGAP EPLYVRGAP      0.0119 43962.79 77.4049
+6      0.0113 44263.95 79.0852 PLYVRGAPD PLYVRGAPD      0.0070 46364.96 91.4225
+     core.4   icore.4 X1.log50k.4     nM.4  Rank.4    Ave NB
+1 XNLKEPLYV XNLKEPLYV      0.0738 22492.88 26.3516 0.0699  0
+2 NLKEPLYVR NLKEPLYVR      0.0553 27497.66 35.6905 0.0499  0
+3 LKEPLYVRG LKEPLYVRG      0.0220 39428.80 68.8813 0.0203  0
+4 KEPLYVRGA KEPLYVRGA      0.0358 33924.39 50.9047 0.0378  0
+5 EPLYVRGAP EPLYVRGAP      0.0235 38769.71 66.4605 0.0382  0
+6 PLYVRGAPD PLYVRGAPD      0.0122 43826.94 86.2213 0.0189  0
+[1] 89425
+Execute 3 jobs...
+
+[Thu Aug 15 15:17:51 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P17_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P17_prime_output.txt
+    jobid: 9
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P17_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P17_prime_input.txt
+    wildcards: sample=P17
+    resources: tmpdir=/tmp
+
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XEAQKRAFE chr1_1968822_C_ XEAQKRAFE XEAQKRAFE    0.0154 42328.16 85.5081
+2   1 EAQKRAFEK chr1_1968822_C_ EAQKRAFEK EAQKRAFEK    0.1399 11009.85  8.3704
+3   2 AQKRAFEKE chr1_1968822_C_ AQKRAFEKE AQKRAFEKE    0.0360 33867.90 46.4372
+4   3 QKRAFEKEQ chr1_1968822_C_ QKRAFEKEQ QKRAFEKEQ    0.0119 43954.68 92.1896
+5   4 KRAFEKEQK chr1_1968822_C_ KRAFEKEQK KRAFEKEQK    0.0581 26669.02 26.4677
+6   5 RAFEKEQKL chr1_1968822_C_ RAFEKEQKL RAFEKEQKL    0.0606 25953.37 25.1040
+     core.1   icore.1 X1.log50k.1      nM.1  Rank.1    core.2   icore.2
+1 XEAQKRAFE XEAQKRAFE      0.0045 47643.969 94.2688 XEAQKRAFE XEAQKRAFE
+2 EAQKRAFEK EAQKRAFEK      0.0274 37164.566 45.6272 EAQKRAFEK EAQKRAFEK
+3 AQKRAFEKE AQKRAFEKE      0.0183 41031.723 59.2865 AQKRAFEKE AQKRAFEKE
+4 QKRAFEKEQ QKRAFEKEQ      0.0031 48347.609 96.2980 QKRAFEKEQ QKRAFEKEQ
+5 KRAFEKEQK KRAFEKEQK      0.0213 39706.637 54.0732 KRAFEKEQK KRAFEKEQK
+6 RAFEKEQKL RAFEKEQKL      0.3593  1025.223  1.3246 RAFEKEQKL RAFEKEQKL
+  X1.log50k.2      nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3
+1      0.0207 39988.594 64.2609 XEAQKRAFE XEAQKRAFE      0.0648 24808.42
+2      0.0379 33186.676 36.0125 EAQKRAFEK EAQKRAFEK      0.0382 33080.20
+3      0.0165 41802.938 74.6807 AQKRAFEKE AQKRAFEKE      0.0424 31601.68
+4      0.0154 42348.312 77.9502 QKRAFEKEQ QKRAFEKEQ      0.0128 43556.08
+5      0.0165 41828.258 74.8297 KRAFEKEQK KRAFEKEQK      0.0197 40398.27
+6      0.1893  6447.675  4.0949 RAFEKEQKL RAFEKEQKL      0.0353 34143.10
+   Rank.3    core.4   icore.4 X1.log50k.4      nM.4  Rank.4    core.5   icore.5
+1 15.5772 XEAQKRAFE XEAQKRAFE      0.0065 46610.414 84.8772 XEAQKRAFE XEAQKRAFE
+2 33.9185 EAQKRAFEK EAQKRAFEK      0.0183 41006.883 47.0922 EAQKRAFEK EAQKRAFEK
+3 29.1996 AQKRAFEKE AQKRAFEKE      0.0076 46037.039 79.8635 AQKRAFEKE AQKRAFEKE
+4 90.5123 QKRAFEKEQ QKRAFEKEQ      0.0025 48667.762 96.8986 QKRAFEKEQ QKRAFEKEQ
+5 71.6570 KRAFEKEQK KRAFEKEQK      0.0113 44257.730 65.6496 KRAFEKEQK KRAFEKEQK
+6 37.7854 RAFEKEQKL RAFEKEQKL      0.1585  9001.208  2.6694 RAFEKEQKL RAFEKEQKL
+  X1.log50k.5      nM.5  Rank.5    Ave NB
+1      0.0166 41789.379 72.1221 0.0214  0
+2      0.0459 30417.125 34.4129 0.0513  0
+3      0.0214 39663.281 62.7183 0.0237  0
+4      0.0181 41120.172 69.0080 0.0106  0
+5      0.0434 31270.736 36.3964 0.0284  0
+6      0.3209  1552.085  0.9357 0.1873  2
+[1] 76375
+
+[Thu Aug 15 15:17:51 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P34_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P34_prime_output.txt
+    jobid: 23
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P34_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P34_prime_input.txt
+    wildcards: sample=P34
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:51 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P27_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P27_prime_output.txt
+    jobid: 17
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P27_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P27_prime_input.txt
+    wildcards: sample=P27
+    resources: tmpdir=/tmp
+
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XASRAPRGT chr1_970793_C_T XASRAPRGT XASRAPRGT    0.0131 43405.52 84.2594
+2   1 ASRAPRGTS chr1_970793_C_T ASRAPRGTS ASRAPRGTS    0.0233 38870.10 58.3645
+3   2 SRAPRGTSD chr1_970793_C_T SRAPRGTSD SRAPRGTSD    0.0069 46412.14 95.8938
+4   3 RAPRGTSDP chr1_970793_C_T RAPRGTSDP RAPRGTSDP    0.0096 45083.71 92.5281
+5   4 APRGTSDPG chr1_970793_C_T APRGTSDPG APRGTSDPG    0.0118 44007.53 87.4652
+6   5 PRGTSDPGL chr1_970793_C_T PRGTSDPGL PRGTSDPGL    0.0074 46130.78 95.5585
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XASRAPRGT XASRAPRGT      0.0117 44048.02 88.9851 XASRAPRGT XASRAPRGT
+2 ASRAPRGTS ASRAPRGTS      0.0515 28633.18 30.0990 ASRAPRGTS ASRAPRGTS
+3 SRAPRGTSD SRAPRGTSD      0.0071 46314.82 95.8523 SRAPRGTSD SRAPRGTSD
+4 RAPRGTSDP RAPRGTSDP      0.0112 44298.94 90.0887 RAPRGTSDP RAPRGTSDP
+5 APRGTSDPG APRGTSDPG      0.0167 41732.45 77.9987 APRGTSDPG APRGTSDPG
+6 PRGTSDPGL PRGTSDPGL      0.0064 46632.63 96.2227 PRGTSDPGL PRGTSDPGL
+  X1.log50k.2       nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3
+1      0.0288 36621.2969 48.0775 XASRAPRGT XASRAPRGT      0.0186 40883.73
+2      0.2567  3110.7268  2.4539 ASRAPRGTS ASRAPRGTS      0.0215 39631.09
+3      0.0513 28688.3906 25.2256 SRAPRGTSD SRAPRGTSD      0.0210 39851.68
+4      0.0293 36404.4023 47.2110 RAPRGTSDP RAPRGTSDP      0.0121 43883.42
+5      0.4675   317.7419  0.6407 APRGTSDPG APRGTSDPG      0.0273 37231.76
+6      0.0101 44824.9570 91.6816 PRGTSDPGL PRGTSDPGL      0.0086 45569.71
+   Rank.3    core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1 74.8607 XASRAPRGT XASRAPRGT      0.0163 41899.83 72.6430 XASRAPRGT XASRAPRGT
+2 66.7132 ASRAPRGTS ASRAPRGTS      0.0468 30138.66 33.7866 ASRAPRGTS ASRAPRGTS
+3 68.1171 SRAPRGTSD SRAPRGTSD      0.0749 22231.33 19.5823 SRAPRGTSD SRAPRGTSD
+4 91.9362 RAPRGTSDP RAPRGTSDP      0.0184 40972.28 68.3446 RAPRGTSDP RAPRGTSDP
+5 52.3660 APRGTSDPG APRGTSDPG      0.0213 39696.34 62.8512 APRGTSDPG APRGTSDPG
+6 95.9441 PRGTSDPGL PRGTSDPGL      0.0434 31265.33 36.3834 PRGTSDPGL PRGTSDPGL
+  X1.log50k.5     nM.5  Rank.5    Ave NB
+1      0.0118 43994.67 67.6968 0.0167  0
+2      0.0298 36209.57 29.9878 0.0716  0
+3      0.0412 32020.55 19.6992 0.0337  0
+4      0.0126 43645.24 65.1745 0.0155  0
+5      0.0136 43163.39 61.8033 0.0930  1
+6      0.0173 41448.48 51.3955 0.0155  0
+[1] 96613
+  Pos   Peptide              ID      core     icore X1.log50k         nM
+1   0 XFLADFNGF chr1_1050283_C_ XFLADFNGF XFLADFNGF    0.0460 30392.1250
+2   1 FLADFNGFF chr1_1050283_C_ FLADFNGFF FLADFNGFF    0.6368    50.8945
+3   2 LADFNGFFH chr1_1050283_C_ LADFNGFFH LADFNGFFH    0.0473 29972.1602
+4   3 ADFNGFFHL chr1_1050283_C_ ADFNGFFHL ADFNGFFHL    0.1950  6060.2729
+5   4 DFNGFFHLE chr1_1050283_C_ DFNGFFHLE DFNGFFHLE    0.0355 34060.8281
+6   5 FNGFFHLEL chr1_1050283_C_ FNGFFHLEL FNGFFHLEL    0.1403 10959.8145
+     Rank    core.1   icore.1 X1.log50k.1      nM.1  Rank.1    core.2   icore.2
+1 42.0901[1] 89425
+ XFLADFNGF XFLADFNGF      0.1228 13239.191 13.8499 XFLADFNGF XFLADFNGF
+2  0.6393 FLADFNGFF FLADFNGFF      0.2646[Thu Aug 15 15:17:51 2024]
+Finished job 26.
+34 of 85 steps (40%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Aug 15 15:17:51 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P35_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P35_prime_output.txt
+    jobid: 25
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P35_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P35_prime_input.txt
+    wildcards: sample=P35
+    resources: tmpdir=/tmp
+
+  2856.529  2.9909 FLADFNGFF FLADFNGFF
+3 41.1789 LADFNGFFH LADFNGFFH      0.2221  4522.226  4.1991 LADFNGFFH LADFNGFFH
+4 10.5775 ADFNGFFHL ADFNGFFHL      0.1353 11562.429 11.3957 ADFNGFFHL ADFNGFFHL
+5 51.2614 DFNGFFHLE DFNGFFHLE      0.0585 26542.062 45.0811 DFNGFFHLE DFNGFFHLE
+6 15.3644 FNGFFHLEL FNGFFHLEL      0.1062 15845.518 18.3044 FNGFFHLEL FNGFFHLEL
+  X1.log50k.2      nM.2  Rank.2    core.3   icore.3 X1.log50k.3      nM.3
+1      0.0540 27886.256 44.1959 XFLADFNGF XFLADFNGF      0.1014 16688.760
+2      0.1551  9338.398 10.2547 FLADFNGFF FLADFNGFF      0.1585  9003.153
+3      0.0321 35333.348 68.6453 LADFNGFFH LADFNGFFH      0.0980 17312.812
+4      0.0733 22617.100 31.4990 ADFNGFFHL ADFNGFFHL      0.1436 10568.876
+5      0.0572 26922.695 41.5670 DFNGFFHLE DFNGFFHLE      0.0969 17523.127
+6      0.2544  3187.421  3.6022 FNGFFHLEL FNGFFHLEL      0.1187 13843.757
+  Rank.3    core.4   icore.4 X1.log50k.4       nM.4  Rank.4    core.5   icore.5
+1 8.1328 XFLADFNGF XFLADFNGF      0.0257 37843.0039 35.5682 XFLADFNGF XFLADFNGF
+2 3.7224 FLADFNGFF FLADFNGFF      0.4214   523.4278  0.1985 FLADFNGFF FLADFNGFF
+3 8.5933 LADFNGFFH LADFNGFFH      0.1870  6613.9346  1.8949 LADFNGFFH LADFNGFFH
+4 4.4807 ADFNGFFHL ADFNGFFHL      0.0761 21938.8574  9.6558 ADFNGFFHL ADFNGFFHL
+5 8.7610 DFNGFFHLE DFNGFFHLE      0.0103 44712.0977 68.9642 DFNGFFHLE DFNGFFHLE
+6 6.2610 FNGFFHLEL FNGFFHLEL      0.1440 10531.4346  3.2031 FNGFFHLEL FNGFFHLEL
+  X1.log50k.5      nM.5  Rank.5    Ave NB
+1      0.0809 20840.943 12.9634 0.0718  0
+2      0.2635  2888.979  0.9932 0.3166  3
+3      0.0966 17572.115  9.7097 0.1139  1
+4      0.0714 23099.856 15.6734 0.1158  0
+5      0.0462 30318.869 27.8563 0.0508  0
+6      0.1599  8860.996  3.6307 0.1539  0
+[1] 109784
+[1] 96613
+[1] 76375
+[Thu Aug 15 15:17:52 2024]
+Finished job 42.
+35 of 85 steps (41%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Aug 15 15:17:52 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P4_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P4_prime_output.txt
+    jobid: 41
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P4_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P4_prime_input.txt
+    wildcards: sample=P4
+    resources: tmpdir=/tmp
+
+[1] 109784
+[Thu Aug 15 15:17:52 2024]
+Finished job 76.
+36 of 85 steps (42%) done
+[Thu Aug 15 15:17:52 2024]
+Finished job 80.
+37 of 85 steps (44%) done
+Select jobs to execute...
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XGLVEQLYD chr1_948204_G_A XGLVEQLYD XGLVEQLYD    0.0075 46094.38 83.8062
+2   1 GLVEQLYDF chr1_948204_G_A GLVEQLYDF GLVEQLYDF    0.2007  5698.80  3.3888
+3   2 LVEQLYDFT chr1_948204_G_A LVEQLYDFT LVEQLYDFT    0.0156 42240.77 57.3342
+4   3 VEQLYDFTL chr1_948204_G_A VEQLYDFTL VEQLYDFTL    0.1092 15341.44  8.1970
+5   4 EQLYDFTLE chr1_948204_G_A EQLYDFTLE EQLYDFTLE    0.0175 41366.05 52.8274
+6   5 QLYDFTLEY chr1_948204_G_A QLYDFTLEY QLYDFTLEY    0.0948 17920.02  9.8151
+     core.1   icore.1 X1.log50k.1       nM.1  Rank.1    core.2   icore.2
+1 XGLVEQLYD XGLVEQLYD      0.0061 46813.6094 89.7896 XGLVEQLYD XGLVEQLYD
+2 GLVEQLYDF GLVEQLYDF      0.3578  1041.1519  1.3400 GLVEQLYDF GLVEQLYDF
+3 LVEQLYDFT LVEQLYDFT      0.0134 43258.7852 69.5756 LVEQLYDFT LVEQLYDFT
+4 VEQLYDFTL VEQLYDFTL      0.0970 17496.9844 13.8154 VEQLYDFTL VEQLYDFTL
+5 EQLYDFTLE EQLYDFTLE      0.0179 41210.1445 59.9965 EQLYDFTLE EQLYDFTLE
+6 QLYDFTLEY QLYDFTLEY      0.5950    79.9796  0.1481 QLYDFTLEY QLYDFTLEY
+  X1.log50k.2       nM.2  Rank.2    core.3   icore.3 X1.log50k.3      nM.3
+1      0.0078 45941.5078 88.4008 XGLVEQLYD XGLVEQLYD      0.0115 44145.332
+2      0.0894 19014.0586  7.6637 GLVEQLYDF GLVEQLYDF      0.0726 22799.896
+3      0.0284 36768.1836 32.2581 LVEQLYDFT LVEQLYDFT      0.0163 41935.680
+4      0.0680 23946.0156 11.2088 VEQLYDFTL VEQLYDFTL      0.2961  2029.917
+5      0.0307 35867.9883 29.6479 EQLYDFTLE EQLYDFTLE      0.0459 30438.516
+6      0.4371   441.5307  0.2567 QLYDFTLEY QLYDFTLEY      0.1933  6172.909
+   Rank.3    core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1 93.0679 XGLVEQLYD XGLVEQLYD      0.0080 45852.62 92.8682 XGLVEQLYD XGLVEQLYD
+2 13.1009 GLVEQLYDF GLVEQLYDF      0.0581 26654.86 10.0841 GLVEQLYDF GLVEQLYDF
+3 81.5082 LVEQLYDFT LVEQLYDFT      0.0294 36358.34 34.4017 LVEQLYDFT LVEQLYDFT
+4  1.2081 VEQLYDFTL VEQLYDFTL      0.0689 23715.26  6.8317 VEQLYDFTL VEQLYDFTL
+5 26.0051 EQLYDFTLE EQLYDFTLE      0.0226 39147.38 47.9132 EQLYDFTLE EQLYDFTLE
+6  2.8248 QLYDFTLEY QLYDFTLEY      0.1118 14918.78  1.8568 QLYDFTLEY QLYDFTLEY
+  X1.log50k.5     nM.5  Rank.5    Ave NB
+1      0.0047 47522.97 92.3606 0.0076  0
+2      0.0685 23822.74 11.2582 0.1412  1
+3      0.0693 23627.14 11.0721 0.0287  0
+4      0.0517 28569.75 16.7172 0.1152  1
+5      0.0125 43687.76 61.7739 0.0245  0
+6      0.1320 11982.33  3.7654 0.2607  3
+[1] 90236
+[1] 90236
+Execute 2 jobs...
+
+[Thu Aug 15 15:17:52 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P3_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P3_prime_output.txt
+    jobid: 75
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P3_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P3_prime_input.txt
+    wildcards: sample=P3
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:52 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P6_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P6_prime_output.txt
+    jobid: 79
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P6_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P6_prime_input.txt
+    wildcards: sample=P6
+    resources: tmpdir=/tmp
+
+[Thu Aug 15 15:17:52 2024]
+Finished job 82.
+38 of 85 steps (45%) done
+[Thu Aug 15 15:17:52 2024]
+Finished job 68.
+39 of 85 steps (46%) done
+Select jobs to execute...
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XSECRSFAG chr1_1087195_G_ XSECRSFAG XSECRSFAG    0.0203 40121.21 71.4345
+2   1 SECRSFAGS chr1_1087195_G_ SECRSFAGS SECRSFAGS    0.0282 36845.85 59.5868
+3   2 ECRSFAGSG chr1_1087195_G_ ECRSFAGSG ECRSFAGSG    0.0067 46488.53 95.4668
+4   3 CRSFAGSGA chr1_1087195_G_ CRSFAGSGA CRSFAGSGA    0.0303 36039.52 57.0868
+5   4 RSFAGSGAP chr1_1087195_G_ RSFAGSGAP RSFAGSGAP    0.0514 28663.87 38.5272
+6   5 SFAGSGAPF chr1_1087195_G_ SFAGSGAPF SFAGSGAPF    0.0813 20749.15 26.1584
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XSECRSFAG XSECRSFAG      0.0235 38789.84 68.0534 XSECRSFAG XSECRSFAG
+2 SECRSFAGS SECRSFAGS      0.0264 37561.13 62.1967 SECRSFAGS SECRSFAGS
+3 ECRSFAGSG ECRSFAGSG      0.0153 42389.57 85.7793 ECRSFAGSG ECRSFAGSG
+4 CRSFAGSGA CRSFAGSGA      0.0357 33976.91 46.8469 CRSFAGSGA CRSFAGSGA
+5 RSFAGSGAP RSFAGSGAP      0.0890 19091.36 15.1820 RSFAGSGAP RSFAGSGAP
+6 SFAGSGAPF SFAGSGAPF      0.0882 19246.08 15.3562 SFAGSGAPF SFAGSGAPF
+  X1.log50k.2      nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3
+1      0.0275 37125.977 45.2565 XSECRSFAG XSECRSFAG      0.0299 36187.62
+2      0.0297 36270.336 42.0000 SECRSFAGS SECRSFAGS      0.0273 37222.11
+3      0.0195 40479.199 60.5872 ECRSFAGSG ECRSFAGSG      0.0423 31628.02
+4      0.1178 13980.282  4.8459 CRSFAGSGA CRSFAGSGA      0.0968 17534.12
+5      0.0375 33328.793 32.4550 RSFAGSGAP RSFAGSGAP      0.1177 13990.11
+6      0.1620  8665.401  2.2117 SFAGSGAPF SFAGSGAPF      0.0839 20169.42
+   Rank.3    core.4   icore.4 X1.log50k.4      nM.4  Rank.4    core.5   icore.5
+1 46.7848 XSECRSFAG XSECRSFAG      0.0181 41106.836 51.2727 XSECRSFAG XSECRSFAG
+2 51.0867 SECRSFAGS SECRSFAGS      0.0116 44094.742 65.1228 SECRSFAGS SECRSFAGS
+3 31.8834 ECRSFAGSG ECRSFAGSG      0.0087 45499.258 73.9524 ECRSFAGSG ECRSFAGSG
+4  9.0248 CRSFAGSGA CRSFAGSGA      0.0429 31417.916 27.5319 CRSFAGSGA CRSFAGSGA
+5  6.2845 RSFAGSGAP RSFAGSGAP      0.1312 12089.512  8.4460 RSFAGSGAP RSFAGSGAP
+6 11.6524 SFAGSGAPF SFAGSGAPF      0.3001  1944.105  2.2393 SFAGSGAPF SFAGSGAPF
+  X1.log50k.5     nM.5  Rank.5    Ave NB
+1      0.0180 41133.52 36.0019 0.0229  0
+2      0.0094 45179.90 60.1879 0.0221  0
+3      0.0037 48059.19 91.4574 0.0160  0
+4      0.0205 40044.03 31.8766 0.0573  0
+5      0.0473 29960.82 11.6760 0.0790  0
+6      0.1113 14993.37  2.7444 0.1378  0
+[1] 88110
+[1] 88110
+Execute 2 jobs...
+
+[Thu Aug 15 15:17:52 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P49_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P49_prime_output.txt
+    jobid: 67
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P49_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P49_prime_input.txt
+    wildcards: sample=P49
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 15:17:52 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P13_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P13_prime_output.txt
+    jobid: 81
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P13_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P13_prime_input.txt
+    wildcards: sample=P13
+    resources: tmpdir=/tmp
+
+[Thu Aug 15 15:17:52 2024]
+Finished job 48.
+40 of 85 steps (47%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Aug 15 15:17:52 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P8_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P8_prime_output.txt
+    jobid: 47
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P8_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P8_prime_input.txt
+    wildcards: sample=P8
+    resources: tmpdir=/tmp
+
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XEEDDTEGF chr1_945526_A_G XEEDDTEGF XEEDDTEGF    0.0248 38223.65 54.9209
+2   1 EEDDTEGFP chr1_945526_A_G EEDDTEGFP EEDDTEGFP    0.0127 43560.32 85.1193
+3   2 EDDTEGFPE chr1_945526_A_G EDDTEGFPE EDDTEGFPE    0.0206 40027.55 64.6915
+4   3 DDTEGFPER chr1_945526_A_G DDTEGFPER DDTEGFPER    0.0173 41463.75 73.0652
+5   4 DTEGFPERG chr1_945526_A_G DTEGFPERG DTEGFPERG    0.0512 28742.76 20.7842
+6   5 TEGFPERGI chr1_945526_A_G TEGFPERGI TEGFPERGI    0.0180 41144.66 71.1571
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XEEDDTEGF XEEDDTEGF      0.0125 43697.20 85.9397 XEEDDTEGF XEEDDTEGF
+2 EEDDTEGFP EEDDTEGFP      0.0075 46116.82 94.9160 EEDDTEGFP EEDDTEGFP
+3 EDDTEGFPE EDDTEGFPE      0.0074 46162.74 95.0290 EDDTEGFPE EDDTEGFPE
+4 DDTEGFPER DDTEGFPER      0.0112 44300.37 88.3743 DDTEGFPER DDTEGFPER
+5 DTEGFPERG DTEGFPERG      0.0076 46036.56 94.6400 DTEGFPERG DTEGFPERG
+6 TEGFPERGI TEGFPERGI      0.0252 38051.17 63.7277 TEGFPERGI TEGFPERGI
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.0103 44714.03 96.3392 XEEDDTEGF XEEDDTEGF      0.0380 33157.95 52.9885
+2      0.0077 46007.18 97.2733 EEDDTEGFP EEDDTEGFP      0.0278 37026.89 65.5040
+3      0.0130 43432.77 95.3867 EDDTEGFPE EDDTEGFPE      0.0137 43106.00 87.9598
+4      0.0191 40673.26 88.5471 DDTEGFPER DDTEGFPER      0.0116 44078.99 91.3183
+5      0.0112 44277.86 96.0181 DTEGFPERG DTEGFPERG      0.0135 43207.31 88.3260
+6      0.0309 35793.16 70.3424 TEGFPERGI TEGFPERGI      0.1573  9119.63  6.2648
+     core.4   icore.4 X1.log50k.4     nM.4  Rank.4    core.5   icore.5
+1 XEEDDTEGF XEEDDTEGF      0.0191 40676.33 58.4316 XEEDDTEGF XEEDDTEGF
+2 EEDDTEGFP EEDDTEGFP      0.0061 46813.09 93.8231 EEDDTEGFP EEDDTEGFP
+3 EDDTEGFPE EDDTEGFPE      0.0031 48329.31 97.2233 EDDTEGFPE EDDTEGFPE
+4 DDTEGFPER DDTEGFPER      0.0090 45336.61 85.1248 DDTEGFPER DDTEGFPER
+5 DTEGFPERG DTEGFPERG      0.0099 44927.41 82.5325 DTEGFPERG DTEGFPERG
+6 TEGFPERGI TEGFPERGI      0.0226 39163.49 51.8682 TEGFPERGI TEGFPERGI
+  X1.log50k.5     nM.5  Rank.5    Ave NB
+1      0.0217 39521.47 55.4122 0.0211  0
+2      0.0077 46000.21 89.4518 0.0116  0
+3      0.0048 47465.42 95.7209 0.0104  0
+4      0.0128 43551.36 74.9771 0.0135  0
+5      0.0092 45248.89 85.0606 0.0171  0
+6      0.0280 36944.86 45.8612 0.0470  0
+[1] 156202
+  Pos   Peptide              ID      core     icore X1.log50k       nM    Rank
+1   0 XPRWTLGPA chr1_1211518_C_ XPRWTLGPA XPRWTLGPA    0.0264 37557.88 51.5418
+2   1 PRWTLGPAK chr1_1211518_C_ PRWTLGPAK PRWTLGPAK    0.0108 44467.96 89.8559
+3   2 RWTLGPAKL chr1_1211518_C_ RWTLGPAKL RWTLGPAKL    0.0174 41423.82 72.8274
+4   3 WTLGPAKLE chr1_1211518_C_ WTLGPAKLE WTLGPAKLE    0.0370 33497.62 34.1291
+5   4 TLGPAKLEP chr1_1211518_C_ TLGPAKLEP TLGPAKLEP    0.0229 39009.98 59.1032
+6   5 LGPAKLEPG chr1_1211518_C_ LGPAKLEPG LGPAKLEPG    0.0128 43541.00 85.0174
+     core.1   icore.1 X1.log50k.1     nM.1  Rank.1    core.2   icore.2
+1 XPRWTLGPA XPRWTLGPA      0.0703 23374.65 10.0174 XPRWTLGPA XPRWTLGPA
+2 PRWTLGPAK PRWTLGPAK      0.0130 43447.81 68.1837 PRWTLGPAK PRWTLGPAK
+3 RWTLGPAKL RWTLGPAKL      0.0202 40202.91 47.8955 RWTLGPAKL RWTLGPAKL
+4 WTLGPAKLE WTLGPAKLE      0.0484 29615.95 17.1231 WTLGPAKLE WTLGPAKLE
+5 TLGPAKLEP TLGPAKLEP      0.0075 46088.37 88.3802 TLGPAKLEP TLGPAKLEP
+6 LGPAKLEPG LGPAKLEPG      0.0112 44273.06 74.3108 LGPAKLEPG LGPAKLEPG
+  X1.log50k.2     nM.2  Rank.2    core.3   icore.3 X1.log50k.3     nM.3  Rank.3
+1      0.2706  2675.27  3.0686 XPRWTLGPA XPRWTLGPA      0.0371 33471.19 32.6722
+2      0.0258 37840.96 78.2071 PRWTLGPAK PRWTLGPAK      0.0177 41281.99 64.8478
+3      0.0586 26523.97 40.5394 RWTLGPAKL RWTLGPAKL      0.0285 36726.45 43.8894
+4      0.0254 37968.93 78.6974 WTLGPAKLE WTLGPAKLE      0.0154 42318.99 70.4715
+5      0.0339 34629.75 66.0409 TLGPAKLEP TLGPAKLEP      0.0145 42723.86 72.7898
+6      0.0717 23016.52 32.3539 LGPAKLEPG LGPAKLEPG      0.0153 42384.98 70.8509
+     core.4   icore.4 X1.log50k.4     nM.4  Rank.4    Ave NB
+1 XPRWTLGPA XPRWTLGPA      0.0483 29642.57 26.4350 0.0905  0
+2 PRWTLGPAK PRWTLGPAK      0.0444 30928.54 29.2477 0.0223  0
+3 RWTLGPAKL RWTLGPAKL      0.1138 14595.30  7.2616 0.0477  0
+4 WTLGPAKLE WTLGPAKLE      0.0332 34909.64 39.5897 0.0319  0
+5 TLGPAKLEP TLGPAKLEP      0.0132 43362.35 73.9531 0.0184  0
+6 LGPAKLEPG LGPAKLEPG      0.0181 41126.86 62.4979 0.0258  0
+[1] 151217
+[1] 151217
+[1] 156202
+[Thu Aug 15 15:17:53 2024]
+Finished job 78.
+41 of 85 steps (48%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Aug 15 15:17:53 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2B_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2B_prime_output.txt
+    jobid: 77
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2B_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2B_prime_input.txt
+    wildcards: sample=P2B
+    resources: tmpdir=/tmp
+
+[Thu Aug 15 15:17:53 2024]
+Finished job 84.
+42 of 85 steps (49%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Aug 15 15:17:53 2024]
+localrule PRIME:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P9_prime_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P9_prime_output.txt
+    jobid: 83
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P9_prime_output.txt; Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P9_prime_input.txt
+    wildcards: sample=P9
+    resources: tmpdir=/tmp
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_365751.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_634065.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_787598.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_205775.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_166577.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_195190.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_300092.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_465312.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_126463.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_822236.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_933031.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_581732.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_751400.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_906198.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_280205.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:17:58 2024]
+Finished job 15.
+43 of 85 steps (51%) done
+[Thu Aug 15 15:17:58 2024]
+Finished job 11.
+44 of 85 steps (52%) done
+[Thu Aug 15 15:17:58 2024]
+Finished job 35.
+45 of 85 steps (53%) done
+[Thu Aug 15 15:17:58 2024]
+Finished job 43.
+46 of 85 steps (54%) done
+[Thu Aug 15 15:17:58 2024]
+Finished job 45.
+47 of 85 steps (55%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_592786.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:17:58 2024]
+Finished job 27.
+48 of 85 steps (56%) done
+[Thu Aug 15 15:17:59 2024]
+Finished job 71.
+49 of 85 steps (58%) done
+[Thu Aug 15 15:17:59 2024]
+Finished job 5.
+50 of 85 steps (59%) done
+[Thu Aug 15 15:17:59 2024]
+Finished job 69.
+51 of 85 steps (60%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_430925.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:17:59 2024]
+Finished job 73.
+52 of 85 steps (61%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_931072.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:17:59 2024]
+Finished job 57.
+53 of 85 steps (62%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_708834.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:17:59 2024]
+Finished job 31.
+54 of 85 steps (64%) done
+[Thu Aug 15 15:17:59 2024]
+Finished job 39.
+55 of 85 steps (65%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_801048.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:17:59 2024]
+Finished job 63.
+56 of 85 steps (66%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_399653.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:17:59 2024]
+Finished job 7.
+57 of 85 steps (67%) done
+[Thu Aug 15 15:17:59 2024]
+Finished job 21.
+58 of 85 steps (68%) done
+[Thu Aug 15 15:17:59 2024]
+Finished job 51.
+59 of 85 steps (69%) done
+[Thu Aug 15 15:17:59 2024]
+Finished job 3.
+60 of 85 steps (71%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_970190.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:17:59 2024]
+Finished job 55.
+61 of 85 steps (72%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_409015.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_228611.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:17:59 2024]
+Finished job 33.
+62 of 85 steps (73%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_469121.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:18:00 2024]
+Finished job 61.
+63 of 85 steps (74%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_182629.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_567988.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_624249.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:18:00 2024]
+Finished job 29.
+64 of 85 steps (75%) done
+[Thu Aug 15 15:18:00 2024]
+Finished job 25.
+65 of 85 steps (76%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_632132.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:18:00 2024]
+Finished job 19.
+66 of 85 steps (78%) done
+[Thu Aug 15 15:18:00 2024]
+Finished job 23.
+67 of 85 steps (79%) done
+[Thu Aug 15 15:18:00 2024]
+Finished job 37.
+68 of 85 steps (80%) done
+[Thu Aug 15 15:18:00 2024]
+Finished job 49.
+69 of 85 steps (81%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_64261.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_925404.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:18:00 2024]
+Finished job 53.
+70 of 85 steps (82%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_427847.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_161440.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:18:01 2024]
+Finished job 59.
+71 of 85 steps (84%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_338385.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_628069.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_773222.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:18:01 2024]
+Finished job 1.
+72 of 85 steps (85%) done
+[Thu Aug 15 15:18:01 2024]
+Finished job 47.
+73 of 85 steps (86%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_105866.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_166826.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:18:01 2024]
+Finished job 67.
+74 of 85 steps (87%) done
+[Thu Aug 15 15:18:01 2024]
+Finished job 41.
+75 of 85 steps (88%) done
+[Thu Aug 15 15:18:01 2024]
+Finished job 81.
+76 of 85 steps (89%) done
+[Thu Aug 15 15:18:01 2024]
+Finished job 75.
+77 of 85 steps (91%) done
+[Thu Aug 15 15:18:02 2024]
+Finished job 77.
+78 of 85 steps (92%) done
+[Thu Aug 15 15:18:02 2024]
+Finished job 79.
+79 of 85 steps (93%) done
+[Thu Aug 15 15:18:02 2024]
+Finished job 83.
+80 of 85 steps (94%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_666495.txt is created
+    
+
+DONE
+
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_168906.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:18:04 2024]
+Finished job 13.
+81 of 85 steps (95%) done
+[Thu Aug 15 15:18:04 2024]
+Finished job 65.
+82 of 85 steps (96%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_363071.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:18:05 2024]
+Finished job 9.
+83 of 85 steps (98%) done
+
+    /xdisk/khasting/knodele/programs/PRIME/lib/../temp/MixMHCpred_139143.txt is created
+    
+
+DONE
+
+[Thu Aug 15 15:18:06 2024]
+Finished job 17.
+84 of 85 steps (99%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Aug 15 15:18:06 2024]
+localrule all:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P48_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P47_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P54_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P58_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P17_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P19_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P23_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P25_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P27_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P28_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P30_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P34_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P35_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P36_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P37_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P38_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39A_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39B_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P40_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P41_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P4_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P5_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P7_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P8_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P26_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P24_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P18_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P59_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P22_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P20_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P57_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P55_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P33_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P49_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P11_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2A_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P14_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P3_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2B_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P6_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P13_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P9_prime_output.txt
+    jobid: 0
+    reason: Input files updated by another job: /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P9_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P47_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2B_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P5_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P40_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P37_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P14_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P6_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P49_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P25_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P19_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P30_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P17_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P38_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P11_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P4_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P57_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39A_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P58_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P35_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P36_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P13_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P39B_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P3_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P59_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P8_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P22_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P26_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P23_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P41_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P54_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P28_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P55_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P24_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P7_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P34_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P27_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P20_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P2A_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P18_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P33_prime_output.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/prime/P48_prime_output.txt
+    resources: tmpdir=/tmp
+
+[Thu Aug 15 15:18:06 2024]
+Finished job 0.
+85 of 85 steps (100%) done
+Complete log: .snakemake/log/2024-08-15T151744.888173.snakemake.log
