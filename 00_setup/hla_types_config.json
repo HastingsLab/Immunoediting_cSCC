@@ -1,0 +1,320 @@
+{
+    "all_patients": [
+        "P164",
+        "P54",
+        "P062",
+        "P008",
+        "P23",
+        "P182",
+        "P113",
+        "P12",
+        "P18",
+        "P7",
+        "P45",
+        "P39A",
+        "P015",
+        "P43",
+        "P6",
+        "P24",
+        "P2B",
+        "P004",
+        "P55",
+        "P3",
+        "P58",
+        "P35",
+        "P31",
+        "P22",
+        "P40",
+        "P38",
+        "P050",
+        "P16",
+        "P25",
+        "P8",
+        "P33",
+        "P002",
+        "P21",
+        "P36",
+        "P53",
+        "P9",
+        "P57",
+        "P183",
+        "P2A",
+        "P169",
+        "P44",
+        "P5",
+        "P001",
+        "P48",
+        "P010",
+        "P59",
+        "P29",
+        "P51",
+        "P19",
+        "P37",
+        "P50",
+        "P32",
+        "P138",
+        "P39B",
+        "P26",
+        "P11",
+        "P1",
+        "P14",
+        "P20",
+        "P15",
+        "P49",
+        "P10",
+        "P28",
+        "P47",
+        "P4",
+        "P41",
+        "P133",
+        "P17",
+        "P13",
+        "P52",
+        "P017",
+        "P27",
+        "P083",
+        "P055",
+        "P30",
+        "P46",
+        "P56",
+        "P42",
+        "P34"
+    ],
+    "P001": {
+        "hla": "HLA-A23:01,HLA-A23:01,HLA-B44:03,HLA-B15:01,HLA-C02:02,HLA-C02:02"
+    },
+    "P002": {
+        "hla": "HLA-A11:01,HLA-A29:02,HLA-B45:01,HLA-B35:03,HLA-C04:01,HLA-C06:02"
+    },
+    "P004": {
+        "hla": "HLA-A29:02,HLA-A25:01,HLA-B44:03,HLA-B18:01,HLA-C16:01,HLA-C12:03"
+    },
+    "P008": {
+        "hla": "HLA-A01:01,HLA-A25:01,HLA-B40:02,HLA-B57:01,HLA-C06:02,HLA-C02:02"
+    },
+    "P010": {
+        "hla": "HLA-A11:01,HLA-A02:06,HLA-B56:01,HLA-B15:01,HLA-C01:02,HLA-C03:03"
+    },
+    "P015": {
+        "hla": "HLA-A02:01,HLA-A26:01,HLA-B51:01,HLA-B49:01,HLA-C07:01,HLA-C04:01"
+    },
+    "P017": {
+        "hla": "HLA-A24:02,HLA-A68:02,HLA-B53:01,HLA-B13:02,HLA-C06:02,HLA-C04:01"
+    },
+    "P050": {
+        "hla": "HLA-A36:01,HLA-A33:03,HLA-B35:01,HLA-B35:01,HLA-C04:01,HLA-C04:01"
+    },
+    "P055": {
+        "hla": "HLA-A11:01,HLA-A02:02,HLA-B07:02,HLA-B50:01,HLA-C07:02,HLA-C06:02"
+    },
+    "P062": {
+        "hla": "HLA-A03:01,HLA-A02:01,HLA-B07:02,HLA-B44:02,HLA-C07:02,HLA-C05:01"
+    },
+    "P083": {
+        "hla": "HLA-A24:02,HLA-A02:01,HLA-B40:01,HLA-B44:02,HLA-C03:04,HLA-C02:02"
+    },
+    "P10": {
+        "hla": "HLA-A31:01,HLA-A31:01,HLA-B35:01,HLA-B57:01,HLA-C04:01,HLA-C06:02"
+    },
+    "P113": {
+        "hla": "HLA-A03:01,HLA-A33:01,HLA-B14:02,HLA-B07:02,HLA-C07:02,HLA-C08:02"
+    },
+    "P11": {
+        "hla": "HLA-A31:01,HLA-A11:01,HLA-B44:02,HLA-B27:05,HLA-C05:01,HLA-C02:02"
+    },
+    "P12": {
+        "hla": "HLA-A29:02,HLA-A02:01,HLA-B18:01,HLA-B44:03,HLA-C16:01,HLA-C05:01"
+    },
+    "P133": {
+        "hla": "HLA-A03:01,HLA-A02:01,HLA-B08:01,HLA-B08:01,HLA-C07:01,HLA-C07:01"
+    },
+    "P138": {
+        "hla": "HLA-A24:02,HLA-A02:01,HLA-B40:01,HLA-B39:01,HLA-C07:02,HLA-C03:04"
+    },
+    "P13": {
+        "hla": "HLA-A30:02,HLA-A02:01,HLA-B08:01,HLA-B18:01,HLA-C07:01,HLA-C05:01"
+    },
+    "P14": {
+        "hla": "HLA-A03:01,HLA-A02:01,HLA-B44:03,HLA-B44:03,HLA-C16:01,HLA-C04:01"
+    },
+    "P15": {
+        "hla": "HLA-A02:01,HLA-A24:02,HLA-B07:02,HLA-B39:06,HLA-C07:02,HLA-C03:04"
+    },
+    "P164": {
+        "hla": "HLA-A24:02,HLA-A02:01,HLA-B51:01,HLA-B14:01,HLA-C01:02,HLA-C05:01"
+    },
+    "P169": {
+        "hla": "HLA-A01:01,HLA-A01:01,HLA-B39:06,HLA-B18:01,HLA-C07:02,HLA-C05:01"
+    },
+    "P16": {
+        "hla": "HLA-A02:01,HLA-A02:01,HLA-B51:01,HLA-B44:03,HLA-C16:01,HLA-C14:02"
+    },
+    "P17": {
+        "hla": "HLA-A32:01,HLA-A02:01,HLA-B15:18,HLA-B27:02,HLA-C07:04,HLA-C02:02"
+    },
+    "P182": {
+        "hla": "HLA-A03:01,HLA-A11:01,HLA-B07:02,HLA-B14:01,HLA-C07:02,HLA-C05:01"
+    },
+    "P183": {
+        "hla": "HLA-A01:01,HLA-A03:01,HLA-B08:01,HLA-B08:01,HLA-C07:01,HLA-C07:02"
+    },
+    "P18": {
+        "hla": "HLA-A24:02,HLA-A68:02,HLA-B53:01,HLA-B38:01,HLA-C12:03,HLA-C04:01"
+    },
+    "P19": {
+        "hla": "HLA-A11:01,HLA-A11:01,HLA-B55:01,HLA-B55:01,HLA-C03:03,HLA-C03:03"
+    },
+    "P1": {
+        "hla": "HLA-A03:01,HLA-A29:02,HLA-B44:03,HLA-B07:02,HLA-C07:02,HLA-C16:01"
+    },
+    "P20": {
+        "hla": "HLA-A03:01,HLA-A31:01,HLA-B07:02,HLA-B51:01,HLA-C07:02,HLA-C15:02"
+    },
+    "P21": {
+        "hla": "HLA-A01:01,HLA-A02:01,HLA-B08:01,HLA-B51:08,HLA-C07:01,HLA-C16:02"
+    },
+    "P22": {
+        "hla": "HLA-A24:02,HLA-A02:01,HLA-B08:01,HLA-B08:01,HLA-C07:01,HLA-C07:01"
+    },
+    "P23": {
+        "hla": "HLA-A02:01,HLA-A25:01,HLA-B14:02,HLA-B14:03,HLA-C07:02,HLA-C05:01"
+    },
+    "P24": {
+        "hla": "HLA-A25:01,HLA-A24:02,HLA-B07:02,HLA-B44:02,HLA-C07:02,HLA-C12:03"
+    },
+    "P25": {
+        "hla": "HLA-A24:02,HLA-A24:02,HLA-B58:01,HLA-B27:05,HLA-C03:02,HLA-C03:02"
+    },
+    "P26": {
+        "hla": "HLA-A32:01,HLA-A02:05,HLA-B14:02,HLA-B50:01,HLA-C06:02,HLA-C08:02"
+    },
+    "P27": {
+        "hla": "HLA-A24:02,HLA-A11:01,HLA-B35:01,HLA-B27:05,HLA-C04:01,HLA-C02:02"
+    },
+    "P28": {
+        "hla": "HLA-A23:01,HLA-A23:01,HLA-B44:02,HLA-B44:02,HLA-C05:01,HLA-C05:01"
+    },
+    "P29": {
+        "hla": "HLA-A01:01,HLA-A25:01,HLA-B44:03,HLA-B15:01,HLA-C03:03,HLA-C04:01"
+    },
+    "P2A": {
+        "hla": "HLA-A01:01,HLA-A26:01,HLA-B08:01,HLA-B49:01,HLA-C07:01,HLA-C07:01"
+    },
+    "P2B": {
+        "hla": "HLA-A26:01,HLA-A01:01,HLA-B08:01,HLA-B49:01,HLA-C07:01,HLA-C07:01"
+    },
+    "P30": {
+        "hla": "HLA-A33:01,HLA-A03:01,HLA-B35:01,HLA-B14:02,HLA-C08:02,HLA-C04:01"
+    },
+    "P31": {
+        "hla": "HLA-A29:02,HLA-A02:03,HLA-B07:02,HLA-B45:01,HLA-C07:02,HLA-C06:02"
+    },
+    "P32": {
+        "hla": "HLA-A11:01,HLA-A11:01,HLA-B57:01,HLA-B35:01,HLA-C06:02,HLA-C04:01"
+    },
+    "P33": {
+        "hla": "HLA-A02:01,HLA-A02:01,HLA-B27:05,HLA-B40:01,HLA-C03:04,HLA-C02:02"
+    },
+    "P34": {
+        "hla": "HLA-A02:01,HLA-A02:01,HLA-B07:02,HLA-B50:01,HLA-C07:02,HLA-C06:02"
+    },
+    "P35": {
+        "hla": "HLA-A03:01,HLA-A01:01,HLA-B14:02,HLA-B57:01,HLA-C06:02,HLA-C08:02"
+    },
+    "P36": {
+        "hla": "HLA-A01:01,HLA-A31:01,HLA-B40:01,HLA-B37:01,HLA-C03:04,HLA-C06:02"
+    },
+    "P37": {
+        "hla": "HLA-A24:02,HLA-A29:02,HLA-B35:08,HLA-B45:01,HLA-C06:02,HLA-C04:01"
+    },
+    "P38": {
+        "hla": "HLA-A68:01,HLA-A68:01,HLA-B57:01,HLA-B44:03,HLA-C07:01,HLA-C07:01"
+    },
+    "P39A": {
+        "hla": "HLA-A11:01,HLA-A11:01,HLA-B55:01,HLA-B14:02,HLA-C03:03,HLA-C08:02"
+    },
+    "P39B": {
+        "hla": "HLA-A11:01,HLA-A11:01,HLA-B55:01,HLA-B55:01,HLA-C03:03,HLA-C03:03"
+    },
+    "P3": {
+        "hla": "HLA-A03:01,HLA-A32:01,HLA-B07:02,HLA-B07:02,HLA-C07:02,HLA-C05:01"
+    },
+    "P40": {
+        "hla": "HLA-A03:01,HLA-A01:01,HLA-B57:01,HLA-B13:02,HLA-C06:02,HLA-C06:02"
+    },
+    "P41": {
+        "hla": "HLA-A03:01,HLA-A31:01,HLA-B07:02,HLA-B35:01,HLA-C07:02,HLA-C04:01"
+    },
+    "P42": {
+        "hla": "HLA-A03:01,HLA-A25:01,HLA-B35:01,HLA-B39:01,HLA-C04:01,HLA-C12:02"
+    },
+    "P43": {
+        "hla": "HLA-A31:01,HLA-A31:01,HLA-B51:01,HLA-B51:01,HLA-C15:02,HLA-C15:02"
+    },
+    "P44": {
+        "hla": "HLA-A03:01,HLA-A29:02,HLA-B35:01,HLA-B44:03,HLA-C16:01,HLA-C04:01"
+    },
+    "P45": {
+        "hla": "HLA-A02:01,HLA-A01:01,HLA-B08:01,HLA-B51:01,HLA-C07:01,HLA-C07:01"
+    },
+    "P46": {
+        "hla": "HLA-A11:01,HLA-A26:01,HLA-B55:01,HLA-B35:01,HLA-C03:03,HLA-C04:01"
+    },
+    "P47": {
+        "hla": "HLA-A02:01,HLA-A68:01,HLA-B49:01,HLA-B35:03,HLA-C07:01,HLA-C07:01"
+    },
+    "P48": {
+        "hla": "HLA-A02:01,HLA-A02:01,HLA-B44:03,HLA-B18:01,HLA-C07:01,HLA-C16:01"
+    },
+    "P49": {
+        "hla": "HLA-A24:02,HLA-A32:01,HLA-B35:08,HLA-B44:02,HLA-C04:01,HLA-C05:01"
+    },
+    "P4": {
+        "hla": "HLA-A01:01,HLA-A01:01,HLA-B52:01,HLA-B08:01,HLA-C07:01,HLA-C12:02"
+    },
+    "P50": {
+        "hla": "HLA-A02:01,HLA-A02:01,HLA-B40:01,HLA-B18:01,HLA-C07:01,HLA-C07:01"
+    },
+    "P51": {
+        "hla": "HLA-A26:01,HLA-A24:02,HLA-B55:01,HLA-B67:01,HLA-C03:03,HLA-C12:03"
+    },
+    "P52": {
+        "hla": "HLA-A03:01,HLA-A01:01,HLA-B08:01,HLA-B47:01,HLA-C07:01,HLA-C06:02"
+    },
+    "P53": {
+        "hla": "HLA-A03:01,HLA-A03:01,HLA-B15:01,HLA-B40:01,HLA-C03:04,HLA-C03:04"
+    },
+    "P54": {
+        "hla": "HLA-A03:01,HLA-A26:01,HLA-B07:02,HLA-B38:01,HLA-C07:02,HLA-C12:03"
+    },
+    "P55": {
+        "hla": "HLA-A24:02,HLA-A24:02,HLA-B15:01,HLA-B38:01,HLA-C03:03,HLA-C12:03"
+    },
+    "P56": {
+        "hla": "HLA-A03:01,HLA-A02:07,HLA-B07:02,HLA-B44:02,HLA-C07:02,HLA-C05:01"
+    },
+    "P57": {
+        "hla": "HLA-A01:01,HLA-A24:02,HLA-B08:01,HLA-B08:01,HLA-C17:01,HLA-C07:01"
+    },
+    "P58": {
+        "hla": "HLA-A03:01,HLA-A03:01,HLA-B40:01,HLA-B40:02,HLA-C03:04,HLA-C03:04"
+    },
+    "P59": {
+        "hla": "HLA-A03:01,HLA-A03:01,HLA-B07:02,HLA-B07:02,HLA-C07:02,HLA-C07:02"
+    },
+    "P5": {
+        "hla": "HLA-A01:01,HLA-A02:01,HLA-B08:01,HLA-B27:05,HLA-C07:01,HLA-C07:01"
+    },
+    "P6": {
+        "hla": "HLA-A03:02,HLA-A01:01,HLA-B07:02,HLA-B07:02,HLA-C07:02,HLA-C07:02"
+    },
+    "P7": {
+        "hla": "HLA-A01:01,HLA-A01:01,HLA-B08:01,HLA-B08:01,HLA-C07:01,HLA-C07:01"
+    },
+    "P8": {
+        "hla": "HLA-A03:01,HLA-A03:01,HLA-B55:01,HLA-B14:02,HLA-C08:02,HLA-C03:03"
+    },
+    "P9": {
+        "hla": "HLA-A01:01,HLA-A02:01,HLA-B08:01,HLA-B13:02,HLA-C07:01,HLA-C06:02"
+    }
+}
