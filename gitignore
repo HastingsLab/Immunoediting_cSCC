@@ -7,6 +7,10 @@
 02_predict_binding/PRIME/.snakemake
 03_copy_number/.snakemake
 05_cross_reactivity_distance/.snakemake
+04_annotate_variants/.snakemake
+04_annotate_variants/archive
+04_annotate_variants/`1
+05_predict_hla/.snakemake
 07_growth_rate_simulations/Mayo_data_combined_variants.maf
 03_copy_number/Mayo_combined_reference.cnn.1
 07_growth_rate_simulations/Mayo_data_combined_variants_CN.csv
