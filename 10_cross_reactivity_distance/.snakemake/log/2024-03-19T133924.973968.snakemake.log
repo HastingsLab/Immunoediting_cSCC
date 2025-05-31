@@ -1,0 +1,750 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 71
+Job counts:
+	count	jobs
+	1	all
+	61	blast
+	62
+
+[Tue Mar 19 13:39:25 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P57_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P57_luksza_blast_iedb.xml
+    jobid: 114
+    wildcards: sample=P57
+
+Submitted job 114 with external jobid 'Submitted batch job 1881762'.
+
+[Tue Mar 19 13:39:25 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P34_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P34_luksza_blast_iedb.xml
+    jobid: 89
+    wildcards: sample=P34
+
+Submitted job 89 with external jobid 'Submitted batch job 1881763'.
+
+[Tue Mar 19 13:39:26 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P4_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P4_luksza_blast_iedb.xml
+    jobid: 106
+    wildcards: sample=P4
+
+Submitted job 106 with external jobid 'Submitted batch job 1881764'.
+
+[Tue Mar 19 13:39:26 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P55_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P55_luksza_blast_iedb.xml
+    jobid: 112
+    wildcards: sample=P55
+
+Submitted job 112 with external jobid 'Submitted batch job 1881765'.
+
+[Tue Mar 19 13:39:26 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P11_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P11_luksza_blast_iedb.xml
+    jobid: 63
+    wildcards: sample=P11
+
+Submitted job 63 with external jobid 'Submitted batch job 1881766'.
+
+[Tue Mar 19 13:39:26 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P3_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P3_luksza_blast_iedb.xml
+    jobid: 96
+    wildcards: sample=P3
+
+Submitted job 96 with external jobid 'Submitted batch job 1881767'.
+
+[Tue Mar 19 13:39:26 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P9_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P9_luksza_blast_iedb.xml
+    jobid: 120
+    wildcards: sample=P9
+
+Submitted job 120 with external jobid 'Submitted batch job 1881768'.
+
+[Tue Mar 19 13:39:26 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P46_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P46_luksza_blast_iedb.xml
+    jobid: 102
+    wildcards: sample=P46
+
+Submitted job 102 with external jobid 'Submitted batch job 1881769'.
+
+[Tue Mar 19 13:39:26 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P54_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P54_luksza_blast_iedb.xml
+    jobid: 111
+    wildcards: sample=P54
+
+Submitted job 111 with external jobid 'Submitted batch job 1881770'.
+
+[Tue Mar 19 13:39:26 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P45_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P45_luksza_blast_iedb.xml
+    jobid: 101
+    wildcards: sample=P45
+
+Submitted job 101 with external jobid 'Submitted batch job 1881771'.
+
+[Tue Mar 19 13:39:26 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P22_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P22_luksza_blast_iedb.xml
+    jobid: 75
+    wildcards: sample=P22
+
+Submitted job 75 with external jobid 'Submitted batch job 1881772'.
+
+[Tue Mar 19 13:39:27 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P29_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P29_luksza_blast_iedb.xml
+    jobid: 82
+    wildcards: sample=P29
+
+Submitted job 82 with external jobid 'Submitted batch job 1881773'.
+
+[Tue Mar 19 13:39:27 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P1_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P1_luksza_blast_iedb.xml
+    jobid: 72
+    wildcards: sample=P1
+
+Submitted job 72 with external jobid 'Submitted batch job 1881774'.
+
+[Tue Mar 19 13:39:27 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P33_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P33_luksza_blast_iedb.xml
+    jobid: 88
+    wildcards: sample=P33
+
+Submitted job 88 with external jobid 'Submitted batch job 1881775'.
+
+[Tue Mar 19 13:39:27 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P37_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P37_luksza_blast_iedb.xml
+    jobid: 92
+    wildcards: sample=P37
+
+Submitted job 92 with external jobid 'Submitted batch job 1881776'.
+
+[Tue Mar 19 13:39:27 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P25_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P25_luksza_blast_iedb.xml
+    jobid: 78
+    wildcards: sample=P25
+
+Submitted job 78 with external jobid 'Submitted batch job 1881777'.
+
+[Tue Mar 19 13:39:27 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P15_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P15_luksza_blast_iedb.xml
+    jobid: 67
+    wildcards: sample=P15
+
+Submitted job 67 with external jobid 'Submitted batch job 1881778'.
+
+[Tue Mar 19 13:39:27 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P27_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P27_luksza_blast_iedb.xml
+    jobid: 80
+    wildcards: sample=P27
+
+Submitted job 80 with external jobid 'Submitted batch job 1881779'.
+
+[Tue Mar 19 13:39:27 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P48_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P48_luksza_blast_iedb.xml
+    jobid: 104
+    wildcards: sample=P48
+
+Submitted job 104 with external jobid 'Submitted batch job 1881780'.
+
+[Tue Mar 19 13:39:27 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P53_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P53_luksza_blast_iedb.xml
+    jobid: 110
+    wildcards: sample=P53
+
+Submitted job 110 with external jobid 'Submitted batch job 1881781'.
+
+[Tue Mar 19 13:39:28 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P39A_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P39A_luksza_blast_iedb.xml
+    jobid: 94
+    wildcards: sample=P39A
+
+Submitted job 94 with external jobid 'Submitted batch job 1881782'.
+
+[Tue Mar 19 13:39:28 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P58_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P58_luksza_blast_iedb.xml
+    jobid: 115
+    wildcards: sample=P58
+
+Submitted job 115 with external jobid 'Submitted batch job 1881783'.
+
+[Tue Mar 19 13:39:28 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P19_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P19_luksza_blast_iedb.xml
+    jobid: 71
+    wildcards: sample=P19
+
+Submitted job 71 with external jobid 'Submitted batch job 1881784'.
+
+[Tue Mar 19 13:39:28 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P2A_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P2A_luksza_blast_iedb.xml
+    jobid: 83
+    wildcards: sample=P2A
+
+Submitted job 83 with external jobid 'Submitted batch job 1881785'.
+
+[Tue Mar 19 13:39:28 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P49_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P49_luksza_blast_iedb.xml
+    jobid: 105
+    wildcards: sample=P49
+
+Submitted job 105 with external jobid 'Submitted batch job 1881786'.
+
+[Tue Mar 19 13:39:28 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P13_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P13_luksza_blast_iedb.xml
+    jobid: 65
+    wildcards: sample=P13
+
+Submitted job 65 with external jobid 'Submitted batch job 1881787'.
+
+[Tue Mar 19 13:39:28 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P23_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P23_luksza_blast_iedb.xml
+    jobid: 76
+    wildcards: sample=P23
+
+Submitted job 76 with external jobid 'Submitted batch job 1881788'.
+
+[Tue Mar 19 13:39:28 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P47_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P47_luksza_blast_iedb.xml
+    jobid: 103
+    wildcards: sample=P47
+
+Submitted job 103 with external jobid 'Submitted batch job 1881789'.
+
+[Tue Mar 19 13:39:28 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P14_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P14_luksza_blast_iedb.xml
+    jobid: 66
+    wildcards: sample=P14
+
+Submitted job 66 with external jobid 'Submitted batch job 1881790'.
+
+[Tue Mar 19 13:39:28 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P38_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P38_luksza_blast_iedb.xml
+    jobid: 93
+    wildcards: sample=P38
+
+Submitted job 93 with external jobid 'Submitted batch job 1881791'.
+
+[Tue Mar 19 13:39:29 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P40_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P40_luksza_blast_iedb.xml
+    jobid: 97
+    wildcards: sample=P40
+
+Submitted job 97 with external jobid 'Submitted batch job 1881792'.
+
+[Tue Mar 19 13:39:29 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P18_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P18_luksza_blast_iedb.xml
+    jobid: 70
+    wildcards: sample=P18
+
+Submitted job 70 with external jobid 'Submitted batch job 1881793'.
+
+[Tue Mar 19 13:39:29 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P59_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P59_luksza_blast_iedb.xml
+    jobid: 116
+    wildcards: sample=P59
+
+Submitted job 116 with external jobid 'Submitted batch job 1881794'.
+
+[Tue Mar 19 13:39:29 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P44_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P44_luksza_blast_iedb.xml
+    jobid: 122
+    wildcards: sample=P44
+
+Submitted job 122 with external jobid 'Submitted batch job 1881795'.
+
+[Tue Mar 19 13:39:29 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P51_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P51_luksza_blast_iedb.xml
+    jobid: 108
+    wildcards: sample=P51
+
+Submitted job 108 with external jobid 'Submitted batch job 1881796'.
+
+[Tue Mar 19 13:39:29 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P31_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P31_luksza_blast_iedb.xml
+    jobid: 86
+    wildcards: sample=P31
+
+Submitted job 86 with external jobid 'Submitted batch job 1881797'.
+
+[Tue Mar 19 13:39:29 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P50_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P50_luksza_blast_iedb.xml
+    jobid: 107
+    wildcards: sample=P50
+
+Submitted job 107 with external jobid 'Submitted batch job 1881798'.
+
+[Tue Mar 19 13:39:29 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P21_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P21_luksza_blast_iedb.xml
+    jobid: 74
+    wildcards: sample=P21
+
+Submitted job 74 with external jobid 'Submitted batch job 1881799'.
+
+[Tue Mar 19 13:39:29 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P30_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P30_luksza_blast_iedb.xml
+    jobid: 85
+    wildcards: sample=P30
+
+Submitted job 85 with external jobid 'Submitted batch job 1881800'.
+
+[Tue Mar 19 13:39:29 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P16_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P16_luksza_blast_iedb.xml
+    jobid: 68
+    wildcards: sample=P16
+
+Submitted job 68 with external jobid 'Submitted batch job 1881801'.
+
+[Tue Mar 19 13:39:30 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P26_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P26_luksza_blast_iedb.xml
+    jobid: 79
+    wildcards: sample=P26
+
+Submitted job 79 with external jobid 'Submitted batch job 1881802'.
+
+[Tue Mar 19 13:39:30 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P20_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P20_luksza_blast_iedb.xml
+    jobid: 73
+    wildcards: sample=P20
+
+Submitted job 73 with external jobid 'Submitted batch job 1881803'.
+
+[Tue Mar 19 13:39:30 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P43_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P43_luksza_blast_iedb.xml
+    jobid: 100
+    wildcards: sample=P43
+
+Submitted job 100 with external jobid 'Submitted batch job 1881804'.
+
+[Tue Mar 19 13:39:30 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P56_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P56_luksza_blast_iedb.xml
+    jobid: 113
+    wildcards: sample=P56
+
+Submitted job 113 with external jobid 'Submitted batch job 1881805'.
+
+[Tue Mar 19 13:39:30 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P36_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P36_luksza_blast_iedb.xml
+    jobid: 91
+    wildcards: sample=P36
+
+Submitted job 91 with external jobid 'Submitted batch job 1881806'.
+
+[Tue Mar 19 13:39:30 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P28_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P28_luksza_blast_iedb.xml
+    jobid: 81
+    wildcards: sample=P28
+
+Submitted job 81 with external jobid 'Submitted batch job 1881807'.
+
+[Tue Mar 19 13:39:30 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P12_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P12_luksza_blast_iedb.xml
+    jobid: 64
+    wildcards: sample=P12
+
+Submitted job 64 with external jobid 'Submitted batch job 1881808'.
+
+[Tue Mar 19 13:39:30 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P32_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P32_luksza_blast_iedb.xml
+    jobid: 87
+    wildcards: sample=P32
+
+Submitted job 87 with external jobid 'Submitted batch job 1881809'.
+
+[Tue Mar 19 13:39:30 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P7_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P7_luksza_blast_iedb.xml
+    jobid: 118
+    wildcards: sample=P7
+
+Submitted job 118 with external jobid 'Submitted batch job 1881810'.
+
+[Tue Mar 19 13:39:30 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P42_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P42_luksza_blast_iedb.xml
+    jobid: 99
+    wildcards: sample=P42
+
+Submitted job 99 with external jobid 'Submitted batch job 1881811'.
+
+[Tue Mar 19 13:39:31 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P8_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P8_luksza_blast_iedb.xml
+    jobid: 119
+    wildcards: sample=P8
+
+Submitted job 119 with external jobid 'Submitted batch job 1881812'.
+
+[Tue Mar 19 13:39:31 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P2B_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P2B_luksza_blast_iedb.xml
+    jobid: 84
+    wildcards: sample=P2B
+
+Submitted job 84 with external jobid 'Submitted batch job 1881813'.
+
+[Tue Mar 19 13:39:31 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P10_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P10_luksza_blast_iedb.xml
+    jobid: 62
+    wildcards: sample=P10
+
+Submitted job 62 with external jobid 'Submitted batch job 1881814'.
+
+[Tue Mar 19 13:39:31 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P35_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P35_luksza_blast_iedb.xml
+    jobid: 90
+    wildcards: sample=P35
+
+Submitted job 90 with external jobid 'Submitted batch job 1881815'.
+
+[Tue Mar 19 13:39:31 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P41_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P41_luksza_blast_iedb.xml
+    jobid: 98
+    wildcards: sample=P41
+
+Submitted job 98 with external jobid 'Submitted batch job 1881816'.
+
+[Tue Mar 19 13:39:31 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P6_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P6_luksza_blast_iedb.xml
+    jobid: 121
+    wildcards: sample=P6
+
+Submitted job 121 with external jobid 'Submitted batch job 1881817'.
+
+[Tue Mar 19 13:39:31 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P52_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P52_luksza_blast_iedb.xml
+    jobid: 109
+    wildcards: sample=P52
+
+Submitted job 109 with external jobid 'Submitted batch job 1881818'.
+
+[Tue Mar 19 13:39:31 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P24_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P24_luksza_blast_iedb.xml
+    jobid: 77
+    wildcards: sample=P24
+
+Submitted job 77 with external jobid 'Submitted batch job 1881819'.
+
+[Tue Mar 19 13:39:31 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P17_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P17_luksza_blast_iedb.xml
+    jobid: 69
+    wildcards: sample=P17
+
+Submitted job 69 with external jobid 'Submitted batch job 1881820'.
+
+[Tue Mar 19 13:39:31 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P39B_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P39B_luksza_blast_iedb.xml
+    jobid: 95
+    wildcards: sample=P39B
+
+Submitted job 95 with external jobid 'Submitted batch job 1881821'.
+
+[Tue Mar 19 13:39:32 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P5_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P5_luksza_blast_iedb.xml
+    jobid: 117
+    wildcards: sample=P5
+
+Submitted job 117 with external jobid 'Submitted batch job 1881822'.
+[Tue Mar 19 13:39:55 2024]
+Finished job 91.
+1 of 62 steps (2%) done
+[Tue Mar 19 13:39:57 2024]
+Finished job 98.
+2 of 62 steps (3%) done
+[Tue Mar 19 13:39:57 2024]
+Finished job 77.
+3 of 62 steps (5%) done
+[Tue Mar 19 13:39:57 2024]
+Finished job 117.
+4 of 62 steps (6%) done
+[Tue Mar 19 13:40:08 2024]
+Finished job 114.
+5 of 62 steps (8%) done
+[Tue Mar 19 13:40:08 2024]
+Finished job 112.
+6 of 62 steps (10%) done
+[Tue Mar 19 13:40:08 2024]
+Finished job 63.
+7 of 62 steps (11%) done
+[Tue Mar 19 13:40:08 2024]
+Finished job 111.
+8 of 62 steps (13%) done
+[Tue Mar 19 13:40:09 2024]
+Finished job 75.
+9 of 62 steps (15%) done
+[Tue Mar 19 13:40:09 2024]
+Finished job 82.
+10 of 62 steps (16%) done
+[Tue Mar 19 13:40:09 2024]
+Finished job 88.
+11 of 62 steps (18%) done
+[Tue Mar 19 13:40:09 2024]
+Finished job 92.
+12 of 62 steps (19%) done
+[Tue Mar 19 13:40:09 2024]
+Finished job 78.
+13 of 62 steps (21%) done
+[Tue Mar 19 13:40:10 2024]
+Finished job 71.
+14 of 62 steps (23%) done
+[Tue Mar 19 13:40:10 2024]
+Finished job 83.
+15 of 62 steps (24%) done
+[Tue Mar 19 13:40:10 2024]
+Finished job 76.
+16 of 62 steps (26%) done
+[Tue Mar 19 13:40:10 2024]
+Finished job 103.
+17 of 62 steps (27%) done
+[Tue Mar 19 13:40:10 2024]
+Finished job 66.
+18 of 62 steps (29%) done
+[Tue Mar 19 13:40:10 2024]
+Finished job 93.
+19 of 62 steps (31%) done
+[Tue Mar 19 13:40:11 2024]
+Finished job 97.
+20 of 62 steps (32%) done
+[Tue Mar 19 13:40:11 2024]
+Finished job 122.
+21 of 62 steps (34%) done
+[Tue Mar 19 13:40:11 2024]
+Finished job 108.
+22 of 62 steps (35%) done
+[Tue Mar 19 13:40:11 2024]
+Finished job 86.
+23 of 62 steps (37%) done
+[Tue Mar 19 13:40:11 2024]
+Finished job 74.
+24 of 62 steps (39%) done
+[Tue Mar 19 13:40:11 2024]
+Finished job 85.
+25 of 62 steps (40%) done
+[Tue Mar 19 13:40:11 2024]
+Finished job 68.
+26 of 62 steps (42%) done
+[Tue Mar 19 13:40:12 2024]
+Finished job 81.
+27 of 62 steps (44%) done
+[Tue Mar 19 13:40:12 2024]
+Finished job 87.
+28 of 62 steps (45%) done
+[Tue Mar 19 13:40:12 2024]
+Finished job 118.
+29 of 62 steps (47%) done
+[Tue Mar 19 13:40:12 2024]
+Finished job 99.
+30 of 62 steps (48%) done
+[Tue Mar 19 13:40:13 2024]
+Finished job 62.
+31 of 62 steps (50%) done
+[Tue Mar 19 13:40:13 2024]
+Finished job 109.
+32 of 62 steps (52%) done
+[Tue Mar 19 13:40:13 2024]
+Finished job 95.
+33 of 62 steps (53%) done
+[Tue Mar 19 13:40:23 2024]
+Finished job 102.
+34 of 62 steps (55%) done
+[Tue Mar 19 13:40:23 2024]
+Finished job 101.
+35 of 62 steps (56%) done
+[Tue Mar 19 13:40:23 2024]
+Finished job 72.
+36 of 62 steps (58%) done
+[Tue Mar 19 13:40:23 2024]
+Finished job 67.
+37 of 62 steps (60%) done
+[Tue Mar 19 13:40:24 2024]
+Finished job 94.
+38 of 62 steps (61%) done
+[Tue Mar 19 13:40:24 2024]
+Finished job 115.
+39 of 62 steps (63%) done
+[Tue Mar 19 13:40:24 2024]
+Finished job 70.
+40 of 62 steps (65%) done
+[Tue Mar 19 13:40:24 2024]
+Finished job 116.
+41 of 62 steps (66%) done
+[Tue Mar 19 13:40:24 2024]
+Finished job 79.
+42 of 62 steps (68%) done
+[Tue Mar 19 13:40:24 2024]
+Finished job 73.
+43 of 62 steps (69%) done
+[Tue Mar 19 13:40:25 2024]
+Finished job 100.
+44 of 62 steps (71%) done
+[Tue Mar 19 13:40:25 2024]
+Finished job 69.
+45 of 62 steps (73%) done
+[Tue Mar 19 13:40:35 2024]
+Finished job 89.
+46 of 62 steps (74%) done
+[Tue Mar 19 13:40:35 2024]
+Finished job 104.
+47 of 62 steps (76%) done
+[Tue Mar 19 13:40:35 2024]
+Finished job 107.
+48 of 62 steps (77%) done
+[Tue Mar 19 13:40:36 2024]
+Finished job 90.
+49 of 62 steps (79%) done
+[Tue Mar 19 13:40:46 2024]
+Finished job 96.
+50 of 62 steps (81%) done
+[Tue Mar 19 13:40:46 2024]
+Finished job 80.
+51 of 62 steps (82%) done
+[Tue Mar 19 13:40:46 2024]
+Finished job 110.
+52 of 62 steps (84%) done
+[Tue Mar 19 13:40:46 2024]
+Finished job 64.
+53 of 62 steps (85%) done
+[Tue Mar 19 13:40:57 2024]
+Finished job 106.
+54 of 62 steps (87%) done
+[Tue Mar 19 13:40:57 2024]
+Finished job 119.
+55 of 62 steps (89%) done
+[Tue Mar 19 13:41:07 2024]
+Finished job 105.
+56 of 62 steps (90%) done
+[Tue Mar 19 13:41:07 2024]
+Finished job 121.
+57 of 62 steps (92%) done
+[Tue Mar 19 13:41:37 2024]
+Finished job 65.
+58 of 62 steps (94%) done
+[Tue Mar 19 13:41:37 2024]
+Finished job 113.
+59 of 62 steps (95%) done
+[Tue Mar 19 13:42:17 2024]
+Finished job 120.
+60 of 62 steps (97%) done
+[Tue Mar 19 13:42:17 2024]
+Finished job 84.
+61 of 62 steps (98%) done
+
+[Tue Mar 19 13:42:17 2024]
+localrule all:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P10_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P11_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P12_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P13_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P14_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P15_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P16_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P17_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P18_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P19_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P1_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P20_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P21_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P22_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P23_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P24_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P25_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P26_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P27_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P28_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P29_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P2A_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P2B_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P30_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P31_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P32_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P33_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P34_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P35_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P36_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P37_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P38_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P39A_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P39B_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P3_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P40_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P41_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P42_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P43_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P45_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P46_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P47_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P48_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P49_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P4_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P50_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P51_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P52_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P53_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P54_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P55_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P56_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P57_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P58_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P59_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P5_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P7_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P8_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P9_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P6_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/peptides/P44_luksza_blast_input.txt, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P10_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P11_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P12_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P13_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P14_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P15_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P16_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P17_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P18_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P19_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P1_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P20_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P21_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P22_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P23_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P24_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P25_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P26_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P27_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P28_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P29_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P2A_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P2B_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P30_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P31_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P32_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P33_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P34_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P35_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P36_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P37_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P38_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P39A_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P39B_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P3_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P40_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P41_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P42_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P43_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P45_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P46_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P47_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P48_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P49_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P4_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P50_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P51_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P52_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P53_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P54_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P55_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P56_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P57_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P58_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P59_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P5_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P7_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P8_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P9_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P6_luksza_blast_iedb.xml, /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P44_luksza_blast_iedb.xml
+    jobid: 0
+
+[Tue Mar 19 13:42:17 2024]
+Finished job 0.
+62 of 62 steps (100%) done
+Complete log: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/log/2024-03-19T133924.973968.snakemake.log

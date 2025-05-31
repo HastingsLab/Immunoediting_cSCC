@@ -1,0 +1,8 @@
+Building DAG of jobs...
+InputFunctionException in rule salmon_quant_paired in file /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/star.snakefile, line 10:
+Error:
+  KeyError: 's_CSCC_4.'
+Wildcards:
+  sample=s_CSCC_4.
+Traceback:
+  File "/home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/star.snakefile", line 12, in <lambda>

@@ -1,0 +1,60 @@
+"","Patient","ID","Tumor_Sample_Barcode","RNA_ID","Immunosuppression","Gender","Age","Stage","Met","Exome_batch","RNA_batch","Include_in_study","Immunosuppression_cause","Immunosuppressive_agent","Immunosuppressive_agent_details","Location","Dataset","in_silico_enrichment"
+"2","2","P2A","s_CSCC_4_DNA","s_CSCC_4","Yes","Male",83,"T2b","PNoMet","B1","B1","Yes","renal_transplant","prednisone_gabapentin","""prednisone 5 mg oral tablet once a day, gabapentin 300 mg oral tablet twice a day""","Arm","Old",4.0982179683374
+"3","2","P2B","s_CSCC_6_DNA","s_CSCC_6","Yes","Male",80,"T2b","PNoMet","B1","B1","Yes","renal_transplant","prednisone_gabapentin","""prednisone 5 mg oral tablet once a day, gabapentin 300 mg oral tablet twice a day""","Arm","Old",105.202349340079
+"5","4","P3","s_CSCC_8_DNA","s_CSCC_8","Yes","Female",93,"T2b","PNoMet","B1","B1","Yes","renal_transplant","prednisone_tacrolimus"," ""mycopheolic acid discontinued and she was placed on prednisone 5 mg daily and maintained on tacrolimus"" ","Cheek","Old",16.3186277093168
+"6","5","P4","s_CSCC_10T_DNA","s_CSCC_10T","Yes","Male",88,"T2b","PNoMet","B1","B1","Yes","renal_transplant","tacrolimus","""stable on tacrolimus for 15 years""","Scalp","Old",28.5253926739925
+"7","6","P5","s_CSCC_12_DNA","s_CSCC_12","No","Male",84,"T2b","PNoMet","B1","B1","Yes",NA,NA,NA,"Scalp","Old",6.30546712842681
+"8","7","P6","s_CSCC_14_DNA","s_CSCC_14","No","Male",90,"T2b","PNoMet","B1","B1","Yes",NA,NA,NA,"Scalp","Old",19.3157908671176
+"9","8","P7","s_CSCC_16_DNA","s_CSCC_16","No","Male",89,"T2b","PNoMet","B1","B1","Yes",NA,NA,NA,"Forehead","Old",8.97146340529607
+"10","9","P8","s_CSCC_18_DNA","s_CSCC_18","No","Male",74,"T2b","PNoMet","B1","B1","Yes",NA,NA,NA,"Cheek","Old",36.6643923731485
+"13","13","P9","s_CSCC_29_DNA","s_CSCC_29","No","Female",94,"T2b","PMet","B1","B1","Yes",NA,NA,NA,"Ear","Old",62.7030255544626
+"15","16","P11","s_CSCC_39T_DNA","s_CSCC_39T","No","Female",83,"T2b","PMet","B1","B1","Yes",NA,NA,NA,"Foot","Old",-15.9606368992799
+"18","19","P13","s_CSCC_48_DNA","s_CSCC_48","No","Male",70,"T2b","PMet","B1","B1","Yes",NA,NA,NA,"Ear","Old",50.5881888369461
+"19","20","P14","s_CSCC_52_DNA","s_CSCC_52","No","Female",85,"T2b","PMet","B1","B1","Yes",NA,NA,NA,"Lip: Non-hair bearing/Vermillion","Old",1.02113244844597
+"22","P10_B2","P17","s_097-T2a_B2_DNA","s_097.T2a_B2","Yes","Male",81,"T2a","PMet","B2","B2","Yes","myasthenia_gravis","azothiaprine","""azothiaprine 100mg BID""","Jaw","Old",-4.8114049833882
+"23","P10_B3","P18","s_CSCC_310-T2a_B4_DNA","s_CSCC_310_T2a_B4","No","Male",94,"T2a","PMet","B3","B3","Yes",NA,NA,NA,"Neck","Old",38.1009410912342
+"24","P11_B2","P19","s_101-T2a_B2_DNA","s_101.T2a_B2","No","Female",76,"T2a","PMet","B2","B2","Yes",NA,NA,NA,"Lip: Hair bearing/Perioral","Old",2.75183828599623
+"25","P11_B3","P20","s_CSCC_322-T2b_B4_DNA","s_CSCC_322_T2b_B4","No","Male",93,"T2b","PNoMet","B3","B3","Yes",NA,NA,NA,"Cheek","Old",8.43889128597067
+"27","P12_B3","P22","s_CSCC_320-T2a_B4_DNA","s_CSCC_320_T2a_B4","Yes","Male",67,"T2a","PNoMet","B3","B3","Yes","renal_transplant","tacrolimus","""tacrolimus 0.5 mg once daily""","Forearm","Old",27.2855227648491
+"28","P13_B2","P23","s_109-T2a_B2_DNA","s_109.T2a_B2","No","Male",88,"T2a","PMet","B2","B2","Yes",NA,NA,NA,"Arm","Old",19.6932575978549
+"29","P13_B3","P24","s_CSCC_306-T2a_B4_DNA","s_CSCC_306_T2a_B4","No","Female",90,"T2a","PNoMet","B3","B3","Yes",NA,NA,NA,"Leg","Old",10.1078886871403
+"30","P14_B2","P25","s_151-T2a_B2_DNA","s_151.T2a_B2","No","Male",96,"T2a","PNoMet","B2","B2","Yes",NA,NA,NA,"Neck","Old",5.25414325881667
+"31","P14_B3","P26","s_CSCC_304-T2b_B4_DNA","s_CSCC_304_T2b_B4","Yes","Male",76,"T2b","PNoMet","B3","B3","Yes","heart_renal_transplant","prednisone_sirolimus_tacrolimus","""prednisone 5 mg, sirolimus 1 mg, sirolimus 0.5 mg, tacrolimus 1 mg""","Forehead","Old",28.4941339132658
+"32","P15_B2","P27","s_153-T2a_B2_DNA","s_153.T2a_B2","No","Male",81,"T2a","PNoMet","B2","B2","Yes",NA,NA,NA,"Forearm","Old",30.7799384429263
+"34","P16_B2","P28","s_155-T2a_B2_DNA","s_155.T2a_B2","No","Male",95,"T2a","PNoMet","B2","B2","Yes",NA,NA,NA,"Forehead","Old",11.185500518271
+"39","P18_B2","P30","s_159-T2a_B2_DNA","s_159.T2a_B2","No","Female",92,"T2a","PNoMet","B2","B2","Yes",NA,NA,NA,"Back","Old",3.93743602003208
+"44","P2_B3","P33","s_CSCC-363-T2a_B4_DNA","s_CSCC_363_T2a_B4","No","Male",90,"T2a","PMet","B3","B3","Yes",NA,NA,NA,"Lip: Non-hair bearing/Vermillion","Old",14.2782835441977
+"45","P20_B2","P34","s_163-T2a_B2_DNA","s_163.T2a_B2","No","Male",90,"T2a","PNoMet","B2","B2","Yes",NA,NA,NA,"Ear","Old",40.9615337705977
+"46","P21_B2","P35","s_165-T2a_B2_DNA","s_165.T2a_B2","No","Male",95,"T2a","PNoMet","B2","B2","Yes",NA,NA,NA,"Hand","Old",10.187886721581
+"47","P22_B2","P36","s_167-T2a_B2_DNA","s_167.T2a_B2","No","Male",93,"T2a","PNoMet","B2","B2","Yes",NA,NA,NA,"Lower Leg","Old",1.82476918865632
+"48","P23_B2","P37","s_169-T2a_B2_DNA","s_169.T2a_B2","No","Male",89,"T2a","PNoMet","B2","B2","Yes",NA,NA,NA,"Temple","Old",13.7815111318122
+"49","P24_B2","P38","s_171-T2a_B2_DNA","s_171.T2a_B2","No","Male",91,"T2a","PNoMet","B2","B2","Yes",NA,NA,NA,"Scalp","Old",0.479177753218969
+"50","P25_B2","P39A","s_200-T2b_B2_DNA","s_200.T2b_B2","Yes","Male",72,"T2b","PNoMet","B2","B2","Yes","myasthenia_gravis","prednisone","""20 mg prednisone""","Forehead","Old",30.7682086333775
+"51","P25_B2","P39B","s_201-T2b_B2_DNA","s_201.T2b_B2","Yes","Male",70,"T2b","PNoMet","B2","B2","Yes","myasthenia_gravis","prednisone","""20 mg prednisone""","Forehead","Old",7.06095063748759
+"52","P26_B2","P40","s_203-T2b_B2_DNA","s_203.T2b_B2","No","Male",88,"T2b","PNoMet","B2","B2","Yes",NA,NA,NA,"Cheek","Old",7.2033093464011
+"53","P27_B2","P41","s_205-T2b_B2_DNA","s_205.T2b_B2","No","Female",95,"T2b","PNoMet","B2","B2","Yes",NA,NA,NA,"Leg","Old",2.37051915640939
+"59","P31_B2","P47","s_73-T2a_B2_DNA","s_073.T2a_B2","No","Female",92,"T2a","PMet","B2","B2","Yes",NA,NA,NA,"Leg","Old",11.6297218093687
+"60","P4_B2","P48","s_072-T2b_B2_DNA","s_072.T2b_B2","No","Male",80,"T2b","PMet","B2","B2","Yes",NA,NA,NA,"Cheek","Old",29.9859965049674
+"61","P4_B3","P49","s_CSCC-373-T2b_B4_DNA","s_CSCC_373_T2b_B4","No","Male",83,"T2b","PMet","B3","B3","Yes",NA,NA,NA,"Scalp","Old",38.9885444766034
+"66","P7_B2","P54","s_085-T2a_B2_DNA","s_085.T2a_B2","No","Male",91,"T2a","PMet","B2","B2","Yes",NA,NA,NA,"Jaw","Old",3.11124394966371
+"67","P7_B3","P55","s_CSCC-359-T2a_B4_DNA","s_CSCC_359_T2a_B4","Yes","Male",77,"T2a","PMet","B3","B3","Yes","heart_transplant","prednisone_tacrolimus","""10 mg prednisone and 0.5 mg tacrolimus daily""","Scalp","Old",9.29006074978699
+"69","P8_B3","P57","s_CSCC-349-T3_B4_DNA","s_CSCC_349_T3_B4","No","Male",66,"T3","PMet","B3","B3","Yes",NA,NA,NA,"Lip: Non-hair bearing/Vermillion","Old",19.8366402425773
+"70","P9_B2","P58","s_093-T2a_B2_DNA","s_093.T2a_B2","No","Male",81,"T2a","PMet","B2","B2","Yes",NA,NA,NA,"Forehead","Old",17.2874827465643
+"71","P9_B3","P59","s_CSCC_316-T2b_B4_DNA","s_CSCC_316_T2b_B4","No","Male",63,"T2b","PNoMet","B3","B3","Yes",NA,NA,NA,"Cheek","Old",3.83128908881661
+"73","P062","P062","CSCC_NPT-062_T2a","CSCC_NPT-062_T2a","No","Male",65.37,"T2a","PNoMet","B4","B4","Yes",NA,NA,NA,"Left Temple","New",-38.8836377091822
+"74","P164","P164","CSCC_NPT-164_T2a","CSCC_NPT-164_T2a","No","Male",70.84,"T2a","PNoMet","B4","B4","Yes",NA,NA,NA,"Left Finger","New",26.566279067647
+"75","P169","P169","CSCC_NPT-169_T2b","CSCC_NPT-169_T2b","No","Male",71.86,"T2b","PMet","B4","B4","Yes",NA,NA,NA,"Left Cheek","New",9.34415031493923
+"76","P015","P015","CSCC_NPT-015_T2a","CSCC_NPT-015_T2a","Yes","Male",77.89,"T2a","PNoMet","B4","B4","Yes","renal_transplant","prednisone_tacrolimus_mycophenolate_methylprednisone","Prednisone, Tacrolimus, mycophenolate, methylprednisone","Left Scalp","New",14.7154757912431
+"77","P001","P001","CSCC_NPT-001-2_T2b","CSCC_NPT-001-2_T2b","Yes","Male",79.42,"T2b","PNoMet","B4","B4","Yes","auto_immune","prednisone_methotrexate","Prednisone, Methotrexate","Right Forearm","New",37.3426677226068
+"78","P002","P002","CSCC_NPT-002-1_T2a","CSCC_NPT-002-1_T2a","Yes","Male",61.85,"T2a","PNoMet","B4","B4","Yes","renal_transplant","prednisone_methylprednisone_mycophenolate_tacrolimus_sirolimus ","Prednisone, Methylprednisone, Mycophenolate, Tacrolimus, Sirolimus ","Right Back","New",3.78629494824561
+"79","P004","P004","CSCC_NPT-004-2_T2a","CSCC_NPT-004-2_T2a","Yes","Female",59.56,"T2a","PNoMet","B4","B4","Yes","renal_transplant","methylprednisone_prednisone_cyclosporine_mycophenolate_tacrolimus","Methylprednisone, Prednisone, Cyclosporine, Mycophenolate, Tacrolimus","Left Forearm","New",110.728044357026
+"80","P010","P010","CSCC_NPT-010-2_T3","CSCC_NPT-010-2_T3","Yes","Female",75.24,"T3","PMet","B4","B4","Yes","renal_transplant","prednisone_mycophenolate_tacrolimus ","Prednisone, Mycophenolate, Tacrolimus ","Left Forearm","New",44.3448584381633
+"81","P017","P017","CSCC_NPT-017-1_T2b","CSCC_NPT-017-1_T2b","Yes","Male",64.57,"T2b","PNoMet","B4","B4","Yes","renal_transplant","prednisone_methylprednisone_mycophenolate_tacrolimus","Prednisone, Methylprednisone, Mycophenolate, Tacrolimus","Right Scalp","New",34.6437685117716
+"82","P050","P050","CSCC_NPT-050_T2a","CSCC_NPT-050_T2a","Yes","Male",66.22,"T2a","PMet","B4","B4","Yes","renal_transplant","prednisone_methylprednisone_mycophenolate_tacrolimus","Prednisone, Methylprednisone, Mycophenolate, Tacrolimus","Right periocular","New",111.907418648406
+"83","P055","P055","CSCC_NPT-055_T2a","CSCC_NPT-055_T2a","Yes","Female",73.87,"T2a","PNoMet","B4","B4","Yes","asthma","prednisone_methylprednisone","Prednisone, Methylprednisone, ","Left forehead ","New",17.429368777239
+"84","P083","P083","CSCC_NPT-083_T2a","CSCC_NPT-083_T2a","Yes","Male",77.11,"T2a","PNoMet","B4","B4","Yes","lung_transplant","prednisone_methylprednisone_mycophenolate_tacrolimus ","Prednisone, Methylprednisone, Mycophenolate, Tacrolimus ","Right nose","New",53.2029552062975
+"85","P113","P113","CSCC_NPT-113_T2b","CSCC_NPT-113_T2b","Yes","Male",56.58,"T2b","PMet","B4","B4","Yes","renal_transplant","prednisone_methylprednisone_mycophenolate_tacrolimus_sirolimus ","Prednisone, Methylprednisone, Mycophenolate, Tacrolimus, Sirolimus ","Right ear","New",0.990848211695974
+"86","P133","P133","CSCC_NPT-133_T2b","CSCC_NPT-133_T2b","Yes","Female",53.98,"T2b","PNoMet","B4","B4","Yes","renal_transplant","prednsione_methylprednisone_mycophenolate_tacrolimus ","Prednsione, Methylprednisone, Mycophenolate, Tacrolimus ","Left ear","New",8.38693991542432
+"87","P138","P138","CSCC_NPT-138_T2a","CSCC_NPT-138_T2a","Yes","Male",77.36,"T2a","PMet","B4","B4","Yes","liver_transplant","prednisone_methylprednisone_mycophenolate_tacrolimus ","Prednisone, Methylprednisone, Mycophenolate, Tacrolimus ","Right Scalp ","New",29.155407123447
+"88","P182","P182","CSCC_NPT-182_T2b","CSCC_NPT-182_T2b","Yes","Male",56.71,"T2b","PNoMet","B4","B4","Yes","renal_transplant","prednisone_mycophenolate_tacrolimus","Prednisone, Mycophenolate, Tacrolimus","Right Forearm","New",15.5412368805932
+"89","P183","P183","CSCC_NPT-183_T2b","CSCC_NPT-183_T2b","Yes","Male",57.62,"T2b","PNoMet","B4","B4","Yes","renal_transplant","prednisone_methylprednisone_mycophenolate_tacrolimus_alemtuzumab","Prednisone, Methylprednisone, Mycophenolate, Tacrolimus, Alemtuzumab","Left Jaw","New",-48.532229433055

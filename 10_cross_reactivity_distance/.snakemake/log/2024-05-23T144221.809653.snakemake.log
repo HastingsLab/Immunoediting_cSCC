@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 71
+Job counts:
+	count	jobs
+	1	all
+	1	calculate_EC
+	2
+
+[Thu May 23 14:42:22 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P23_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P23_all_characteristics_add_EC.csv
+    jobid: 139
+    wildcards: sample=P23
+
+Submitted job 139 with external jobid 'Submitted batch job 3221833'.
+[Thu May 23 14:42:32 2024]
+Error in rule calculate_EC:
+    jobid: 139
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P23_all_characteristics_add_EC.csv
+    shell:
+        
+                python /home/u1/knodele/programs/NeoantigenEditing/compute_EC.py /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P23_all_characteristics.csv /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P23_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3221833
+
+Error executing rule calculate_EC on cluster (jobid: 139, external: Submitted batch job 3221833, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.995ve31m/snakejob.calculate_EC.139.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/log/2024-05-23T144221.809653.snakemake.log

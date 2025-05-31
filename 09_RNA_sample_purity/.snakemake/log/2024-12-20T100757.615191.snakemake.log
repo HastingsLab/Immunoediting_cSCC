@@ -1,0 +1,3 @@
+KeyError in line 9 of /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/FastQC_trimming.snakefile:
+'all_fastqs'
+  File "/home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/FastQC_trimming.snakefile", line 9, in <module>

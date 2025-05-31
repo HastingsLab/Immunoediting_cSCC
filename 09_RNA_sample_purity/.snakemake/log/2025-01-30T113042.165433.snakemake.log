@@ -1,0 +1,911 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job stats:
+job                      count
+---------------------  -------
+all                          1
+subread_featurecounts       70
+total                       71
+
+Select jobs to execute...
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_304_T2b_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_304_T2b_B4.counts.txt
+    jobid: 96
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_304_T2b_B4.counts.txt
+    wildcards: sample=s_CSCC_304_T2b_B4
+    resources: mem_mb=66847, mem_mib=63751, disk_mb=66847, disk_mib=63751, tmpdir=<TBD>
+
+Submitted job 96 with external jobid 'Submitted batch job 12067541'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_27Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_27.counts.txt
+    jobid: 81
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_27.counts.txt
+    wildcards: sample=s_CSCC_27
+    resources: mem_mb=71986, mem_mib=68652, disk_mb=71986, disk_mib=68652, tmpdir=<TBD>
+
+Submitted job 81 with external jobid 'Submitted batch job 12067542'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-169_T2bAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-169_T2b.counts.txt
+    jobid: 126
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-169_T2b.counts.txt
+    wildcards: sample=CSCC_NPT-169_T2b
+    resources: mem_mb=97074, mem_mib=92577, disk_mb=97074, disk_mib=92577, tmpdir=<TBD>
+
+Submitted job 126 with external jobid 'Submitted batch job 12067543'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_171.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_171.T2a_B2.counts.txt
+    jobid: 111
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_171.T2a_B2.counts.txt
+    wildcards: sample=s_171.T2a_B2
+    resources: mem_mb=37544, mem_mib=35805, disk_mb=37544, disk_mib=35805, tmpdir=<TBD>
+
+Submitted job 111 with external jobid 'Submitted batch job 12067544'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_331_T1.T_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_331_T1.T_B4.counts.txt
+    jobid: 104
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_331_T1.T_B4.counts.txt
+    wildcards: sample=s_CSCC_331_T1.T_B4
+    resources: mem_mb=177474, mem_mib=169253, disk_mb=177474, disk_mib=169253, tmpdir=<TBD>
+
+Submitted job 104 with external jobid 'Submitted batch job 12067545'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_310_T2a_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_310_T2a_B4.counts.txt
+    jobid: 89
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_310_T2a_B4.counts.txt
+    wildcards: sample=s_CSCC_310_T2a_B4
+    resources: mem_mb=48406, mem_mib=46164, disk_mb=48406, disk_mib=46164, tmpdir=<TBD>
+
+Submitted job 89 with external jobid 'Submitted batch job 12067546'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_8Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_8.counts.txt
+    jobid: 74
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_8.counts.txt
+    wildcards: sample=s_CSCC_8
+    resources: mem_mb=36128, mem_mib=34455, disk_mb=36128, disk_mib=34455, tmpdir=<TBD>
+
+Submitted job 74 with external jobid 'Submitted batch job 12067547'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_085.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_085.T2a_B2.counts.txt
+    jobid: 119
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_085.T2a_B2.counts.txt
+    wildcards: sample=s_085.T2a_B2
+    resources: mem_mb=88141, mem_mib=84058, disk_mb=88141, disk_mib=84058, tmpdir=<TBD>
+
+Submitted job 119 with external jobid 'Submitted batch job 12067548'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-055_T2aAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-055_T2a.counts.txt
+    jobid: 134
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-055_T2a.counts.txt
+    wildcards: sample=CSCC_NPT-055_T2a
+    resources: mem_mb=166669, mem_mib=158948, disk_mb=166669, disk_mib=158948, tmpdir=<TBD>
+
+Submitted job 134 with external jobid 'Submitted batch job 12067549'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_153.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_153.T2a_B2.counts.txt
+    jobid: 97
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_153.T2a_B2.counts.txt
+    wildcards: sample=s_153.T2a_B2
+    resources: mem_mb=34834, mem_mib=33221, disk_mb=34834, disk_mib=33221, tmpdir=<TBD>
+
+Submitted job 97 with external jobid 'Submitted batch job 12067550'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_29Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_29.counts.txt
+    jobid: 82
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_29.counts.txt
+    wildcards: sample=s_CSCC_29
+    resources: mem_mb=68344, mem_mib=65178, disk_mb=68344, disk_mib=65178, tmpdir=<TBD>
+
+Submitted job 82 with external jobid 'Submitted batch job 12067551'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-015_T2aAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-015_T2a.counts.txt
+    jobid: 127
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-015_T2a.counts.txt
+    wildcards: sample=CSCC_NPT-015_T2a
+    resources: mem_mb=69811, mem_mib=66577, disk_mb=69811, disk_mib=66577, tmpdir=<TBD>
+
+Submitted job 127 with external jobid 'Submitted batch job 12067552'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_200.T2b_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_200.T2b_B2.counts.txt
+    jobid: 112
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_200.T2b_B2.counts.txt
+    wildcards: sample=s_200.T2b_B2
+    resources: mem_mb=76793, mem_mib=73236, disk_mb=76793, disk_mib=73236, tmpdir=<TBD>
+
+Submitted job 112 with external jobid 'Submitted batch job 12067553'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_335_T2a_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_335_T2a_B4.counts.txt
+    jobid: 105
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_335_T2a_B4.counts.txt
+    wildcards: sample=s_CSCC_335_T2a_B4
+    resources: mem_mb=161573, mem_mib=154089, disk_mb=161573, disk_mib=154089, tmpdir=<TBD>
+
+Submitted job 105 with external jobid 'Submitted batch job 12067554'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_101.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_101.T2a_B2.counts.txt
+    jobid: 90
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_101.T2a_B2.counts.txt
+    wildcards: sample=s_101.T2a_B2
+    resources: mem_mb=89232, mem_mib=85099, disk_mb=89232, disk_mib=85099, tmpdir=<TBD>
+
+Submitted job 90 with external jobid 'Submitted batch job 12067555'.
+
+[Thu Jan 30 11:30:47 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-083_T2aAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-083_T2a.counts.txt
+    jobid: 135
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-083_T2a.counts.txt
+    wildcards: sample=CSCC_NPT-083_T2a
+    resources: mem_mb=111922, mem_mib=106738, disk_mb=111922, disk_mib=106738, tmpdir=<TBD>
+
+Submitted job 135 with external jobid 'Submitted batch job 12067556'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_10TAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_10T.counts.txt
+    jobid: 75
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_10T.counts.txt
+    wildcards: sample=s_CSCC_10T
+    resources: mem_mb=25829, mem_mib=24633, disk_mb=25829, disk_mib=24633, tmpdir=<TBD>
+
+Submitted job 75 with external jobid 'Submitted batch job 12067557'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_359_T2a_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_359_T2a_B4.counts.txt
+    jobid: 120
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_359_T2a_B4.counts.txt
+    wildcards: sample=s_CSCC_359_T2a_B4
+    resources: mem_mb=155059, mem_mib=147876, disk_mb=155059, disk_mib=147876, tmpdir=<TBD>
+
+Submitted job 120 with external jobid 'Submitted batch job 12067558'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_308_T2b_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_308_T2b_B4.counts.txt
+    jobid: 98
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_308_T2b_B4.counts.txt
+    wildcards: sample=s_CSCC_308_T2b_B4
+    resources: mem_mb=54440, mem_mib=51919, disk_mb=54440, disk_mib=51919, tmpdir=<TBD>
+
+Submitted job 98 with external jobid 'Submitted batch job 12067559'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_39TAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_39T.counts.txt
+    jobid: 83
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_39T.counts.txt
+    wildcards: sample=s_CSCC_39T
+    resources: mem_mb=50379, mem_mib=48046, disk_mb=50379, disk_mib=48046, tmpdir=<TBD>
+
+Submitted job 83 with external jobid 'Submitted batch job 12067560'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-001-2_T2bAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-001-2_T2b.counts.txt
+    jobid: 128
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-001-2_T2b.counts.txt
+    wildcards: sample=CSCC_NPT-001-2_T2b
+    resources: mem_mb=46163, mem_mib=44025, disk_mb=46163, disk_mib=44025, tmpdir=<TBD>
+
+Submitted job 128 with external jobid 'Submitted batch job 12067561'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_201.T2b_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_201.T2b_B2.counts.txt
+    jobid: 113
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_201.T2b_B2.counts.txt
+    wildcards: sample=s_201.T2b_B2
+    resources: mem_mb=101347, mem_mib=96653, disk_mb=101347, disk_mib=96653, tmpdir=<TBD>
+
+Submitted job 113 with external jobid 'Submitted batch job 12067562'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_363_T2a_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_363_T2a_B4.counts.txt
+    jobid: 106
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_363_T2a_B4.counts.txt
+    wildcards: sample=s_CSCC_363_T2a_B4
+    resources: mem_mb=86099, mem_mib=82111, disk_mb=86099, disk_mib=82111, tmpdir=<TBD>
+
+Submitted job 106 with external jobid 'Submitted batch job 12067563'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_322_T2b_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_322_T2b_B4.counts.txt
+    jobid: 91
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_322_T2b_B4.counts.txt
+    wildcards: sample=s_CSCC_322_T2b_B4
+    resources: mem_mb=63518, mem_mib=60576, disk_mb=63518, disk_mib=60576, tmpdir=<TBD>
+
+Submitted job 91 with external jobid 'Submitted batch job 12067564'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_12Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_12.counts.txt
+    jobid: 76
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_12.counts.txt
+    wildcards: sample=s_CSCC_12
+    resources: mem_mb=60600, mem_mib=57793, disk_mb=60600, disk_mib=57793, tmpdir=<TBD>
+
+Submitted job 76 with external jobid 'Submitted batch job 12067565'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_349_T3_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_349_T3_B4.counts.txt
+    jobid: 121
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_349_T3_B4.counts.txt
+    wildcards: sample=s_CSCC_349_T3_B4
+    resources: mem_mb=89428, mem_mib=85286, disk_mb=89428, disk_mib=85286, tmpdir=<TBD>
+
+Submitted job 121 with external jobid 'Submitted batch job 12067566'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-113_T2bAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-113_T2b.counts.txt
+    jobid: 136
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-113_T2b.counts.txt
+    wildcards: sample=CSCC_NPT-113_T2b
+    resources: mem_mb=75354, mem_mib=71864, disk_mb=75354, disk_mib=71864, tmpdir=<TBD>
+
+Submitted job 136 with external jobid 'Submitted batch job 12067567'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_7Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_7.counts.txt
+    jobid: 73
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_7.counts.txt
+    wildcards: sample=s_CSCC_7
+    resources: mem_mb=100132, mem_mib=95494, disk_mb=100132, disk_mib=95494, tmpdir=<TBD>
+
+Submitted job 73 with external jobid 'Submitted batch job 12067568'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_155.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_155.T2a_B2.counts.txt
+    jobid: 99
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_155.T2a_B2.counts.txt
+    wildcards: sample=s_155.T2a_B2
+    resources: mem_mb=76778, mem_mib=73222, disk_mb=76778, disk_mib=73222, tmpdir=<TBD>
+
+Submitted job 99 with external jobid 'Submitted batch job 12067569'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_42TAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_42T.counts.txt
+    jobid: 84
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_42T.counts.txt
+    wildcards: sample=s_CSCC_42T
+    resources: mem_mb=22723, mem_mib=21671, disk_mb=22723, disk_mib=21671, tmpdir=<TBD>
+
+Submitted job 84 with external jobid 'Submitted batch job 12067570'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-002-1_T2aAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-002-1_T2a.counts.txt
+    jobid: 129
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-002-1_T2a.counts.txt
+    wildcards: sample=CSCC_NPT-002-1_T2a
+    resources: mem_mb=37564, mem_mib=35824, disk_mb=37564, disk_mib=35824, tmpdir=<TBD>
+
+Submitted job 129 with external jobid 'Submitted batch job 12067571'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_203.T2b_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_203.T2b_B2.counts.txt
+    jobid: 114
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_203.T2b_B2.counts.txt
+    wildcards: sample=s_203.T2b_B2
+    resources: mem_mb=64939, mem_mib=61931, disk_mb=64939, disk_mib=61931, tmpdir=<TBD>
+
+Submitted job 114 with external jobid 'Submitted batch job 12067572'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_163.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_163.T2a_B2.counts.txt
+    jobid: 107
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_163.T2a_B2.counts.txt
+    wildcards: sample=s_163.T2a_B2
+    resources: mem_mb=41046, mem_mib=39145, disk_mb=41046, disk_mib=39145, tmpdir=<TBD>
+
+Submitted job 107 with external jobid 'Submitted batch job 12067573'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_320_T2a_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_320_T2a_B4.counts.txt
+    jobid: 92
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_320_T2a_B4.counts.txt
+    wildcards: sample=s_CSCC_320_T2a_B4
+    resources: mem_mb=131457, mem_mib=125368, disk_mb=131457, disk_mib=125368, tmpdir=<TBD>
+
+Submitted job 92 with external jobid 'Submitted batch job 12067574'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_14Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_14.counts.txt
+    jobid: 77
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_14.counts.txt
+    wildcards: sample=s_CSCC_14
+    resources: mem_mb=41345, mem_mib=39430, disk_mb=41345, disk_mib=39430, tmpdir=<TBD>
+
+Submitted job 77 with external jobid 'Submitted batch job 12067575'.
+
+[Thu Jan 30 11:30:48 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_093.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_093.T2a_B2.counts.txt
+    jobid: 122
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_093.T2a_B2.counts.txt
+    wildcards: sample=s_093.T2a_B2
+    resources: mem_mb=68856, mem_mib=65667, disk_mb=68856, disk_mib=65667, tmpdir=<TBD>
+
+Submitted job 122 with external jobid 'Submitted batch job 12067576'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-133_T2bAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-133_T2b.counts.txt
+    jobid: 137
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-133_T2b.counts.txt
+    wildcards: sample=CSCC_NPT-133_T2b
+    resources: mem_mb=77737, mem_mib=74136, disk_mb=77737, disk_mib=74136, tmpdir=<TBD>
+
+Submitted job 137 with external jobid 'Submitted batch job 12067577'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_338_T2b_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_338_T2b_B4.counts.txt
+    jobid: 100
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_338_T2b_B4.counts.txt
+    wildcards: sample=s_CSCC_338_T2b_B4
+    resources: mem_mb=57145, mem_mib=54498, disk_mb=57145, disk_mib=54498, tmpdir=<TBD>
+
+Submitted job 100 with external jobid 'Submitted batch job 12067578'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_48Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_48.counts.txt
+    jobid: 85
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_48.counts.txt
+    wildcards: sample=s_CSCC_48
+    resources: mem_mb=192846, mem_mib=183913, disk_mb=192846, disk_mib=183913, tmpdir=<TBD>
+
+Submitted job 85 with external jobid 'Submitted batch job 12067579'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-004-2_T2aAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-004-2_T2a.counts.txt
+    jobid: 130
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-004-2_T2a.counts.txt
+    wildcards: sample=CSCC_NPT-004-2_T2a
+    resources: mem_mb=100908, mem_mib=96234, disk_mb=100908, disk_mib=96234, tmpdir=<TBD>
+
+Submitted job 130 with external jobid 'Submitted batch job 12067580'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_205.T2b_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_205.T2b_B2.counts.txt
+    jobid: 115
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_205.T2b_B2.counts.txt
+    wildcards: sample=s_205.T2b_B2
+    resources: mem_mb=72336, mem_mib=68985, disk_mb=72336, disk_mib=68985, tmpdir=<TBD>
+
+Submitted job 115 with external jobid 'Submitted batch job 12067581'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_165.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_165.T2a_B2.counts.txt
+    jobid: 108
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_165.T2a_B2.counts.txt
+    wildcards: sample=s_165.T2a_B2
+    resources: mem_mb=151837, mem_mib=144804, disk_mb=151837, disk_mib=144804, tmpdir=<TBD>
+
+Submitted job 108 with external jobid 'Submitted batch job 12067582'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_109.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_109.T2a_B2.counts.txt
+    jobid: 93
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_109.T2a_B2.counts.txt
+    wildcards: sample=s_109.T2a_B2
+    resources: mem_mb=72036, mem_mib=68699, disk_mb=72036, disk_mib=68699, tmpdir=<TBD>
+
+Submitted job 93 with external jobid 'Submitted batch job 12067583'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_16Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_16.counts.txt
+    jobid: 78
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_16.counts.txt
+    wildcards: sample=s_CSCC_16
+    resources: mem_mb=73084, mem_mib=69699, disk_mb=73084, disk_mib=69699, tmpdir=<TBD>
+
+Submitted job 78 with external jobid 'Submitted batch job 12067584'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_316_T2b_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_316_T2b_B4.counts.txt
+    jobid: 123
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_316_T2b_B4.counts.txt
+    wildcards: sample=s_CSCC_316_T2b_B4
+    resources: mem_mb=30921, mem_mib=29489, disk_mb=30921, disk_mib=29489, tmpdir=<TBD>
+
+Submitted job 123 with external jobid 'Submitted batch job 12067585'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-138_T2aAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-138_T2a.counts.txt
+    jobid: 138
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-138_T2a.counts.txt
+    wildcards: sample=CSCC_NPT-138_T2a
+    resources: mem_mb=81054, mem_mib=77300, disk_mb=81054, disk_mib=77300, tmpdir=<TBD>
+
+Submitted job 138 with external jobid 'Submitted batch job 12067586'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_157.T2a_2_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_157.T2a_2_B2.counts.txt
+    jobid: 101
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_157.T2a_2_B2.counts.txt
+    wildcards: sample=s_157.T2a_2_B2
+    resources: mem_mb=61051, mem_mib=58223, disk_mb=61051, disk_mib=58223, tmpdir=<TBD>
+
+Submitted job 101 with external jobid 'Submitted batch job 12067587'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_52Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_52.counts.txt
+    jobid: 86
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_52.counts.txt
+    wildcards: sample=s_CSCC_52
+    resources: mem_mb=74097, mem_mib=70665, disk_mb=74097, disk_mib=70665, tmpdir=<TBD>
+
+Submitted job 86 with external jobid 'Submitted batch job 12067588'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_4.counts.txt
+    jobid: 71
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_4.counts.txt
+    wildcards: sample=s_CSCC_4
+    resources: mem_mb=72015, mem_mib=68679, disk_mb=72015, disk_mib=68679, tmpdir=<TBD>
+
+Submitted job 71 with external jobid 'Submitted batch job 12067589'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_073.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_073.T2a_B2.counts.txt
+    jobid: 116
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_073.T2a_B2.counts.txt
+    wildcards: sample=s_073.T2a_B2
+    resources: mem_mb=131037, mem_mib=124967, disk_mb=131037, disk_mib=124967, tmpdir=<TBD>
+
+Submitted job 116 with external jobid 'Submitted batch job 12067590'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-010-2_T3Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-010-2_T3.counts.txt
+    jobid: 131
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-010-2_T3.counts.txt
+    wildcards: sample=CSCC_NPT-010-2_T3
+    resources: mem_mb=65318, mem_mib=62293, disk_mb=65318, disk_mib=62293, tmpdir=<TBD>
+
+Submitted job 131 with external jobid 'Submitted batch job 12067591'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_167.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_167.T2a_B2.counts.txt
+    jobid: 109
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_167.T2a_B2.counts.txt
+    wildcards: sample=s_167.T2a_B2
+    resources: mem_mb=42464, mem_mib=40497, disk_mb=42464, disk_mib=40497, tmpdir=<TBD>
+
+Submitted job 109 with external jobid 'Submitted batch job 12067593'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_306_T2a_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_306_T2a_B4.counts.txt
+    jobid: 94
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_306_T2a_B4.counts.txt
+    wildcards: sample=s_CSCC_306_T2a_B4
+    resources: mem_mb=63493, mem_mib=60552, disk_mb=63493, disk_mib=60552, tmpdir=<TBD>
+
+Submitted job 94 with external jobid 'Submitted batch job 12067594'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_18Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_18.counts.txt
+    jobid: 79
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_18.counts.txt
+    wildcards: sample=s_CSCC_18
+    resources: mem_mb=124767, mem_mib=118988, disk_mb=124767, disk_mib=118988, tmpdir=<TBD>
+
+Submitted job 79 with external jobid 'Submitted batch job 12067595'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-062_T2aAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-062_T2a.counts.txt
+    jobid: 124
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-062_T2a.counts.txt
+    wildcards: sample=CSCC_NPT-062_T2a
+    resources: mem_mb=51904, mem_mib=49500, disk_mb=51904, disk_mib=49500, tmpdir=<TBD>
+
+Submitted job 124 with external jobid 'Submitted batch job 12067596'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-182_T2bAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-182_T2b.counts.txt
+    jobid: 139
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-182_T2b.counts.txt
+    wildcards: sample=CSCC_NPT-182_T2b
+    resources: mem_mb=46632, mem_mib=44472, disk_mb=46632, disk_mib=44472, tmpdir=<TBD>
+
+Submitted job 139 with external jobid 'Submitted batch job 12067597'.
+
+[Thu Jan 30 11:30:49 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_326_T3_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_326_T3_B4.counts.txt
+    jobid: 102
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_326_T3_B4.counts.txt
+    wildcards: sample=s_CSCC_326_T3_B4
+    resources: mem_mb=48126, mem_mib=45897, disk_mb=48126, disk_mib=45897, tmpdir=<TBD>
+
+Submitted job 102 with external jobid 'Submitted batch job 12067598'.
+
+[Thu Jan 30 11:30:50 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_302_T2a_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_302_T2a_B4.counts.txt
+    jobid: 87
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_302_T2a_B4.counts.txt
+    wildcards: sample=s_CSCC_302_T2a_B4
+    resources: mem_mb=137938, mem_mib=131548, disk_mb=137938, disk_mib=131548, tmpdir=<TBD>
+
+Submitted job 87 with external jobid 'Submitted batch job 12067599'.
+
+[Thu Jan 30 11:30:50 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_6Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_6.counts.txt
+    jobid: 72
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_6.counts.txt
+    wildcards: sample=s_CSCC_6
+    resources: mem_mb=113913, mem_mib=108636, disk_mb=113913, disk_mib=108636, tmpdir=<TBD>
+
+Submitted job 72 with external jobid 'Submitted batch job 12067600'.
+
+[Thu Jan 30 11:30:50 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_072.T2b_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_072.T2b_B2.counts.txt
+    jobid: 117
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_072.T2b_B2.counts.txt
+    wildcards: sample=s_072.T2b_B2
+    resources: mem_mb=147564, mem_mib=140728, disk_mb=147564, disk_mib=140728, tmpdir=<TBD>
+
+Submitted job 117 with external jobid 'Submitted batch job 12067601'.
+
+[Thu Jan 30 11:30:50 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-017-1_T2bAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-017-1_T2b.counts.txt
+    jobid: 132
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-017-1_T2b.counts.txt
+    wildcards: sample=CSCC_NPT-017-1_T2b
+    resources: mem_mb=83817, mem_mib=79935, disk_mb=83817, disk_mib=79935, tmpdir=<TBD>
+
+Submitted job 132 with external jobid 'Submitted batch job 12067602'.
+
+[Thu Jan 30 11:30:50 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_169.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_169.T2a_B2.counts.txt
+    jobid: 110
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_169.T2a_B2.counts.txt
+    wildcards: sample=s_169.T2a_B2
+    resources: mem_mb=77082, mem_mib=73512, disk_mb=77082, disk_mib=73512, tmpdir=<TBD>
+
+Submitted job 110 with external jobid 'Submitted batch job 12067603'.
+
+[Thu Jan 30 11:30:50 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_151.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_151.T2a_B2.counts.txt
+    jobid: 95
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_151.T2a_B2.counts.txt
+    wildcards: sample=s_151.T2a_B2
+    resources: mem_mb=43682, mem_mib=41659, disk_mb=43682, disk_mib=41659, tmpdir=<TBD>
+
+Submitted job 95 with external jobid 'Submitted batch job 12067604'.
+
+[Thu Jan 30 11:30:50 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_23Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_23.counts.txt
+    jobid: 80
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_23.counts.txt
+    wildcards: sample=s_CSCC_23
+    resources: mem_mb=99355, mem_mib=94753, disk_mb=99355, disk_mib=94753, tmpdir=<TBD>
+
+Submitted job 80 with external jobid 'Submitted batch job 12067605'.
+
+[Thu Jan 30 11:30:50 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-164_T2aAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-164_T2a.counts.txt
+    jobid: 125
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-164_T2a.counts.txt
+    wildcards: sample=CSCC_NPT-164_T2a
+    resources: mem_mb=106864, mem_mib=101914, disk_mb=106864, disk_mib=101914, tmpdir=<TBD>
+
+Submitted job 125 with external jobid 'Submitted batch job 12067606'.
+
+[Thu Jan 30 11:30:50 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-183_T2bAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-183_T2b.counts.txt
+    jobid: 140
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-183_T2b.counts.txt
+    wildcards: sample=CSCC_NPT-183_T2b
+    resources: mem_mb=61389, mem_mib=58546, disk_mb=61389, disk_mib=58546, tmpdir=<TBD>
+
+Submitted job 140 with external jobid 'Submitted batch job 12067607'.
+
+[Thu Jan 30 11:30:50 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_159.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_159.T2a_B2.counts.txt
+    jobid: 103
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_159.T2a_B2.counts.txt
+    wildcards: sample=s_159.T2a_B2
+    resources: mem_mb=64452, mem_mib=61467, disk_mb=64452, disk_mib=61467, tmpdir=<TBD>
+
+Submitted job 103 with external jobid 'Submitted batch job 12067608'.
+
+[Thu Jan 30 11:30:50 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_097.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_097.T2a_B2.counts.txt
+    jobid: 88
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_097.T2a_B2.counts.txt
+    wildcards: sample=s_097.T2a_B2
+    resources: mem_mb=84113, mem_mib=80217, disk_mb=84113, disk_mib=80217, tmpdir=<TBD>
+
+Submitted job 88 with external jobid 'Submitted batch job 12067609'.
+
+[Thu Jan 30 11:30:50 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-050_T2aAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-050_T2a.counts.txt
+    jobid: 133
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-050_T2a.counts.txt
+    wildcards: sample=CSCC_NPT-050_T2a
+    resources: mem_mb=103120, mem_mib=98343, disk_mb=103120, disk_mib=98343, tmpdir=<TBD>
+
+Submitted job 133 with external jobid 'Submitted batch job 12067610'.
+
+[Thu Jan 30 11:30:50 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_373_T2b_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_373_T2b_B4.counts.txt
+    jobid: 118
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_373_T2b_B4.counts.txt
+    wildcards: sample=s_CSCC_373_T2b_B4
+    resources: mem_mb=135868, mem_mib=129574, disk_mb=135868, disk_mib=129574, tmpdir=<TBD>
+
+Submitted job 118 with external jobid 'Submitted batch job 12067611'.
+[Thu Jan 30 11:36:48 2025]
+Error in rule subread_featurecounts:
+    jobid: 96
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_304_T2b_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_304_T2b_B4.counts.txt
+    shell:
+        
+		featureCounts -T 8 -O --primary -s 2 -t gene -g gene_name -a /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/gencode.v47.annotation.gtf -o /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_304_T2b_B4.counts.txt /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_304_T2b_B4Aligned.out.sam
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12067541
+
+Error executing rule subread_featurecounts on cluster (jobid: 96, external: Submitted batch job 12067541, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.4e_rrxrv/snakejob.subread_featurecounts.96.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Thu Jan 30 11:36:48 2025]
+Error in rule subread_featurecounts:
+    jobid: 81
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_27Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_27.counts.txt
+    shell:
+        
+		featureCounts -T 8 -O --primary -s 2 -t gene -g gene_name -a /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/gencode.v47.annotation.gtf -o /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_27.counts.txt /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_27Aligned.out.sam
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12067542
+
+Error executing rule subread_featurecounts on cluster (jobid: 81, external: Submitted batch job 12067542, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.4e_rrxrv/snakejob.subread_featurecounts.81.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Thu Jan 30 11:36:48 2025]
+Error in rule subread_featurecounts:
+    jobid: 126
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-169_T2bAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-169_T2b.counts.txt
+    shell:
+        
+		featureCounts -T 8 -O --primary -s 2 -t gene -g gene_name -a /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/gencode.v47.annotation.gtf -o /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-169_T2b.counts.txt /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-169_T2bAligned.out.sam
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12067543
+
+Error executing rule subread_featurecounts on cluster (jobid: 126, external: Submitted batch job 12067543, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.4e_rrxrv/snakejob.subread_featurecounts.126.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Thu Jan 30 11:36:48 2025]
+Error in rule subread_featurecounts:
+    jobid: 111
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_171.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_171.T2a_B2.counts.txt
+    shell:
+        
+		featureCounts -T 8 -O --primary -s 2 -t gene -g gene_name -a /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/gencode.v47.annotation.gtf -o /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_171.T2a_B2.counts.txt /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_171.T2a_B2Aligned.out.sam
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12067544
+
+Error executing rule subread_featurecounts on cluster (jobid: 111, external: Submitted batch job 12067544, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.4e_rrxrv/snakejob.subread_featurecounts.111.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Thu Jan 30 11:36:48 2025]
+Error in rule subread_featurecounts:
+    jobid: 89
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_310_T2a_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_310_T2a_B4.counts.txt
+    shell:
+        
+		featureCounts -T 8 -O --primary -s 2 -t gene -g gene_name -a /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/gencode.v47.annotation.gtf -o /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_310_T2a_B4.counts.txt /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_310_T2a_B4Aligned.out.sam
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12067546
+
+Error executing rule subread_featurecounts on cluster (jobid: 89, external: Submitted batch job 12067546, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.4e_rrxrv/snakejob.subread_featurecounts.89.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Thu Jan 30 11:36:48 2025]
+Error in rule subread_featurecounts:
+    jobid: 74
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_8Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_8.counts.txt
+    shell:
+        
+		featureCounts -T 8 -O --primary -s 2 -t gene -g gene_name -a /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/gencode.v47.annotation.gtf -o /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_8.counts.txt /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_8Aligned.out.sam
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12067547
+
+Error executing rule subread_featurecounts on cluster (jobid: 74, external: Submitted batch job 12067547, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.4e_rrxrv/snakejob.subread_featurecounts.74.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Thu Jan 30 11:36:48 2025]
+Error in rule subread_featurecounts:
+    jobid: 119
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_085.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_085.T2a_B2.counts.txt
+    shell:
+        
+		featureCounts -T 8 -O --primary -s 2 -t gene -g gene_name -a /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/gencode.v47.annotation.gtf -o /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_085.T2a_B2.counts.txt /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_085.T2a_B2Aligned.out.sam
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12067548
+
+Error executing rule subread_featurecounts on cluster (jobid: 119, external: Submitted batch job 12067548, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.4e_rrxrv/snakejob.subread_featurecounts.119.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Thu Jan 30 11:36:48 2025]
+Error in rule subread_featurecounts:
+    jobid: 97
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_153.T2a_B2Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_153.T2a_B2.counts.txt
+    shell:
+        
+		featureCounts -T 8 -O --primary -s 2 -t gene -g gene_name -a /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/gencode.v47.annotation.gtf -o /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_153.T2a_B2.counts.txt /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_153.T2a_B2Aligned.out.sam
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12067550
+
+Error executing rule subread_featurecounts on cluster (jobid: 97, external: Submitted batch job 12067550, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.4e_rrxrv/snakejob.subread_featurecounts.97.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Thu Jan 30 11:37:20 2025]
+Error in rule subread_featurecounts:
+    jobid: 104
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_331_T1.T_B4Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_331_T1.T_B4.counts.txt
+    shell:
+        
+		featureCounts -T 8 -O --primary -s 2 -t gene -g gene_name -a /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/gencode.v47.annotation.gtf -o /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/s_CSCC_331_T1.T_B4.counts.txt /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_331_T1.T_B4Aligned.out.sam
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12067545
+
+Error executing rule subread_featurecounts on cluster (jobid: 104, external: Submitted batch job 12067545, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.4e_rrxrv/snakejob.subread_featurecounts.104.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Thu Jan 30 11:37:20 2025]
+Error in rule subread_featurecounts:
+    jobid: 134
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-055_T2aAligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-055_T2a.counts.txt
+    shell:
+        
+		featureCounts -T 8 -O --primary -s 2 -t gene -g gene_name -a /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/gencode.v47.annotation.gtf -o /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/CSCC_NPT-055_T2a.counts.txt /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-055_T2aAligned.out.sam
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12067549
+
+Error executing rule subread_featurecounts on cluster (jobid: 134, external: Submitted batch job 12067549, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.4e_rrxrv/snakejob.subread_featurecounts.134.sh). For error details see the cluster log and the log files of the involved rule(s).

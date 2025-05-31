@@ -1,0 +1,1292 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 71
+Job counts:
+	count	jobs
+	1	all
+	61	blast
+	62
+
+[Fri Mar 15 16:49:09 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P45_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P45_luksza_blast_iedb.xml
+    jobid: 101
+    wildcards: sample=P45
+
+Submitted job 101 with external jobid 'Submitted batch job 1866217'.
+
+[Fri Mar 15 16:49:09 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P29_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P29_luksza_blast_iedb.xml
+    jobid: 82
+    wildcards: sample=P29
+
+Submitted job 82 with external jobid 'Submitted batch job 1866218'.
+
+[Fri Mar 15 16:49:09 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P49_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P49_luksza_blast_iedb.xml
+    jobid: 105
+    wildcards: sample=P49
+
+Submitted job 105 with external jobid 'Submitted batch job 1866219'.
+
+[Fri Mar 15 16:49:09 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P7_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P7_luksza_blast_iedb.xml
+    jobid: 118
+    wildcards: sample=P7
+
+Submitted job 118 with external jobid 'Submitted batch job 1866220'.
+
+[Fri Mar 15 16:49:09 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P51_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P51_luksza_blast_iedb.xml
+    jobid: 108
+    wildcards: sample=P51
+
+Submitted job 108 with external jobid 'Submitted batch job 1866221'.
+
+[Fri Mar 15 16:49:09 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P23_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P23_luksza_blast_iedb.xml
+    jobid: 76
+    wildcards: sample=P23
+
+Submitted job 76 with external jobid 'Submitted batch job 1866222'.
+
+[Fri Mar 15 16:49:09 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P39A_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P39A_luksza_blast_iedb.xml
+    jobid: 94
+    wildcards: sample=P39A
+
+Submitted job 94 with external jobid 'Submitted batch job 1866223'.
+
+[Fri Mar 15 16:49:09 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P11_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P11_luksza_blast_iedb.xml
+    jobid: 63
+    wildcards: sample=P11
+
+Submitted job 63 with external jobid 'Submitted batch job 1866224'.
+
+[Fri Mar 15 16:49:09 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P54_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P54_luksza_blast_iedb.xml
+    jobid: 111
+    wildcards: sample=P54
+
+Submitted job 111 with external jobid 'Submitted batch job 1866225'.
+
+[Fri Mar 15 16:49:09 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P20_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P20_luksza_blast_iedb.xml
+    jobid: 73
+    wildcards: sample=P20
+
+Submitted job 73 with external jobid 'Submitted batch job 1866226'.
+
+[Fri Mar 15 16:49:10 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P32_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P32_luksza_blast_iedb.xml
+    jobid: 87
+    wildcards: sample=P32
+
+Submitted job 87 with external jobid 'Submitted batch job 1866227'.
+
+[Fri Mar 15 16:49:10 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P33_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P33_luksza_blast_iedb.xml
+    jobid: 88
+    wildcards: sample=P33
+
+Submitted job 88 with external jobid 'Submitted batch job 1866228'.
+
+[Fri Mar 15 16:49:10 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P13_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P13_luksza_blast_iedb.xml
+    jobid: 65
+    wildcards: sample=P13
+
+Submitted job 65 with external jobid 'Submitted batch job 1866229'.
+
+[Fri Mar 15 16:49:10 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P55_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P55_luksza_blast_iedb.xml
+    jobid: 112
+    wildcards: sample=P55
+
+Submitted job 112 with external jobid 'Submitted batch job 1866230'.
+
+[Fri Mar 15 16:49:10 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P10_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P10_luksza_blast_iedb.xml
+    jobid: 62
+    wildcards: sample=P10
+
+Submitted job 62 with external jobid 'Submitted batch job 1866231'.
+
+[Fri Mar 15 16:49:10 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P38_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P38_luksza_blast_iedb.xml
+    jobid: 93
+    wildcards: sample=P38
+
+Submitted job 93 with external jobid 'Submitted batch job 1866232'.
+
+[Fri Mar 15 16:49:10 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P16_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P16_luksza_blast_iedb.xml
+    jobid: 68
+    wildcards: sample=P16
+
+Submitted job 68 with external jobid 'Submitted batch job 1866233'.
+
+[Fri Mar 15 16:49:10 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P34_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P34_luksza_blast_iedb.xml
+    jobid: 89
+    wildcards: sample=P34
+
+Submitted job 89 with external jobid 'Submitted batch job 1866234'.
+
+[Fri Mar 15 16:49:10 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P41_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P41_luksza_blast_iedb.xml
+    jobid: 98
+    wildcards: sample=P41
+
+Submitted job 98 with external jobid 'Submitted batch job 1866235'.
+
+[Fri Mar 15 16:49:10 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P8_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P8_luksza_blast_iedb.xml
+    jobid: 119
+    wildcards: sample=P8
+
+Submitted job 119 with external jobid 'Submitted batch job 1866236'.
+
+[Fri Mar 15 16:49:11 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P2A_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P2A_luksza_blast_iedb.xml
+    jobid: 83
+    wildcards: sample=P2A
+
+Submitted job 83 with external jobid 'Submitted batch job 1866237'.
+
+[Fri Mar 15 16:49:11 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P50_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P50_luksza_blast_iedb.xml
+    jobid: 107
+    wildcards: sample=P50
+
+Submitted job 107 with external jobid 'Submitted batch job 1866238'.
+
+[Fri Mar 15 16:49:11 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P36_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P36_luksza_blast_iedb.xml
+    jobid: 91
+    wildcards: sample=P36
+
+Submitted job 91 with external jobid 'Submitted batch job 1866239'.
+
+[Fri Mar 15 16:49:11 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P12_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P12_luksza_blast_iedb.xml
+    jobid: 64
+    wildcards: sample=P12
+
+Submitted job 64 with external jobid 'Submitted batch job 1866240'.
+
+[Fri Mar 15 16:49:11 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P1_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P1_luksza_blast_iedb.xml
+    jobid: 72
+    wildcards: sample=P1
+
+Submitted job 72 with external jobid 'Submitted batch job 1866241'.
+
+[Fri Mar 15 16:49:11 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P28_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P28_luksza_blast_iedb.xml
+    jobid: 81
+    wildcards: sample=P28
+
+Submitted job 81 with external jobid 'Submitted batch job 1866242'.
+
+[Fri Mar 15 16:49:11 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P24_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P24_luksza_blast_iedb.xml
+    jobid: 77
+    wildcards: sample=P24
+
+Submitted job 77 with external jobid 'Submitted batch job 1866243'.
+
+[Fri Mar 15 16:49:11 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P31_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P31_luksza_blast_iedb.xml
+    jobid: 86
+    wildcards: sample=P31
+
+Submitted job 86 with external jobid 'Submitted batch job 1866244'.
+
+[Fri Mar 15 16:49:11 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P25_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P25_luksza_blast_iedb.xml
+    jobid: 78
+    wildcards: sample=P25
+
+Submitted job 78 with external jobid 'Submitted batch job 1866245'.
+
+[Fri Mar 15 16:49:12 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P27_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P27_luksza_blast_iedb.xml
+    jobid: 80
+    wildcards: sample=P27
+
+Submitted job 80 with external jobid 'Submitted batch job 1866246'.
+
+[Fri Mar 15 16:49:12 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P47_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P47_luksza_blast_iedb.xml
+    jobid: 103
+    wildcards: sample=P47
+
+Submitted job 103 with external jobid 'Submitted batch job 1866247'.
+
+[Fri Mar 15 16:49:12 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P52_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P52_luksza_blast_iedb.xml
+    jobid: 109
+    wildcards: sample=P52
+
+Submitted job 109 with external jobid 'Submitted batch job 1866248'.
+
+[Fri Mar 15 16:49:12 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P15_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P15_luksza_blast_iedb.xml
+    jobid: 67
+    wildcards: sample=P15
+
+Submitted job 67 with external jobid 'Submitted batch job 1866249'.
+
+[Fri Mar 15 16:49:12 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P46_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P46_luksza_blast_iedb.xml
+    jobid: 102
+    wildcards: sample=P46
+
+Submitted job 102 with external jobid 'Submitted batch job 1866250'.
+
+[Fri Mar 15 16:49:12 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P4_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P4_luksza_blast_iedb.xml
+    jobid: 106
+    wildcards: sample=P4
+
+Submitted job 106 with external jobid 'Submitted batch job 1866251'.
+
+[Fri Mar 15 16:49:12 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P30_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P30_luksza_blast_iedb.xml
+    jobid: 85
+    wildcards: sample=P30
+
+Submitted job 85 with external jobid 'Submitted batch job 1866252'.
+
+[Fri Mar 15 16:49:12 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P9_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P9_luksza_blast_iedb.xml
+    jobid: 120
+    wildcards: sample=P9
+
+Submitted job 120 with external jobid 'Submitted batch job 1866253'.
+
+[Fri Mar 15 16:49:13 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P3_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P3_luksza_blast_iedb.xml
+    jobid: 96
+    wildcards: sample=P3
+
+Submitted job 96 with external jobid 'Submitted batch job 1866254'.
+
+[Fri Mar 15 16:49:13 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P42_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P42_luksza_blast_iedb.xml
+    jobid: 99
+    wildcards: sample=P42
+
+Submitted job 99 with external jobid 'Submitted batch job 1866255'.
+
+[Fri Mar 15 16:49:13 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P40_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P40_luksza_blast_iedb.xml
+    jobid: 97
+    wildcards: sample=P40
+
+Submitted job 97 with external jobid 'Submitted batch job 1866256'.
+
+[Fri Mar 15 16:49:13 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P56_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P56_luksza_blast_iedb.xml
+    jobid: 113
+    wildcards: sample=P56
+
+Submitted job 113 with external jobid 'Submitted batch job 1866257'.
+
+[Fri Mar 15 16:49:13 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P5_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P5_luksza_blast_iedb.xml
+    jobid: 117
+    wildcards: sample=P5
+
+Submitted job 117 with external jobid 'Submitted batch job 1866258'.
+
+[Fri Mar 15 16:49:13 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P17_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P17_luksza_blast_iedb.xml
+    jobid: 69
+    wildcards: sample=P17
+
+Submitted job 69 with external jobid 'Submitted batch job 1866259'.
+
+[Fri Mar 15 16:49:13 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P43_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P43_luksza_blast_iedb.xml
+    jobid: 100
+    wildcards: sample=P43
+
+Submitted job 100 with external jobid 'Submitted batch job 1866260'.
+
+[Fri Mar 15 16:49:13 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P44_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P44_luksza_blast_iedb.xml
+    jobid: 122
+    wildcards: sample=P44
+
+Submitted job 122 with external jobid 'Submitted batch job 1866261'.
+
+[Fri Mar 15 16:49:13 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P48_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P48_luksza_blast_iedb.xml
+    jobid: 104
+    wildcards: sample=P48
+
+Submitted job 104 with external jobid 'Submitted batch job 1866262'.
+
+[Fri Mar 15 16:49:14 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P35_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P35_luksza_blast_iedb.xml
+    jobid: 90
+    wildcards: sample=P35
+
+Submitted job 90 with external jobid 'Submitted batch job 1866263'.
+
+[Fri Mar 15 16:49:14 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P2B_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P2B_luksza_blast_iedb.xml
+    jobid: 84
+    wildcards: sample=P2B
+
+Submitted job 84 with external jobid 'Submitted batch job 1866264'.
+
+[Fri Mar 15 16:49:14 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P59_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P59_luksza_blast_iedb.xml
+    jobid: 116
+    wildcards: sample=P59
+
+Submitted job 116 with external jobid 'Submitted batch job 1866265'.
+
+[Fri Mar 15 16:49:14 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P53_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P53_luksza_blast_iedb.xml
+    jobid: 110
+    wildcards: sample=P53
+
+Submitted job 110 with external jobid 'Submitted batch job 1866266'.
+
+[Fri Mar 15 16:49:14 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P18_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P18_luksza_blast_iedb.xml
+    jobid: 70
+    wildcards: sample=P18
+
+Submitted job 70 with external jobid 'Submitted batch job 1866267'.
+
+[Fri Mar 15 16:49:14 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P39B_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P39B_luksza_blast_iedb.xml
+    jobid: 95
+    wildcards: sample=P39B
+
+Submitted job 95 with external jobid 'Submitted batch job 1866268'.
+
+[Fri Mar 15 16:49:14 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P26_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P26_luksza_blast_iedb.xml
+    jobid: 79
+    wildcards: sample=P26
+
+Submitted job 79 with external jobid 'Submitted batch job 1866269'.
+
+[Fri Mar 15 16:49:14 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P57_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P57_luksza_blast_iedb.xml
+    jobid: 114
+    wildcards: sample=P57
+
+Submitted job 114 with external jobid 'Submitted batch job 1866270'.
+
+[Fri Mar 15 16:49:15 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P21_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P21_luksza_blast_iedb.xml
+    jobid: 74
+    wildcards: sample=P21
+
+Submitted job 74 with external jobid 'Submitted batch job 1866271'.
+
+[Fri Mar 15 16:49:15 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P14_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P14_luksza_blast_iedb.xml
+    jobid: 66
+    wildcards: sample=P14
+
+Submitted job 66 with external jobid 'Submitted batch job 1866272'.
+
+[Fri Mar 15 16:49:15 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P58_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P58_luksza_blast_iedb.xml
+    jobid: 115
+    wildcards: sample=P58
+
+Submitted job 115 with external jobid 'Submitted batch job 1866273'.
+
+[Fri Mar 15 16:49:15 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P22_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P22_luksza_blast_iedb.xml
+    jobid: 75
+    wildcards: sample=P22
+
+Submitted job 75 with external jobid 'Submitted batch job 1866274'.
+
+[Fri Mar 15 16:49:15 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P19_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P19_luksza_blast_iedb.xml
+    jobid: 71
+    wildcards: sample=P19
+
+Submitted job 71 with external jobid 'Submitted batch job 1866275'.
+
+[Fri Mar 15 16:49:15 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P6_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P6_luksza_blast_iedb.xml
+    jobid: 121
+    wildcards: sample=P6
+
+Submitted job 121 with external jobid 'Submitted batch job 1866276'.
+
+[Fri Mar 15 16:49:15 2024]
+rule blast:
+    input: /xdisk/khasting/knodele/Mayo_human_data/peptides/P37_luksza_blast_input.txt
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P37_luksza_blast_iedb.xml
+    jobid: 92
+    wildcards: sample=P37
+
+Submitted job 92 with external jobid 'Submitted batch job 1866277'.
+[Fri Mar 15 16:49:19 2024]
+Error in rule blast:
+    jobid: 101
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P45_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P45_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P45_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866217
+
+Error executing rule blast on cluster (jobid: 101, external: Submitted batch job 1866217, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.101.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:19 2024]
+Error in rule blast:
+    jobid: 82
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P29_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P29_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P29_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866218
+
+Error executing rule blast on cluster (jobid: 82, external: Submitted batch job 1866218, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.82.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:20 2024]
+Error in rule blast:
+    jobid: 119
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P8_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P8_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P8_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866236
+
+Error executing rule blast on cluster (jobid: 119, external: Submitted batch job 1866236, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.119.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:21 2024]
+Error in rule blast:
+    jobid: 83
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P2A_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P2A_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P2A_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866237
+
+Error executing rule blast on cluster (jobid: 83, external: Submitted batch job 1866237, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.83.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:21 2024]
+Error in rule blast:
+    jobid: 107
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P50_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P50_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P50_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866238
+
+Error executing rule blast on cluster (jobid: 107, external: Submitted batch job 1866238, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.107.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:21 2024]
+Error in rule blast:
+    jobid: 91
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P36_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P36_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P36_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866239
+
+Error executing rule blast on cluster (jobid: 91, external: Submitted batch job 1866239, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.91.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:21 2024]
+Error in rule blast:
+    jobid: 64
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P12_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P12_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P12_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866240
+
+Error executing rule blast on cluster (jobid: 64, external: Submitted batch job 1866240, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.64.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:21 2024]
+Error in rule blast:
+    jobid: 72
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P1_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P1_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P1_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866241
+
+Error executing rule blast on cluster (jobid: 72, external: Submitted batch job 1866241, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.72.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:21 2024]
+Error in rule blast:
+    jobid: 81
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P28_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P28_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P28_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866242
+
+Error executing rule blast on cluster (jobid: 81, external: Submitted batch job 1866242, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.81.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:21 2024]
+Error in rule blast:
+    jobid: 77
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P24_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P24_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P24_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866243
+
+Error executing rule blast on cluster (jobid: 77, external: Submitted batch job 1866243, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.77.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:21 2024]
+Error in rule blast:
+    jobid: 86
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P31_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P31_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P31_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866244
+
+Error executing rule blast on cluster (jobid: 86, external: Submitted batch job 1866244, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.86.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:21 2024]
+Error in rule blast:
+    jobid: 78
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P25_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P25_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P25_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866245
+
+Error executing rule blast on cluster (jobid: 78, external: Submitted batch job 1866245, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.78.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:21 2024]
+Error in rule blast:
+    jobid: 80
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P27_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P27_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P27_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866246
+
+Error executing rule blast on cluster (jobid: 80, external: Submitted batch job 1866246, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.80.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:22 2024]
+Error in rule blast:
+    jobid: 103
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P47_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P47_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P47_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866247
+
+Error executing rule blast on cluster (jobid: 103, external: Submitted batch job 1866247, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.103.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:22 2024]
+Error in rule blast:
+    jobid: 109
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P52_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P52_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P52_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866248
+
+Error executing rule blast on cluster (jobid: 109, external: Submitted batch job 1866248, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.109.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:22 2024]
+Error in rule blast:
+    jobid: 67
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P15_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P15_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P15_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866249
+
+Error executing rule blast on cluster (jobid: 67, external: Submitted batch job 1866249, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.67.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:22 2024]
+Error in rule blast:
+    jobid: 102
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P46_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P46_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P46_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866250
+
+Error executing rule blast on cluster (jobid: 102, external: Submitted batch job 1866250, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.102.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:22 2024]
+Error in rule blast:
+    jobid: 106
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P4_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P4_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P4_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866251
+
+Error executing rule blast on cluster (jobid: 106, external: Submitted batch job 1866251, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.106.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:22 2024]
+Error in rule blast:
+    jobid: 85
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P30_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P30_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P30_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866252
+
+Error executing rule blast on cluster (jobid: 85, external: Submitted batch job 1866252, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.85.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:22 2024]
+Error in rule blast:
+    jobid: 120
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P9_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P9_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P9_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866253
+
+Error executing rule blast on cluster (jobid: 120, external: Submitted batch job 1866253, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.120.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:22 2024]
+Error in rule blast:
+    jobid: 96
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P3_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P3_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P3_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866254
+
+Error executing rule blast on cluster (jobid: 96, external: Submitted batch job 1866254, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.96.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:22 2024]
+Error in rule blast:
+    jobid: 99
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P42_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P42_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P42_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866255
+
+Error executing rule blast on cluster (jobid: 99, external: Submitted batch job 1866255, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.99.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:22 2024]
+Error in rule blast:
+    jobid: 97
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P40_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P40_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P40_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866256
+
+Error executing rule blast on cluster (jobid: 97, external: Submitted batch job 1866256, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.97.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:23 2024]
+Error in rule blast:
+    jobid: 113
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P56_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P56_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P56_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866257
+
+Error executing rule blast on cluster (jobid: 113, external: Submitted batch job 1866257, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.113.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:23 2024]
+Error in rule blast:
+    jobid: 117
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P5_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P5_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P5_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866258
+
+Error executing rule blast on cluster (jobid: 117, external: Submitted batch job 1866258, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.117.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:23 2024]
+Error in rule blast:
+    jobid: 69
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P17_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P17_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P17_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866259
+
+Error executing rule blast on cluster (jobid: 69, external: Submitted batch job 1866259, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.69.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:23 2024]
+Error in rule blast:
+    jobid: 100
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P43_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P43_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P43_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866260
+
+Error executing rule blast on cluster (jobid: 100, external: Submitted batch job 1866260, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.100.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:23 2024]
+Error in rule blast:
+    jobid: 122
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P44_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P44_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P44_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866261
+
+Error executing rule blast on cluster (jobid: 122, external: Submitted batch job 1866261, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.122.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:23 2024]
+Error in rule blast:
+    jobid: 104
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P48_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P48_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P48_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866262
+
+Error executing rule blast on cluster (jobid: 104, external: Submitted batch job 1866262, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.104.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:23 2024]
+Error in rule blast:
+    jobid: 90
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P35_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P35_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P35_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866263
+
+Error executing rule blast on cluster (jobid: 90, external: Submitted batch job 1866263, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.90.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:23 2024]
+Error in rule blast:
+    jobid: 84
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P2B_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P2B_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P2B_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866264
+
+Error executing rule blast on cluster (jobid: 84, external: Submitted batch job 1866264, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.84.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:23 2024]
+Error in rule blast:
+    jobid: 116
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P59_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P59_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P59_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866265
+
+Error executing rule blast on cluster (jobid: 116, external: Submitted batch job 1866265, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.116.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:23 2024]
+Error in rule blast:
+    jobid: 110
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P53_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P53_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P53_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866266
+
+Error executing rule blast on cluster (jobid: 110, external: Submitted batch job 1866266, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.110.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:24 2024]
+Error in rule blast:
+    jobid: 70
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P18_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P18_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P18_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866267
+
+Error executing rule blast on cluster (jobid: 70, external: Submitted batch job 1866267, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.70.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:24 2024]
+Error in rule blast:
+    jobid: 95
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P39B_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P39B_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P39B_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866268
+
+Error executing rule blast on cluster (jobid: 95, external: Submitted batch job 1866268, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.95.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:24 2024]
+Error in rule blast:
+    jobid: 79
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P26_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P26_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P26_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866269
+
+Error executing rule blast on cluster (jobid: 79, external: Submitted batch job 1866269, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.79.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:24 2024]
+Error in rule blast:
+    jobid: 114
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P57_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P57_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P57_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866270
+
+Error executing rule blast on cluster (jobid: 114, external: Submitted batch job 1866270, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.114.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:24 2024]
+Error in rule blast:
+    jobid: 74
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P21_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P21_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P21_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866271
+
+Error executing rule blast on cluster (jobid: 74, external: Submitted batch job 1866271, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.74.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:24 2024]
+Error in rule blast:
+    jobid: 66
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P14_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P14_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P14_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866272
+
+Error executing rule blast on cluster (jobid: 66, external: Submitted batch job 1866272, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.66.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:24 2024]
+Error in rule blast:
+    jobid: 115
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P58_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P58_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P58_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866273
+
+Error executing rule blast on cluster (jobid: 115, external: Submitted batch job 1866273, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.115.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:24 2024]
+Error in rule blast:
+    jobid: 75
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P22_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P22_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P22_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866274
+
+Error executing rule blast on cluster (jobid: 75, external: Submitted batch job 1866274, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.75.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:24 2024]
+Error in rule blast:
+    jobid: 71
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P19_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P19_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P19_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866275
+
+Error executing rule blast on cluster (jobid: 71, external: Submitted batch job 1866275, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.71.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:24 2024]
+Error in rule blast:
+    jobid: 121
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P6_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P6_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P6_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866276
+
+Error executing rule blast on cluster (jobid: 121, external: Submitted batch job 1866276, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.121.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:25 2024]
+Error in rule blast:
+    jobid: 92
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P37_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P37_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P37_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866277
+
+Error executing rule blast on cluster (jobid: 92, external: Submitted batch job 1866277, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.92.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:35 2024]
+Error in rule blast:
+    jobid: 105
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P49_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P49_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P49_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866219
+
+Error executing rule blast on cluster (jobid: 105, external: Submitted batch job 1866219, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.105.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:35 2024]
+Error in rule blast:
+    jobid: 118
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P7_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P7_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P7_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866220
+
+Error executing rule blast on cluster (jobid: 118, external: Submitted batch job 1866220, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.118.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:35 2024]
+Error in rule blast:
+    jobid: 108
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P51_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P51_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P51_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866221
+
+Error executing rule blast on cluster (jobid: 108, external: Submitted batch job 1866221, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.108.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:35 2024]
+Error in rule blast:
+    jobid: 76
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P23_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P23_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P23_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866222
+
+Error executing rule blast on cluster (jobid: 76, external: Submitted batch job 1866222, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.76.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:35 2024]
+Error in rule blast:
+    jobid: 94
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P39A_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P39A_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P39A_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866223
+
+Error executing rule blast on cluster (jobid: 94, external: Submitted batch job 1866223, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.94.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:35 2024]
+Error in rule blast:
+    jobid: 63
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P11_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P11_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P11_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866224
+
+Error executing rule blast on cluster (jobid: 63, external: Submitted batch job 1866224, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.63.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:35 2024]
+Error in rule blast:
+    jobid: 111
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P54_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P54_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P54_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866225
+
+Error executing rule blast on cluster (jobid: 111, external: Submitted batch job 1866225, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.111.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:35 2024]
+Error in rule blast:
+    jobid: 73
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P20_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P20_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P20_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866226
+
+Error executing rule blast on cluster (jobid: 73, external: Submitted batch job 1866226, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.73.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:35 2024]
+Error in rule blast:
+    jobid: 87
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P32_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P32_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P32_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866227
+
+Error executing rule blast on cluster (jobid: 87, external: Submitted batch job 1866227, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.87.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:35 2024]
+Error in rule blast:
+    jobid: 88
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P33_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P33_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P33_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866228
+
+Error executing rule blast on cluster (jobid: 88, external: Submitted batch job 1866228, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.88.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:36 2024]
+Error in rule blast:
+    jobid: 65
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P13_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P13_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P13_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866229
+
+Error executing rule blast on cluster (jobid: 65, external: Submitted batch job 1866229, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.65.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:36 2024]
+Error in rule blast:
+    jobid: 112
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P55_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P55_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P55_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866230
+
+Error executing rule blast on cluster (jobid: 112, external: Submitted batch job 1866230, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.112.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:36 2024]
+Error in rule blast:
+    jobid: 62
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P10_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P10_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P10_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866231
+
+Error executing rule blast on cluster (jobid: 62, external: Submitted batch job 1866231, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.62.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:36 2024]
+Error in rule blast:
+    jobid: 93
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P38_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P38_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P38_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866232
+
+Error executing rule blast on cluster (jobid: 93, external: Submitted batch job 1866232, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.93.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:36 2024]
+Error in rule blast:
+    jobid: 68
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P16_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P16_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P16_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866233
+
+Error executing rule blast on cluster (jobid: 68, external: Submitted batch job 1866233, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.68.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:36 2024]
+Error in rule blast:
+    jobid: 89
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P34_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P34_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P34_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866234
+
+Error executing rule blast on cluster (jobid: 89, external: Submitted batch job 1866234, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.89.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Mar 15 16:49:36 2024]
+Error in rule blast:
+    jobid: 98
+    output: /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P41_luksza_blast_iedb.xml
+    shell:
+        
+                blastp -query /xdisk/khasting/knodele/Mayo_human_data/peptides/P41_luksza_blast_input.txt -db /home/u1/knodele/programs/Luksza_programs/Input -outfmt 5 -evalue 100000000  -gapopen 11 -gapextend 1 > /xdisk/khasting/knodele/Mayo_human_data/blast_outputs/P41_luksza_blast_iedb.xml
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 1866235
+
+Error executing rule blast on cluster (jobid: 98, external: Submitted batch job 1866235, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/tmp.6hm90x3b/snakejob.blast.98.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/log/2024-03-15T164909.264640.snakemake.log

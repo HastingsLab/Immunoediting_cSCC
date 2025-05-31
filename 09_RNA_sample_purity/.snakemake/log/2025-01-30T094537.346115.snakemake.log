@@ -1,0 +1,836 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+salmon_quant_paired       58
+total                     59
+
+Select jobs to execute...
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_363_T2a_B4Aligned.out.sam
+    jobid: 36
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_363_T2a_B4Aligned.out.sam
+    wildcards: sample=s_CSCC_363_T2a_B4
+    resources: mem_mb=49078, mem_mib=46805, disk_mb=49078, disk_mib=46805, tmpdir=<TBD>
+
+Submitted job 36 with external jobid 'Submitted batch job 12067267'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_12Aligned.out.sam
+    jobid: 6
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_12Aligned.out.sam
+    wildcards: sample=s_CSCC_12
+    resources: mem_mb=39622, mem_mib=37787, disk_mb=39622, disk_mib=37787, tmpdir=<TBD>
+
+Submitted job 6 with external jobid 'Submitted batch job 12067268'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_349_T3_B4Aligned.out.sam
+    jobid: 51
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_349_T3_B4Aligned.out.sam
+    wildcards: sample=s_CSCC_349_T3_B4
+    resources: mem_mb=49276, mem_mib=46994, disk_mb=49276, disk_mib=46994, tmpdir=<TBD>
+
+Submitted job 51 with external jobid 'Submitted batch job 12067269'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_203.T2b_B2Aligned.out.sam
+    jobid: 44
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_203.T2b_B2Aligned.out.sam
+    wildcards: sample=s_203.T2b_B2
+    resources: mem_mb=43066, mem_mib=41071, disk_mb=43066, disk_mib=41071, tmpdir=<TBD>
+
+Submitted job 44 with external jobid 'Submitted batch job 12067270'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_155.T2a_B2Aligned.out.sam
+    jobid: 29
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_155.T2a_B2Aligned.out.sam
+    wildcards: sample=s_155.T2a_B2
+    resources: mem_mb=51841, mem_mib=49440, disk_mb=51841, disk_mib=49440, tmpdir=<TBD>
+
+Submitted job 29 with external jobid 'Submitted batch job 12067271'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-002-1_T2a.FC22VM72LT3_L8_R1_IGGACTTGG-CGCAGACG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-002-1_T2a.FC22VM72LT3_L8_R2_IGGACTTGG-CGCAGACG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-002-1_T2aAligned.out.sam
+    jobid: 59
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-002-1_T2aAligned.out.sam
+    wildcards: sample=CSCC_NPT-002-1_T2a
+    resources: mem_mb=36396, mem_mib=34710, disk_mb=36396, disk_mib=34710, tmpdir=<TBD>
+
+Submitted job 59 with external jobid 'Submitted batch job 12067272'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_163.T2a_B2Aligned.out.sam
+    jobid: 37
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_163.T2a_B2Aligned.out.sam
+    wildcards: sample=s_163.T2a_B2
+    resources: mem_mb=26579, mem_mib=25348, disk_mb=26579, disk_mib=25348, tmpdir=<TBD>
+
+Submitted job 37 with external jobid 'Submitted batch job 12067273'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_14Aligned.out.sam
+    jobid: 7
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_14Aligned.out.sam
+    wildcards: sample=s_CSCC_14
+    resources: mem_mb=28852, mem_mib=27516, disk_mb=28852, disk_mib=27516, tmpdir=<TBD>
+
+Submitted job 7 with external jobid 'Submitted batch job 12067274'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_093.T2a_B2Aligned.out.sam
+    jobid: 52
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_093.T2a_B2Aligned.out.sam
+    wildcards: sample=s_093.T2a_B2
+    resources: mem_mb=44205, mem_mib=42158, disk_mb=44205, disk_mib=42158, tmpdir=<TBD>
+
+Submitted job 52 with external jobid 'Submitted batch job 12067275'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-133_T2b.FC22VM72LT3_L8_R1_ICCAAGTCT-AAGGATGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-133_T2b.FC22VM72LT3_L8_R2_ICCAAGTCT-AAGGATGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-133_T2bAligned.out.sam
+    jobid: 67
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-133_T2bAligned.out.sam
+    wildcards: sample=CSCC_NPT-133_T2b
+    resources: mem_mb=65536, mem_mib=62500, disk_mb=65536, disk_mib=62500, tmpdir=<TBD>
+
+Submitted job 67 with external jobid 'Submitted batch job 12067276'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_205.T2b_B2Aligned.out.sam
+    jobid: 45
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_205.T2b_B2Aligned.out.sam
+    wildcards: sample=s_205.T2b_B2
+    resources: mem_mb=51415, mem_mib=49034, disk_mb=51415, disk_mib=49034, tmpdir=<TBD>
+
+Submitted job 45 with external jobid 'Submitted batch job 12067277'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_338_T2b_B4Aligned.out.sam
+    jobid: 30
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_338_T2b_B4Aligned.out.sam
+    wildcards: sample=s_CSCC_338_T2b_B4
+    resources: mem_mb=36413, mem_mib=34727, disk_mb=36413, disk_mib=34727, tmpdir=<TBD>
+
+Submitted job 30 with external jobid 'Submitted batch job 12067278'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_48Aligned.out.sam
+    jobid: 15
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_48Aligned.out.sam
+    wildcards: sample=s_CSCC_48
+    resources: mem_mb=122803, mem_mib=117115, disk_mb=122803, disk_mib=117115, tmpdir=<TBD>
+
+Submitted job 15 with external jobid 'Submitted batch job 12067279'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-004-2_T2a.FC22VM72LT3_L8_R1_IAAGTCCAA-TATGAGTA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-004-2_T2a.FC22VM72LT3_L8_R2_IAAGTCCAA-TATGAGTA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-004-2_T2aAligned.out.sam
+    jobid: 60
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-004-2_T2aAligned.out.sam
+    wildcards: sample=CSCC_NPT-004-2_T2a
+    resources: mem_mb=75037, mem_mib=71561, disk_mb=75037, disk_mib=71561, tmpdir=<TBD>
+
+Submitted job 60 with external jobid 'Submitted batch job 12067280'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_165.T2a_B2Aligned.out.sam
+    jobid: 38
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_165.T2a_B2Aligned.out.sam
+    wildcards: sample=s_165.T2a_B2
+    resources: mem_mb=96015, mem_mib=91568, disk_mb=96015, disk_mib=91568, tmpdir=<TBD>
+
+Submitted job 38 with external jobid 'Submitted batch job 12067281'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_109.T2a_B2Aligned.out.sam
+    jobid: 23
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_109.T2a_B2Aligned.out.sam
+    wildcards: sample=s_109.T2a_B2
+    resources: mem_mb=47002, mem_mib=44825, disk_mb=47002, disk_mib=44825, tmpdir=<TBD>
+
+Submitted job 23 with external jobid 'Submitted batch job 12067282'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_16Aligned.out.sam
+    jobid: 8
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_16Aligned.out.sam
+    wildcards: sample=s_CSCC_16
+    resources: mem_mb=50992, mem_mib=48630, disk_mb=50992, disk_mib=48630, tmpdir=<TBD>
+
+Submitted job 8 with external jobid 'Submitted batch job 12067283'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_316_T2b_B4Aligned.out.sam
+    jobid: 53
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_316_T2b_B4Aligned.out.sam
+    wildcards: sample=s_CSCC_316_T2b_B4
+    resources: mem_mb=20844, mem_mib=19879, disk_mb=20844, disk_mib=19879, tmpdir=<TBD>
+
+Submitted job 53 with external jobid 'Submitted batch job 12067284'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_073.T2a_B2Aligned.out.sam
+    jobid: 46
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_073.T2a_B2Aligned.out.sam
+    wildcards: sample=s_073.T2a_B2
+    resources: mem_mb=89336, mem_mib=85198, disk_mb=89336, disk_mib=85198, tmpdir=<TBD>
+
+Submitted job 46 with external jobid 'Submitted batch job 12067285'.
+
+[Thu Jan 30 09:45:42 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_157.T2a_2_B2Aligned.out.sam
+    jobid: 31
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_157.T2a_2_B2Aligned.out.sam
+    wildcards: sample=s_157.T2a_2_B2
+    resources: mem_mb=39885, mem_mib=38038, disk_mb=39885, disk_mib=38038, tmpdir=<TBD>
+
+Submitted job 31 with external jobid 'Submitted batch job 12067286'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_52Aligned.out.sam
+    jobid: 16
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_52Aligned.out.sam
+    wildcards: sample=s_CSCC_52
+    resources: mem_mb=49411, mem_mib=47123, disk_mb=49411, disk_mib=47123, tmpdir=<TBD>
+
+Submitted job 16 with external jobid 'Submitted batch job 12067287'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_6Aligned.out.sam
+    jobid: 2
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_6Aligned.out.sam
+    wildcards: sample=s_CSCC_6
+    resources: mem_mb=78015, mem_mib=74401, disk_mb=78015, disk_mib=74401, tmpdir=<TBD>
+
+Submitted job 2 with external jobid 'Submitted batch job 12067288'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-010-2_T3.FC22VM72LT3_L8_R1_IGCTTGTCA-GAACATAC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-010-2_T3.FC22VM72LT3_L8_R2_IGCTTGTCA-GAACATAC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-010-2_T3Aligned.out.sam
+    jobid: 61
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-010-2_T3Aligned.out.sam
+    wildcards: sample=CSCC_NPT-010-2_T3
+    resources: mem_mb=57614, mem_mib=54945, disk_mb=57614, disk_mib=54945, tmpdir=<TBD>
+
+Submitted job 61 with external jobid 'Submitted batch job 12067289'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_167.T2a_B2Aligned.out.sam
+    jobid: 39
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_167.T2a_B2Aligned.out.sam
+    wildcards: sample=s_167.T2a_B2
+    resources: mem_mb=25262, mem_mib=24092, disk_mb=25262, disk_mib=24092, tmpdir=<TBD>
+
+Submitted job 39 with external jobid 'Submitted batch job 12067290'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_306_T2a_B4Aligned.out.sam
+    jobid: 24
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_306_T2a_B4Aligned.out.sam
+    wildcards: sample=s_CSCC_306_T2a_B4
+    resources: mem_mb=40304, mem_mib=38437, disk_mb=40304, disk_mib=38437, tmpdir=<TBD>
+
+Submitted job 24 with external jobid 'Submitted batch job 12067291'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_18Aligned.out.sam
+    jobid: 9
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_18Aligned.out.sam
+    wildcards: sample=s_CSCC_18
+    resources: mem_mb=82448, mem_mib=78629, disk_mb=82448, disk_mib=78629, tmpdir=<TBD>
+
+Submitted job 9 with external jobid 'Submitted batch job 12067292'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-062_T2a.FC22VM72LT3_L8_R1_IGACCTGAA-TTGGTGAG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-062_T2a.FC22VM72LT3_L8_R2_IGACCTGAA-TTGGTGAG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-062_T2aAligned.out.sam
+    jobid: 54
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-062_T2aAligned.out.sam
+    wildcards: sample=CSCC_NPT-062_T2a
+    resources: mem_mb=47967, mem_mib=45745, disk_mb=47967, disk_mib=45745, tmpdir=<TBD>
+
+Submitted job 54 with external jobid 'Submitted batch job 12067293'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-182_T2b.FC22VM72LT3_L8_R1_ITAATACAG-ATATTCAC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-182_T2b.FC22VM72LT3_L8_R2_ITAATACAG-ATATTCAC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-182_T2bAligned.out.sam
+    jobid: 69
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-182_T2bAligned.out.sam
+    wildcards: sample=CSCC_NPT-182_T2b
+    resources: mem_mb=43514, mem_mib=41499, disk_mb=43514, disk_mib=41499, tmpdir=<TBD>
+
+Submitted job 69 with external jobid 'Submitted batch job 12067294'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_072.T2b_B2Aligned.out.sam
+    jobid: 47
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_072.T2b_B2Aligned.out.sam
+    wildcards: sample=s_072.T2b_B2
+    resources: mem_mb=98047, mem_mib=93505, disk_mb=98047, disk_mib=93505, tmpdir=<TBD>
+
+Submitted job 47 with external jobid 'Submitted batch job 12067295'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_326_T3_B4Aligned.out.sam
+    jobid: 32
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_326_T3_B4Aligned.out.sam
+    wildcards: sample=s_CSCC_326_T3_B4
+    resources: mem_mb=29643, mem_mib=28270, disk_mb=29643, disk_mib=28270, tmpdir=<TBD>
+
+Submitted job 32 with external jobid 'Submitted batch job 12067296'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_302_T2a_B4Aligned.out.sam
+    jobid: 17
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_302_T2a_B4Aligned.out.sam
+    wildcards: sample=s_CSCC_302_T2a_B4
+    resources: mem_mb=83910, mem_mib=80023, disk_mb=83910, disk_mib=80023, tmpdir=<TBD>
+
+Submitted job 17 with external jobid 'Submitted batch job 12067297'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_4Aligned.out.sam
+    jobid: 1
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_4Aligned.out.sam
+    wildcards: sample=s_CSCC_4
+    resources: mem_mb=50566, mem_mib=48224, disk_mb=50566, disk_mib=48224, tmpdir=<TBD>
+
+Submitted job 1 with external jobid 'Submitted batch job 12067298'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-017-1_T2b.FC22VM72LT3_L8_R1_ICAAGCTAG-ACATAGCG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-017-1_T2b.FC22VM72LT3_L8_R2_ICAAGCTAG-ACATAGCG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-017-1_T2bAligned.out.sam
+    jobid: 62
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-017-1_T2bAligned.out.sam
+    wildcards: sample=CSCC_NPT-017-1_T2b
+    resources: mem_mb=66035, mem_mib=62976, disk_mb=66035, disk_mib=62976, tmpdir=<TBD>
+
+Submitted job 62 with external jobid 'Submitted batch job 12067299'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_169.T2a_B2Aligned.out.sam
+    jobid: 40
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_169.T2a_B2Aligned.out.sam
+    wildcards: sample=s_169.T2a_B2
+    resources: mem_mb=50276, mem_mib=47947, disk_mb=50276, disk_mib=47947, tmpdir=<TBD>
+
+Submitted job 40 with external jobid 'Submitted batch job 12067300'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_151.T2a_B2Aligned.out.sam
+    jobid: 25
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_151.T2a_B2Aligned.out.sam
+    wildcards: sample=s_151.T2a_B2
+    resources: mem_mb=27502, mem_mib=26228, disk_mb=27502, disk_mib=26228, tmpdir=<TBD>
+
+Submitted job 25 with external jobid 'Submitted batch job 12067301'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_23Aligned.out.sam
+    jobid: 10
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_23Aligned.out.sam
+    wildcards: sample=s_CSCC_23
+    resources: mem_mb=65654, mem_mib=62613, disk_mb=65654, disk_mib=62613, tmpdir=<TBD>
+
+Submitted job 10 with external jobid 'Submitted batch job 12067302'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-164_T2a.FC22VM72LT3_L8_R1_ICAGTAGGC-TGACGAAT.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-164_T2a.FC22VM72LT3_L8_R2_ICAGTAGGC-TGACGAAT.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-164_T2aAligned.out.sam
+    jobid: 55
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-164_T2aAligned.out.sam
+    wildcards: sample=CSCC_NPT-164_T2a
+    resources: mem_mb=81528, mem_mib=77752, disk_mb=81528, disk_mib=77752, tmpdir=<TBD>
+
+Submitted job 55 with external jobid 'Submitted batch job 12067303'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-183_T2b.FC22VM72LT3_L8_R1_ICGGCGTGA-GCGCCTGT.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-183_T2b.FC22VM72LT3_L8_R2_ICGGCGTGA-GCGCCTGT.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-183_T2bAligned.out.sam
+    jobid: 70
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-183_T2bAligned.out.sam
+    wildcards: sample=CSCC_NPT-183_T2b
+    resources: mem_mb=39640, mem_mib=37804, disk_mb=39640, disk_mib=37804, tmpdir=<TBD>
+
+Submitted job 70 with external jobid 'Submitted batch job 12067304'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_373_T2b_B4Aligned.out.sam
+    jobid: 48
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_373_T2b_B4Aligned.out.sam
+    wildcards: sample=s_CSCC_373_T2b_B4
+    resources: mem_mb=80600, mem_mib=76867, disk_mb=80600, disk_mib=76867, tmpdir=<TBD>
+
+Submitted job 48 with external jobid 'Submitted batch job 12067305'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_159.T2a_B2Aligned.out.sam
+    jobid: 33
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_159.T2a_B2Aligned.out.sam
+    wildcards: sample=s_159.T2a_B2
+    resources: mem_mb=41736, mem_mib=39803, disk_mb=41736, disk_mib=39803, tmpdir=<TBD>
+
+Submitted job 33 with external jobid 'Submitted batch job 12067306'.
+
+[Thu Jan 30 09:45:43 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_097.T2a_B2Aligned.out.sam
+    jobid: 18
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_097.T2a_B2Aligned.out.sam
+    wildcards: sample=s_097.T2a_B2
+    resources: mem_mb=52712, mem_mib=50271, disk_mb=52712, disk_mib=50271, tmpdir=<TBD>
+
+Submitted job 18 with external jobid 'Submitted batch job 12067307'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_7Aligned.out.sam
+    jobid: 3
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_7Aligned.out.sam
+    wildcards: sample=s_CSCC_7
+    resources: mem_mb=64316, mem_mib=61337, disk_mb=64316, disk_mib=61337, tmpdir=<TBD>
+
+Submitted job 3 with external jobid 'Submitted batch job 12067308'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-050_T2a.FC22VM72LT3_L8_R1_ITGGATCGA-GTGCGATA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-050_T2a.FC22VM72LT3_L8_R2_ITGGATCGA-GTGCGATA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-050_T2aAligned.out.sam
+    jobid: 63
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-050_T2aAligned.out.sam
+    wildcards: sample=CSCC_NPT-050_T2a
+    resources: mem_mb=94661, mem_mib=90276, disk_mb=94661, disk_mib=90276, tmpdir=<TBD>
+
+Submitted job 63 with external jobid 'Submitted batch job 12067309'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_171.T2a_B2Aligned.out.sam
+    jobid: 41
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_171.T2a_B2Aligned.out.sam
+    wildcards: sample=s_171.T2a_B2
+    resources: mem_mb=23961, mem_mib=22851, disk_mb=23961, disk_mib=22851, tmpdir=<TBD>
+
+Submitted job 41 with external jobid 'Submitted batch job 12067310'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_304_T2b_B4Aligned.out.sam
+    jobid: 26
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_304_T2b_B4Aligned.out.sam
+    wildcards: sample=s_CSCC_304_T2b_B4
+    resources: mem_mb=42875, mem_mib=40889, disk_mb=42875, disk_mib=40889, tmpdir=<TBD>
+
+Submitted job 26 with external jobid 'Submitted batch job 12067311'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_27Aligned.out.sam
+    jobid: 11
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_27Aligned.out.sam
+    wildcards: sample=s_CSCC_27
+    resources: mem_mb=48906, mem_mib=46641, disk_mb=48906, disk_mib=46641, tmpdir=<TBD>
+
+Submitted job 11 with external jobid 'Submitted batch job 12067312'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-169_T2b.FC22VM72LT3_L8_R1_ITGACGAAT-CAGTAGGC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-169_T2b.FC22VM72LT3_L8_R2_ITGACGAAT-CAGTAGGC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-169_T2bAligned.out.sam
+    jobid: 56
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-169_T2bAligned.out.sam
+    wildcards: sample=CSCC_NPT-169_T2b
+    resources: mem_mb=82942, mem_mib=79100, disk_mb=82942, disk_mib=79100, tmpdir=<TBD>
+
+Submitted job 56 with external jobid 'Submitted batch job 12067313'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_331_T1.T_B4Aligned.out.sam
+    jobid: 34
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_331_T1.T_B4Aligned.out.sam
+    wildcards: sample=s_CSCC_331_T1.T_B4
+    resources: mem_mb=110423, mem_mib=105308, disk_mb=110423, disk_mib=105308, tmpdir=<TBD>
+
+Submitted job 34 with external jobid 'Submitted batch job 12067314'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_310_T2a_B4Aligned.out.sam
+    jobid: 19
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_310_T2a_B4Aligned.out.sam
+    wildcards: sample=s_CSCC_310_T2a_B4
+    resources: mem_mb=26375, mem_mib=25154, disk_mb=26375, disk_mib=25154, tmpdir=<TBD>
+
+Submitted job 19 with external jobid 'Submitted batch job 12067315'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_8Aligned.out.sam
+    jobid: 4
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_8Aligned.out.sam
+    wildcards: sample=s_CSCC_8
+    resources: mem_mb=23237, mem_mib=22161, disk_mb=23237, disk_mib=22161, tmpdir=<TBD>
+
+Submitted job 4 with external jobid 'Submitted batch job 12067316'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-055_T2a.FC22VM72LT3_L8_R1_IAGTTCAGG-CCAACAGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-055_T2a.FC22VM72LT3_L8_R2_IAGTTCAGG-CCAACAGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-055_T2aAligned.out.sam
+    jobid: 64
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-055_T2aAligned.out.sam
+    wildcards: sample=CSCC_NPT-055_T2a
+    resources: mem_mb=146009, mem_mib=139246, disk_mb=146009, disk_mib=139246, tmpdir=<TBD>
+
+Submitted job 64 with external jobid 'Submitted batch job 12067317'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-015_T2a.FC22VM72LT3_L8_R1_ICCGCGGTT-AGCGCTAG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-015_T2a.FC22VM72LT3_L8_R2_ICCGCGGTT-AGCGCTAG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-015_T2aAligned.out.sam
+    jobid: 57
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-015_T2aAligned.out.sam
+    wildcards: sample=CSCC_NPT-015_T2a
+    resources: mem_mb=51656, mem_mib=49264, disk_mb=51656, disk_mib=49264, tmpdir=<TBD>
+
+Submitted job 57 with external jobid 'Submitted batch job 12067318'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_101.T2a_B2Aligned.out.sam
+    jobid: 20
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_101.T2a_B2Aligned.out.sam
+    wildcards: sample=s_101.T2a_B2
+    resources: mem_mb=59119, mem_mib=56381, disk_mb=59119, disk_mib=56381, tmpdir=<TBD>
+
+Submitted job 20 with external jobid 'Submitted batch job 12067319'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_10TAligned.out.sam
+    jobid: 5
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_10TAligned.out.sam
+    wildcards: sample=s_CSCC_10T
+    resources: mem_mb=17878, mem_mib=17050, disk_mb=17878, disk_mib=17050, tmpdir=<TBD>
+
+Submitted job 5 with external jobid 'Submitted batch job 12067320'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-083_T2a.FC22VM72LT3_L8_R1_ITCTCTACT-CGCGGTTC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-083_T2a.FC22VM72LT3_L8_R2_ITCTCTACT-CGCGGTTC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-083_T2aAligned.out.sam
+    jobid: 65
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-083_T2aAligned.out.sam
+    wildcards: sample=CSCC_NPT-083_T2a
+    resources: mem_mb=96321, mem_mib=91859, disk_mb=96321, disk_mib=91859, tmpdir=<TBD>
+
+Submitted job 65 with external jobid 'Submitted batch job 12067321'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_308_T2b_B4Aligned.out.sam
+    jobid: 28
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_308_T2b_B4Aligned.out.sam
+    wildcards: sample=s_CSCC_308_T2b_B4
+    resources: mem_mb=33522, mem_mib=31970, disk_mb=33522, disk_mib=31970, tmpdir=<TBD>
+
+Submitted job 28 with external jobid 'Submitted batch job 12067322'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_39TAligned.out.sam
+    jobid: 13
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_39TAligned.out.sam
+    wildcards: sample=s_CSCC_39T
+    resources: mem_mb=32649, mem_mib=31137, disk_mb=32649, disk_mib=31137, tmpdir=<TBD>
+
+Submitted job 13 with external jobid 'Submitted batch job 12067323'.
+
+[Thu Jan 30 09:45:44 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-001-2_T2b.FC22VM72LT3_L8_R1_ITTATAACC-GATATCGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-001-2_T2b.FC22VM72LT3_L8_R2_ITTATAACC-GATATCGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-001-2_T2bAligned.out.sam
+    jobid: 58
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-001-2_T2bAligned.out.sam
+    wildcards: sample=CSCC_NPT-001-2_T2b
+    resources: mem_mb=51123, mem_mib=48755, disk_mb=51123, disk_mib=48755, tmpdir=<TBD>
+
+Submitted job 58 with external jobid 'Submitted batch job 12067324'.
+[Thu Jan 30 09:56:21 2025]
+Finished job 37.
+1 of 59 steps (2%) done
+[Thu Jan 30 09:56:21 2025]
+Finished job 7.
+2 of 59 steps (3%) done
+[Thu Jan 30 09:57:52 2025]
+Finished job 6.
+3 of 59 steps (5%) done
+[Thu Jan 30 09:59:22 2025]
+Finished job 44.
+4 of 59 steps (7%) done
+[Thu Jan 30 09:59:22 2025]
+Finished job 52.
+5 of 59 steps (8%) done
+[Thu Jan 30 09:59:52 2025]
+Finished job 51.
+6 of 59 steps (10%) done
+[Thu Jan 30 09:59:52 2025]
+Finished job 59.
+7 of 59 steps (12%) done
+[Thu Jan 30 10:00:22 2025]
+Finished job 67.
+8 of 59 steps (14%) done
+[Thu Jan 30 10:01:05 2025]
+Finished job 29.
+9 of 59 steps (15%) done
+[Thu Jan 30 10:01:47 2025]
+Finished job 53.
+10 of 59 steps (17%) done
+[Thu Jan 30 10:03:25 2025]
+Finished job 36.
+11 of 59 steps (19%) done
+[Thu Jan 30 10:03:25 2025]
+Finished job 30.
+12 of 59 steps (20%) done
+[Thu Jan 30 10:03:25 2025]
+Finished job 31.
+13 of 59 steps (22%) done
+[Thu Jan 30 10:05:03 2025]
+Finished job 45.
+14 of 59 steps (24%) done
+[Thu Jan 30 10:05:03 2025]
+Finished job 8.
+15 of 59 steps (25%) done
+[Thu Jan 30 10:06:41 2025]
+Finished job 60.
+16 of 59 steps (27%) done
+[Thu Jan 30 10:06:41 2025]
+Finished job 23.
+17 of 59 steps (29%) done
+[Thu Jan 30 10:07:23 2025]
+Finished job 39.
+18 of 59 steps (31%) done
+[Thu Jan 30 10:07:24 2025]
+Finished job 32.
+19 of 59 steps (32%) done
+[Thu Jan 30 10:08:03 2025]
+Finished job 69.
+20 of 59 steps (34%) done
+[Thu Jan 30 10:10:53 2025]
+Finished job 46.
+21 of 59 steps (36%) done
+[Thu Jan 30 10:10:53 2025]
+Finished job 24.
+22 of 59 steps (37%) done
+[Thu Jan 30 10:10:53 2025]
+Finished job 54.
+23 of 59 steps (39%) done
+[Thu Jan 30 10:10:54 2025]
+Finished job 25.
+24 of 59 steps (41%) done
+[Thu Jan 30 10:11:32 2025]
+Finished job 38.
+25 of 59 steps (42%) done
+[Thu Jan 30 10:12:11 2025]
+Finished job 16.
+26 of 59 steps (44%) done
+[Thu Jan 30 10:12:12 2025]
+Finished job 70.
+27 of 59 steps (46%) done
+[Thu Jan 30 10:12:50 2025]
+Finished job 61.
+28 of 59 steps (47%) done
+[Thu Jan 30 10:13:27 2025]
+Finished job 1.
+29 of 59 steps (49%) done
+[Thu Jan 30 10:16:03 2025]
+Finished job 2.
+30 of 59 steps (51%) done
+[Thu Jan 30 10:16:03 2025]
+Finished job 47.
+31 of 59 steps (53%) done
+[Thu Jan 30 10:16:03 2025]
+Finished job 40.
+32 of 59 steps (54%) done
+[Thu Jan 30 10:17:39 2025]
+Finished job 10.
+33 of 59 steps (56%) done
+[Thu Jan 30 10:17:39 2025]
+Finished job 33.
+34 of 59 steps (58%) done
+[Thu Jan 30 10:17:40 2025]
+Finished job 41.
+35 of 59 steps (59%) done
+[Thu Jan 30 10:18:15 2025]
+Finished job 9.
+36 of 59 steps (61%) done
+[Thu Jan 30 10:18:51 2025]
+Finished job 11.
+37 of 59 steps (63%) done
+[Thu Jan 30 10:19:28 2025]
+Finished job 62.
+38 of 59 steps (64%) done
+[Thu Jan 30 10:20:02 2025]
+Finished job 18.
+39 of 59 steps (66%) done
+[Thu Jan 30 10:20:03 2025]
+Finished job 4.
+40 of 59 steps (68%) done
+[Thu Jan 30 10:21:41 2025]
+Finished job 17.
+41 of 59 steps (69%) done
+[Thu Jan 30 10:21:41 2025]
+Finished job 3.
+42 of 59 steps (71%) done
+[Thu Jan 30 10:21:41 2025]
+Finished job 26.
+43 of 59 steps (73%) done
+[Thu Jan 30 10:23:20 2025]
+Finished job 15.
+44 of 59 steps (75%) done
+[Thu Jan 30 10:23:20 2025]
+Finished job 19.
+45 of 59 steps (76%) done
+[Thu Jan 30 10:23:53 2025]
+Finished job 55.
+46 of 59 steps (78%) done
+[Thu Jan 30 10:23:53 2025]
+Finished job 57.
+47 of 59 steps (80%) done
+[Thu Jan 30 10:23:53 2025]
+Finished job 5.
+48 of 59 steps (81%) done
+[Thu Jan 30 10:26:24 2025]
+Finished job 48.
+49 of 59 steps (83%) done
+[Thu Jan 30 10:26:24 2025]
+Finished job 20.
+50 of 59 steps (85%) done
+[Thu Jan 30 10:27:54 2025]
+Finished job 63.
+51 of 59 steps (86%) done
+[Thu Jan 30 10:27:54 2025]
+Finished job 13.
+52 of 59 steps (88%) done
+[Thu Jan 30 10:29:24 2025]
+Finished job 56.
+53 of 59 steps (90%) done
+[Thu Jan 30 10:30:55 2025]
+Finished job 58.
+54 of 59 steps (92%) done
+[Thu Jan 30 10:31:25 2025]
+Finished job 28.
+55 of 59 steps (93%) done
+[Thu Jan 30 10:37:55 2025]
+Finished job 34.
+56 of 59 steps (95%) done
+[Thu Jan 30 10:37:55 2025]
+Finished job 65.
+57 of 59 steps (97%) done
+[Thu Jan 30 10:39:25 2025]
+Finished job 64.
+58 of 59 steps (98%) done
+Select jobs to execute...
+
+[Thu Jan 30 10:39:25 2025]
+localrule all:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_6Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_7Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_8Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_10TAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_12Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_14Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_16Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_18Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_23Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_27Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_29Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_39TAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_42TAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_48Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_52Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_302_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_097.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_310_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_101.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_322_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_320_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_109.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_306_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_151.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_304_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_153.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_308_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_155.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_338_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_157.T2a_2_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_326_T3_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_159.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_331_T1.T_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_335_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_363_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_163.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_165.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_167.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_169.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_171.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_200.T2b_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_201.T2b_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_203.T2b_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_205.T2b_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_073.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_072.T2b_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_373_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_085.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_359_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_349_T3_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_093.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_316_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-062_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-164_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-169_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-015_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-001-2_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-002-1_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-004-2_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-010-2_T3Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-017-1_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-050_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-055_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-083_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-113_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-133_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-138_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-182_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-183_T2bAligned.out.sam
+    jobid: 0
+    reason: Input files updated by another job: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_373_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_52Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_316_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_48Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-183_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_23Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_073.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_163.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_304_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-002-1_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-055_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-133_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_097.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-169_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-182_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_12Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_171.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_6Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_14Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_203.T2b_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_18Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_205.T2b_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-004-2_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-001-2_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_10TAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_159.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-050_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-015_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_331_T1.T_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_8Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_7Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_308_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_093.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_167.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_072.T2b_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_302_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_349_T3_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_306_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_155.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_363_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_109.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-164_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-083_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_157.T2a_2_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_326_T3_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_39TAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-062_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_101.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_27Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-017-1_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_16Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-010-2_T3Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_310_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_338_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_169.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_151.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_165.T2a_B2Aligned.out.sam
+    resources: mem_mb=5745801, mem_mib=5479623, disk_mb=5745801, disk_mib=5479623, tmpdir=/tmp
+
+[Thu Jan 30 10:39:25 2025]
+Finished job 0.
+59 of 59 steps (100%) done
+Complete log: .snakemake/log/2025-01-30T094537.346115.snakemake.log

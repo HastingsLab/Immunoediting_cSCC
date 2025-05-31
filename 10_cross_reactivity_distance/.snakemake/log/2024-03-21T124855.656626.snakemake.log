@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 56 of /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/luksza.snakefile:
+Missing input files for rule calculate_EC:
+/xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P23_all_characteristics.csv

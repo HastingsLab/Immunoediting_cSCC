@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job stats:
+job                      count
+---------------------  -------
+all                          1
+subread_featurecounts        1
+total                        2
+
+Select jobs to execute...
+
+[Thu Jan 30 15:50:50 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_16Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/all_samples.counts.txt
+    jobid: 71
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/all_samples.counts.txt; Code has changed since last execution
+    resources: mem_mb=73084, mem_mib=69699, disk_mb=73084, disk_mib=69699, tmpdir=<TBD>
+
+Submitted job 71 with external jobid 'Submitted batch job 12068521'.
+[Thu Jan 30 16:01:31 2025]
+Error in rule subread_featurecounts:
+    jobid: 71
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_16Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/all_samples.counts.txt
+    shell:
+        
+		featureCounts -T 30 --countReadPairs --O --primary -p -s 0 -t exon -g gene_id -a /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/gencode.v47.annotation.gtf -o /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/all_samples.counts.txt /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_16Aligned.out.sam
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12068521
+
+Error executing rule subread_featurecounts on cluster (jobid: 71, external: Submitted batch job 12068521, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.4h0udo9i/snakejob.subread_featurecounts.71.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-01-30T155046.486706.snakemake.log

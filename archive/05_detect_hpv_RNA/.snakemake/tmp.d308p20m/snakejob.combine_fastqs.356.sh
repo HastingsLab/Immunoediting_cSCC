@@ -1,0 +1,12 @@
+#!/bin/sh
+# properties = {"type": "single", "rule": "combine_fastqs", "local": false, "input": ["/xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_mapped.1.fastq", "/xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_mapped.2.fastq", "/xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_unmapped.1.fastq", "/xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_unmapped.2.fastq"], "output": ["/xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.1.fastq", "/xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.2.fastq"], "wildcards": {"sample": "CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT"}, "params": {}, "log": [], "threads": 1, "resources": {"tmpdir": "/tmp"}, "jobid": 356, "cluster": {}}
+ cd /home/u1/knodele/Immunoediting_Human_cSCC/archive/05_detect_hpv_RNA && \
+/home/u1/knodele/miniconda3/envs/cancergenomics/bin/python3.7 \
+-m snakemake /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.2.fastq --snakefile /home/u1/knodele/Immunoediting_Human_cSCC/archive/05_detect_hpv_RNA/extract_fastqs.snakefile \
+--force --cores all --keep-target-files --keep-remote --max-inventory-time 0 \
+--wait-for-files '/home/u1/knodele/Immunoediting_Human_cSCC/archive/05_detect_hpv_RNA/.snakemake/tmp.d308p20m' '/xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_mapped.1.fastq' '/xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_mapped.2.fastq' '/xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_unmapped.1.fastq' '/xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_unmapped.2.fastq' --latency-wait 5 \
+ --attempt 1 --force-use-threads --scheduler ilp \
+--wrapper-prefix https://github.com/snakemake/snakemake-wrappers/raw/ \
+   --allowed-rules combine_fastqs --nocolor --notemp --no-hooks --nolock --scheduler-solver-path /home/u1/knodele/miniconda3/envs/cancergenomics/bin \
+--mode 2  --default-resources "tmpdir=system_tmpdir"  && touch /home/u1/knodele/Immunoediting_Human_cSCC/archive/05_detect_hpv_RNA/.snakemake/tmp.d308p20m/356.jobfinished || (touch /home/u1/knodele/Immunoediting_Human_cSCC/archive/05_detect_hpv_RNA/.snakemake/tmp.d308p20m/356.jobfailed; exit 1)
+

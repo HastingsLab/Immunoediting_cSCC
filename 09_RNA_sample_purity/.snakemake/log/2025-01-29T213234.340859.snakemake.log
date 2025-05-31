@@ -1,0 +1,1694 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+salmon_quant_paired       70
+total                     71
+
+Select jobs to execute...
+
+[Wed Jan 29 21:32:38 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_363_T2a_B4.Aligned.out.sam
+    jobid: 36
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_363_T2a_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_363_T2a_B4
+    resources: mem_mb=49078, mem_mib=46805, disk_mb=49078, disk_mib=46805, tmpdir=<TBD>
+
+Submitted job 36 with external jobid 'Submitted batch job 12060878'.
+
+[Wed Jan 29 21:32:38 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_322_T2b_B4.Aligned.out.sam
+    jobid: 21
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_322_T2b_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_322_T2b_B4
+    resources: mem_mb=40302, mem_mib=38435, disk_mb=40302, disk_mib=38435, tmpdir=<TBD>
+
+Submitted job 21 with external jobid 'Submitted batch job 12060879'.
+
+[Wed Jan 29 21:32:38 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-113_T2b.FC22VM72LT3_L8_R1_ICTCTCGTC-TATAACCT.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-113_T2b.FC22VM72LT3_L8_R2_ICTCTCGTC-TATAACCT.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-113_T2b.Aligned.out.sam
+    jobid: 66
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-113_T2b.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-113_T2b
+    resources: mem_mb=61020, mem_mib=58194, disk_mb=61020, disk_mib=58194, tmpdir=<TBD>
+
+Submitted job 66 with external jobid 'Submitted batch job 12060880'.
+
+[Wed Jan 29 21:32:38 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_12.Aligned.out.sam
+    jobid: 6
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_12.Aligned.out.sam
+    wildcards: sample=s_CSCC_12
+    resources: mem_mb=39622, mem_mib=37787, disk_mb=39622, disk_mib=37787, tmpdir=<TBD>
+
+Submitted job 6 with external jobid 'Submitted batch job 12060881'.
+
+[Wed Jan 29 21:32:38 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_349_T3_B4.Aligned.out.sam
+    jobid: 51
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_349_T3_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_349_T3_B4
+    resources: mem_mb=49276, mem_mib=46994, disk_mb=49276, disk_mib=46994, tmpdir=<TBD>
+
+Submitted job 51 with external jobid 'Submitted batch job 12060882'.
+
+[Wed Jan 29 21:32:38 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_203.T2b_B2.Aligned.out.sam
+    jobid: 44
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_203.T2b_B2.Aligned.out.sam
+    wildcards: sample=s_203.T2b_B2
+    resources: mem_mb=43066, mem_mib=41071, disk_mb=43066, disk_mib=41071, tmpdir=<TBD>
+
+Submitted job 44 with external jobid 'Submitted batch job 12060883'.
+
+[Wed Jan 29 21:32:38 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_155.T2a_B2.Aligned.out.sam
+    jobid: 29
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_155.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_155.T2a_B2
+    resources: mem_mb=51841, mem_mib=49440, disk_mb=51841, disk_mib=49440, tmpdir=<TBD>
+
+Submitted job 29 with external jobid 'Submitted batch job 12060884'.
+
+[Wed Jan 29 21:32:38 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_42T.Aligned.out.sam
+    jobid: 14
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_42T.Aligned.out.sam
+    wildcards: sample=s_CSCC_42T
+    resources: mem_mb=14546, mem_mib=13873, disk_mb=14546, disk_mib=13873, tmpdir=<TBD>
+
+Submitted job 14 with external jobid 'Submitted batch job 12060885'.
+
+[Wed Jan 29 21:32:38 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-002-1_T2a.FC22VM72LT3_L8_R1_IGGACTTGG-CGCAGACG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-002-1_T2a.FC22VM72LT3_L8_R2_IGGACTTGG-CGCAGACG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-002-1_T2a.Aligned.out.sam
+    jobid: 59
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-002-1_T2a.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-002-1_T2a
+    resources: mem_mb=36396, mem_mib=34710, disk_mb=36396, disk_mib=34710, tmpdir=<TBD>
+
+Submitted job 59 with external jobid 'Submitted batch job 12060886'.
+
+[Wed Jan 29 21:32:38 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_163.T2a_B2.Aligned.out.sam
+    jobid: 37
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_163.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_163.T2a_B2
+    resources: mem_mb=26579, mem_mib=25348, disk_mb=26579, disk_mib=25348, tmpdir=<TBD>
+
+Submitted job 37 with external jobid 'Submitted batch job 12060887'.
+
+[Wed Jan 29 21:32:38 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_320_T2a_B4.Aligned.out.sam
+    jobid: 22
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_320_T2a_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_320_T2a_B4
+    resources: mem_mb=84109, mem_mib=80213, disk_mb=84109, disk_mib=80213, tmpdir=<TBD>
+
+Submitted job 22 with external jobid 'Submitted batch job 12060888'.
+
+[Wed Jan 29 21:32:38 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_14.Aligned.out.sam
+    jobid: 7
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_14.Aligned.out.sam
+    wildcards: sample=s_CSCC_14
+    resources: mem_mb=28852, mem_mib=27516, disk_mb=28852, disk_mib=27516, tmpdir=<TBD>
+
+Submitted job 7 with external jobid 'Submitted batch job 12060889'.
+
+[Wed Jan 29 21:32:38 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_093.T2a_B2.Aligned.out.sam
+    jobid: 52
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_093.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_093.T2a_B2
+    resources: mem_mb=44205, mem_mib=42158, disk_mb=44205, disk_mib=42158, tmpdir=<TBD>
+
+Submitted job 52 with external jobid 'Submitted batch job 12060890'.
+
+[Wed Jan 29 21:32:38 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-133_T2b.FC22VM72LT3_L8_R1_ICCAAGTCT-AAGGATGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-133_T2b.FC22VM72LT3_L8_R2_ICCAAGTCT-AAGGATGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-133_T2b.Aligned.out.sam
+    jobid: 67
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-133_T2b.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-133_T2b
+    resources: mem_mb=65536, mem_mib=62500, disk_mb=65536, disk_mib=62500, tmpdir=<TBD>
+
+Submitted job 67 with external jobid 'Submitted batch job 12060891'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_205.T2b_B2.Aligned.out.sam
+    jobid: 45
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_205.T2b_B2.Aligned.out.sam
+    wildcards: sample=s_205.T2b_B2
+    resources: mem_mb=51415, mem_mib=49034, disk_mb=51415, disk_mib=49034, tmpdir=<TBD>
+
+Submitted job 45 with external jobid 'Submitted batch job 12060892'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_338_T2b_B4.Aligned.out.sam
+    jobid: 30
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_338_T2b_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_338_T2b_B4
+    resources: mem_mb=36413, mem_mib=34727, disk_mb=36413, disk_mib=34727, tmpdir=<TBD>
+
+Submitted job 30 with external jobid 'Submitted batch job 12060893'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_48.Aligned.out.sam
+    jobid: 15
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_48.Aligned.out.sam
+    wildcards: sample=s_CSCC_48
+    resources: mem_mb=122803, mem_mib=117115, disk_mb=122803, disk_mib=117115, tmpdir=<TBD>
+
+Submitted job 15 with external jobid 'Submitted batch job 12060894'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-004-2_T2a.FC22VM72LT3_L8_R1_IAAGTCCAA-TATGAGTA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-004-2_T2a.FC22VM72LT3_L8_R2_IAAGTCCAA-TATGAGTA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-004-2_T2a.Aligned.out.sam
+    jobid: 60
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-004-2_T2a.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-004-2_T2a
+    resources: mem_mb=75037, mem_mib=71561, disk_mb=75037, disk_mib=71561, tmpdir=<TBD>
+
+Submitted job 60 with external jobid 'Submitted batch job 12060895'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_165.T2a_B2.Aligned.out.sam
+    jobid: 38
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_165.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_165.T2a_B2
+    resources: mem_mb=96015, mem_mib=91568, disk_mb=96015, disk_mib=91568, tmpdir=<TBD>
+
+Submitted job 38 with external jobid 'Submitted batch job 12060896'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_109.T2a_B2.Aligned.out.sam
+    jobid: 23
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_109.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_109.T2a_B2
+    resources: mem_mb=47002, mem_mib=44825, disk_mb=47002, disk_mib=44825, tmpdir=<TBD>
+
+Submitted job 23 with external jobid 'Submitted batch job 12060897'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_16.Aligned.out.sam
+    jobid: 8
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_16.Aligned.out.sam
+    wildcards: sample=s_CSCC_16
+    resources: mem_mb=50992, mem_mib=48630, disk_mb=50992, disk_mib=48630, tmpdir=<TBD>
+
+Submitted job 8 with external jobid 'Submitted batch job 12060898'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_316_T2b_B4.Aligned.out.sam
+    jobid: 53
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_316_T2b_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_316_T2b_B4
+    resources: mem_mb=20844, mem_mib=19879, disk_mb=20844, disk_mib=19879, tmpdir=<TBD>
+
+Submitted job 53 with external jobid 'Submitted batch job 12060899'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-138_T2a.FC22VM72LT3_L8_R1_ITTGGACTC-GGAAGCAG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-138_T2a.FC22VM72LT3_L8_R2_ITTGGACTC-GGAAGCAG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-138_T2a.Aligned.out.sam
+    jobid: 68
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-138_T2a.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-138_T2a
+    resources: mem_mb=62143, mem_mib=59265, disk_mb=62143, disk_mib=59265, tmpdir=<TBD>
+
+Submitted job 68 with external jobid 'Submitted batch job 12060900'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_073.T2a_B2.Aligned.out.sam
+    jobid: 46
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_073.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_073.T2a_B2
+    resources: mem_mb=89336, mem_mib=85198, disk_mb=89336, disk_mib=85198, tmpdir=<TBD>
+
+Submitted job 46 with external jobid 'Submitted batch job 12060901'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_157.T2a_2_B2.Aligned.out.sam
+    jobid: 31
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_157.T2a_2_B2.Aligned.out.sam
+    wildcards: sample=s_157.T2a_2_B2
+    resources: mem_mb=39885, mem_mib=38038, disk_mb=39885, disk_mib=38038, tmpdir=<TBD>
+
+Submitted job 31 with external jobid 'Submitted batch job 12060902'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_52.Aligned.out.sam
+    jobid: 16
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_52.Aligned.out.sam
+    wildcards: sample=s_CSCC_52
+    resources: mem_mb=49411, mem_mib=47123, disk_mb=49411, disk_mib=47123, tmpdir=<TBD>
+
+Submitted job 16 with external jobid 'Submitted batch job 12060903'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_6.Aligned.out.sam
+    jobid: 2
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_6.Aligned.out.sam
+    wildcards: sample=s_CSCC_6
+    resources: mem_mb=78015, mem_mib=74401, disk_mb=78015, disk_mib=74401, tmpdir=<TBD>
+
+Submitted job 2 with external jobid 'Submitted batch job 12060904'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-010-2_T3.FC22VM72LT3_L8_R1_IGCTTGTCA-GAACATAC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-010-2_T3.FC22VM72LT3_L8_R2_IGCTTGTCA-GAACATAC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-010-2_T3.Aligned.out.sam
+    jobid: 61
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-010-2_T3.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-010-2_T3
+    resources: mem_mb=57614, mem_mib=54945, disk_mb=57614, disk_mib=54945, tmpdir=<TBD>
+
+Submitted job 61 with external jobid 'Submitted batch job 12060905'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_167.T2a_B2.Aligned.out.sam
+    jobid: 39
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_167.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_167.T2a_B2
+    resources: mem_mb=25262, mem_mib=24092, disk_mb=25262, disk_mib=24092, tmpdir=<TBD>
+
+Submitted job 39 with external jobid 'Submitted batch job 12060906'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_306_T2a_B4.Aligned.out.sam
+    jobid: 24
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_306_T2a_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_306_T2a_B4
+    resources: mem_mb=40304, mem_mib=38437, disk_mb=40304, disk_mib=38437, tmpdir=<TBD>
+
+Submitted job 24 with external jobid 'Submitted batch job 12060907'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_18.Aligned.out.sam
+    jobid: 9
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_18.Aligned.out.sam
+    wildcards: sample=s_CSCC_18
+    resources: mem_mb=82448, mem_mib=78629, disk_mb=82448, disk_mib=78629, tmpdir=<TBD>
+
+Submitted job 9 with external jobid 'Submitted batch job 12060908'.
+
+[Wed Jan 29 21:32:39 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-062_T2a.FC22VM72LT3_L8_R1_IGACCTGAA-TTGGTGAG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-062_T2a.FC22VM72LT3_L8_R2_IGACCTGAA-TTGGTGAG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-062_T2a.Aligned.out.sam
+    jobid: 54
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-062_T2a.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-062_T2a
+    resources: mem_mb=47967, mem_mib=45745, disk_mb=47967, disk_mib=45745, tmpdir=<TBD>
+
+Submitted job 54 with external jobid 'Submitted batch job 12060909'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-182_T2b.FC22VM72LT3_L8_R1_ITAATACAG-ATATTCAC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-182_T2b.FC22VM72LT3_L8_R2_ITAATACAG-ATATTCAC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-182_T2b.Aligned.out.sam
+    jobid: 69
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-182_T2b.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-182_T2b
+    resources: mem_mb=43514, mem_mib=41499, disk_mb=43514, disk_mib=41499, tmpdir=<TBD>
+
+Submitted job 69 with external jobid 'Submitted batch job 12060910'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_072.T2b_B2.Aligned.out.sam
+    jobid: 47
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_072.T2b_B2.Aligned.out.sam
+    wildcards: sample=s_072.T2b_B2
+    resources: mem_mb=98047, mem_mib=93505, disk_mb=98047, disk_mib=93505, tmpdir=<TBD>
+
+Submitted job 47 with external jobid 'Submitted batch job 12060911'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_326_T3_B4.Aligned.out.sam
+    jobid: 32
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_326_T3_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_326_T3_B4
+    resources: mem_mb=29643, mem_mib=28270, disk_mb=29643, disk_mib=28270, tmpdir=<TBD>
+
+Submitted job 32 with external jobid 'Submitted batch job 12060912'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_302_T2a_B4.Aligned.out.sam
+    jobid: 17
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_302_T2a_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_302_T2a_B4
+    resources: mem_mb=83910, mem_mib=80023, disk_mb=83910, disk_mib=80023, tmpdir=<TBD>
+
+Submitted job 17 with external jobid 'Submitted batch job 12060913'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_4.Aligned.out.sam
+    jobid: 1
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_4.Aligned.out.sam
+    wildcards: sample=s_CSCC_4
+    resources: mem_mb=50566, mem_mib=48224, disk_mb=50566, disk_mib=48224, tmpdir=<TBD>
+
+Submitted job 1 with external jobid 'Submitted batch job 12060914'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-017-1_T2b.FC22VM72LT3_L8_R1_ICAAGCTAG-ACATAGCG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-017-1_T2b.FC22VM72LT3_L8_R2_ICAAGCTAG-ACATAGCG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-017-1_T2b.Aligned.out.sam
+    jobid: 62
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-017-1_T2b.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-017-1_T2b
+    resources: mem_mb=66035, mem_mib=62976, disk_mb=66035, disk_mib=62976, tmpdir=<TBD>
+
+Submitted job 62 with external jobid 'Submitted batch job 12060915'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_169.T2a_B2.Aligned.out.sam
+    jobid: 40
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_169.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_169.T2a_B2
+    resources: mem_mb=50276, mem_mib=47947, disk_mb=50276, disk_mib=47947, tmpdir=<TBD>
+
+Submitted job 40 with external jobid 'Submitted batch job 12060916'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_151.T2a_B2.Aligned.out.sam
+    jobid: 25
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_151.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_151.T2a_B2
+    resources: mem_mb=27502, mem_mib=26228, disk_mb=27502, disk_mib=26228, tmpdir=<TBD>
+
+Submitted job 25 with external jobid 'Submitted batch job 12060917'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_23.Aligned.out.sam
+    jobid: 10
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_23.Aligned.out.sam
+    wildcards: sample=s_CSCC_23
+    resources: mem_mb=65654, mem_mib=62613, disk_mb=65654, disk_mib=62613, tmpdir=<TBD>
+
+Submitted job 10 with external jobid 'Submitted batch job 12060918'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-164_T2a.FC22VM72LT3_L8_R1_ICAGTAGGC-TGACGAAT.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-164_T2a.FC22VM72LT3_L8_R2_ICAGTAGGC-TGACGAAT.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-164_T2a.Aligned.out.sam
+    jobid: 55
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-164_T2a.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-164_T2a
+    resources: mem_mb=81528, mem_mib=77752, disk_mb=81528, disk_mib=77752, tmpdir=<TBD>
+
+Submitted job 55 with external jobid 'Submitted batch job 12060919'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-183_T2b.FC22VM72LT3_L8_R1_ICGGCGTGA-GCGCCTGT.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-183_T2b.FC22VM72LT3_L8_R2_ICGGCGTGA-GCGCCTGT.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-183_T2b.Aligned.out.sam
+    jobid: 70
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-183_T2b.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-183_T2b
+    resources: mem_mb=39640, mem_mib=37804, disk_mb=39640, disk_mib=37804, tmpdir=<TBD>
+
+Submitted job 70 with external jobid 'Submitted batch job 12060920'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_373_T2b_B4.Aligned.out.sam
+    jobid: 48
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_373_T2b_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_373_T2b_B4
+    resources: mem_mb=80600, mem_mib=76867, disk_mb=80600, disk_mib=76867, tmpdir=<TBD>
+
+Submitted job 48 with external jobid 'Submitted batch job 12060921'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_159.T2a_B2.Aligned.out.sam
+    jobid: 33
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_159.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_159.T2a_B2
+    resources: mem_mb=41736, mem_mib=39803, disk_mb=41736, disk_mib=39803, tmpdir=<TBD>
+
+Submitted job 33 with external jobid 'Submitted batch job 12060922'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_097.T2a_B2.Aligned.out.sam
+    jobid: 18
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_097.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_097.T2a_B2
+    resources: mem_mb=52712, mem_mib=50271, disk_mb=52712, disk_mib=50271, tmpdir=<TBD>
+
+Submitted job 18 with external jobid 'Submitted batch job 12060923'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_7.Aligned.out.sam
+    jobid: 3
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_7.Aligned.out.sam
+    wildcards: sample=s_CSCC_7
+    resources: mem_mb=64316, mem_mib=61337, disk_mb=64316, disk_mib=61337, tmpdir=<TBD>
+
+Submitted job 3 with external jobid 'Submitted batch job 12060924'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-050_T2a.FC22VM72LT3_L8_R1_ITGGATCGA-GTGCGATA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-050_T2a.FC22VM72LT3_L8_R2_ITGGATCGA-GTGCGATA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-050_T2a.Aligned.out.sam
+    jobid: 63
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-050_T2a.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-050_T2a
+    resources: mem_mb=94661, mem_mib=90276, disk_mb=94661, disk_mib=90276, tmpdir=<TBD>
+
+Submitted job 63 with external jobid 'Submitted batch job 12060925'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_171.T2a_B2.Aligned.out.sam
+    jobid: 41
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_171.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_171.T2a_B2
+    resources: mem_mb=23961, mem_mib=22851, disk_mb=23961, disk_mib=22851, tmpdir=<TBD>
+
+Submitted job 41 with external jobid 'Submitted batch job 12060926'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_304_T2b_B4.Aligned.out.sam
+    jobid: 26
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_304_T2b_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_304_T2b_B4
+    resources: mem_mb=42875, mem_mib=40889, disk_mb=42875, disk_mib=40889, tmpdir=<TBD>
+
+Submitted job 26 with external jobid 'Submitted batch job 12060927'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_27.Aligned.out.sam
+    jobid: 11
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_27.Aligned.out.sam
+    wildcards: sample=s_CSCC_27
+    resources: mem_mb=48906, mem_mib=46641, disk_mb=48906, disk_mib=46641, tmpdir=<TBD>
+
+Submitted job 11 with external jobid 'Submitted batch job 12060928'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-169_T2b.FC22VM72LT3_L8_R1_ITGACGAAT-CAGTAGGC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-169_T2b.FC22VM72LT3_L8_R2_ITGACGAAT-CAGTAGGC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-169_T2b.Aligned.out.sam
+    jobid: 56
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-169_T2b.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-169_T2b
+    resources: mem_mb=82942, mem_mib=79100, disk_mb=82942, disk_mib=79100, tmpdir=<TBD>
+
+Submitted job 56 with external jobid 'Submitted batch job 12060929'.
+
+[Wed Jan 29 21:32:40 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_085.T2a_B2.Aligned.out.sam
+    jobid: 49
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_085.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_085.T2a_B2
+    resources: mem_mb=50884, mem_mib=48527, disk_mb=50884, disk_mib=48527, tmpdir=<TBD>
+
+Submitted job 49 with external jobid 'Submitted batch job 12060930'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_331_T1.T_B4.Aligned.out.sam
+    jobid: 34
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_331_T1.T_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_331_T1.T_B4
+    resources: mem_mb=110423, mem_mib=105308, disk_mb=110423, disk_mib=105308, tmpdir=<TBD>
+
+Submitted job 34 with external jobid 'Submitted batch job 12060931'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_310_T2a_B4.Aligned.out.sam
+    jobid: 19
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_310_T2a_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_310_T2a_B4
+    resources: mem_mb=26375, mem_mib=25154, disk_mb=26375, disk_mib=25154, tmpdir=<TBD>
+
+Submitted job 19 with external jobid 'Submitted batch job 12060932'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_8.Aligned.out.sam
+    jobid: 4
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_8.Aligned.out.sam
+    wildcards: sample=s_CSCC_8
+    resources: mem_mb=23237, mem_mib=22161, disk_mb=23237, disk_mib=22161, tmpdir=<TBD>
+
+Submitted job 4 with external jobid 'Submitted batch job 12060933'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-055_T2a.FC22VM72LT3_L8_R1_IAGTTCAGG-CCAACAGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-055_T2a.FC22VM72LT3_L8_R2_IAGTTCAGG-CCAACAGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-055_T2a.Aligned.out.sam
+    jobid: 64
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-055_T2a.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-055_T2a
+    resources: mem_mb=146009, mem_mib=139246, disk_mb=146009, disk_mib=139246, tmpdir=<TBD>
+
+Submitted job 64 with external jobid 'Submitted batch job 12060934'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_200.T2b_B2.Aligned.out.sam
+    jobid: 42
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_200.T2b_B2.Aligned.out.sam
+    wildcards: sample=s_200.T2b_B2
+    resources: mem_mb=53257, mem_mib=50790, disk_mb=53257, disk_mib=50790, tmpdir=<TBD>
+
+Submitted job 42 with external jobid 'Submitted batch job 12060935'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_153.T2a_B2.Aligned.out.sam
+    jobid: 27
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_153.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_153.T2a_B2
+    resources: mem_mb=21945, mem_mib=20929, disk_mb=21945, disk_mib=20929, tmpdir=<TBD>
+
+Submitted job 27 with external jobid 'Submitted batch job 12060936'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_29.Aligned.out.sam
+    jobid: 12
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_29.Aligned.out.sam
+    wildcards: sample=s_CSCC_29
+    resources: mem_mb=44436, mem_mib=42378, disk_mb=44436, disk_mib=42378, tmpdir=<TBD>
+
+Submitted job 12 with external jobid 'Submitted batch job 12060937'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-015_T2a.FC22VM72LT3_L8_R1_ICCGCGGTT-AGCGCTAG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-015_T2a.FC22VM72LT3_L8_R2_ICCGCGGTT-AGCGCTAG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-015_T2a.Aligned.out.sam
+    jobid: 57
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-015_T2a.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-015_T2a
+    resources: mem_mb=51656, mem_mib=49264, disk_mb=51656, disk_mib=49264, tmpdir=<TBD>
+
+Submitted job 57 with external jobid 'Submitted batch job 12060938'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_359_T2a_B4.Aligned.out.sam
+    jobid: 50
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_359_T2a_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_359_T2a_B4
+    resources: mem_mb=78859, mem_mib=75206, disk_mb=78859, disk_mib=75206, tmpdir=<TBD>
+
+Submitted job 50 with external jobid 'Submitted batch job 12060939'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_335_T2a_B4.Aligned.out.sam
+    jobid: 35
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_335_T2a_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_335_T2a_B4
+    resources: mem_mb=94371, mem_mib=90000, disk_mb=94371, disk_mib=90000, tmpdir=<TBD>
+
+Submitted job 35 with external jobid 'Submitted batch job 12060940'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_101.T2a_B2.Aligned.out.sam
+    jobid: 20
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_101.T2a_B2.Aligned.out.sam
+    wildcards: sample=s_101.T2a_B2
+    resources: mem_mb=59119, mem_mib=56381, disk_mb=59119, disk_mib=56381, tmpdir=<TBD>
+
+Submitted job 20 with external jobid 'Submitted batch job 12060941'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_10T.Aligned.out.sam
+    jobid: 5
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_10T.Aligned.out.sam
+    wildcards: sample=s_CSCC_10T
+    resources: mem_mb=17878, mem_mib=17050, disk_mb=17878, disk_mib=17050, tmpdir=<TBD>
+
+Submitted job 5 with external jobid 'Submitted batch job 12060942'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-083_T2a.FC22VM72LT3_L8_R1_ITCTCTACT-CGCGGTTC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-083_T2a.FC22VM72LT3_L8_R2_ITCTCTACT-CGCGGTTC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-083_T2a.Aligned.out.sam
+    jobid: 65
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-083_T2a.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-083_T2a
+    resources: mem_mb=96321, mem_mib=91859, disk_mb=96321, disk_mib=91859, tmpdir=<TBD>
+
+Submitted job 65 with external jobid 'Submitted batch job 12060943'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_201.T2b_B2.Aligned.out.sam
+    jobid: 43
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_201.T2b_B2.Aligned.out.sam
+    wildcards: sample=s_201.T2b_B2
+    resources: mem_mb=69411, mem_mib=66196, disk_mb=69411, disk_mib=66196, tmpdir=<TBD>
+
+Submitted job 43 with external jobid 'Submitted batch job 12060944'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_308_T2b_B4.Aligned.out.sam
+    jobid: 28
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_308_T2b_B4.Aligned.out.sam
+    wildcards: sample=s_CSCC_308_T2b_B4
+    resources: mem_mb=33522, mem_mib=31970, disk_mb=33522, disk_mib=31970, tmpdir=<TBD>
+
+Submitted job 28 with external jobid 'Submitted batch job 12060945'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_39T.Aligned.out.sam
+    jobid: 13
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_39T.Aligned.out.sam
+    wildcards: sample=s_CSCC_39T
+    resources: mem_mb=32649, mem_mib=31137, disk_mb=32649, disk_mib=31137, tmpdir=<TBD>
+
+Submitted job 13 with external jobid 'Submitted batch job 12060946'.
+
+[Wed Jan 29 21:32:41 2025]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-001-2_T2b.FC22VM72LT3_L8_R1_ITTATAACC-GATATCGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-001-2_T2b.FC22VM72LT3_L8_R2_ITTATAACC-GATATCGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-001-2_T2b.Aligned.out.sam
+    jobid: 58
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-001-2_T2b.Aligned.out.sam
+    wildcards: sample=CSCC_NPT-001-2_T2b
+    resources: mem_mb=51123, mem_mib=48755, disk_mb=51123, disk_mib=48755, tmpdir=<TBD>
+
+Submitted job 58 with external jobid 'Submitted batch job 12060947'.
+[Wed Jan 29 21:33:03 2025]
+Error in rule salmon_quant_paired:
+    jobid: 36
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_363_T2a_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_363_T2a_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060878
+
+Error executing rule salmon_quant_paired on cluster (jobid: 36, external: Submitted batch job 12060878, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.36.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:03 2025]
+Error in rule salmon_quant_paired:
+    jobid: 21
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_322_T2b_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_322_T2b_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060879
+
+Error executing rule salmon_quant_paired on cluster (jobid: 21, external: Submitted batch job 12060879, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.21.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:03 2025]
+Error in rule salmon_quant_paired:
+    jobid: 66
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-113_T2b.FC22VM72LT3_L8_R1_ICTCTCGTC-TATAACCT.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-113_T2b.FC22VM72LT3_L8_R2_ICTCTCGTC-TATAACCT.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-113_T2b.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-113_T2b.FC22VM72LT3_L8_R1_ICTCTCGTC-TATAACCT.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-113_T2b.FC22VM72LT3_L8_R2_ICTCTCGTC-TATAACCT.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-113_T2b
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060880
+
+Error executing rule salmon_quant_paired on cluster (jobid: 66, external: Submitted batch job 12060880, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.66.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:03 2025]
+Error in rule salmon_quant_paired:
+    jobid: 6
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_12.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_12
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060881
+
+Error executing rule salmon_quant_paired on cluster (jobid: 6, external: Submitted batch job 12060881, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.6.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:03 2025]
+Error in rule salmon_quant_paired:
+    jobid: 51
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_349_T3_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_349_T3_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060882
+
+Error executing rule salmon_quant_paired on cluster (jobid: 51, external: Submitted batch job 12060882, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.51.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:03 2025]
+Error in rule salmon_quant_paired:
+    jobid: 44
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_203.T2b_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_203.T2b_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060883
+
+Error executing rule salmon_quant_paired on cluster (jobid: 44, external: Submitted batch job 12060883, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.44.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:03 2025]
+Error in rule salmon_quant_paired:
+    jobid: 29
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_155.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_155.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060884
+
+Error executing rule salmon_quant_paired on cluster (jobid: 29, external: Submitted batch job 12060884, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.29.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:03 2025]
+Error in rule salmon_quant_paired:
+    jobid: 14
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_42T.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_42T
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060885
+
+Error executing rule salmon_quant_paired on cluster (jobid: 14, external: Submitted batch job 12060885, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.14.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:03 2025]
+Error in rule salmon_quant_paired:
+    jobid: 59
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-002-1_T2a.FC22VM72LT3_L8_R1_IGGACTTGG-CGCAGACG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-002-1_T2a.FC22VM72LT3_L8_R2_IGGACTTGG-CGCAGACG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-002-1_T2a.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-002-1_T2a.FC22VM72LT3_L8_R1_IGGACTTGG-CGCAGACG.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-002-1_T2a.FC22VM72LT3_L8_R2_IGGACTTGG-CGCAGACG.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-002-1_T2a
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060886
+
+Error executing rule salmon_quant_paired on cluster (jobid: 59, external: Submitted batch job 12060886, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.59.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:03 2025]
+Error in rule salmon_quant_paired:
+    jobid: 37
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_163.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_163.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060887
+
+Error executing rule salmon_quant_paired on cluster (jobid: 37, external: Submitted batch job 12060887, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.37.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:04 2025]
+Error in rule salmon_quant_paired:
+    jobid: 22
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_320_T2a_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_320_T2a_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060888
+
+Error executing rule salmon_quant_paired on cluster (jobid: 22, external: Submitted batch job 12060888, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.22.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:04 2025]
+Error in rule salmon_quant_paired:
+    jobid: 7
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_14.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_14
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060889
+
+Error executing rule salmon_quant_paired on cluster (jobid: 7, external: Submitted batch job 12060889, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.7.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:04 2025]
+Error in rule salmon_quant_paired:
+    jobid: 52
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_093.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_093.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060890
+
+Error executing rule salmon_quant_paired on cluster (jobid: 52, external: Submitted batch job 12060890, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.52.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:04 2025]
+Error in rule salmon_quant_paired:
+    jobid: 67
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-133_T2b.FC22VM72LT3_L8_R1_ICCAAGTCT-AAGGATGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-133_T2b.FC22VM72LT3_L8_R2_ICCAAGTCT-AAGGATGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-133_T2b.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-133_T2b.FC22VM72LT3_L8_R1_ICCAAGTCT-AAGGATGA.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-133_T2b.FC22VM72LT3_L8_R2_ICCAAGTCT-AAGGATGA.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-133_T2b
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060891
+
+Error executing rule salmon_quant_paired on cluster (jobid: 67, external: Submitted batch job 12060891, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.67.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:04 2025]
+Error in rule salmon_quant_paired:
+    jobid: 45
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_205.T2b_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_205.T2b_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060892
+
+Error executing rule salmon_quant_paired on cluster (jobid: 45, external: Submitted batch job 12060892, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.45.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:04 2025]
+Error in rule salmon_quant_paired:
+    jobid: 30
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_338_T2b_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_338_T2b_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060893
+
+Error executing rule salmon_quant_paired on cluster (jobid: 30, external: Submitted batch job 12060893, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.30.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:04 2025]
+Error in rule salmon_quant_paired:
+    jobid: 15
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_48.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_48
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060894
+
+Error executing rule salmon_quant_paired on cluster (jobid: 15, external: Submitted batch job 12060894, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.15.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:04 2025]
+Error in rule salmon_quant_paired:
+    jobid: 60
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-004-2_T2a.FC22VM72LT3_L8_R1_IAAGTCCAA-TATGAGTA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-004-2_T2a.FC22VM72LT3_L8_R2_IAAGTCCAA-TATGAGTA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-004-2_T2a.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-004-2_T2a.FC22VM72LT3_L8_R1_IAAGTCCAA-TATGAGTA.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-004-2_T2a.FC22VM72LT3_L8_R2_IAAGTCCAA-TATGAGTA.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-004-2_T2a
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060895
+
+Error executing rule salmon_quant_paired on cluster (jobid: 60, external: Submitted batch job 12060895, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.60.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:04 2025]
+Error in rule salmon_quant_paired:
+    jobid: 38
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_165.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_165.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060896
+
+Error executing rule salmon_quant_paired on cluster (jobid: 38, external: Submitted batch job 12060896, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.38.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:04 2025]
+Error in rule salmon_quant_paired:
+    jobid: 23
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_109.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_109.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060897
+
+Error executing rule salmon_quant_paired on cluster (jobid: 23, external: Submitted batch job 12060897, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.23.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:05 2025]
+Error in rule salmon_quant_paired:
+    jobid: 8
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_16.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_16
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060898
+
+Error executing rule salmon_quant_paired on cluster (jobid: 8, external: Submitted batch job 12060898, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.8.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:05 2025]
+Error in rule salmon_quant_paired:
+    jobid: 53
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_316_T2b_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_316_T2b_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060899
+
+Error executing rule salmon_quant_paired on cluster (jobid: 53, external: Submitted batch job 12060899, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.53.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:05 2025]
+Error in rule salmon_quant_paired:
+    jobid: 68
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-138_T2a.FC22VM72LT3_L8_R1_ITTGGACTC-GGAAGCAG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-138_T2a.FC22VM72LT3_L8_R2_ITTGGACTC-GGAAGCAG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-138_T2a.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-138_T2a.FC22VM72LT3_L8_R1_ITTGGACTC-GGAAGCAG.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-138_T2a.FC22VM72LT3_L8_R2_ITTGGACTC-GGAAGCAG.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-138_T2a
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060900
+
+Error executing rule salmon_quant_paired on cluster (jobid: 68, external: Submitted batch job 12060900, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.68.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:05 2025]
+Error in rule salmon_quant_paired:
+    jobid: 46
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_073.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_073.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060901
+
+Error executing rule salmon_quant_paired on cluster (jobid: 46, external: Submitted batch job 12060901, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.46.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:05 2025]
+Error in rule salmon_quant_paired:
+    jobid: 31
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_157.T2a_2_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_157.T2a_2_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060902
+
+Error executing rule salmon_quant_paired on cluster (jobid: 31, external: Submitted batch job 12060902, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.31.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:05 2025]
+Error in rule salmon_quant_paired:
+    jobid: 16
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_52.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_52
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060903
+
+Error executing rule salmon_quant_paired on cluster (jobid: 16, external: Submitted batch job 12060903, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.16.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:05 2025]
+Error in rule salmon_quant_paired:
+    jobid: 2
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_6.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_6
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060904
+
+Error executing rule salmon_quant_paired on cluster (jobid: 2, external: Submitted batch job 12060904, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:05 2025]
+Error in rule salmon_quant_paired:
+    jobid: 61
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-010-2_T3.FC22VM72LT3_L8_R1_IGCTTGTCA-GAACATAC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-010-2_T3.FC22VM72LT3_L8_R2_IGCTTGTCA-GAACATAC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-010-2_T3.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-010-2_T3.FC22VM72LT3_L8_R1_IGCTTGTCA-GAACATAC.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-010-2_T3.FC22VM72LT3_L8_R2_IGCTTGTCA-GAACATAC.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-010-2_T3
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060905
+
+Error executing rule salmon_quant_paired on cluster (jobid: 61, external: Submitted batch job 12060905, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.61.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:05 2025]
+Error in rule salmon_quant_paired:
+    jobid: 39
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_167.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_167.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060906
+
+Error executing rule salmon_quant_paired on cluster (jobid: 39, external: Submitted batch job 12060906, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.39.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:06 2025]
+Error in rule salmon_quant_paired:
+    jobid: 9
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_18.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_18
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060908
+
+Error executing rule salmon_quant_paired on cluster (jobid: 9, external: Submitted batch job 12060908, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.9.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:06 2025]
+Error in rule salmon_quant_paired:
+    jobid: 54
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-062_T2a.FC22VM72LT3_L8_R1_IGACCTGAA-TTGGTGAG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-062_T2a.FC22VM72LT3_L8_R2_IGACCTGAA-TTGGTGAG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-062_T2a.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-062_T2a.FC22VM72LT3_L8_R1_IGACCTGAA-TTGGTGAG.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-062_T2a.FC22VM72LT3_L8_R2_IGACCTGAA-TTGGTGAG.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-062_T2a
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060909
+
+Error executing rule salmon_quant_paired on cluster (jobid: 54, external: Submitted batch job 12060909, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.54.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:06 2025]
+Error in rule salmon_quant_paired:
+    jobid: 69
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-182_T2b.FC22VM72LT3_L8_R1_ITAATACAG-ATATTCAC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-182_T2b.FC22VM72LT3_L8_R2_ITAATACAG-ATATTCAC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-182_T2b.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-182_T2b.FC22VM72LT3_L8_R1_ITAATACAG-ATATTCAC.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-182_T2b.FC22VM72LT3_L8_R2_ITAATACAG-ATATTCAC.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-182_T2b
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060910
+
+Error executing rule salmon_quant_paired on cluster (jobid: 69, external: Submitted batch job 12060910, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.69.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:06 2025]
+Error in rule salmon_quant_paired:
+    jobid: 47
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_072.T2b_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_072.T2b_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060911
+
+Error executing rule salmon_quant_paired on cluster (jobid: 47, external: Submitted batch job 12060911, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.47.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:06 2025]
+Error in rule salmon_quant_paired:
+    jobid: 32
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_326_T3_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_326_T3_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060912
+
+Error executing rule salmon_quant_paired on cluster (jobid: 32, external: Submitted batch job 12060912, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.32.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:06 2025]
+Error in rule salmon_quant_paired:
+    jobid: 17
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_302_T2a_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_302_T2a_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060913
+
+Error executing rule salmon_quant_paired on cluster (jobid: 17, external: Submitted batch job 12060913, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.17.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:06 2025]
+Error in rule salmon_quant_paired:
+    jobid: 1
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060914
+
+Error executing rule salmon_quant_paired on cluster (jobid: 1, external: Submitted batch job 12060914, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.1.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:06 2025]
+Error in rule salmon_quant_paired:
+    jobid: 62
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-017-1_T2b.FC22VM72LT3_L8_R1_ICAAGCTAG-ACATAGCG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-017-1_T2b.FC22VM72LT3_L8_R2_ICAAGCTAG-ACATAGCG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-017-1_T2b.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-017-1_T2b.FC22VM72LT3_L8_R1_ICAAGCTAG-ACATAGCG.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-017-1_T2b.FC22VM72LT3_L8_R2_ICAAGCTAG-ACATAGCG.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-017-1_T2b
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060915
+
+Error executing rule salmon_quant_paired on cluster (jobid: 62, external: Submitted batch job 12060915, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.62.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:06 2025]
+Error in rule salmon_quant_paired:
+    jobid: 40
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_169.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_169.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060916
+
+Error executing rule salmon_quant_paired on cluster (jobid: 40, external: Submitted batch job 12060916, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.40.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:06 2025]
+Error in rule salmon_quant_paired:
+    jobid: 25
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_151.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_151.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060917
+
+Error executing rule salmon_quant_paired on cluster (jobid: 25, external: Submitted batch job 12060917, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.25.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:07 2025]
+Error in rule salmon_quant_paired:
+    jobid: 10
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_23.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_23
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060918
+
+Error executing rule salmon_quant_paired on cluster (jobid: 10, external: Submitted batch job 12060918, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.10.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:07 2025]
+Error in rule salmon_quant_paired:
+    jobid: 55
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-164_T2a.FC22VM72LT3_L8_R1_ICAGTAGGC-TGACGAAT.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-164_T2a.FC22VM72LT3_L8_R2_ICAGTAGGC-TGACGAAT.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-164_T2a.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-164_T2a.FC22VM72LT3_L8_R1_ICAGTAGGC-TGACGAAT.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-164_T2a.FC22VM72LT3_L8_R2_ICAGTAGGC-TGACGAAT.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-164_T2a
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060919
+
+Error executing rule salmon_quant_paired on cluster (jobid: 55, external: Submitted batch job 12060919, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.55.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:07 2025]
+Error in rule salmon_quant_paired:
+    jobid: 70
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-183_T2b.FC22VM72LT3_L8_R1_ICGGCGTGA-GCGCCTGT.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-183_T2b.FC22VM72LT3_L8_R2_ICGGCGTGA-GCGCCTGT.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-183_T2b.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-183_T2b.FC22VM72LT3_L8_R1_ICGGCGTGA-GCGCCTGT.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-183_T2b.FC22VM72LT3_L8_R2_ICGGCGTGA-GCGCCTGT.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-183_T2b
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060920
+
+Error executing rule salmon_quant_paired on cluster (jobid: 70, external: Submitted batch job 12060920, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.70.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:07 2025]
+Error in rule salmon_quant_paired:
+    jobid: 48
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_373_T2b_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_373_T2b_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060921
+
+Error executing rule salmon_quant_paired on cluster (jobid: 48, external: Submitted batch job 12060921, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.48.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:07 2025]
+Error in rule salmon_quant_paired:
+    jobid: 33
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_159.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_159.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060922
+
+Error executing rule salmon_quant_paired on cluster (jobid: 33, external: Submitted batch job 12060922, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.33.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:07 2025]
+Error in rule salmon_quant_paired:
+    jobid: 18
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_097.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_097.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060923
+
+Error executing rule salmon_quant_paired on cluster (jobid: 18, external: Submitted batch job 12060923, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.18.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:07 2025]
+Error in rule salmon_quant_paired:
+    jobid: 3
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_7.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_7
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060924
+
+Error executing rule salmon_quant_paired on cluster (jobid: 3, external: Submitted batch job 12060924, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.3.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:07 2025]
+Error in rule salmon_quant_paired:
+    jobid: 63
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-050_T2a.FC22VM72LT3_L8_R1_ITGGATCGA-GTGCGATA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-050_T2a.FC22VM72LT3_L8_R2_ITGGATCGA-GTGCGATA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-050_T2a.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-050_T2a.FC22VM72LT3_L8_R1_ITGGATCGA-GTGCGATA.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-050_T2a.FC22VM72LT3_L8_R2_ITGGATCGA-GTGCGATA.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-050_T2a
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060925
+
+Error executing rule salmon_quant_paired on cluster (jobid: 63, external: Submitted batch job 12060925, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.63.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:07 2025]
+Error in rule salmon_quant_paired:
+    jobid: 41
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_171.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_171.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060926
+
+Error executing rule salmon_quant_paired on cluster (jobid: 41, external: Submitted batch job 12060926, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.41.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:07 2025]
+Error in rule salmon_quant_paired:
+    jobid: 26
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_304_T2b_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_304_T2b_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060927
+
+Error executing rule salmon_quant_paired on cluster (jobid: 26, external: Submitted batch job 12060927, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.26.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:08 2025]
+Error in rule salmon_quant_paired:
+    jobid: 11
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_27.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_27
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060928
+
+Error executing rule salmon_quant_paired on cluster (jobid: 11, external: Submitted batch job 12060928, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.11.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:08 2025]
+Error in rule salmon_quant_paired:
+    jobid: 56
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-169_T2b.FC22VM72LT3_L8_R1_ITGACGAAT-CAGTAGGC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-169_T2b.FC22VM72LT3_L8_R2_ITGACGAAT-CAGTAGGC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-169_T2b.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-169_T2b.FC22VM72LT3_L8_R1_ITGACGAAT-CAGTAGGC.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-169_T2b.FC22VM72LT3_L8_R2_ITGACGAAT-CAGTAGGC.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-169_T2b
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060929
+
+Error executing rule salmon_quant_paired on cluster (jobid: 56, external: Submitted batch job 12060929, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.56.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:08 2025]
+Error in rule salmon_quant_paired:
+    jobid: 49
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_085.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_085.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060930
+
+Error executing rule salmon_quant_paired on cluster (jobid: 49, external: Submitted batch job 12060930, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.49.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:08 2025]
+Error in rule salmon_quant_paired:
+    jobid: 34
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_331_T1.T_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_331_T1.T_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060931
+
+Error executing rule salmon_quant_paired on cluster (jobid: 34, external: Submitted batch job 12060931, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.34.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:08 2025]
+Error in rule salmon_quant_paired:
+    jobid: 19
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_310_T2a_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_310_T2a_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060932
+
+Error executing rule salmon_quant_paired on cluster (jobid: 19, external: Submitted batch job 12060932, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.19.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:08 2025]
+Error in rule salmon_quant_paired:
+    jobid: 4
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_8.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_8
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060933
+
+Error executing rule salmon_quant_paired on cluster (jobid: 4, external: Submitted batch job 12060933, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.4.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:08 2025]
+Error in rule salmon_quant_paired:
+    jobid: 64
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-055_T2a.FC22VM72LT3_L8_R1_IAGTTCAGG-CCAACAGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-055_T2a.FC22VM72LT3_L8_R2_IAGTTCAGG-CCAACAGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-055_T2a.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-055_T2a.FC22VM72LT3_L8_R1_IAGTTCAGG-CCAACAGA.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-055_T2a.FC22VM72LT3_L8_R2_IAGTTCAGG-CCAACAGA.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-055_T2a
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060934
+
+Error executing rule salmon_quant_paired on cluster (jobid: 64, external: Submitted batch job 12060934, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.64.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:08 2025]
+Error in rule salmon_quant_paired:
+    jobid: 42
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_200.T2b_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_200.T2b_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060935
+
+Error executing rule salmon_quant_paired on cluster (jobid: 42, external: Submitted batch job 12060935, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.42.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:08 2025]
+Error in rule salmon_quant_paired:
+    jobid: 27
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_153.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_153.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060936
+
+Error executing rule salmon_quant_paired on cluster (jobid: 27, external: Submitted batch job 12060936, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.27.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:08 2025]
+Error in rule salmon_quant_paired:
+    jobid: 12
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_29.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_29
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060937
+
+Error executing rule salmon_quant_paired on cluster (jobid: 12, external: Submitted batch job 12060937, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.12.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:09 2025]
+Error in rule salmon_quant_paired:
+    jobid: 57
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-015_T2a.FC22VM72LT3_L8_R1_ICCGCGGTT-AGCGCTAG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-015_T2a.FC22VM72LT3_L8_R2_ICCGCGGTT-AGCGCTAG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-015_T2a.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-015_T2a.FC22VM72LT3_L8_R1_ICCGCGGTT-AGCGCTAG.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-015_T2a.FC22VM72LT3_L8_R2_ICCGCGGTT-AGCGCTAG.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-015_T2a
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060938
+
+Error executing rule salmon_quant_paired on cluster (jobid: 57, external: Submitted batch job 12060938, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.57.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:09 2025]
+Error in rule salmon_quant_paired:
+    jobid: 50
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_359_T2a_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_359_T2a_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060939
+
+Error executing rule salmon_quant_paired on cluster (jobid: 50, external: Submitted batch job 12060939, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.50.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:09 2025]
+Error in rule salmon_quant_paired:
+    jobid: 35
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_335_T2a_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_335_T2a_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060940
+
+Error executing rule salmon_quant_paired on cluster (jobid: 35, external: Submitted batch job 12060940, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.35.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:09 2025]
+Error in rule salmon_quant_paired:
+    jobid: 20
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_101.T2a_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_101.T2a_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060941
+
+Error executing rule salmon_quant_paired on cluster (jobid: 20, external: Submitted batch job 12060941, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.20.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:09 2025]
+Error in rule salmon_quant_paired:
+    jobid: 5
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_10T.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_10T
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060942
+
+Error executing rule salmon_quant_paired on cluster (jobid: 5, external: Submitted batch job 12060942, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.5.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:09 2025]
+Error in rule salmon_quant_paired:
+    jobid: 65
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-083_T2a.FC22VM72LT3_L8_R1_ITCTCTACT-CGCGGTTC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-083_T2a.FC22VM72LT3_L8_R2_ITCTCTACT-CGCGGTTC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-083_T2a.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-083_T2a.FC22VM72LT3_L8_R1_ITCTCTACT-CGCGGTTC.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-083_T2a.FC22VM72LT3_L8_R2_ITCTCTACT-CGCGGTTC.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-083_T2a
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060943
+
+Error executing rule salmon_quant_paired on cluster (jobid: 65, external: Submitted batch job 12060943, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.65.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:09 2025]
+Error in rule salmon_quant_paired:
+    jobid: 43
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_201.T2b_B2.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_201.T2b_B2
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060944
+
+Error executing rule salmon_quant_paired on cluster (jobid: 43, external: Submitted batch job 12060944, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.43.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:09 2025]
+Error in rule salmon_quant_paired:
+    jobid: 28
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_308_T2b_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_308_T2b_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060945
+
+Error executing rule salmon_quant_paired on cluster (jobid: 28, external: Submitted batch job 12060945, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.28.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:09 2025]
+Error in rule salmon_quant_paired:
+    jobid: 13
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_39T.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_39T
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060946
+
+Error executing rule salmon_quant_paired on cluster (jobid: 13, external: Submitted batch job 12060946, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.13.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:09 2025]
+Error in rule salmon_quant_paired:
+    jobid: 58
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-001-2_T2b.FC22VM72LT3_L8_R1_ITTATAACC-GATATCGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-001-2_T2b.FC22VM72LT3_L8_R2_ITTATAACC-GATATCGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-001-2_T2b.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-001-2_T2b.FC22VM72LT3_L8_R1_ITTATAACC-GATATCGA.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-001-2_T2b.FC22VM72LT3_L8_R2_ITTATAACC-GATATCGA.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-001-2_T2b
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060947
+
+Error executing rule salmon_quant_paired on cluster (jobid: 58, external: Submitted batch job 12060947, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.58.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Wed Jan 29 21:33:19 2025]
+Error in rule salmon_quant_paired:
+    jobid: 24
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_306_T2a_B4.Aligned.out.sam
+    shell:
+        
+		STAR --runThreadN 8 --genomeDir /xdisk/khasting/knodele/references/1000genomes_GRCh38_reference_genome/GRCh38_star --readFilesIn /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.1.fastq /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.2.fastq --outFileNamePrefix /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_306_T2a_B4
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 12060907
+
+Error executing rule salmon_quant_paired on cluster (jobid: 24, external: Submitted batch job 12060907, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/09_RNA_sample_purity/.snakemake/tmp.zobo57go/snakejob.salmon_quant_paired.24.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-01-29T213234.340859.snakemake.log

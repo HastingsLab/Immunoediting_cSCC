@@ -814,9 +814,9 @@
         "PL": "Illumina"
     },
     "s_064-T2b_B2_DNA": {
-        "fq_1": "0_Lane4_164-T2a_B2_DNA_ITTCCATCA_R1.fastq.gz",
-        "fq_2": "0_Lane4_164-T2a_B2_DNA_ITTCCATCA_R3.fastq.gz",
-	"seq_name": "0_Lane4_164-T2a_B2_DNA_ITTCCATCA",
+        "fq_1": "1_Lane2_064-T2b_B2_DNA_IGTGCGACA_R1.fastq.gz",
+        "fq_2": "1_Lane2_064-T2b_B2_DNA_IGTGCGACA_R3.fastq.gz",
+	"seq_name": "1_Lane2_064-T2b_B2_DNA_IGTGCGACA",
         "ID": "s_064-T2b_B2_DNA",
         "SM": "s_064-T2b_B2_DNA",
         "LB": "s_064-T2b_B2_DNA",

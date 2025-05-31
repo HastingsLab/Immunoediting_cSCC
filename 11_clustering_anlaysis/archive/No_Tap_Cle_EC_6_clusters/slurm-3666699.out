@@ -1,0 +1,275 @@
+[1] "Data compiled successfully!"
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+  expression min_binding max_stability netMHC_II_binding          DAI
+2 -1.2010116   1.7153747   -0.36889738       -0.35046583 -0.848488056
+3  0.6999155   1.0548218   -0.21572663       -1.50942457 -0.603030601
+4 -1.7120947   2.0202785   -1.37058039       -0.16865987 -0.493507902
+5 -1.0355899   0.7892816    0.05265672        0.04571516  1.027182350
+6  0.5656639  -0.5968712    0.31872653       -1.13673952  0.896820413
+7  1.1231052   1.7457474   -0.65188593       -0.87129550  0.006189227
+[1] 89796
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+[1] 59
+[1] TRUE
+
+          high_Clonal       high_Sub-clonal            low_Clonal 
+                  139                   201                   144 
+       low_Sub-clonal     Suppressed_Clonal Suppressed_Sub-clonal 
+                  216                   207                   273 
+[1] "C1 cluster stats"
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 57, p-value = 0.3778
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 56, p-value = 0.2121
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 83, p-value = 0.05643
+alternative hypothesis: true location shift is not equal to 0
+
+pdf 
+  2 
+[1] "C2 cluster stats"
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 131, p-value = 0.007904
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 146, p-value = 0.006577
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 233, p-value = 0.01641
+alternative hypothesis: true location shift is not equal to 0
+
+pdf 
+  2 
+[1] "C3 cluster stats"
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 62, p-value = 0.5171
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 104, p-value = 0.4423
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 242, p-value = 0.007189
+alternative hypothesis: true location shift is not equal to 0
+
+pdf 
+  2 
+[1] "C4 cluster stats"
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 82, p-value = 0.8176
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 123, p-value = 0.1084
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 130, p-value = 0.5838
+alternative hypothesis: true location shift is not equal to 0
+
+pdf 
+  2 
+[1] "C5 cluster stats"
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 61, p-value = 0.4874
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 38, p-value = 0.03849
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 98, p-value = 0.1434
+alternative hypothesis: true location shift is not equal to 0
+
+pdf 
+  2 
+[1] "C6 cluster stats"
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 37, p-value = 0.06383
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 76, p-value = 0.7019
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 81, p-value = 0.04906
+alternative hypothesis: true location shift is not equal to 0
+
+pdf 
+  2 
+[1] "C7 cluster stats"
+
+	Wilcoxon signed rank test with continuity correction
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 0, p-value = NA
+alternative hypothesis: true location shift is not equal to 0
+
+Warning message:
+In wilcox.test.default(as.numeric(C_ich_c$value), as.numeric(C_ich_sc$value),  :
+  cannot compute exact p-value with zeroes
+
+	Wilcoxon signed rank test with continuity correction
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 0, p-value = NA
+alternative hypothesis: true location shift is not equal to 0
+
+Warning message:
+In wilcox.test.default(as.numeric(C_icl_c$value), as.numeric(C_icl_sc$value),  :
+  cannot compute exact p-value with zeroes
+
+	Wilcoxon signed rank test with continuity correction
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 0, p-value = NA
+alternative hypothesis: true location shift is not equal to 0
+
+Warning message:
+In wilcox.test.default(as.numeric(C_is_c$value), as.numeric(C_is_sc$value),  :
+  cannot compute exact p-value with zeroes
+pdf 
+  2 
+[1] "C8 cluster stats"
+
+	Wilcoxon signed rank test with continuity correction
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 0, p-value = NA
+alternative hypothesis: true location shift is not equal to 0
+
+Warning message:
+In wilcox.test.default(as.numeric(C_ich_c$value), as.numeric(C_ich_sc$value),  :
+  cannot compute exact p-value with zeroes
+
+	Wilcoxon signed rank test with continuity correction
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 0, p-value = NA
+alternative hypothesis: true location shift is not equal to 0
+
+Warning message:
+In wilcox.test.default(as.numeric(C_icl_c$value), as.numeric(C_icl_sc$value),  :
+  cannot compute exact p-value with zeroes
+
+	Wilcoxon signed rank test with continuity correction
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 0, p-value = NA
+alternative hypothesis: true location shift is not equal to 0
+
+Warning message:
+In wilcox.test.default(as.numeric(C_is_c$value), as.numeric(C_is_sc$value),  :
+  cannot compute exact p-value with zeroes
+pdf 
+  2 
+[1] TRUE
+  Patient                C1                 C2                C3
+1    P001 0.168523676880223 0.0933147632311978 0.278551532033426
+2    P002 0.146341463414634  0.304878048780488 0.182926829268293
+3    P004 0.296296296296296  0.207407407407407               0.2
+4    P010 0.060377358490566  0.192452830188679 0.105660377358491
+5    P015               0.2                0.6               0.2
+6    P017 0.259414225941423  0.259414225941423 0.104602510460251
+                  C4                 C5                C6 C7 C8 C9 C10
+1  0.155988857938719  0.176880222841226 0.126740947075209  0  0  0   0
+2 0.0731707317073171 0.0975609756097561 0.195121951219512  0  0  0   0
+3 0.0444444444444444 0.0518518518518519               0.2  0  0  0   0
+4  0.166037735849057  0.188679245283019 0.286792452830189  0  0  0   0
+5                  0                  0                 0  0  0  0   0
+6 0.0753138075313808 0.0878661087866109 0.213389121338912  0  0  0   0
+                C1.1               C2.1               C3.1               C4.1
+1    0.1767248279174 0.0848407235473027  0.256763246358252  0.151912918200736
+2  0.164021164021164  0.185185185185185  0.193121693121693  0.107142857142857
+3  0.293653576437588  0.139901823281907  0.176542776998597 0.0710028050490884
+4 0.0683890577507599  0.170212765957447 0.0896656534954407  0.144376899696049
+5  0.276595744680851  0.170212765957447  0.131205673758865  0.108156028368794
+6  0.254201680672269  0.242647058823529  0.109243697478992 0.0934873949579832
+                C5.1              C6.1 C7.1 C8.1 C9.1 C10.1 immune_infiltration
+1  0.183448055066432 0.146310228909877    0    0    0     0        7.972363e-02
+2  0.128306878306878 0.222222222222222    0    0    0     0        6.741503e-02
+3 0.0517180925666199 0.267180925666199    0    0    0     0        1.121552e-18
+4  0.261398176291793 0.265957446808511    0    0    0     0        8.645122e-02
+5  0.136524822695035 0.177304964539007    0    0    0     0        5.502732e-02
+6 0.0756302521008403 0.224789915966387    0    0    0     0        2.384910e-02
+Error in eval(mf, parent.frame()) : object 'C1' not found
+Calls: lm -> eval -> eval -> <Anonymous>
+Execution halted

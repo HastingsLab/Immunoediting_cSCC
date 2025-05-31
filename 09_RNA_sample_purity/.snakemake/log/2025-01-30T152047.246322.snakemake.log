@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job stats:
+job                      count
+---------------------  -------
+all                          1
+subread_featurecounts        1
+total                        2
+
+Select jobs to execute...
+
+[Thu Jan 30 15:20:52 2025]
+rule subread_featurecounts:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_16Aligned.out.sam
+    output: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/all_samples.counts.txt
+    jobid: 71
+    reason: Missing output files: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/all_samples.counts.txt; Code has changed since last execution
+    resources: mem_mb=73084, mem_mib=69699, disk_mb=73084, disk_mib=69699, tmpdir=<TBD>
+
+Submitted job 71 with external jobid 'Submitted batch job 12068323'.
+[Thu Jan 30 15:26:32 2025]
+Finished job 71.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Thu Jan 30 15:26:32 2025]
+localrule all:
+    input: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_6Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_7Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_8Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_10TAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_12Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_14Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_16Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_18Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_23Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_27Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_29Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_39TAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_42TAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_48Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_52Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_302_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_097.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_310_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_101.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_322_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_320_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_109.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_306_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_151.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_304_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_153.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_308_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_155.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_338_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_157.T2a_2_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_326_T3_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_159.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_331_T1.T_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_335_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_363_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_163.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_165.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_167.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_169.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_171.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_200.T2b_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_201.T2b_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_203.T2b_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_205.T2b_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_073.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_072.T2b_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_373_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_085.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_359_T2a_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_349_T3_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_093.T2a_B2Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/s_CSCC_316_T2b_B4Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-062_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-164_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-169_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-015_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-001-2_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-002-1_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-004-2_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-010-2_T3Aligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-017-1_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-050_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-055_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-083_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-113_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-133_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-138_T2aAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-182_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/CSCC_NPT-183_T2bAligned.out.sam, /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/all_samples.counts.txt
+    jobid: 0
+    reason: Input files updated by another job: /xdisk/khasting/knodele/Mayo_data/star_mapped_reads/readcounts/all_samples.counts.txt
+    resources: mem_mb=5745911, mem_mib=5479728, disk_mb=5745911, disk_mib=5479728, tmpdir=/tmp
+
+[Thu Jan 30 15:26:32 2025]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2025-01-30T152047.246322.snakemake.log

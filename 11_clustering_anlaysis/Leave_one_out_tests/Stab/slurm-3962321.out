@@ -1,0 +1,27 @@
+[1] "Data compiled successfully!"
+                  ID       CCF   gene expression min_binding    MT_9mer
+48216  chr7:38256362 0.5402635 TRGJP2    0.00000     46.6305 SSDWIKTFAK
+65383 chr9:128457217 0.8114358   ODF2   48.84514     39.2393 QPCRSWTVAV
+      max_stability      Cle   TAP netMHC_II_binding EC DAI Patient
+48216        1.0419 0.958973 0.264               Inf  0   1      P6
+65383        1.9968 0.619653 0.186               Inf  0   1     P20
+      Immunosuppression
+48216                No
+65383                No
+[1] 89807
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+  expression min_binding        Cle         TAP         EC          DAI
+2        NaN   1.7153987 -2.5302356 -0.82633842  1.4702249 -0.846618756
+3        NaN   1.0548406 -0.5894937 -1.71814606  1.0935491 -0.599502467
+4        NaN   2.0203049  0.7383295 -0.07459600 -1.0371644 -0.489614537
+5        NaN   0.7892984  0.8741721  0.29506979  1.2438796  1.025956984
+6        NaN  -0.5968652  0.8631400 -0.07725547  1.2438796  0.896372738
+7        NaN   1.7457717 -2.0217958 -2.69594310  0.7244064  0.009864737
+Error in do_one(nmeth) : NA/NaN/Inf in foreign function call (arg 1)
+Calls: kmeans -> do_one
+Execution halted

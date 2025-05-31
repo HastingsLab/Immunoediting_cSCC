@@ -1,0 +1,1554 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+all                        1              1              1
+salmon_quant_paired       70              1              1
+total                     71              1              1
+
+Select jobs to execute...
+
+[Fri Dec 20 14:18:35 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_151.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 25
+    wildcards: sample=s_151.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 25 with external jobid 'Submitted batch job 3210158'.
+
+[Fri Dec 20 14:18:35 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_316_T2b_B4_salmon_gencode_quant/quant.sf
+    jobid: 53
+    wildcards: sample=s_CSCC_316_T2b_B4
+    resources: tmpdir=/tmp
+
+Submitted job 53 with external jobid 'Submitted batch job 3210159'.
+
+[Fri Dec 20 14:18:35 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-133_T2b.FC22VM72LT3_L8_R1_ICCAAGTCT-AAGGATGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-133_T2b.FC22VM72LT3_L8_R2_ICCAAGTCT-AAGGATGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-133_T2b_salmon_gencode_quant/quant.sf
+    jobid: 67
+    wildcards: sample=CSCC_NPT-133_T2b
+    resources: tmpdir=/tmp
+
+Submitted job 67 with external jobid 'Submitted batch job 3210160'.
+
+[Fri Dec 20 14:18:35 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_167.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 39
+    wildcards: sample=s_167.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 39 with external jobid 'Submitted batch job 3210161'.
+
+[Fri Dec 20 14:18:35 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_27_salmon_gencode_quant/quant.sf
+    jobid: 11
+    wildcards: sample=s_CSCC_27
+    resources: tmpdir=/tmp
+
+Submitted job 11 with external jobid 'Submitted batch job 3210162'.
+
+[Fri Dec 20 14:18:35 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_10T_salmon_gencode_quant/quant.sf
+    jobid: 5
+    wildcards: sample=s_CSCC_10T
+    resources: tmpdir=/tmp
+
+Submitted job 5 with external jobid 'Submitted batch job 3210163'.
+
+[Fri Dec 20 14:18:36 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_310_T2a_B4_salmon_gencode_quant/quant.sf
+    jobid: 19
+    wildcards: sample=s_CSCC_310_T2a_B4
+    resources: tmpdir=/tmp
+
+Submitted job 19 with external jobid 'Submitted batch job 3210164'.
+
+[Fri Dec 20 14:18:36 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_159.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 33
+    wildcards: sample=s_159.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 33 with external jobid 'Submitted batch job 3210165'.
+
+[Fri Dec 20 14:18:36 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_072.T2b_B2_salmon_gencode_quant/quant.sf
+    jobid: 47
+    wildcards: sample=s_072.T2b_B2
+    resources: tmpdir=/tmp
+
+Submitted job 47 with external jobid 'Submitted batch job 3210166'.
+
+[Fri Dec 20 14:18:36 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-010-2_T3.FC22VM72LT3_L8_R1_IGCTTGTCA-GAACATAC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-010-2_T3.FC22VM72LT3_L8_R2_IGCTTGTCA-GAACATAC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-010-2_T3_salmon_gencode_quant/quant.sf
+    jobid: 61
+    wildcards: sample=CSCC_NPT-010-2_T3
+    resources: tmpdir=/tmp
+
+Submitted job 61 with external jobid 'Submitted batch job 3210167'.
+
+[Fri Dec 20 14:18:36 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_29_salmon_gencode_quant/quant.sf
+    jobid: 12
+    wildcards: sample=s_CSCC_29
+    resources: tmpdir=/tmp
+
+Submitted job 12 with external jobid 'Submitted batch job 3210168'.
+
+[Fri Dec 20 14:18:36 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_304_T2b_B4_salmon_gencode_quant/quant.sf
+    jobid: 26
+    wildcards: sample=s_CSCC_304_T2b_B4
+    resources: tmpdir=/tmp
+
+Submitted job 26 with external jobid 'Submitted batch job 3210169'.
+
+[Fri Dec 20 14:18:37 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_169.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 40
+    wildcards: sample=s_169.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 40 with external jobid 'Submitted batch job 3210170'.
+
+[Fri Dec 20 14:18:37 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-062_T2a.FC22VM72LT3_L8_R1_IGACCTGAA-TTGGTGAG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-062_T2a.FC22VM72LT3_L8_R2_IGACCTGAA-TTGGTGAG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-062_T2a_salmon_gencode_quant/quant.sf
+    jobid: 54
+    wildcards: sample=CSCC_NPT-062_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 54 with external jobid 'Submitted batch job 3210171'.
+
+[Fri Dec 20 14:18:37 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-138_T2a.FC22VM72LT3_L8_R1_ITTGGACTC-GGAAGCAG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-138_T2a.FC22VM72LT3_L8_R2_ITTGGACTC-GGAAGCAG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-138_T2a_salmon_gencode_quant/quant.sf
+    jobid: 68
+    wildcards: sample=CSCC_NPT-138_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 68 with external jobid 'Submitted batch job 3210172'.
+
+[Fri Dec 20 14:18:37 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_373_T2b_B4_salmon_gencode_quant/quant.sf
+    jobid: 48
+    wildcards: sample=s_CSCC_373_T2b_B4
+    resources: tmpdir=/tmp
+
+Submitted job 48 with external jobid 'Submitted batch job 3210173'.
+
+[Fri Dec 20 14:18:37 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_12_salmon_gencode_quant/quant.sf
+    jobid: 6
+    wildcards: sample=s_CSCC_12
+    resources: tmpdir=/tmp
+
+Submitted job 6 with external jobid 'Submitted batch job 3210174'.
+
+[Fri Dec 20 14:18:38 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_331_T1.T_B4_salmon_gencode_quant/quant.sf
+    jobid: 34
+    wildcards: sample=s_CSCC_331_T1.T_B4
+    resources: tmpdir=/tmp
+
+Submitted job 34 with external jobid 'Submitted batch job 3210175'.
+
+[Fri Dec 20 14:18:38 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_101.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 20
+    wildcards: sample=s_101.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 20 with external jobid 'Submitted batch job 3210176'.
+
+[Fri Dec 20 14:18:38 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-017-1_T2b.FC22VM72LT3_L8_R1_ICAAGCTAG-ACATAGCG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-017-1_T2b.FC22VM72LT3_L8_R2_ICAAGCTAG-ACATAGCG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-017-1_T2b_salmon_gencode_quant/quant.sf
+    jobid: 62
+    wildcards: sample=CSCC_NPT-017-1_T2b
+    resources: tmpdir=/tmp
+
+Submitted job 62 with external jobid 'Submitted batch job 3210177'.
+
+[Fri Dec 20 14:18:38 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_4_salmon_gencode_quant/quant.sf
+    jobid: 1
+    wildcards: sample=s_CSCC_4
+    resources: tmpdir=/tmp
+
+Submitted job 1 with external jobid 'Submitted batch job 3210178'.
+
+[Fri Dec 20 14:18:38 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_39T_salmon_gencode_quant/quant.sf
+    jobid: 13
+    wildcards: sample=s_CSCC_39T
+    resources: tmpdir=/tmp
+
+Submitted job 13 with external jobid 'Submitted batch job 3210179'.
+
+[Fri Dec 20 14:18:38 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_153.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 27
+    wildcards: sample=s_153.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 27 with external jobid 'Submitted batch job 3210180'.
+
+[Fri Dec 20 14:18:38 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_171.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 41
+    wildcards: sample=s_171.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 41 with external jobid 'Submitted batch job 3210181'.
+
+[Fri Dec 20 14:18:38 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-164_T2a.FC22VM72LT3_L8_R1_ICAGTAGGC-TGACGAAT.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-164_T2a.FC22VM72LT3_L8_R2_ICAGTAGGC-TGACGAAT.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-164_T2a_salmon_gencode_quant/quant.sf
+    jobid: 55
+    wildcards: sample=CSCC_NPT-164_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 55 with external jobid 'Submitted batch job 3210182'.
+
+[Fri Dec 20 14:18:39 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-182_T2b.FC22VM72LT3_L8_R1_ITAATACAG-ATATTCAC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-182_T2b.FC22VM72LT3_L8_R2_ITAATACAG-ATATTCAC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-182_T2b_salmon_gencode_quant/quant.sf
+    jobid: 69
+    wildcards: sample=CSCC_NPT-182_T2b
+    resources: tmpdir=/tmp
+
+Submitted job 69 with external jobid 'Submitted batch job 3210183'.
+
+[Fri Dec 20 14:18:39 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_8_salmon_gencode_quant/quant.sf
+    jobid: 4
+    wildcards: sample=s_CSCC_8
+    resources: tmpdir=/tmp
+
+Submitted job 4 with external jobid 'Submitted batch job 3210184'.
+
+[Fri Dec 20 14:18:39 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_14_salmon_gencode_quant/quant.sf
+    jobid: 7
+    wildcards: sample=s_CSCC_14
+    resources: tmpdir=/tmp
+
+Submitted job 7 with external jobid 'Submitted batch job 3210185'.
+
+[Fri Dec 20 14:18:39 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_322_T2b_B4_salmon_gencode_quant/quant.sf
+    jobid: 21
+    wildcards: sample=s_CSCC_322_T2b_B4
+    resources: tmpdir=/tmp
+
+Submitted job 21 with external jobid 'Submitted batch job 3210186'.
+
+[Fri Dec 20 14:18:39 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_335_T2a_B4_salmon_gencode_quant/quant.sf
+    jobid: 35
+    wildcards: sample=s_CSCC_335_T2a_B4
+    resources: tmpdir=/tmp
+
+Submitted job 35 with external jobid 'Submitted batch job 3210187'.
+
+[Fri Dec 20 14:18:39 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_085.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 49
+    wildcards: sample=s_085.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 49 with external jobid 'Submitted batch job 3210188'.
+
+[Fri Dec 20 14:18:39 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-050_T2a.FC22VM72LT3_L8_R1_ITGGATCGA-GTGCGATA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-050_T2a.FC22VM72LT3_L8_R2_ITGGATCGA-GTGCGATA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-050_T2a_salmon_gencode_quant/quant.sf
+    jobid: 63
+    wildcards: sample=CSCC_NPT-050_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 63 with external jobid 'Submitted batch job 3210189'.
+
+[Fri Dec 20 14:18:39 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_42T_salmon_gencode_quant/quant.sf
+    jobid: 14
+    wildcards: sample=s_CSCC_42T
+    resources: tmpdir=/tmp
+
+Submitted job 14 with external jobid 'Submitted batch job 3210190'.
+
+[Fri Dec 20 14:18:40 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_308_T2b_B4_salmon_gencode_quant/quant.sf
+    jobid: 28
+    wildcards: sample=s_CSCC_308_T2b_B4
+    resources: tmpdir=/tmp
+
+Submitted job 28 with external jobid 'Submitted batch job 3210191'.
+
+[Fri Dec 20 14:18:40 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_326_T3_B4_salmon_gencode_quant/quant.sf
+    jobid: 32
+    wildcards: sample=s_CSCC_326_T3_B4
+    resources: tmpdir=/tmp
+
+Submitted job 32 with external jobid 'Submitted batch job 3210192'.
+
+[Fri Dec 20 14:18:40 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_200.T2b_B2_salmon_gencode_quant/quant.sf
+    jobid: 42
+    wildcards: sample=s_200.T2b_B2
+    resources: tmpdir=/tmp
+
+Submitted job 42 with external jobid 'Submitted batch job 3210193'.
+
+[Fri Dec 20 14:18:40 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-169_T2b.FC22VM72LT3_L8_R1_ITGACGAAT-CAGTAGGC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-169_T2b.FC22VM72LT3_L8_R2_ITGACGAAT-CAGTAGGC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-169_T2b_salmon_gencode_quant/quant.sf
+    jobid: 56
+    wildcards: sample=CSCC_NPT-169_T2b
+    resources: tmpdir=/tmp
+
+Submitted job 56 with external jobid 'Submitted batch job 3210194'.
+
+[Fri Dec 20 14:18:40 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-183_T2b.FC22VM72LT3_L8_R1_ICGGCGTGA-GCGCCTGT.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-183_T2b.FC22VM72LT3_L8_R2_ICGGCGTGA-GCGCCTGT.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-183_T2b_salmon_gencode_quant/quant.sf
+    jobid: 70
+    wildcards: sample=CSCC_NPT-183_T2b
+    resources: tmpdir=/tmp
+
+Submitted job 70 with external jobid 'Submitted batch job 3210195'.
+
+[Fri Dec 20 14:18:40 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_16_salmon_gencode_quant/quant.sf
+    jobid: 8
+    wildcards: sample=s_CSCC_16
+    resources: tmpdir=/tmp
+
+Submitted job 8 with external jobid 'Submitted batch job 3210196'.
+
+[Fri Dec 20 14:18:40 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_320_T2a_B4_salmon_gencode_quant/quant.sf
+    jobid: 22
+    wildcards: sample=s_CSCC_320_T2a_B4
+    resources: tmpdir=/tmp
+
+Submitted job 22 with external jobid 'Submitted batch job 3210197'.
+
+[Fri Dec 20 14:18:41 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_363_T2a_B4_salmon_gencode_quant/quant.sf
+    jobid: 36
+    wildcards: sample=s_CSCC_363_T2a_B4
+    resources: tmpdir=/tmp
+
+Submitted job 36 with external jobid 'Submitted batch job 3210198'.
+
+[Fri Dec 20 14:18:41 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_359_T2a_B4_salmon_gencode_quant/quant.sf
+    jobid: 50
+    wildcards: sample=s_CSCC_359_T2a_B4
+    resources: tmpdir=/tmp
+
+Submitted job 50 with external jobid 'Submitted batch job 3210199'.
+
+[Fri Dec 20 14:18:41 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-055_T2a.FC22VM72LT3_L8_R1_IAGTTCAGG-CCAACAGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-055_T2a.FC22VM72LT3_L8_R2_IAGTTCAGG-CCAACAGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-055_T2a_salmon_gencode_quant/quant.sf
+    jobid: 64
+    wildcards: sample=CSCC_NPT-055_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 64 with external jobid 'Submitted batch job 3210200'.
+
+[Fri Dec 20 14:18:41 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_48_salmon_gencode_quant/quant.sf
+    jobid: 15
+    wildcards: sample=s_CSCC_48
+    resources: tmpdir=/tmp
+
+Submitted job 15 with external jobid 'Submitted batch job 3210201'.
+
+[Fri Dec 20 14:18:41 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_155.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 29
+    wildcards: sample=s_155.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 29 with external jobid 'Submitted batch job 3210202'.
+
+[Fri Dec 20 14:18:41 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_201.T2b_B2_salmon_gencode_quant/quant.sf
+    jobid: 43
+    wildcards: sample=s_201.T2b_B2
+    resources: tmpdir=/tmp
+
+Submitted job 43 with external jobid 'Submitted batch job 3210203'.
+
+[Fri Dec 20 14:18:41 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-015_T2a.FC22VM72LT3_L8_R1_ICCGCGGTT-AGCGCTAG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-015_T2a.FC22VM72LT3_L8_R2_ICCGCGGTT-AGCGCTAG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-015_T2a_salmon_gencode_quant/quant.sf
+    jobid: 57
+    wildcards: sample=CSCC_NPT-015_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 57 with external jobid 'Submitted batch job 3210204'.
+
+[Fri Dec 20 14:18:41 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_18_salmon_gencode_quant/quant.sf
+    jobid: 9
+    wildcards: sample=s_CSCC_18
+    resources: tmpdir=/tmp
+
+Submitted job 9 with external jobid 'Submitted batch job 3210205'.
+
+[Fri Dec 20 14:18:41 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_109.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 23
+    wildcards: sample=s_109.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 23 with external jobid 'Submitted batch job 3210206'.
+
+[Fri Dec 20 14:18:41 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_163.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 37
+    wildcards: sample=s_163.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 37 with external jobid 'Submitted batch job 3210207'.
+
+[Fri Dec 20 14:18:42 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_349_T3_B4_salmon_gencode_quant/quant.sf
+    jobid: 51
+    wildcards: sample=s_CSCC_349_T3_B4
+    resources: tmpdir=/tmp
+
+Submitted job 51 with external jobid 'Submitted batch job 3210208'.
+
+[Fri Dec 20 14:18:42 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-083_T2a.FC22VM72LT3_L8_R1_ITCTCTACT-CGCGGTTC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-083_T2a.FC22VM72LT3_L8_R2_ITCTCTACT-CGCGGTTC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-083_T2a_salmon_gencode_quant/quant.sf
+    jobid: 65
+    wildcards: sample=CSCC_NPT-083_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 65 with external jobid 'Submitted batch job 3210209'.
+
+[Fri Dec 20 14:18:42 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_52_salmon_gencode_quant/quant.sf
+    jobid: 16
+    wildcards: sample=s_CSCC_52
+    resources: tmpdir=/tmp
+
+Submitted job 16 with external jobid 'Submitted batch job 3210210'.
+
+[Fri Dec 20 14:18:42 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_6_salmon_gencode_quant/quant.sf
+    jobid: 2
+    wildcards: sample=s_CSCC_6
+    resources: tmpdir=/tmp
+
+Submitted job 2 with external jobid 'Submitted batch job 3210211'.
+
+[Fri Dec 20 14:18:42 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_338_T2b_B4_salmon_gencode_quant/quant.sf
+    jobid: 30
+    wildcards: sample=s_CSCC_338_T2b_B4
+    resources: tmpdir=/tmp
+
+Submitted job 30 with external jobid 'Submitted batch job 3210212'.
+
+[Fri Dec 20 14:18:42 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_203.T2b_B2_salmon_gencode_quant/quant.sf
+    jobid: 44
+    wildcards: sample=s_203.T2b_B2
+    resources: tmpdir=/tmp
+
+Submitted job 44 with external jobid 'Submitted batch job 3210213'.
+
+[Fri Dec 20 14:18:42 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-001-2_T2b.FC22VM72LT3_L8_R1_ITTATAACC-GATATCGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-001-2_T2b.FC22VM72LT3_L8_R2_ITTATAACC-GATATCGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-001-2_T2b_salmon_gencode_quant/quant.sf
+    jobid: 58
+    wildcards: sample=CSCC_NPT-001-2_T2b
+    resources: tmpdir=/tmp
+
+Submitted job 58 with external jobid 'Submitted batch job 3210214'.
+
+[Fri Dec 20 14:18:42 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_073.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 46
+    wildcards: sample=s_073.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 46 with external jobid 'Submitted batch job 3210215'.
+
+[Fri Dec 20 14:18:42 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_23_salmon_gencode_quant/quant.sf
+    jobid: 10
+    wildcards: sample=s_CSCC_23
+    resources: tmpdir=/tmp
+
+Submitted job 10 with external jobid 'Submitted batch job 3210216'.
+
+[Fri Dec 20 14:18:43 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_306_T2a_B4_salmon_gencode_quant/quant.sf
+    jobid: 24
+    wildcards: sample=s_CSCC_306_T2a_B4
+    resources: tmpdir=/tmp
+
+Submitted job 24 with external jobid 'Submitted batch job 3210217'.
+
+[Fri Dec 20 14:18:43 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_165.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 38
+    wildcards: sample=s_165.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 38 with external jobid 'Submitted batch job 3210218'.
+
+[Fri Dec 20 14:18:43 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_093.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 52
+    wildcards: sample=s_093.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 52 with external jobid 'Submitted batch job 3210219'.
+
+[Fri Dec 20 14:18:43 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-113_T2b.FC22VM72LT3_L8_R1_ICTCTCGTC-TATAACCT.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-113_T2b.FC22VM72LT3_L8_R2_ICTCTCGTC-TATAACCT.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-113_T2b_salmon_gencode_quant/quant.sf
+    jobid: 66
+    wildcards: sample=CSCC_NPT-113_T2b
+    resources: tmpdir=/tmp
+
+Submitted job 66 with external jobid 'Submitted batch job 3210220'.
+
+[Fri Dec 20 14:18:43 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_7_salmon_gencode_quant/quant.sf
+    jobid: 3
+    wildcards: sample=s_CSCC_7
+    resources: tmpdir=/tmp
+
+Submitted job 3 with external jobid 'Submitted batch job 3210221'.
+
+[Fri Dec 20 14:18:43 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_302_T2a_B4_salmon_gencode_quant/quant.sf
+    jobid: 17
+    wildcards: sample=s_CSCC_302_T2a_B4
+    resources: tmpdir=/tmp
+
+Submitted job 17 with external jobid 'Submitted batch job 3210222'.
+
+[Fri Dec 20 14:18:43 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_157.T2a_2_B2_salmon_gencode_quant/quant.sf
+    jobid: 31
+    wildcards: sample=s_157.T2a_2_B2
+    resources: tmpdir=/tmp
+
+Submitted job 31 with external jobid 'Submitted batch job 3210223'.
+
+[Fri Dec 20 14:18:43 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_205.T2b_B2_salmon_gencode_quant/quant.sf
+    jobid: 45
+    wildcards: sample=s_205.T2b_B2
+    resources: tmpdir=/tmp
+
+Submitted job 45 with external jobid 'Submitted batch job 3210224'.
+
+[Fri Dec 20 14:18:43 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-002-1_T2a.FC22VM72LT3_L8_R1_IGGACTTGG-CGCAGACG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-002-1_T2a.FC22VM72LT3_L8_R2_IGGACTTGG-CGCAGACG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-002-1_T2a_salmon_gencode_quant/quant.sf
+    jobid: 59
+    wildcards: sample=CSCC_NPT-002-1_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 59 with external jobid 'Submitted batch job 3210225'.
+
+[Fri Dec 20 14:18:43 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_097.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 18
+    wildcards: sample=s_097.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 18 with external jobid 'Submitted batch job 3210226'.
+
+[Fri Dec 20 14:18:44 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-004-2_T2a.FC22VM72LT3_L8_R1_IAAGTCCAA-TATGAGTA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-004-2_T2a.FC22VM72LT3_L8_R2_IAAGTCCAA-TATGAGTA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-004-2_T2a_salmon_gencode_quant/quant.sf
+    jobid: 60
+    wildcards: sample=CSCC_NPT-004-2_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 60 with external jobid 'Submitted batch job 3210227'.
+[Fri Dec 20 14:19:06 2024]
+Error in rule salmon_quant_paired:
+    jobid: 10
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_23_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_23_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210216
+
+Error executing rule salmon_quant_paired on cluster (jobid: 10, external: Submitted batch job 3210216, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.10.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:06 2024]
+Error in rule salmon_quant_paired:
+    jobid: 3
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_7_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_7_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210221
+
+Error executing rule salmon_quant_paired on cluster (jobid: 3, external: Submitted batch job 3210221, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.3.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:06 2024]
+Error in rule salmon_quant_paired:
+    jobid: 17
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_302_T2a_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_302_T2a_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210222
+
+Error executing rule salmon_quant_paired on cluster (jobid: 17, external: Submitted batch job 3210222, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.17.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:06 2024]
+Error in rule salmon_quant_paired:
+    jobid: 31
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_157.T2a_2_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_157.T2a_2_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210223
+
+Error executing rule salmon_quant_paired on cluster (jobid: 31, external: Submitted batch job 3210223, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.31.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:06 2024]
+Error in rule salmon_quant_paired:
+    jobid: 45
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_205.T2b_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_205.T2b_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210224
+
+Error executing rule salmon_quant_paired on cluster (jobid: 45, external: Submitted batch job 3210224, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.45.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:17 2024]
+Error in rule salmon_quant_paired:
+    jobid: 18
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_097.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_097.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210226
+
+Error executing rule salmon_quant_paired on cluster (jobid: 18, external: Submitted batch job 3210226, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.18.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:17 2024]
+Error in rule salmon_quant_paired:
+    jobid: 60
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-004-2_T2a_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-004-2_T2a.FC22VM72LT3_L8_R1_IAAGTCCAA-TATGAGTA.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-004-2_T2a.FC22VM72LT3_L8_R2_IAAGTCCAA-TATGAGTA.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-004-2_T2a_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210227
+
+Error executing rule salmon_quant_paired on cluster (jobid: 60, external: Submitted batch job 3210227, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.60.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:17 2024]
+Error in rule salmon_quant_paired:
+    jobid: 25
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_151.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_151.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210158
+
+Error executing rule salmon_quant_paired on cluster (jobid: 25, external: Submitted batch job 3210158, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.25.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:17 2024]
+Error in rule salmon_quant_paired:
+    jobid: 53
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_316_T2b_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_316_T2b_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210159
+
+Error executing rule salmon_quant_paired on cluster (jobid: 53, external: Submitted batch job 3210159, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.53.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:17 2024]
+Error in rule salmon_quant_paired:
+    jobid: 67
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-133_T2b_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-133_T2b.FC22VM72LT3_L8_R1_ICCAAGTCT-AAGGATGA.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-133_T2b.FC22VM72LT3_L8_R2_ICCAAGTCT-AAGGATGA.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-133_T2b_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210160
+
+Error executing rule salmon_quant_paired on cluster (jobid: 67, external: Submitted batch job 3210160, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.67.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:17 2024]
+Error in rule salmon_quant_paired:
+    jobid: 39
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_167.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_167.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210161
+
+Error executing rule salmon_quant_paired on cluster (jobid: 39, external: Submitted batch job 3210161, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.39.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:17 2024]
+Error in rule salmon_quant_paired:
+    jobid: 11
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_27_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_27_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210162
+
+Error executing rule salmon_quant_paired on cluster (jobid: 11, external: Submitted batch job 3210162, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.11.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:17 2024]
+Error in rule salmon_quant_paired:
+    jobid: 5
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_10T_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_10T_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210163
+
+Error executing rule salmon_quant_paired on cluster (jobid: 5, external: Submitted batch job 3210163, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.5.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:17 2024]
+Error in rule salmon_quant_paired:
+    jobid: 19
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_310_T2a_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_310_T2a_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210164
+
+Error executing rule salmon_quant_paired on cluster (jobid: 19, external: Submitted batch job 3210164, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.19.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:17 2024]
+Error in rule salmon_quant_paired:
+    jobid: 33
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_159.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_159.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210165
+
+Error executing rule salmon_quant_paired on cluster (jobid: 33, external: Submitted batch job 3210165, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.33.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:18 2024]
+Error in rule salmon_quant_paired:
+    jobid: 47
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_072.T2b_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_072.T2b_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210166
+
+Error executing rule salmon_quant_paired on cluster (jobid: 47, external: Submitted batch job 3210166, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.47.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:18 2024]
+Error in rule salmon_quant_paired:
+    jobid: 61
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-010-2_T3_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-010-2_T3.FC22VM72LT3_L8_R1_IGCTTGTCA-GAACATAC.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-010-2_T3.FC22VM72LT3_L8_R2_IGCTTGTCA-GAACATAC.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-010-2_T3_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210167
+
+Error executing rule salmon_quant_paired on cluster (jobid: 61, external: Submitted batch job 3210167, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.61.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:18 2024]
+Error in rule salmon_quant_paired:
+    jobid: 12
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_29_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_29_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210168
+
+Error executing rule salmon_quant_paired on cluster (jobid: 12, external: Submitted batch job 3210168, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.12.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:18 2024]
+Error in rule salmon_quant_paired:
+    jobid: 26
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_304_T2b_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_304_T2b_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210169
+
+Error executing rule salmon_quant_paired on cluster (jobid: 26, external: Submitted batch job 3210169, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.26.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:18 2024]
+Error in rule salmon_quant_paired:
+    jobid: 40
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_169.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_169.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210170
+
+Error executing rule salmon_quant_paired on cluster (jobid: 40, external: Submitted batch job 3210170, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.40.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:18 2024]
+Error in rule salmon_quant_paired:
+    jobid: 54
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-062_T2a_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-062_T2a.FC22VM72LT3_L8_R1_IGACCTGAA-TTGGTGAG.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-062_T2a.FC22VM72LT3_L8_R2_IGACCTGAA-TTGGTGAG.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-062_T2a_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210171
+
+Error executing rule salmon_quant_paired on cluster (jobid: 54, external: Submitted batch job 3210171, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.54.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:18 2024]
+Error in rule salmon_quant_paired:
+    jobid: 68
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-138_T2a_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-138_T2a.FC22VM72LT3_L8_R1_ITTGGACTC-GGAAGCAG.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-138_T2a.FC22VM72LT3_L8_R2_ITTGGACTC-GGAAGCAG.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-138_T2a_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210172
+
+Error executing rule salmon_quant_paired on cluster (jobid: 68, external: Submitted batch job 3210172, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.68.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:18 2024]
+Error in rule salmon_quant_paired:
+    jobid: 48
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_373_T2b_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_373_T2b_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210173
+
+Error executing rule salmon_quant_paired on cluster (jobid: 48, external: Submitted batch job 3210173, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.48.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:18 2024]
+Error in rule salmon_quant_paired:
+    jobid: 6
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_12_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_12_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210174
+
+Error executing rule salmon_quant_paired on cluster (jobid: 6, external: Submitted batch job 3210174, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.6.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:18 2024]
+Error in rule salmon_quant_paired:
+    jobid: 34
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_331_T1.T_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_331_T1.T_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210175
+
+Error executing rule salmon_quant_paired on cluster (jobid: 34, external: Submitted batch job 3210175, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.34.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:19 2024]
+Error in rule salmon_quant_paired:
+    jobid: 20
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_101.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_101.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210176
+
+Error executing rule salmon_quant_paired on cluster (jobid: 20, external: Submitted batch job 3210176, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.20.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:19 2024]
+Error in rule salmon_quant_paired:
+    jobid: 62
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-017-1_T2b_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-017-1_T2b.FC22VM72LT3_L8_R1_ICAAGCTAG-ACATAGCG.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-017-1_T2b.FC22VM72LT3_L8_R2_ICAAGCTAG-ACATAGCG.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-017-1_T2b_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210177
+
+Error executing rule salmon_quant_paired on cluster (jobid: 62, external: Submitted batch job 3210177, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.62.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:19 2024]
+Error in rule salmon_quant_paired:
+    jobid: 1
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210178
+
+Error executing rule salmon_quant_paired on cluster (jobid: 1, external: Submitted batch job 3210178, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.1.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:19 2024]
+Error in rule salmon_quant_paired:
+    jobid: 13
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_39T_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_39T_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210179
+
+Error executing rule salmon_quant_paired on cluster (jobid: 13, external: Submitted batch job 3210179, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.13.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:19 2024]
+Error in rule salmon_quant_paired:
+    jobid: 27
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_153.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_153.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210180
+
+Error executing rule salmon_quant_paired on cluster (jobid: 27, external: Submitted batch job 3210180, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.27.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:19 2024]
+Error in rule salmon_quant_paired:
+    jobid: 41
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_171.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_171.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210181
+
+Error executing rule salmon_quant_paired on cluster (jobid: 41, external: Submitted batch job 3210181, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.41.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:19 2024]
+Error in rule salmon_quant_paired:
+    jobid: 55
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-164_T2a_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-164_T2a.FC22VM72LT3_L8_R1_ICAGTAGGC-TGACGAAT.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-164_T2a.FC22VM72LT3_L8_R2_ICAGTAGGC-TGACGAAT.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-164_T2a_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210182
+
+Error executing rule salmon_quant_paired on cluster (jobid: 55, external: Submitted batch job 3210182, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.55.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:19 2024]
+Error in rule salmon_quant_paired:
+    jobid: 69
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-182_T2b_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-182_T2b.FC22VM72LT3_L8_R1_ITAATACAG-ATATTCAC.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-182_T2b.FC22VM72LT3_L8_R2_ITAATACAG-ATATTCAC.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-182_T2b_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210183
+
+Error executing rule salmon_quant_paired on cluster (jobid: 69, external: Submitted batch job 3210183, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.69.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:19 2024]
+Error in rule salmon_quant_paired:
+    jobid: 4
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_8_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_8_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210184
+
+Error executing rule salmon_quant_paired on cluster (jobid: 4, external: Submitted batch job 3210184, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.4.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:19 2024]
+Error in rule salmon_quant_paired:
+    jobid: 7
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_14_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_14_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210185
+
+Error executing rule salmon_quant_paired on cluster (jobid: 7, external: Submitted batch job 3210185, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.7.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:20 2024]
+Error in rule salmon_quant_paired:
+    jobid: 21
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_322_T2b_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_322_T2b_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210186
+
+Error executing rule salmon_quant_paired on cluster (jobid: 21, external: Submitted batch job 3210186, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.21.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:20 2024]
+Error in rule salmon_quant_paired:
+    jobid: 35
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_335_T2a_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_335_T2a_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210187
+
+Error executing rule salmon_quant_paired on cluster (jobid: 35, external: Submitted batch job 3210187, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.35.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:20 2024]
+Error in rule salmon_quant_paired:
+    jobid: 49
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_085.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_085.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210188
+
+Error executing rule salmon_quant_paired on cluster (jobid: 49, external: Submitted batch job 3210188, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.49.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:20 2024]
+Error in rule salmon_quant_paired:
+    jobid: 63
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-050_T2a_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-050_T2a.FC22VM72LT3_L8_R1_ITGGATCGA-GTGCGATA.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-050_T2a.FC22VM72LT3_L8_R2_ITGGATCGA-GTGCGATA.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-050_T2a_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210189
+
+Error executing rule salmon_quant_paired on cluster (jobid: 63, external: Submitted batch job 3210189, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.63.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:20 2024]
+Error in rule salmon_quant_paired:
+    jobid: 14
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_42T_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_42T_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210190
+
+Error executing rule salmon_quant_paired on cluster (jobid: 14, external: Submitted batch job 3210190, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.14.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:20 2024]
+Error in rule salmon_quant_paired:
+    jobid: 28
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_308_T2b_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_308_T2b_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210191
+
+Error executing rule salmon_quant_paired on cluster (jobid: 28, external: Submitted batch job 3210191, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.28.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:20 2024]
+Error in rule salmon_quant_paired:
+    jobid: 32
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_326_T3_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_326_T3_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210192
+
+Error executing rule salmon_quant_paired on cluster (jobid: 32, external: Submitted batch job 3210192, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.32.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:20 2024]
+Error in rule salmon_quant_paired:
+    jobid: 42
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_200.T2b_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_200.T2b_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210193
+
+Error executing rule salmon_quant_paired on cluster (jobid: 42, external: Submitted batch job 3210193, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.42.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:20 2024]
+Error in rule salmon_quant_paired:
+    jobid: 56
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-169_T2b_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-169_T2b.FC22VM72LT3_L8_R1_ITGACGAAT-CAGTAGGC.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-169_T2b.FC22VM72LT3_L8_R2_ITGACGAAT-CAGTAGGC.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-169_T2b_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210194
+
+Error executing rule salmon_quant_paired on cluster (jobid: 56, external: Submitted batch job 3210194, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.56.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:20 2024]
+Error in rule salmon_quant_paired:
+    jobid: 70
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-183_T2b_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-183_T2b.FC22VM72LT3_L8_R1_ICGGCGTGA-GCGCCTGT.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-183_T2b.FC22VM72LT3_L8_R2_ICGGCGTGA-GCGCCTGT.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-183_T2b_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210195
+
+Error executing rule salmon_quant_paired on cluster (jobid: 70, external: Submitted batch job 3210195, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.70.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:21 2024]
+Error in rule salmon_quant_paired:
+    jobid: 8
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_16_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_16_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210196
+
+Error executing rule salmon_quant_paired on cluster (jobid: 8, external: Submitted batch job 3210196, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.8.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:21 2024]
+Error in rule salmon_quant_paired:
+    jobid: 22
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_320_T2a_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_320_T2a_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210197
+
+Error executing rule salmon_quant_paired on cluster (jobid: 22, external: Submitted batch job 3210197, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.22.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:21 2024]
+Error in rule salmon_quant_paired:
+    jobid: 36
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_363_T2a_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_363_T2a_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210198
+
+Error executing rule salmon_quant_paired on cluster (jobid: 36, external: Submitted batch job 3210198, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.36.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:21 2024]
+Error in rule salmon_quant_paired:
+    jobid: 50
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_359_T2a_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_359_T2a_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210199
+
+Error executing rule salmon_quant_paired on cluster (jobid: 50, external: Submitted batch job 3210199, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.50.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:21 2024]
+Error in rule salmon_quant_paired:
+    jobid: 64
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-055_T2a_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-055_T2a.FC22VM72LT3_L8_R1_IAGTTCAGG-CCAACAGA.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-055_T2a.FC22VM72LT3_L8_R2_IAGTTCAGG-CCAACAGA.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-055_T2a_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210200
+
+Error executing rule salmon_quant_paired on cluster (jobid: 64, external: Submitted batch job 3210200, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.64.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:21 2024]
+Error in rule salmon_quant_paired:
+    jobid: 15
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_48_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_48_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210201
+
+Error executing rule salmon_quant_paired on cluster (jobid: 15, external: Submitted batch job 3210201, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.15.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:21 2024]
+Error in rule salmon_quant_paired:
+    jobid: 29
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_155.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_155.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210202
+
+Error executing rule salmon_quant_paired on cluster (jobid: 29, external: Submitted batch job 3210202, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.29.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:21 2024]
+Error in rule salmon_quant_paired:
+    jobid: 43
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_201.T2b_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_201.T2b_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210203
+
+Error executing rule salmon_quant_paired on cluster (jobid: 43, external: Submitted batch job 3210203, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.43.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:21 2024]
+Error in rule salmon_quant_paired:
+    jobid: 57
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-015_T2a_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-015_T2a.FC22VM72LT3_L8_R1_ICCGCGGTT-AGCGCTAG.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-015_T2a.FC22VM72LT3_L8_R2_ICCGCGGTT-AGCGCTAG.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-015_T2a_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210204
+
+Error executing rule salmon_quant_paired on cluster (jobid: 57, external: Submitted batch job 3210204, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.57.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:21 2024]
+Error in rule salmon_quant_paired:
+    jobid: 9
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_18_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_18_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210205
+
+Error executing rule salmon_quant_paired on cluster (jobid: 9, external: Submitted batch job 3210205, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.9.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:22 2024]
+Error in rule salmon_quant_paired:
+    jobid: 23
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_109.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_109.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210206
+
+Error executing rule salmon_quant_paired on cluster (jobid: 23, external: Submitted batch job 3210206, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.23.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:22 2024]
+Error in rule salmon_quant_paired:
+    jobid: 37
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_163.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_163.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210207
+
+Error executing rule salmon_quant_paired on cluster (jobid: 37, external: Submitted batch job 3210207, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.37.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:22 2024]
+Error in rule salmon_quant_paired:
+    jobid: 51
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_349_T3_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_349_T3_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210208
+
+Error executing rule salmon_quant_paired on cluster (jobid: 51, external: Submitted batch job 3210208, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.51.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:22 2024]
+Error in rule salmon_quant_paired:
+    jobid: 65
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-083_T2a_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-083_T2a.FC22VM72LT3_L8_R1_ITCTCTACT-CGCGGTTC.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-083_T2a.FC22VM72LT3_L8_R2_ITCTCTACT-CGCGGTTC.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-083_T2a_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210209
+
+Error executing rule salmon_quant_paired on cluster (jobid: 65, external: Submitted batch job 3210209, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.65.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:22 2024]
+Error in rule salmon_quant_paired:
+    jobid: 16
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_52_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_52_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210210
+
+Error executing rule salmon_quant_paired on cluster (jobid: 16, external: Submitted batch job 3210210, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.16.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:22 2024]
+Error in rule salmon_quant_paired:
+    jobid: 2
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_6_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_6_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210211
+
+Error executing rule salmon_quant_paired on cluster (jobid: 2, external: Submitted batch job 3210211, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:22 2024]
+Error in rule salmon_quant_paired:
+    jobid: 30
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_338_T2b_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_338_T2b_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210212
+
+Error executing rule salmon_quant_paired on cluster (jobid: 30, external: Submitted batch job 3210212, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.30.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:22 2024]
+Error in rule salmon_quant_paired:
+    jobid: 44
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_203.T2b_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_203.T2b_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210213
+
+Error executing rule salmon_quant_paired on cluster (jobid: 44, external: Submitted batch job 3210213, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.44.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:22 2024]
+Error in rule salmon_quant_paired:
+    jobid: 58
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-001-2_T2b_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-001-2_T2b.FC22VM72LT3_L8_R1_ITTATAACC-GATATCGA.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-001-2_T2b.FC22VM72LT3_L8_R2_ITTATAACC-GATATCGA.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-001-2_T2b_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210214
+
+Error executing rule salmon_quant_paired on cluster (jobid: 58, external: Submitted batch job 3210214, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.58.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:22 2024]
+Error in rule salmon_quant_paired:
+    jobid: 46
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_073.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_073.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210215
+
+Error executing rule salmon_quant_paired on cluster (jobid: 46, external: Submitted batch job 3210215, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.46.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:23 2024]
+Error in rule salmon_quant_paired:
+    jobid: 24
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_306_T2a_B4_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_306_T2a_B4_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210217
+
+Error executing rule salmon_quant_paired on cluster (jobid: 24, external: Submitted batch job 3210217, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.24.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:23 2024]
+Error in rule salmon_quant_paired:
+    jobid: 38
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_165.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_165.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210218
+
+Error executing rule salmon_quant_paired on cluster (jobid: 38, external: Submitted batch job 3210218, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.38.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:23 2024]
+Error in rule salmon_quant_paired:
+    jobid: 52
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_093.T2a_B2_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.1.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.2.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_093.T2a_B2_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210219
+
+Error executing rule salmon_quant_paired on cluster (jobid: 52, external: Submitted batch job 3210219, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.52.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:23 2024]
+Error in rule salmon_quant_paired:
+    jobid: 66
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-113_T2b_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-113_T2b.FC22VM72LT3_L8_R1_ICTCTCGTC-TATAACCT.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-113_T2b.FC22VM72LT3_L8_R2_ICTCTCGTC-TATAACCT.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-113_T2b_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210220
+
+Error executing rule salmon_quant_paired on cluster (jobid: 66, external: Submitted batch job 3210220, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.66.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Dec 20 14:19:23 2024]
+Error in rule salmon_quant_paired:
+    jobid: 59
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-002-1_T2a_salmon_gencode_quant/quant.sf
+    shell:
+        
+		salmon quant -i /xdisk/khasting/knodele/references/gencode_salmon_index -l A -1 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-002-1_T2a.FC22VM72LT3_L8_R1_IGGACTTGG-CGCAGACG.fastq -2 /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-002-1_T2a.FC22VM72LT3_L8_R2_IGGACTTGG-CGCAGACG.fastq -o /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-002-1_T2a_salmon_gencode_quant/
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3210225
+
+Error executing rule salmon_quant_paired on cluster (jobid: 59, external: Submitted batch job 3210225, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/tmp.rrbnwk46/snakejob.salmon_quant_paired.59.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/log/2024-12-20T141830.575111.snakemake.log

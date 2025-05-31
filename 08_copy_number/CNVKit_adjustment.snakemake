@@ -1,0 +1,18 @@
+import os
+
+configfile: "/home/u1/knodele/Immunoediting_Human_cSCC/00_setup/somatic_mutation_calling_config.json"
+
+rule all:
+    input:
+        expand(os.path.join("/xdisk/khasting/knodele/Mayo_data/CNVKit_results/{subject}.GRCh38_full_analysis_set_plus_decoy_hla.sorted.mkdup.call_abbr.cns"), subject=config["all_patients"]),
+
+rule abbreviate_file:
+    input:
+        cns = lambda wildcards: os.path.join("/xdisk/khasting/knodele/Mayo_data/CNVKit_results/", config[wildcards.subject]["tumor"] + ".GRCh38_full_analysis_set_plus_decoy_hla.sorted.mkdup.call.cns")
+    output:
+        cns = os.path.join("/xdisk/khasting/knodele/Mayo_data/CNVKit_results/{subject}.GRCh38_full_analysis_set_plus_decoy_hla.sorted.mkdup.call_abbr.cns")
+    shell:
+        """
+        cat {input.cns} | awk '{{print $1, $2, $3, $6}}' > {output.cns}
+	"""
+

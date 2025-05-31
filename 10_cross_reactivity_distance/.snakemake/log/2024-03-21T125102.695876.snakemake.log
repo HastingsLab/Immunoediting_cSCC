@@ -1,0 +1,524 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 71
+Job counts:
+	count	jobs
+	1	all
+	42	calculate_EC
+	43
+
+[Thu Mar 21 12:51:03 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P22_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P22_all_characteristics_add_EC.csv
+    jobid: 135
+    wildcards: sample=P22
+
+Submitted job 135 with external jobid 'Submitted batch job 1887721'.
+
+[Thu Mar 21 12:51:03 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P25_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P25_all_characteristics_add_EC.csv
+    jobid: 137
+    wildcards: sample=P25
+
+Submitted job 137 with external jobid 'Submitted batch job 1887722'.
+
+[Thu Mar 21 12:51:03 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P5_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P5_all_characteristics_add_EC.csv
+    jobid: 164
+    wildcards: sample=P5
+
+Submitted job 164 with external jobid 'Submitted batch job 1887723'.
+
+[Thu Mar 21 12:51:03 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P40_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P40_all_characteristics_add_EC.csv
+    jobid: 153
+    wildcards: sample=P40
+
+Submitted job 153 with external jobid 'Submitted batch job 1887724'.
+
+[Thu Mar 21 12:51:03 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P38_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P38_all_characteristics_add_EC.csv
+    jobid: 149
+    wildcards: sample=P38
+
+Submitted job 149 with external jobid 'Submitted batch job 1887725'.
+
+[Thu Mar 21 12:51:03 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P26_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P26_all_characteristics_add_EC.csv
+    jobid: 138
+    wildcards: sample=P26
+
+Submitted job 138 with external jobid 'Submitted batch job 1887726'.
+
+[Thu Mar 21 12:51:03 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P54_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P54_all_characteristics_add_EC.csv
+    jobid: 159
+    wildcards: sample=P54
+
+Submitted job 159 with external jobid 'Submitted batch job 1887727'.
+
+[Thu Mar 21 12:51:03 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P9_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P9_all_characteristics_add_EC.csv
+    jobid: 167
+    wildcards: sample=P9
+
+Submitted job 167 with external jobid 'Submitted batch job 1887728'.
+
+[Thu Mar 21 12:51:03 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P55_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P55_all_characteristics_add_EC.csv
+    jobid: 160
+    wildcards: sample=P55
+
+Submitted job 160 with external jobid 'Submitted batch job 1887729'.
+
+[Thu Mar 21 12:51:04 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P18_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P18_all_characteristics_add_EC.csv
+    jobid: 132
+    wildcards: sample=P18
+
+Submitted job 132 with external jobid 'Submitted batch job 1887730'.
+
+[Thu Mar 21 12:51:04 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P7_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P7_all_characteristics_add_EC.csv
+    jobid: 165
+    wildcards: sample=P7
+
+Submitted job 165 with external jobid 'Submitted batch job 1887731'.
+
+[Thu Mar 21 12:51:04 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P36_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P36_all_characteristics_add_EC.csv
+    jobid: 147
+    wildcards: sample=P36
+
+Submitted job 147 with external jobid 'Submitted batch job 1887732'.
+
+[Thu Mar 21 12:51:04 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P16_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P16_all_characteristics_add_EC.csv
+    jobid: 130
+    wildcards: sample=P16
+
+Submitted job 130 with external jobid 'Submitted batch job 1887733'.
+
+[Thu Mar 21 12:51:04 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P19_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P19_all_characteristics_add_EC.csv
+    jobid: 133
+    wildcards: sample=P19
+
+Submitted job 133 with external jobid 'Submitted batch job 1887734'.
+
+[Thu Mar 21 12:51:04 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P59_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P59_all_characteristics_add_EC.csv
+    jobid: 163
+    wildcards: sample=P59
+
+Submitted job 163 with external jobid 'Submitted batch job 1887735'.
+
+[Thu Mar 21 12:51:04 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P39A_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P39A_all_characteristics_add_EC.csv
+    jobid: 150
+    wildcards: sample=P39A
+
+Submitted job 150 with external jobid 'Submitted batch job 1887736'.
+
+[Thu Mar 21 12:51:04 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P58_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P58_all_characteristics_add_EC.csv
+    jobid: 162
+    wildcards: sample=P58
+
+Submitted job 162 with external jobid 'Submitted batch job 1887737'.
+
+[Thu Mar 21 12:51:04 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P24_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P24_all_characteristics_add_EC.csv
+    jobid: 136
+    wildcards: sample=P24
+
+Submitted job 136 with external jobid 'Submitted batch job 1887738'.
+
+[Thu Mar 21 12:51:05 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P34_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P34_all_characteristics_add_EC.csv
+    jobid: 145
+    wildcards: sample=P34
+
+Submitted job 145 with external jobid 'Submitted batch job 1887739'.
+
+[Thu Mar 21 12:51:05 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P57_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P57_all_characteristics_add_EC.csv
+    jobid: 161
+    wildcards: sample=P57
+
+Submitted job 161 with external jobid 'Submitted batch job 1887740'.
+
+[Thu Mar 21 12:51:05 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P13_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P13_all_characteristics_add_EC.csv
+    jobid: 128
+    wildcards: sample=P13
+
+Submitted job 128 with external jobid 'Submitted batch job 1887741'.
+
+[Thu Mar 21 12:51:05 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P41_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P41_all_characteristics_add_EC.csv
+    jobid: 154
+    wildcards: sample=P41
+
+Submitted job 154 with external jobid 'Submitted batch job 1887742'.
+
+[Thu Mar 21 12:51:05 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P28_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P28_all_characteristics_add_EC.csv
+    jobid: 140
+    wildcards: sample=P28
+
+Submitted job 140 with external jobid 'Submitted batch job 1887743'.
+
+[Thu Mar 21 12:51:05 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P2A_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P2A_all_characteristics_add_EC.csv
+    jobid: 141
+    wildcards: sample=P2A
+
+Submitted job 141 with external jobid 'Submitted batch job 1887744'.
+
+[Thu Mar 21 12:51:05 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P14_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P14_all_characteristics_add_EC.csv
+    jobid: 129
+    wildcards: sample=P14
+
+Submitted job 129 with external jobid 'Submitted batch job 1887745'.
+
+[Thu Mar 21 12:51:05 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P27_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P27_all_characteristics_add_EC.csv
+    jobid: 139
+    wildcards: sample=P27
+
+Submitted job 139 with external jobid 'Submitted batch job 1887746'.
+
+[Thu Mar 21 12:51:05 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P37_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P37_all_characteristics_add_EC.csv
+    jobid: 148
+    wildcards: sample=P37
+
+Submitted job 148 with external jobid 'Submitted batch job 1887747'.
+
+[Thu Mar 21 12:51:06 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P4_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P4_all_characteristics_add_EC.csv
+    jobid: 158
+    wildcards: sample=P4
+
+Submitted job 158 with external jobid 'Submitted batch job 1887748'.
+
+[Thu Mar 21 12:51:06 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P47_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P47_all_characteristics_add_EC.csv
+    jobid: 155
+    wildcards: sample=P47
+
+Submitted job 155 with external jobid 'Submitted batch job 1887749'.
+
+[Thu Mar 21 12:51:06 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P8_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P8_all_characteristics_add_EC.csv
+    jobid: 166
+    wildcards: sample=P8
+
+Submitted job 166 with external jobid 'Submitted batch job 1887750'.
+
+[Thu Mar 21 12:51:06 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P33_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P33_all_characteristics_add_EC.csv
+    jobid: 144
+    wildcards: sample=P33
+
+Submitted job 144 with external jobid 'Submitted batch job 1887751'.
+
+[Thu Mar 21 12:51:06 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P48_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P48_all_characteristics_add_EC.csv
+    jobid: 156
+    wildcards: sample=P48
+
+Submitted job 156 with external jobid 'Submitted batch job 1887752'.
+
+[Thu Mar 21 12:51:06 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P17_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P17_all_characteristics_add_EC.csv
+    jobid: 131
+    wildcards: sample=P17
+
+Submitted job 131 with external jobid 'Submitted batch job 1887753'.
+
+[Thu Mar 21 12:51:06 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P30_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P30_all_characteristics_add_EC.csv
+    jobid: 143
+    wildcards: sample=P30
+
+Submitted job 143 with external jobid 'Submitted batch job 1887754'.
+
+[Thu Mar 21 12:51:06 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P39B_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P39B_all_characteristics_add_EC.csv
+    jobid: 151
+    wildcards: sample=P39B
+
+Submitted job 151 with external jobid 'Submitted batch job 1887755'.
+
+[Thu Mar 21 12:51:06 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P11_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P11_all_characteristics_add_EC.csv
+    jobid: 127
+    wildcards: sample=P11
+
+Submitted job 127 with external jobid 'Submitted batch job 1887756'.
+
+[Thu Mar 21 12:51:07 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P20_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P20_all_characteristics_add_EC.csv
+    jobid: 134
+    wildcards: sample=P20
+
+Submitted job 134 with external jobid 'Submitted batch job 1887757'.
+
+[Thu Mar 21 12:51:07 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P2B_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P2B_all_characteristics_add_EC.csv
+    jobid: 142
+    wildcards: sample=P2B
+
+Submitted job 142 with external jobid 'Submitted batch job 1887758'.
+
+[Thu Mar 21 12:51:07 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P49_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P49_all_characteristics_add_EC.csv
+    jobid: 157
+    wildcards: sample=P49
+
+Submitted job 157 with external jobid 'Submitted batch job 1887759'.
+
+[Thu Mar 21 12:51:07 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P35_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P35_all_characteristics_add_EC.csv
+    jobid: 146
+    wildcards: sample=P35
+
+Submitted job 146 with external jobid 'Submitted batch job 1887760'.
+
+[Thu Mar 21 12:51:07 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P6_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P6_all_characteristics_add_EC.csv
+    jobid: 168
+    wildcards: sample=P6
+
+Submitted job 168 with external jobid 'Submitted batch job 1887761'.
+
+[Thu Mar 21 12:51:07 2024]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P3_all_characteristics.csv
+    output: /xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P3_all_characteristics_add_EC.csv
+    jobid: 152
+    wildcards: sample=P3
+
+Submitted job 152 with external jobid 'Submitted batch job 1887762'.
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 56 of /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/luksza.snakefile:
+Job completed successfully, but some output files are missing. Missing files after 5 seconds:
+/xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P22_all_characteristics_add_EC.csv
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 56 of /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/luksza.snakefile:
+Job completed successfully, but some output files are missing. Missing files after 5 seconds:
+/xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P25_all_characteristics_add_EC.csv
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 56 of /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/luksza.snakefile:
+Job completed successfully, but some output files are missing. Missing files after 5 seconds:
+/xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P5_all_characteristics_add_EC.csv
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 56 of /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/luksza.snakefile:
+Job completed successfully, but some output files are missing. Missing files after 5 seconds:
+/xdisk/khasting/knodele/Mayo_human_data/luksza_outputs/P40_all_characteristics_add_EC.csv
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Waiting at most 5 seconds for missing files.
+[Thu Mar 21 12:52:02 2024]
+Finished job 149.
+1 of 43 steps (2%) done
+[Thu Mar 21 12:52:02 2024]
+Finished job 138.
+2 of 43 steps (5%) done
+[Thu Mar 21 12:52:02 2024]
+Finished job 159.
+3 of 43 steps (7%) done
+[Thu Mar 21 12:52:02 2024]
+Finished job 167.
+4 of 43 steps (9%) done
+[Thu Mar 21 12:52:02 2024]
+Finished job 160.
+5 of 43 steps (12%) done
+[Thu Mar 21 12:52:02 2024]
+Finished job 132.
+6 of 43 steps (14%) done
+[Thu Mar 21 12:52:02 2024]
+Finished job 165.
+7 of 43 steps (16%) done
+[Thu Mar 21 12:52:02 2024]
+Finished job 147.
+8 of 43 steps (19%) done
+[Thu Mar 21 12:52:03 2024]
+Finished job 130.
+9 of 43 steps (21%) done
+[Thu Mar 21 12:52:03 2024]
+Finished job 133.
+10 of 43 steps (23%) done
+[Thu Mar 21 12:52:03 2024]
+Finished job 163.
+11 of 43 steps (26%) done
+[Thu Mar 21 12:52:03 2024]
+Finished job 150.
+12 of 43 steps (28%) done
+[Thu Mar 21 12:52:03 2024]
+Finished job 162.
+13 of 43 steps (30%) done
+[Thu Mar 21 12:52:03 2024]
+Finished job 136.
+14 of 43 steps (33%) done
+[Thu Mar 21 12:52:03 2024]
+Finished job 145.
+15 of 43 steps (35%) done
+[Thu Mar 21 12:52:03 2024]
+Finished job 161.
+16 of 43 steps (37%) done
+[Thu Mar 21 12:52:04 2024]
+Finished job 128.
+17 of 43 steps (40%) done
+[Thu Mar 21 12:52:04 2024]
+Finished job 154.
+18 of 43 steps (42%) done
+[Thu Mar 21 12:52:04 2024]
+Finished job 140.
+19 of 43 steps (44%) done
+[Thu Mar 21 12:52:04 2024]
+Finished job 141.
+20 of 43 steps (47%) done
+[Thu Mar 21 12:52:05 2024]
+Finished job 129.
+21 of 43 steps (49%) done
+[Thu Mar 21 12:52:05 2024]
+Finished job 139.
+22 of 43 steps (51%) done
+[Thu Mar 21 12:52:05 2024]
+Finished job 148.
+23 of 43 steps (53%) done
+[Thu Mar 21 12:52:05 2024]
+Finished job 158.
+24 of 43 steps (56%) done
+[Thu Mar 21 12:52:05 2024]
+Finished job 155.
+25 of 43 steps (58%) done
+[Thu Mar 21 12:52:05 2024]
+Finished job 166.
+26 of 43 steps (60%) done
+[Thu Mar 21 12:52:05 2024]
+Finished job 144.
+27 of 43 steps (63%) done
+[Thu Mar 21 12:52:05 2024]
+Finished job 156.
+28 of 43 steps (65%) done
+[Thu Mar 21 12:52:05 2024]
+Finished job 131.
+29 of 43 steps (67%) done
+[Thu Mar 21 12:52:05 2024]
+Finished job 143.
+30 of 43 steps (70%) done
+[Thu Mar 21 12:52:06 2024]
+Finished job 151.
+31 of 43 steps (72%) done
+[Thu Mar 21 12:52:06 2024]
+Finished job 127.
+32 of 43 steps (74%) done
+[Thu Mar 21 12:52:06 2024]
+Finished job 134.
+33 of 43 steps (77%) done
+[Thu Mar 21 12:52:06 2024]
+Finished job 142.
+34 of 43 steps (79%) done
+[Thu Mar 21 12:52:06 2024]
+Finished job 157.
+35 of 43 steps (81%) done
+[Thu Mar 21 12:52:06 2024]
+Finished job 146.
+36 of 43 steps (84%) done
+[Thu Mar 21 12:52:06 2024]
+Finished job 168.
+37 of 43 steps (86%) done
+[Thu Mar 21 12:52:06 2024]
+Finished job 152.
+38 of 43 steps (88%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/u1/knodele/Immunoediting_Human_cSCC/10_Luksza_model_calculations/.snakemake/log/2024-03-21T125102.695876.snakemake.log

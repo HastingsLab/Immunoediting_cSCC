@@ -1,0 +1,726 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cluster nodes: 70
+Job counts:
+	count	jobs
+	1	all
+	59	calculate_EC
+	60
+
+[Tue May 27 13:25:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P8_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P8_all_characteristics_add_EC.csv
+    jobid: 18
+    wildcards: sample=P8
+
+Submitted job 18 with external jobid 'Submitted batch job 3960722'.
+
+[Tue May 27 13:25:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P002_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P002_all_characteristics_add_EC.csv
+    jobid: 10
+    wildcards: sample=P002
+
+Submitted job 10 with external jobid 'Submitted batch job 3960723'.
+
+[Tue May 27 13:25:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P49_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P49_all_characteristics_add_EC.csv
+    jobid: 50
+    wildcards: sample=P49
+
+Submitted job 50 with external jobid 'Submitted batch job 3960724'.
+
+[Tue May 27 13:25:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P25_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P25_all_characteristics_add_EC.csv
+    jobid: 55
+    wildcards: sample=P25
+
+Submitted job 55 with external jobid 'Submitted batch job 3960725'.
+
+[Tue May 27 13:25:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P55_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P55_all_characteristics_add_EC.csv
+    jobid: 17
+    wildcards: sample=P55
+
+Submitted job 17 with external jobid 'Submitted batch job 3960726'.
+
+[Tue May 27 13:25:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P58_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P58_all_characteristics_add_EC.csv
+    jobid: 35
+    wildcards: sample=P58
+
+Submitted job 35 with external jobid 'Submitted batch job 3960727'.
+
+[Tue May 27 13:25:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P9_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P9_all_characteristics_add_EC.csv
+    jobid: 27
+    wildcards: sample=P9
+
+Submitted job 27 with external jobid 'Submitted batch job 3960728'.
+
+[Tue May 27 13:25:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P47_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P47_all_characteristics_add_EC.csv
+    jobid: 34
+    wildcards: sample=P47
+
+Submitted job 34 with external jobid 'Submitted batch job 3960729'.
+
+[Tue May 27 13:25:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P11_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P11_all_characteristics_add_EC.csv
+    jobid: 37
+    wildcards: sample=P11
+
+Submitted job 37 with external jobid 'Submitted batch job 3960730'.
+
+[Tue May 27 13:25:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P26_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P26_all_characteristics_add_EC.csv
+    jobid: 5
+    wildcards: sample=P26
+
+Submitted job 5 with external jobid 'Submitted batch job 3960731'.
+
+[Tue May 27 13:25:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P54_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P54_all_characteristics_add_EC.csv
+    jobid: 8
+    wildcards: sample=P54
+
+Submitted job 8 with external jobid 'Submitted batch job 3960732'.
+
+[Tue May 27 13:25:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P6_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P6_all_characteristics_add_EC.csv
+    jobid: 59
+    wildcards: sample=P6
+
+Submitted job 59 with external jobid 'Submitted batch job 3960733'.
+
+[Tue May 27 13:25:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P57_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P57_all_characteristics_add_EC.csv
+    jobid: 26
+    wildcards: sample=P57
+
+Submitted job 26 with external jobid 'Submitted batch job 3960734'.
+
+[Tue May 27 13:25:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P48_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P48_all_characteristics_add_EC.csv
+    jobid: 42
+    wildcards: sample=P48
+
+Submitted job 42 with external jobid 'Submitted batch job 3960735'.
+
+[Tue May 27 13:25:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P33_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P33_all_characteristics_add_EC.csv
+    jobid: 56
+    wildcards: sample=P33
+
+Submitted job 56 with external jobid 'Submitted batch job 3960736'.
+
+[Tue May 27 13:25:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P055_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P055_all_characteristics_add_EC.csv
+    jobid: 2
+    wildcards: sample=P055
+
+Submitted job 2 with external jobid 'Submitted batch job 3960737'.
+
+[Tue May 27 13:25:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P35_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P35_all_characteristics_add_EC.csv
+    jobid: 15
+    wildcards: sample=P35
+
+Submitted job 15 with external jobid 'Submitted batch job 3960738'.
+
+[Tue May 27 13:25:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P182_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P182_all_characteristics_add_EC.csv
+    jobid: 46
+    wildcards: sample=P182
+
+Submitted job 46 with external jobid 'Submitted batch job 3960739'.
+
+[Tue May 27 13:25:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P015_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P015_all_characteristics_add_EC.csv
+    jobid: 36
+    wildcards: sample=P015
+
+Submitted job 36 with external jobid 'Submitted batch job 3960740'.
+
+[Tue May 27 13:25:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P59_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P59_all_characteristics_add_EC.csv
+    jobid: 43
+    wildcards: sample=P59
+
+Submitted job 43 with external jobid 'Submitted batch job 3960741'.
+
+[Tue May 27 13:25:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P40_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P40_all_characteristics_add_EC.csv
+    jobid: 16
+    wildcards: sample=P40
+
+Submitted job 16 with external jobid 'Submitted batch job 3960742'.
+
+[Tue May 27 13:25:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P133_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P133_all_characteristics_add_EC.csv
+    jobid: 45
+    wildcards: sample=P133
+
+Submitted job 45 with external jobid 'Submitted batch job 3960743'.
+
+[Tue May 27 13:25:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P24_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P24_all_characteristics_add_EC.csv
+    jobid: 47
+    wildcards: sample=P24
+
+Submitted job 47 with external jobid 'Submitted batch job 3960744'.
+
+[Tue May 27 13:25:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P050_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P050_all_characteristics_add_EC.csv
+    jobid: 52
+    wildcards: sample=P050
+
+Submitted job 52 with external jobid 'Submitted batch job 3960745'.
+
+[Tue May 27 13:25:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P7_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P7_all_characteristics_add_EC.csv
+    jobid: 9
+    wildcards: sample=P7
+
+Submitted job 9 with external jobid 'Submitted batch job 3960746'.
+
+[Tue May 27 13:25:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P169_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P169_all_characteristics_add_EC.csv
+    jobid: 30
+    wildcards: sample=P169
+
+Submitted job 30 with external jobid 'Submitted batch job 3960747'.
+
+[Tue May 27 13:25:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39B_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39B_all_characteristics_add_EC.csv
+    jobid: 57
+    wildcards: sample=P39B
+
+Submitted job 57 with external jobid 'Submitted batch job 3960748'.
+
+[Tue May 27 13:25:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P19_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P19_all_characteristics_add_EC.csv
+    jobid: 13
+    wildcards: sample=P19
+
+Submitted job 13 with external jobid 'Submitted batch job 3960749'.
+
+[Tue May 27 13:25:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39A_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39A_all_characteristics_add_EC.csv
+    jobid: 49
+    wildcards: sample=P39A
+
+Submitted job 49 with external jobid 'Submitted batch job 3960750'.
+
+[Tue May 27 13:25:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P17_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P17_all_characteristics_add_EC.csv
+    jobid: 38
+    wildcards: sample=P17
+
+Submitted job 38 with external jobid 'Submitted batch job 3960751'.
+
+[Tue May 27 13:25:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P062_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P062_all_characteristics_add_EC.csv
+    jobid: 11
+    wildcards: sample=P062
+
+Submitted job 11 with external jobid 'Submitted batch job 3960752'.
+
+[Tue May 27 13:25:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P36_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P36_all_characteristics_add_EC.csv
+    jobid: 24
+    wildcards: sample=P36
+
+Submitted job 24 with external jobid 'Submitted batch job 3960753'.
+
+[Tue May 27 13:25:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P23_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P23_all_characteristics_add_EC.csv
+    jobid: 39
+    wildcards: sample=P23
+
+Submitted job 39 with external jobid 'Submitted batch job 3960754'.
+
+[Tue May 27 13:25:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P30_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P30_all_characteristics_add_EC.csv
+    jobid: 48
+    wildcards: sample=P30
+
+Submitted job 48 with external jobid 'Submitted batch job 3960755'.
+
+[Tue May 27 13:25:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P004_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P004_all_characteristics_add_EC.csv
+    jobid: 19
+    wildcards: sample=P004
+
+Submitted job 19 with external jobid 'Submitted batch job 3960756'.
+
+[Tue May 27 13:25:35 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P3_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P3_all_characteristics_add_EC.csv
+    jobid: 7
+    wildcards: sample=P3
+
+Submitted job 7 with external jobid 'Submitted batch job 3960757'.
+
+[Tue May 27 13:25:35 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P083_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P083_all_characteristics_add_EC.csv
+    jobid: 20
+    wildcards: sample=P083
+
+Submitted job 20 with external jobid 'Submitted batch job 3960758'.
+
+[Tue May 27 13:25:35 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P34_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P34_all_characteristics_add_EC.csv
+    jobid: 6
+    wildcards: sample=P34
+
+Submitted job 6 with external jobid 'Submitted batch job 3960759'.
+
+[Tue May 27 13:25:35 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P13_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P13_all_characteristics_add_EC.csv
+    jobid: 3
+    wildcards: sample=P13
+
+Submitted job 3 with external jobid 'Submitted batch job 3960760'.
+
+[Tue May 27 13:25:35 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P183_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P183_all_characteristics_add_EC.csv
+    jobid: 54
+    wildcards: sample=P183
+
+Submitted job 54 with external jobid 'Submitted batch job 3960761'.
+
+[Tue May 27 13:25:35 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P4_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P4_all_characteristics_add_EC.csv
+    jobid: 58
+    wildcards: sample=P4
+
+Submitted job 58 with external jobid 'Submitted batch job 3960762'.
+
+[Tue May 27 13:25:35 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P18_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P18_all_characteristics_add_EC.csv
+    jobid: 4
+    wildcards: sample=P18
+
+Submitted job 4 with external jobid 'Submitted batch job 3960763'.
+
+[Tue May 27 13:25:35 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P38_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P38_all_characteristics_add_EC.csv
+    jobid: 41
+    wildcards: sample=P38
+
+Submitted job 41 with external jobid 'Submitted batch job 3960764'.
+
+[Tue May 27 13:25:35 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P22_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P22_all_characteristics_add_EC.csv
+    jobid: 31
+    wildcards: sample=P22
+
+Submitted job 31 with external jobid 'Submitted batch job 3960765'.
+
+[Tue May 27 13:25:36 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P28_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P28_all_characteristics_add_EC.csv
+    jobid: 23
+    wildcards: sample=P28
+
+Submitted job 23 with external jobid 'Submitted batch job 3960766'.
+
+[Tue May 27 13:25:36 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2A_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2A_all_characteristics_add_EC.csv
+    jobid: 32
+    wildcards: sample=P2A
+
+Submitted job 32 with external jobid 'Submitted batch job 3960767'.
+
+[Tue May 27 13:25:36 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P017_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P017_all_characteristics_add_EC.csv
+    jobid: 44
+    wildcards: sample=P017
+
+Submitted job 44 with external jobid 'Submitted batch job 3960768'.
+
+[Tue May 27 13:25:36 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P20_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P20_all_characteristics_add_EC.csv
+    jobid: 22
+    wildcards: sample=P20
+
+Submitted job 22 with external jobid 'Submitted batch job 3960769'.
+
+[Tue May 27 13:25:36 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P138_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P138_all_characteristics_add_EC.csv
+    jobid: 53
+    wildcards: sample=P138
+
+Submitted job 53 with external jobid 'Submitted batch job 3960770'.
+
+[Tue May 27 13:25:36 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P001_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P001_all_characteristics_add_EC.csv
+    jobid: 1
+    wildcards: sample=P001
+
+Submitted job 1 with external jobid 'Submitted batch job 3960771'.
+
+[Tue May 27 13:25:36 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P41_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P41_all_characteristics_add_EC.csv
+    jobid: 25
+    wildcards: sample=P41
+
+Submitted job 25 with external jobid 'Submitted batch job 3960772'.
+
+[Tue May 27 13:25:36 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P113_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P113_all_characteristics_add_EC.csv
+    jobid: 29
+    wildcards: sample=P113
+
+Submitted job 29 with external jobid 'Submitted batch job 3960773'.
+
+[Tue May 27 13:25:36 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P37_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P37_all_characteristics_add_EC.csv
+    jobid: 33
+    wildcards: sample=P37
+
+Submitted job 33 with external jobid 'Submitted batch job 3960774'.
+
+[Tue May 27 13:25:37 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P164_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P164_all_characteristics_add_EC.csv
+    jobid: 21
+    wildcards: sample=P164
+
+Submitted job 21 with external jobid 'Submitted batch job 3960775'.
+
+[Tue May 27 13:25:37 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2B_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2B_all_characteristics_add_EC.csv
+    jobid: 40
+    wildcards: sample=P2B
+
+Submitted job 40 with external jobid 'Submitted batch job 3960776'.
+
+[Tue May 27 13:25:37 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P14_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P14_all_characteristics_add_EC.csv
+    jobid: 12
+    wildcards: sample=P14
+
+Submitted job 12 with external jobid 'Submitted batch job 3960777'.
+
+[Tue May 27 13:25:37 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P27_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P27_all_characteristics_add_EC.csv
+    jobid: 14
+    wildcards: sample=P27
+
+Submitted job 14 with external jobid 'Submitted batch job 3960778'.
+
+[Tue May 27 13:25:37 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P5_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P5_all_characteristics_add_EC.csv
+    jobid: 51
+    wildcards: sample=P5
+
+Submitted job 51 with external jobid 'Submitted batch job 3960779'.
+
+[Tue May 27 13:25:37 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P010_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P010_all_characteristics_add_EC.csv
+    jobid: 28
+    wildcards: sample=P010
+
+Submitted job 28 with external jobid 'Submitted batch job 3960780'.
+[Tue May 27 13:26:01 2025]
+Finished job 25.
+1 of 60 steps (2%) done
+[Tue May 27 13:26:01 2025]
+Finished job 29.
+2 of 60 steps (3%) done
+[Tue May 27 13:26:01 2025]
+Finished job 33.
+3 of 60 steps (5%) done
+[Tue May 27 13:26:01 2025]
+Finished job 21.
+4 of 60 steps (7%) done
+[Tue May 27 13:26:01 2025]
+Finished job 40.
+5 of 60 steps (8%) done
+[Tue May 27 13:26:01 2025]
+Finished job 12.
+6 of 60 steps (10%) done
+[Tue May 27 13:26:01 2025]
+Finished job 14.
+7 of 60 steps (12%) done
+[Tue May 27 13:26:01 2025]
+Finished job 51.
+8 of 60 steps (13%) done
+[Tue May 27 13:26:01 2025]
+Finished job 28.
+9 of 60 steps (15%) done
+[Tue May 27 13:26:11 2025]
+Finished job 18.
+10 of 60 steps (17%) done
+[Tue May 27 13:26:11 2025]
+Finished job 10.
+11 of 60 steps (18%) done
+[Tue May 27 13:26:11 2025]
+Finished job 50.
+12 of 60 steps (20%) done
+[Tue May 27 13:26:11 2025]
+Finished job 55.
+13 of 60 steps (22%) done
+[Tue May 27 13:26:11 2025]
+Finished job 17.
+14 of 60 steps (23%) done
+[Tue May 27 13:26:11 2025]
+Finished job 35.
+15 of 60 steps (25%) done
+[Tue May 27 13:26:11 2025]
+Finished job 27.
+16 of 60 steps (27%) done
+[Tue May 27 13:26:11 2025]
+Finished job 34.
+17 of 60 steps (28%) done
+[Tue May 27 13:26:11 2025]
+Finished job 37.
+18 of 60 steps (30%) done
+[Tue May 27 13:26:11 2025]
+Finished job 5.
+19 of 60 steps (32%) done
+[Tue May 27 13:26:12 2025]
+Finished job 8.
+20 of 60 steps (33%) done
+[Tue May 27 13:26:12 2025]
+Finished job 59.
+21 of 60 steps (35%) done
+[Tue May 27 13:26:12 2025]
+Finished job 26.
+22 of 60 steps (37%) done
+[Tue May 27 13:26:12 2025]
+Finished job 42.
+23 of 60 steps (38%) done
+[Tue May 27 13:26:12 2025]
+Finished job 56.
+24 of 60 steps (40%) done
+[Tue May 27 13:26:12 2025]
+Finished job 2.
+25 of 60 steps (42%) done
+[Tue May 27 13:26:12 2025]
+Finished job 15.
+26 of 60 steps (43%) done
+[Tue May 27 13:26:12 2025]
+Finished job 46.
+27 of 60 steps (45%) done
+[Tue May 27 13:26:12 2025]
+Finished job 36.
+28 of 60 steps (47%) done
+[Tue May 27 13:26:12 2025]
+Finished job 43.
+29 of 60 steps (48%) done
+[Tue May 27 13:26:13 2025]
+Finished job 16.
+30 of 60 steps (50%) done
+[Tue May 27 13:26:13 2025]
+Finished job 45.
+31 of 60 steps (52%) done
+[Tue May 27 13:26:13 2025]
+Finished job 47.
+32 of 60 steps (53%) done
+[Tue May 27 13:26:13 2025]
+Finished job 52.
+33 of 60 steps (55%) done
+[Tue May 27 13:26:13 2025]
+Finished job 9.
+34 of 60 steps (57%) done
+[Tue May 27 13:26:13 2025]
+Finished job 30.
+35 of 60 steps (58%) done
+[Tue May 27 13:26:13 2025]
+Finished job 57.
+36 of 60 steps (60%) done
+[Tue May 27 13:26:13 2025]
+Finished job 13.
+37 of 60 steps (62%) done
+[Tue May 27 13:26:13 2025]
+Finished job 49.
+38 of 60 steps (63%) done
+[Tue May 27 13:26:13 2025]
+Finished job 38.
+39 of 60 steps (65%) done
+[Tue May 27 13:26:14 2025]
+Finished job 11.
+40 of 60 steps (67%) done
+[Tue May 27 13:26:14 2025]
+Finished job 24.
+41 of 60 steps (68%) done
+[Tue May 27 13:26:14 2025]
+Finished job 39.
+42 of 60 steps (70%) done
+[Tue May 27 13:26:14 2025]
+Finished job 48.
+43 of 60 steps (72%) done
+[Tue May 27 13:26:14 2025]
+Finished job 19.
+44 of 60 steps (73%) done
+[Tue May 27 13:26:14 2025]
+Finished job 7.
+45 of 60 steps (75%) done
+[Tue May 27 13:26:14 2025]
+Finished job 20.
+46 of 60 steps (77%) done
+[Tue May 27 13:26:14 2025]
+Finished job 6.
+47 of 60 steps (78%) done
+[Tue May 27 13:26:14 2025]
+Finished job 3.
+48 of 60 steps (80%) done
+[Tue May 27 13:26:14 2025]
+Finished job 54.
+49 of 60 steps (82%) done
+[Tue May 27 13:26:15 2025]
+Finished job 58.
+50 of 60 steps (83%) done
+[Tue May 27 13:26:15 2025]
+Finished job 4.
+51 of 60 steps (85%) done
+[Tue May 27 13:26:15 2025]
+Finished job 41.
+52 of 60 steps (87%) done
+[Tue May 27 13:26:15 2025]
+Finished job 31.
+53 of 60 steps (88%) done
+[Tue May 27 13:26:15 2025]
+Finished job 23.
+54 of 60 steps (90%) done
+[Tue May 27 13:26:15 2025]
+Finished job 32.
+55 of 60 steps (92%) done
+[Tue May 27 13:26:15 2025]
+Finished job 44.
+56 of 60 steps (93%) done
+[Tue May 27 13:26:15 2025]
+Finished job 22.
+57 of 60 steps (95%) done
+[Tue May 27 13:26:15 2025]
+Finished job 53.
+58 of 60 steps (97%) done
+[Tue May 27 13:26:15 2025]
+Finished job 1.
+59 of 60 steps (98%) done
+
+[Tue May 27 13:26:15 2025]
+localrule all:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P001_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P055_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P13_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P18_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P26_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P34_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P3_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P54_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P7_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P002_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P062_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P14_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P19_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P27_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P35_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P40_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P55_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P8_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P004_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P083_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P164_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P20_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P28_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P36_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P41_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P57_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P9_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P010_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P113_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P169_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P22_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2A_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P37_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P47_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P58_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P015_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P11_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P17_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P23_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2B_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P38_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P48_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P59_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P017_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P133_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P182_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P24_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P30_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39A_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P49_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P5_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P050_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P138_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P183_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P25_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P33_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39B_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P4_all_characteristics_add_EC.csv, /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P6_all_characteristics_add_EC.csv
+    jobid: 0
+
+[Tue May 27 13:26:15 2025]
+Finished job 0.
+60 of 60 steps (100%) done
+Complete log: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/log/2025-05-27T132530.579148.snakemake.log

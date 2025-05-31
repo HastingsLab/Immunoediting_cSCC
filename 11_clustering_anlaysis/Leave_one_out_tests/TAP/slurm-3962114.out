@@ -1,0 +1,247 @@
+[1] "Data compiled successfully!"
+                  ID       CCF   gene expression min_binding    MT_9mer
+48216  chr7:38256362 0.5402635 TRGJP2    0.00000     46.6305 SSDWIKTFAK
+65383 chr9:128457217 0.8114358   ODF2   48.84514     39.2393 QPCRSWTVAV
+      max_stability      Cle   TAP netMHC_II_binding EC DAI Patient
+48216        1.0419 0.958973 0.264               Inf  0   1      P6
+65383        1.9968 0.619653 0.186               Inf  0   1     P20
+      Immunosuppression
+48216                No
+65383                No
+[1] 89807
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+[1] 0
+  expression min_binding max_stability        Cle         EC          DAI
+2 -1.2010653   1.7153987   -0.36026210 -2.5302356  1.4702249 -0.846618756
+3  0.6999027   1.0548406   -0.20589418 -0.5894937  1.0935491 -0.599502467
+4 -1.7121595   2.0203049   -1.40008578  0.7383295 -1.0371644 -0.489614537
+5 -1.0356402   0.7892984    0.06301941  0.8741721  1.2438796  1.025956984
+6  0.5656482  -0.5968652    0.32811543  0.8631400  1.2438796  0.896372738
+7  1.1231015   1.7457717   -0.64774140 -2.0217958  0.7244064  0.009864737
+[1] 89807
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+[1] 59
+[1] TRUE
+
+          high_Clonal       high_Sub-clonal            low_Clonal 
+                  139                   201                   144 
+       low_Sub-clonal     Suppressed_Clonal Suppressed_Sub-clonal 
+                  216                   207                   273 
+[1] "C1 cluster stats"
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 62, p-value = 0.5171
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 117, p-value = 0.1815
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 149, p-value = 0.9888
+alternative hypothesis: true location shift is not equal to 0
+
+pdf 
+  2 
+[1] "C2 cluster stats"
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 117, p-value = 0.05688
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 119, p-value = 0.154
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 160, p-value = 0.7898
+alternative hypothesis: true location shift is not equal to 0
+
+pdf 
+  2 
+[1] "C3 cluster stats"
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 70, p-value = 0.7819
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 54, p-value = 0.1815
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 68, p-value = 0.01787
+alternative hypothesis: true location shift is not equal to 0
+
+pdf 
+  2 
+[1] "C4 cluster stats"
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 79, p-value = 0.9265
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 119, p-value = 0.154
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 230, p-value = 0.02113
+alternative hypothesis: true location shift is not equal to 0
+
+pdf 
+  2 
+[1] "C5 cluster stats"
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 71, p-value = 0.8176
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 106, p-value = 0.3927
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 195, p-value = 0.2076
+alternative hypothesis: true location shift is not equal to 0
+
+pdf 
+  2 
+[1] "C6 cluster stats"
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 26, p-value = 0.015
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 39, p-value = 0.04317
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 113, p-value = 0.3029
+alternative hypothesis: true location shift is not equal to 0
+
+pdf 
+  2 
+[1] "C7 cluster stats"
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 68, p-value = 0.7119
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 76, p-value = 0.7019
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon signed rank exact test
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 177, p-value = 0.4559
+alternative hypothesis: true location shift is not equal to 0
+
+pdf 
+  2 
+[1] "C8 cluster stats"
+
+	Wilcoxon signed rank test with continuity correction
+
+data:  as.numeric(C_ich_c$value) and as.numeric(C_ich_sc$value)
+V = 0, p-value = NA
+alternative hypothesis: true location shift is not equal to 0
+
+Warning message:
+In wilcox.test.default(as.numeric(C_ich_c$value), as.numeric(C_ich_sc$value),  :
+  cannot compute exact p-value with zeroes
+
+	Wilcoxon signed rank test with continuity correction
+
+data:  as.numeric(C_icl_c$value) and as.numeric(C_icl_sc$value)
+V = 0, p-value = NA
+alternative hypothesis: true location shift is not equal to 0
+
+Warning message:
+In wilcox.test.default(as.numeric(C_icl_c$value), as.numeric(C_icl_sc$value),  :
+  cannot compute exact p-value with zeroes
+
+	Wilcoxon signed rank test with continuity correction
+
+data:  as.numeric(C_is_c$value) and as.numeric(C_is_sc$value)
+V = 0, p-value = NA
+alternative hypothesis: true location shift is not equal to 0
+
+Warning message:
+In wilcox.test.default(as.numeric(C_is_c$value), as.numeric(C_is_sc$value),  :
+  cannot compute exact p-value with zeroes
+pdf 
+  2 

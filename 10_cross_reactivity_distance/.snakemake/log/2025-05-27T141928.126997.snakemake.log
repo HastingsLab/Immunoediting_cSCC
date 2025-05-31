@@ -1,0 +1,1250 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cluster nodes: 70
+Job counts:
+	count	jobs
+	1	all
+	59	calculate_EC
+	60
+
+[Tue May 27 14:19:28 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P055_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P055_all_characteristics_add_EC.csv
+    jobid: 2
+    wildcards: sample=P055
+
+Submitted job 2 with external jobid 'Submitted batch job 3961427'.
+
+[Tue May 27 14:19:28 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P20_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P20_all_characteristics_add_EC.csv
+    jobid: 22
+    wildcards: sample=P20
+
+Submitted job 22 with external jobid 'Submitted batch job 3961428'.
+
+[Tue May 27 14:19:28 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P17_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P17_all_characteristics_add_EC.csv
+    jobid: 38
+    wildcards: sample=P17
+
+Submitted job 38 with external jobid 'Submitted batch job 3961429'.
+
+[Tue May 27 14:19:28 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P41_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P41_all_characteristics_add_EC.csv
+    jobid: 25
+    wildcards: sample=P41
+
+Submitted job 25 with external jobid 'Submitted batch job 3961430'.
+
+[Tue May 27 14:19:28 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P083_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P083_all_characteristics_add_EC.csv
+    jobid: 20
+    wildcards: sample=P083
+
+Submitted job 20 with external jobid 'Submitted batch job 3961431'.
+
+[Tue May 27 14:19:28 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P183_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P183_all_characteristics_add_EC.csv
+    jobid: 54
+    wildcards: sample=P183
+
+Submitted job 54 with external jobid 'Submitted batch job 3961432'.
+
+[Tue May 27 14:19:28 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P27_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P27_all_characteristics_add_EC.csv
+    jobid: 14
+    wildcards: sample=P27
+
+Submitted job 14 with external jobid 'Submitted batch job 3961433'.
+
+[Tue May 27 14:19:29 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P169_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P169_all_characteristics_add_EC.csv
+    jobid: 30
+    wildcards: sample=P169
+
+Submitted job 30 with external jobid 'Submitted batch job 3961434'.
+
+[Tue May 27 14:19:29 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P4_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P4_all_characteristics_add_EC.csv
+    jobid: 58
+    wildcards: sample=P4
+
+Submitted job 58 with external jobid 'Submitted batch job 3961435'.
+
+[Tue May 27 14:19:29 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P47_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P47_all_characteristics_add_EC.csv
+    jobid: 34
+    wildcards: sample=P47
+
+Submitted job 34 with external jobid 'Submitted batch job 3961436'.
+
+[Tue May 27 14:19:29 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P18_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P18_all_characteristics_add_EC.csv
+    jobid: 4
+    wildcards: sample=P18
+
+Submitted job 4 with external jobid 'Submitted batch job 3961437'.
+
+[Tue May 27 14:19:29 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P164_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P164_all_characteristics_add_EC.csv
+    jobid: 21
+    wildcards: sample=P164
+
+Submitted job 21 with external jobid 'Submitted batch job 3961438'.
+
+[Tue May 27 14:19:29 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P050_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P050_all_characteristics_add_EC.csv
+    jobid: 52
+    wildcards: sample=P050
+
+Submitted job 52 with external jobid 'Submitted batch job 3961439'.
+
+[Tue May 27 14:19:29 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P14_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P14_all_characteristics_add_EC.csv
+    jobid: 12
+    wildcards: sample=P14
+
+Submitted job 12 with external jobid 'Submitted batch job 3961440'.
+
+[Tue May 27 14:19:29 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P004_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P004_all_characteristics_add_EC.csv
+    jobid: 19
+    wildcards: sample=P004
+
+Submitted job 19 with external jobid 'Submitted batch job 3961441'.
+
+[Tue May 27 14:19:30 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P010_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P010_all_characteristics_add_EC.csv
+    jobid: 28
+    wildcards: sample=P010
+
+Submitted job 28 with external jobid 'Submitted batch job 3961442'.
+
+[Tue May 27 14:19:30 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P30_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P30_all_characteristics_add_EC.csv
+    jobid: 48
+    wildcards: sample=P30
+
+Submitted job 48 with external jobid 'Submitted batch job 3961443'.
+
+[Tue May 27 14:19:30 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P3_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P3_all_characteristics_add_EC.csv
+    jobid: 7
+    wildcards: sample=P3
+
+Submitted job 7 with external jobid 'Submitted batch job 3961444'.
+
+[Tue May 27 14:19:30 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P22_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P22_all_characteristics_add_EC.csv
+    jobid: 31
+    wildcards: sample=P22
+
+Submitted job 31 with external jobid 'Submitted batch job 3961445'.
+
+[Tue May 27 14:19:30 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P49_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P49_all_characteristics_add_EC.csv
+    jobid: 50
+    wildcards: sample=P49
+
+Submitted job 50 with external jobid 'Submitted batch job 3961446'.
+
+[Tue May 27 14:19:30 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P8_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P8_all_characteristics_add_EC.csv
+    jobid: 18
+    wildcards: sample=P8
+
+Submitted job 18 with external jobid 'Submitted batch job 3961447'.
+
+[Tue May 27 14:19:30 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P40_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P40_all_characteristics_add_EC.csv
+    jobid: 16
+    wildcards: sample=P40
+
+Submitted job 16 with external jobid 'Submitted batch job 3961448'.
+
+[Tue May 27 14:19:30 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P28_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P28_all_characteristics_add_EC.csv
+    jobid: 23
+    wildcards: sample=P28
+
+Submitted job 23 with external jobid 'Submitted batch job 3961449'.
+
+[Tue May 27 14:19:30 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2A_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2A_all_characteristics_add_EC.csv
+    jobid: 32
+    wildcards: sample=P2A
+
+Submitted job 32 with external jobid 'Submitted batch job 3961450'.
+
+[Tue May 27 14:19:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P002_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P002_all_characteristics_add_EC.csv
+    jobid: 10
+    wildcards: sample=P002
+
+Submitted job 10 with external jobid 'Submitted batch job 3961451'.
+
+[Tue May 27 14:19:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P133_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P133_all_characteristics_add_EC.csv
+    jobid: 45
+    wildcards: sample=P133
+
+Submitted job 45 with external jobid 'Submitted batch job 3961452'.
+
+[Tue May 27 14:19:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P11_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P11_all_characteristics_add_EC.csv
+    jobid: 37
+    wildcards: sample=P11
+
+Submitted job 37 with external jobid 'Submitted batch job 3961453'.
+
+[Tue May 27 14:19:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P55_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P55_all_characteristics_add_EC.csv
+    jobid: 17
+    wildcards: sample=P55
+
+Submitted job 17 with external jobid 'Submitted batch job 3961454'.
+
+[Tue May 27 14:19:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P59_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P59_all_characteristics_add_EC.csv
+    jobid: 43
+    wildcards: sample=P59
+
+Submitted job 43 with external jobid 'Submitted batch job 3961455'.
+
+[Tue May 27 14:19:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P34_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P34_all_characteristics_add_EC.csv
+    jobid: 6
+    wildcards: sample=P34
+
+Submitted job 6 with external jobid 'Submitted batch job 3961456'.
+
+[Tue May 27 14:19:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2B_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2B_all_characteristics_add_EC.csv
+    jobid: 40
+    wildcards: sample=P2B
+
+Submitted job 40 with external jobid 'Submitted batch job 3961457'.
+
+[Tue May 27 14:19:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P9_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P9_all_characteristics_add_EC.csv
+    jobid: 27
+    wildcards: sample=P9
+
+Submitted job 27 with external jobid 'Submitted batch job 3961458'.
+
+[Tue May 27 14:19:31 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P7_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P7_all_characteristics_add_EC.csv
+    jobid: 9
+    wildcards: sample=P7
+
+Submitted job 9 with external jobid 'Submitted batch job 3961459'.
+
+[Tue May 27 14:19:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P57_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P57_all_characteristics_add_EC.csv
+    jobid: 26
+    wildcards: sample=P57
+
+Submitted job 26 with external jobid 'Submitted batch job 3961460'.
+
+[Tue May 27 14:19:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P19_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P19_all_characteristics_add_EC.csv
+    jobid: 13
+    wildcards: sample=P19
+
+Submitted job 13 with external jobid 'Submitted batch job 3961461'.
+
+[Tue May 27 14:19:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P35_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P35_all_characteristics_add_EC.csv
+    jobid: 15
+    wildcards: sample=P35
+
+Submitted job 15 with external jobid 'Submitted batch job 3961462'.
+
+[Tue May 27 14:19:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P23_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P23_all_characteristics_add_EC.csv
+    jobid: 39
+    wildcards: sample=P23
+
+Submitted job 39 with external jobid 'Submitted batch job 3961463'.
+
+[Tue May 27 14:19:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P182_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P182_all_characteristics_add_EC.csv
+    jobid: 46
+    wildcards: sample=P182
+
+Submitted job 46 with external jobid 'Submitted batch job 3961464'.
+
+[Tue May 27 14:19:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39A_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39A_all_characteristics_add_EC.csv
+    jobid: 49
+    wildcards: sample=P39A
+
+Submitted job 49 with external jobid 'Submitted batch job 3961465'.
+
+[Tue May 27 14:19:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P24_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P24_all_characteristics_add_EC.csv
+    jobid: 47
+    wildcards: sample=P24
+
+Submitted job 47 with external jobid 'Submitted batch job 3961466'.
+
+[Tue May 27 14:19:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P5_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P5_all_characteristics_add_EC.csv
+    jobid: 51
+    wildcards: sample=P5
+
+Submitted job 51 with external jobid 'Submitted batch job 3961467'.
+
+[Tue May 27 14:19:32 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P36_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P36_all_characteristics_add_EC.csv
+    jobid: 24
+    wildcards: sample=P36
+
+Submitted job 24 with external jobid 'Submitted batch job 3961468'.
+
+[Tue May 27 14:19:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P48_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P48_all_characteristics_add_EC.csv
+    jobid: 42
+    wildcards: sample=P48
+
+Submitted job 42 with external jobid 'Submitted batch job 3961469'.
+
+[Tue May 27 14:19:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P6_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P6_all_characteristics_add_EC.csv
+    jobid: 59
+    wildcards: sample=P6
+
+Submitted job 59 with external jobid 'Submitted batch job 3961470'.
+
+[Tue May 27 14:19:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P062_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P062_all_characteristics_add_EC.csv
+    jobid: 11
+    wildcards: sample=P062
+
+Submitted job 11 with external jobid 'Submitted batch job 3961471'.
+
+[Tue May 27 14:19:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P015_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P015_all_characteristics_add_EC.csv
+    jobid: 36
+    wildcards: sample=P015
+
+Submitted job 36 with external jobid 'Submitted batch job 3961472'.
+
+[Tue May 27 14:19:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39B_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39B_all_characteristics_add_EC.csv
+    jobid: 57
+    wildcards: sample=P39B
+
+Submitted job 57 with external jobid 'Submitted batch job 3961473'.
+
+[Tue May 27 14:19:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P13_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P13_all_characteristics_add_EC.csv
+    jobid: 3
+    wildcards: sample=P13
+
+Submitted job 3 with external jobid 'Submitted batch job 3961474'.
+
+[Tue May 27 14:19:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P001_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P001_all_characteristics_add_EC.csv
+    jobid: 1
+    wildcards: sample=P001
+
+Submitted job 1 with external jobid 'Submitted batch job 3961475'.
+
+[Tue May 27 14:19:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P017_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P017_all_characteristics_add_EC.csv
+    jobid: 44
+    wildcards: sample=P017
+
+Submitted job 44 with external jobid 'Submitted batch job 3961476'.
+
+[Tue May 27 14:19:33 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P37_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P37_all_characteristics_add_EC.csv
+    jobid: 33
+    wildcards: sample=P37
+
+Submitted job 33 with external jobid 'Submitted batch job 3961477'.
+
+[Tue May 27 14:19:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P113_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P113_all_characteristics_add_EC.csv
+    jobid: 29
+    wildcards: sample=P113
+
+Submitted job 29 with external jobid 'Submitted batch job 3961478'.
+
+[Tue May 27 14:19:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P138_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P138_all_characteristics_add_EC.csv
+    jobid: 53
+    wildcards: sample=P138
+
+Submitted job 53 with external jobid 'Submitted batch job 3961479'.
+
+[Tue May 27 14:19:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P58_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P58_all_characteristics_add_EC.csv
+    jobid: 35
+    wildcards: sample=P58
+
+Submitted job 35 with external jobid 'Submitted batch job 3961480'.
+
+[Tue May 27 14:19:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P33_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P33_all_characteristics_add_EC.csv
+    jobid: 56
+    wildcards: sample=P33
+
+Submitted job 56 with external jobid 'Submitted batch job 3961481'.
+
+[Tue May 27 14:19:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P25_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P25_all_characteristics_add_EC.csv
+    jobid: 55
+    wildcards: sample=P25
+
+Submitted job 55 with external jobid 'Submitted batch job 3961482'.
+
+[Tue May 27 14:19:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P54_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P54_all_characteristics_add_EC.csv
+    jobid: 8
+    wildcards: sample=P54
+
+Submitted job 8 with external jobid 'Submitted batch job 3961483'.
+
+[Tue May 27 14:19:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P38_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P38_all_characteristics_add_EC.csv
+    jobid: 41
+    wildcards: sample=P38
+
+Submitted job 41 with external jobid 'Submitted batch job 3961484'.
+
+[Tue May 27 14:19:34 2025]
+rule calculate_EC:
+    input: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P26_peptides_kd_stab.txt
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P26_all_characteristics_add_EC.csv
+    jobid: 5
+    wildcards: sample=P26
+
+Submitted job 5 with external jobid 'Submitted batch job 3961485'.
+[Tue May 27 14:19:38 2025]
+Error in rule calculate_EC:
+    jobid: 2
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P055_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P055_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P055_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961427
+
+Error executing rule calculate_EC on cluster (jobid: 2, external: Submitted batch job 3961427, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:38 2025]
+Error in rule calculate_EC:
+    jobid: 22
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P20_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P20_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P20_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961428
+
+Error executing rule calculate_EC on cluster (jobid: 22, external: Submitted batch job 3961428, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.22.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:38 2025]
+Error in rule calculate_EC:
+    jobid: 38
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P17_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P17_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P17_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961429
+
+Error executing rule calculate_EC on cluster (jobid: 38, external: Submitted batch job 3961429, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.38.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:38 2025]
+Error in rule calculate_EC:
+    jobid: 25
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P41_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P41_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P41_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961430
+
+Error executing rule calculate_EC on cluster (jobid: 25, external: Submitted batch job 3961430, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.25.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:38 2025]
+Error in rule calculate_EC:
+    jobid: 20
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P083_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P083_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P083_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961431
+
+Error executing rule calculate_EC on cluster (jobid: 20, external: Submitted batch job 3961431, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.20.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:38 2025]
+Error in rule calculate_EC:
+    jobid: 54
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P183_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P183_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P183_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961432
+
+Error executing rule calculate_EC on cluster (jobid: 54, external: Submitted batch job 3961432, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.54.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:38 2025]
+Error in rule calculate_EC:
+    jobid: 14
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P27_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P27_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P27_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961433
+
+Error executing rule calculate_EC on cluster (jobid: 14, external: Submitted batch job 3961433, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.14.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:38 2025]
+Error in rule calculate_EC:
+    jobid: 30
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P169_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P169_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P169_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961434
+
+Error executing rule calculate_EC on cluster (jobid: 30, external: Submitted batch job 3961434, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.30.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:38 2025]
+Error in rule calculate_EC:
+    jobid: 58
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P4_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P4_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P4_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961435
+
+Error executing rule calculate_EC on cluster (jobid: 58, external: Submitted batch job 3961435, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.58.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:38 2025]
+Error in rule calculate_EC:
+    jobid: 34
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P47_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P47_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P47_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961436
+
+Error executing rule calculate_EC on cluster (jobid: 34, external: Submitted batch job 3961436, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.34.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:39 2025]
+Error in rule calculate_EC:
+    jobid: 21
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P164_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P164_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P164_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961438
+
+Error executing rule calculate_EC on cluster (jobid: 21, external: Submitted batch job 3961438, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.21.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:39 2025]
+Error in rule calculate_EC:
+    jobid: 52
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P050_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P050_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P050_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961439
+
+Error executing rule calculate_EC on cluster (jobid: 52, external: Submitted batch job 3961439, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.52.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:39 2025]
+Error in rule calculate_EC:
+    jobid: 12
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P14_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P14_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P14_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961440
+
+Error executing rule calculate_EC on cluster (jobid: 12, external: Submitted batch job 3961440, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.12.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:40 2025]
+Error in rule calculate_EC:
+    jobid: 37
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P11_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P11_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P11_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961453
+
+Error executing rule calculate_EC on cluster (jobid: 37, external: Submitted batch job 3961453, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.37.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:40 2025]
+Error in rule calculate_EC:
+    jobid: 17
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P55_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P55_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P55_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961454
+
+Error executing rule calculate_EC on cluster (jobid: 17, external: Submitted batch job 3961454, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.17.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:40 2025]
+Error in rule calculate_EC:
+    jobid: 43
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P59_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P59_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P59_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961455
+
+Error executing rule calculate_EC on cluster (jobid: 43, external: Submitted batch job 3961455, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.43.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:40 2025]
+Error in rule calculate_EC:
+    jobid: 6
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P34_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P34_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P34_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961456
+
+Error executing rule calculate_EC on cluster (jobid: 6, external: Submitted batch job 3961456, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.6.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:41 2025]
+Error in rule calculate_EC:
+    jobid: 40
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2B_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2B_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2B_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961457
+
+Error executing rule calculate_EC on cluster (jobid: 40, external: Submitted batch job 3961457, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.40.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:41 2025]
+Error in rule calculate_EC:
+    jobid: 27
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P9_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P9_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P9_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961458
+
+Error executing rule calculate_EC on cluster (jobid: 27, external: Submitted batch job 3961458, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.27.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:41 2025]
+Error in rule calculate_EC:
+    jobid: 9
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P7_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P7_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P7_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961459
+
+Error executing rule calculate_EC on cluster (jobid: 9, external: Submitted batch job 3961459, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.9.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:41 2025]
+Error in rule calculate_EC:
+    jobid: 26
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P57_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P57_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P57_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961460
+
+Error executing rule calculate_EC on cluster (jobid: 26, external: Submitted batch job 3961460, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.26.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:41 2025]
+Error in rule calculate_EC:
+    jobid: 13
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P19_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P19_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P19_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961461
+
+Error executing rule calculate_EC on cluster (jobid: 13, external: Submitted batch job 3961461, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.13.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:41 2025]
+Error in rule calculate_EC:
+    jobid: 15
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P35_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P35_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P35_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961462
+
+Error executing rule calculate_EC on cluster (jobid: 15, external: Submitted batch job 3961462, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.15.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:41 2025]
+Error in rule calculate_EC:
+    jobid: 39
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P23_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P23_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P23_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961463
+
+Error executing rule calculate_EC on cluster (jobid: 39, external: Submitted batch job 3961463, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.39.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:41 2025]
+Error in rule calculate_EC:
+    jobid: 46
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P182_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P182_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P182_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961464
+
+Error executing rule calculate_EC on cluster (jobid: 46, external: Submitted batch job 3961464, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.46.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:41 2025]
+Error in rule calculate_EC:
+    jobid: 49
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39A_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39A_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39A_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961465
+
+Error executing rule calculate_EC on cluster (jobid: 49, external: Submitted batch job 3961465, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.49.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:41 2025]
+Error in rule calculate_EC:
+    jobid: 47
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P24_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P24_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P24_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961466
+
+Error executing rule calculate_EC on cluster (jobid: 47, external: Submitted batch job 3961466, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.47.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:42 2025]
+Error in rule calculate_EC:
+    jobid: 51
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P5_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P5_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P5_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961467
+
+Error executing rule calculate_EC on cluster (jobid: 51, external: Submitted batch job 3961467, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.51.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:42 2025]
+Error in rule calculate_EC:
+    jobid: 24
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P36_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P36_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P36_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961468
+
+Error executing rule calculate_EC on cluster (jobid: 24, external: Submitted batch job 3961468, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.24.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:42 2025]
+Error in rule calculate_EC:
+    jobid: 42
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P48_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P48_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P48_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961469
+
+Error executing rule calculate_EC on cluster (jobid: 42, external: Submitted batch job 3961469, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.42.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:42 2025]
+Error in rule calculate_EC:
+    jobid: 59
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P6_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P6_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P6_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961470
+
+Error executing rule calculate_EC on cluster (jobid: 59, external: Submitted batch job 3961470, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.59.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:42 2025]
+Error in rule calculate_EC:
+    jobid: 11
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P062_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P062_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P062_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961471
+
+Error executing rule calculate_EC on cluster (jobid: 11, external: Submitted batch job 3961471, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.11.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:42 2025]
+Error in rule calculate_EC:
+    jobid: 36
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P015_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P015_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P015_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961472
+
+Error executing rule calculate_EC on cluster (jobid: 36, external: Submitted batch job 3961472, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.36.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:42 2025]
+Error in rule calculate_EC:
+    jobid: 57
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39B_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39B_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P39B_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961473
+
+Error executing rule calculate_EC on cluster (jobid: 57, external: Submitted batch job 3961473, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.57.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:42 2025]
+Error in rule calculate_EC:
+    jobid: 3
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P13_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P13_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P13_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961474
+
+Error executing rule calculate_EC on cluster (jobid: 3, external: Submitted batch job 3961474, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.3.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:42 2025]
+Error in rule calculate_EC:
+    jobid: 1
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P001_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P001_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P001_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961475
+
+Error executing rule calculate_EC on cluster (jobid: 1, external: Submitted batch job 3961475, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.1.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:42 2025]
+Error in rule calculate_EC:
+    jobid: 44
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P017_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P017_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P017_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961476
+
+Error executing rule calculate_EC on cluster (jobid: 44, external: Submitted batch job 3961476, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.44.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:43 2025]
+Error in rule calculate_EC:
+    jobid: 33
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P37_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P37_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P37_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961477
+
+Error executing rule calculate_EC on cluster (jobid: 33, external: Submitted batch job 3961477, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.33.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:43 2025]
+Error in rule calculate_EC:
+    jobid: 29
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P113_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P113_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P113_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961478
+
+Error executing rule calculate_EC on cluster (jobid: 29, external: Submitted batch job 3961478, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.29.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:43 2025]
+Error in rule calculate_EC:
+    jobid: 53
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P138_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P138_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P138_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961479
+
+Error executing rule calculate_EC on cluster (jobid: 53, external: Submitted batch job 3961479, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.53.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:43 2025]
+Error in rule calculate_EC:
+    jobid: 35
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P58_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P58_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P58_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961480
+
+Error executing rule calculate_EC on cluster (jobid: 35, external: Submitted batch job 3961480, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.35.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:43 2025]
+Error in rule calculate_EC:
+    jobid: 56
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P33_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P33_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P33_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961481
+
+Error executing rule calculate_EC on cluster (jobid: 56, external: Submitted batch job 3961481, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.56.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:43 2025]
+Error in rule calculate_EC:
+    jobid: 55
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P25_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P25_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P25_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961482
+
+Error executing rule calculate_EC on cluster (jobid: 55, external: Submitted batch job 3961482, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.55.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:43 2025]
+Error in rule calculate_EC:
+    jobid: 8
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P54_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P54_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P54_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961483
+
+Error executing rule calculate_EC on cluster (jobid: 8, external: Submitted batch job 3961483, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.8.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:43 2025]
+Error in rule calculate_EC:
+    jobid: 41
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P38_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P38_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P38_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961484
+
+Error executing rule calculate_EC on cluster (jobid: 41, external: Submitted batch job 3961484, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.41.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:43 2025]
+Error in rule calculate_EC:
+    jobid: 5
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P26_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P26_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P26_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961485
+
+Error executing rule calculate_EC on cluster (jobid: 5, external: Submitted batch job 3961485, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.5.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:53 2025]
+Error in rule calculate_EC:
+    jobid: 4
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P18_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P18_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P18_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961437
+
+Error executing rule calculate_EC on cluster (jobid: 4, external: Submitted batch job 3961437, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.4.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:53 2025]
+Error in rule calculate_EC:
+    jobid: 19
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P004_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P004_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P004_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961441
+
+Error executing rule calculate_EC on cluster (jobid: 19, external: Submitted batch job 3961441, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.19.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:53 2025]
+Error in rule calculate_EC:
+    jobid: 28
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P010_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P010_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P010_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961442
+
+Error executing rule calculate_EC on cluster (jobid: 28, external: Submitted batch job 3961442, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.28.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:53 2025]
+Error in rule calculate_EC:
+    jobid: 48
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P30_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P30_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P30_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961443
+
+Error executing rule calculate_EC on cluster (jobid: 48, external: Submitted batch job 3961443, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.48.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:53 2025]
+Error in rule calculate_EC:
+    jobid: 7
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P3_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P3_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P3_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961444
+
+Error executing rule calculate_EC on cluster (jobid: 7, external: Submitted batch job 3961444, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.7.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:53 2025]
+Error in rule calculate_EC:
+    jobid: 31
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P22_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P22_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P22_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961445
+
+Error executing rule calculate_EC on cluster (jobid: 31, external: Submitted batch job 3961445, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.31.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:53 2025]
+Error in rule calculate_EC:
+    jobid: 50
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P49_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P49_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P49_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961446
+
+Error executing rule calculate_EC on cluster (jobid: 50, external: Submitted batch job 3961446, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.50.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:53 2025]
+Error in rule calculate_EC:
+    jobid: 18
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P8_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P8_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P8_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961447
+
+Error executing rule calculate_EC on cluster (jobid: 18, external: Submitted batch job 3961447, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.18.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:53 2025]
+Error in rule calculate_EC:
+    jobid: 16
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P40_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P40_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P40_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961448
+
+Error executing rule calculate_EC on cluster (jobid: 16, external: Submitted batch job 3961448, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.16.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:53 2025]
+Error in rule calculate_EC:
+    jobid: 23
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P28_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P28_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P28_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961449
+
+Error executing rule calculate_EC on cluster (jobid: 23, external: Submitted batch job 3961449, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.23.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:54 2025]
+Error in rule calculate_EC:
+    jobid: 32
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2A_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2A_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P2A_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961450
+
+Error executing rule calculate_EC on cluster (jobid: 32, external: Submitted batch job 3961450, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.32.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:54 2025]
+Error in rule calculate_EC:
+    jobid: 10
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P002_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P002_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P002_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961451
+
+Error executing rule calculate_EC on cluster (jobid: 10, external: Submitted batch job 3961451, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.10.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue May 27 14:19:54 2025]
+Error in rule calculate_EC:
+    jobid: 45
+    output: /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P133_all_characteristics_add_EC.csv
+    shell:
+        
+                python /xdisk/khasting/knodele/programs/NeoantigenEditing/compute_EC.py --input /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P133_peptides_kd_stab.txt --output /xdisk/khasting/knodele/Mayo_data/Characteristics_tables/P133_all_characteristics_add_EC.csv
+                
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 3961452
+
+Error executing rule calculate_EC on cluster (jobid: 45, external: Submitted batch job 3961452, jobscript: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/tmp.3y5xpjt9/snakejob.calculate_EC.45.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/u1/knodele/Immunoediting_Human_cSCC/10_cross_reactivity_distance/.snakemake/log/2025-05-27T141928.126997.snakemake.log

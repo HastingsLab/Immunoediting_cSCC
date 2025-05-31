@@ -1,0 +1,2695 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job stats:
+job               count    min threads    max threads
+--------------  -------  -------------  -------------
+all                   1              1              1
+combine_fastqs       75              1              1
+extract_bams         75              1              1
+extract_fastqs       75              1              1
+merge_bams           75              1              1
+sort                 75              1              1
+total               376              1              1
+
+Select jobs to execute...
+
+[Mon Dec 16 13:53:55 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_339_T2b_B4_RNA.FCHMVH7BBXY_L6_ICTGCTTCC-GATAGATC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_339_T2b_B4_RNA.FCHMVH7BBXY_L6_ICTGCTTCC-GATAGATC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_339_T2b_B4_RNA.FCHMVH7BBXY_L6_ICTGCTTCC-GATAGATC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_339_T2b_B4_RNA.FCHMVH7BBXY_L6_ICTGCTTCC-GATAGATC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_339_T2b_B4_RNA.FCHMVH7BBXY_L6_ICTGCTTCC-GATAGATC_unmap_unmap.bam
+    jobid: 274
+    wildcards: sample=CSCC_339_T2b_B4_RNA.FCHMVH7BBXY_L6_ICTGCTTCC-GATAGATC
+    resources: tmpdir=/tmp
+
+Submitted job 274 with external jobid 'Submitted batch job 3563166'.
+
+[Mon Dec 16 13:53:55 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC_unmap_unmap.bam
+    jobid: 344
+    wildcards: sample=CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC
+    resources: tmpdir=/tmp
+
+Submitted job 344 with external jobid 'Submitted batch job 3563167'.
+
+[Mon Dec 16 13:53:55 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT_unmap_unmap.bam
+    jobid: 324
+    wildcards: sample=CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT
+    resources: tmpdir=/tmp
+
+Submitted job 324 with external jobid 'Submitted batch job 3563168'.
+
+[Mon Dec 16 13:53:55 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT_unmap_unmap.bam
+    jobid: 254
+    wildcards: sample=CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT
+    resources: tmpdir=/tmp
+
+Submitted job 254 with external jobid 'Submitted batch job 3563169'.
+
+[Mon Dec 16 13:53:56 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC_unmap_unmap.bam
+    jobid: 184
+    wildcards: sample=CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC
+    resources: tmpdir=/tmp
+
+Submitted job 184 with external jobid 'Submitted batch job 3563170'.
+
+[Mon Dec 16 13:53:56 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA_unmap_unmap.bam
+    jobid: 44
+    wildcards: sample=153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA
+    resources: tmpdir=/tmp
+
+Submitted job 44 with external jobid 'Submitted batch job 3563171'.
+
+[Mon Dec 16 13:53:56 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC_unmap_unmap.bam
+    jobid: 239
+    wildcards: sample=CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC
+    resources: tmpdir=/tmp
+
+Submitted job 239 with external jobid 'Submitted batch job 3563172'.
+
+[Mon Dec 16 13:53:56 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT_unmap_unmap.bam
+    jobid: 149
+    wildcards: sample=CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT
+    resources: tmpdir=/tmp
+
+Submitted job 149 with external jobid 'Submitted batch job 3563173'.
+
+[Mon Dec 16 13:53:56 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT_unmap_unmap.bam
+    jobid: 199
+    wildcards: sample=CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT
+    resources: tmpdir=/tmp
+
+Submitted job 199 with external jobid 'Submitted batch job 3563174'.
+
+[Mon Dec 16 13:53:56 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC_unmap_unmap.bam
+    jobid: 59
+    wildcards: sample=159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC
+    resources: tmpdir=/tmp
+
+Submitted job 59 with external jobid 'Submitted batch job 3563175'.
+
+[Mon Dec 16 13:53:56 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA_unmap_unmap.bam
+    jobid: 339
+    wildcards: sample=CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA
+    resources: tmpdir=/tmp
+
+Submitted job 339 with external jobid 'Submitted batch job 3563176'.
+
+[Mon Dec 16 13:53:56 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_unmap_unmap.bam
+    jobid: 269
+    wildcards: sample=CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG
+    resources: tmpdir=/tmp
+
+Submitted job 269 with external jobid 'Submitted batch job 3563177'.
+
+[Mon Dec 16 13:53:56 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG_unmap_unmap.bam
+    jobid: 129
+    wildcards: sample=CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG
+    resources: tmpdir=/tmp
+
+Submitted job 129 with external jobid 'Submitted batch job 3563178'.
+
+[Mon Dec 16 13:53:56 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT_unmap_unmap.bam
+    jobid: 24
+    wildcards: sample=097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT
+    resources: tmpdir=/tmp
+
+Submitted job 24 with external jobid 'Submitted batch job 3563179'.
+
+[Mon Dec 16 13:53:57 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG_unmap_unmap.bam
+    jobid: 304
+    wildcards: sample=CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG
+    resources: tmpdir=/tmp
+
+Submitted job 304 with external jobid 'Submitted batch job 3563180'.
+
+[Mon Dec 16 13:53:57 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG_unmap_unmap.bam
+    jobid: 94
+    wildcards: sample=201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG
+    resources: tmpdir=/tmp
+
+Submitted job 94 with external jobid 'Submitted batch job 3563181'.
+
+[Mon Dec 16 13:53:57 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_unmap_unmap.bam
+    jobid: 234
+    wildcards: sample=CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT
+    resources: tmpdir=/tmp
+
+Submitted job 234 with external jobid 'Submitted batch job 3563182'.
+
+[Mon Dec 16 13:53:57 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_unmap_unmap.bam
+    jobid: 164
+    wildcards: sample=CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG
+    resources: tmpdir=/tmp
+
+Submitted job 164 with external jobid 'Submitted batch job 3563183'.
+
+[Mon Dec 16 13:53:57 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_unmap_unmap.bam
+    jobid: 299
+    wildcards: sample=CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA
+    resources: tmpdir=/tmp
+
+Submitted job 299 with external jobid 'Submitted batch job 3563184'.
+
+[Mon Dec 16 13:53:57 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG_unmap_unmap.bam
+    jobid: 19
+    wildcards: sample=093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG
+    resources: tmpdir=/tmp
+
+Submitted job 19 with external jobid 'Submitted batch job 3563185'.
+
+[Mon Dec 16 13:53:57 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC_unmap_unmap.bam
+    jobid: 229
+    wildcards: sample=CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC
+    resources: tmpdir=/tmp
+
+Submitted job 229 with external jobid 'Submitted batch job 3563186'.
+
+[Mon Dec 16 13:53:57 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_unmap_unmap.bam
+    jobid: 369
+    wildcards: sample=CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC
+    resources: tmpdir=/tmp
+
+Submitted job 369 with external jobid 'Submitted batch job 3563187'.
+
+[Mon Dec 16 13:53:57 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC_unmap_unmap.bam
+    jobid: 159
+    wildcards: sample=CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC
+    resources: tmpdir=/tmp
+
+Submitted job 159 with external jobid 'Submitted batch job 3563188'.
+
+[Mon Dec 16 13:53:58 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_unmap_unmap.bam
+    jobid: 124
+    wildcards: sample=CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT
+    resources: tmpdir=/tmp
+
+Submitted job 124 with external jobid 'Submitted batch job 3563189'.
+
+[Mon Dec 16 13:53:58 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT_unmap_unmap.bam
+    jobid: 54
+    wildcards: sample=157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT
+    resources: tmpdir=/tmp
+
+Submitted job 54 with external jobid 'Submitted batch job 3563190'.
+
+[Mon Dec 16 13:53:58 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC_unmap_unmap.bam
+    jobid: 334
+    wildcards: sample=CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC
+    resources: tmpdir=/tmp
+
+Submitted job 334 with external jobid 'Submitted batch job 3563191'.
+
+[Mon Dec 16 13:53:58 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA_unmap_unmap.bam
+    jobid: 264
+    wildcards: sample=CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA
+    resources: tmpdir=/tmp
+
+Submitted job 264 with external jobid 'Submitted batch job 3563192'.
+
+[Mon Dec 16 13:53:58 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC_unmap_unmap.bam
+    jobid: 194
+    wildcards: sample=CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC
+    resources: tmpdir=/tmp
+
+Submitted job 194 with external jobid 'Submitted batch job 3563193'.
+
+[Mon Dec 16 13:53:58 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG_unmap_unmap.bam
+    jobid: 34
+    wildcards: sample=109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG
+    resources: tmpdir=/tmp
+
+Submitted job 34 with external jobid 'Submitted batch job 3563194'.
+
+[Mon Dec 16 13:53:58 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39C_RNA.FCHWLHCBBXX_L4_IGTGGCC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39C_RNA.FCHWLHCBBXX_L4_IGTGGCC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39C_RNA.FCHWLHCBBXX_L4_IGTGGCC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39C_RNA.FCHWLHCBBXX_L4_IGTGGCC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39C_RNA.FCHWLHCBBXX_L4_IGTGGCC_unmap_unmap.bam
+    jobid: 314
+    wildcards: sample=CSCC_39C_RNA.FCHWLHCBBXX_L4_IGTGGCC
+    resources: tmpdir=/tmp
+
+Submitted job 314 with external jobid 'Submitted batch job 3563195'.
+
+[Mon Dec 16 13:53:58 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA_unmap_unmap.bam
+    jobid: 104
+    wildcards: sample=205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA
+    resources: tmpdir=/tmp
+
+Submitted job 104 with external jobid 'Submitted batch job 3563196'.
+
+[Mon Dec 16 13:53:58 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_323_T2b_B4_RNA.FCHMVH7BBXY_L7_ITGCGAGAC-CATTGTTG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_323_T2b_B4_RNA.FCHMVH7BBXY_L7_ITGCGAGAC-CATTGTTG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_323_T2b_B4_RNA.FCHMVH7BBXY_L7_ITGCGAGAC-CATTGTTG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_323_T2b_B4_RNA.FCHMVH7BBXY_L7_ITGCGAGAC-CATTGTTG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_323_T2b_B4_RNA.FCHMVH7BBXY_L7_ITGCGAGAC-CATTGTTG_unmap_unmap.bam
+    jobid: 244
+    wildcards: sample=CSCC_323_T2b_B4_RNA.FCHMVH7BBXY_L7_ITGCGAGAC-CATTGTTG
+    resources: tmpdir=/tmp
+
+Submitted job 244 with external jobid 'Submitted batch job 3563197'.
+
+[Mon Dec 16 13:53:58 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_28C_RNA.FCHWLHCBBXX_L3_IATTCCT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_28C_RNA.FCHWLHCBBXX_L3_IATTCCT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_28C_RNA.FCHWLHCBBXX_L3_IATTCCT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_28C_RNA.FCHWLHCBBXX_L3_IATTCCT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_28C_RNA.FCHWLHCBBXX_L3_IATTCCT_unmap_unmap.bam
+    jobid: 174
+    wildcards: sample=CSCC_28C_RNA.FCHWLHCBBXX_L3_IATTCCT
+    resources: tmpdir=/tmp
+
+Submitted job 174 with external jobid 'Submitted batch job 3563198'.
+
+[Mon Dec 16 13:53:59 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA_unmap_unmap.bam
+    jobid: 139
+    wildcards: sample=CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA
+    resources: tmpdir=/tmp
+
+Submitted job 139 with external jobid 'Submitted batch job 3563199'.
+
+[Mon Dec 16 13:53:59 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_53C_RNA.FCHWLHCBBXX_L6_IGTGGCC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_53C_RNA.FCHWLHCBBXX_L6_IGTGGCC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_53C_RNA.FCHWLHCBBXX_L6_IGTGGCC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_53C_RNA.FCHWLHCBBXX_L6_IGTGGCC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_53C_RNA.FCHWLHCBBXX_L6_IGTGGCC_unmap_unmap.bam
+    jobid: 349
+    wildcards: sample=CSCC_53C_RNA.FCHWLHCBBXX_L6_IGTGGCC
+    resources: tmpdir=/tmp
+
+Submitted job 349 with external jobid 'Submitted batch job 3563200'.
+
+[Mon Dec 16 13:53:59 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG_unmap_unmap.bam
+    jobid: 69
+    wildcards: sample=165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG
+    resources: tmpdir=/tmp
+
+Submitted job 69 with external jobid 'Submitted batch job 3563201'.
+
+[Mon Dec 16 13:53:59 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC_unmap_unmap.bam
+    jobid: 209
+    wildcards: sample=CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC
+    resources: tmpdir=/tmp
+
+Submitted job 209 with external jobid 'Submitted batch job 3563202'.
+
+[Mon Dec 16 13:53:59 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG_unmap_unmap.bam
+    jobid: 279
+    wildcards: sample=CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG
+    resources: tmpdir=/tmp
+
+Submitted job 279 with external jobid 'Submitted batch job 3563203'.
+
+[Mon Dec 16 13:53:59 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC_unmap_unmap.bam
+    jobid: 259
+    wildcards: sample=CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC
+    resources: tmpdir=/tmp
+
+Submitted job 259 with external jobid 'Submitted batch job 3563204'.
+
+[Mon Dec 16 13:53:59 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_unmap_unmap.bam
+    jobid: 329
+    wildcards: sample=CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG
+    resources: tmpdir=/tmp
+
+Submitted job 329 with external jobid 'Submitted batch job 3563205'.
+
+[Mon Dec 16 13:53:59 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT_unmap_unmap.bam
+    jobid: 189
+    wildcards: sample=CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT
+    resources: tmpdir=/tmp
+
+Submitted job 189 with external jobid 'Submitted batch job 3563206'.
+
+[Mon Dec 16 13:53:59 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG_unmap_unmap.bam
+    jobid: 49
+    wildcards: sample=155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG
+    resources: tmpdir=/tmp
+
+Submitted job 49 with external jobid 'Submitted batch job 3563207'.
+
+[Mon Dec 16 13:54:00 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT_unmap_unmap.bam
+    jobid: 119
+    wildcards: sample=CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT
+    resources: tmpdir=/tmp
+
+Submitted job 119 with external jobid 'Submitted batch job 3563208'.
+
+[Mon Dec 16 13:54:00 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT_unmap_unmap.bam
+    jobid: 84
+    wildcards: sample=171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT
+    resources: tmpdir=/tmp
+
+Submitted job 84 with external jobid 'Submitted batch job 3563209'.
+
+[Mon Dec 16 13:54:00 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC_unmap_unmap.bam
+    jobid: 294
+    wildcards: sample=CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC
+    resources: tmpdir=/tmp
+
+Submitted job 294 with external jobid 'Submitted batch job 3563210'.
+
+[Mon Dec 16 13:54:00 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG_unmap_unmap.bam
+    jobid: 14
+    wildcards: sample=085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG
+    resources: tmpdir=/tmp
+
+Submitted job 14 with external jobid 'Submitted batch job 3563211'.
+
+[Mon Dec 16 13:54:00 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT_unmap_unmap.bam
+    jobid: 224
+    wildcards: sample=CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT
+    resources: tmpdir=/tmp
+
+Submitted job 224 with external jobid 'Submitted batch job 3563212'.
+
+[Mon Dec 16 13:54:00 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC_unmap_unmap.bam
+    jobid: 364
+    wildcards: sample=CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC
+    resources: tmpdir=/tmp
+
+Submitted job 364 with external jobid 'Submitted batch job 3563213'.
+
+[Mon Dec 16 13:54:00 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC_unmap_unmap.bam
+    jobid: 154
+    wildcards: sample=CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC
+    resources: tmpdir=/tmp
+
+Submitted job 154 with external jobid 'Submitted batch job 3563214'.
+
+[Mon Dec 16 13:54:00 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC_unmap_unmap.bam
+    jobid: 99
+    wildcards: sample=203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC
+    resources: tmpdir=/tmp
+
+Submitted job 99 with external jobid 'Submitted batch job 3563215'.
+[Mon Dec 16 13:56:37 2024]
+Finished job 329.
+1 of 376 steps (0.3%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:56:37 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC_unmap_unmap.bam
+    jobid: 64
+    wildcards: sample=163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC
+    resources: tmpdir=/tmp
+
+Submitted job 64 with external jobid 'Submitted batch job 3563216'.
+[Mon Dec 16 13:57:05 2024]
+Finished job 299.
+2 of 376 steps (1%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:57:05 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC_unmap_unmap.bam
+    jobid: 204
+    wildcards: sample=CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC
+    resources: tmpdir=/tmp
+
+Submitted job 204 with external jobid 'Submitted batch job 3563217'.
+[Mon Dec 16 13:57:08 2024]
+Finished job 224.
+3 of 376 steps (1%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:57:08 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_374_T2b_B4_RNA.FCHMVH7BBXY_L7_ITATCGCAC-CTTAGTGT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_374_T2b_B4_RNA.FCHMVH7BBXY_L7_ITATCGCAC-CTTAGTGT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_374_T2b_B4_RNA.FCHMVH7BBXY_L7_ITATCGCAC-CTTAGTGT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_374_T2b_B4_RNA.FCHMVH7BBXY_L7_ITATCGCAC-CTTAGTGT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_374_T2b_B4_RNA.FCHMVH7BBXY_L7_ITATCGCAC-CTTAGTGT_unmap_unmap.bam
+    jobid: 309
+    wildcards: sample=CSCC_374_T2b_B4_RNA.FCHMVH7BBXY_L7_ITATCGCAC-CTTAGTGT
+    resources: tmpdir=/tmp
+
+Submitted job 309 with external jobid 'Submitted batch job 3563218'.
+[Mon Dec 16 13:57:21 2024]
+Finished job 234.
+4 of 376 steps (1%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:57:21 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_unmapped.bam
+    jobid: 330
+    wildcards: sample=CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG
+    resources: tmpdir=/tmp
+
+Submitted job 330 with external jobid 'Submitted batch job 3563219'.
+[Mon Dec 16 13:57:38 2024]
+Finished job 84.
+5 of 376 steps (1%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:57:39 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_15_RNA.FCHWLHCBBXX_L2_ITTAGGC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_15_RNA.FCHWLHCBBXX_L2_ITTAGGC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_15_RNA.FCHWLHCBBXX_L2_ITTAGGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_15_RNA.FCHWLHCBBXX_L2_ITTAGGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_15_RNA.FCHWLHCBBXX_L2_ITTAGGC_unmap_unmap.bam
+    jobid: 134
+    wildcards: sample=CSCC_15_RNA.FCHWLHCBBXX_L2_ITTAGGC
+    resources: tmpdir=/tmp
+
+Submitted job 134 with external jobid 'Submitted batch job 3563220'.
+[Mon Dec 16 13:57:49 2024]
+Finished job 44.
+6 of 376 steps (2%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:57:50 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG_unmap_unmap.bam
+    jobid: 114
+    wildcards: sample=CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG
+    resources: tmpdir=/tmp
+
+Submitted job 114 with external jobid 'Submitted batch job 3563221'.
+[Mon Dec 16 13:57:52 2024]
+Finished job 174.
+7 of 376 steps (2%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:57:53 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_unmap_unmap.bam
+    jobid: 219
+    wildcards: sample=CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT
+    resources: tmpdir=/tmp
+
+Submitted job 219 with external jobid 'Submitted batch job 3563222'.
+[Mon Dec 16 13:58:04 2024]
+Finished job 330.
+8 of 376 steps (2%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:58:04 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_unmap_unmap.bam
+    jobid: 359
+    wildcards: sample=CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT
+    resources: tmpdir=/tmp
+
+Submitted job 359 with external jobid 'Submitted batch job 3563223'.
+[Mon Dec 16 13:58:07 2024]
+Finished job 369.
+9 of 376 steps (2%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:58:07 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT_unmap_unmap.bam
+    jobid: 9
+    wildcards: sample=073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT
+    resources: tmpdir=/tmp
+
+Submitted job 9 with external jobid 'Submitted batch job 3563224'.
+[Mon Dec 16 13:58:52 2024]
+Finished job 164.
+10 of 376 steps (3%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:58:52 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG_unmap_unmap.bam
+    jobid: 79
+    wildcards: sample=169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG
+    resources: tmpdir=/tmp
+
+Submitted job 79 with external jobid 'Submitted batch job 3563225'.
+[Mon Dec 16 13:59:06 2024]
+Finished job 129.
+11 of 376 steps (3%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:59:06 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA_unmapped.bam
+    jobid: 45
+    wildcards: sample=153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA
+    resources: tmpdir=/tmp
+
+Submitted job 45 with external jobid 'Submitted batch job 3563226'.
+[Mon Dec 16 13:59:07 2024]
+Finished job 124.
+12 of 376 steps (3%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:59:07 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG_unmap_unmap.bam
+    jobid: 374
+    wildcards: sample=CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG
+    resources: tmpdir=/tmp
+
+Submitted job 374 with external jobid 'Submitted batch job 3563227'.
+[Mon Dec 16 13:59:21 2024]
+Finished job 184.
+13 of 376 steps (3%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:59:21 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC_unmapped.bam
+    jobid: 185
+    wildcards: sample=CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC
+    resources: tmpdir=/tmp
+
+Submitted job 185 with external jobid 'Submitted batch job 3563228'.
+[Mon Dec 16 13:59:23 2024]
+Finished job 209.
+14 of 376 steps (4%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:59:23 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT_unmap_unmap.bam
+    jobid: 169
+    wildcards: sample=CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT
+    resources: tmpdir=/tmp
+
+Submitted job 169 with external jobid 'Submitted batch job 3563229'.
+[Mon Dec 16 13:59:54 2024]
+Finished job 119.
+15 of 376 steps (4%) done
+Select jobs to execute...
+
+[Mon Dec 16 13:59:54 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT_unmapped.bam
+    jobid: 120
+    wildcards: sample=CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT
+    resources: tmpdir=/tmp
+
+Submitted job 120 with external jobid 'Submitted batch job 3563230'.
+[Mon Dec 16 14:00:06 2024]
+Finished job 185.
+16 of 376 steps (4%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:00:06 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA_unmap_unmap.bam
+    jobid: 289
+    wildcards: sample=CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA
+    resources: tmpdir=/tmp
+
+Submitted job 289 with external jobid 'Submitted batch job 3563231'.
+[Mon Dec 16 14:00:09 2024]
+Finished job 244.
+17 of 376 steps (5%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:00:09 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_unmap_unmap.bam
+    jobid: 74
+    wildcards: sample=167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG
+    resources: tmpdir=/tmp
+
+Submitted job 74 with external jobid 'Submitted batch job 3563232'.
+[Mon Dec 16 14:00:10 2024]
+Finished job 279.
+18 of 376 steps (5%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:00:10 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG_unmap_unmap.bam
+    jobid: 144
+    wildcards: sample=CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG
+    resources: tmpdir=/tmp
+
+Submitted job 144 with external jobid 'Submitted batch job 3563233'.
+[Mon Dec 16 14:00:20 2024]
+Finished job 45.
+19 of 376 steps (5%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:00:20 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG_unmap_unmap.bam
+    jobid: 354
+    wildcards: sample=CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG
+    resources: tmpdir=/tmp
+
+Submitted job 354 with external jobid 'Submitted batch job 3563234'.
+[Mon Dec 16 14:00:22 2024]
+Finished job 269.
+20 of 376 steps (5%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:00:23 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_unmapped.bam
+    jobid: 270
+    wildcards: sample=CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG
+    resources: tmpdir=/tmp
+
+Submitted job 270 with external jobid 'Submitted batch job 3563235'.
+[Mon Dec 16 14:00:55 2024]
+Finished job 99.
+21 of 376 steps (6%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:00:55 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC_unmapped.bam
+    jobid: 100
+    wildcards: sample=203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC
+    resources: tmpdir=/tmp
+
+Submitted job 100 with external jobid 'Submitted batch job 3563236'.
+[Mon Dec 16 14:01:07 2024]
+Finished job 114.
+22 of 376 steps (6%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:01:07 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG_unmapped.bam
+    jobid: 115
+    wildcards: sample=CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG
+    resources: tmpdir=/tmp
+
+Submitted job 115 with external jobid 'Submitted batch job 3563237'.
+[Mon Dec 16 14:01:07 2024]
+Finished job 64.
+23 of 376 steps (6%) done
+[Mon Dec 16 14:01:07 2024]
+Finished job 239.
+24 of 376 steps (6%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:01:07 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC_unmap_unmap.bam
+    jobid: 179
+    wildcards: sample=CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC
+    resources: tmpdir=/tmp
+
+Submitted job 179 with external jobid 'Submitted batch job 3563238'.
+
+[Mon Dec 16 14:01:07 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_unmapped.bam
+    jobid: 370
+    wildcards: sample=CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC
+    resources: tmpdir=/tmp
+
+Submitted job 370 with external jobid 'Submitted batch job 3563239'.
+Select jobs to execute...
+[Mon Dec 16 14:01:08 2024]
+Finished job 199.
+25 of 376 steps (7%) done
+
+[Mon Dec 16 14:01:08 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC_unmapped.bam
+    jobid: 240
+    wildcards: sample=CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC
+    resources: tmpdir=/tmp
+
+Submitted job 240 with external jobid 'Submitted batch job 3563240'.
+[Mon Dec 16 14:01:08 2024]
+Finished job 59.
+26 of 376 steps (7%) done
+[Mon Dec 16 14:01:08 2024]
+Finished job 54.
+27 of 376 steps (7%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:01:08 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_unmapped.bam
+    jobid: 125
+    wildcards: sample=CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT
+    resources: tmpdir=/tmp
+
+Submitted job 125 with external jobid 'Submitted batch job 3563241'.
+
+[Mon Dec 16 14:01:08 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT_unmapped.bam
+    jobid: 85
+    wildcards: sample=171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT
+    resources: tmpdir=/tmp
+
+Submitted job 85 with external jobid 'Submitted batch job 3563242'.
+Select jobs to execute...
+[Mon Dec 16 14:01:10 2024]
+Finished job 294.
+28 of 376 steps (7%) done
+
+[Mon Dec 16 14:01:10 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC_unmapped.bam
+    jobid: 65
+    wildcards: sample=163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC
+    resources: tmpdir=/tmp
+
+Submitted job 65 with external jobid 'Submitted batch job 3563243'.
+[Mon Dec 16 14:01:10 2024]
+Finished job 134.
+29 of 376 steps (8%) done
+[Mon Dec 16 14:01:10 2024]
+Finished job 120.
+30 of 376 steps (8%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:01:10 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_unmapped.bam
+    jobid: 235
+    wildcards: sample=CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT
+    resources: tmpdir=/tmp
+
+Submitted job 235 with external jobid 'Submitted batch job 3563244'.
+
+[Mon Dec 16 14:01:11 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT_unmapped.bam
+    jobid: 55
+    wildcards: sample=157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT
+    resources: tmpdir=/tmp
+
+Submitted job 55 with external jobid 'Submitted batch job 3563245'.
+Select jobs to execute...
+[Mon Dec 16 14:01:23 2024]
+Finished job 19.
+31 of 376 steps (8%) done
+
+[Mon Dec 16 14:01:23 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_15_RNA.FCHWLHCBBXX_L2_ITTAGGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_15_RNA.FCHWLHCBBXX_L2_ITTAGGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_15_RNA.FCHWLHCBBXX_L2_ITTAGGC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_15_RNA.FCHWLHCBBXX_L2_ITTAGGC_unmapped.bam
+    jobid: 135
+    wildcards: sample=CSCC_15_RNA.FCHWLHCBBXX_L2_ITTAGGC
+    resources: tmpdir=/tmp
+
+Submitted job 135 with external jobid 'Submitted batch job 3563246'.
+[Mon Dec 16 14:01:24 2024]
+Finished job 139.
+32 of 376 steps (9%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:01:24 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT_unmapped.bam
+    jobid: 200
+    wildcards: sample=CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT
+    resources: tmpdir=/tmp
+
+Submitted job 200 with external jobid 'Submitted batch job 3563247'.
+[Mon Dec 16 14:01:24 2024]
+Finished job 349.
+33 of 376 steps (9%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:01:24 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC_unmapped.bam
+    jobid: 60
+    wildcards: sample=159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC
+    resources: tmpdir=/tmp
+
+Submitted job 60 with external jobid 'Submitted batch job 3563248'.
+[Mon Dec 16 14:01:37 2024]
+Finished job 270.
+34 of 376 steps (9%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:01:37 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_unmapped.sort.bam
+    jobid: 268
+    wildcards: sample=CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG
+    resources: tmpdir=/tmp
+
+Submitted job 268 with external jobid 'Submitted batch job 3563249'.
+[Mon Dec 16 14:01:40 2024]
+Finished job 49.
+35 of 376 steps (9%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:01:40 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG_unmapped.bam
+    jobid: 50
+    wildcards: sample=155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG
+    resources: tmpdir=/tmp
+
+Submitted job 50 with external jobid 'Submitted batch job 3563250'.
+[Mon Dec 16 14:01:40 2024]
+Finished job 14.
+36 of 376 steps (10%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:01:40 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA_unmap_unmap.bam
+    jobid: 284
+    wildcards: sample=CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA
+    resources: tmpdir=/tmp
+
+Submitted job 284 with external jobid 'Submitted batch job 3563251'.
+[Mon Dec 16 14:01:51 2024]
+Finished job 115.
+37 of 376 steps (10%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:01:51 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG_unmapped.bam
+    jobid: 130
+    wildcards: sample=CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG
+    resources: tmpdir=/tmp
+
+Submitted job 130 with external jobid 'Submitted batch job 3563252'.
+[Mon Dec 16 14:01:53 2024]
+Finished job 344.
+38 of 376 steps (10%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:01:53 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA_unmap_unmap.bam
+    jobid: 214
+    wildcards: sample=CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA
+    resources: tmpdir=/tmp
+
+Submitted job 214 with external jobid 'Submitted batch job 3563253'.
+[Mon Dec 16 14:01:55 2024]
+Finished job 235.
+39 of 376 steps (10%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:01:55 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC_unmapped.bam
+    jobid: 345
+    wildcards: sample=CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC
+    resources: tmpdir=/tmp
+
+Submitted job 345 with external jobid 'Submitted batch job 3563254'.
+[Mon Dec 16 14:02:06 2024]
+Finished job 135.
+40 of 376 steps (11%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:02:06 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG_unmap_unmap.bam
+    jobid: 4
+    wildcards: sample=072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG
+    resources: tmpdir=/tmp
+
+Submitted job 4 with external jobid 'Submitted batch job 3563255'.
+[Mon Dec 16 14:02:06 2024]
+Finished job 370.
+41 of 376 steps (11%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:02:06 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_unmapped.sort.bam
+    jobid: 368
+    wildcards: sample=CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC
+    resources: tmpdir=/tmp
+
+Submitted job 368 with external jobid 'Submitted batch job 3563256'.
+[Mon Dec 16 14:02:21 2024]
+Finished job 125.
+42 of 376 steps (11%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:02:21 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT_unmap_unmap.bam
+    jobid: 29
+    wildcards: sample=101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT
+    resources: tmpdir=/tmp
+
+Submitted job 29 with external jobid 'Submitted batch job 3563257'.
+[Mon Dec 16 14:02:23 2024]
+Finished job 219.
+43 of 376 steps (11%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:02:23 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_unmapped.sort.bam
+    jobid: 233
+    wildcards: sample=CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT
+    resources: tmpdir=/tmp
+
+Submitted job 233 with external jobid 'Submitted batch job 3563258'.
+[Mon Dec 16 14:02:23 2024]
+Finished job 24.
+44 of 376 steps (12%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:02:23 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_unmapped.bam
+    jobid: 220
+    wildcards: sample=CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT
+    resources: tmpdir=/tmp
+
+Submitted job 220 with external jobid 'Submitted batch job 3563259'.
+[Mon Dec 16 14:02:37 2024]
+Finished job 240.
+45 of 376 steps (12%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:02:37 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_unmapped.sort.bam
+    jobid: 123
+    wildcards: sample=CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT
+    resources: tmpdir=/tmp
+
+Submitted job 123 with external jobid 'Submitted batch job 3563260'.
+[Mon Dec 16 14:02:38 2024]
+Finished job 339.
+46 of 376 steps (12%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:02:38 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA_unmapped.bam
+    jobid: 340
+    wildcards: sample=CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA
+    resources: tmpdir=/tmp
+
+Submitted job 340 with external jobid 'Submitted batch job 3563261'.
+[Mon Dec 16 14:02:40 2024]
+Finished job 65.
+47 of 376 steps (12%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:02:40 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC_unmap_unmap.bam
+    jobid: 39
+    wildcards: sample=151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC
+    resources: tmpdir=/tmp
+
+Submitted job 39 with external jobid 'Submitted batch job 3563262'.
+[Mon Dec 16 14:03:21 2024]
+Finished job 220.
+48 of 376 steps (13%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:03:21 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_unmapped.sort.bam
+    jobid: 218
+    wildcards: sample=CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT
+    resources: tmpdir=/tmp
+
+Submitted job 218 with external jobid 'Submitted batch job 3563263'.
+[Mon Dec 16 14:03:21 2024]
+Finished job 130.
+49 of 376 steps (13%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:03:21 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG_unmapped.sort.bam
+    jobid: 128
+    wildcards: sample=CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG
+    resources: tmpdir=/tmp
+
+Submitted job 128 with external jobid 'Submitted batch job 3563264'.
+[Mon Dec 16 14:03:22 2024]
+Finished job 200.
+50 of 376 steps (13%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:03:22 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT_unmapped.sort.bam
+    jobid: 198
+    wildcards: sample=CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT
+    resources: tmpdir=/tmp
+
+Submitted job 198 with external jobid 'Submitted batch job 3563265'.
+[Mon Dec 16 14:03:22 2024]
+Finished job 85.
+51 of 376 steps (14%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:03:22 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_unmap_unmap.bam
+    jobid: 109
+    wildcards: sample=CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG
+    resources: tmpdir=/tmp
+
+Submitted job 109 with external jobid 'Submitted batch job 3563266'.
+[Mon Dec 16 14:03:24 2024]
+Finished job 34.
+52 of 376 steps (14%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:03:24 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_unmapped.bam
+    jobid: 165
+    wildcards: sample=CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG
+    resources: tmpdir=/tmp
+
+Submitted job 165 with external jobid 'Submitted batch job 3563267'.
+[Mon Dec 16 14:03:24 2024]
+Finished job 314.
+53 of 376 steps (14%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:03:24 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA_unmap_unmap.bam
+    jobid: 249
+    wildcards: sample=CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA
+    resources: tmpdir=/tmp
+
+Submitted job 249 with external jobid 'Submitted batch job 3563268'.
+[Mon Dec 16 14:03:25 2024]
+Finished job 100.
+54 of 376 steps (14%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:03:25 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT_unmapped.bam
+    jobid: 25
+    wildcards: sample=097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT
+    resources: tmpdir=/tmp
+
+Submitted job 25 with external jobid 'Submitted batch job 3563269'.
+[Mon Dec 16 14:03:38 2024]
+Finished job 204.
+55 of 376 steps (15%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:03:38 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC_unmap_unmap.bam
+    jobid: 319
+    wildcards: sample=CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC
+    resources: tmpdir=/tmp
+
+Submitted job 319 with external jobid 'Submitted batch job 3563270'.
+[Mon Dec 16 14:03:39 2024]
+Finished job 104.
+56 of 376 steps (15%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:03:39 2024]
+rule extract_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT_unmap_unmap.bam
+    jobid: 89
+    wildcards: sample=200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT
+    resources: tmpdir=/tmp
+
+Submitted job 89 with external jobid 'Submitted batch job 3563271'.
+[Mon Dec 16 14:03:40 2024]
+Finished job 345.
+57 of 376 steps (15%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:03:40 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC_unmapped.bam
+    jobid: 205
+    wildcards: sample=CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC
+    resources: tmpdir=/tmp
+
+Submitted job 205 with external jobid 'Submitted batch job 3563272'.
+[Mon Dec 16 14:03:52 2024]
+Finished job 60.
+58 of 376 steps (15%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:03:52 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC_unmapped.sort.bam
+    jobid: 58
+    wildcards: sample=159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC
+    resources: tmpdir=/tmp
+
+Submitted job 58 with external jobid 'Submitted batch job 3563273'.
+[Mon Dec 16 14:03:55 2024]
+Finished job 154.
+59 of 376 steps (16%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:03:55 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC_unmapped.bam
+    jobid: 155
+    wildcards: sample=CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC
+    resources: tmpdir=/tmp
+
+Submitted job 155 with external jobid 'Submitted batch job 3563274'.
+[Mon Dec 16 14:03:55 2024]
+Finished job 55.
+60 of 376 steps (16%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:03:55 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT_unmapped.sort.bam
+    jobid: 53
+    wildcards: sample=157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT
+    resources: tmpdir=/tmp
+
+Submitted job 53 with external jobid 'Submitted batch job 3563275'.
+[Mon Dec 16 14:04:08 2024]
+Finished job 324.
+61 of 376 steps (16%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:04:08 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT_unmapped.bam
+    jobid: 325
+    wildcards: sample=CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT
+    resources: tmpdir=/tmp
+
+Submitted job 325 with external jobid 'Submitted batch job 3563276'.
+[Mon Dec 16 14:04:22 2024]
+Finished job 340.
+62 of 376 steps (16%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:04:22 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA_unmapped.sort.bam
+    jobid: 338
+    wildcards: sample=CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA
+    resources: tmpdir=/tmp
+
+Submitted job 338 with external jobid 'Submitted batch job 3563277'.
+[Mon Dec 16 14:04:54 2024]
+Finished job 159.
+63 of 376 steps (17%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:04:54 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC_unmapped.sort.bam
+    jobid: 183
+    wildcards: sample=CSCC_301_T2b_B4_RNA.FCHMVH7BBXY_L6_IGTGTCGGA-GCTTGCGC
+    resources: tmpdir=/tmp
+
+Submitted job 183 with external jobid 'Submitted batch job 3563278'.
+[Mon Dec 16 14:04:55 2024]
+Finished job 364.
+64 of 376 steps (17%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:04:55 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA_unmapped.sort.bam
+    jobid: 43
+    wildcards: sample=153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA
+    resources: tmpdir=/tmp
+
+Submitted job 43 with external jobid 'Submitted batch job 3563279'.
+[Mon Dec 16 14:04:55 2024]
+Finished job 50.
+65 of 376 steps (17%) done
+[Mon Dec 16 14:04:55 2024]
+Finished job 205.
+66 of 376 steps (18%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:04:55 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC_unmapped.sort.bam
+    jobid: 203
+    wildcards: sample=CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC
+    resources: tmpdir=/tmp
+
+Submitted job 203 with external jobid 'Submitted batch job 3563280'.
+
+[Mon Dec 16 14:04:55 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG_unmapped.bam
+    jobid: 280
+    wildcards: sample=CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG
+    resources: tmpdir=/tmp
+
+Submitted job 280 with external jobid 'Submitted batch job 3563281'.
+Select jobs to execute...
+[Mon Dec 16 14:05:07 2024]
+Finished job 165.
+67 of 376 steps (18%) done
+
+[Mon Dec 16 14:05:07 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_unmapped.sort.bam
+    jobid: 163
+    wildcards: sample=CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG
+    resources: tmpdir=/tmp
+
+Submitted job 163 with external jobid 'Submitted batch job 3563282'.
+[Mon Dec 16 14:05:08 2024]
+Finished job 74.
+68 of 376 steps (18%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:05:08 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_unmapped.bam
+    jobid: 75
+    wildcards: sample=167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG
+    resources: tmpdir=/tmp
+
+Submitted job 75 with external jobid 'Submitted batch job 3563283'.
+[Mon Dec 16 14:05:38 2024]
+Finished job 274.
+69 of 376 steps (18%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:05:38 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_339_T2b_B4_RNA.FCHMVH7BBXY_L6_ICTGCTTCC-GATAGATC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_339_T2b_B4_RNA.FCHMVH7BBXY_L6_ICTGCTTCC-GATAGATC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_339_T2b_B4_RNA.FCHMVH7BBXY_L6_ICTGCTTCC-GATAGATC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_339_T2b_B4_RNA.FCHMVH7BBXY_L6_ICTGCTTCC-GATAGATC_unmapped.bam
+    jobid: 275
+    wildcards: sample=CSCC_339_T2b_B4_RNA.FCHMVH7BBXY_L6_ICTGCTTCC-GATAGATC
+    resources: tmpdir=/tmp
+
+Submitted job 275 with external jobid 'Submitted batch job 3563284'.
+[Mon Dec 16 14:05:40 2024]
+Finished job 155.
+70 of 376 steps (19%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:05:40 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG_unmapped.bam
+    jobid: 15
+    wildcards: sample=085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG
+    resources: tmpdir=/tmp
+
+Submitted job 15 with external jobid 'Submitted batch job 3563285'.
+[Mon Dec 16 14:05:51 2024]
+Finished job 325.
+71 of 376 steps (19%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:05:51 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT_unmapped.sort.bam
+    jobid: 323
+    wildcards: sample=CSCC_42C_RNA.FCHWLHCBBXX_L5_IACTGAT
+    resources: tmpdir=/tmp
+
+Submitted job 323 with external jobid 'Submitted batch job 3563286'.
+[Mon Dec 16 14:05:52 2024]
+Finished job 109.
+72 of 376 steps (19%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:05:52 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_unmapped.bam
+    jobid: 110
+    wildcards: sample=CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG
+    resources: tmpdir=/tmp
+
+Submitted job 110 with external jobid 'Submitted batch job 3563287'.
+[Mon Dec 16 14:06:09 2024]
+Finished job 94.
+73 of 376 steps (19%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:06:09 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG_unmapped.bam
+    jobid: 95
+    wildcards: sample=201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG
+    resources: tmpdir=/tmp
+
+Submitted job 95 with external jobid 'Submitted batch job 3563288'.
+[Mon Dec 16 14:06:10 2024]
+Finished job 280.
+74 of 376 steps (20%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:06:10 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG_unmapped.sort.bam
+    jobid: 278
+    wildcards: sample=CSCC_346_T3_B4_RNA.FCHMVH7BBXY_L8_IAGGTTATA-CAGTTCCG
+    resources: tmpdir=/tmp
+
+Submitted job 278 with external jobid 'Submitted batch job 3563289'.
+[Mon Dec 16 14:06:23 2024]
+Finished job 144.
+75 of 376 steps (20%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:06:23 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG_unmapped.bam
+    jobid: 145
+    wildcards: sample=CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG
+    resources: tmpdir=/tmp
+
+Submitted job 145 with external jobid 'Submitted batch job 3563290'.
+[Mon Dec 16 14:06:36 2024]
+Finished job 110.
+76 of 376 steps (20%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:06:36 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_unmapped.sort.bam
+    jobid: 108
+    wildcards: sample=CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG
+    resources: tmpdir=/tmp
+
+Submitted job 108 with external jobid 'Submitted batch job 3563291'.
+[Mon Dec 16 14:06:38 2024]
+Finished job 79.
+77 of 376 steps (20%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:06:38 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG_unmapped.bam
+    jobid: 80
+    wildcards: sample=169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG
+    resources: tmpdir=/tmp
+
+Submitted job 80 with external jobid 'Submitted batch job 3563292'.
+[Mon Dec 16 14:06:40 2024]
+Finished job 25.
+78 of 376 steps (21%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:06:40 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT_unmapped.sort.bam
+    jobid: 23
+    wildcards: sample=097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT
+    resources: tmpdir=/tmp
+
+Submitted job 23 with external jobid 'Submitted batch job 3563293'.
+[Mon Dec 16 14:06:51 2024]
+Finished job 75.
+79 of 376 steps (21%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:06:51 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_unmapped.sort.bam
+    jobid: 73
+    wildcards: sample=167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG
+    resources: tmpdir=/tmp
+
+Submitted job 73 with external jobid 'Submitted batch job 3563294'.
+[Mon Dec 16 14:06:54 2024]
+Finished job 149.
+80 of 376 steps (21%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:06:54 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT_unmapped.bam
+    jobid: 150
+    wildcards: sample=CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT
+    resources: tmpdir=/tmp
+
+Submitted job 150 with external jobid 'Submitted batch job 3563295'.
+[Mon Dec 16 14:07:23 2024]
+Finished job 169.
+81 of 376 steps (22%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:07:23 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT_unmapped.bam
+    jobid: 170
+    wildcards: sample=CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT
+    resources: tmpdir=/tmp
+
+Submitted job 170 with external jobid 'Submitted batch job 3563296'.
+[Mon Dec 16 14:07:25 2024]
+Finished job 189.
+82 of 376 steps (22%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:07:25 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT_unmapped.bam
+    jobid: 190
+    wildcards: sample=CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT
+    resources: tmpdir=/tmp
+
+Submitted job 190 with external jobid 'Submitted batch job 3563297'.
+[Mon Dec 16 14:07:25 2024]
+Finished job 39.
+83 of 376 steps (22%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:07:25 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC_unmapped.bam
+    jobid: 40
+    wildcards: sample=151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC
+    resources: tmpdir=/tmp
+
+Submitted job 40 with external jobid 'Submitted batch job 3563298'.
+[Mon Dec 16 14:07:36 2024]
+Finished job 145.
+84 of 376 steps (22%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:07:36 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG_unmapped.sort.bam
+    jobid: 143
+    wildcards: sample=CSCC_17_RNA.FCHWLHCBBXX_L2_IGATCAG
+    resources: tmpdir=/tmp
+
+Submitted job 143 with external jobid 'Submitted batch job 3563299'.
+[Mon Dec 16 14:07:36 2024]
+Finished job 275.
+85 of 376 steps (23%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:07:36 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_unmapped.bam
+    jobid: 300
+    wildcards: sample=CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA
+    resources: tmpdir=/tmp
+
+Submitted job 300 with external jobid 'Submitted batch job 3563300'.
+[Mon Dec 16 14:07:39 2024]
+Finished job 304.
+86 of 376 steps (23%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:07:39 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG_unmapped.bam
+    jobid: 305
+    wildcards: sample=CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG
+    resources: tmpdir=/tmp
+
+Submitted job 305 with external jobid 'Submitted batch job 3563301'.
+[Mon Dec 16 14:07:40 2024]
+Finished job 229.
+87 of 376 steps (23%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:07:40 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC_unmapped.bam
+    jobid: 230
+    wildcards: sample=CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC
+    resources: tmpdir=/tmp
+
+Submitted job 230 with external jobid 'Submitted batch job 3563302'.
+[Mon Dec 16 14:07:53 2024]
+Finished job 249.
+88 of 376 steps (23%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:07:53 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA_unmapped.bam
+    jobid: 250
+    wildcards: sample=CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA
+    resources: tmpdir=/tmp
+
+Submitted job 250 with external jobid 'Submitted batch job 3563303'.
+[Mon Dec 16 14:08:36 2024]
+Finished job 300.
+89 of 376 steps (24%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:08:36 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_unmapped.sort.bam
+    jobid: 298
+    wildcards: sample=CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA
+    resources: tmpdir=/tmp
+
+Submitted job 298 with external jobid 'Submitted batch job 3563304'.
+[Mon Dec 16 14:08:51 2024]
+Finished job 250.
+90 of 376 steps (24%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:08:51 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA_unmapped.sort.bam
+    jobid: 248
+    wildcards: sample=CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA
+    resources: tmpdir=/tmp
+
+Submitted job 248 with external jobid 'Submitted batch job 3563305'.
+[Mon Dec 16 14:08:53 2024]
+Finished job 179.
+91 of 376 steps (24%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:08:53 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC_unmapped.bam
+    jobid: 180
+    wildcards: sample=CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC
+    resources: tmpdir=/tmp
+
+Submitted job 180 with external jobid 'Submitted batch job 3563306'.
+[Mon Dec 16 14:08:54 2024]
+Finished job 354.
+92 of 376 steps (24%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:08:54 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG_unmapped.bam
+    jobid: 355
+    wildcards: sample=CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG
+    resources: tmpdir=/tmp
+
+Submitted job 355 with external jobid 'Submitted batch job 3563307'.
+[Mon Dec 16 14:08:55 2024]
+Finished job 15.
+93 of 376 steps (25%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:08:55 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC_unmapped.bam
+    jobid: 160
+    wildcards: sample=CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC
+    resources: tmpdir=/tmp
+
+Submitted job 160 with external jobid 'Submitted batch job 3563308'.
+[Mon Dec 16 14:09:06 2024]
+Finished job 170.
+94 of 376 steps (25%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:09:06 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG_unmapped.sort.bam
+    jobid: 48
+    wildcards: sample=155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG
+    resources: tmpdir=/tmp
+
+Submitted job 48 with external jobid 'Submitted batch job 3563309'.
+[Mon Dec 16 14:09:07 2024]
+Finished job 150.
+95 of 376 steps (25%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:09:07 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT_unmapped.sort.bam
+    jobid: 148
+    wildcards: sample=CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT
+    resources: tmpdir=/tmp
+
+Submitted job 148 with external jobid 'Submitted batch job 3563310'.
+[Mon Dec 16 14:09:08 2024]
+Finished job 214.
+96 of 376 steps (26%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:09:09 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA_unmapped.bam
+    jobid: 215
+    wildcards: sample=CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA
+    resources: tmpdir=/tmp
+
+Submitted job 215 with external jobid 'Submitted batch job 3563311'.
+[Mon Dec 16 14:09:10 2024]
+Finished job 40.
+97 of 376 steps (26%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:09:11 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC_unmapped.sort.bam
+    jobid: 38
+    wildcards: sample=151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC
+    resources: tmpdir=/tmp
+
+Submitted job 38 with external jobid 'Submitted batch job 3563312'.
+[Mon Dec 16 14:09:22 2024]
+Finished job 319.
+98 of 376 steps (26%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:09:22 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC_unmapped.bam
+    jobid: 320
+    wildcards: sample=CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC
+    resources: tmpdir=/tmp
+
+Submitted job 320 with external jobid 'Submitted batch job 3563313'.
+[Mon Dec 16 14:09:24 2024]
+Finished job 69.
+99 of 376 steps (26%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:09:24 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_unmapped.sort.bam
+    jobid: 328
+    wildcards: sample=CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG
+    resources: tmpdir=/tmp
+
+Submitted job 328 with external jobid 'Submitted batch job 3563314'.
+[Mon Dec 16 14:09:52 2024]
+Finished job 230.
+100 of 376 steps (27%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:09:52 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC_unmapped.sort.bam
+    jobid: 228
+    wildcards: sample=CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC
+    resources: tmpdir=/tmp
+
+Submitted job 228 with external jobid 'Submitted batch job 3563315'.
+[Mon Dec 16 14:09:55 2024]
+Finished job 190.
+101 of 376 steps (27%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:09:56 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT_unmapped.sort.bam
+    jobid: 118
+    wildcards: sample=CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT
+    resources: tmpdir=/tmp
+
+Submitted job 118 with external jobid 'Submitted batch job 3563316'.
+[Mon Dec 16 14:10:06 2024]
+Finished job 180.
+102 of 376 steps (27%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:10:07 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC_unmapped.sort.bam
+    jobid: 178
+    wildcards: sample=CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC
+    resources: tmpdir=/tmp
+
+Submitted job 178 with external jobid 'Submitted batch job 3563317'.
+[Mon Dec 16 14:10:08 2024]
+Finished job 305.
+103 of 376 steps (27%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:10:08 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG_unmapped.sort.bam
+    jobid: 303
+    wildcards: sample=CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG
+    resources: tmpdir=/tmp
+
+Submitted job 303 with external jobid 'Submitted batch job 3563318'.
+[Mon Dec 16 14:10:09 2024]
+Finished job 80.
+104 of 376 steps (28%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:10:09 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG_unmapped.sort.bam
+    jobid: 78
+    wildcards: sample=169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG
+    resources: tmpdir=/tmp
+
+Submitted job 78 with external jobid 'Submitted batch job 3563319'.
+[Mon Dec 16 14:10:13 2024]
+Finished job 374.
+105 of 376 steps (28%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:10:13 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG_unmapped.bam
+    jobid: 375
+    wildcards: sample=CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG
+    resources: tmpdir=/tmp
+
+Submitted job 375 with external jobid 'Submitted batch job 3563320'.
+[Mon Dec 16 14:10:13 2024]
+Finished job 359.
+106 of 376 steps (28%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:10:13 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_unmapped.bam
+    jobid: 360
+    wildcards: sample=CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT
+    resources: tmpdir=/tmp
+
+Submitted job 360 with external jobid 'Submitted batch job 3563321'.
+[Mon Dec 16 14:10:14 2024]
+Finished job 284.
+107 of 376 steps (28%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:10:14 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA_unmapped.bam
+    jobid: 285
+    wildcards: sample=CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA
+    resources: tmpdir=/tmp
+
+Submitted job 285 with external jobid 'Submitted batch job 3563322'.
+[Mon Dec 16 14:10:25 2024]
+Finished job 320.
+108 of 376 steps (29%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:10:25 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC_unmapped.sort.bam
+    jobid: 318
+    wildcards: sample=CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC
+    resources: tmpdir=/tmp
+
+Submitted job 318 with external jobid 'Submitted batch job 3563323'.
+[Mon Dec 16 14:10:26 2024]
+Finished job 215.
+109 of 376 steps (29%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:10:26 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA_unmapped.sort.bam
+    jobid: 213
+    wildcards: sample=CSCC_30C_RNA.FCHWLHCBBXX_L4_IACTTGA
+    resources: tmpdir=/tmp
+
+Submitted job 213 with external jobid 'Submitted batch job 3563324'.
+[Mon Dec 16 14:10:26 2024]
+Finished job 355.
+110 of 376 steps (29%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:10:26 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG_unmapped.sort.bam
+    jobid: 353
+    wildcards: sample=CSCC_5_RNA.FCHWLHCBBXX_L1_IGATCAG
+    resources: tmpdir=/tmp
+
+Submitted job 353 with external jobid 'Submitted batch job 3563325'.
+[Mon Dec 16 14:10:41 2024]
+Finished job 95.
+111 of 376 steps (30%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:10:41 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG_unmapped.sort.bam
+    jobid: 93
+    wildcards: sample=201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG
+    resources: tmpdir=/tmp
+
+Submitted job 93 with external jobid 'Submitted batch job 3563326'.
+[Mon Dec 16 14:10:59 2024]
+Finished job 160.
+112 of 376 steps (30%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:10:59 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC_unmapped.sort.bam
+    jobid: 158
+    wildcards: sample=CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC
+    resources: tmpdir=/tmp
+
+Submitted job 158 with external jobid 'Submitted batch job 3563327'.
+[Mon Dec 16 14:11:25 2024]
+Finished job 285.
+113 of 376 steps (30%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:11:25 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA_unmapped.sort.bam
+    jobid: 283
+    wildcards: sample=CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA
+    resources: tmpdir=/tmp
+
+Submitted job 283 with external jobid 'Submitted batch job 3563328'.
+[Mon Dec 16 14:11:28 2024]
+Finished job 194.
+114 of 376 steps (30%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:11:28 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG_unmapped.bam
+    jobid: 20
+    wildcards: sample=093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG
+    resources: tmpdir=/tmp
+
+Submitted job 20 with external jobid 'Submitted batch job 3563329'.
+[Mon Dec 16 14:11:29 2024]
+Finished job 259.
+115 of 376 steps (31%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:11:29 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC_unmapped.bam
+    jobid: 260
+    wildcards: sample=CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC
+    resources: tmpdir=/tmp
+
+Submitted job 260 with external jobid 'Submitted batch job 3563330'.
+[Mon Dec 16 14:11:40 2024]
+Finished job 375.
+116 of 376 steps (31%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:11:40 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG_unmapped.sort.bam
+    jobid: 373
+    wildcards: sample=CSCC_9_RNA.FCHWLHCBBXX_L1_IGTTTCG
+    resources: tmpdir=/tmp
+
+Submitted job 373 with external jobid 'Submitted batch job 3563331'.
+[Mon Dec 16 14:11:41 2024]
+Finished job 108.
+117 of 376 steps (31%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:11:41 2024]
+rule extract_fastqs:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_unmapped.sort.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_mapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_mapped.2.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_unmapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_unmapped.2.fastq
+    jobid: 107
+    wildcards: sample=CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG
+    resources: tmpdir=/tmp
+
+Submitted job 107 with external jobid 'Submitted batch job 3563332'.
+[Mon Dec 16 14:11:43 2024]
+Finished job 9.
+118 of 376 steps (31%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:11:43 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT_unmapped.bam
+    jobid: 10
+    wildcards: sample=073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT
+    resources: tmpdir=/tmp
+
+Submitted job 10 with external jobid 'Submitted batch job 3563333'.
+[Mon Dec 16 14:12:13 2024]
+Finished job 29.
+119 of 376 steps (32%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:12:13 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT_unmapped.bam
+    jobid: 30
+    wildcards: sample=101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT
+    resources: tmpdir=/tmp
+
+Submitted job 30 with external jobid 'Submitted batch job 3563334'.
+[Mon Dec 16 14:12:26 2024]
+Finished job 360.
+120 of 376 steps (32%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:12:26 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT_unmapped.sort.bam
+    jobid: 358
+    wildcards: sample=CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT
+    resources: tmpdir=/tmp
+
+Submitted job 358 with external jobid 'Submitted batch job 3563335'.
+[Mon Dec 16 14:12:27 2024]
+Finished job 89.
+121 of 376 steps (32%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:12:27 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT_unmapped.bam
+    jobid: 90
+    wildcards: sample=200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT
+    resources: tmpdir=/tmp
+
+Submitted job 90 with external jobid 'Submitted batch job 3563336'.
+[Mon Dec 16 14:12:29 2024]
+Finished job 309.
+122 of 376 steps (32%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:12:29 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_374_T2b_B4_RNA.FCHMVH7BBXY_L7_ITATCGCAC-CTTAGTGT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_374_T2b_B4_RNA.FCHMVH7BBXY_L7_ITATCGCAC-CTTAGTGT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_374_T2b_B4_RNA.FCHMVH7BBXY_L7_ITATCGCAC-CTTAGTGT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_374_T2b_B4_RNA.FCHMVH7BBXY_L7_ITATCGCAC-CTTAGTGT_unmapped.bam
+    jobid: 310
+    wildcards: sample=CSCC_374_T2b_B4_RNA.FCHMVH7BBXY_L7_ITATCGCAC-CTTAGTGT
+    resources: tmpdir=/tmp
+
+Submitted job 310 with external jobid 'Submitted batch job 3563337'.
+[Mon Dec 16 14:13:13 2024]
+Finished job 289.
+123 of 376 steps (33%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:13:13 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA_unmapped.bam
+    jobid: 290
+    wildcards: sample=CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA
+    resources: tmpdir=/tmp
+
+Submitted job 290 with external jobid 'Submitted batch job 3563338'.
+[Mon Dec 16 14:13:43 2024]
+Finished job 334.
+124 of 376 steps (33%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:13:43 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT_unmapped.sort.bam
+    jobid: 188
+    wildcards: sample=CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT
+    resources: tmpdir=/tmp
+
+Submitted job 188 with external jobid 'Submitted batch job 3563339'.
+[Mon Dec 16 14:13:55 2024]
+Finished job 20.
+125 of 376 steps (33%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:13:55 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG_unmapped.sort.bam
+    jobid: 18
+    wildcards: sample=093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG
+    resources: tmpdir=/tmp
+
+Submitted job 18 with external jobid 'Submitted batch job 3563340'.
+[Mon Dec 16 14:13:58 2024]
+Finished job 233.
+126 of 376 steps (34%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:13:58 2024]
+rule extract_fastqs:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_unmapped.sort.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_mapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_mapped.2.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_unmapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT_unmapped.2.fastq
+    jobid: 232
+    wildcards: sample=CSCC_321_T2a_B4_RNA.FCHMVH7BBXY_L6_IAGTACTCC-AACCTGTT
+    resources: tmpdir=/tmp
+
+Submitted job 232 with external jobid 'Submitted batch job 3563341'.
+[Mon Dec 16 14:13:59 2024]
+Finished job 260.
+127 of 376 steps (34%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:13:59 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC_unmapped.sort.bam
+    jobid: 258
+    wildcards: sample=CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC
+    resources: tmpdir=/tmp
+
+Submitted job 258 with external jobid 'Submitted batch job 3563342'.
+[Mon Dec 16 14:14:25 2024]
+Finished job 107.
+128 of 376 steps (34%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:14:25 2024]
+rule combine_fastqs:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_mapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_mapped.2.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_unmapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG_unmapped.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG.2.fastq
+    jobid: 106
+    wildcards: sample=CSCC_10C_RNA.FCHWLHCBBXX_L1_ICGTACG
+    resources: tmpdir=/tmp
+
+Submitted job 106 with external jobid 'Submitted batch job 3563343'.
+[Mon Dec 16 14:14:28 2024]
+Finished job 264.
+129 of 376 steps (34%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:14:28 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT_unmapped.sort.bam
+    jobid: 83
+    wildcards: sample=171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT
+    resources: tmpdir=/tmp
+
+Submitted job 83 with external jobid 'Submitted batch job 3563344'.
+[Mon Dec 16 14:14:59 2024]
+Finished job 310.
+130 of 376 steps (35%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:14:59 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA_unmapped.bam
+    jobid: 265
+    wildcards: sample=CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA
+    resources: tmpdir=/tmp
+
+Submitted job 265 with external jobid 'Submitted batch job 3563345'.
+[Mon Dec 16 14:15:10 2024]
+Finished job 106.
+131 of 376 steps (35%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:15:10 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG_unmapped.sort.bam
+    jobid: 13
+    wildcards: sample=085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG
+    resources: tmpdir=/tmp
+
+Submitted job 13 with external jobid 'Submitted batch job 3563346'.
+[Mon Dec 16 14:15:10 2024]
+Finished job 290.
+132 of 376 steps (35%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:15:10 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA_unmapped.sort.bam
+    jobid: 288
+    wildcards: sample=CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA
+    resources: tmpdir=/tmp
+
+Submitted job 288 with external jobid 'Submitted batch job 3563347'.
+[Mon Dec 16 14:15:40 2024]
+Finished job 90.
+133 of 376 steps (35%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:15:40 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT_unmapped.sort.bam
+    jobid: 88
+    wildcards: sample=200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT
+    resources: tmpdir=/tmp
+
+Submitted job 88 with external jobid 'Submitted batch job 3563355'.
+[Mon Dec 16 14:15:55 2024]
+Finished job 30.
+134 of 376 steps (36%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:15:55 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC_unmapped.bam
+    jobid: 335
+    wildcards: sample=CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC
+    resources: tmpdir=/tmp
+
+Submitted job 335 with external jobid 'Submitted batch job 3563420'.
+[Mon Dec 16 14:16:59 2024]
+Finished job 265.
+135 of 376 steps (36%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:16:59 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA_unmapped.sort.bam
+    jobid: 263
+    wildcards: sample=CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA
+    resources: tmpdir=/tmp
+
+Submitted job 263 with external jobid 'Submitted batch job 3563681'.
+[Mon Dec 16 14:17:41 2024]
+Finished job 10.
+136 of 376 steps (36%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:17:41 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT_unmapped.sort.bam
+    jobid: 8
+    wildcards: sample=073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT
+    resources: tmpdir=/tmp
+
+Submitted job 8 with external jobid 'Submitted batch job 3563849'.
+[Mon Dec 16 14:17:44 2024]
+Finished job 43.
+137 of 376 steps (36%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:17:44 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC_unmapped.bam
+    jobid: 195
+    wildcards: sample=CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC
+    resources: tmpdir=/tmp
+
+Submitted job 195 with external jobid 'Submitted batch job 3563861'.
+[Mon Dec 16 14:18:28 2024]
+Finished job 368.
+138 of 376 steps (37%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:18:28 2024]
+rule extract_fastqs:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_unmapped.sort.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_mapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_mapped.2.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_unmapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC_unmapped.2.fastq
+    jobid: 367
+    wildcards: sample=CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC
+    resources: tmpdir=/tmp
+
+Submitted job 367 with external jobid 'Submitted batch job 3563870'.
+[Mon Dec 16 14:18:42 2024]
+Finished job 328.
+139 of 376 steps (37%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:18:42 2024]
+rule extract_fastqs:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_unmapped.sort.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_mapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_mapped.2.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_unmapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_unmapped.2.fastq
+    jobid: 327
+    wildcards: sample=CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG
+    resources: tmpdir=/tmp
+
+Submitted job 327 with external jobid 'Submitted batch job 3563877'.
+[Mon Dec 16 14:18:42 2024]
+Finished job 298.
+140 of 376 steps (37%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:18:43 2024]
+rule extract_fastqs:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_unmapped.sort.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_mapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_mapped.2.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_unmapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA_unmapped.2.fastq
+    jobid: 297
+    wildcards: sample=CSCC_367_T2a_B4_RNA.FCHMVH7BBXY_L8_IGTATGTTC-AACAGGAA
+    resources: tmpdir=/tmp
+
+Submitted job 297 with external jobid 'Submitted batch job 3563878'.
+[Mon Dec 16 14:18:43 2024]
+Finished job 4.
+141 of 376 steps (38%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:18:43 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG_unmapped.bam
+    jobid: 5
+    wildcards: sample=072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG
+    resources: tmpdir=/tmp
+
+Submitted job 5 with external jobid 'Submitted batch job 3563879'.
+[Mon Dec 16 14:19:10 2024]
+Finished job 335.
+142 of 376 steps (38%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:19:10 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC_unmapped.sort.bam
+    jobid: 333
+    wildcards: sample=CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC
+    resources: tmpdir=/tmp
+
+Submitted job 333 with external jobid 'Submitted batch job 3563880'.
+[Mon Dec 16 14:19:13 2024]
+Finished job 254.
+143 of 376 steps (38%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:19:13 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT_unmapped.bam
+    jobid: 255
+    wildcards: sample=CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT
+    resources: tmpdir=/tmp
+
+Submitted job 255 with external jobid 'Submitted batch job 3563881'.
+[Mon Dec 16 14:19:56 2024]
+Finished job 232.
+144 of 376 steps (38%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:19:57 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC_unmapped.sort.bam
+    jobid: 343
+    wildcards: sample=CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC
+    resources: tmpdir=/tmp
+
+Submitted job 343 with external jobid 'Submitted batch job 3563882'.
+[Mon Dec 16 14:19:59 2024]
+Finished job 195.
+145 of 376 steps (39%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:19:59 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC_unmapped.sort.bam
+    jobid: 193
+    wildcards: sample=CSCC_303_T2a_B4_RNA.FCHMVH7BBXY_L8_ICCTTCACC-GACGCTCC
+    resources: tmpdir=/tmp
+
+Submitted job 193 with external jobid 'Submitted batch job 3563883'.
+[Mon Dec 16 14:20:42 2024]
+Finished job 73.
+146 of 376 steps (39%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:20:43 2024]
+rule extract_fastqs:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_unmapped.sort.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_mapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_mapped.2.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_unmapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG_unmapped.2.fastq
+    jobid: 72
+    wildcards: sample=167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG
+    resources: tmpdir=/tmp
+
+Submitted job 72 with external jobid 'Submitted batch job 3563884'.
+[Mon Dec 16 14:21:14 2024]
+Finished job 218.
+147 of 376 steps (39%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:21:14 2024]
+rule extract_fastqs:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_unmapped.sort.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_mapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_mapped.2.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_unmapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT_unmapped.2.fastq
+    jobid: 217
+    wildcards: sample=CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT
+    resources: tmpdir=/tmp
+
+Submitted job 217 with external jobid 'Submitted batch job 3563885'.
+[Mon Dec 16 14:21:29 2024]
+Finished job 123.
+148 of 376 steps (39%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:21:29 2024]
+rule extract_fastqs:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_unmapped.sort.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_mapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_mapped.2.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_unmapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT_unmapped.2.fastq
+    jobid: 122
+    wildcards: sample=CSCC_13_RNA.FCHWLHCBBXX_L2_IATTCCT
+    resources: tmpdir=/tmp
+
+Submitted job 122 with external jobid 'Submitted batch job 3563886'.
+[Mon Dec 16 14:21:56 2024]
+Finished job 255.
+149 of 376 steps (40%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:21:56 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT_unmapped.sort.bam
+    jobid: 253
+    wildcards: sample=CSCC_331_T1-C_B4_RNA.FCHMVH7BBXY_L5_IACAGGCGC-CTCTGCCT
+    resources: tmpdir=/tmp
+
+Submitted job 253 with external jobid 'Submitted batch job 3563887'.
+[Mon Dec 16 14:22:14 2024]
+Finished job 183.
+150 of 376 steps (40%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:22:14 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC_unmapped.sort.bam
+    jobid: 153
+    wildcards: sample=CSCC_19_RNA.FCHWLHCBBXX_L2_IGGCTAC
+    resources: tmpdir=/tmp
+
+Submitted job 153 with external jobid 'Submitted batch job 3563888'.
+[Mon Dec 16 14:23:14 2024]
+Finished job 163.
+151 of 376 steps (40%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:23:14 2024]
+rule extract_fastqs:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_unmapped.sort.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_mapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_mapped.2.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_unmapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG_unmapped.2.fastq
+    jobid: 162
+    wildcards: sample=CSCC_24_RNA.FCHWLHCBBXX_L3_IGTTTCG
+    resources: tmpdir=/tmp
+
+Submitted job 162 with external jobid 'Submitted batch job 3563890'.
+[Mon Dec 16 14:23:14 2024]
+Finished job 128.
+152 of 376 steps (40%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:23:14 2024]
+rule merge_bams:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC_unmap_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC_map_unmap.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC_unmap_unmap.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC_unmapped.bam
+    jobid: 365
+    wildcards: sample=CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC
+    resources: tmpdir=/tmp
+
+Submitted job 365 with external jobid 'Submitted batch job 3563891'.
+[Mon Dec 16 14:24:11 2024]
+Finished job 327.
+153 of 376 steps (41%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:24:11 2024]
+rule combine_fastqs:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_mapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_mapped.2.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_unmapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG_unmapped.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.2.fastq
+    jobid: 326
+    wildcards: sample=CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG
+    resources: tmpdir=/tmp
+
+Submitted job 326 with external jobid 'Submitted batch job 3563892'.
+[Mon Dec 16 14:24:12 2024]
+Finished job 5.
+154 of 376 steps (41%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:24:12 2024]
+rule sort:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG_map_map.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG_unmapped.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG_unmapped.sort.bam
+    jobid: 3
+    wildcards: sample=072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG
+    resources: tmpdir=/tmp
+
+Submitted job 3 with external jobid 'Submitted batch job 3563893'.
+[Mon Dec 16 14:24:14 2024]
+Finished job 268.
+155 of 376 steps (41%) done
+Select jobs to execute...
+
+[Mon Dec 16 14:24:14 2024]
+rule extract_fastqs:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_map_map.sort.bam, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_unmapped.sort.bam
+    output: /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_mapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_mapped.2.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_unmapped.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_primary_bams/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG_unmapped.2.fastq
+    jobid: 267
+    wildcards: sample=CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG
+    resources: tmpdir=/tmp
+
+Submitted job 267 with external jobid 'Submitted batch job 3563894'.
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 65 of /home/u1/knodele/Immunoediting_Human_cSCC/archive/05_detect_hpv_RNA/extract_fastqs.snakefile:
+Job Missing files after 5 seconds:
+/xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.1.fastq
+/xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.2.fastq
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 326 completed successfully, but some output files are missing. 326
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 65 of /home/u1/knodele/Immunoediting_Human_cSCC/archive/05_detect_hpv_RNA/extract_fastqs.snakefile:
+Job Missing files after 5 seconds:
+/xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.1.fastq
+/xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.2.fastq
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.
+Job id: 326 completed successfully, but some output files are missing. 326

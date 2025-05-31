@@ -1,0 +1,933 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+all                        1              1              1
+salmon_quant_paired       70              1              1
+total                     71              1              1
+
+Select jobs to execute...
+
+[Fri Dec 20 14:22:23 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_302_T2a_B4_RNA.FCHMVH7BBXY_L6_ITTCCTGTT-AGTATCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_302_T2a_B4_salmon_gencode_quant/quant.sf
+    jobid: 17
+    wildcards: sample=s_CSCC_302_T2a_B4
+    resources: tmpdir=/tmp
+
+Submitted job 17 with external jobid 'Submitted batch job 3210231'.
+
+[Fri Dec 20 14:22:23 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/093-T2a_B2_RNA.FCHFHK5BBXY_L1_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_093.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 52
+    wildcards: sample=s_093.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 52 with external jobid 'Submitted batch job 3210232'.
+
+[Fri Dec 20 14:22:23 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_23_RNA.FCHWLHCBBXX_L3_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_23_salmon_gencode_quant/quant.sf
+    jobid: 10
+    wildcards: sample=s_CSCC_23
+    resources: tmpdir=/tmp
+
+Submitted job 10 with external jobid 'Submitted batch job 3210233'.
+
+[Fri Dec 20 14:22:23 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_306_T2a_B4_RNA.FCHMVH7BBXY_L7_IATTGTGAA-TGCATTGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_306_T2a_B4_salmon_gencode_quant/quant.sf
+    jobid: 24
+    wildcards: sample=s_CSCC_306_T2a_B4
+    resources: tmpdir=/tmp
+
+Submitted job 24 with external jobid 'Submitted batch job 3210234'.
+
+[Fri Dec 20 14:22:23 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/165-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTTTCG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_165.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 38
+    wildcards: sample=s_165.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 38 with external jobid 'Submitted batch job 3210235'.
+
+[Fri Dec 20 14:22:23 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-113_T2b.FC22VM72LT3_L8_R1_ICTCTCGTC-TATAACCT.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-113_T2b.FC22VM72LT3_L8_R2_ICTCTCGTC-TATAACCT.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-113_T2b_salmon_gencode_quant/quant.sf
+    jobid: 66
+    wildcards: sample=CSCC_NPT-113_T2b
+    resources: tmpdir=/tmp
+
+Submitted job 66 with external jobid 'Submitted batch job 3210236'.
+
+[Fri Dec 20 14:22:23 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/205-T2b_B2_RNA.FCHFHK5BBXY_L3_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_205.T2b_B2_salmon_gencode_quant/quant.sf
+    jobid: 45
+    wildcards: sample=s_205.T2b_B2
+    resources: tmpdir=/tmp
+
+Submitted job 45 with external jobid 'Submitted batch job 3210237'.
+
+[Fri Dec 20 14:22:23 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_8_RNA.FCHWLHCBBXX_L1_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_8_salmon_gencode_quant/quant.sf
+    jobid: 4
+    wildcards: sample=s_CSCC_8
+    resources: tmpdir=/tmp
+
+Submitted job 4 with external jobid 'Submitted batch job 3210238'.
+
+[Fri Dec 20 14:22:24 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/097-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_097.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 18
+    wildcards: sample=s_097.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 18 with external jobid 'Submitted batch job 3210239'.
+
+[Fri Dec 20 14:22:24 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_326_T3_B4_RNA.FCHMVH7BBXY_L6_ICATAGAGT-TGCCACCA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_326_T3_B4_salmon_gencode_quant/quant.sf
+    jobid: 32
+    wildcards: sample=s_CSCC_326_T3_B4
+    resources: tmpdir=/tmp
+
+Submitted job 32 with external jobid 'Submitted batch job 3210240'.
+
+[Fri Dec 20 14:22:24 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/073-T2a_B2_RNA.FCHFHK5BBXY_L3_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_073.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 46
+    wildcards: sample=s_073.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 46 with external jobid 'Submitted batch job 3210241'.
+
+[Fri Dec 20 14:22:24 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-004-2_T2a.FC22VM72LT3_L8_R1_IAAGTCCAA-TATGAGTA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-004-2_T2a.FC22VM72LT3_L8_R2_IAAGTCCAA-TATGAGTA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-004-2_T2a_salmon_gencode_quant/quant.sf
+    jobid: 60
+    wildcards: sample=CSCC_NPT-004-2_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 60 with external jobid 'Submitted batch job 3210242'.
+
+[Fri Dec 20 14:22:24 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_27_RNA.FCHWLHCBBXX_L3_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_27_salmon_gencode_quant/quant.sf
+    jobid: 11
+    wildcards: sample=s_CSCC_27
+    resources: tmpdir=/tmp
+
+Submitted job 11 with external jobid 'Submitted batch job 3210243'.
+
+[Fri Dec 20 14:22:24 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/151-T2a_B2_RNA.FCHFHK5BBXY_L1_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_151.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 25
+    wildcards: sample=s_151.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 25 with external jobid 'Submitted batch job 3210244'.
+
+[Fri Dec 20 14:22:24 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/167-T2a_B2_RNA.FCHFHK5BBXY_L2_ICGTACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_167.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 39
+    wildcards: sample=s_167.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 39 with external jobid 'Submitted batch job 3210245'.
+
+[Fri Dec 20 14:22:24 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_316_T2b_B4_RNA.FCHMVH7BBXY_L8_ICAATTAAC-CGAGATAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_316_T2b_B4_salmon_gencode_quant/quant.sf
+    jobid: 53
+    wildcards: sample=s_CSCC_316_T2b_B4
+    resources: tmpdir=/tmp
+
+Submitted job 53 with external jobid 'Submitted batch job 3210246'.
+
+[Fri Dec 20 14:22:24 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-133_T2b.FC22VM72LT3_L8_R1_ICCAAGTCT-AAGGATGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-133_T2b.FC22VM72LT3_L8_R2_ICCAAGTCT-AAGGATGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-133_T2b_salmon_gencode_quant/quant.sf
+    jobid: 67
+    wildcards: sample=CSCC_NPT-133_T2b
+    resources: tmpdir=/tmp
+
+Submitted job 67 with external jobid 'Submitted batch job 3210247'.
+
+[Fri Dec 20 14:22:24 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_310_T2a_B4_RNA.FCHMVH7BBXY_L7_IGTCTACAC-GCCAAGGT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_310_T2a_B4_salmon_gencode_quant/quant.sf
+    jobid: 19
+    wildcards: sample=s_CSCC_310_T2a_B4
+    resources: tmpdir=/tmp
+
+Submitted job 19 with external jobid 'Submitted batch job 3210248'.
+
+[Fri Dec 20 14:22:24 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_10T_RNA.FCHWLHCBBXX_L1_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_10T_salmon_gencode_quant/quant.sf
+    jobid: 5
+    wildcards: sample=s_CSCC_10T
+    resources: tmpdir=/tmp
+
+Submitted job 5 with external jobid 'Submitted batch job 3210249'.
+
+[Fri Dec 20 14:22:25 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/159-T2a_B2_RNA.FCHFHK5BBXY_L2_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_159.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 33
+    wildcards: sample=s_159.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 33 with external jobid 'Submitted batch job 3210250'.
+
+[Fri Dec 20 14:22:25 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/072-T2b_B2_RNA.FCHFHK5BBXY_L3_IGATCAG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_072.T2b_B2_salmon_gencode_quant/quant.sf
+    jobid: 47
+    wildcards: sample=s_072.T2b_B2
+    resources: tmpdir=/tmp
+
+Submitted job 47 with external jobid 'Submitted batch job 3210251'.
+
+[Fri Dec 20 14:22:25 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-010-2_T3.FC22VM72LT3_L8_R1_IGCTTGTCA-GAACATAC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-010-2_T3.FC22VM72LT3_L8_R2_IGCTTGTCA-GAACATAC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-010-2_T3_salmon_gencode_quant/quant.sf
+    jobid: 61
+    wildcards: sample=CSCC_NPT-010-2_T3
+    resources: tmpdir=/tmp
+
+Submitted job 61 with external jobid 'Submitted batch job 3210252'.
+
+[Fri Dec 20 14:22:25 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_29_RNA.FCHWLHCBBXX_L3_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_29_salmon_gencode_quant/quant.sf
+    jobid: 12
+    wildcards: sample=s_CSCC_29
+    resources: tmpdir=/tmp
+
+Submitted job 12 with external jobid 'Submitted batch job 3210253'.
+
+[Fri Dec 20 14:22:25 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_304_T2b_B4_RNA.FCHMVH7BBXY_L8_IGCCACAGG-CATGCCAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_304_T2b_B4_salmon_gencode_quant/quant.sf
+    jobid: 26
+    wildcards: sample=s_CSCC_304_T2b_B4
+    resources: tmpdir=/tmp
+
+Submitted job 26 with external jobid 'Submitted batch job 3210254'.
+
+[Fri Dec 20 14:22:25 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/169-T2a_B2_RNA.FCHFHK5BBXY_L2_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_169.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 40
+    wildcards: sample=s_169.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 40 with external jobid 'Submitted batch job 3210255'.
+
+[Fri Dec 20 14:22:25 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-062_T2a.FC22VM72LT3_L8_R1_IGACCTGAA-TTGGTGAG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-062_T2a.FC22VM72LT3_L8_R2_IGACCTGAA-TTGGTGAG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-062_T2a_salmon_gencode_quant/quant.sf
+    jobid: 54
+    wildcards: sample=CSCC_NPT-062_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 54 with external jobid 'Submitted batch job 3210256'.
+
+[Fri Dec 20 14:22:25 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-138_T2a.FC22VM72LT3_L8_R1_ITTGGACTC-GGAAGCAG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-138_T2a.FC22VM72LT3_L8_R2_ITTGGACTC-GGAAGCAG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-138_T2a_salmon_gencode_quant/quant.sf
+    jobid: 68
+    wildcards: sample=CSCC_NPT-138_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 68 with external jobid 'Submitted batch job 3210257'.
+
+[Fri Dec 20 14:22:25 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_12_RNA.FCHWLHCBBXX_L2_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_12_salmon_gencode_quant/quant.sf
+    jobid: 6
+    wildcards: sample=s_CSCC_12
+    resources: tmpdir=/tmp
+
+Submitted job 6 with external jobid 'Submitted batch job 3210258'.
+
+[Fri Dec 20 14:22:25 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/101-T2a_B2_RNA.FCHFHK5BBXY_L1_IATTCCT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_101.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 20
+    wildcards: sample=s_101.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 20 with external jobid 'Submitted batch job 3210259'.
+
+[Fri Dec 20 14:22:25 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_331_T1-T_B4_RNA.FCHMVH7BBXY_L5_IGTGAATAT-TCTCATTC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_331_T1.T_B4_salmon_gencode_quant/quant.sf
+    jobid: 34
+    wildcards: sample=s_CSCC_331_T1.T_B4
+    resources: tmpdir=/tmp
+
+Submitted job 34 with external jobid 'Submitted batch job 3210260'.
+
+[Fri Dec 20 14:22:26 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_373_T2b_B4_RNA.FCHMVH7BBXY_L7_ITCTGTTGG-TCGAATGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_373_T2b_B4_salmon_gencode_quant/quant.sf
+    jobid: 48
+    wildcards: sample=s_CSCC_373_T2b_B4
+    resources: tmpdir=/tmp
+
+Submitted job 48 with external jobid 'Submitted batch job 3210261'.
+
+[Fri Dec 20 14:22:26 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-017-1_T2b.FC22VM72LT3_L8_R1_ICAAGCTAG-ACATAGCG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-017-1_T2b.FC22VM72LT3_L8_R2_ICAAGCTAG-ACATAGCG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-017-1_T2b_salmon_gencode_quant/quant.sf
+    jobid: 62
+    wildcards: sample=CSCC_NPT-017-1_T2b
+    resources: tmpdir=/tmp
+
+Submitted job 62 with external jobid 'Submitted batch job 3210262'.
+
+[Fri Dec 20 14:22:26 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_39T_RNA.FCHWLHCBBXX_L4_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_39T_salmon_gencode_quant/quant.sf
+    jobid: 13
+    wildcards: sample=s_CSCC_39T
+    resources: tmpdir=/tmp
+
+Submitted job 13 with external jobid 'Submitted batch job 3210263'.
+
+[Fri Dec 20 14:22:26 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_4_RNA.FCHWLHCBBXX_L1_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_4_salmon_gencode_quant/quant.sf
+    jobid: 1
+    wildcards: sample=s_CSCC_4
+    resources: tmpdir=/tmp
+
+Submitted job 1 with external jobid 'Submitted batch job 3210264'.
+
+[Fri Dec 20 14:22:26 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/153-T2a_B2_RNA.FCHFHK5BBXY_L1_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_153.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 27
+    wildcards: sample=s_153.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 27 with external jobid 'Submitted batch job 3210265'.
+
+[Fri Dec 20 14:22:26 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/171-T2a_B2_RNA.FCHFHK5BBXY_L2_IACTGAT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_171.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 41
+    wildcards: sample=s_171.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 41 with external jobid 'Submitted batch job 3210266'.
+
+[Fri Dec 20 14:22:26 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-164_T2a.FC22VM72LT3_L8_R1_ICAGTAGGC-TGACGAAT.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-164_T2a.FC22VM72LT3_L8_R2_ICAGTAGGC-TGACGAAT.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-164_T2a_salmon_gencode_quant/quant.sf
+    jobid: 55
+    wildcards: sample=CSCC_NPT-164_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 55 with external jobid 'Submitted batch job 3210267'.
+
+[Fri Dec 20 14:22:26 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-182_T2b.FC22VM72LT3_L8_R1_ITAATACAG-ATATTCAC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-182_T2b.FC22VM72LT3_L8_R2_ITAATACAG-ATATTCAC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-182_T2b_salmon_gencode_quant/quant.sf
+    jobid: 69
+    wildcards: sample=CSCC_NPT-182_T2b
+    resources: tmpdir=/tmp
+
+Submitted job 69 with external jobid 'Submitted batch job 3210268'.
+
+[Fri Dec 20 14:22:26 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_14_RNA.FCHWLHCBBXX_L2_IATCACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_14_salmon_gencode_quant/quant.sf
+    jobid: 7
+    wildcards: sample=s_CSCC_14
+    resources: tmpdir=/tmp
+
+Submitted job 7 with external jobid 'Submitted batch job 3210269'.
+
+[Fri Dec 20 14:22:26 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_322_T2b_B4_RNA.FCHMVH7BBXY_L7_IGACGTCTT-GGTTCACC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_322_T2b_B4_salmon_gencode_quant/quant.sf
+    jobid: 21
+    wildcards: sample=s_CSCC_322_T2b_B4
+    resources: tmpdir=/tmp
+
+Submitted job 21 with external jobid 'Submitted batch job 3210270'.
+
+[Fri Dec 20 14:22:26 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_335_T2a_B4_RNA.FCHMVH7BBXY_L6_IAACTGTAG-ACGCCGCA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_335_T2a_B4_salmon_gencode_quant/quant.sf
+    jobid: 35
+    wildcards: sample=s_CSCC_335_T2a_B4
+    resources: tmpdir=/tmp
+
+Submitted job 35 with external jobid 'Submitted batch job 3210271'.
+
+[Fri Dec 20 14:22:27 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/085-T2a_B2_RNA.FCHFHK5BBXY_L1_ICGTACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_085.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 49
+    wildcards: sample=s_085.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 49 with external jobid 'Submitted batch job 3210272'.
+
+[Fri Dec 20 14:22:27 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-002-1_T2a.FC22VM72LT3_L8_R1_IGGACTTGG-CGCAGACG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-002-1_T2a.FC22VM72LT3_L8_R2_IGGACTTGG-CGCAGACG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-002-1_T2a_salmon_gencode_quant/quant.sf
+    jobid: 59
+    wildcards: sample=CSCC_NPT-002-1_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 59 with external jobid 'Submitted batch job 3210273'.
+
+[Fri Dec 20 14:22:27 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-050_T2a.FC22VM72LT3_L8_R1_ITGGATCGA-GTGCGATA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-050_T2a.FC22VM72LT3_L8_R2_ITGGATCGA-GTGCGATA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-050_T2a_salmon_gencode_quant/quant.sf
+    jobid: 63
+    wildcards: sample=CSCC_NPT-050_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 63 with external jobid 'Submitted batch job 3210274'.
+
+[Fri Dec 20 14:22:27 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_42T_RNA.FCHWLHCBBXX_L4_IGAGTGG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_42T_salmon_gencode_quant/quant.sf
+    jobid: 14
+    wildcards: sample=s_CSCC_42T
+    resources: tmpdir=/tmp
+
+Submitted job 14 with external jobid 'Submitted batch job 3210275'.
+
+[Fri Dec 20 14:22:27 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_308_T2b_B4_RNA.FCHMVH7BBXY_L7_IACTCGTGT-ATTGGAAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_308_T2b_B4_salmon_gencode_quant/quant.sf
+    jobid: 28
+    wildcards: sample=s_CSCC_308_T2b_B4
+    resources: tmpdir=/tmp
+
+Submitted job 28 with external jobid 'Submitted batch job 3210276'.
+
+[Fri Dec 20 14:22:27 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/200-T2b_B2_RNA.FCHFHK5BBXY_L2_IATTCCT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_200.T2b_B2_salmon_gencode_quant/quant.sf
+    jobid: 42
+    wildcards: sample=s_200.T2b_B2
+    resources: tmpdir=/tmp
+
+Submitted job 42 with external jobid 'Submitted batch job 3210277'.
+
+[Fri Dec 20 14:22:27 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-169_T2b.FC22VM72LT3_L8_R1_ITGACGAAT-CAGTAGGC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-169_T2b.FC22VM72LT3_L8_R2_ITGACGAAT-CAGTAGGC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-169_T2b_salmon_gencode_quant/quant.sf
+    jobid: 56
+    wildcards: sample=CSCC_NPT-169_T2b
+    resources: tmpdir=/tmp
+
+Submitted job 56 with external jobid 'Submitted batch job 3210278'.
+
+[Fri Dec 20 14:22:27 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-183_T2b.FC22VM72LT3_L8_R1_ICGGCGTGA-GCGCCTGT.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-183_T2b.FC22VM72LT3_L8_R2_ICGGCGTGA-GCGCCTGT.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-183_T2b_salmon_gencode_quant/quant.sf
+    jobid: 70
+    wildcards: sample=CSCC_NPT-183_T2b
+    resources: tmpdir=/tmp
+
+Submitted job 70 with external jobid 'Submitted batch job 3210279'.
+
+[Fri Dec 20 14:22:27 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_16_RNA.FCHWLHCBBXX_L2_IACTTGA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_16_salmon_gencode_quant/quant.sf
+    jobid: 8
+    wildcards: sample=s_CSCC_16
+    resources: tmpdir=/tmp
+
+Submitted job 8 with external jobid 'Submitted batch job 3210280'.
+
+[Fri Dec 20 14:22:27 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_320_T2a_B4_RNA.FCHMVH7BBXY_L8_ITGGCCGGT-TAGAGCGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_320_T2a_B4_salmon_gencode_quant/quant.sf
+    jobid: 22
+    wildcards: sample=s_CSCC_320_T2a_B4
+    resources: tmpdir=/tmp
+
+Submitted job 22 with external jobid 'Submitted batch job 3210281'.
+
+[Fri Dec 20 14:22:27 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_363_T2a_B4_RNA.FCHMVH7BBXY_L8_ICGCTATGT-TCCGACAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_363_T2a_B4_salmon_gencode_quant/quant.sf
+    jobid: 36
+    wildcards: sample=s_CSCC_363_T2a_B4
+    resources: tmpdir=/tmp
+
+Submitted job 36 with external jobid 'Submitted batch job 3210282'.
+
+[Fri Dec 20 14:22:28 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_359_T2a_B4_RNA.FCHMVH7BBXY_L5_ICTCACCAA-CTAGGCAA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_359_T2a_B4_salmon_gencode_quant/quant.sf
+    jobid: 50
+    wildcards: sample=s_CSCC_359_T2a_B4
+    resources: tmpdir=/tmp
+
+Submitted job 50 with external jobid 'Submitted batch job 3210283'.
+
+[Fri Dec 20 14:22:28 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-055_T2a.FC22VM72LT3_L8_R1_IAGTTCAGG-CCAACAGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-055_T2a.FC22VM72LT3_L8_R2_IAGTTCAGG-CCAACAGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-055_T2a_salmon_gencode_quant/quant.sf
+    jobid: 64
+    wildcards: sample=CSCC_NPT-055_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 64 with external jobid 'Submitted batch job 3210284'.
+
+[Fri Dec 20 14:22:28 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_48_RNA.FCHWLHCBBXX_L5_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_48_salmon_gencode_quant/quant.sf
+    jobid: 15
+    wildcards: sample=s_CSCC_48
+    resources: tmpdir=/tmp
+
+Submitted job 15 with external jobid 'Submitted batch job 3210285'.
+
+[Fri Dec 20 14:22:28 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/155-T2a_B2_RNA.FCHFHK5BBXY_L1_IGATCAG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_155.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 29
+    wildcards: sample=s_155.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 29 with external jobid 'Submitted batch job 3210286'.
+
+[Fri Dec 20 14:22:28 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/201-T2b_B2_RNA.FCHFHK5BBXY_L3_IATCACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_201.T2b_B2_salmon_gencode_quant/quant.sf
+    jobid: 43
+    wildcards: sample=s_201.T2b_B2
+    resources: tmpdir=/tmp
+
+Submitted job 43 with external jobid 'Submitted batch job 3210287'.
+
+[Fri Dec 20 14:22:28 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-015_T2a.FC22VM72LT3_L8_R1_ICCGCGGTT-AGCGCTAG.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-015_T2a.FC22VM72LT3_L8_R2_ICCGCGGTT-AGCGCTAG.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-015_T2a_salmon_gencode_quant/quant.sf
+    jobid: 57
+    wildcards: sample=CSCC_NPT-015_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 57 with external jobid 'Submitted batch job 3210288'.
+
+[Fri Dec 20 14:22:28 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/157-T2a_2_B2_RNA.FCHFHK5BBXY_L2_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_157.T2a_2_B2_salmon_gencode_quant/quant.sf
+    jobid: 31
+    wildcards: sample=s_157.T2a_2_B2
+    resources: tmpdir=/tmp
+
+Submitted job 31 with external jobid 'Submitted batch job 3210289'.
+
+[Fri Dec 20 14:22:28 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_18_RNA.FCHWLHCBBXX_L2_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_18_salmon_gencode_quant/quant.sf
+    jobid: 9
+    wildcards: sample=s_CSCC_18
+    resources: tmpdir=/tmp
+
+Submitted job 9 with external jobid 'Submitted batch job 3210290'.
+
+[Fri Dec 20 14:22:28 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/109-T2a_B2_RNA.FCHFHK5BBXY_L1_IATCACG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_109.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 23
+    wildcards: sample=s_109.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 23 with external jobid 'Submitted batch job 3210291'.
+
+[Fri Dec 20 14:22:28 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/163-T2a_B2_RNA.FCHFHK5BBXY_L2_IGTGGCC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_163.T2a_B2_salmon_gencode_quant/quant.sf
+    jobid: 37
+    wildcards: sample=s_163.T2a_B2
+    resources: tmpdir=/tmp
+
+Submitted job 37 with external jobid 'Submitted batch job 3210292'.
+
+[Fri Dec 20 14:22:28 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_349_T3_B4_RNA.FCHMVH7BBXY_L5_IGAACCGCG-TGACCTTA.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_349_T3_B4_salmon_gencode_quant/quant.sf
+    jobid: 51
+    wildcards: sample=s_CSCC_349_T3_B4
+    resources: tmpdir=/tmp
+
+Submitted job 51 with external jobid 'Submitted batch job 3210293'.
+
+[Fri Dec 20 14:22:29 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-083_T2a.FC22VM72LT3_L8_R1_ITCTCTACT-CGCGGTTC.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-083_T2a.FC22VM72LT3_L8_R2_ITCTCTACT-CGCGGTTC.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-083_T2a_salmon_gencode_quant/quant.sf
+    jobid: 65
+    wildcards: sample=CSCC_NPT-083_T2a
+    resources: tmpdir=/tmp
+
+Submitted job 65 with external jobid 'Submitted batch job 3210294'.
+
+[Fri Dec 20 14:22:29 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_6_RNA.FCHWLHCBBXX_L1_ITAGCTT.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_6_salmon_gencode_quant/quant.sf
+    jobid: 2
+    wildcards: sample=s_CSCC_6
+    resources: tmpdir=/tmp
+
+Submitted job 2 with external jobid 'Submitted batch job 3210295'.
+
+[Fri Dec 20 14:22:29 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_52_RNA.FCHWLHCBBXX_L6_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_52_salmon_gencode_quant/quant.sf
+    jobid: 16
+    wildcards: sample=s_CSCC_52
+    resources: tmpdir=/tmp
+
+Submitted job 16 with external jobid 'Submitted batch job 3210296'.
+
+[Fri Dec 20 14:22:29 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_338_T2b_B4_RNA.FCHMVH7BBXY_L6_IGGTCACGA-GTATTATG.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_338_T2b_B4_salmon_gencode_quant/quant.sf
+    jobid: 30
+    wildcards: sample=s_CSCC_338_T2b_B4
+    resources: tmpdir=/tmp
+
+Submitted job 30 with external jobid 'Submitted batch job 3210297'.
+
+[Fri Dec 20 14:22:29 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/203-T2b_B2_RNA.FCHFHK5BBXY_L3_ITTAGGC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_203.T2b_B2_salmon_gencode_quant/quant.sf
+    jobid: 44
+    wildcards: sample=s_203.T2b_B2
+    resources: tmpdir=/tmp
+
+Submitted job 44 with external jobid 'Submitted batch job 3210298'.
+
+[Fri Dec 20 14:22:29 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-001-2_T2b.FC22VM72LT3_L8_R1_ITTATAACC-GATATCGA.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_NPT-001-2_T2b.FC22VM72LT3_L8_R2_ITTATAACC-GATATCGA.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-001-2_T2b_salmon_gencode_quant/quant.sf
+    jobid: 58
+    wildcards: sample=CSCC_NPT-001-2_T2b
+    resources: tmpdir=/tmp
+
+Submitted job 58 with external jobid 'Submitted batch job 3210299'.
+
+[Fri Dec 20 14:22:29 2024]
+rule salmon_quant_paired:
+    input: /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.1.fastq, /xdisk/khasting/knodele/Mayo_data/RNA_fastqs/CSCC_7_RNA.FCHWLHCBBXX_L1_IGGCTAC.2.fastq
+    output: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_7_salmon_gencode_quant/quant.sf
+    jobid: 3
+    wildcards: sample=s_CSCC_7
+    resources: tmpdir=/tmp
+
+Submitted job 3 with external jobid 'Submitted batch job 3210300'.
+[Fri Dec 20 14:47:18 2024]
+Finished job 14.
+1 of 71 steps (1%) done
+[Fri Dec 20 14:52:21 2024]
+Finished job 4.
+2 of 71 steps (3%) done
+[Fri Dec 20 14:52:22 2024]
+Finished job 5.
+3 of 71 steps (4%) done
+[Fri Dec 20 14:54:16 2024]
+Finished job 27.
+4 of 71 steps (6%) done
+[Fri Dec 20 14:55:02 2024]
+Finished job 39.
+5 of 71 steps (7%) done
+[Fri Dec 20 14:57:59 2024]
+Finished job 25.
+6 of 71 steps (8%) done
+[Fri Dec 20 14:58:49 2024]
+Finished job 7.
+7 of 71 steps (10%) done
+[Fri Dec 20 14:59:35 2024]
+Finished job 53.
+8 of 71 steps (11%) done
+[Fri Dec 20 15:02:32 2024]
+Finished job 41.
+9 of 71 steps (13%) done
+[Fri Dec 20 15:11:53 2024]
+Finished job 6.
+10 of 71 steps (14%) done
+[Fri Dec 20 15:13:43 2024]
+Finished job 32.
+11 of 71 steps (15%) done
+[Fri Dec 20 15:13:44 2024]
+Finished job 33.
+12 of 71 steps (17%) done
+[Fri Dec 20 15:13:45 2024]
+Finished job 69.
+13 of 71 steps (18%) done
+[Fri Dec 20 15:13:46 2024]
+Finished job 59.
+14 of 71 steps (20%) done
+[Fri Dec 20 15:14:00 2024]
+Finished job 19.
+15 of 71 steps (21%) done
+[Fri Dec 20 15:17:46 2024]
+Finished job 13.
+16 of 71 steps (23%) done
+[Fri Dec 20 15:19:30 2024]
+Finished job 66.
+17 of 71 steps (24%) done
+[Fri Dec 20 15:20:25 2024]
+Finished job 12.
+18 of 71 steps (25%) done
+[Fri Dec 20 15:21:08 2024]
+Finished job 18.
+19 of 71 steps (27%) done
+[Fri Dec 20 15:22:53 2024]
+Finished job 52.
+20 of 71 steps (28%) done
+[Fri Dec 20 15:22:53 2024]
+Finished job 45.
+21 of 71 steps (30%) done
+[Fri Dec 20 15:23:09 2024]
+Finished job 54.
+22 of 71 steps (31%) done
+[Fri Dec 20 15:25:00 2024]
+Finished job 11.
+23 of 71 steps (32%) done
+[Fri Dec 20 15:25:03 2024]
+Finished job 42.
+24 of 71 steps (34%) done
+[Fri Dec 20 15:28:04 2024]
+Finished job 1.
+25 of 71 steps (35%) done
+[Fri Dec 20 15:28:05 2024]
+Finished job 49.
+26 of 71 steps (37%) done
+[Fri Dec 20 15:31:06 2024]
+Finished job 24.
+27 of 71 steps (38%) done
+[Fri Dec 20 15:33:54 2024]
+Finished job 67.
+28 of 71 steps (39%) done
+[Fri Dec 20 15:34:51 2024]
+Finished job 21.
+29 of 71 steps (41%) done
+[Fri Dec 20 15:34:51 2024]
+Finished job 28.
+30 of 71 steps (42%) done
+[Fri Dec 20 15:35:04 2024]
+Finished job 26.
+31 of 71 steps (44%) done
+[Fri Dec 20 15:35:57 2024]
+Finished job 40.
+32 of 71 steps (45%) done
+[Fri Dec 20 15:36:49 2024]
+Finished job 60.
+33 of 71 steps (46%) done
+[Fri Dec 20 15:38:47 2024]
+Finished job 70.
+34 of 71 steps (48%) done
+[Fri Dec 20 15:42:54 2024]
+Finished job 20.
+35 of 71 steps (49%) done
+[Fri Dec 20 15:49:11 2024]
+Finished job 10.
+36 of 71 steps (51%) done
+[Fri Dec 20 15:49:24 2024]
+Finished job 68.
+37 of 71 steps (52%) done
+[Fri Dec 20 15:53:34 2024]
+Finished job 37.
+38 of 71 steps (54%) done
+[Fri Dec 20 15:54:24 2024]
+Finished job 38.
+39 of 71 steps (55%) done
+[Fri Dec 20 15:54:24 2024]
+Finished job 61.
+40 of 71 steps (56%) done
+[Fri Dec 20 15:55:16 2024]
+Finished job 62.
+41 of 71 steps (58%) done
+[Fri Dec 20 16:00:09 2024]
+Finished job 31.
+42 of 71 steps (59%) done
+[Fri Dec 20 16:02:55 2024]
+Finished job 17.
+43 of 71 steps (61%) done
+[Fri Dec 20 16:02:55 2024]
+Finished job 8.
+44 of 71 steps (62%) done
+[Fri Dec 20 16:05:44 2024]
+Finished job 46.
+45 of 71 steps (63%) done
+[Fri Dec 20 16:07:32 2024]
+Finished job 47.
+46 of 71 steps (65%) done
+[Fri Dec 20 16:11:26 2024]
+Finished job 30.
+47 of 71 steps (66%) done
+[Fri Dec 20 16:12:09 2024]
+Finished job 29.
+48 of 71 steps (68%) done
+[Fri Dec 20 16:15:57 2024]
+Finished job 57.
+49 of 71 steps (69%) done
+[Fri Dec 20 16:20:47 2024]
+Finished job 56.
+50 of 71 steps (70%) done
+[Fri Dec 20 16:20:48 2024]
+Finished job 23.
+51 of 71 steps (72%) done
+[Fri Dec 20 16:20:48 2024]
+Finished job 44.
+52 of 71 steps (73%) done
+[Fri Dec 20 16:21:33 2024]
+Finished job 51.
+53 of 71 steps (75%) done
+[Fri Dec 20 16:23:23 2024]
+Finished job 55.
+54 of 71 steps (76%) done
+[Fri Dec 20 16:26:19 2024]
+Finished job 63.
+55 of 71 steps (77%) done
+[Fri Dec 20 16:29:15 2024]
+Finished job 36.
+56 of 71 steps (79%) done
+[Fri Dec 20 16:31:08 2024]
+Finished job 43.
+57 of 71 steps (80%) done
+[Fri Dec 20 16:32:58 2024]
+Finished job 34.
+58 of 71 steps (82%) done
+[Fri Dec 20 16:35:54 2024]
+Finished job 16.
+59 of 71 steps (83%) done
+[Fri Dec 20 16:38:50 2024]
+Finished job 48.
+60 of 71 steps (85%) done
+[Fri Dec 20 16:39:01 2024]
+Finished job 58.
+61 of 71 steps (86%) done
+[Fri Dec 20 16:40:32 2024]
+Finished job 35.
+62 of 71 steps (87%) done
+[Fri Dec 20 16:44:13 2024]
+Finished job 3.
+63 of 71 steps (89%) done
+[Fri Dec 20 17:03:45 2024]
+Finished job 2.
+64 of 71 steps (90%) done
+[Fri Dec 20 17:10:25 2024]
+Finished job 22.
+65 of 71 steps (92%) done
+[Fri Dec 20 17:15:56 2024]
+Finished job 50.
+66 of 71 steps (93%) done
+[Fri Dec 20 17:17:36 2024]
+Finished job 64.
+67 of 71 steps (94%) done
+[Fri Dec 20 17:18:16 2024]
+Finished job 9.
+68 of 71 steps (96%) done
+[Fri Dec 20 17:29:57 2024]
+Finished job 65.
+69 of 71 steps (97%) done
+[Fri Dec 20 18:06:36 2024]
+Finished job 15.
+70 of 71 steps (99%) done
+Select jobs to execute...
+
+[Fri Dec 20 18:06:36 2024]
+localrule all:
+    input: /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_6_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_7_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_8_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_10T_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_12_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_14_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_16_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_18_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_23_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_27_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_29_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_39T_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_42T_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_48_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_52_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_302_T2a_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_097.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_310_T2a_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_101.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_322_T2b_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_320_T2a_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_109.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_306_T2a_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_151.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_304_T2b_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_153.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_308_T2b_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_155.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_338_T2b_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_157.T2a_2_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_326_T3_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_159.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_331_T1.T_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_335_T2a_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_363_T2a_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_163.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_165.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_167.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_169.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_171.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_200.T2b_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_201.T2b_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_203.T2b_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_205.T2b_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_073.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_072.T2b_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_373_T2b_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_085.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_359_T2a_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_349_T3_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_093.T2a_B2_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/s_CSCC_316_T2b_B4_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-062_T2a_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-164_T2a_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-169_T2b_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-015_T2a_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-001-2_T2b_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-002-1_T2a_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-004-2_T2a_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-010-2_T3_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-017-1_T2b_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-050_T2a_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-055_T2a_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-083_T2a_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-113_T2b_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-133_T2b_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-138_T2a_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-182_T2b_salmon_gencode_quant/quant.sf, /xdisk/khasting/knodele/Mayo_data/salmon_read_counts/CSCC_NPT-183_T2b_salmon_gencode_quant/quant.sf
+    jobid: 0
+    resources: tmpdir=/tmp
+
+[Fri Dec 20 18:06:36 2024]
+Finished job 0.
+71 of 71 steps (100%) done
+Complete log: /home/u1/knodele/Immunoediting_Human_cSCC/08_RNA_sample_purity/.snakemake/log/2024-12-20T142218.745874.snakemake.log
