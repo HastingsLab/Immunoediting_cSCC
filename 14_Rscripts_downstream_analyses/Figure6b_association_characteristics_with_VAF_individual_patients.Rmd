@@ -1,0 +1,295 @@
+---
+title: "Figure5_binding_proportion"
+output: html_document
+date: "2025-02-06"
+---
+
+## Libraries
+
+```{r}
+library(stringr)
+library(ggplot2)
+library(ggpubr)
+library(biomaRt)
+library(DGEobj.utils)
+```
+
+## Read in clinical data
+```{r}
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples_immune_binary.csv"))
+#clinical_data <- clinical_data[-which(clinical_data$Exome_batch=="B4"),]
+
+maf_file = "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_coverage_filtered.maf"
+maf <- data.table::fread(maf_file)
+maf$mutation_id <- paste(maf$Chromosome, maf$Start_Position-1, sep=":")
+```
+
+```{r}
+for (k in 1:length(clinical_data$ID)){
+  sample=clinical_data$ID[k]
+  print(sample)
+  
+  ## Read in characteristics
+  peptides <- as.data.frame(read.csv(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immunogenicity/", sample, "_all_characteristics_add_EC.csv", sep="")))
+  
+  ## Read in and match VAF
+  maf_subset <- maf[which(maf$Tumor_Sample_Barcode==clinical_data$Tumor_Sample_Barcode[k]),]
+  maf_subset <- maf_subset[match(peptides$V5, maf_subset$mutation_id),]
+  print(identical(peptides$V5, maf_subset$mutation_id))
+  peptides$VAF <- maf_subset$t_alt_count/(maf_subset$t_alt_count + maf_subset$t_ref_count)
+  peptides <- peptides[which(peptides$expression > 0),]
+  
+  ## Calculate coefficient kd
+  model <- lm(scale(VAF, center=TRUE) ~ scale(min_binding, center = TRUE), peptides)
+  clinical_data$coef_kd[k] <- model$coefficients[2]
+  
+  ## Calculate coefficient kd scrambled
+  model <- lm(scale(VAF, center=TRUE) ~ scale(min_binding_scrambled_1,center=TRUE), peptides)
+  coef_kd_scram_1 <- model$coefficients[2]
+  model <- lm(scale(VAF, center=TRUE) ~ scale(min_binding_scrambled_2,center=TRUE), peptides)
+  coef_kd_scram_2 <- model$coefficients[2]
+  model <- lm(scale(VAF, center=TRUE) ~ scale(min_binding_scrambled_3, center=TRUE), peptides)
+  coef_kd_scram_3 <- model$coefficients[2]
+  model <- lm(scale(VAF, center=TRUE) ~ scale(min_binding_scrambled_4,center=TRUE), peptides)
+  coef_kd_scram_4 <- model$coefficients[2]
+  model <- lm(scale(VAF, center=TRUE) ~ scale(min_binding_scrambled_5,center=TRUE), peptides)
+  coef_kd_scram_5 <- model$coefficients[2]
+  model <- lm(scale(VAF, center=TRUE) ~ scale(min_binding_scrambled_6,center=TRUE), peptides)
+  coef_kd_scram_6 <- model$coefficients[2]
+  model <- lm(scale(VAF, center=TRUE) ~ scale(min_binding_scrambled_7,center=TRUE), peptides)
+  coef_kd_scram_7 <- model$coefficients[2]
+  model <- lm(scale(VAF, center=TRUE) ~ scale(min_binding_scrambled_8,center=TRUE), peptides)
+  coef_kd_scram_8 <- model$coefficients[2]
+  model <- lm(scale(VAF, center=TRUE) ~ scale(min_binding_scrambled_9,center=TRUE), peptides)
+  coef_kd_scram_9 <- model$coefficients[2]
+  model <- lm(scale(VAF, center=TRUE) ~ scale(min_binding_scrambled_10,center=TRUE), peptides)
+  coef_kd_scram_10 <- model$coefficients[2]
+  clinical_data$coef_kd_scram[k] <- mean(coef_kd_scram_1, coef_kd_scram_2, coef_kd_scram_3, coef_kd_scram_4, coef_kd_scram_5,
+                                         coef_kd_scram_6, coef_kd_scram_7, coef_kd_scram_8, coef_kd_scram_9, coef_kd_scram_10)
+  
+
+  ## Calculate coefficient DAI  
+  model <- lm(scale(VAF,center=TRUE) ~ scale(WT_binding/min_binding,center=TRUE), peptides)
+  clinical_data$coef_DAI[k] <- model$coefficients[2]
+  
+  ## Calculate coefficient stability
+  model <- lm(scale(VAF,center=TRUE)~ scale(as.numeric(max_stability),center=TRUE), peptides)
+  clinical_data$coef_stab[k] <- model$coefficients[2]
+  
+  ## Calculate coefficient EC
+  model <- lm(scale(VAF,center=TRUE)~ scale(as.numeric(EC),center=TRUE), peptides)
+  clinical_data$coef_ec[k] <- model$coefficients[2]
+  
+  ## Calculate coefficient expression
+  model <- lm(scale(VAF,center=TRUE) ~ scale(expression,center=TRUE), peptides)
+  clinical_data$coef_exp[k] <- model$coefficients[2]
+  
+  ### Calculate coefficient TAP
+  model <- lm(scale(VAF,center=TRUE) ~ scale(TAP,center=TRUE), peptides)
+  clinical_data$coef_tap[k] <- model$coefficients[2]
+  
+  ## Calculate coefficient MHC class II (for those with a peptide)
+  if (length(peptides[which(peptides$netMHC_II_binding=="Inf"),1] >0)){
+    peptides <- peptides[-which(peptides$netMHC_II_binding=="Inf"),]
+  }
+  model <- lm(scale(VAF,center=TRUE) ~ scale(netMHC_II_binding,center=TRUE), peptides)
+  clinical_data$coef_kdII[k] <- model$coefficients[2]
+}
+```
+
+
+## Visualize one example of a correlation
+
+```{r}
+peptides <- as.data.frame(read.csv(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immunogenicity/P14_peptides_kd_stab.txt", sep="")))
+maf_subset <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_52_DNA"),]
+maf_subset <- maf_subset[match(peptides$V5, maf_subset$mutation_id),]
+identical(peptides$V5, maf_subset$mutation_id)
+peptides$VAF <- maf_subset$t_alt_count/(maf_subset$t_alt_count + maf_subset$t_ref_count)
+  peptides <- peptides[which(peptides$expression > 0),]
+
+ggplot(peptides, aes(x=VAF, y=scale(min_binding,center = TRUE))) + geom_point() + geom_hline(yintercept=log(50,10), color="red", linetype="dashed") + geom_smooth(method="lm")
+```
+
+## Results matrix:
+
+```{r}
+results <- matrix(NA, nrow=8, ncol=4)
+```
+
+## Kd true:
+
+```{r}
+table(clinical_data$immune_binary)
+## Justification for parametric tests
+suppressed <- clinical_data[which(clinical_data$immune_binary=="Suppressed"),]
+var_supp <- var(suppressed$coef_kd)
+high <- clinical_data[which(clinical_data$immune_binary=="high"),]
+var_high <- var(high$coef_kd)
+low <- clinical_data[which(clinical_data$immune_binary=="low"),]
+var_low <- var(low$coef_kd)
+
+max(var_high, var_low, var_supp)/min(var_high, var_low, var_supp)
+
+ggplot(clinical_data, aes(x=immune_binary, y=coef_kd)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+comp <- clinical_data[which(clinical_data$Immunosuppression=="No"),]
+ggplot(clinical_data, aes(x=immune_infiltration, y=coef_kd, color=immune_binary, group=Immunosuppression)) + geom_point() + theme_minimal() + geom_smooth(method="lm")
+test <- aov(coef_kd ~ immune_binary, clinical_data)
+summary(test)
+TukeyHSD(test, conf.level=.95)
+plot(TukeyHSD(test, conf.level=.95), las = 2)
+model <- lm(coef_kd ~ immune_infiltration + Dataset, clinical_data)
+summary(model)
+model <- lm(coef_kd ~ immune_infiltration, comp)
+summary(model)
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Characteristics clonal subclonal neoags/Linear_regression_approach/Kd_coef_boxplot.pdf")
+ggplot(clinical_data, aes(x=immune_binary, y=coef_kd)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Characteristics clonal subclonal neoags/Linear_regression_approach/linear_regression.pdf")
+ggplot(clinical_data, aes(x=immune_infiltration, y=coef_kd, color=immune_binary, group=Immunosuppression)) + geom_point() + theme_minimal() + geom_smooth(method="lm")
+dev.off()
+results[1,1] <- "Kd"
+results[1,2] <- summary(model)$coefficients[2, 1]
+confint <- confint(model)
+results[1,3] <- confint[2,1]
+results[1,4] <- confint[2,2]
+```
+
+## Kd scrambled:
+
+```{r}
+ggplot(clinical_data, aes(x=immune_binary, y=coef_kd_scram)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+comp <- clinical_data[which(clinical_data$Immunosuppression=="No"),]
+ggplot(clinical_data, aes(x=immune_infiltration, y=coef_kd_scram, color=immune_binary, group=Immunosuppression)) + geom_point() + theme_minimal() + geom_smooth(method="lm")
+test <- aov(coef_kd_scram ~ immune_binary, clinical_data)
+summary(test)
+TukeyHSD(test, conf.level=.95)
+plot(TukeyHSD(test, conf.level=.95), las = 2)
+model <- lm(coef_kd_scram ~ immune_infiltration + Dataset, clinical_data)
+summary(model)
+model <- lm(coef_kd_scram ~ immune_infiltration, comp)
+summary(model)
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Characteristics clonal subclonal neoags/Linear_regression_approach/Kd_scram_coef_boxplot.pdf")
+ggplot(clinical_data, aes(x=immune_binary, y=coef_kd_scram)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Characteristics clonal subclonal neoags/Linear_regression_approach/linear_regression_kd_scram.pdf")
+ggplot(comp, aes(x=immune_infiltration, y=coef_kd_scram)) + geom_point() + theme_minimal() + geom_smooth(method="lm")
+dev.off()
+
+results[8,1] <- "Kd_scram"
+results[8,2] <- summary(model)$coefficients[2, 1]
+confint <- confint(model)
+results[8,3] <- confint[2,1]
+results[8,4] <- confint[2,2]
+```
+
+## Kd class II
+
+```{r}
+ggplot(clinical_data, aes(x=immune_binary, y=coef_kdII)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+ggplot(clinical_data, aes(x=immune_infiltration, y=coef_kdII, color=immune_binary, group=Immunosuppression)) + geom_point() + theme_minimal() + geom_smooth(method="lm")
+test <- aov(coef_kdII ~ immune_binary, clinical_data)
+summary(test)
+TukeyHSD(test, conf.level=.95)
+plot(TukeyHSD(test, conf.level=.95), las = 2)
+model <- lm(coef_kdII ~ immune_infiltration, comp)
+summary(model)
+
+results[2,1] <- "KdcII"
+results[2,2] <- summary(model)$coefficients[2, 1]
+confint <- confint(model)
+results[2,3] <- confint[2,1]
+results[2,4] <- confint[2,2]
+```
+
+## Expression
+
+```{r}
+ggplot(clinical_data, aes(x=immune_binary, y=coef_exp)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+ggplot(comp, aes(x=immune_infiltration, y=coef_exp)) + geom_point() + theme_minimal() + geom_smooth(method="lm")
+test <- aov(coef_exp ~ immune_binary, clinical_data)
+summary(test)
+model <- lm(coef_exp ~ immune_infiltration, comp)
+summary(model)
+
+results[3,1] <- "Expression"
+results[3,2] <- summary(model)$coefficients[2, 1]
+confint <- confint(model)
+results[3,3] <- confint[2,1]
+results[3,4] <- confint[2,2]
+```
+
+## TAP
+```{r}
+ggplot(clinical_data, aes(x=immune_binary, y=coef_tap)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+ggplot(comp, aes(x=immune_infiltration, y=coef_tap)) + geom_point() + theme_minimal() + geom_smooth(method="lm")
+test <- aov(coef_tap ~ immune_binary, clinical_data)
+summary(test)
+model <- lm(coef_tap ~ immune_infiltration, comp)
+summary(model)
+results[4,1] <- "TAP"
+results[4,2] <- summary(model)$coefficients[2, 1]
+confint <- confint(model)
+results[4,3] <- confint[2,1]
+results[4,4] <- confint[2,2]
+```
+
+## DAI
+```{r}
+ggplot(clinical_data, aes(x=immune_binary, y=coef_DAI)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+ggplot(clinical_data, aes(x=immune_infiltration, y=coef_DAI, color=immune_binary, group=Immunosuppression)) + geom_point() + theme_minimal() + geom_smooth(method="lm")
+test <- aov(coef_DAI ~ immune_binary, clinical_data)
+summary(test)
+model <- lm(coef_DAI ~ immune_infiltration, comp)
+summary(model)
+results[5,1] <- "DAI"
+results[5,2] <- summary(model)$coefficients[2, 1]
+confint <- confint(model)
+results[5,3] <- confint[2,1]
+results[5,4] <- confint[2,2]
+```
+
+## Stability
+```{r}
+ggplot(clinical_data, aes(x=immune_binary, y=coef_stab)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+ggplot(comp, aes(x=immune_infiltration, y=coef_stab)) + geom_point() + theme_minimal() + geom_smooth(method="lm")
+test <- aov(coef_stab ~ immune_binary, clinical_data)
+summary(test)
+model <- lm(coef_stab ~ immune_infiltration, comp)
+summary(model)
+results[6,1] <- "Stab"
+results[6,2] <- summary(model)$coefficients[2, 1]
+confint <- confint(model)
+results[6,3] <- confint[2,1]
+results[6,4] <- confint[2,2]
+```
+
+## EC
+```{r}
+ggplot(clinical_data, aes(x=immune_binary, y=coef_ec)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+ggplot(comp, aes(x=immune_infiltration, y=coef_ec)) + geom_point() + theme_minimal() + geom_smooth(method="lm")
+test <- aov(coef_ec ~ immune_binary, clinical_data)
+summary(test)
+model <- lm(coef_ec ~ immune_infiltration, comp)
+summary(model)
+results[7,1] <- "EC"
+results[7,2] <- summary(model)$coefficients[2, 1]
+confint <- confint(model)
+results[7,3] <- confint[2,1]
+results[7,4] <- confint[2,2]
+```
+
+## Plot p-values all comparisons
+```{r}
+results <- as.data.frame(results)
+ggplot(results, aes(x=reorder(V1,as.numeric(V2)), y=as.numeric(V2))) + geom_point(size=2) + geom_errorbar(aes(ymin=as.numeric(V3), ymax=as.numeric(V4))) + theme_minimal() + coord_flip() + geom_hline(yintercept=0, color="red", linetype="dashed")
+
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Characteristics clonal subclonal neoags/Linear_regression_approach/p_value_comparisons.pdf", width=3, height=5)
+ggplot(results, aes(x=reorder(V1,as.numeric(V2)), y=as.numeric(V2))) + geom_point(size=2) + geom_errorbar(aes(ymin=as.numeric(V3), ymax=as.numeric(V4))) + theme_minimal() + coord_flip() + geom_hline(yintercept=0, color="red", linetype="dashed")
+dev.off()
+```

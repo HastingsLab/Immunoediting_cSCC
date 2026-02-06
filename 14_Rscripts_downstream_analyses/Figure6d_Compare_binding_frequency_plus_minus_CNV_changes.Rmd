@@ -1,0 +1,141 @@
+---
+title: "2024_5_15_Compare_binding_frequency_plus_minus_CNV_changes"
+output: html_document
+date: "2024-05-15"
+---
+
+**Purpose:** Determine if there is a difference in the proportion of binding neoantigens in regions with copy number loss compared to no copy number loss
+
+**Methods:**
+
+* Annotate variants as being in regions with copy number loss and regions without copy number loss and determine the frequency of binding neoantigens in each
+
+## Libraries
+
+```{r}
+library(stringr)
+library(ggplot2)
+library(ggpubr)
+library(biomaRt)
+library(DGEobj.utils)
+```
+
+
+## Read in clinical data
+```{r}
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples_immune_binary.csv"))
+```
+
+## Combinated letters function for use below
+```{r}
+# Define a function that splits the wildtype peptides into every possible 9mer for comparison
+combinated_letters <- function(string, n) {
+  length_ <- str_length(string)
+  str_sub(string, seq(1, length_ + 1 - n), seq(n, length_))
+}
+```
+
+## Match binding and calculate TCR recognition potential
+```{r}
+for (k in 1:length(clinical_data$ID)){
+  sample=clinical_data$ID[k]
+  print(k)
+  peptides <- as.data.frame(read.table(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MT_peptides/", sample, ".somaticvariants_filtered_vep.peptides", sep=""), header=FALSE))
+  
+  CCF <- as.data.frame(read.csv(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/", clinical_data$ID[k], "_variants_CN.csv", sep="")))
+  CCF$mutation_id <- paste(CCF$Chromosome, CCF$Start_Position-1, CCF$Reference_Allele, CCF$Tumor_Seq_Allele2, sep=":")
+  CCF <- CCF[match(peptides$V5, CCF$mutation_id),]
+  identical(peptides$V5[100], CCF$mutation_id[100])
+  
+  CCF$CN_loss <-  "No"
+  CCF[which(CCF$CN != CCF$CN_normal),123] <- "Yes"
+  #CCF[which(CCF$CN < CCF$CN_normal),123] <- "Yes"
+  table(CCF$CN_loss)
+  
+  peptides$CCF <- CCF$CCF
+  peptides$CN_loss <- CCF$CN_loss
+  
+  #print(length(peptides[which(is.na(peptides$CCF)),8]))
+  if (length(peptides[which(is.na(peptides$CCF)),7])>0){
+    peptides <- peptides[-which(is.na(peptides$CCF)),]
+  }
+  ID <- str_split_fixed(peptides$V5, ":", 4)
+  peptides$V5 <- paste(ID[,1], ID[,2], sep=":")
+  peptides <- peptides[!duplicated(peptides$V6),]
+  
+  netMHC <- as.data.frame(read.table(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/netMHCpan/", sample, "_netmhc_9_10mer.xsl", sep=""), skip=1, header=TRUE))
+  netMHC <- netMHC[,which(colnames(netMHC) %in% c("Peptide", "ID", "nM", "nM.1", "nM.2", "nM.3", 
+                                              "nM.4", "nM.5"))]
+  
+  ## Remove WT peptides from NetMHC results
+  wt_all <- as.data.frame(read.csv(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/WT_peptides/", sample, ".WT_n_mers_9_10_15mer.peptides", sep=""), header=FALSE))
+  
+  netMHC <- netMHC[-which(netMHC$Peptide %in% wt_all$V2),]
+  #netMHC <- netMHC[-1,]
+  netMHC <- unique(netMHC)
+  
+  ID <- str_split_fixed(netMHC$ID, "_", 4)
+  ID[,1] <- paste("chr", ID[,1], sep="")
+  netMHC$ID <- paste(ID[,1], ID[,2], sep=":")
+  
+  for (i in 1:length(peptides$V1)){ 
+    netMHC_subset <- netMHC[which(netMHC$ID==peptides$V5[i]),]
+    peptides$min_binding[i] <- min(netMHC_subset$nM, netMHC_subset$nM.1, netMHC_subset$nM.2, netMHC_subset$nM.3, netMHC_subset$nM.4, netMHC_subset$nM.5)
+    indices <- which(netMHC_subset == peptides$min_binding[i], arr.ind = TRUE)
+    peptides$MT_9mer[i] <- netMHC_subset[indices[1],1]
+  }
+
+  peptides <- peptides[which(!duplicated(peptides$MT_9mer)),]
+  
+  peptides_cn_loss <- peptides[which(peptides$CN_loss=="Yes"),]
+  peptides_no_cn_loss <- peptides[which(peptides$CN_loss=="No"),]
+  
+  clinical_data$count_CN_loss[k] <- length(peptides_cn_loss$V1)
+  clinical_data$count_no_CN_loss[k] <- length(peptides_no_cn_loss$V1)
+  clinical_data$binders_CN_loss[k] <- length(peptides_cn_loss[which(peptides_cn_loss$min_binding<500),1])
+  clinical_data$binders_no_CN_loss[k] <- length(peptides_no_cn_loss[which(peptides_no_cn_loss$min_binding<500),1])
+  clinical_data$ratio_binders_CN_loss[k] <- length(peptides_cn_loss[which(peptides_cn_loss$min_binding<500),1])/length(peptides_cn_loss$V1)
+  clinical_data$ratio_binders_no_CN_loss[k] <- length(peptides_no_cn_loss[which(peptides_no_cn_loss$min_binding<500),1])/length(peptides_no_cn_loss$V1)
+}
+```
+
+
+## Compare binding ratio regions of CN loss
+
+```{r}
+clinical_data_subset <- clinical_data[,which(colnames(clinical_data) %in% c("immune_binary", "ratio_binders_CN_loss", "ratio_binders_no_CN_loss"))]
+clinical_data_subset <- reshape::melt(clinical_data_subset, "immune_binary")
+clinical_data_subset$new_variable <- paste(clinical_data_subset$immune_binary, clinical_data_subset$variable, sep="_")
+ggplot(clinical_data_subset, aes(x=new_variable, y=value, fill=variable)) + geom_boxplot(outlier.shape = NA) + geom_point(position=position_jitterdodge()) + theme_minimal()+
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Characteristics clonal subclonal neoags/MHC_binding_CN_loss.pdf")
+ggplot(clinical_data_subset, aes(x=new_variable, y=value, fill=variable)) + geom_boxplot(outlier.shape = NA) + geom_point(position=position_jitterdodge()) + theme_minimal()+
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+dev.off()
+
+high <- clinical_data[which(clinical_data$immune_binary=="high"),]
+low <- clinical_data[which(clinical_data$immune_binary=="low"),]
+supp <- clinical_data[which(clinical_data$immune_binary=="Suppressed"),]
+
+wilcox.test(high$ratio_binders_CN_loss, high$ratio_binders_no_CN_loss, paired = TRUE)
+wilcox.test(low$ratio_binders_CN_loss, low$ratio_binders_no_CN_loss, paired = TRUE)
+wilcox.test(supp$ratio_binders_CN_loss, supp$ratio_binders_no_CN_loss, paired = TRUE)
+
+boxplot(high$ratio_binders_no_CN_loss/high$ratio_binders_CN_loss, low$ratio_binders_no_CN_loss/low$ratio_binders_CN_loss, supp$ratio_binders_no_CN_loss/supp$ratio_binders_CN_loss)
+wilcox.test(high$ratio_binders_no_CN_loss/high$ratio_binders_CN_loss, low$ratio_binders_no_CN_loss/low$ratio_binders_CN_loss)
+wilcox.test(high$ratio_binders_no_CN_loss/high$ratio_binders_CN_loss, supp$ratio_binders_no_CN_loss/supp$ratio_binders_CN_loss)
+wilcox.test(low$ratio_binders_no_CN_loss/low$ratio_binders_CN_loss, supp$ratio_binders_no_CN_loss/supp$ratio_binders_CN_loss)
+```
+
+
+
+**Interpretation:**
+
+* No difference in proportion of binidng neoantigens in CN +/- regions
+
+* Higher CN event count in IS than IC patients, which seems counterintuitive
+
+**Future steps:**
+
+* Redo CN with purity adjustment with CNVkit, see how that affects the results

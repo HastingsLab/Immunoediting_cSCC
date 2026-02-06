@@ -1,0 +1,60 @@
+---
+title: "2025_2_18_Compare_binding_proportion_In_silico_observed"
+output: html_document
+date: "2025-02-18"
+---
+
+## Libraries
+```{r}
+library(ggplot2)
+```
+
+## Read in data
+```{r}
+observed_prop <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Characteristics clonal subclonal neoags/Proportion_binding_neoags.csv"))
+
+expected_prop <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Characteristics clonal subclonal neoags/Compiled_binding_proportion_in_silico.csv"))
+```
+
+## Match data
+```{r}
+expected_prop <- expected_prop[match(observed_prop$ID, expected_prop$ID),]
+identical(observed_prop$ID, expected_prop$ID)
+
+observed_prop$expected_prop <- expected_prop$total_proportion
+```
+
+## Calculated total prop observed
+```{r}
+observed_prop$observed_prop <- (observed_prop$clonal_binders + observed_prop$subclonal_bidners)/(observed_prop$count_clonal + observed_prop$count_subclonal)
+high <- observed_prop[which(observed_prop$immune_binary=="high"),]
+wilcox.test(high$observed_prop, high$expected_prop)
+low <- observed_prop[which(observed_prop$immune_binary=="low"),]
+wilcox.test(low$observed_prop, low$expected_prop)
+suppressed <- observed_prop[which(observed_prop$immune_binary=="Suppressed"),]
+#suppressed <- suppressed[-which(is.na(suppressed$expected_prop)),]
+wilcox.test(suppressed$observed_prop, suppressed$expected_prop)
+
+wilcox.test(high$expected_prop, low$expected_prop)
+wilcox.test(high$expected_prop, suppressed$expected_prop)
+wilcox.test(low$expected_prop, suppressed$expected_prop)
+
+wilcox.test(high$observed_prop, low$observed_prop)
+wilcox.test(high$observed_prop, suppressed$observed_prop)
+wilcox.test(low$observed_prop, suppressed$observed_prop)
+```
+
+## Plot observed vs. expected
+```{r}
+
+observed_prop_plot <- observed_prop[,which(colnames(observed_prop) %in% (c("ID", "immune_binary", "expected_prop", "observed_prop")))]
+observed_prop_plot <- reshape::melt(observed_prop_plot)
+observed_prop_plot$new_variable <- paste(observed_prop_plot$immune_binary, observed_prop_plot$variable, sep="_")
+
+
+ggplot(observed_prop_plot, aes(x=new_variable, y=value, fill=variable)) + geom_boxplot(outlier.shape=NA) + geom_point(position=position_jitterdodge(jitter.width = 0)) + theme_minimal()+ geom_line(aes(group=ID))+ theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Characteristics clonal subclonal neoags/Comparison_in_silico_figures/Proportion_binding_comparison.pdf", width=8, height=5)
+ggplot(observed_prop_plot, aes(x=new_variable, y=value, fill=variable)) + geom_boxplot(outlier.shape=NA) + geom_point(position=position_jitterdodge(jitter.width = 0)) + theme_minimal()+ geom_line(aes(group=ID))+ theme(axis.text.x = element_text(angle = 30, hjust = 1))
+dev.off()
+```

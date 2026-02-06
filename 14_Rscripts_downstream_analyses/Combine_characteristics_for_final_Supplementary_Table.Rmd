@@ -1,0 +1,40 @@
+---
+title: "Figure5_binding_proportion"
+output: html_document
+date: "2025-02-06"
+---
+
+## Libraries
+
+```{r}
+library(stringr)
+library(ggplot2)
+library(ggpubr)
+library(biomaRt)
+library(DGEobj.utils)
+library(stringi)
+library(dplyr)
+```
+
+## Read in clinical data
+```{r}
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples_immune_binary.csv"))
+#clinical_data <- clinical_data[-which(clinical_data$Exome_batch=="B4"),]
+```
+
+```{r}
+k=1
+sample=clinical_data$ID[k]
+peptides <- as.data.frame(read.csv(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immunogenicity/", sample, "_all_characteristics_add_ec.csv", sep=""), row.names=1))
+peptides$Patient <- sample
+all_data <- matrix(NA, ncol=ncol(peptides), nrow=1)
+colnames(all_data) <- colnames(peptides)
+for (k in 1:length(clinical_data$ID)){
+  sample=clinical_data$ID[k]
+  print(k)
+  peptides <- as.data.frame(read.csv(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immunogenicity/", sample, "_all_characteristics_add_ec.csv", sep=""), row.names=1))
+  peptides$Patient <- sample
+  all_data <- rbind(all_data, peptides)
+}
+write.csv(all_data, "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immunogenicity/All_patients_neoAg_characteristics.csv")
+```

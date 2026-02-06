@@ -1,0 +1,111 @@
+---
+title: "2025_11_18_Add_subcellular_localization"
+output: html_document
+date: "2025-11-18"
+---
+
+## **Purpose:**
+
+Map cellular localization to the peptides
+
+## **Methods:**
+
+* Use bioMart to retrieve protein IDs from gene IDs
+
+* Use UniProt to assign CC classifications
+
+## **Results:**
+
+```{r}
+library(GO.db)
+library(org.Hs.eg.db)
+library(biomaRt)
+```
+
+## Read in clinical data
+```{r}
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples.csv"))
+clinical_data <- clinical_data[which(clinical_data$Include_in_study=="Yes"),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$Tumor_Sample_Barcode)),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$RNA_ID)),]
+```
+
+### Retrieve protein IDs
+
+```{r}
+for (k in 1:length(clinical_data$Patient)){
+sample=clinical_data$ID[k]
+if (!file.exists(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immunogenicity/", sample, "_all_characteristics_add_EC_add_subcell_loc.csv", sep=""))){
+data <- as.data.frame(read.csv(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immunogenicity/", sample, "_all_characteristics_add_EC.csv", sep="")))
+if (length(data[-which(is.na(data$expression)),1])>0){
+  data <- data[-which(is.na(data$expression)),]
+}
+
+uniprot_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Subcellular_localization/uniprot_subcellular_location.csv", row.names=NULL))
+uniprot_data$Gene.Names <- gsub(" ", ",", uniprot_data$Gene.Names)
+uniprot_data$Gene.Names <- gsub("$", ",", uniprot_data$Gene.Names)
+uniprot_data$Gene.Names <- gsub("^", ",", uniprot_data$Gene.Names)
+uniprot_data$Entry.Name <- gsub("_HUMAN", ",", uniprot_data$Entry.Name)
+uniprot_data$Entry.Name <- gsub("^", ",", uniprot_data$Entry.Name)
+
+for (i in 1:length(data$gene)){
+  print(i)
+  CC <- uniprot_data[grep(paste(",", data$gene[i],",", sep=""), uniprot_data$Gene.Names, fixed=TRUE),]
+  if (length(CC$Entry)>1){
+    CC <- CC[grep(paste(",", data$gene[i],",", sep=""), CC$Entry.Name),]
+  }
+  data$CC[i] <- CC$Subcellular.location..CC.
+}
+data$Cytoplasm <- 0 
+data$Nucleus <- 0 
+data$Membrane <- 0
+data$ER <- 0 
+data$Golgi <- 0 
+data$Mitochondria <- 0
+data$Secreted <- 0
+
+data[grep("Cytoplasm", data$CC),32] <- 1
+data[grep("Nucleus", data$CC),33] <- 1
+data[grep("Cell membrane", data$CC),34] <- 1
+data[grep("Membrane", data$CC),34] <- 1
+data[grep("Endoplasmic reticulum", data$CC),35] <- 1
+data[grep("Golgi", data$CC),36] <- 1
+data[grep("Mitochondrion", data$CC),37] <- 1
+data[grep("Secreted", data$CC),38] <- 1
+
+write.csv(data, paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immunogenicity/", sample, "_all_characteristics_add_EC_add_subcell_loc.csv", sep=""))
+}
+}
+```
+
+
+### Extract data for one example
+```{r}
+data$Cytoplasm <- 0 
+data$Nucleus <- 0 
+data$Membrane <- 0
+data$ER <- 0 
+data$Golgi <- 0 
+data$Mitochondria <- 0
+data$Secreted <- 0
+
+data[grep("Cytoplasm", data$CC),32] <- 1
+data[grep("Nucleus", data$CC),33] <- 1
+data[grep("Cell membrane", data$CC),34] <- 1
+data[grep("Membrane", data$CC),34] <- 1
+data[grep("membrane protein", data$CC),34] <- 1
+data[grep("Endoplasmic reticulum", data$CC),35] <- 1
+data[grep("Golgi", data$CC),36] <- 1
+data[grep("Mitochondrion", data$CC),37] <- 1
+data[grep("Secreted", data$CC),38] <- 1
+
+table(data$Cytoplasm)
+table(data$Nucleus)
+table(data$Membrane)
+table(data$ER)
+table(data$Golgi)
+table(data$Mitochondria)
+table(data$Secreted)
+
+test <- data[which(data$Cytoplasm==0 & data$Nucleus==0 & data$Membrane==0 & data$ER==0 & data$Golgi==0 & data$Mitochondria==0 & data$Secreted==0),]
+```

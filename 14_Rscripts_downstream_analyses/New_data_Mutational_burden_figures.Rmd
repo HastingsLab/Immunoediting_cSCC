@@ -1,0 +1,99 @@
+---
+title: "2024_7_3_Mutational_burden_and_signature"
+output: html_document
+date: "2024-7-3"
+---
+
+**Purpose:**
+
+* Summarize all progress to date on mutational burden and signature in Ak and SCC data
+
+**Methods:**
+
+* Mutational burden quantified
+
+* Mutational signature quantified with two different software
+
+* Print out annotations for Sex, Age, Metastatic status, and stage
+
+**Results:**
+
+## Libraries
+```{r}
+library(ggplot2)
+library(maftools)
+library(BSgenome.Hsapiens.UCSC.hg38)
+library(deconstructSigs)
+library(sigminer)
+library(stringr)
+library(ggsci)
+library(plyr)
+library(reshape2)
+library(dunn.test)
+```
+
+
+## Read in Mayo variants
+
+```{r}
+maf_file_Mayo = "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_coverage_filtered.maf"
+maf_mayo <- data.table::fread(maf_file_Mayo)
+table(maf_mayo$Variant_Classification)
+vcNames <- names(maf_mayo$Variant_Classification)
+variants_mayo = read.maf(maf = maf_file_Mayo, vc_nonSyn=vcNames)
+
+# Calculate mutational burden
+mutational_burden_mayo <- variants_mayo@variant.classification.summary
+maf_mayo$number <- 1
+total_mutations_mayo <- ddply(maf_mayo, "Tumor_Sample_Barcode", numcolwise(sum))
+total_mutations_mayo <- total_mutations_mayo[match(mutational_burden_mayo$Tumor_Sample_Barcode, total_mutations_mayo$Tumor_Sample_Barcode),]
+identical(as.character(mutational_burden_mayo$Tumor_Sample_Barcode), total_mutations_mayo$Tumor_Sample_Barcode)
+mutational_burden_mayo$somatic_mutations <- total_mutations_mayo$number
+
+### Add immunosuppression annotations
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples.csv"))
+clinical_data <- clinical_data[which(clinical_data$Include_in_study=="Yes"),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$Tumor_Sample_Barcode)),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$RNA_ID)),]
+clinical_data <- clinical_data[which(clinical_data$Dataset=="New"),]
+
+mutational_burden_mayo <- mutational_burden_mayo[which(mutational_burden_mayo$Tumor_Sample_Barcode %in% clinical_data$Tumor_Sample_Barcode),]
+clinical_data <- clinical_data[match(mutational_burden_mayo$Tumor_Sample_Barcode, clinical_data$Tumor_Sample_Barcode),]
+identical(as.character(mutational_burden_mayo$Tumor_Sample_Barcode), clinical_data$Tumor_Sample_Barcode)
+mutational_burden_mayo$immunosuppression <- clinical_data$Immunosuppression
+mutational_burden_mayo$met <- clinical_data$Met
+mutational_burden_mayo$stage <- clinical_data$Stage
+mutational_burden_mayo$sex <- clinical_data$Gender
+mutational_burden_mayo$age <- clinical_data$Age
+mutational_burden_mayo$treatment <- clinical_data$Immunosuppressive_agent
+mutational_burden_mayo$location <- clinical_data$Location
+mutational_burden_mayo$Dataset <- clinical_data$Dataset
+
+mutational_burden <- mutational_burden_mayo
+total_data <- mutational_burden[,c(1,3,9,10,11,12,13,14,15,16,17)]
+```
+
+## Mutational burden plots
+
+```{r}
+mutational_burden_formatted <- total_data[,c(1:7,9:10)]
+mutational_burden_formatted <- reshape2::melt(mutational_burden_formatted, value.name = "Mutations")
+somatic_burden_matched <- total_data[match(mutational_burden_formatted$Tumor_Sample_Barcode, total_data$Tumor_Sample_Barcode),]
+identical(mutational_burden_formatted$Tumor_Sample_Barcode, somatic_burden_matched$Tumor_Sample_Barcode)
+mutational_burden_formatted$somatic_mutations <- somatic_burden_matched$somatic_mutations
+mutational_burden_formatted$age <- somatic_burden_matched$age
+
+table(total_data$immunosuppression)
+ggplot(total_data, aes(x=factor(immunosuppression, levels=c("No","Yes")), y=somatic_mutations)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+wilcox.test(somatic_mutations ~immunosuppression, total_data)
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Somatic_mutations_immunosuppression_new_data.pdf")
+ggplot(total_data, aes(x=factor(immunosuppression, levels=c("No","Yes")), y=somatic_mutations)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+
+ggplot(total_data, aes(x=factor(immunosuppression, levels=c("No","Yes")), y=Missense_Mutation)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+wilcox.test(Missense_Mutation ~immunosuppression, total_data)
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Missense_mutations_immunosuppression_new_data.pdf")
+ggplot(total_data, aes(x=factor(immunosuppression, levels=c("No","Yes")), y=Missense_Mutation)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+```
+

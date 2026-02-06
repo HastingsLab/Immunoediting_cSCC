@@ -1,0 +1,103 @@
+---
+title: "2025_11_25_Corroboration_for_clustering approach"
+output: html_document
+date: "2025-11-25"
+---
+
+## **Purpose:**
+
+* Determine if we can corroborate our finding in the clustering analysis with an orthoganal approach
+
+## **Methods:**
+
+* Identify a set of thresholds for binding, stability, and expression that show enrichment in subclonal vs. clonal neoantigens
+
+## **Results:**
+## Libraries
+```{r}
+library(ggplot2)
+```
+
+## Read in clinical data
+```{r}
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples.csv"))
+clinical_data <- clinical_data[which(clinical_data$Include_in_study=="Yes"),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$Tumor_Sample_Barcode)),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$RNA_ID)),]
+#clinical_data <- clinical_data[-which(is.na(clinical_data$RNA_ID)),]
+proportion_binding <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples_immune_binary.csv"))
+proportion_binding_matched <- proportion_binding[match(clinical_data$Tumor_Sample_Barcode, proportion_binding$Tumor_Sample_Barcode),]
+clinical_data$immune_binary <- proportion_binding_matched$immune_binary
+table(clinical_data$immune_binary)
+```
+
+
+```{r}
+data <- matrix(NA, nrow=1, ncol=21)
+colnames(data) <- c("ID","CCF","gene","expression","min_binding","MT_9mer","max_stability","Cle", "TAP", "netMHC_II_binding","EC","Cytoplasm", "Nucleus", "Membrane", "ER", "Golgi", "Mitochondria", "Secreted","DAI", "Patient", "Immunosuppression")
+
+
+# Add data to the data matrix
+for (i in 1:length(clinical_data$Tumor_Sample_Barcode)){
+  tumor_id <- clinical_data$Tumor_Sample_Barcode[i]
+  patient_id <- clinical_data$ID[i]
+  data_temp <- as.data.frame(read.table(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immunogenicity/", patient_id, "_all_characteristics_add_EC_add_subcell_loc.csv", sep=""),sep=",", header=TRUE))
+  data_temp <- data_temp[which(!duplicated(data_temp$MT_9mer)),] # Remove any duplicate peptides
+  data_temp <- data_temp[, which(colnames(data_temp) %in% c("MT_9mer", "V5", "gene", "expression", "TAP", "Cle",
+                    "min_binding", "max_stability", "WT_binding", "CCF", "EC", "netMHC_II_binding", "Cytoplasm", "Nucleus", "Membrane", "ER", "Golgi", "Mitochondria", "Secreted"))]
+  test <- data_temp[which(is.na(data_temp$TAP)),] # Remove any data with missing TAP scores
+  if (length(test$MT_9mer)>0){
+    data_temp <- data_temp[-which(is.na(data_temp$TAP)),]
+  }
+  data_temp$DAI <- data_temp$WT_binding/data_temp$min_binding # Calculated DAI
+
+  data_temp <- data_temp[, which(colnames(data_temp) %in% c("MT_9mer", "V5", "gene", "expression", "TAP", "Cle",
+                    "min_binding", "max_stability", "DAI", "CCF","EC", "DAI", "netMHC_II_binding", "Cytoplasm", "Nucleus", "Membrane", "ER", "Golgi", "Mitochondria", "Secreted"))]
+  colnames(data_temp) <- c("ID","CCF","gene","expression","min_binding","MT_9mer","max_stability","Cle","TAP","netMHC_II_binding", "EC", "Cytoplasm", "Nucleus", "Membrane", "ER", "Golgi", "Mitochondria", "Secreted", "DAI")
+  data_temp$Patient <- patient_id
+  data_temp$Immunosuppression <- clinical_data$immune_binary[i]
+  data <- rbind(data, data_temp) # Combine with dat aframe
+  data_temp$Immunogenic <- NA
+  data_temp[which(log(data_temp$min_binding,10)<3 & log(data_temp$max_stability,10)>0 & log(data_temp$expression+0.01,10)>-0.5),22] <- "Immunogenic"
+
+clinical_data$Proportion_clonal_immunogenic[i] <- length(data_temp[which(data_temp$Immunogenic=="Immunogenic" & data_temp$CCF>0.75),1])/length(data_temp[which(data_temp$CCF>0.75),1])
+clinical_data$Proportion_subclonal_immunogenic[i] <- length(data_temp[which(data_temp$Immunogenic=="Immunogenic" & data_temp$CCF<0.75),1])/length(data_temp[which(data_temp$CCF<0.75),1])
+}
+data <- data[-1,] # Remove dummy first row
+
+data_plot <- clinical_data[,which(colnames(clinical_data) %in% c("Patient","immune_binary", "Proportion_clonal_immunogenic", "Proportion_subclonal_immunogenic"))]
+data_plot <- reshape::melt(data_plot, c("Patient","immune_binary"))
+
+ggplot(data_plot, aes(x=paste(immune_binary, variable), y= value)) + geom_boxplot(outlier.shape=NA) + geom_point() + theme_minimal()
+
+high <- clinical_data[which(clinical_data$immune_binary == "high"),]
+wilcox.test(high$Proportion_clonal_immunogenic, high$Proportion_subclonal_immunogenic, paired=TRUE)
+low <- clinical_data[which(clinical_data$immune_binary == "low"),]
+wilcox.test(low$Proportion_clonal_immunogenic, low$Proportion_subclonal_immunogenic, paired=TRUE)
+suppressed <- clinical_data[which(clinical_data$immune_binary == "Suppressed"),]
+wilcox.test(suppressed$Proportion_clonal_immunogenic, suppressed$Proportion_subclonal_immunogenic, paired=TRUE)
+```
+
+### Modeling
+
+```{r}
+library(randomForest)
+
+data$clonal <- NA
+data[which(data$CCF>0.75), 22] <- 1
+data[which(data$CCF<0.75), 22] <- 0
+clinical_data_matched <- clinical_data[match(data$Patient, clinical_data$ID),]
+identical(as.character(clinical_data_matched$ID), as.character(data$Patient))
+data$immune_binary <- clinical_data_matched$immune_binary
+data$groups <- paste(data$immune_binary, data$clonal, sep="_")
+playindex <- sample(1:nrow(data), 0.8 * nrow(data))
+play_data <- data[playindex,]
+play_data <- play_data[which(play_data$groups == "high_1" | play_data$groups == "Suppressed_1"),]
+head(play_data)
+play_data$groups <- factor(play_data$groups, levels=c("high_1", "Suppressed_1"))
+play_data$expression <- log(as.numeric(play_data$expression)+0.01,10)
+play_data$min_binding <- log(as.numeric(play_data$min_binding),10)
+rf_model <- randomForest(groups ~ expression + min_binding + max_stability + DAI + EC + Cytoplasm + Nucleus + Membrane + ER + Golgi + Mitochondria + Secreted, data = play_data)
+print(rf_model)
+```
+

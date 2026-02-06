@@ -1,0 +1,243 @@
+---
+title: "2025_12_10_Map_Clusters_HiTide_data"
+output: html_document
+date: "2025-12-10"
+---
+
+## **Purpose:**
+
+* Test the mapping of the immunogenic/non-immunogenic peptides from HiTide only the clusters
+
+## **Methods:**
+
+* Read in the existing kmeans clusters
+
+* Format new data to match with appropriate normalization
+
+* Visualize mapping
+
+* Calculate proportion of immunogenic and non-immunogenic neoantigens that map to each cluster
+
+### Libraries
+```{r}
+library(flexclust)
+library(pheatmap)
+library(stringr)
+library(ggplot2)
+library(ggpubr)
+library(biomaRt)
+library(DGEobj.utils)
+library(dplyr)
+library(readr)
+library(tidyr)
+library(tibble)
+```
+
+### Read in existing model and convert to kcca model
+```{r}
+kmeans_model <- readRDS("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Characteristics clonal subclonal neoags/Clustering_analysis/map_hitide/kmeans_model.rds")
+
+original_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Characteristics clonal subclonal neoags/Clustering_analysis/map_hitide/data_clust.csv"))
+head(original_data)
+
+cl1 <- as.kcca(kmeans_model, original_data)
+cl1
+```
+
+### Format new data to match original data
+
+```{r}
+new_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Subcellular_localization/HiTide_data/HiTide_subset_data_characteristics_add_EC.txt"))
+new_data$DAI <- new_data$netMHC_nM_WT/new_data$netMHC_nM_MT
+new_data_rearranged <- new_data[,c(9,10,12,8,7,14,15)]
+colnames(new_data_rearranged)
+colnames(new_data_rearranged) <- colnames(original_data)
+new_data_rearranged$dataset <- new_data$dataset
+new_data_rearranged$immunogenic <- new_data$response_type
+```
+
+### Scale new data to match original data
+```{r}
+new_data_rearranged$expression <- scale(log(new_data_rearranged$expression+0.01,10), center = TRUE)
+new_data_rearranged$TAP <- scale(new_data_rearranged$TAP, center=TRUE)
+new_data_rearranged$Cle <- scale(new_data_rearranged$Cle, center=TRUE)
+new_data_rearranged$min_binding <- scale(log(new_data_rearranged$min_binding,10), center=TRUE)
+new_data_rearranged$max_stability <- scale(log(as.numeric(new_data_rearranged$max_stability),10), center=TRUE)
+new_data_rearranged$DAI <- scale(log(new_data_rearranged$DAI+0.01,10), center=TRUE)
+new_data_rearranged$EC <- scale(new_data_rearranged$EC, center=TRUE)
+```
+
+### Predict for new data
+```{r}
+set.seed(123)
+new_data_rearranged$pred <- predict(cl1, new_data_rearranged[,1:7])
+```
+
+### Plot proportion in each cluster
+```{r}
+table(new_data_rearranged$immunogenic)
+table(new_data_rearranged$pred, new_data_rearranged$immunogenic)
+table <- as.data.frame(table(new_data_rearranged$pred, new_data_rearranged$immunogenic))
+table[1:7,3] <- table[1:7,3]/151
+table[8:14,3] <- table[8:14,3]/3788
+ggplot(table, aes(x=Var1, y=Freq, fill=Var2)) + geom_bar(stat="identity", position="dodge") + theme_minimal()
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Subcellular_localization/HiTide_data/Proportion_each_cluster.pdf")
+ggplot(table, aes(x=Var1, y=Freq, fill=Var2)) + geom_bar(stat="identity", position="dodge") + theme_minimal()
+dev.off()
+```
+
+### Plot proportion in each cluster subset by dataset
+```{r}
+hitide_subset <- new_data_rearranged[which(new_data_rearranged$dataset == "HiTIDE"),]
+table(hitide_subset$immunogenic)
+table(hitide_subset$pred, hitide_subset$immunogenic)
+table <- as.data.frame(table(hitide_subset$pred, hitide_subset$immunogenic))
+table[1:7,3] <- table[1:7,3]/30
+table[8:14,3] <- table[8:14,3]/1201
+ggplot(table, aes(x=Var1, y=Freq, fill=Var2)) + geom_bar(stat="identity", position="dodge") + theme_minimal()
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Subcellular_localization/HiTide_data/HiTide_Proportion_each_cluster.pdf")
+ggplot(table, aes(x=Var1, y=Freq, fill=Var2)) + geom_bar(stat="identity", position="dodge") + theme_minimal()
+dev.off()
+
+nci_subset <- new_data_rearranged[which(new_data_rearranged$dataset == "NCI"),]
+table(nci_subset$immunogenic)
+table(nci_subset$pred, nci_subset$immunogenic)
+table <- as.data.frame(table(nci_subset$pred, nci_subset$immunogenic))
+table[1:7,3] <- table[1:7,3]/90
+table[8:14,3] <- table[8:14,3]/2000
+ggplot(table, aes(x=Var1, y=Freq, fill=Var2)) + geom_bar(stat="identity", position="dodge") + theme_minimal()
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Subcellular_localization/HiTide_data/NCI_Proportion_each_cluster.pdf")
+ggplot(table, aes(x=Var1, y=Freq, fill=Var2)) + geom_bar(stat="identity", position="dodge") + theme_minimal()
+dev.off()
+
+tesla_subset <- new_data_rearranged[which(new_data_rearranged$dataset == "TESLA"),]
+table(tesla_subset$immunogenic)
+table(tesla_subset$pred, tesla_subset$immunogenic)
+table <- as.data.frame(table(tesla_subset$pred, tesla_subset$immunogenic))
+table[1:7,3] <- table[1:7,3]/31
+table[8:14,3] <- table[8:14,3]/587
+ggplot(table, aes(x=Var1, y=Freq, fill=Var2)) + geom_bar(stat="identity", position="dodge") + theme_minimal()
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Subcellular_localization/HiTide_data/TESLA_Proportion_each_cluster.pdf")
+ggplot(table, aes(x=Var1, y=Freq, fill=Var2)) + geom_bar(stat="identity", position="dodge") + theme_minimal()
+dev.off()
+```
+
+### Fisher exact test
+```{r}
+table <- as.data.frame(table(new_data_rearranged$pred, new_data_rearranged$immunogenic))
+df <- table %>%
+      # Convert long data into contigency table
+      pivot_wider(names_from = Var1,   
+                  values_from = Freq,    
+                  values_fill = 0 ) %>%
+      column_to_rownames("Var2") %>%
+      as.matrix()
+
+df
+fisher.test(df, simulate.p.value = TRUE)
+df <- t(df)
+fisher.test(df, simulate.p.value = TRUE)
+```
+
+### Residuals
+```{r}
+chi <- chisq.test(df)
+res <- as.data.frame(as.table(chi$residuals))
+names(res) <- c("Cluster", "Immunogenic", "StdResid")
+
+ggplot(res, aes(x = factor(Immunogenic, levels=c("CD8", "negative")), y = StdResid, fill = StdResid)) +
+  geom_col() +
+  facet_wrap(~reorder(Cluster, -StdResid), nrow = 1) +
+  geom_hline(yintercept = c(-2, 2), linetype = "dashed", color = "red") +
+  labs(title = "Standardized residuals by supertype and group",
+       y = "Standardized residual") +
+  scale_fill_gradient2(midpoint = 0) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 8,face = "bold"),
+    strip.text   = element_text(angle = 90, hjust = 0))
+```
+
+### Heatmap
+```{r}
+# Reorder data_plot based on clusters
+ordered_indices <- order(new_data_rearranged$pred)
+data_plot_ordered <- new_data_rearranged[ordered_indices,]
+col_cluster_annotations <- data_plot_ordered$pred
+data_plot_ordered <- data_plot_ordered[,1:7]
+data_plot_ordered <- t(data_plot_ordered)
+
+# Prepare annotations based on reordered clusters
+col_cluster_annotations <- as.data.frame(col_cluster_annotations)
+row.names(col_cluster_annotations) <- colnames(data_plot_ordered)
+col_cluster_annotations$col_cluster_annotations <- as.factor(col_cluster_annotations$col_cluster_annotations)
+
+colors <- colorRampPalette(RColorBrewer::brewer.pal(11,"BrBG"))(256)
+cluster_colors <- c("1" = "#CC6677", "2" = "#661100", "3" = "#999933", "4" = "#DDCC77", "5" = "#117733", "6" = "#88CCEE", "7" = "#332288", "8" = "black")
+
+pheatmap(data_plot_ordered, cluster_rows=FALSE, cluster_cols=FALSE, show_colnames=FALSE, color = colors, annotation_col = col_cluster_annotations, annotation_colors = list(col_cluster_annotations = cluster_colors))
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Subcellular_localization/HiTide_data/Pheatmap.pdf")
+pheatmap(data_plot_ordered, cluster_rows=FALSE, cluster_cols=FALSE, show_colnames=FALSE, color = colors, annotation_col = col_cluster_annotations, annotation_colors = list(col_cluster_annotations = cluster_colors))
+dev.off()
+```
+
+## Poisson regression
+```{r}
+colnames(table) <- c("Cluster", "Immunogenic", "Counts")
+fit <- glm(Counts ~ Cluster * Immunogenic,
+           data = table,
+           family = "poisson")
+
+summary(fit)
+```
+
+## Pairwise fisher exact tests
+
+# C1
+```{r}
+p_values <- matrix(NA, nrow=7, ncol=2)
+table_total <- as.data.frame(table(new_data_rearranged$immunogenic))
+table_total$Cluster <- "All"
+table_total <- table_total[,c(3, 1, 2)]
+colnames(table_total) <- c("Cluster", "Immunogenic", "Counts")
+print(table_total)
+
+## DO one as a sanity check
+table_lim <- table[which(table$Cluster==1),]
+  table_diff <- table_total
+  table_diff$Counts <- table_diff$Counts - table_lim$Counts
+  table_diff <- rbind(table_diff, table_lim)
+  df <- table_diff %>%
+      # Convert long data into contigency table
+      pivot_wider(names_from = Cluster,   
+                  values_from = Counts,    
+                  values_fill = 0 ) %>%
+      column_to_rownames("Immunogenic") %>%
+      as.matrix()
+  df
+  print(table_total) #Validates that I did not change it for next iterations
+  fisher.test(df, simulate.p.value = TRUE)
+
+for (i in 1:7){
+  table_lim <- table[which(table$Cluster==i),]
+  table_diff <- table_total
+  table_diff$Counts <- table_diff$Counts - table_lim$Counts
+  table_diff <- rbind(table_diff, table_lim)
+  df <- table_diff %>%
+      # Convert long data into contigency table
+      pivot_wider(names_from = Cluster,   
+                  values_from = Counts,    
+                  values_fill = 0 ) %>%
+      column_to_rownames("Immunogenic") %>%
+      as.matrix()
+  stats <- fisher.test(df, simulate.p.value = TRUE)
+  p_values[i, 1] <- i
+  p_values[i,2] <- stats$p.value
+}
+
+p.adjust(p_values[,2], method = "bonferroni")
+```

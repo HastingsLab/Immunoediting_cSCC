@@ -1,0 +1,373 @@
+---
+title: "2024_7_3_Mutational_burden_and_signature"
+output: html_document
+date: "2024-7-3"
+---
+
+**Purpose:**
+
+* Summarize all progress to date on mutational burden and signature in Ak and SCC data
+
+**Methods:**
+
+* Mutational burden quantified
+
+* Mutational signature quantified with two different software
+
+* Print out annotations for Sex, Age, Metastatic status, and stage
+
+**Results:**
+
+## Libraries
+```{r}
+library(ggplot2)
+library(maftools)
+library(BSgenome.Hsapiens.UCSC.hg38)
+library(deconstructSigs)
+library(sigminer)
+library(stringr)
+library(ggsci)
+library(plyr)
+library(reshape2)
+library(dunn.test)
+```
+
+## Fix DNPs - used once, then commented out
+
+```{r}
+### Fix DNPs
+#maf_file = "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered.maf"
+
+#maf <- data.table::fread(maf_file)
+
+#index_to_remove <- matrix(NA, nrow = length(maf$Hugo_Symbol),ncol=1)
+
+#n_iter <- length(maf$Hugo_Symbol)
+
+#a=1
+#for (i in 2:n_iter){
+#  print(i)
+#  if (maf$Start_Position[i] == maf$Start_Position[i-1]+1 & maf$Tumor_Sample_Barcode[i]==maf$Tumor_Sample_Barcode[i-1] &
+#      maf$Chromosome[i]==maf$Chromosome[i-1] & maf$Variant_Classification[i] == maf$Variant_Classification[i-1]){
+    #print(i)
+    #print(maf_mayo[i,])
+    #print(maf_mayo[i-1,])
+#    maf$Start_Position[i] <- maf$Start_Position[i]-1
+#    maf$Reference_Allele[i] <- paste(maf$Reference_Allele[i], maf$Reference_Allele[i-1], sep="")
+#    maf$Tumor_Seq_Allele1[i] <- paste(maf$Tumor_Seq_Allele1[i], maf$Tumor_Seq_Allele1[i-1], sep="")
+#    maf$Tumor_Seq_Allele2[i] <- paste(maf$Tumor_Seq_Allele2[i], maf$Tumor_Seq_Allele2[i-1], sep="")
+#    maf$Match_Norm_Seq_Allele1[i] <- paste(maf$Match_Norm_Seq_Allele1[i], maf$Match_Norm_Seq_Allele1[i-1])
+#    maf$Match_Norm_Seq_Allele2[i] <- paste(maf$Match_Norm_Seq_Allele2[i], maf$Match_Norm_Seq_Allele2[i-1])
+#    maf$Variant_Type[i] <- "DNP"
+#    #print(maf_mayo[i,])
+#    index_to_remove[a] <- i-1
+#    a=a+1
+#  }
+#}
+
+#index_to_remove <- index_to_remove[-which(is.na(index_to_remove))]
+#maf <- maf[-index_to_remove,]
+
+#readr::write_tsv(maf, "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_DNP_fixed.maf")
+```
+
+## Read in Mayo variants
+
+```{r}
+# Read in mayo file
+maf_file_Mayo = "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_DNP_fixed.maf"
+maf_mayo <- data.table::fread(maf_file_Mayo)
+maf_mayo <- maf_mayo[which((maf_mayo$t_alt_count)>=5),]
+maf_mayo <- maf_mayo[which((maf_mayo$t_depth)>=10),]
+readr::write_tsv(maf_mayo, "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_coverage_filtered.maf")
+maf_file_Mayo = "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_coverage_filtered.maf"
+table(maf_mayo$Variant_Classification)
+vcNames <- names(maf_mayo$Variant_Classification)
+variants_mayo = read.maf(maf = maf_file_Mayo, vc_nonSyn=vcNames)
+
+# Calculate mutational burden
+mutational_burden_mayo <- variants_mayo@variant.classification.summary
+maf_mayo$number <- 1
+total_mutations_mayo <- ddply(maf_mayo, "Tumor_Sample_Barcode", numcolwise(sum))
+total_mutations_mayo <- total_mutations_mayo[match(mutational_burden_mayo$Tumor_Sample_Barcode, total_mutations_mayo$Tumor_Sample_Barcode),]
+identical(as.character(mutational_burden_mayo$Tumor_Sample_Barcode), total_mutations_mayo$Tumor_Sample_Barcode)
+mutational_burden_mayo$somatic_mutations <- total_mutations_mayo$number
+
+### Add immunosuppression annotations
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples.csv"))
+clinical_data <- clinical_data[which(clinical_data$Include_in_study=="Yes"),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$Tumor_Sample_Barcode)),]
+#clinical_data <- clinical_data[-which(is.na(clinical_data$RNA_ID)),]
+proportion_binding <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples_immune_binary.csv"))
+proportion_binding_matched <- proportion_binding[match(clinical_data$Tumor_Sample_Barcode, proportion_binding$Tumor_Sample_Barcode),]
+clinical_data$immune_binary <- proportion_binding_matched$immune_binary
+clinical_data[which(is.na(clinical_data$immune_binary) & clinical_data$Immunosuppression=="No"),18] <- "No RNA"
+clinical_data[which(is.na(clinical_data$immune_binary) & clinical_data$Immunosuppression=="Yes"),18] <- "Suppressed"
+clinical_data <- clinical_data[which(clinical_data$Dataset=="Old"),]
+table(clinical_data$immune_binary)
+
+mutational_burden_mayo <- mutational_burden_mayo[which(mutational_burden_mayo$Tumor_Sample_Barcode %in% clinical_data$Tumor_Sample_Barcode),]
+clinical_data <- clinical_data[match(mutational_burden_mayo$Tumor_Sample_Barcode, clinical_data$Tumor_Sample_Barcode),]
+identical(as.character(mutational_burden_mayo$Tumor_Sample_Barcode), clinical_data$Tumor_Sample_Barcode)
+mutational_burden_mayo$immunosuppression <- clinical_data$immune_binary
+mutational_burden_mayo$met <- clinical_data$Met
+mutational_burden_mayo$stage <- clinical_data$Stage
+mutational_burden_mayo$sex <- clinical_data$Gender
+mutational_burden_mayo$age <- clinical_data$Age
+mutational_burden_mayo$treatment <- clinical_data$Immunosuppressive_agent
+mutational_burden_mayo$location <- clinical_data$Location
+mutational_burden_mayo$Dataset <- clinical_data$Dataset
+
+mutational_burden <- mutational_burden_mayo
+total_data <- mutational_burden[,c(1,3,9,10,11,12,13,14,15,16,17)]
+```
+
+## Mutational burden plots
+
+```{r}
+mutational_burden_formatted <- total_data[,c(1:7,9:10)]
+mutational_burden_formatted <- reshape2::melt(mutational_burden_formatted, value.name = "Mutations")
+somatic_burden_matched <- total_data[match(mutational_burden_formatted$Tumor_Sample_Barcode, total_data$Tumor_Sample_Barcode),]
+identical(mutational_burden_formatted$Tumor_Sample_Barcode, somatic_burden_matched$Tumor_Sample_Barcode)
+mutational_burden_formatted$somatic_mutations <- somatic_burden_matched$somatic_mutations
+mutational_burden_formatted$age <- somatic_burden_matched$age
+
+ggplot(mutational_burden_formatted, aes(x=reorder(Tumor_Sample_Barcode, somatic_mutations), y=Mutations, fill=variable)) + geom_bar(stat="identity", position="dodge") + facet_grid(. ~ factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x")+
+  theme_minimal() +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())+
+  scale_fill_manual(values=c("#88CCEE", "#CC6677", "#DDCC77", "#117733", "#332288", "#AA4499", 
+                             "#44AA99", "#999933", "#882255", "#661100", "#6699CC", "#888888"))
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Mutational_burden_immune_split.pdf", width=10)
+ggplot(mutational_burden_formatted, aes(x=reorder(Tumor_Sample_Barcode, somatic_mutations), y=Mutations, fill=variable)) + geom_bar(stat="identity", position="dodge") + facet_grid(. ~ factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x")+
+  theme_minimal() +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())+
+  scale_fill_manual(values=c("#88CCEE", "#CC6677", "#DDCC77", "#117733", "#332288", "#AA4499", 
+                             "#44AA99", "#999933", "#882255", "#661100", "#6699CC", "#888888"))
+dev.off()
+```
+
+## Output annotations
+```{r}
+mutational_burden_formatted <- mutational_burden_formatted[-which(mutational_burden_formatted$variable=="Missense_Mutation"),]
+mutational_burden_formatted$index <- as.numeric(row.names(mutational_burden_formatted))
+ggplot(mutational_burden_formatted, aes(x=reorder(index, somatic_mutations), y=1, fill=treatment)) + geom_bar(stat="identity") + facet_grid(. ~ factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x")
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Treatment_annotations.pdf", width=10)
+ggplot(mutational_burden_formatted, aes(x=reorder(index, somatic_mutations), y=1, fill=treatment)) + geom_bar(stat="identity") + facet_grid(. ~ factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x")
+dev.off()
+
+ggplot(mutational_burden_formatted, aes(x=reorder(index, somatic_mutations), y=1, fill=sex)) + geom_bar(stat="identity") + facet_grid(. ~ factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x")
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Sex_annotations.pdf", width=10)
+ggplot(mutational_burden_formatted, aes(x=reorder(index, somatic_mutations), y=1, fill=sex)) + geom_bar(stat="identity") + facet_grid(. ~ factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x")
+dev.off()
+
+ggplot(mutational_burden_formatted, aes(x=reorder(index, somatic_mutations), y=1, fill=stage)) + geom_bar(stat="identity") + facet_grid(. ~ factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x")
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Stage_annotations.pdf", width=10)
+ggplot(mutational_burden_formatted, aes(x=reorder(index, somatic_mutations), y=1, fill=stage)) + geom_bar(stat="identity") + facet_grid(. ~ factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x")
+dev.off()
+
+ggplot(mutational_burden_formatted, aes(x=reorder(index, somatic_mutations), y=1, fill=age)) + geom_bar(stat="identity") + facet_grid(. ~ factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x")
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Age_annotations.pdf", width=10)
+ggplot(mutational_burden_formatted, aes(x=reorder(index, somatic_mutations), y=1, fill=age)) + geom_bar(stat="identity") + facet_grid(. ~ factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x")
+dev.off()
+
+ggplot(mutational_burden_formatted, aes(x=reorder(index, somatic_mutations), y=1, fill=met)) + geom_bar(stat="identity") + facet_grid(. ~ factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x")
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Met_annotations.pdf", width=10)
+ggplot(mutational_burden_formatted, aes(x=reorder(index, somatic_mutations), y=1, fill=met)) + geom_bar(stat="identity") + facet_grid(. ~ factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x")
+dev.off()
+
+ggplot(mutational_burden_formatted, aes(x=reorder(index, somatic_mutations), y=1, fill=location)) + geom_bar(stat="identity") + facet_grid(. ~ factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x")
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Location_annotations.pdf", width=10)
+ggplot(mutational_burden_formatted, aes(x=reorder(index, somatic_mutations), y=1, fill=location)) + geom_bar(stat="identity") + facet_grid(. ~ factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x")
+dev.off()
+```
+
+## Boxplot comparison of mutational burden
+
+```{r}
+table(total_data$immunosuppression)
+ggplot(total_data, aes(x=factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), y=somatic_mutations)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+kruskal.test(somatic_mutations ~immunosuppression, total_data)
+dunn.test(total_data$somatic_mutations, total_data$immunosuppression, method="bh", altp=TRUE)
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Somatic_mutations_immunosuppression_split_immune.pdf")
+ggplot(total_data, aes(x=factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), y=somatic_mutations)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+
+ggplot(total_data, aes(x=factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), y=Missense_Mutation)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+kruskal.test(Missense_Mutation ~factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), total_data)
+dunn.test(total_data$Missense_Mutation, total_data$immunosuppression, method="bh", altp=TRUE)
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Missense_mutations_immunosuppression_split_immune.pdf")
+ggplot(total_data, aes(x=factor(immunosuppression, levels=c("No RNA", "high", "low", "Suppressed")), y=Missense_Mutation)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+```
+
+
+
+## Deconstruct sigs signatures
+
+```{r}
+maf_file = "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_coverage_filtered.maf"
+maf <- data.table::fread(maf_file)
+maf$number <- 1
+maf_total <- rbind(maf_mayo, maf)
+sigs.input <- mut.to.sigs.input(mut.ref = maf_total, 
+                                sample.id="Tumor_Sample_Barcode",
+                                chr="Chromosome",
+                                pos="Start_Position",
+                                ref="Reference_Allele",
+                                alt="Tumor_Seq_Allele2")
+
+clinical_data_total <- clinical_data[,which(colnames(clinical_data) %in% c("Tumor_Sample_Barcode", "immune_binary", "Immunosuppressive_agent"))]
+
+signatures_all <- matrix(ncol=length(clinical_data_total$Tumor_Sample_Barcode), nrow=66)
+
+for (i in 1:(length(clinical_data_total$Tumor_Sample_Barcode))){
+  signatures <- whichSignatures(tumor.ref=sigs.input,
+                              signatures.ref=signatures.exome.cosmic.v3.may2019,
+                              sample.id=clinical_data_total$Tumor_Sample_Barcode[i],
+                              contexts.needed = TRUE)#, 
+                              #signatures.limit=3)
+  signatures_summary <- signatures$weights
+  signatures_summary$Unknown <- signatures$unknown
+  signatures_all[,i] <- t(signatures_summary)
+}
+
+signature_types <- colnames(signatures_summary)
+signatures_all <- as.data.frame(signatures_all)
+signatures_all$signature <- signature_types
+signatures_all <- signatures_all[which(rowSums(signatures_all[,1:61]>0)>0),]
+
+colnames(signatures_all) <- c(clinical_data_total$Tumor_Sample_Barcode, "signature")
+signatures_plot <- reshape::melt(signatures_all)
+
+annotations <- clinical_data_total[match(signatures_plot$variable, clinical_data_total$Tumor_Sample_Barcode),]
+identical(as.character(signatures_plot$variable), annotations$Tumor_Sample_Barcode)
+
+signatures_plot$immune <- annotations$immune_binary
+signatures_plot$treatment <- annotations$Immunosuppressive_agent
+
+mutational_burden <- total_data[match(signatures_plot$variable, total_data$Tumor_Sample_Barcode),]
+identical(as.character(signatures_plot$variable), as.character(mutational_burden$Tumor_Sample_Barcode))
+
+signatures_plot$mutational_burden <- mutational_burden$somatic_mutations
+
+ggplot(signatures_plot, aes(x=reorder(variable, mutational_burden), y=value, fill=factor(signature, levels=c("Unknown","SBS17a","SBS17b","SBS28", "SBS24", "SBS19","SBS12", "SBS16", "SBS39", "SBS40", "SBS8", "SBS9", "SBS10a", "SBS10b", "SBS11", "SBS20", "SBS4", "SBS36", "SBS30", "SBS29", "SBS23", "SBS31", "SBS42", "SBS14","SBS15", "SBS3", "SBS6", "SBS21", "SBS44", "SBS18", "SBS45", "SBS46", "SBS50", "SBS51", "SBS52", "SBS53", "SBS54", "SBS58", "SBS59", "SBS5", "SBS1" ,"SBS13", "SBS2","SBS32","SBS38", "SBS7a", "SBS7b", "SBS7c", "SBS7d")))) + geom_bar(stat="identity", position="stack") + facet_grid(. ~ factor(immune, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x") + theme_minimal() +
+theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())+
+  labs(fill=NULL) #
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Mutational_signature_deconstruct_sigs_immune_split.pdf", width=10)
+ggplot(signatures_plot, aes(x=reorder(variable, mutational_burden), y=value, fill=factor(signature, levels=c("Unknown","SBS17a","SBS17b","SBS28", "SBS24", "SBS19","SBS12", "SBS16", "SBS39", "SBS40", "SBS8", "SBS9", "SBS10a", "SBS10b", "SBS11", "SBS20", "SBS4", "SBS36", "SBS30", "SBS29", "SBS23", "SBS31", "SBS42", "SBS14","SBS15", "SBS3", "SBS6", "SBS21", "SBS44", "SBS18", "SBS45", "SBS46", "SBS50", "SBS51", "SBS52", "SBS53", "SBS54", "SBS58", "SBS59", "SBS5", "SBS1" ,"SBS13", "SBS2","SBS32","SBS38", "SBS7a", "SBS7b", "SBS7c", "SBS7d")))) + geom_bar(stat="identity", position="stack") + facet_grid(. ~ factor(immune, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x") + theme_minimal() +
+theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())+
+  labs(fill=NULL) #
+dev.off()
+```
+
+## Sig miner results - without filtering
+
+```{r}
+maf_file = "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_DNP_fixed.maf"
+maf = read.maf(maf = maf_file, vc_nonSyn=vcNames)
+
+mt_tally <- sig_tallymaf_totalmt_tally <- sig_tally(maf, ref_genome = "BSgenome.Hsapiens.UCSC.hg38",
+                      use_syn = TRUE)
+set.seed(1)
+mt_sig <- sig_unify_extract(mt_tally$nmf_matrix, range=10, nrun=10)
+
+sim <- get_sig_similarity(mt_sig)
+
+signatures <- mt_sig$Exposure.norm
+signatures <- as.data.frame(signatures)
+signatures$signature <- row.names(signatures)
+write.csv(signatures, "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden Figures/sigminer_signatures_unfiltered.csv")
+signatures <- signatures[,which(colnames(signatures) %in% clinical_data_total$Tumor_Sample_Barcode)]
+
+signatures$signature <- row.names(signatures)
+signatures_plot <- reshape::melt(signatures)
+
+annotations <- clinical_data_total[match(signatures_plot$variable, clinical_data_total$Tumor_Sample_Barcode),]
+identical(as.character(signatures_plot$variable), annotations$Tumor_Sample_Barcode)
+
+somatic_burden_matched <- total_data[match(signatures_plot$variable, total_data$Tumor_Sample_Barcode),]
+identical(as.character(signatures_plot$variable), as.character(somatic_burden_matched$Tumor_Sample_Barcode))
+
+signatures_plot$immune <- annotations$immune_binary
+signatures_plot$mutational_burden <- somatic_burden_matched$somatic_mutations
+
+ggplot(signatures_plot, aes(x=reorder(variable, mutational_burden), y=value, fill=factor(signature, levels=c("Sig9", "Sig3", "Sig5", "Sig6", "Sig4", "Sig8",   "Sig10", "Sig7","Sig2", "Sig1")))) + geom_bar(stat="identity", position="stack") + facet_grid(. ~ factor(immune, levels=c("AK_No", "AK_Yes", "No", "Yes")), scales="free_x", space="free_x") + theme_minimal() +
+theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())+
+  labs(fill=NULL) #+
+  #scale_fill_manual(values=c("#888888","#882255", "#CC6677", "#AA4499", "#332288", "#88CCEE", "#44AA99", "#117733", "#999933",  "#DDCC77"))
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Mutational_signature_sigminer_unfiltered_immune_split.pdf", width=10)
+ggplot(signatures_plot, aes(x=reorder(variable, mutational_burden), y=value, fill=factor(signature, levels=c("Sig8", "Sig5", "Sig3", "Sig4", "Sig7",  "Sig9", "Sig6", "Sig10", "Sig2", "Sig1")))) + geom_bar(stat="identity", position="stack") + facet_grid(. ~ factor(immune, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x") + theme_minimal() +
+theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())+
+  labs(fill=NULL) #+
+dev.off()
+```
+
+## Sig miner results
+
+```{r}
+#readr::write_tsv(maf_total, "~/3.0 Hasting Research/Immunoediting_AK/MAF files/AK_data_Mayo_data_DNP_fixed.maf")
+
+maf_file = "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_coverage_filtered.maf"
+maf = read.maf(maf = maf_file, vc_nonSyn=vcNames)
+
+mt_tally <- sig_tallymaf_totalmt_tally <- sig_tally(maf, ref_genome = "BSgenome.Hsapiens.UCSC.hg38",
+                      use_syn = TRUE)
+set.seed(1)
+mt_sig <- sig_unify_extract(mt_tally$nmf_matrix, range=10, nrun=10)
+
+sim <- get_sig_similarity(mt_sig)
+
+signatures <- mt_sig$Exposure.norm
+signatures <- as.data.frame(signatures)
+signatures$signature <- row.names(signatures)
+write.csv(signatures, "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden Figures/sigminer_signatures.csv")
+signatures <- signatures[,which(colnames(signatures) %in% clinical_data_total$Tumor_Sample_Barcode)]
+
+signatures$signature <- row.names(signatures)
+signatures_plot <- reshape::melt(signatures)
+
+annotations <- clinical_data_total[match(signatures_plot$variable, clinical_data_total$Tumor_Sample_Barcode),]
+identical(as.character(signatures_plot$variable), annotations$Tumor_Sample_Barcode)
+
+somatic_burden_matched <- total_data[match(signatures_plot$variable, total_data$Tumor_Sample_Barcode),]
+identical(as.character(signatures_plot$variable), as.character(somatic_burden_matched$Tumor_Sample_Barcode))
+
+signatures_plot$immune <- annotations$immune_binary
+signatures_plot$mutational_burden <- somatic_burden_matched$somatic_mutations
+
+ggplot(signatures_plot, aes(x=reorder(variable, mutational_burden), y=value, fill=factor(signature, levels=c("Sig8", "Sig5", "Sig3", "Sig7", "Sig4", "Sig9",  "Sig6", "Sig2", "Sig10", "Sig1")))) + geom_bar(stat="identity", position="stack") + facet_grid(. ~ factor(immune, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x") + theme_minimal() +
+theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())+
+  labs(fill=NULL) #+
+  #scale_fill_manual(values=c("#888888","#882255", "#CC6677", "#AA4499", "#332288", "#88CCEE", "#44AA99", "#117733", "#999933",  "#DDCC77"))
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Mutational_signature_sigminer_immune_split.pdf", width=10)
+ggplot(signatures_plot, aes(x=reorder(variable, mutational_burden), y=value, fill=factor(signature, levels=c("Sig8", "Sig5", "Sig3", "Sig7", "Sig4", "Sig9",  "Sig6", "Sig2", "Sig10", "Sig1")))) + geom_bar(stat="identity", position="stack") + facet_grid(. ~ factor(immune, levels=c("No RNA", "high", "low", "Suppressed")), scales="free_x", space="free_x") + theme_minimal() +
+theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())+
+  labs(fill=NULL) #+
+dev.off()
+```

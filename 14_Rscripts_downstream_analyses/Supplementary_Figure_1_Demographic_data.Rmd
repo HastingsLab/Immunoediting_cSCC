@@ -1,0 +1,147 @@
+---
+title: "2023_1_10_Demographic_data_split_immune_met"
+output: html_document
+date: '2024-01-10'
+---
+
+**Original:** "1.0 Demographics/2024_7_2_Demographic_data_summary_exclude_Crohns_patient"
+
+**Purpose:** 
+
+1) To systematically walk through and understand the demographics of the available dataset and how that relates to immunosuppression AND metastasis
+
+
+**Methods:**
+
+* Evaluate associations of demographics with immunosuppression AND metastasis
+
+
+**Results:**
+
+```{r, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(maftools)
+library(plyr)
+library(reshape2)
+library(stringr)
+library(DGEobj.utils)
+library(dunn.test)
+```
+
+
+# Part 1: Investigate demographic data vs. Immunosuppression
+
+### Read in clinical data
+```{r}
+clin_data <- "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples.csv"
+clinical_data <- as.data.frame(read.csv(clin_data))
+clinical_data <- clinical_data[which(clinical_data$Include_in_study == "Yes"),]
+clinical_data <- clinical_data[which(clinical_data$Dataset == "Old"),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$Tumor_Sample_Barcode)),]
+
+proportion_binding <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples_immune_binary.csv"))
+proportion_binding_matched <- proportion_binding[match(clinical_data$Tumor_Sample_Barcode, proportion_binding$Tumor_Sample_Barcode),]
+clinical_data$immune_binary <- proportion_binding_matched$immune_binary
+clinical_data[which(is.na(clinical_data$immune_binary) & clinical_data$Immunosuppression=="No"),18] <- "No RNA"
+clinical_data[which(is.na(clinical_data$immune_binary) & clinical_data$Immunosuppression=="Yes"),18] <- "Suppressed"
+clinical_data <- clinical_data[which(clinical_data$Dataset=="Old"),]
+table(clinical_data$immune_binary)
+```
+
+### Immunosuppressive cause
+
+```{r}
+table(clinical_data$Immunosuppression_cause)
+```
+
+### Age vs. Immunosuppression:
+```{r}
+## All
+ggplot(clinical_data, aes(x=factor(immune_binary, levels=c("No RNA", "high", "low", "Suppressed")), y=Age)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + 
+theme_minimal()
+kruskal.test(Age~ immune_binary, clinical_data)
+dunn.test(clinical_data$Age, clinical_data$immune_binary, method="bh", altp="TRUE")
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Demographic Figures/Age_Immune_binary.pdf")
+ggplot(clinical_data, aes(x=factor(immune_binary, levels=c("No RNA", "high", "low", "Suppressed")), y=Age)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + 
+theme_minimal()
+dev.off()
+```
+
+### Sex vs. Immunosuppression:
+```{r}
+#All
+table(clinical_data$immune_binary, clinical_data$Gender)
+
+table <- as.data.frame(table(clinical_data$immune_binary, clinical_data$Gender))
+table$Freq[c(1,5)] <- table$Freq[c(1,5)]/sum(table$Freq[c(1,5)])
+table$Freq[c(2,6)] <- table$Freq[c(2,6)]/sum(table$Freq[c(2,6)])
+table$Freq[c(3,7)] <- table$Freq[c(3,7)]/sum(table$Freq[c(3,7)])
+table$Freq[c(4,8)] <- table$Freq[c(4,8)]/sum(table$Freq[c(4,8)])
+print(table$Freq)
+
+ggplot(table, aes(x= factor(Var1, levels=c("No RNA", "high", "low", "Suppressed")), y = Freq, fill= Var2)) + geom_bar(stat="identity")
+
+table_stats <- table(clinical_data$immune_binary, clinical_data$Gender)
+fisher.test(table_stats)
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Demographic Figures/Sex_Immune_binary.pdf")
+ggplot(table, aes(x= factor(Var1, levels=c("No RNA", "high", "low", "Suppressed")), y = Freq, fill= Var2)) + geom_bar(stat="identity") + theme_minimal()
+dev.off()
+```
+
+### Stage vs. Immunosuppression:
+```{r}
+#All
+table <- as.data.frame(table(clinical_data$immune_binary, clinical_data$Stage))
+table$Freq[c(1,5,9)] <- table$Freq[c(1,5,9)]/sum(table$Freq[c(1,5,9)])
+table$Freq[c(2,6,10)] <- table$Freq[c(2,6,10)]/sum(table$Freq[c(2,6,10)])
+table$Freq[c(3,7,11)] <- table$Freq[c(3,7,11)]/sum(table$Freq[c(3,7,11)])
+table$Freq[c(4,8,12)] <- table$Freq[c(4,8,12)]/sum(table$Freq[c(4,8,12)])
+print(table$Freq)
+
+ggplot(table, aes(x= factor(Var1, levels=c("No RNA", "high", "low", "Suppressed")), y = Freq, fill= Var2)) + geom_bar(stat="identity")
+
+table_stats <- table(clinical_data$immune_binary, clinical_data$Stage)
+fisher.test(table_stats)
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Demographic Figures/Stage_Immune_binary.pdf")
+ggplot(table, aes(x= factor(Var1, levels=c("No RNA", "high", "low", "Suppressed")), y = Freq, fill= Var2)) + geom_bar(stat="identity")+ theme_minimal()
+dev.off()
+```
+
+### Met vs. Immunosuppression:
+```{r}
+#All
+table <- as.data.frame(table(clinical_data$immune_binary, clinical_data$Met))
+table$Freq[c(1,5)] <- table$Freq[c(1,5)]/sum(table$Freq[c(1,5)])
+table$Freq[c(2,6)] <- table$Freq[c(2,6)]/sum(table$Freq[c(2,6)])
+table$Freq[c(3,7)] <- table$Freq[c(3,7)]/sum(table$Freq[c(3,7)])
+table$Freq[c(4,8)] <- table$Freq[c(4,8)]/sum(table$Freq[c(4,8)])
+print(table$Freq)
+
+ggplot(table, aes(x= factor(Var1, levels=c("No RNA", "high", "low", "Suppressed")), y = Freq, fill= Var2)) + geom_bar(stat="identity")
+
+table_stats <- table(clinical_data$immune_binary, clinical_data$Met)
+fisher.test(table_stats)
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Demographic Figures/Met_Immune_binary.pdf")
+ggplot(table, aes(x= factor(Var1, levels=c("No RNA", "high", "low", "Suppressed")), y = Freq, fill= Var2)) + geom_bar(stat="identity") + theme_minimal()
+dev.off()
+```
+
+
+
+
+
+**Interpretation:**
+
+* Difference in age by immunosuppression status
+
+* Slight difference in stage for RNA subset only
+
+* No difference in sex or met status for any group
+
+**Future steps:**
+
+* Finalize figure for manuscript

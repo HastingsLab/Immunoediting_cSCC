@@ -1,0 +1,404 @@
+---
+title: "Figure2b_ABC_analysis_results_visualization"
+output: html_document
+date: "2025-01-08"
+---
+
+**Purpose:** Simulations run on the cluster for VAF distributions across a growth space from 1 to 2 in 0.01 increments and a ratio from 0 to 1 in 0.01 increments. Results were compared at a relative mutation level rather than absolute. This script just comapares the outputs between immunocompetent and immunosuppressed patients.
+
+**Methods:** As above
+
+**Results:**
+
+```{r}
+library(ggplot2)
+library(plyr)
+library(glm2)
+library(dplyr)
+library(patchwork)
+library(dunn.test)
+```
+
+## Read in data
+
+```{r}
+data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Growth_rate_predictions/Compiled_growth_ratio_results_relative_mutation_star.csv"))
+
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples_immune_binary.csv"))
+clinical_data <- clinical_data[match(data$ID, clinical_data$ID),]
+identical(data$ID, clinical_data$ID)
+data$immune_binary <- clinical_data$immune_binary
+data$star_purity <- clinical_data$star_purity
+
+old_data <- data[-which(data$Exome_batch=="B4"),]
+new_data <- data[which(data$Exome_batch=="B4"),]
+```
+
+## Plots
+
+```{r}
+ggplot(old_data, aes(x=immune_binary, y=growth)) + geom_boxplot(outlier.shape=NA) + geom_jitter(width=0.05) + theme_minimal()
+kruskal.test(growth~ immune_binary, old_data)
+
+ggplot(new_data, aes(x=Immunosuppression, y=growth)) + geom_boxplot(outlier.shape=NA) + geom_jitter(width=0.05) + theme_minimal()
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/ABC figures/Optimized_growth.pdf", height =10, width = 10)
+ggplot(old_data, aes(x=immune_binary, y=growth)) + geom_boxplot(outlier.shape=NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+#old_data <- old_data[-which(old_data$Tumor_Sample_Barcode=="s_159-T2a_B2_DNA"),]
+ggplot(old_data, aes(x=immune_binary, y=ratio)) + geom_boxplot(outlier.shape=NA) + geom_jitter(width=0.05) + theme_minimal()
+## Significance test
+kruskal.test(ratio~ immune_binary, old_data)
+dunn.test(old_data$ratio, old_data$immune_binary, method="bh", altp="TRUE")
+ggplot(new_data, aes(x=Immunosuppression, y=ratio)) + geom_boxplot(outlier.shape=NA) + geom_jitter(width=0.05) + theme_minimal()
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/ABC figures/Optimized_ratio.pdf", height =10, width = 10)
+ggplot(old_data, aes(x=immune_binary, y=ratio)) + geom_boxplot(outlier.shape=NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+```
+
+## Simulator
+
+```{r}
+bin_edges <- c(0,0.01,0.02,0.03,0.04,0.05,0.06,0.07,0.08,0.09,0.1,0.11,0.12,0.13,0.14,0.15,0.16,0.17,0.18,0.19,0.2,0.21,0.22,0.23,0.24,0.25,0.26,0.27,0.28,0.29,0.3,0.31,0.32,0.33,0.34,0.35,0.36,0.37,0.38,0.39,0.4,0.41,0.42,0.43,0.44,0.45,0.46,0.47,0.48,0.49,0.5,0.51,0.52,0.53,0.54,0.55,0.56,0.57,0.58,0.59,0.6,0.61,0.62,0.63,0.64,0.65,0.66,0.67,0.68,0.69,0.7,0.71,0.72,0.73,0.74,0.75,0.76,0.77,0.78,0.79,0.8,0.81,0.82,0.83,0.84,0.85,0.86,0.87,0.88,0.89,0.9,0.91,0.92,0.93,0.94,0.95,0.96,0.97,0.98,0.99,1.0)
+
+#' Define a function for predicting VAF distribution based on known inputs
+#' @param unif_cov Coverage
+#' @param n Number of sequenced cells
+#' @param mu Total number of mutations
+#' @param ratio_fix_pol Ratio of fixed to polymorphic mutations
+#' @param a SFS dexay 1/x^a
+#' @param singletons exclude mutations with read support equal or smaller than this value
+#' @param pur tumor purity
+plot_VAF <- function(cov, n, mu, ratio_fix_pol, a, singletons, pur){
+  set.seed(1)
+  
+  df <- as.data.frame(cov)
+    
+  prob_vector = (1/seq(n)^a) / sum(1/seq(n)^a)
+  prob_vector[n] = prob_vector[n] + ratio_fix_pol
+  #plot(prob_vector)
+  min_mutations = 100000*ceiling(1/min(prob_vector))
+  all_mutations = sort(sample(1:n,mu,replace=TRUE,prob=round(min_mutations*prob_vector)))
+  #hist(all_mutations, breaks = 100)
+  #mu = 50
+    
+  coverage_dist_emp = sample_n(df, mu, replace = T) #the original sample function behaved bad.
+  coverage_dist_emp = c(coverage_dist_emp$cov)
+  alt_reads_dist = rbinom(n = length(all_mutations), size = coverage_dist_emp, prob = pur * (all_mutations/(2*n)))
+    
+  VAF = data.frame(cbind(coverage_dist_emp, alt_reads_dist, all_mutations))
+  VAF_expected = data.frame(cbind(n, all_mutations, all_mutations))
+  colnames(VAF) <- c("coverage", "alt_reads", "real_alt_reads")
+  colnames(VAF_expected) <- c("coverage", "alt_reads", "real_alt_reads")
+  VAF$Freq = VAF$alt_reads / VAF$coverage
+  VAF_expected$Freq = pur * (VAF_expected$alt_reads / (2*VAF_expected$coverage))
+      
+  VAF = subset(VAF, alt_reads > singletons)
+  
+  freq   = hist(VAF$Freq, breaks=bin_edges, include.lowest=TRUE, plot=FALSE)
+  
+  return(list(VAF=VAF, freq=freq))
+}
+```
+
+## Raw data
+```{r}
+maf <- data.table::fread("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_coverage_filtered.maf")
+maf$VAF <- maf$t_alt_count/(maf$t_alt_count+maf$t_ref_count)
+```
+
+## Plot distributions of VAFs
+```{r}
+data_plot <- maf %>%
+  group_by(Tumor_Sample_Barcode) %>%
+  mutate(mean_VAF = mean(VAF)) %>%
+  ungroup()
+
+data_plot <- data_plot[which(data_plot$Tumor_Sample_Barcode %in% data$Tumor_Sample_Barcode),]
+data_matched <- data[match(data_plot$Tumor_Sample_Barcode, data$Tumor_Sample_Barcode),]
+identical(data_matched$Tumor_Sample_Barcode, data_plot$Tumor_Sample_Barcode)
+data_plot$immune <- data_matched$Immunosuppression
+
+# Plot the stacked density plot
+ggplot(data_plot, aes(x = VAF, color = immune, fill=Tumor_Sample_Barcode)) +
+  geom_density(alpha = 0) +
+  scale_fill_manual(values = c(rep("white",59))) +
+  scale_color_manual(values = c("goldenrod","darkblue")) +
+  theme_minimal()+ 
+  guides(fill= "none") 
+
+collapsed_real <- ddply(data_plot, "Tumor_Sample_Barcode", numcolwise(mean))
+collapsed_real <- collapsed_real[match(old_data$Tumor_Sample_Barcode, collapsed_real$Tumor_Sample_Barcode),]
+identical(old_data$Tumor_Sample_Barcode, collapsed_real$Tumor_Sample_Barcode)
+collapsed_real$Immunosuppression <- old_data$Immunosuppression
+ggplot(collapsed_real, aes(x=Immunosuppression, y=VAF)) + geom_boxplot(outlier.shape = NULL) + geom_jitter(width=0.05) + theme_minimal()
+```
+
+
+## Visualize simulated data accounting for purity, growth rate, and ratio
+
+```{r}
+bin_edges <- c(0,0.01,0.02,0.03,0.04,0.05,0.06,0.07,0.08,0.09,0.1,0.11,0.12,0.13,0.14,0.15,0.16,0.17,0.18,0.19,0.2,0.21,0.22,0.23,0.24,0.25,0.26,0.27,0.28,0.29,0.3,0.31,0.32,0.33,0.34,0.35,0.36,0.37,0.38,0.39,0.4,0.41,0.42,0.43,0.44,0.45,0.46,0.47,0.48,0.49,0.5,0.51,0.52,0.53,0.54,0.55,0.56,0.57,0.58,0.59,0.6,0.61,0.62,0.63,0.64,0.65,0.66,0.67,0.68,0.69,0.7,0.71,0.72,0.73,0.74,0.75,0.76,0.77,0.78,0.79,0.8,0.81,0.82,0.83,0.84,0.85,0.86,0.87,0.88,0.89,0.9,0.91,0.92,0.93,0.94,0.95,0.96,0.97,0.98,0.99,1.0)
+
+VAF_all <- matrix(NA, nrow=1, ncol=6)
+colnames(VAF_all) <- c("coverage","alt_reads","real_alt_reads","Freq", "group", "immune")
+correlation_coefficients <- matrix(NA, ncol=4, nrow=length(data$ID))
+correlation_coefficients <- as.data.frame(correlation_coefficients)
+colnames(correlation_coefficients) <- c("sample", "coef", "sum_true", "sum_simulated")
+for (i in 1:length(data$ID)){
+    print(i)
+    # Calculate true distribution for comparison
+    variants <- maf[which(maf$Tumor_Sample_Barcode == data$Tumor_Sample_Barcode[i]),]
+    print(length(variants$Hugo_Symbol))
+    variants$coverage <- variants$t_alt_count + variants$t_ref_count
+    true_distribution <- hist(variants$VAF, breaks=bin_edges, include.lowest=TRUE, plot=FALSE)
+    correlation_coefficients$sum_true[i] <- sum(true_distribution$counts)
+    
+    #Simulate results
+    result <- plot_VAF(variants$coverage, 1667, 5000, data$ratio[i], data$growth[i], 2, data$star_purity[i])
+    simulated <- result$freq
+    VAF <- result$VAF
+    VAF$group <- data$Tumor_Sample_Barcode[i]
+    VAF$immune <- data$Immunosuppression[i]
+    VAF_all <- rbind(VAF_all, VAF)
+    
+    correlation_coefficients$sample[i] <- data$Tumor_Sample_Barcode[i]
+    correlation_coefficients$coef[i] <- cor(true_distribution$counts, simulated$counts, method="spearman")
+    correlation_coefficients$sum_simulated[i] <- sum(simulated$counts)
+}
+
+plot(correlation_coefficients$sum_true, correlation_coefficients$sum_simulated)
+
+hist(correlation_coefficients$coef) # Histogram of correlation coefficients
+
+plot(true_distribution$counts, simulated$counts)
+model <- lm(true_distribution$counts ~ simulated$counts)
+summary(model)
+
+ggplot(VAF_all, aes(x = Freq, color = immune, fill=group)) +
+  geom_density(alpha = 0) +
+  scale_fill_manual(values = c(rep("white",59))) +
+  scale_color_manual(values = c("goldenrod","darkblue")) +
+  theme_minimal()+ 
+  guides(fill= "none")
+
+```
+
+
+## Make individual histograms for all patients
+```{r}
+## HIGH
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_085-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_085-T2a_B2_DNA"),]
+hp1 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgoldenrod4", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "goldenrod1", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_085-T2a_B2_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_093-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_093-T2a_B2_DNA"),]
+hp2 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgoldenrod4", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "goldenrod1", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_093-T2a_B2_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_153-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_153-T2a_B2_DNA"),]
+hp3 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgoldenrod4", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "goldenrod1", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_153-T2a_B2_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_159-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_159-T2a_B2_DNA"),]
+hp4 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgoldenrod4", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "goldenrod1", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_159-T2a_B2_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_169-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_169-T2a_B2_DNA"),]
+hp5 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgoldenrod4", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "goldenrod1", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_169-T2a_B2_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_171-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_171-T2a_B2_DNA"),]
+hp6 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgoldenrod4", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "goldenrod1", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_171-T2a_B2_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_205-T2b_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_205-T2b_B2_DNA"),]
+hp7 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgoldenrod4", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "goldenrod1", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_205-T2b_B2_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_12_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_12_DNA"),]
+hp8 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgoldenrod4", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "goldenrod1", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_12_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_16_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_16_DNA"),]
+hp9 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgoldenrod4", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "goldenrod1", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_16_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_18_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_18_DNA"),]
+hp10 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgoldenrod4", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "goldenrod1", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_18_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_39T_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_39T_DNA"),]
+hp11 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgoldenrod4", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "goldenrod1", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_39T_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_48_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_48_DNA"),]
+hp12 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgoldenrod4", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "goldenrod1", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_48_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_52_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_52_DNA"),]
+hp13 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgoldenrod4", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "goldenrod1", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_52_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC-363-T2a_B4_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC-363-T2a_B4_DNA"),]
+hp14 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgoldenrod4", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "goldenrod1", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC-363-T2a_B4_DNA")
+
+##LOW
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_072-T2b_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_072-T2b_B2_DNA"),]
+lp1 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_072-T2b_B2_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_101-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_101-T2a_B2_DNA"),]
+lp2 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_101-T2a_B2_DNA")
+
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_109-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_109-T2a_B2_DNA"),]
+lp3 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_109-T2a_B2_DNA")
+
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_151-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_151-T2a_B2_DNA"),]
+lp4 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_151-T2a_B2_DNA")
+
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_155-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_155-T2a_B2_DNA"),]
+lp5 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_155-T2a_B2_DNA")
+
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_163-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_163-T2a_B2_DNA"),]
+lp6 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_163-T2a_B2_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_165-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_165-T2a_B2_DNA"),]
+lp7 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_165-T2a_B2_DNA")
+
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_167-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_167-T2a_B2_DNA"),]
+lp8 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_167-T2a_B2_DNA")
+
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_203-T2b_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_203-T2b_B2_DNA"),]
+lp9 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_203-T2b_B2_DNA")
+
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_73-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_73-T2a_B2_DNA"),]
+lp10 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_73-T2a_B2_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_14_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_14_DNA"),]
+lp11 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_14_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_29_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_29_DNA"),]
+lp12 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_29_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_306-T2a_B4_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_306-T2a_B4_DNA"),]
+lp13 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_306-T2a_B4_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_310-T2a_B4_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_310-T2a_B4_DNA"),]
+lp14 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_310-T2a_B4_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_316-T2b_B4_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_316-T2b_B4_DNA"),]
+lp15 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_316-T2b_B4_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_322-T2b_B4_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_322-T2b_B4_DNA"),]
+lp16 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_322-T2b_B4_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC-349-T3_B4_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC-349-T3_B4_DNA"),]
+lp17 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC-349-T3_B4_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC-373-T2b_B4_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC-373-T2b_B4_DNA"),]
+lp18 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkgreen", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "palegreen", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC-373-T2b_B4_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_097-T2a_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_097-T2a_B2_DNA"),]
+ps1 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkblue", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "lightblue", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_097-T2a_B2_DNA")
+
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_200-T2b_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_200-T2b_B2_DNA"),]
+ps2 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkblue", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "lightblue", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_200-T2b_B2_DNA")
+
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_201-T2b_B2_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_201-T2b_B2_DNA"),]
+ps3 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkblue", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "lightblue", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_201-T2b_B2_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_10T_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_10T_DNA"),]
+ps4 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkblue", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "lightblue", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_10T_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_304-T2b_B4_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_304-T2b_B4_DNA"),]
+ps5 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkblue", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "lightblue", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_304-T2b_B4_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_320-T2a_B4_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_320-T2a_B4_DNA"),]
+ps6 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkblue", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "lightblue", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_320-T2a_B4_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC-359-T2a_B4_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC-359-T2a_B4_DNA"),]
+ps7 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkblue", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "lightblue", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC-359-T2a_B4_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_4_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_4_DNA"),]
+ps8 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkblue", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "lightblue", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_4_DNA")
+
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_6_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_6_DNA"),]
+ps9 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkblue", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "lightblue", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_6_DNA")
+
+test <- maf[which(maf$Tumor_Sample_Barcode=="s_CSCC_8_DNA"),]
+test2 <- VAF_all[which(VAF_all$group=="s_CSCC_8_DNA"),]
+ps10 <- ggplot() + geom_histogram(data=test, aes(x=VAF, y= ..count../max(..count..)), color = "darkblue", fill="transparent", alpha=0.7) + geom_histogram(data=test2, aes(x=Freq, y= ..count../max(..count..)), color = "lightblue", fill="transparent", alpha=0.3) + theme_minimal() + ylab("Relative Mutation Count") + ggtitle("s_CSCC_8_DNA")
+
+combined_plot <- (hp1 | hp2 | hp3 | hp4 | hp5 | hp6) /
+                 (hp7 | hp8 | hp9 | hp10 | hp11 | hp12) /
+                 (hp13 | hp14 | lp1 | lp2 | lp3 | lp4) /
+                 (lp5 | lp6 | lp7 | lp8 | lp9 | lp10) /
+                 (lp11 | lp12 | lp13 | lp14 | lp15 | lp16) /
+                 (lp17 | lp18 | ps1 | ps2 | ps3 |ps4) /
+                 (ps5 | ps6 | ps7 | ps8 | ps9 | ps10) +
+                 plot_layout(ncol=1)
+
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/ABC figures/Combined_histograms_no_purity_estimates_reordered.pdf", height=18, width=18)
+combined_plot
+dev.off()
+```
+
+
+```{r}
+collapsed <- ddply(VAF_all, "group", numcolwise(mean))
+collapsed <- collapsed[match(old_data$Tumor_Sample_Barcode, collapsed$group),]
+identical(old_data$Tumor_Sample_Barcode, collapsed$group)
+collapsed$Immunosuppression <- old_data$Immunosuppression
+ggplot(collapsed, aes(x=Immunosuppression, y=Freq)) + geom_boxplot(outlier.shape = NULL) + geom_jitter(width=0.05) + theme_minimal()
+identical(collapsed_real$Tumor_Sample_Barcode, collapsed$group)
+collapsed$real <- collapsed_real$VAF
+
+ggplot(collapsed, aes(x=Freq, y=real)) + geom_point() + theme_minimal()+
+  geom_abline(slope = 1, intercept = 0, color = "red", linetype = "dashed")
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/ABC figures/Performance.pdf", height =3, width = 5)
+ggplot(collapsed, aes(x=Freq, y=real)) + geom_point() + theme_minimal()+
+  geom_abline(slope = 1, intercept = 0, color = "red", linetype = "dashed")
+dev.off()
+```

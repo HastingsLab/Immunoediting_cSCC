@@ -144,3 +144,7 @@ Simulation results saved in archive files except those used in the final manuscr
 
 /Proportion binding: 
 - Code for calculating the proportion of binding mutations for each iteration
+
+## 14_Rscripts_downstream_analyses
+
+- Contains all code for downstream analyses and visualizations

@@ -1,0 +1,152 @@
+---
+title: "2024_12_18_Compare_clock_like_signature_before_after_filtering"
+output: html_document
+date: "2024-12-18"
+---
+
+## Libraries
+```{r}
+library(ggplot2)
+library(maftools)
+library(BSgenome.Hsapiens.UCSC.hg38)
+library(deconstructSigs)
+library(sigminer)
+library(stringr)
+library(ggsci)
+library(plyr)
+library(reshape2)
+library(dunn.test)
+```
+
+## Read in data
+```{r}
+unfiltered_sig <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden Figures/sigminer_signatures_unfiltered.csv"))
+filtered_sig <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden Figures/sigminer_signatures.csv"))
+
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples.csv"))
+clinical_data <- clinical_data[which(clinical_data$Include_in_study=="Yes"),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$Tumor_Sample_Barcode)),]
+clinical_data <- clinical_data[which(clinical_data$Dataset=="Old"),]
+
+proportion_binding <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples_immune_binary.csv"))
+proportion_binding_matched <- proportion_binding[match(clinical_data$Tumor_Sample_Barcode, proportion_binding$Tumor_Sample_Barcode),]
+clinical_data$immune_binary <- proportion_binding_matched$immune_binary
+clinical_data[which(is.na(clinical_data$immune_binary) & clinical_data$Immunosuppression=="No"),18] <- "No RNA"
+clinical_data[which(is.na(clinical_data$immune_binary) & clinical_data$Immunosuppression=="Yes"),18] <- "Suppressed"
+clinical_data <- clinical_data[which(clinical_data$Dataset=="Old"),]
+table(clinical_data$immune_binary)
+```
+
+## Transpose
+```{r}
+unfiltered_sig <- t(unfiltered_sig)
+colnames(unfiltered_sig) <- unfiltered_sig[1,]
+unfiltered_sig <- unfiltered_sig[-1,]
+unfiltered_sig <- unfiltered_sig[-80,]
+unfiltered_sig <- as.data.frame(unfiltered_sig)
+unfiltered_sig$Tumor_Sample_Barcode <- row.names(unfiltered_sig)
+unfiltered_sig$Tumor_Sample_Barcode <- gsub("\\.", "-", unfiltered_sig$Tumor_Sample_Barcode)
+
+filtered_sig <- t(filtered_sig)
+colnames(filtered_sig) <- filtered_sig[1,]
+filtered_sig <- filtered_sig[-1,]
+filtered_sig <- filtered_sig[-80,]
+filtered_sig <- as.data.frame(filtered_sig)
+filtered_sig$Tumor_Sample_Barcode <- row.names(filtered_sig)
+filtered_sig$Tumor_Sample_Barcode <- gsub("\\.", "-", filtered_sig$Tumor_Sample_Barcode)
+```
+
+## Limit to samples included in study
+```{r}
+filtered_sig <- filtered_sig[which(filtered_sig$Tumor_Sample_Barcode %in% clinical_data$Tumor_Sample_Barcode),]
+unfiltered_sig <- unfiltered_sig[which(unfiltered_sig$Tumor_Sample_Barcode %in% clinical_data$Tumor_Sample_Barcode),]
+```
+
+## Compare ffpe signature
+```{r}
+filtered_sig$ffpe <- as.numeric(filtered_sig$Sig5)
+unfiltered_sig$ffpe <- as.numeric(unfiltered_sig$Sig3)
+filtered_sig$group <- "2. filtered"
+unfiltered_sig$group <- "1. unfiltered"
+
+sig <- rbind(filtered_sig, unfiltered_sig)
+
+ggplot(sig, aes(x=group, y=ffpe)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05)+ theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Comparison_ffpe_before_and_after_filtering.pdf")
+ggplot(sig, aes(x=group, y=ffpe)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05)+ theme_minimal()
+dev.off()
+wilcox.test(unfiltered_sig$ffpe, filtered_sig$ffpe)
+```
+
+## Compare clock signature
+```{r}
+filtered_sig$clock <- as.numeric(filtered_sig$Sig3)
+unfiltered_sig$clock <- as.numeric(unfiltered_sig$Sig5)
+
+sig <- rbind(filtered_sig, unfiltered_sig)
+
+ggplot(sig, aes(x=group, y=clock)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05)+ theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Comparison_clock_before_and_after_filtering.pdf")
+ggplot(sig, aes(x=group, y=clock)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05)+ theme_minimal()
+dev.off()
+wilcox.test(unfiltered_sig$ffpe, filtered_sig$ffpe)
+```
+
+## Compare uv signature
+```{r}
+filtered_sig$uv <- as.numeric(filtered_sig$Sig1) + as.numeric(filtered_sig$Sig10) + as.numeric(filtered_sig$Sig2)
+unfiltered_sig$uv <- as.numeric(unfiltered_sig$Sig1) + as.numeric(unfiltered_sig$Sig2)
+
+sig <- rbind(filtered_sig, unfiltered_sig)
+
+ggplot(sig, aes(x=group, y=uv)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05)+ theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Comparison_uv_before_and_after_filtering.pdf")
+ggplot(sig, aes(x=group, y=uv)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05)+ theme_minimal()
+dev.off()
+wilcox.test(unfiltered_sig$uv, filtered_sig$uv)
+```
+
+## Histogram of number of tumor allele-supporting reads
+```{r}
+maf_file = "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_DNP_fixed.maf" 
+maf <- data.table::fread(maf_file)
+maf <- maf[which(maf$Tumor_Sample_Barcode %in% clinical_data$Tumor_Sample_Barcode),]
+maf <- maf[-which(maf$t_depth <10),]
+
+ggplot(maf, aes(x=log(t_alt_count,10))) + geom_histogram(binwidth = 0.1, color="black", fill="white") + theme_minimal()+geom_vline(aes(xintercept=log(5,10)),color="red")
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/Histogram_showing_filtering.pdf")
+ggplot(maf, aes(x=log(t_alt_count,10))) + geom_histogram(binwidth = 0.1, color="black", fill="white") + theme_minimal()+geom_vline(aes(xintercept=log(5,10)),color="red")
+
+dev.off()
+```
+
+## Compare final signature
+```{r}
+filtered_sig <- filtered_sig[match(clinical_data$Tumor_Sample_Barcode, filtered_sig$Tumor_Sample_Barcode),]
+identical(clinical_data$Tumor_Sample_Barcode, filtered_sig$Tumor_Sample_Barcode)
+
+filtered_sig$immune_binary <- clinical_data$immune_binary
+table(filtered_sig$immune_binary)
+
+ggplot(filtered_sig, aes(x=factor(immune_binary, levels=c("No RNA", "high", "low", "Suppressed")), y=uv)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/UV_immunosuppression.pdf")
+ggplot(filtered_sig, aes(x=factor(immune_binary, levels=c("No RNA", "high", "low", "Suppressed")), y=uv)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+kruskal.test(uv ~ immune_binary, filtered_sig)
+dunn.test(filtered_sig$uv, filtered_sig$immune_binary, method="bh", altp=TRUE)
+
+ggplot(filtered_sig, aes(x=factor(immune_binary, levels=c("No RNA", "high", "low", "Suppressed")), y=ffpe)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/ffpe_immunosuppression.pdf")
+ggplot(filtered_sig, aes(x=factor(immune_binary, levels=c("No RNA", "high", "low", "Suppressed")), y=ffpe)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+kruskal.test(ffpe ~ immune_binary, filtered_sig)
+dunn.test(filtered_sig$ffpe, filtered_sig$immune_binary, method="bh", altp=TRUE)
+
+ggplot(filtered_sig, aes(x=factor(immune_binary, levels=c("No RNA", "high", "low", "Suppressed")), y=clock)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden figures/clock_immunosuppression.pdf")
+ggplot(filtered_sig, aes(x=factor(immune_binary, levels=c("No RNA", "high", "low", "Suppressed")), y=clock)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+kruskal.test(clock ~ immune_binary, filtered_sig)
+dunn.test(filtered_sig$clock, filtered_sig$immune_binary, method="bh", altp=TRUE)
+```

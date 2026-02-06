@@ -1,0 +1,175 @@
+---
+title: "2024_6_28_Expanded_checkpoint_molecules"
+output: html_document
+date: '2024-06_28'
+---
+
+**Purpose:** Assess association of immune status and metastasis with immune checkpoint and T cell activity expression
+
+**Methods:**
+
+* Plot expression levels of markers of T cell activity and exhaustion
+
+**Results:**
+
+```{r, warning=FALSE, message=FALSE}
+library(maftools)
+library(stringr)
+library(UpSetR)
+library(plyr)
+library(tidyverse)
+library(viridis)
+library(patchwork)
+library(circlize)
+library(networkD3)
+library(ggraph)
+library(igraph)
+library(tidyverse)
+library(RColorBrewer)
+library(reshape2)
+library(data.table)
+library(plyr)
+library(DGEobj.utils)
+library(edgeR)
+library(pheatmap)
+library(dunn.test)
+```
+
+
+## Add clinical annotations
+```{r}
+## Read in clinical data
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples_immune_binary.csv"))
+clinical_data <- clinical_data[which(clinical_data$Dataset=="Old"),]
+
+emily_data <- as.data.frame(read.table("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Emily_clinical_data_for_confirmation.txt", header=TRUE))
+emily_data <- emily_data[match(clinical_data$Tumor_Sample_Barcode, emily_data$Tumor_Sample_Barcode),]
+identical(emily_data$Tumor_Sample_Barcode, clinical_data$Tumor_Sample_Barcode)
+identical(emily_data$immune_binary_star, clinical_data$immune_binary)
+```
+
+### Read in RNA data
+```{r}
+expression_TPM <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/RNA_seq/star/all_samples_tpm.counts.txt", row.names = 1))
+```
+
+### Match clinical data
+
+```{r}
+expression_TPM <- expression_TPM[,which(colnames(expression_TPM) %in% clinical_data$RNA_ID)]
+clinical_data <- clinical_data[match(colnames(expression_TPM), clinical_data$RNA_ID),]
+identical(colnames(expression_TPM), clinical_data$RNA_ID)
+table(clinical_data$Immunosuppression)
+
+PD_L1 <- expression_TPM[which(row.names(expression_TPM) %in% c("CD274")),]
+CTLA4 <- expression_TPM[which(row.names(expression_TPM) %in% c("CTLA4")),]
+LAG3 <- expression_TPM[which(row.names(expression_TPM) %in% c("LAG3")),]
+PD1 <- expression_TPM[which(row.names(expression_TPM) %in% c("PDCD1")),]
+GZMB <- expression_TPM[which(row.names(expression_TPM) %in% c("GZMB")),]
+PRF1 <- expression_TPM[which(row.names(expression_TPM) %in% c("PRF1")),]
+IL10 <- expression_TPM[which(row.names(expression_TPM) %in% c("IL10")),]
+TGFB <- expression_TPM[which(row.names(expression_TPM) %in% c("TGFB1")),]
+IFNG <- expression_TPM[which(row.names(expression_TPM) %in% c("IFNG")),]
+
+clinical_data$PDL1 <- t(PD_L1)
+clinical_data$CTLA4 <- t(CTLA4)
+clinical_data$LAG3 <- t(LAG3)
+clinical_data$PD1 <- t(PD1)
+clinical_data$GZMB <- t(GZMB)
+clinical_data$PRF1 <- t(PRF1)
+clinical_data$IL10 <- t(IL10)
+clinical_data$TGFB <- t(TGFB)
+clinical_data$IFNG <- t(IFNG)
+```
+
+
+
+### Boxplots with jitter for each comparison
+```{r}
+## CTLA4
+ggplot(clinical_data, aes(x=immune_binary, y= CTLA4)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) +theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immune_deconvolution/Functional_markers/CTLA4_boxplot_immune_high_low.pdf")
+ggplot(clinical_data, aes(x=immune_binary, y=CTLA4)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) + theme_minimal()
+dev.off()
+
+kruskal.test(as.numeric(CTLA4) ~ immune_binary, clinical_data)
+dunn <- dunn.test(as.numeric(clinical_data$CTLA4), g=clinical_data$immune_binary, method="bh", altp=TRUE)
+dunn
+```
+
+```{r}
+## PDL1
+ggplot(clinical_data, aes(x=immune_binary, y= PDL1)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) +theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immune_deconvolution/Functional_markers/PDL1_boxplot_immune_high_low..pdf")
+ggplot(clinical_data, aes(x=immune_binary, y=PDL1)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) + theme_minimal()
+dev.off()
+
+kruskal.test(as.numeric(PDL1) ~ immune_binary, clinical_data)
+dunn <- dunn.test(as.numeric(clinical_data$PDL1), g=clinical_data$immune_binary, method="bh", altp=TRUE)
+dunn
+```
+
+```{r}
+## LAG3
+ggplot(clinical_data, aes(x=immune_binary, y= LAG3)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) +theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immune_deconvolution/Functional_markers/LAG3_boxplot_immune_high_low..pdf")
+ggplot(clinical_data, aes(x=immune_binary, y=LAG3)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) + theme_minimal()
+dev.off()
+
+kruskal.test(as.numeric(LAG3) ~ immune_binary, clinical_data)
+dunn <- dunn.test(as.numeric(clinical_data$LAG3), g=clinical_data$immune_binary, method="bh", altp=TRUE)
+dunn
+```
+
+```{r}
+## PD1
+ggplot(clinical_data, aes(x=immune_binary, y= PD1)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) +theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immune_deconvolution/Functional_markers/PD1_boxplot_immune_high_low..pdf")
+ggplot(clinical_data, aes(x=immune_binary, y=PD1)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) + theme_minimal()
+dev.off()
+
+kruskal.test(as.numeric(PD1) ~ immune_binary, clinical_data)
+dunn <- dunn.test(as.numeric(clinical_data$PD1), g=clinical_data$immune_binary, method="bh", altp=TRUE)
+dunn
+```
+
+```{r}
+## PRF1
+ggplot(clinical_data, aes(x=immune_binary, y= PRF1)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) +theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immune_deconvolution/Functional_markers/PRF1_boxplot_immune_high_low..pdf")
+ggplot(clinical_data, aes(x=immune_binary, y=PRF1)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) + theme_minimal()
+dev.off()
+
+kruskal.test(as.numeric(PRF1) ~ immune_binary, clinical_data)
+dunn <- dunn.test(as.numeric(clinical_data$PRF1), g=clinical_data$immune_binary, method="bh", altp=TRUE)
+dunn
+```
+
+
+```{r}
+## GZMB
+ggplot(clinical_data, aes(x=immune_binary, y= GZMB)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) +theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immune_deconvolution/Functional_markers/GZMB_boxplot_immune_high_low..pdf")
+ggplot(clinical_data, aes(x=immune_binary, y=GZMB)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) + theme_minimal()
+dev.off()
+
+kruskal.test(as.numeric(GZMB) ~ immune_binary, clinical_data)
+dunn <- dunn.test(as.numeric(clinical_data$GZMB), g=clinical_data$immune_binary, method="bh", altp=TRUE)
+dunn
+```
+
+```{r}
+ggplot(clinical_data, aes(x=immune_binary, y= IL10)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) +theme_minimal()
+ggplot(clinical_data, aes(x=immune_binary, y= TGFB+IL10)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) +theme_minimal()
+ggplot(clinical_data, aes(x=immune_binary, y= IFNG)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.1) +theme_minimal()
+```
+
+
+**Interpretation:**
+
+* There appears to be a consistent trend of highest expression in immunocompetent and metastasized patients 
+
+**Future steps:**
+
+* Consider returning to a more formal differential expression analysis
+

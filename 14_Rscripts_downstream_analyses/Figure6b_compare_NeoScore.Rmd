@@ -1,0 +1,206 @@
+---
+title: "Figure5_binding_proportion"
+output: html_document
+date: "2025-02-06"
+---
+
+## Libraries
+
+```{r}
+library(stringr)
+library(ggplot2)
+library(ggpubr)
+library(biomaRt)
+library(DGEobj.utils)
+library(stringi)
+library(dplyr)
+```
+
+## Read in clinical data
+```{r}
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples_immune_binary.csv"))
+#clinical_data <- clinical_data[-which(clinical_data$Exome_batch=="B4"),]
+```
+
+```{r}
+for (k in 1:length(clinical_data$ID)){
+  sample=clinical_data$ID[k]
+  print(k)
+  peptides <- as.data.frame(read.csv(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immunogenicity/", sample, "_peptides_kd_stab.txt", sep="")))
+  #peptides <- peptides[-which(peptides$expression < 0),]
+  if (length(peptides[which(is.na(peptides$expression)),1])>0){
+    peptides <- peptides[-which(is.na(peptides$expression)),]
+  }
+  peptides$immunogenicity <- (-1.7951005 + 1.2868273*log(as.numeric(peptides$expression)+0.1,10)
+                   -1.8477746*log(as.numeric(peptides$min_binding)+0.01, 10)
+                   +0.7698449*log(as.numeric(peptides$max_stability)+0.01, 10))
+  
+  peptides_clonal <- peptides[which(peptides$CCF>.75),]
+  peptides_subclonal <- peptides[which(peptides$CCF<0.75),]
+  
+  clinical_data$count_clonal[k] <- length(peptides_clonal$V1)
+  clinical_data$count_subclonal[k] <- length(peptides_subclonal$V1)
+  clinical_data$Max_NeoScore_clonal[k] <- max(peptides_clonal$immunogenicity)
+  clinical_data$Max_NeoScore_subclonal[k] <- max(peptides_subclonal$immunogenicity)
+  clinical_data$Min_NeoScore_clonal[k] <- min(peptides_clonal$immunogenicity)
+  clinical_data$Min_NeoScore_subclonal[k] <- min(peptides_subclonal$immunogenicity)
+  clinical_data$Ave_NeoScore_clonal[k] <- mean(peptides_clonal$immunogenicity)
+  clinical_data$Ave_NeoScore_subclonal[k] <- mean(peptides_subclonal$immunogenicity)
+  clinical_data$Immunogenic_clonal[k] <- length(peptides_clonal[which(peptides_clonal$immunogenicity > -2.47777),1])
+  clinical_data$Immunogenic_subclonal[k] <- length(peptides_subclonal[which(peptides_subclonal$immunogenicity > -2.47777),1])
+}
+```
+
+## Create distribution of number of clonal mutations
+```{r}
+high <- clinical_data[which(clinical_data$immune_binary == "high"),]
+distribution <- high$count_clonal
+boxplot(distribution)
+distribution <- as.data.frame(distribution)
+```
+
+```{r}
+not_high <- clinical_data[-which(clinical_data$immune_binary == "high"),]
+
+for (k in 1:length(not_high$ID)){
+  set.seed(k)
+  sample=not_high$ID[k]
+  print(k)
+  peptides <- as.data.frame(read.csv(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immunogenicity/", sample, "_peptides_kd_stab.txt", sep="")))
+  #peptides <- peptides[-which(peptides$expression < 0),]
+  if (length(peptides[which(is.na(peptides$expression)),1])>0){
+    peptides <- peptides[-which(is.na(peptides$expression)),]
+  }
+  peptides$immunogenicity <- (-1.7951005 + 1.2868273*log(as.numeric(peptides$expression)+0.1,10)
+                   -1.8477746*log(as.numeric(peptides$min_binding)+0.01, 10)
+                   +0.7698449*log(as.numeric(peptides$max_stability)+0.01, 10))
+  
+  peptides_clonal <- peptides[which(peptides$CCF>.75),]
+  clonal_num <- sample_n(distribution, 1)
+  if (clonal_num$distribution > length(peptides_clonal$X)){
+    clonal_num$distribution <- length(peptides_clonal$X)
+  }
+  subsample_peptides_clonal <- sample_n(peptides_clonal, clonal_num$distribution)
+  
+  not_high$count_clonal_ds[k] <- length(subsample_peptides_clonal$V1)
+  print(max(subsample_peptides_clonal$immunogenicity))
+  not_high$Max_NeoScore_clonal_ds[k] <- max(subsample_peptides_clonal$immunogenicity)
+}
+```
+
+```{r}
+high$count_clonal_ds <- NA
+high$Max_NeoScore_clonal_ds <- NA
+clinical_data <- rbind(high, not_high)
+clinical_data_subset <- clinical_data[,which(colnames(clinical_data) %in% c("immune_binary","Max_NeoScore_clonal", "Max_NeoScore_subclonal", "Max_NeoScore_clonal_ds"))]
+clinical_data_subset <- reshape::melt(clinical_data_subset, "immune_binary")
+clinical_data_subset$new_variable <- paste(clinical_data_subset$immune_binary, clinical_data_subset$variable, sep="_")
+clinical_data_subset$new_variable <- factor(clinical_data_subset$new_variable, levels=c("high_Max_NeoScore_clonal", "high_Max_NeoScore_subclonal","high_Max_NeoScore_clonal_ds","low_Max_NeoScore_clonal", "low_Max_NeoScore_subclonal","low_Max_NeoScore_clonal_ds", "Suppressed_Max_NeoScore_clonal", "Suppressed_Max_NeoScore_subclonal","Suppressed_Max_NeoScore_clonal_ds"))
+
+ggplot(clinical_data_subset, aes(x=new_variable, y=value, fill=variable)) + geom_boxplot(outlier.shape = NA) + geom_point(position=position_jitterdodge()) + theme_minimal()+
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+high_infiltration <- clinical_data[which(clinical_data$immune_binary=="high"),]
+wilcox.test(high_infiltration$Max_NeoScore_clonal, high_infiltration$Max_NeoScore_subclonal, paired = TRUE)
+
+low_infiltration <- clinical_data[which(clinical_data$immune_binary=="low"),]
+wilcox.test(low_infiltration$Max_NeoScore_clonal, low_infiltration$Max_NeoScore_subclonal, paired = TRUE)
+
+suppressed <- clinical_data[which(clinical_data$Immunosuppression=="Yes"),]
+wilcox.test(suppressed$Max_NeoScore_clonal, suppressed$Max_NeoScore_subclonal, paired = TRUE)
+
+wilcox.test(high_infiltration$Max_NeoScore_clonal, low_infiltration$Max_NeoScore_clonal)
+wilcox.test(high_infiltration$Max_NeoScore_clonal, suppressed$Max_NeoScore_clonal)
+
+kruskal.test(Max_NeoScore_clonal ~ immune_binary, clinical_data)
+dunn.test::dunn.test(clinical_data$Max_NeoScore_clonal, clinical_data$immune_binary, altp = TRUE, method="bh")
+kruskal.test(Max_NeoScore_subclonal ~ immune_binary, clinical_data)
+
+ggplot(clinical_data, aes(x=immune_infiltration, y=Max_NeoScore_clonal, color=Immunosuppression)) + geom_point() + geom_smooth(method="lm") + theme_minimal()
+model <- lm(Max_NeoScore_clonal ~ immune_infiltration, clinical_data)
+summary(model)
+immunocompetent <- clinical_data[which(clinical_data$Immunosuppression=="No"),]
+model <- lm(Max_NeoScore_clonal ~ immune_infiltration, immunocompetent)
+summary(model)
+immunosuppressed <- clinical_data[which(clinical_data$Immunosuppression=="Yes"),]
+model <- lm(Max_NeoScore_clonal ~ immune_infiltration, immunosuppressed)
+summary(model)
+```
+
+```{r}
+clinical_data_subset <- clinical_data[,which(colnames(clinical_data) %in% c("immune_binary","Min_NeoScore_clonal", "Min_NeoScore_subclonal"))]
+clinical_data_subset <- reshape::melt(clinical_data_subset, "immune_binary")
+clinical_data_subset$new_variable <- paste(clinical_data_subset$immune_binary, clinical_data_subset$variable, sep="_")
+clinical_data_subset$new_variable <- factor(clinical_data_subset$new_variable, levels=c("high_Min_NeoScore_clonal", "high_Min_NeoScore_subclonal", "low_Min_NeoScore_clonal", "low_Min_NeoScore_subclonal", "Suppressed_Min_NeoScore_clonal", "Suppressed_Min_NeoScore_subclonal"))
+
+ggplot(clinical_data_subset, aes(x=new_variable, y=value, fill=variable)) + geom_boxplot(outlier.shape = NA) + geom_point(position=position_jitterdodge()) + theme_minimal()+
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+high_infiltration <- clinical_data[which(clinical_data$immune_binary=="high"),]
+wilcox.test(high_infiltration$Min_NeoScore_clonal, high_infiltration$Min_NeoScore_subclonal, paired = TRUE)
+
+low_infiltration <- clinical_data[which(clinical_data$immune_binary=="low"),]
+wilcox.test(low_infiltration$Min_NeoScore_clonal, low_infiltration$Min_NeoScore_subclonal, paired = TRUE)
+
+suppressed <- clinical_data[which(clinical_data$Immunosuppression=="Yes"),]
+wilcox.test(suppressed$Min_NeoScore_clonal, suppressed$Min_NeoScore_subclonal, paired = TRUE)
+
+wilcox.test(high_infiltration$Min_NeoScore_clonal, low_infiltration$Min_NeoScore_clonal)
+wilcox.test(high_infiltration$Min_NeoScore_clonal, suppressed$Min_NeoScore_clonal)
+
+ggplot(clinical_data, aes(x=immune_infiltration, y=Min_NeoScore_clonal, color=Immunosuppression)) + geom_point() + geom_smooth(method="lm") + theme_minimal()
+model <- lm(Min_NeoScore_clonal ~ immune_infiltration, clinical_data)
+summary(model)
+immunocompetent <- clinical_data[which(clinical_data$Immunosuppression=="No"),]
+model <- lm(Min_NeoScore_clonal ~ immune_infiltration, immunocompetent)
+summary(model)
+immunosuppressed <- clinical_data[which(clinical_data$Immunosuppression=="Yes"),]
+model <- lm(Min_NeoScore_clonal ~ immune_infiltration, immunosuppressed)
+summary(model)
+```
+
+```{r}
+clinical_data$prop_clonal_immunogenic <- clinical_data$Immunogenic_clonal/clinical_data$count_clonal
+clinical_data$prop_subclonal_immunogenic <- clinical_data$Immunogenic_subclonal/clinical_data$count_subclonal
+clinical_data_subset <- clinical_data[,which(colnames(clinical_data) %in% c("immune_binary","prop_clonal_immunogenic", "prop_subclonal_immunogenic"))]
+clinical_data_subset <- reshape::melt(clinical_data_subset, "immune_binary")
+clinical_data_subset$new_variable <- paste(clinical_data_subset$immune_binary, clinical_data_subset$variable, sep="_")
+clinical_data_subset$new_variable <- factor(clinical_data_subset$new_variable, levels=c("high_prop_clonal_immunogenic", "high_prop_subclonal_immunogenic", "low_prop_clonal_immunogenic", "low_prop_subclonal_immunogenic", "Suppressed_prop_clonal_immunogenic", "Suppressed_prop_subclonal_immunogenic"))
+
+ggplot(clinical_data_subset, aes(x=new_variable, y=value, fill=variable)) + geom_boxplot(outlier.shape = NA) + geom_point(position=position_jitterdodge()) + theme_minimal()+
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+high_infiltration <- clinical_data[which(clinical_data$immune_binary=="high"),]
+wilcox.test(high_infiltration$prop_clonal_immunogenic, high_infiltration$prop_subclonal_immunogenic, paired = TRUE)
+
+low_infiltration <- clinical_data[which(clinical_data$immune_binary=="low"),]
+wilcox.test(low_infiltration$prop_clonal_immunogenic, low_infiltration$prop_subclonal_immunogenic, paired = TRUE)
+
+suppressed <- clinical_data[which(clinical_data$Immunosuppression=="Yes"),]
+wilcox.test(suppressed$prop_clonal_immunogenic, suppressed$prop_subclonal_immunogenic, paired = TRUE)
+
+wilcox.test(high_infiltration$prop_clonal_immunogenic, low_infiltration$prop_clonal_immunogenic)
+wilcox.test(high_infiltration$prop_clonal_immunogenic, suppressed$prop_clonal_immunogenic)
+```
+
+```{r}
+clinical_data_subset <- clinical_data[,which(colnames(clinical_data) %in% c("immune_binary","Ave_NeoScore_clonal", "Ave_NeoScore_subclonal"))]
+clinical_data_subset <- reshape::melt(clinical_data_subset, "immune_binary")
+clinical_data_subset$new_variable <- paste(clinical_data_subset$immune_binary, clinical_data_subset$variable, sep="_")
+clinical_data_subset$new_variable <- factor(clinical_data_subset$new_variable, levels=c("high_Ave_NeoScore_clonal", "high_Ave_NeoScore_subclonal", "low_Ave_NeoScore_clonal", "low_Ave_NeoScore_subclonal", "Suppressed_Ave_NeoScore_clonal", "Suppressed_Ave_NeoScore_subclonal"))
+
+ggplot(clinical_data_subset, aes(x=new_variable, y=value, fill=variable)) + geom_boxplot(outlier.shape = NA) + geom_point(position=position_jitterdodge()) + theme_minimal()+
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+high_infiltration <- clinical_data[which(clinical_data$immune_binary=="high"),]
+wilcox.test(high_infiltration$Ave_NeoScore_clonal, high_infiltration$Ave_NeoScore_subclonal, paired = TRUE)
+
+low_infiltration <- clinical_data[which(clinical_data$immune_binary=="low"),]
+wilcox.test(low_infiltration$Ave_NeoScore_clonal, low_infiltration$Ave_NeoScore_subclonal, paired = TRUE)
+
+suppressed <- clinical_data[which(clinical_data$Immunosuppression=="Yes"),]
+wilcox.test(suppressed$Ave_NeoScore_clonal, suppressed$Ave_NeoScore_subclonal, paired = TRUE)
+
+wilcox.test(high_infiltration$Ave_NeoScore_clonal, low_infiltration$Ave_NeoScore_clonal)
+wilcox.test(high_infiltration$Ave_NeoScore_clonal, suppressed$Ave_NeoScore_clonal)
+```

@@ -1,0 +1,168 @@
+---
+title: "2025_2_18_Compare_enrichment_In_silico_observed"
+output: html_document
+date: '2025-02-18'
+---
+
+# **Purpose:**
+
+Compare the enrichment of neoantigens at low mRNA to scrambled HLA types, using new methods from Bonnie and 
+
+# **Methods:**
+
+* Calculate strong binding and weak binding neoantigens for both patient-specific and scrambled HLA types
+
+* Assign each an expression value
+
+* Rank order expression values
+
+* Sum ranks of predicted binding neoantigens and all other neoantigens
+
+* Possible: divide sums by the total number of predicted binding neoantigens and total mutations
+
+* Calculate the difference in rank sums between the predicted binding neoantigens and total mutations
+
+# **Results:**
+
+### Libraries
+```{r, message=FALSE, warning=FALSE}
+library(DGEobj.utils)
+library(ggplot2)
+library(beanplot)
+library(stringr)
+```
+
+
+### Read in in silico data
+
+```{r}
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Characteristics clonal subclonal neoags/Compiled_in_silico_enrichment.csv"))
+
+maf_file = "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_coverage_filtered.maf"
+MAF <- data.table::fread(maf_file)
+
+expression <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/RNA_seq/star/all_samples_tpm.counts.txt", row.names = 1))
+colnames(expression) <- gsub("NPT\\.", "NPT-", colnames(expression))
+colnames(expression) <- gsub("\\.1", "-1", colnames(expression))
+colnames(expression) <- gsub("\\.2", "-2", colnames(expression))
+genes <- rownames(expression)
+```
+
+
+```{r}
+for (a in 1:length(clinical_data$Patient)){
+  print(a)
+  ### Define IDs
+  sample <- clinical_data$Tumor_Sample_Barcode[a]
+  patient <- clinical_data$ID[a]
+  rna <- clinical_data$RNA_ID[a]
+
+  ### Subset MAF file
+  MAF_subset <- as.data.frame(MAF[which(MAF$Tumor_Sample_Barcode==sample),])
+  MAF_subset <- MAF_subset[, which(colnames(MAF_subset) %in% c("Chromosome", "Start_Position", "Hugo_Symbol", "Reference_Allele",
+                                                            "Tumor_Seq_Allele2","t_ref_count", "t_alt_count"))]
+
+  ### Create Mutation ID
+  MAF_subset$ID <- paste(MAF_subset$Chromosome, MAF_subset$Start_Position-1, MAF_subset$Reference_Allele, MAF_subset$Tumor_Seq_Allele2, sep=":")
+  MAF_subset$ID_lim <- paste(MAF_subset$Chromosome, MAF_subset$Start_Position-1, sep=":")
+
+  ### Match Expression
+  expression_subset <- as.data.frame(expression[,which(colnames(expression)== rna)])
+  expression_subset$genes <- genes
+  colnames(expression_subset) <- c("TPM","Gene")
+  
+  expression_subset <- expression_subset[match(MAF_subset$Hugo_Symbol, expression_subset$Gene),]
+  identical(MAF_subset$Hugo_Symbol[10], expression_subset$Gene[10])
+  
+  MAF_subset$Expression <- expression_subset$TPM
+  
+  ### Match Peptides
+  peptides <- as.data.frame(read.table(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MT_peptides/", patient, ".somaticvariants_filtered_vep.peptides", sep=""), header=FALSE))
+  MAF_subset <- MAF_subset[which(MAF_subset$ID %in% peptides$V5),]
+  peptides <- peptides[match(MAF_subset$ID, peptides$V5),]
+  identical(MAF_subset$ID, peptides$V5)
+  MAF_subset$Peptide <- peptides$V6
+
+  ### Limit MAF columns
+  MAF_subset <- MAF_subset[,-c(1:6)]
+  
+  ### Read in binding and remove WT
+  binding <- as.data.frame(read.table(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/netMHCpan/", patient, "_netmhc_9_10mer.xsl", sep=""), skip=1, header=TRUE))
+  
+  wt_all <- as.data.frame(read.csv(paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/WT_peptides/", patient, ".WT_n_mers_9_10_15mer.peptides", sep=""), header=FALSE))
+  binding <- binding[-which(binding$Peptide %in% wt_all$V2),]
+  binding <- unique(binding)
+  IDs <- stringr::str_split_fixed(binding$ID, "_", 4)
+  IDs[,1] <- paste("chr", IDs[,1], sep="")
+  binding$ID <- paste(IDs[,1], IDs[,2], sep=":")
+  
+
+  MAF_subset$weak_neo <- "not+neo"
+  
+  ### Match min binding
+  for (i in 1:length(MAF_subset$ID)){
+    #print(i)
+    binding_subset <- binding[which(binding$ID==MAF_subset$ID_lim[i]),]
+    MAF_subset$binding[i] <- min(binding_subset$nM, binding_subset$nM.1, binding_subset$nM.2, binding_subset$nM.3, binding_subset$nM.4, binding_subset$nM.5)
+    if (MAF_subset$binding[i] <500){
+      MAF_subset$weak_neo[i] <- "neo"
+    }
+  }
+
+  if (length(MAF_subset[-which(is.na(MAF_subset$Expression)),1]>0)){
+   MAF_subset <- MAF_subset[-which(is.na(MAF_subset$Expression)),] 
+  }
+  MAF_subset$Sample <- sample
+  
+  MAF_subset_rank_order <- MAF_subset[order(as.numeric(MAF_subset$Expression)),]
+  MAF_subset_rank_order$rank <- dplyr::dense_rank(as.numeric(MAF_subset_rank_order$Expression))
+  
+  ## True binders
+  not_neo <- MAF_subset_rank_order[which(MAF_subset_rank_order$weak_neo=="not+neo"),]
+  not_neo_sum <- sum(not_neo$rank)/length(not_neo$ID)
+  neo <- MAF_subset_rank_order[which(MAF_subset_rank_order$weak_neo=="neo"),]
+  neo_sum <- sum(neo$rank)/length(neo$ID)
+  clinical_data$weak_enrichment[a] <- not_neo_sum - neo_sum
+}
+```
+
+## Plot all data no split
+
+```{r}
+clinical_data_plot <- clinical_data[,which(colnames(clinical_data) %in% c("Patient", "Immunosuppression", "weak_enrichment", "in_silico_enrichment"))]
+clinical_data_plot <- reshape2::melt(clinical_data_plot)
+
+ggplot(clinical_data_plot, aes(x=variable, y=value)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+
+wilcox.test(clinical_data$weak_enrichment, clinical_data$in_silico_enrichment, paired=TRUE)
+```
+
+## Plot all data split
+
+```{r}
+immune_binary <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples_immune_binary.csv"))
+immune_binary <- immune_binary[match(clinical_data$ID, immune_binary$ID),]
+identical(clinical_data$ID, immune_binary$ID)
+clinical_data$immune_binary <- immune_binary$immune_binary
+
+clinical_data_plot <- clinical_data[,which(colnames(clinical_data) %in% c("Patient", "immune_binary", "weak_enrichment", "in_silico_enrichment"))]
+clinical_data_plot <- reshape2::melt(clinical_data_plot)
+clinical_data_plot$new_variable <- paste(clinical_data_plot$immune_binary, clinical_data_plot$variable)
+
+ggplot(clinical_data_plot, aes(x=new_variable, y=value)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Characteristics clonal subclonal neoags/Comparison_in_silico_figures/Enrichment_comparison.pdf", width=8, height=5)
+ggplot(clinical_data_plot, aes(x=new_variable, y=value)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+
+high <- clinical_data[which(clinical_data$immune_binary=="high"),]
+wilcox.test(high$weak_enrichment, high$in_silico_enrichment, paired=TRUE)
+low <- clinical_data[which(clinical_data$immune_binary=="low"),]
+wilcox.test(low$weak_enrichment, low$in_silico_enrichment, paired=TRUE)
+suppressed <- clinical_data[which(clinical_data$immune_binary=="Suppressed"),]
+wilcox.test(suppressed$weak_enrichment, suppressed$in_silico_enrichment, paired=TRUE)
+
+test <- clinical_data[which(clinical_data$immune_binary=="low" | clinical_data$immune_binary=="high"),]
+wilcox.test(test$weak_enrichment, test$in_silico_enrichment, paired=TRUE)
+```
+

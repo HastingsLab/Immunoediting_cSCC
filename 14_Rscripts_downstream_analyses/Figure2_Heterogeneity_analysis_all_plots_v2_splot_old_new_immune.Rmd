@@ -1,0 +1,646 @@
+---
+title: "2024_12_13_Figure2_Heterogeneity_analyses_all_plots"
+output: html_document
+date: "2024-03-18"
+---
+
+**Purpose:**
+
+* Assess distribution of CCFs when adjusted by purity of the sample
+
+**Methods:**
+
+* Purities calculated by Puree (https://www.nature.com/articles/s42003-023-04764-8)
+
+* Cancer cell fractions calculated with the code provided by Diego Mallo
+
+**Results:**
+
+## Libraries
+```{r}
+library(ggplot2)
+library(plyr)
+library(glm2)
+library(dplyr)
+library(dunn.test)
+```
+
+## Read in CNVKit CNS
+
+```{r}
+#' Define a function for combining CNVkit with MAF file results for input to CCF calculations
+#' @param maf MAF file with variants from all samples
+#' @param CNS_file CNVkit output file for sample
+#' @param sample_id Tumor sample barcode from MAF file for the sample of interest
+#' @param sex Sex of the sample for inputting normal CN
+add_cn <- function(maf, CNS_file, sample_id, sex){
+  variants <- maf[which(maf$Tumor_Sample_Barcode==sample_id),]
+  #variants <- variants[which(variants$Variant_Classification=="Missense_Mutation"),]
+  #variants <- variants[-which(variants$VAF < 0.15),]
+  CNS <- as.data.frame(read.table(CNS_file, header = TRUE))
+  variants$CN <- 2
+  for (i in 1:length(CNS$chromosome)){
+    variants[which(variants$Chromosome==CNS$chromosome[i] & variants$Start_Position> CNS$start[i] & variants$End_Position < CNS$end[i]),117] <- CNS$cn[i]
+  }
+  variants$CN_normal <- 2
+  if (sex=="Male"){
+    variants[which(variants$Chromosome=="chrY"),118] <-1
+    variants[which(variants$Chromosome=="chrX"),118] <-1
+  }
+  return(variants)
+}
+```
+
+# Modified CCF - turns out to be the same!
+
+```{r}
+#' Transforms VAFs in CCFs under the constant mutation multiplicity assumption
+#' This strategy is based on the constant mutation multiplicity assumption (see https://www.sciencedirect.com/science/article/pii/S2405471221002842)
+#' This means, that the number of copies with the SNV does not change across subclones
+#' Implementation of the algorithm in https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5538405/
+#' @param rv Read depth variant allele
+#' @param rn Read depth normal allele
+#' @param tacna Total number of copies in tumor cells (ACNA state)
+#' @param cellularity Proportion of tumor cells
+#' @param nacna Number of copies in normal cells (2 for autosomes, unless we have CNV data)
+#' @return CCFs 
+fromVAFtoCCF=function(rv,rn,tacna,cellularity,nacna=2){
+  u=rv/(cellularity*(rv+rn))*(cellularity*tacna+(1-cellularity)*nacna)
+  m=abs(u)
+  m[m<1]=1
+  
+  return(u/m)
+  #return(u)
+}
+```
+
+## Read in variants
+```{r}
+## Variant file 
+maf_file = "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_coverage_filtered.maf" 
+maf <- data.table::fread(maf_file)
+maf$VAF <- maf$t_alt_count/(maf$t_alt_count+maf$t_ref_count) ## Calculate VAF
+maf$coverage <- maf$t_alt_count + maf$t_ref_count ## Calculate coverage
+```
+
+## Read in clinical data, match immunosuprpession
+```{r}
+## Read in clinical data
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples.csv"))
+clinical_data <- clinical_data[which(clinical_data$Include_in_study=="Yes"),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$Tumor_Sample_Barcode)),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$RNA_ID)),]
+
+xcell <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immune_deconvolution/Xcell_results_star.csv", row.names = 1)) 
+row.names(xcell) <- xcell[,1]
+xcell <- xcell[,-1]
+xcell <- as.data.frame(t(xcell))
+xcell$Sample <- row.names(xcell)
+xcell$Sample <- gsub("NPT\\.", "NPT-", xcell$Sample)
+xcell$Sample <- gsub("\\.1_", "-1_", xcell$Sample)
+xcell$Sample <- gsub("\\.2_", "-2_", xcell$Sample)
+xcell <- xcell[match(clinical_data$RNA_ID, xcell$Sample),] # Match xcell
+identical(clinical_data$RNA_ID,xcell$Sample) # Check match
+
+clinical_data$immune_infiltration <- xcell$`immune score`
+
+ggplot(clinical_data, aes(x=paste(Dataset, Immunosuppression, sep="_"), y=immune_infiltration)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+
+old_data_comp <- clinical_data[which(clinical_data$Dataset=="Old" & clinical_data$Immunosuppression=="No"),]
+cutpoint <- mean(old_data_comp$immune_infiltration)
+
+clinical_data$immune_binary <- "Suppressed"
+for (i in 1:length(clinical_data$Patient)){
+  if (clinical_data$immune_infiltration[i] > cutpoint & clinical_data$Immunosuppression[i]=="No"){
+    clinical_data$immune_binary[i] <- "high"
+  }
+  if (clinical_data$immune_infiltration[i] < cutpoint & clinical_data$Immunosuppression[i]=="No"){
+    clinical_data$immune_binary[i] <- "low"
+  }
+}
+
+
+ggplot(clinical_data, aes(x=immune_binary, y=immune_infiltration)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+```
+
+### Read in purity
+
+```{r}
+## Read in purities estimated from RNA
+purities <- as.data.frame(read.table("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Purity/All_purity_estimates_renamed.txt"))
+purities$sample <- row.names(purities)
+colnames(purities) <- c("Purity", "Sample")
+purities <- purities[match(clinical_data$RNA_ID, purities$Sample),] # Match purities
+identical(clinical_data$RNA_ID, purities$Sample) # Check match
+clinical_data$sample_purity <- purities$Purity # Add to clinical data
+
+old_purities <- as.data.frame(read.table("~/3.0 Hasting Research/Immunoediting_human_work/Puree_purity_scores/Output_purities_puree_formatted.tsv"))
+colnames(old_purities) <- c("Sample", "Purity")
+old_purities <- old_purities[match(paste(clinical_data$RNA_ID, "_RNA_count", sep=""), old_purities$Sample),] # Match purities
+identical(paste(clinical_data$RNA_ID, "_RNA_count", sep="")[49], old_purities$Sample[49]) # Check match
+clinical_data$old_sample_purity <- old_purities$Purity # Add to clinical data
+
+## Purities from star
+star_purity <- as.data.frame(read.table("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Purity/Puree_output_star_formatted.txt"))
+star_purity$sample <- row.names(star_purity)
+star_purity$sample <- gsub("NPT.", "NPT-", star_purity$sample) 
+star_purity$sample <- gsub("\\.2", "-2", star_purity$sample)
+star_purity$sample <- gsub("\\.1", "-1", star_purity$sample)
+star_purity_matched <- star_purity[match(clinical_data$RNA_ID, star_purity$sample),]
+identical(clinical_data$RNA_ID, star_purity_matched$sample)
+clinical_data$star_purity <- star_purity_matched$purity
+
+write.csv(star_purity_matched, "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Purity/Puree_output_star_formatted_renamed.txt")
+write.csv(clinical_data, "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples_immune_binary.csv")
+```
+
+## Subset into old and new data for downstream analyses
+
+```{r}
+clinical_data_old <- clinical_data[which(clinical_data$Dataset =="Old"),]
+clinical_data_new <- clinical_data[which(clinical_data$Dataset =="New"),]
+```
+
+## Compare 3 purity estimates
+```{r}
+## Old vs. new purity estimates
+plot(clinical_data_old$old_sample_purity, clinical_data_old$sample_purity)
+# Old vs. new star estimates
+plot(clinical_data_old$old_sample_purity, clinical_data_old$star_purity)
+# New vs. new star estimates
+plot(clinical_data_old$sample_purity, clinical_data_old$star_purity)
+```
+
+## Compare mean purity immunocompetent vs. immunosupressed
+
+```{r}
+## PLot immune status vs. purity boxplot
+ggplot(clinical_data_old, aes(x= immune_binary, y=star_purity)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+## Test significance
+kruskal.test(star_purity ~ immune_binary, clinical_data_old)
+dunn.test(clinical_data_old$star_purity, clinical_data_old$immune_binary, method="bh", altp=TRUE)
+## Save to file
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Purity_comparison_old_data.pdf")
+ggplot(clinical_data_old, aes(x= immune_binary, y=star_purity)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+
+## PLot immune status vs. purity boxplot
+ggplot(clinical_data_new, aes(x= Immunosuppression, y=star_purity)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+## Test significance
+wilcox.test(star_purity ~ Immunosuppression, clinical_data_new)
+## Save to file
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Purity_comparison_new_data.pdf")
+ggplot(clinical_data_new, aes(x= Immunosuppression, y=star_purity)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+```
+
+
+## Compare purity to immune cell infiltrates
+```{r}
+## Test significance
+model <- lm(star_purity ~ immune_infiltration, clinical_data_old)
+summary(model)
+## Test association of purity with immune infiltrate
+ggplot(clinical_data_old, aes(x= immune_infiltration, y=star_purity, color=immune_binary)) + geom_point() + theme_minimal()+
+  geom_abline(slope = -0.45017, intercept = 0.66244, color = "black", linetype="dashed")
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Purity_vs_immune_old.pdf", width=6, height=3)
+ggplot(clinical_data_old, aes(x= immune_infiltration, y=star_purity, color=immune_binary)) + geom_point(size=3) + theme_minimal()+
+  geom_abline(slope = -0.45017, intercept = 0.66244, color = "black", linetype="dashed") +
+  scale_color_manual(values = c("goldenrod", "darkgreen","darkblue"))
+dev.off()
+
+## Test significance
+model <- lm(star_purity ~ immune_infiltration, clinical_data_new)
+summary(model)
+## Test association of purity with immune infiltrate
+ggplot(clinical_data_new, aes(x= immune_infiltration, y=star_purity, color=immune_binary)) + geom_point() + theme_minimal()+
+  geom_abline(slope = -0.65530, intercept = 0.69847, color = "black", linetype="dashed")
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Purity_vs_immune_new.pdf", width=5, height=3)
+ggplot(clinical_data_new, aes(x= immune_infiltration, y=star_purity, color=immune_binary)) + geom_point(size=3) + theme_minimal()+
+  geom_abline(slope = -0.65530, intercept = 0.69847, color = "black", linetype="dashed") +
+  scale_color_manual(values = c("goldenrod", "darkgreen","darkblue"))
+dev.off()
+
+```
+
+## Compare coverage immunocompetent vs. immunosuppressed
+```{r}
+## Calculate mean coverage
+cov <- maf[,c(16,116)]
+cov <- ddply(cov, "Tumor_Sample_Barcode", numcolwise(mean))
+
+## Match and add to clinical data
+cov <- cov[match(clinical_data_old$Tumor_Sample_Barcode, cov$Tumor_Sample_Barcode),]
+identical(clinical_data_old$Tumor_Sample_Barcode, cov$Tumor_Sample_Barcode)
+clinical_data_old$mean_coverage <- cov$coverage
+
+## Boxplot mean coverage
+ggplot(clinical_data_old, aes(x=immune_binary, y=mean_coverage)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+## Save to file
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Coverage_comparison_old_data_immune.pdf")
+ggplot(clinical_data_old, aes(x=immune_binary, y=mean_coverage)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+## Significance test
+kruskal.test(mean_coverage ~ immune_binary, clinical_data_old)
+
+
+## Calculate mean coverage
+cov <- maf[,c(16,116)]
+cov <- ddply(cov, "Tumor_Sample_Barcode", numcolwise(mean))
+
+## Match and add to clinical data
+cov <- cov[match(clinical_data_new$Tumor_Sample_Barcode, cov$Tumor_Sample_Barcode),]
+identical(clinical_data_new$Tumor_Sample_Barcode, cov$Tumor_Sample_Barcode)
+clinical_data_new$mean_coverage <- cov$coverage
+
+## Boxplot mean coverage
+ggplot(clinical_data_new, aes(x= Immunosuppression, y=mean_coverage)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+## Save to file
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Coverage_comparison_new_data.pdf")
+ggplot(clinical_data_new, aes(x= Immunosuppression, y=mean_coverage)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+## Significance test
+wilcox.test(mean_coverage ~ Immunosuppression, clinical_data_new)
+```
+
+## Compare mean VAF immunocompetent vs. immunosupressed
+
+```{r}
+#clinical_data <- clinical_data[which(clinical_data$Dataset=="Old"),]
+maf <- maf[which(maf$Tumor_Sample_Barcode %in% clinical_data$Tumor_Sample_Barcode),]
+
+## Calculate mean VAF
+vaf <- maf[,c(16,115)]
+vaf <- ddply(vaf, "Tumor_Sample_Barcode", numcolwise(mean))
+
+## Match and add to clinical data
+vaf_subset <- vaf[match(clinical_data_old$Tumor_Sample_Barcode, vaf$Tumor_Sample_Barcode),]
+identical(clinical_data_old$Tumor_Sample_Barcode, vaf_subset$Tumor_Sample_Barcode)
+clinical_data_old$mean_vaf <- vaf_subset$VAF
+
+## Calculate "predicted mean VAF" based on purity
+clinical_data_old$predicted_mean_VAF <- clinical_data_old$star_purity/2
+
+## Boxplot mean VAF
+ggplot(clinical_data_old, aes(x= immune_binary, y=mean_vaf)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/mean_VAF_comparison_old_data.pdf")
+ggplot(clinical_data_old, aes(x= immune_binary, y=mean_vaf)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+
+## Significance test
+kruskal.test(mean_vaf ~ immune_binary, clinical_data_old)
+dunn.test(clinical_data_old$mean_vaf, clinical_data_old$immune_binary, method="bh", altp=TRUE)
+
+## Plot mean VAF vs. star_purity
+model <- lm(mean_vaf ~ star_purity, clinical_data_old)
+summary(model)
+ggplot(clinical_data_old, aes(x=star_purity, y=mean_vaf, color=immune_binary)) + geom_point(size=3) + theme_minimal()+
+  geom_abline(slope = 0.68407, intercept = -0.16735, color = "black")+
+  geom_abline(slope = .5, intercept = 0, color = "black", linetype="dashed")+
+  scale_color_manual(values = c("goldenrod", "darkgreen","darkblue"))
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/mean_VAF_v_purity_old_data.pdf", width=5, height=3)
+ggplot(clinical_data_old, aes(x=star_purity, y=mean_vaf, color=immune_binary)) + geom_point(size=3) + theme_minimal()+
+  geom_abline(slope = 0.68407, intercept = -0.16735, color = "black")+
+  geom_abline(slope = .5, intercept = 0, color = "black", linetype="dashed")+
+  scale_color_manual(values = c("goldenrod", "darkgreen","darkblue"))
+dev.off()
+
+## Match and add to clinical data
+vaf_subset <- vaf[match(clinical_data_new$Tumor_Sample_Barcode, vaf$Tumor_Sample_Barcode),]
+identical(clinical_data_new$Tumor_Sample_Barcode, vaf_subset$Tumor_Sample_Barcode)
+clinical_data_new$mean_vaf <- vaf_subset$VAF
+
+## Calculate "predicted mean VAF" based on purity
+clinical_data_new$predicted_mean_VAF <- clinical_data_new$star_purity/2
+
+## Boxplot mean VAF
+ggplot(clinical_data_new, aes(x= Immunosuppression, y=mean_vaf)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/mean_VAF_comparison_new_data.pdf")
+ggplot(clinical_data_new, aes(x= Immunosuppression, y=mean_vaf)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+
+## Significance test
+wilcox.test(mean_vaf ~ Immunosuppression, clinical_data_new)
+
+## Plot mean VAF vs. star_purity
+model <- lm(mean_vaf ~ star_purity, clinical_data_new)
+summary(model)
+ggplot(clinical_data_new, aes(x=star_purity, y=mean_vaf, color=paste(Immunosuppression, Dataset, sep="_"))) + geom_point(size=3) + theme_minimal()+
+  geom_abline(slope = 0.67512, intercept = -0.27158, color = "black")+
+  geom_abline(slope = .5, intercept = 0, color = "black", linetype="dashed")+
+  scale_color_manual(values = c("goldenrod","darkblue"))
+
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/mean_VAF_v_purity_new_data.pdf")
+ggplot(clinical_data_new, aes(x=star_purity, y=mean_vaf, color=paste(Immunosuppression, Dataset, sep="_"))) + geom_point(size=3) + theme_minimal()+
+  geom_abline(slope = 0.67512, intercept = -0.27158, color = "black")+
+  geom_abline(slope = .5, intercept = 0, color = "black", linetype="dashed")+
+  scale_color_manual(values = c("goldenrod","darkblue"))
+dev.off()
+```
+
+## Plot distributions of VAFs
+```{r}
+## Old data
+data_plot <- maf %>%
+  group_by(Tumor_Sample_Barcode) %>%
+  mutate(mean_VAF = mean(VAF)) %>%
+  ungroup()
+
+data_plot <- data_plot[which(data_plot$Tumor_Sample_Barcode %in% clinical_data_old$Tumor_Sample_Barcode),]
+data_matched <- clinical_data_old[match(data_plot$Tumor_Sample_Barcode, clinical_data_old$Tumor_Sample_Barcode),]
+identical(data_matched$Tumor_Sample_Barcode, data_plot$Tumor_Sample_Barcode)
+data_plot$immune <- data_matched$immune_binary
+data_plot$immune_dataset <- paste(data_matched$Immunosuppression, data_matched$Dataset, sep="_")
+
+# Plot the stacked density plot
+ggplot(data_plot, aes(x = VAF, color = immune, fill=Tumor_Sample_Barcode)) +
+  geom_density(alpha = 0) +
+  scale_fill_manual(values = c(rep("white",78))) +
+  scale_color_manual(values = c("darkblue", "darkgreen","goldenrod")) +
+  theme_minimal()+ 
+  guides(fill= "none") +
+  facet_wrap(~immune, scales = "free_y", ncol=1, nrow=3) 
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/VAF_density_old_data.pdf")
+ggplot(data_plot, aes(x = VAF, color = immune, fill=Tumor_Sample_Barcode)) +
+  geom_density(alpha = 0) +
+  scale_fill_manual(values = c(rep("white",78))) +
+  scale_color_manual(values = c("darkblue", "darkgreen", "goldenrod")) +
+  theme_minimal()+ 
+  guides(fill= "none") +
+  facet_wrap(~immune, scales = "free_y", ncol=1, nrow=3) 
+dev.off()
+
+## New data
+data_plot <- maf %>%
+  group_by(Tumor_Sample_Barcode) %>%
+  mutate(mean_VAF = mean(VAF)) %>%
+  ungroup()
+
+data_plot <- data_plot[which(data_plot$Tumor_Sample_Barcode %in% clinical_data_new$Tumor_Sample_Barcode),]
+data_matched <- clinical_data_new[match(data_plot$Tumor_Sample_Barcode, clinical_data_new$Tumor_Sample_Barcode),]
+identical(data_matched$Tumor_Sample_Barcode, data_plot$Tumor_Sample_Barcode)
+data_plot$immune <- data_matched$Immunosuppression
+data_plot$immune_dataset <- paste(data_matched$Immunosuppression, data_matched$Dataset, sep="_")
+
+# Plot the stacked density plot
+ggplot(data_plot, aes(x = VAF, color = immune, fill=Tumor_Sample_Barcode)) +
+  geom_density(alpha = 0) +
+  scale_fill_manual(values = c(rep("white",78))) +
+  scale_color_manual(values = c("goldenrod","darkblue", "darkgreen")) +
+  theme_minimal()+ 
+  guides(fill= "none") 
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/VAF_density_new_data.pdf")
+ggplot(data_plot, aes(x = VAF, color = immune, fill=Tumor_Sample_Barcode)) +
+  geom_density(alpha = 0) +
+  scale_fill_manual(values = c(rep("white",78))) +
+  scale_color_manual(values = c("goldenrod","darkblue", "darkgreen")) +
+  theme_minimal()+ 
+  guides(fill= "none") +
+  facet_wrap(~immune, scales = "free_y", ncol=1, nrow=2) 
+dev.off()
+```
+
+
+## Calculate and compare mean CCFs and clonal neonatigen proportions
+```{r}
+vafs <- matrix(NA, nrow=60000, ncol=59)
+#vafs <- matrix(NA, nrow=60000, ncol=38)
+maf_new <- matrix(NA, ncol=120, nrow=1)
+for (i in 1:length(clinical_data$Patient)){
+  variants_CN <- add_cn(maf, paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Copy_number_results/", clinical_data$ID[i],".GRCh38_full_analysis_set_plus_decoy_hla.sorted.mkdup.call_abbr.cns", sep=""), clinical_data$Tumor_Sample_Barcode[i], clinical_data$Gender[i])
+  variants_CN$CCF <- fromVAFtoCCF(variants_CN$t_alt_count, variants_CN$t_ref_count, variants_CN$CN, clinical_data$star_purity[i], variants_CN$CN_normal)
+  variants_CN$CCF_pureCN <- fromVAFtoCCF(variants_CN$t_alt_count, variants_CN$t_ref_count, variants_CN$CN, clinical_data$purecn_purity[i], variants_CN$CN_normal)
+  if (length(variants_CN[-which(is.na(variants_CN$VAF)),]>0)){
+   variants_CN <- variants_CN[-which(is.na(variants_CN$VAF)),] 
+  }
+  clinical_data$mean_vaf[i] <- mean(variants_CN$VAF)
+  clinical_data$mean_ccf[i] <- mean(variants_CN$CCF)
+  clinical_data$mean_ccf_purecn[i] <- mean(variants_CN$CCF_pureCN)
+  clonal <- variants_CN[which(variants_CN$CCF>0.75),]
+  clinical_data$count_clonal[i] <- length(clonal$Hugo_Symbol)
+  clinical_data$count_total[i] <- length(variants_CN$Hugo_Symbol)
+  
+  clonal_nsyn <- clonal[which(clonal$Variant_Classification=="Missense_Mutation"),]
+  clinical_data$clonal_nsyn[i] <- length(clonal_nsyn$Hugo_Symbol)
+  clonal_syn <- clonal[which(clonal$Variant_Classification!="Missense_Mutation"),]
+  clinical_data$clonal_syn[i] <- length(clonal_syn$Hugo_Symbol)
+  
+  nsyn_total <- variants_CN[which(variants_CN$Variant_Classification=="Missense_Mutation"),]
+  clinical_data$total_nsyn[i] <- length(nsyn_total$Hugo_Symbol)
+  syn_total <- variants_CN[which(variants_CN$Variant_Classification!="Missense_Mutation"),]
+  clinical_data$total_syn[i] <- length(syn_total$Hugo_Symbol)
+  vafs[1:length(variants_CN$CCF),i] <- variants_CN$CCF
+  write.csv(variants_CN, paste("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/", clinical_data$ID[i], "_variants_CN.csv", sep=""))
+  colnames(maf_new) <- colnames(variants_CN)
+  maf_new <- rbind(maf_new, variants_CN)
+}
+colnames(vafs) <- clinical_data$Tumor_Sample_Barcode
+```
+
+## Subset into old and new data for downstream analyses
+
+```{r}
+clinical_data_old <- clinical_data[which(clinical_data$Dataset =="Old"),]
+clinical_data_new <- clinical_data[which(clinical_data$Dataset =="New"),]
+```
+
+## Plot ratio clonal comparison both old and new data
+```{r}
+clinical_data_old$Ratio_clonal <- clinical_data_old$count_clonal/clinical_data_old$count_total
+## Plot proportion clonal
+ggplot(clinical_data_old, aes(x=immune_binary, y=Ratio_clonal)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Ratio_clonal_old_data_immune_split.pdf")
+ggplot(clinical_data_old, aes(x=immune_binary, y=Ratio_clonal)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+## Significance test
+kruskal.test(Ratio_clonal~ immune_binary, clinical_data_old)
+dunn.test(clinical_data_old$Ratio_clonal, clinical_data_old$immune_binary, method="bh", altp=TRUE)
+
+ggplot(clinical_data_old, aes(x=star_purity, y=Ratio_clonal, color=immune_binary)) + geom_point(size=3) 
+
+clinical_data_new$Ratio_clonal <- clinical_data_new$count_clonal/clinical_data_new$count_total
+## Plot proportion clonal
+ggplot(clinical_data_new, aes(x=Immunosuppression, y=Ratio_clonal)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Ratio_clonal_new_data.pdf")
+ggplot(clinical_data_new, aes(x=Immunosuppression, y=Ratio_clonal)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+## Significance test
+wilcox.test(Ratio_clonal~ Immunosuppression, clinical_data_new)
+```
+
+## Plot total clonal comparison both old and new data
+```{r}
+## Plot total number clonal
+ggplot(clinical_data_old, aes(x=immune_binary, y=count_clonal)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Count_clonal_old_data_immune_split.pdf")
+ggplot(clinical_data_old, aes(x=immune_binary, y=count_clonal)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+## Significance test
+kruskal.test(count_clonal~ immune_binary, clinical_data_old)
+dunn.test(clinical_data_old$count_clonal, clinical_data_old$immune_binary, method="bh", altp=TRUE)
+
+
+## Plot total number clonal
+ggplot(clinical_data_new, aes(x=Immunosuppression, y=count_clonal)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Count_clonal_new_data.pdf")
+ggplot(clinical_data_new, aes(x=Immunosuppression, y=count_clonal)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+## Significance test
+wilcox.test(count_clonal~ Immunosuppression, clinical_data_new)
+```
+
+## Plot total clonal adjusted by age comparison both old and new data
+
+```{r}
+## Location simple
+clinical_data_old$Location_simple <- NA
+clinical_data_old[which(clinical_data_old$Location=="Arm"),33] <- "UE"
+clinical_data_old[which(clinical_data_old$Location=="Back"),33] <- "Trunk"
+clinical_data_old[which(clinical_data_old$Location=="Cheek"),33] <- "Head_neck"
+clinical_data_old[which(clinical_data_old$Location=="Ear"),33] <- "Head_neck"
+clinical_data_old[which(clinical_data_old$Location=="Foot"),33] <- "LE"
+clinical_data_old[which(clinical_data_old$Location=="Forearm"),33] <- "UE"
+clinical_data_old[which(clinical_data_old$Location=="Forehead"),33] <- "Head_neck"
+clinical_data_old[which(clinical_data_old$Location=="Hand"),33] <- "UE"
+clinical_data_old[which(clinical_data_old$Location=="Jaw"),33] <- "Head_neck"
+clinical_data_old[which(clinical_data_old$Location=="Leg"),33] <- "LE"
+clinical_data_old[which(clinical_data_old$Location=="Lip: Hair bearing/Perioral"),33] <- "Head_neck"
+clinical_data_old[which(clinical_data_old$Location=="Lip: Non-hair bearing/Vermillion"),33] <- "Head_neck"
+clinical_data_old[which(clinical_data_old$Location=="Lower Leg"),33] <- "LE"
+clinical_data_old[which(clinical_data_old$Location=="Neck"),33] <- "Head_neck"
+clinical_data_old[which(clinical_data_old$Location=="Scalp"),33] <- "Head_neck"
+clinical_data_old[which(clinical_data_old$Location=="Temple"),33] <- "Head_neck"
+table(clinical_data_old$Location_simple)
+
+## Plot asociation of clonal mutational burden with age
+ggplot(clinical_data_old, aes(x= Age, y=count_clonal, color=immune_binary)) + geom_point() + theme_minimal()+
+  geom_smooth(method = "lm")
+
+high <- clinical_data_old[which(clinical_data_old$immune_binary=="high"),]
+model <- lm(count_clonal ~ Age, high)
+summary(model)
+model <- lm(count_clonal ~ Age + Location_simple + Age*Location_simple, high)
+summary(model)
+
+low <- clinical_data_old[which(clinical_data_old$immune_binary=="low"),]
+model <- lm(count_clonal ~ Age, low)
+summary(model)
+model <- lm(count_clonal ~ Age + Location_simple + Age*Location_simple, low)
+summary(model)
+
+Suppressed <- clinical_data_old[which(clinical_data_old$immune_binary=="Suppressed"),]
+model <- lm(count_clonal ~ Age, low)
+summary(model)
+model <- lm(count_clonal ~ Age + Location_simple + Age*Location_simple, Suppressed)
+summary(model)
+
+## Plot total number clonal adjulowIntFilter()## Plot total number clonal adjusted by age
+ggplot(clinical_data_old, aes(x=immune_binary, y=count_clonal/Age)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Age_adj_clonal_old_data_immune_split.pdf")
+ggplot(clinical_data_old, aes(x=immune_binary, y=count_clonal/Age)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+## Significance test
+kruskal.test(count_clonal/Age~ immune_binary, clinical_data_old)
+dunn.test(clinical_data_old$count_clonal/clinical_data_old$Age, clinical_data_old$immune_binary, method="bh", altp=TRUE)
+
+ggplot(clinical_data_new, aes(x= Age, y=count_clonal, color=immune_binary)) + geom_point() + theme_minimal()+
+  geom_smooth(method = "lm")
+
+Suppressed <- clinical_data_new[which(clinical_data_new$Immunosuppression=="Yes"),]
+model <- lm(count_clonal ~ Age, Suppressed)
+summary(model)
+
+## Plot total number clonal adjusted by age
+ggplot(clinical_data_new, aes(x=Immunosuppression, y=count_clonal/Age)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Age_adj_clonal_nwe_data.pdf")
+ggplot(clinical_data_new, aes(x=Immunosuppression, y=count_clonal/Age)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+## Significance test
+wilcox.test(count_clonal/Age ~ Immunosuppression, clinical_data_new)
+```
+
+
+### Mean CCF
+
+```{r}
+## Plot mean CCF
+ggplot(clinical_data_old, aes(x=immune_binary, y=mean_ccf)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Mean_CCF_old_data_immune_split.pdf")
+ggplot(clinical_data_old, aes(x=immune_binary, y=mean_ccf)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+## Significance test
+kruskal.test(mean_ccf~ immune_binary, clinical_data_old)
+dunn.test(clinical_data_old$mean_ccf, clinical_data_old$immune_binary, method="bh", altp=TRUE)
+
+
+ggplot(clinical_data_old, aes(x=immune_infiltration, y=mean_ccf, color=immune_binary)) + geom_point(size=3) + theme_minimal() +
+  geom_abline(slope = -0.43771, intercept = 0.75169, color = "black")+
+  scale_color_manual(values = c("goldenrod", "darkgreen","darkblue"))
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Mean_CCF_v_immune_infiltrate_scatter.pdf", width=5, height=3)
+ggplot(clinical_data_old, aes(x=immune_infiltration, y=mean_ccf, color=immune_binary)) + geom_point(size=3) + theme_minimal() +
+  geom_abline(slope = -0.43771, intercept = 0.75169, color = "black")+
+  scale_color_manual(values = c("goldenrod", "darkgreen","darkblue"))
+dev.off()
+model <- lm(mean_ccf ~ immune_infiltration, clinical_data_old)
+summary(model)
+
+## Plot mean CCF
+ggplot(clinical_data_new, aes(x=Immunosuppression, y=mean_ccf)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/Mean_CCF_new_data.pdf")
+ggplot(clinical_data_new, aes(x=Immunosuppression, y=mean_ccf)) + geom_boxplot(outlier.shape = NA) + geom_jitter(width=0.05) + theme_minimal()
+dev.off()
+## Significance test
+wilcox.test(mean_ccf ~ Immunosuppression, clinical_data_new)
+```
+
+
+## Plot all
+
+```{r}
+## Old data
+data_plot <- maf_new %>%
+  group_by(Tumor_Sample_Barcode) %>%
+  mutate(mean_CCF = mean(CCF)) %>%
+  ungroup()
+
+data_plot <- data_plot[which(data_plot$Tumor_Sample_Barcode %in% clinical_data_old$Tumor_Sample_Barcode),]
+data_matched <- clinical_data_old[match(data_plot$Tumor_Sample_Barcode, clinical_data_old$Tumor_Sample_Barcode),]
+identical(data_matched$Tumor_Sample_Barcode, data_plot$Tumor_Sample_Barcode)
+data_plot$immune_binary <- data_matched$immune_binary
+data_plot$immune_dataset <- paste(data_matched$Immunosuppression, data_matched$Dataset, sep="_")
+data_plot$total_count <- data_matched$count_total
+
+# Plot the stacked density plot
+ggplot(data_plot, aes(x = CCF, color = immune_binary, fill=Tumor_Sample_Barcode)) +
+  geom_density(alpha = 0) +
+  scale_color_manual(values = c("goldenrod","darkblue", "darkgreen")) +
+  theme_minimal()+ 
+  guides(fill= "none") +
+  facet_wrap(~immune_binary, scales = "free_y", ncol=3, nrow=1) +
+  geom_vline(xintercept = 0.75, color = "red")
+
+pdf("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Heterogeneity comparison figures/CCF_density_old_data.pdf")
+ggplot(data_plot, aes(x = CCF, color = immune_binary, fill=Tumor_Sample_Barcode)) +
+  geom_density(alpha = 0) +
+  scale_color_manual(values = c("goldenrod","darkblue", "darkgreen")) +
+  theme_minimal()+ 
+  guides(fill= "none") +
+  facet_wrap(~immune_binary, scales = "free_y", ncol=1, nrow=3) +
+  geom_vline(xintercept = 0.75, color = "red")
+dev.off() 
+```
+
+
+### Output data
+```{r}
+write.csv(clinical_data,"~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Mayo_full_clinical_data.csv")
+```
+
+
+

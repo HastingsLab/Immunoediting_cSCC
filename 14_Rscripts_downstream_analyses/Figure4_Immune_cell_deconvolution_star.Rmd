@@ -1,0 +1,88 @@
+---
+title: "2024_12_21_Figure4_Immune_cell_deconvolution"
+output: html_document
+date: "2024-12-21"
+---
+
+# **Purpose:**
+
+* To prepare the deconvolution files for visualization
+
+# **Methods:**
+
+* Generate deconvolution results with quanTIseq, MCP counter, and xCell
+
+# **Results:**
+
+## Libraries
+
+```{r, warning=FALSE, message=FALSE}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(immunedeconv)
+library(tibble)
+library(DGEobj.utils)
+library(plyr)
+library(pheatmap)
+library(biomaRt)
+```
+
+## Read in and format data
+
+```{r}
+## Read in clinical data
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples.csv"))
+clinical_data <- clinical_data[which(clinical_data$Include_in_study=="Yes"),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$RNA_ID)),]
+
+expression_data <- as.data.frame(read.table("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/RNA_seq/star/all_samples.counts.txt", header = TRUE))
+expression_data$Geneid <- gsub("\\..*", "", expression_data$Geneid)
+row.names(expression_data) <- expression_data$Geneid
+
+colnames(expression_data) <- gsub("X.xdisk.khasting.knodele.Mayo_data.star_mapped_reads.", "", colnames(expression_data))
+colnames(expression_data) <- gsub("Aligned.out.sam", "", colnames(expression_data))
+
+gene_length <- expression_data$Length
+
+expression_data <- expression_data[,-c(1:6)]
+expression_data <- as.matrix(expression_data)
+expression_tpm <- convertCounts(expression_data, "tpm", geneLength = gene_length)
+
+puree_input <- t(expression_tpm)
+write.csv(puree_input, "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Purity/Puree_input_star.csv")
+
+human <- useMart("ensembl", dataset="hsapiens_gene_ensembl")
+result <- getBM(attributes=c("ensembl_gene_id", "hgnc_symbol"), filters = "ensembl_gene_id", values = colnames(puree_input), mart= human)
+result_matched <- result[match(rownames(expression_tpm), result$ensembl_gene_id),]
+identical(rownames(expression_tpm)[1], result_matched$ensembl_gene_id[1])
+
+expression_tpm <- as.data.frame(expression_tpm)
+expression_tpm$gene_name <- result_matched$hgnc_symbol
+expression_tpm <- expression_tpm[-which(expression_tpm$gene_name ==""),]
+expression_tpm <- ddply(expression_tpm, "gene_name", numcolwise(sum))
+row.names(expression_tpm) <- expression_tpm$gene_name
+expression_tpm <- expression_tpm[,-which(colnames(expression_tpm)=="gene_name")]
+
+write.csv(expression_tpm, "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/RNA_seq/star/all_samples_tpm.counts.txt")
+```
+
+## Run quantiseq
+```{r}
+res_quantiseq <- deconvolute(expression_tpm, "quantiseq", tumor=TRUE)
+
+write.csv(res_quantiseq, "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immune_deconvolution/Quantiseq_results_star.csv")
+```
+
+
+## Run xcell
+```{r}
+res_xcell <- deconvolute(expression_tpm, "xcell", tumor=TRUE)
+write.csv(res_xcell, "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immune_deconvolution/Xcell_results_star.csv")
+```
+
+## Run mcp
+```{r}
+res_mcp_counter <- deconvolute(expression_tpm, "mcp_counter", tumor=TRUE)
+write.csv(res_mcp_counter, "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Immune_deconvolution/MCP_counter_results_star.csv")
+```

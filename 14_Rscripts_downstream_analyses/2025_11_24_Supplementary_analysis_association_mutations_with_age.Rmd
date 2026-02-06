@@ -1,0 +1,152 @@
+---
+title: "2025_11_24_Supplementary_analysis_associate_mutational_burden_with_age"
+output: html_document
+date: "2025-11-24"
+---
+
+**Purpose:**
+
+* Test for an association of mutational burden with age within immunocompetent and immunosuppressed patients
+
+**Methods:**
+
+* Mutational burden quantified
+
+* Associate mutational burden with age
+
+* Subset approximate mutational burdens by signature.
+
+**Results:**
+
+## Libraries
+```{r}
+library(ggplot2)
+library(maftools)
+library(BSgenome.Hsapiens.UCSC.hg38)
+library(deconstructSigs)
+library(sigminer)
+library(stringr)
+library(ggsci)
+library(plyr)
+library(reshape2)
+library(dunn.test)
+```
+
+
+## Read in Mayo variants
+
+```{r}
+# Read in mayo file
+maf_file_Mayo = "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_DNP_fixed.maf"
+maf_mayo <- data.table::fread(maf_file_Mayo)
+maf_mayo <- maf_mayo[which((maf_mayo$t_alt_count)>=5),]
+maf_mayo <- maf_mayo[which((maf_mayo$t_depth)>=10),]
+readr::write_tsv(maf_mayo, "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_coverage_filtered.maf")
+maf_file_Mayo = "~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/MAF_file/Mayo_data_with_new_samples_FFPE_fitlered_coverage_filtered.maf"
+table(maf_mayo$Variant_Classification)
+vcNames <- names(maf_mayo$Variant_Classification)
+variants_mayo = read.maf(maf = maf_file_Mayo, vc_nonSyn=vcNames)
+
+# Calculate mutational burden
+mutational_burden_mayo <- variants_mayo@variant.classification.summary
+maf_mayo$number <- 1
+total_mutations_mayo <- ddply(maf_mayo, "Tumor_Sample_Barcode", numcolwise(sum))
+total_mutations_mayo <- total_mutations_mayo[match(mutational_burden_mayo$Tumor_Sample_Barcode, total_mutations_mayo$Tumor_Sample_Barcode),]
+identical(as.character(mutational_burden_mayo$Tumor_Sample_Barcode), total_mutations_mayo$Tumor_Sample_Barcode)
+mutational_burden_mayo$somatic_mutations <- total_mutations_mayo$number
+
+### Add immunosuppression annotations
+clinical_data <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples.csv"))
+clinical_data <- clinical_data[which(clinical_data$Include_in_study=="Yes"),]
+clinical_data <- clinical_data[-which(is.na(clinical_data$Tumor_Sample_Barcode)),]
+#clinical_data <- clinical_data[-which(is.na(clinical_data$RNA_ID)),]
+proportion_binding <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Metadata/Metadata_annotations_all_Mayo_samples_immune_binary.csv"))
+proportion_binding_matched <- proportion_binding[match(clinical_data$Tumor_Sample_Barcode, proportion_binding$Tumor_Sample_Barcode),]
+clinical_data$immune_binary <- proportion_binding_matched$immune_binary
+clinical_data[which(is.na(clinical_data$immune_binary) & clinical_data$Immunosuppression=="No"),18] <- "No RNA"
+clinical_data[which(is.na(clinical_data$immune_binary) & clinical_data$Immunosuppression=="Yes"),18] <- "Suppressed"
+clinical_data <- clinical_data[which(clinical_data$Dataset=="Old"),]
+table(clinical_data$immune_binary)
+
+mutational_burden_mayo <- mutational_burden_mayo[which(mutational_burden_mayo$Tumor_Sample_Barcode %in% clinical_data$Tumor_Sample_Barcode),]
+clinical_data <- clinical_data[match(mutational_burden_mayo$Tumor_Sample_Barcode, clinical_data$Tumor_Sample_Barcode),]
+identical(as.character(mutational_burden_mayo$Tumor_Sample_Barcode), clinical_data$Tumor_Sample_Barcode)
+mutational_burden_mayo$immunosuppression <- clinical_data$immune_binary
+mutational_burden_mayo$met <- clinical_data$Met
+mutational_burden_mayo$stage <- clinical_data$Stage
+mutational_burden_mayo$sex <- clinical_data$Gender
+mutational_burden_mayo$age <- clinical_data$Age
+mutational_burden_mayo$treatment <- clinical_data$Immunosuppressive_agent
+mutational_burden_mayo$location <- clinical_data$Location
+mutational_burden_mayo$Dataset <- clinical_data$Dataset
+
+mutational_burden <- mutational_burden_mayo
+total_data <- mutational_burden[,c(1,3,9,10,11,12,13,14,15,16,17)]
+```
+
+## Mutational burden plots
+
+```{r}
+mutational_burden_formatted <- total_data[,c(1:7,9:10)]
+mutational_burden_formatted <- reshape2::melt(mutational_burden_formatted, value.name = "Mutations")
+somatic_burden_matched <- total_data[match(mutational_burden_formatted$Tumor_Sample_Barcode, total_data$Tumor_Sample_Barcode),]
+identical(mutational_burden_formatted$Tumor_Sample_Barcode, somatic_burden_matched$Tumor_Sample_Barcode)
+mutational_burden_formatted$somatic_mutations <- somatic_burden_matched$somatic_mutations
+mutational_burden_formatted$age <- somatic_burden_matched$age
+
+ggplot(mutational_burden_formatted, aes(x = age, y= somatic_mutations, color= immunosuppression)) + geom_point() + geom_smooth(method= "lm", se=FALSE) + theme_minimal()
+ggplot(mutational_burden_formatted, aes(x = age, y= somatic_mutations)) + geom_point() + geom_smooth(method= "lm") + theme_minimal()
+
+high <- mutational_burden_formatted[which(mutational_burden_formatted$immunosuppression == "high"),]
+model <- lm(somatic_mutations ~ age, high)
+summary(model)
+
+low <- mutational_burden_formatted[which(mutational_burden_formatted$immunosuppression == "low"),]
+model <- lm(somatic_mutations ~ age, low)
+summary(model)
+
+suppressed <- mutational_burden_formatted[which(mutational_burden_formatted$immunosuppression == "Suppressed"),]
+model <- lm(somatic_mutations ~ age, suppressed)
+summary(model)
+
+## Test plot without outliers
+
+mutational_burden_formatted_lim <- mutational_burden_formatted[-which(mutational_burden_formatted$Tumor_Sample_Barcode=="s_CSCC_18_DNA"),]
+mutational_burden_formatted_lim <- mutational_burden_formatted_lim[-which(mutational_burden_formatted_lim$Tumor_Sample_Barcode=="s_CSCC_48_DNA"),]
+ggplot(mutational_burden_formatted_lim, aes(x = age, y= somatic_mutations, color= immunosuppression)) + geom_point() + geom_smooth(method= "lm", se=FALSE) + theme_minimal()
+high <- mutational_burden_formatted[which(mutational_burden_formatted_lim$immunosuppression == "high"),]
+model <- lm(somatic_mutations ~ age, high)
+summary(model)
+```
+
+## Subset by mutation type with age
+
+```{r}
+filtered_sig <- as.data.frame(read.csv("~/3.0 Hasting Research/Immunoediting_human_work_with_new_samples/Mutational burden Figures/sigminer_signatures.csv"))
+row.names(filtered_sig) <- filtered_sig[,1]
+filtered_sig <- filtered_sig[,-1]
+
+filtered_sig <- t(filtered_sig)
+row.names(filtered_sig) <- gsub("\\.", "-", row.names(filtered_sig))
+filtered_sig <- filtered_sig[match(mutational_burden_formatted$Tumor_Sample_Barcode, row.names(filtered_sig)),]
+identical(as.character(mutational_burden_formatted$Tumor_Sample_Barcode), row.names(filtered_sig))
+
+mutational_burden_formatted <- cbind(mutational_burden_formatted, filtered_sig)
+mutational_burden_formatted$UV_sig <- as.numeric(mutational_burden_formatted$Sig1) + as.numeric(mutational_burden_formatted$Sig10) + as.numeric(mutational_burden_formatted$Sig2)
+```
+
+## Plot UV and clock-like signature by age
+
+```{r}
+ggplot(mutational_burden_formatted, aes(x = age, y= UV_sig* somatic_mutations, color= immunosuppression)) + geom_point() + geom_smooth(method= "lm") + theme_minimal()
+
+suppressed <- mutational_burden_formatted[which(mutational_burden_formatted$immunosuppression == "Suppressed"),]
+model <- lm((somatic_mutations*UV_sig) ~ age, suppressed)
+summary(model)
+
+ggplot(mutational_burden_formatted, aes(x = age, y= (as.numeric(Sig3))* somatic_mutations, color= immunosuppression)) + geom_point() + geom_smooth(method= "lm") + theme_minimal()
+
+outlier_removed <- mutational_burden_formatted[-which(mutational_burden_formatted$Sig3 > 0.5),]
+ggplot(outlier_removed, aes(x = age, y= (as.numeric(Sig3))* somatic_mutations, color= immunosuppression)) + geom_point() + geom_smooth(method= "lm") + theme_minimal()
+ggplot(outlier_removed, aes(x = age, y= (as.numeric(Sig3))* somatic_mutations)) + geom_point() + geom_smooth(method= "lm") + theme_minimal()
+```
